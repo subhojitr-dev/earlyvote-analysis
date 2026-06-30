@@ -28,7 +28,12 @@ how much up/down).
   analytics/build_baseline.py       — extract NC/GA from the big nationwide files
   analytics/county_lean.py          — lean + early-mix baseline (mode labels normalized;
                                       GA "TOTAL" double-count dropped)
-  analytics/turnout_compare.py      — PRIMARY VIEW (what the user wants): per-county
+  analytics/performance_matrix.py   — HEADLINE: one-screen matrix per state —
+                                      [1] overall turnout volume vs 2020/2022/2024,
+                                      [2] Dem-leaning vs Rep-leaning aggregation (%
+                                      over/under share + net D-vs-R pts), [3] full
+                                      per-county matrix. Built on 2020+2022+2024.
+  analytics/turnout_compare.py      — per-county + group helpers (used by the matrix)
                                       2026 early-vote SHARE vs 2020/2022/2024, over/
                                       under-performing %, Dem strongholds flagged +
                                       a plain-English "read". Uses SHARE (not raw
@@ -74,6 +79,7 @@ how much up/down).
 ## ▶️ RUN IT
   python analytics/build_baseline.py      # one-time, needs election-forecast/data/raw
   python analytics/county_lean.py
-  python analytics/make_fixture.py GA && python analytics/turnout_compare.py GA   # primary
-  python analytics/make_fixture.py NC && python analytics/turnout_compare.py NC
-  python analytics/evote_signal.py GA   # secondary lean-composite view
+  python analytics/make_fixture.py GA && python analytics/performance_matrix.py GA  # headline
+  python analytics/make_fixture.py NC && python analytics/performance_matrix.py NC
+  python analytics/turnout_compare.py GA   # per-county + group detail
+  python analytics/evote_signal.py GA      # secondary lean-composite view

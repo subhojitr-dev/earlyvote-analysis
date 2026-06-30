@@ -28,7 +28,13 @@ how much up/down).
   analytics/build_baseline.py       — extract NC/GA from the big nationwide files
   analytics/county_lean.py          — lean + early-mix baseline (mode labels normalized;
                                       GA "TOTAL" double-count dropped)
-  analytics/evote_signal.py         — THE METRIC: composite early-electorate lean vs
+  analytics/turnout_compare.py      — PRIMARY VIEW (what the user wants): per-county
+                                      2026 early-vote SHARE vs 2020/2022/2024, over/
+                                      under-performing %, Dem strongholds flagged +
+                                      a plain-English "read". Uses SHARE (not raw
+                                      counts) to cancel the midterm-vs-presidential
+                                      gap and mid-stream incompleteness.
+  analytics/evote_signal.py         — secondary: composite early-electorate lean vs
                                       baseline → signal in two-party pts + per-county
                                       additive "pull" (sums to the headline; verified)
   analytics/make_fixture.py         — synthetic "voting in progress" snapshot so the
@@ -58,9 +64,16 @@ how much up/down).
   - Secret ballot: you NEVER get who-they-voted-for early. The signal is about the
     COMPOSITION of the early electorate (lean-weighted), not a vote prediction.
   - WI & MI & GA have NO party registration → county-lean is the only universal method.
+  - **GA 2024 in MEDSL is TOTALS-ONLY** (no early/election-day split); only GA 2020 has
+    the mode breakdown. NC has it for BOTH 2020 & 2024. turnout_compare falls back to
+    total-vote share for totals-only years. For real GA early-vote-by-county history,
+    pull GA SOS daily files / UF Election Lab — not MEDSL.
+  - **2022 is missing** and is the IDEAL midterm comparator for 2026 — top data TODO.
+  - Compare SHARE of the vote, never raw counts across cycle types (midterm vs prez).
 
 ## ▶️ RUN IT
   python analytics/build_baseline.py      # one-time, needs election-forecast/data/raw
   python analytics/county_lean.py
-  python analytics/make_fixture.py NC && python analytics/evote_signal.py NC
-  python analytics/make_fixture.py GA && python analytics/evote_signal.py GA
+  python analytics/make_fixture.py GA && python analytics/turnout_compare.py GA   # primary
+  python analytics/make_fixture.py NC && python analytics/turnout_compare.py NC
+  python analytics/evote_signal.py GA   # secondary lean-composite view

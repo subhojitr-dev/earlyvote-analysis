@@ -37,8 +37,8 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent / "data"
 
-EARLY = {"ONE STOP", "EARLY VOTING", "ADVANCED VOTING", "ADVANCE VOTING", "IN PERSON",
-         "EARLY", "ABSENTEE BY MAIL", "ABSENTEE", "MAIL", "ABSENTEE/MAIL"}
+EARLY = {"ONE STOP", "EARLY VOTING", "ADVANCED VOTING", "ADVANCE VOTING", "ADVANCED",
+         "IN PERSON", "EARLY", "ABSENTEE BY MAIL", "ABSENTEE", "MAIL", "ABSENTEE/MAIL"}
 TOTAL_LABEL = "TOTAL"
 
 # Democratic strongholds the user named (Atlanta metro + Savannah=Chatham).
@@ -116,11 +116,39 @@ def compare(state: str):
             base = ref_sh[y].get(cty)
             row[f"vs_{y}"] = (cur_sh.get(cty, 0) / base - 1) if base else None
         rows.append(row)
-    return ref_years, basis, rows
+    return ref_years, basis, rows, hist, cur, lean
+
+
+def group_deviation(state, lean_split=0.50):
+    """Blue-leaning vs Red-leaning DISTRICTS, each as a % over/under its own
+    share in 2020 and 2022. This is the partisan turnout battle in one table:
+    if blue districts are over-performing their baseline share while red ones
+    under-perform, that's a net Democratic turnout edge (and vice-versa).
+    Uses SHARE (normalized %), so it's immune to the midterm/presidential gap."""
+    ref_years, basis, _rows, hist, cur, lean = compare(state)
+    total_cur = sum(cur.values()) or 1
+    groups = {"Blue-leaning": [], "Red-leaning": [], "Tossup/Unknown": []}
+    for c in cur:
+        ld = lean.get(c)
+        g = ("Tossup/Unknown" if ld is None
+             else "Blue-leaning" if ld >= lean_split else "Red-leaning")
+        groups[g].append(c)
+
+    out = {"ref_years": ref_years, "basis": basis, "groups": {}}
+    for gname, cties in groups.items():
+        cur_share = sum(cur.get(c, 0) for c in cties) / total_cur
+        rec = {"n": len(cties), "cur_share": cur_share, "dev": {}}
+        for y in ref_years:
+            b = basis[y]
+            tot_y = sum(hist[y][c][b] for c in hist[y]) or 1
+            ref_share = sum(hist[y].get(c, {}).get(b, 0) for c in cties) / tot_y
+            rec["dev"][y] = (cur_share / ref_share - 1) if ref_share else None
+        out["groups"][gname] = rec
+    return out
 
 
 def report(state="GA"):
-    ref_years, basis, rows = compare(state)
+    ref_years, basis, rows, _hist, _cur, _lean = compare(state)
     miss = [y for y in (2020, 2022, 2024) if y not in ref_years]
 
     print(f"\n========  {state}: 2026 early-vote participation vs reference cycles  ========")
@@ -142,6 +170,30 @@ def report(state="GA"):
             v = r[f"vs_{y}"]
             line += f" {('%+.1f%%' % (v*100)) if v is not None else 'n/a':>9}"
         print(line)
+
+    # ---- BLUE vs RED district deviation (the partisan turnout battle) ----
+    gd = group_deviation(state)
+    print("\n  --- blue- vs red-leaning DISTRICTS: % over/under their own baseline share ---")
+    print(f"  {'group':<16}{'#cty':>5}{'2026share':>11}" + "".join(f" {('vs'+str(y)):>9}" for y in ref_years))
+    for gname in ("Blue-leaning", "Red-leaning", "Tossup/Unknown"):
+        rec = gd["groups"][gname]
+        if rec["n"] == 0:
+            continue
+        line = f"  {gname:<16}{rec['n']:>5}{rec['cur_share']:>10.1%}"
+        for y in ref_years:
+            v = rec["dev"].get(y)
+            line += f" {('%+.1f%%' % (v*100)) if v is not None else 'n/a':>9}"
+        print(line)
+    # net read: blue deviation minus red deviation per year
+    for y in ref_years:
+        b = gd["groups"]["Blue-leaning"]["dev"].get(y)
+        r = gd["groups"]["Red-leaning"]["dev"].get(y)
+        if b is None or r is None:
+            continue
+        net = b - r
+        who = "Democratic" if net > 0 else "Republican"
+        print(f"  vs {y}: blue {b*100:+.1f}% vs red {r*100:+.1f}%  ->  net {net*100:+.1f} pts "
+              f"toward {who} turnout")
 
     def avg_vs(year, subset):
         num = den = 0.0

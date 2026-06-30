@@ -32,6 +32,7 @@ SRC_DIR = Path(os.environ.get(
 SOURCES = {
     "2018-SENATE-precinct-general.csv": (2018, "SENATE"),
     "2020-SENATE-precinct-general.csv": (2020, "SENATE"),
+    "2022-SENATE-precinct-general.csv": (2022, "SENATE"),  # doi:10.7910/DVN/IAD3XR — ideal midterm comparator
     "2024-PRESIDENT-precinct-general.csv": (2024, "PRESIDENT"),
     "2024-SENATE-precinct-general.csv": (2024, "SENATE"),
 }

@@ -31,7 +31,7 @@ OUT = BASE / "county_lean.csv"
 # Normalize the drifting mode labels into 3 buckets. "TOTAL" is a GA summary
 # row we MUST drop (it double-counts the others).
 EARLY_IN_PERSON = {"ONE STOP", "EARLY VOTING", "ADVANCED VOTING", "ADVANCE VOTING",
-                   "IN PERSON", "EARLY"}
+                   "ADVANCED", "IN PERSON", "EARLY"}
 EARLY_MAIL = {"ABSENTEE BY MAIL", "ABSENTEE", "MAIL", "ABSENTEE/MAIL"}
 ELECTION_DAY = {"ELECTION DAY", "POLLING PLACE"}
 DROP = {"TOTAL"}  # summary rows; ignore

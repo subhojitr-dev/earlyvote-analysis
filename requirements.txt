@@ -1,0 +1,5 @@
+# analytics core: Python stdlib only (csv, collections) — no deps needed.
+# Added as we build out:
+fastapi>=0.110        # api/main.py
+uvicorn[standard]>=0.29
+requests>=2.31        # ingestor downloads (NC dl.ncsbe.gov, GA feeds)

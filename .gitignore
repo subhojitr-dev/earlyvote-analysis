@@ -1,0 +1,16 @@
+# big nationwide source files are NOT stored here — built from election-forecast/data/raw
+data/raw/
+data/db/
+*.zip
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node / ui
+node_modules/
+ui/dist/
+
+# committed (small, needed): data/baseline/*.csv, data/fixtures/*.csv

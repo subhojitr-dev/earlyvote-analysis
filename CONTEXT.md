@@ -1,26 +1,30 @@
 # CONTEXT.md — START HERE EACH SESSION
 # Early-Vote Analysis — partisan early-voting signal by state & county
-# Last updated: 2026-06-30 (kickoff — analytics core built & validated)
+# Last updated: 2026-07-01 (DEPLOYED — 5 states, ingestors, turnout rate, full docs)
 
-> Sibling to the **election-forecast** project (same ETL→analytics→API→React→deploy
-> shape). That one forecasts election-NIGHT results; THIS one reads the EARLY-VOTE
-> signal in the weeks before, so campaigns can act proactively.
+> Sibling to the **election-forecast** project. That one forecasts election-NIGHT
+> results; THIS one reads the EARLY-VOTE signal in the weeks before.
+> LIVE: https://earlyvote-analysis.vercel.app  ·  Repo: github.com/subhojitr-dev/earlyvote-analysis
 
 ---
 
 ## 🎯 WHAT THIS IS
 For each swing state, by county: **is the early electorate tilting more D or more R
-than a comparable past cycle?** Roll up to a statewide signal; drill down to the
-counties driving it ("where to act"). Deploy as a web dashboard (by state → county,
-how much up/down).
+than a comparable past cycle?** Statewide signal + county drill-down + turnout progress.
+Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD.md
+(how to read), README.md (run/deploy).
 
-## 🚦 WHERE WE ARE (decisions locked 2026-06-30)
-- **Standalone repo**, reusing election-forecast patterns (not coupled to the live one).
-- **v1 states: NC + GA**, end-to-end first. Then NV/AZ/PA (registration), then WI/MI.
-- **County-lean method** for partisanship (works in registration AND no-registration
-  states). Registration splits (NC/NV/AZ/PA) are a later sharpening.
-- **Comparator cycle: 2022 (midterm) is ideal** for the 2026 midterm; we currently have
-  2020 Senate + 2024 President as baseline (2022 precinct data is the top data TODO).
+## 🚦 WHERE WE ARE (2026-07-01)
+- **DEPLOYED & public** on Vercel (static, auto-deploys on push to `main`).
+- **5 states live: GA, NC, AZ, NV, PA** (358 counties). WI/MI next.
+- **Baseline: 2020 President + 2022 Senate + 2024 President** (all via MEDSL). GA
+  double-count bugs fixed (2020 two Senate races, 2022 runoff). NV/PA are totals-only.
+- **County-lean method** for partisanship; registration split is the next sharpening
+  (NC ingestor already captures party of record in *_party.csv).
+- **Live-ingestor framework built** (ingestor/): NC per-ballot parser (tested), generic
+  county-totals for GA/AZ/NV/PA, orchestrator, SOURCES.md. Flips on ~Oct 2026; analytics
+  prefer data/live/ over the synthetic fixture automatically.
+- **Turnout rate** added (early / registered voters; estimate now, real SoS files swappable).
 
 ## ✅ DONE — analytics core (runnable NOW, validated)
   data/baseline/county_results.csv  — NC+GA county×party×mode, from MEDSL precinct files

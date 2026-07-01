@@ -14,3 +14,7 @@ node_modules/
 ui/dist/
 
 # committed (small, needed): data/baseline/*.csv, data/fixtures/*.csv
+
+# dashboard build artifacts
+web/_widget.html
+web/_compact.json

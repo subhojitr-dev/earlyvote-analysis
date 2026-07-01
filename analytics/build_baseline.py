@@ -59,6 +59,15 @@ def main() -> None:
             for row in r:
                 if row.get("state_po") not in STATES:
                     continue
+                # GA 2020 had TWO Senate races (regular + special) in this file;
+                # counting both double-counts every GA voter. Keep only the
+                # regular contest so turnout totals + lean are correct.
+                if str(row.get("special", "")).upper() == "TRUE":
+                    continue
+                # GA 2022 Senate went to a Dec runoff; the file holds BOTH the Nov
+                # general and the runoff. Keep only the general election.
+                if "RUNOFF" in str(row.get("stage", "")).upper():
+                    continue
                 try:
                     votes = int(float(row.get("votes") or 0))
                 except ValueError:

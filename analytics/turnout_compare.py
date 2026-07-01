@@ -46,27 +46,30 @@ GA_STRONGHOLDS = {"FULTON", "DEKALB", "GWINNETT", "COBB", "CLAYTON", "CHATHAM"}
 
 
 def series_by_year_county(state: str):
-    """{year: {county: {'early': e, 'total': t}}} from the historical baseline."""
+    """{year: {county: {'early': e, 'total': t}}} from the historical baseline.
+
+    Two-pass + order-independent: a county's total is the TOTAL-row value if one
+    exists (some years report only a TOTAL, e.g. GA 2024), otherwise the sum of
+    its per-mode rows. Never both -- mixing them double-counts the county."""
     early = defaultdict(lambda: defaultdict(int))
-    total = defaultdict(lambda: defaultdict(int))
-    has_total_row = defaultdict(lambda: defaultdict(bool))
+    modes_sum = defaultdict(lambda: defaultdict(int))   # sum of all non-TOTAL modes
+    total_row = defaultdict(lambda: defaultdict(int))   # explicit TOTAL rows
     for r in csv.DictReader((BASE / "baseline" / "county_results.csv").open(encoding="utf-8")):
         if r["state"] != state:
             continue
         y, cty, m, v = int(r["year"]), r["county_name"].upper(), r["mode"].upper().strip(), int(r["votes"])
         if m == TOTAL_LABEL:
-            total[y][cty] += v
-            has_total_row[y][cty] = True
+            total_row[y][cty] += v
             continue
         if m in EARLY:
             early[y][cty] += v
-        # every non-TOTAL mode contributes to a computed total (used when no TOTAL row)
-        if not has_total_row[y][cty]:
-            total[y][cty] += v
+        modes_sum[y][cty] += v
     out = {}
-    for y in set(early) | set(total):
-        out[y] = {c: {"early": early[y].get(c, 0), "total": total[y].get(c, 0)}
-                  for c in set(early[y]) | set(total[y])}
+    for y in set(early) | set(modes_sum) | set(total_row):
+        counties = set(early[y]) | set(modes_sum[y]) | set(total_row[y])
+        out[y] = {c: {"early": early[y].get(c, 0),
+                      "total": total_row[y][c] if total_row[y].get(c) else modes_sum[y].get(c, 0)}
+                  for c in counties}
     return out
 
 
@@ -145,6 +148,62 @@ def group_deviation(state, lean_split=0.50):
             rec["dev"][y] = (cur_share / ref_share - 1) if ref_share else None
         out["groups"][gname] = rec
     return out
+
+
+def composite_lean(state):
+    """Aggregate 'Dem tilt' of the early electorate, per year. For each year we
+    weight every county's DEM two-party lean (fixed, from past results) by that
+    county's SHARE of the early vote that year. Since the lean is fixed, changes
+    across years come purely from WHERE the early votes are concentrated -- i.e.
+    a higher number = the early electorate is coming from more-Democratic places.
+    Returns (years, {year->composite, 'cur'->2026 composite})."""
+    hist = series_by_year_county(state)
+    lean = lean_by_county(state)
+    cur = load_current(state)
+    years = sorted(hist)
+
+    def comp(shares):
+        num = den = 0.0
+        for c, v in shares.items():
+            L = lean.get(c)
+            if L is None:
+                continue
+            num += v * L
+            den += v
+        return (num / den) if den else None
+
+    def yr_shares(y):
+        early = {c: hist[y][c]["early"] for c in hist[y]}
+        src = early if sum(early.values()) > 0 else {c: hist[y][c]["total"] for c in hist[y]}
+        tot = sum(src.values()) or 1
+        return {c: src[c] / tot for c in src}
+
+    out = {y: comp(yr_shares(y)) for y in years}
+    ctot = sum(cur.values()) or 1
+    out["cur"] = comp({c: cur[c] / ctot for c in cur})
+    return years, out
+
+
+def turnout_progress(state):
+    """Progress gauge: 2026 early votes so far as a % of each county's TOTAL
+    turnout (all modes) in a prior year. As early voting runs, this climbs; >100%
+    means early votes alone have already exceeded that entire past election.
+    Returns (years, per_county{county->{year->pct}}, aggregate{year->pct})."""
+    hist = series_by_year_county(state)
+    cur = load_current(state)
+    years = sorted(hist)
+    per = {}
+    for c in cur:
+        per[c] = {}
+        for y in years:
+            tot = hist[y].get(c, {}).get("total", 0)
+            per[c][y] = (cur[c] / tot) if tot else None
+    agg = {}
+    for y in years:
+        num = sum(cur.values())
+        den = sum(hist[y][c]["total"] for c in hist[y])
+        agg[y] = (num / den) if den else None
+    return years, per, agg
 
 
 def report(state="GA"):

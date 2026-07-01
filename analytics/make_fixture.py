@@ -26,7 +26,10 @@ def make(state: str, frac=0.45, seed=7):
     for r in src:
         if r["state"] != state or not r["lean_dem"]:
             continue
-        base_early = int(r["early_inperson"]) + int(r["early_mail"])
+        early = int(r["early_inperson"]) + int(r["early_mail"])
+        # totals-only states (NV/PA) have no early breakdown -> scale off total
+        # turnout instead so the fixture is non-zero.
+        base_early = early if early > 0 else int(r.get("total_votes") or 0) // 2
         lean = float(r["lean_dem"])
         # scenario: +/-12pts of pace tied to lean, plus noise
         tilt = (lean - 0.5) * 0.24

@@ -18,3 +18,8 @@ ui/dist/
 # dashboard build artifacts
 web/_widget.html
 web/_compact.json
+
+# runtime feed data (real feeds + ingestor test output)
+data/live/
+data/incoming/
+logs/

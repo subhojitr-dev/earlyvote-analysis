@@ -28,16 +28,16 @@ SRC_DIR = Path(os.environ.get(
     r"C:\Users\subho\election-forecast\data\raw",
 ))
 
-# Source file -> (year, office) we care about. Add more as needed.
+# Source file -> (year, office). We use PRESIDENT for 2020 (covers all 5 swing
+# states with an early/mode split for NC/GA/AZ; NV/PA report only TOTAL) and 2024,
+# plus the 2022 SENATE midterm (doi:10.7910/DVN/IAD3XR) as the key comparator.
 SOURCES = {
-    "2018-SENATE-precinct-general.csv": (2018, "SENATE"),
-    "2020-SENATE-precinct-general.csv": (2020, "SENATE"),
-    "2022-SENATE-precinct-general.csv": (2022, "SENATE"),  # doi:10.7910/DVN/IAD3XR — ideal midterm comparator
+    "PRESIDENT_precinct_general.csv": (2020, "PRESIDENT"),
+    "2022-SENATE-precinct-general.csv": (2022, "SENATE"),
     "2024-PRESIDENT-precinct-general.csv": (2024, "PRESIDENT"),
-    "2024-SENATE-precinct-general.csv": (2024, "SENATE"),
 }
 
-STATES = {"NC", "GA"}
+STATES = {"NC", "GA", "NV", "AZ", "PA"}
 OUT = Path(__file__).resolve().parent.parent / "data" / "baseline" / "county_results.csv"
 
 # csv module chokes on huge fields in some MEDSL rows; bump the limit.

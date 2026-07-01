@@ -18,10 +18,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "analytics"))
 from turnout_compare import (compare, group_deviation, composite_lean,   # noqa: E402
-                             turnout_progress)
+                             turnout_progress, turnout_rate)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
-STATES = ["GA", "NC"]
+STATES = ["GA", "NC", "AZ", "NV", "PA"]
 
 
 def state_data(state):
@@ -30,6 +30,7 @@ def state_data(state):
     cur_total, ov = overall_turnout(state)
     _cy, cl = composite_lean(state)
     _py, per, pagg = turnout_progress(state)
+    _tr_per, tr_agg = turnout_rate(state)
 
     counties = []
     for r in rows:
@@ -58,6 +59,7 @@ def state_data(state):
         "groups": groups, "net": net, "counties": counties,
         "complean": {str(y): cl[y] for y in _cy} | {"cur": cl["cur"]},
         "progress": {str(y): pagg[y] for y in _py},
+        "turnout_rate": tr_agg,
     }
 
 
@@ -194,13 +196,15 @@ function panels(){const d=DATA[cur];
       <div class="mark" style="left:${(100/1.5).toFixed(0)}%"></div></div>
       <span class="vl" style="${over?'color:var(--pos)':''}">${Math.round(v*100)}%</span></div>`;}).join("");
   const prRead=`Marker = 100% (a full prior turnout). Bars past it = 2026 early vote alone has <b>already exceeded</b> that year's total turnout. Climbs daily as early voting runs.`;
+  const tr=d.turnout_rate;
+  const trStat=tr==null?"":`<div style="margin-bottom:8px;font-size:13px"><b style="font-size:18px;color:var(--accent)">${Math.round(tr*100)}%</b> of registered voters have voted early <span style="color:var(--muted)">(est. — see note)</span></div>`;
 
   document.getElementById("panels").innerHTML=
     `<div class="panel"><h3>Aggregate Dem tilt of the early electorate</h3>
        <div class="ph">Dem two-party lean weighted by where the early votes come from. Higher = early voters from more-Democratic places.</div>
        ${clRows}<div class="verdict">${clRead}</div></div>
      <div class="panel"><h3>Turnout progress vs full prior turnout</h3>
-       <div class="ph">2026 early ballots so far as a % of each county-summed TOTAL turnout in that year.</div>
+       ${trStat}<div class="ph">2026 early ballots so far as a % of each county-summed TOTAL turnout in that year.</div>
        ${prRows}<div class="verdict">${prRead}</div></div>`;}
 
 function header(){const ys=DATA[cur].ref_years;

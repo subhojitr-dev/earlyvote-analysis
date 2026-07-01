@@ -38,7 +38,8 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent.parent / "data"
 
 EARLY = {"ONE STOP", "EARLY VOTING", "ADVANCED VOTING", "ADVANCE VOTING", "ADVANCED",
-         "IN PERSON", "EARLY", "ABSENTEE BY MAIL", "ABSENTEE", "MAIL", "ABSENTEE/MAIL"}
+         "IN PERSON", "EARLY", "LATE EARLY", "LATE VOTES",
+         "ABSENTEE BY MAIL", "ABSENTEE", "MAIL", "ABSENTEE/MAIL"}
 TOTAL_LABEL = "TOTAL"
 
 # Democratic strongholds the user named (Atlanta metro + Savannah=Chatham).
@@ -80,11 +81,16 @@ def lean_by_county(state: str):
 
 
 def load_current(state: str):
+    """This-cycle early votes per county. Prefers a REAL feed at
+    data/live/{state}_current.csv (written by the ingestors); falls back to the
+    synthetic data/fixtures/{state}_current.csv until live voting opens."""
     fips2name = {r["county_fips"]: r["county_name"].upper()
                  for r in csv.DictReader((BASE / "baseline" / "county_lean.csv").open(encoding="utf-8"))
                  if r["state"] == state}
+    live = BASE / "live" / f"{state.lower()}_current.csv"
+    src = live if live.exists() else BASE / "fixtures" / f"{state.lower()}_current.csv"
     out = {}
-    for r in csv.DictReader((BASE / "fixtures" / f"{state.lower()}_current.csv").open(encoding="utf-8")):
+    for r in csv.DictReader(src.open(encoding="utf-8")):
         name = fips2name.get(r["county_fips"])
         if name:
             out[name] = int(r["ballots"])
@@ -204,6 +210,25 @@ def turnout_progress(state):
         den = sum(hist[y][c]["total"] for c in hist[y])
         agg[y] = (num / den) if den else None
     return years, per, agg
+
+
+def turnout_rate(state):
+    """TRUE early-vote turnout rate = 2026 early ballots / registered voters,
+    per county and aggregate. Needs data/reference/registration.csv (run
+    build_registration.py). Returns (per_county{name->rate}, aggregate_rate) or
+    (None, None) if registration data isn't available."""
+    reg_file = BASE / "reference" / "registration.csv"
+    if not reg_file.exists():
+        return None, None
+    reg = {}
+    for r in csv.DictReader(reg_file.open(encoding="utf-8")):
+        if r["state"] == state and r.get("registered"):
+            reg[r["county_name"].upper()] = int(r["registered"])
+    cur = load_current(state)
+    per = {c: (cur[c] / reg[c]) for c in cur if reg.get(c)}
+    tot_reg = sum(reg.get(c, 0) for c in cur)
+    agg = (sum(cur.values()) / tot_reg) if tot_reg else None
+    return per, agg
 
 
 def report(state="GA"):

@@ -1,20 +1,17 @@
 """
 county_lean.py — the partisan baseline that powers the early-vote signal.
 
-Two products, both per county, from data/baseline/county_results.csv:
+Per county, from data/baseline/county_results.csv:
+  1. LEAN        — two-party Dem share of the county's total vote, blended across
+                   the baseline cycles ("what this county normally does").
+  2. EARLY MIX   — in-person early + mail volume, and the early share of the vote.
+  3. TOTAL VOTES — blended total turnout (used as the fixture volume base for
+                   totals-only states like NV/PA that have no mode breakdown).
 
-  1. LEAN   — two-party Dem share of each county's TOTAL vote, blended across
-              the baseline cycles. This is "what this county normally does".
-              Heavy-Dem county => high lean; heavy-Rep => low lean.
-
-  2. EARLY MIX — what share of each county's vote was historically cast EARLY
-              (in-person early + mail), vs on election day. Tells us the
-              normal early-vote propensity so a live surge/shortfall is
-              measured against the right yardstick, county by county.
-
-The live signal (evote_signal.py) combines these: as early ballots come in by
-county, weight each county by its LEAN to read whether the early electorate is
-tilting more D or more R than the baseline mix would predict.
+Order-independent + totals-only safe: for each (year, county) we take the TOTAL
+row if the source reported one, otherwise sum the per-mode rows — never both
+(mixing them double-counts). This makes NC/GA (mode-level) and NV/PA (TOTAL-only)
+both correct.
 
 Run:  python analytics/county_lean.py   -> writes data/baseline/county_lean.csv
 """
@@ -28,87 +25,92 @@ BASE = Path(__file__).resolve().parent.parent / "data" / "baseline"
 SRC = BASE / "county_results.csv"
 OUT = BASE / "county_lean.csv"
 
-# Normalize the drifting mode labels into 3 buckets. "TOTAL" is a GA summary
-# row we MUST drop (it double-counts the others).
 EARLY_IN_PERSON = {"ONE STOP", "EARLY VOTING", "ADVANCED VOTING", "ADVANCE VOTING",
-                   "ADVANCED", "IN PERSON", "EARLY"}
+                   "ADVANCED", "EARLY", "LATE EARLY", "LATE VOTES", "IN PERSON"}
 EARLY_MAIL = {"ABSENTEE BY MAIL", "ABSENTEE", "MAIL", "ABSENTEE/MAIL"}
 ELECTION_DAY = {"ELECTION DAY", "POLLING PLACE"}
-DROP = {"TOTAL"}  # summary rows; ignore
+TOTAL_LABEL = "TOTAL"
 
 
-def bucket(mode: str) -> str | None:
+def bucket(mode: str):
     m = mode.upper().strip()
-    if m in DROP:
-        return None
     if m in EARLY_IN_PERSON:
-        return "early_inperson"
+        return "ei"
     if m in EARLY_MAIL:
-        return "early_mail"
+        return "em"
     if m in ELECTION_DAY:
-        return "election_day"
-    return "other"  # provisional, unknown — counted in totals, not in early/eday
-
-
-def load_rows():
-    with SRC.open(encoding="utf-8") as fh:
-        yield from csv.DictReader(fh)
+        return "ed"
+    return "other"
 
 
 def build():
-    # per (state, fips, county): party totals and bucket totals
-    party = defaultdict(lambda: defaultdict(int))   # key -> {DEMOCRAT: n, ...}
-    buckets = defaultdict(lambda: defaultdict(int))  # key -> {early_inperson: n,...}
-    names = {}
-    for r in load_rows():
-        b = bucket(r["mode"])
-        if b is None:
-            continue
-        key = (r["state"], r["county_fips"])
-        names[key] = r["county_name"]
+    # stage per (state, fips, year): dedup TOTAL vs modes for party + turnout
+    stage = defaultdict(lambda: {
+        "name": "", "hasT": False, "tot_row": 0, "modes_sum": 0,
+        "pT": defaultdict(int), "pM": defaultdict(int),
+        "ei": 0, "em": 0, "ed": 0})
+    for r in csv.DictReader(SRC.open(encoding="utf-8")):
+        k = (r["state"], r["county_fips"], r["year"])
+        s = stage[k]
+        s["name"] = r["county_name"]
+        m = r["mode"].upper().strip()
+        p = r["party"].upper()
         v = int(r["votes"])
-        party[key][r["party"]] += v
-        buckets[key][b] += v
+        if m == TOTAL_LABEL:
+            s["hasT"] = True
+            s["tot_row"] += v
+            if p in ("DEMOCRAT", "REPUBLICAN"):
+                s["pT"][p] += v
+            continue
+        s["modes_sum"] += v
+        if p in ("DEMOCRAT", "REPUBLICAN"):
+            s["pM"][p] += v
+        b = bucket(m)
+        if b in ("ei", "em", "ed"):
+            s[b] += v
 
-    out = []
-    for key in sorted(party):
-        st, fips = key
-        d = party[key].get("DEMOCRAT", 0)
-        rep = party[key].get("REPUBLICAN", 0)
-        two_party = d + rep
-        lean = round(d / two_party, 4) if two_party else None  # Dem two-party share
-        b = buckets[key]
-        total = sum(b.values())
-        early = b["early_inperson"] + b["early_mail"]
-        out.append({
-            "state": st, "county_fips": fips, "county_name": names[key],
-            "dem_votes": d, "rep_votes": rep, "two_party": two_party,
-            "lean_dem": lean,
-            "early_inperson": b["early_inperson"], "early_mail": b["early_mail"],
-            "election_day": b["election_day"],
-            "early_share": round(early / total, 4) if total else None,
+    # collapse years into per-county blended totals
+    out = defaultdict(lambda: {"name": "", "dem": 0, "rep": 0,
+                               "ei": 0, "em": 0, "ed": 0, "tot": 0})
+    for (st, fips, _y), s in stage.items():
+        o = out[(st, fips)]
+        o["name"] = s["name"]
+        if s["hasT"]:
+            o["dem"] += s["pT"]["DEMOCRAT"]; o["rep"] += s["pT"]["REPUBLICAN"]
+            o["tot"] += s["tot_row"]
+        else:
+            o["dem"] += s["pM"]["DEMOCRAT"]; o["rep"] += s["pM"]["REPUBLICAN"]
+            o["tot"] += s["modes_sum"]
+        o["ei"] += s["ei"]; o["em"] += s["em"]; o["ed"] += s["ed"]
+
+    rows = []
+    for (st, fips), o in sorted(out.items()):
+        two = o["dem"] + o["rep"]
+        early = o["ei"] + o["em"]
+        rows.append({
+            "state": st, "county_fips": fips, "county_name": o["name"],
+            "dem_votes": o["dem"], "rep_votes": o["rep"], "two_party": two,
+            "lean_dem": round(o["dem"] / two, 4) if two else None,
+            "early_inperson": o["ei"], "early_mail": o["em"],
+            "election_day": o["ed"], "total_votes": o["tot"],
+            "early_share": round(early / o["tot"], 4) if o["tot"] else None,
         })
-    return out
+    return rows
 
 
 def main():
     rows = build()
     with OUT.open("w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
-        w.writeheader()
-        w.writerows(rows)
-    # quick summary
-    nc = [r for r in rows if r["state"] == "NC" and r["lean_dem"]]
-    ga = [r for r in rows if r["state"] == "GA" and r["lean_dem"]]
-    def statewide(rs):
+        w.writeheader(); w.writerows(rows)
+
+    for st in sorted({r["state"] for r in rows}):
+        rs = [r for r in rows if r["state"] == st and r["lean_dem"] is not None]
         d = sum(r["dem_votes"] for r in rs); t = sum(r["two_party"] for r in rs)
-        es = sum(r["early_inperson"] + r["early_mail"] for r in rs)
-        tot = sum(r["early_inperson"] + r["early_mail"] + r["election_day"] for r in rs)
-        return d / t, es / tot
-    for label, rs in (("NC", nc), ("GA", ga)):
-        lean, em = statewide(rs)
-        print(f"  {label}: {len(rs)} counties | statewide Dem two-party {lean:.1%} "
-              f"| early-vote share {em:.1%}")
+        early = sum(r["early_inperson"] + r["early_mail"] for r in rs)
+        tot = sum(r["total_votes"] for r in rs)
+        em = f"{early/tot:.1%}" if tot else "n/a"
+        print(f"  {st}: {len(rs)} counties | Dem two-party {d/t:.1%} | early share {em}")
     print(f"\n  wrote {len(rows)} rows -> {OUT}")
 
 

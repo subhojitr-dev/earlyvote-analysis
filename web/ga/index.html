@@ -76,6 +76,15 @@
   .ml .mn{color:var(--muted)}
   .kv{display:grid;grid-template-columns:1fr auto;gap:4px 12px;margin:10px 0;font-size:13px}
   .kv div:nth-child(odd){color:var(--muted)}
+  .races{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,520px),1fr));gap:14px}
+  .race h2{margin:0 0 2px;font-size:18px}
+  .race h3{margin:16px 0 6px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  .race table td,.race table th{padding:5px 8px;font-size:12.5px}
+  .race td.num,.race th.num{text-align:right}
+  .bar{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--panel2);min-width:120px}
+  .bar .d{background:var(--dem)} .bar .r{background:var(--rep)}
+  .D{color:#93c5fd} .R{color:#fca5a5}
+  .src{font-size:11.5px;color:var(--muted);margin-top:6px;line-height:1.5}
   .tip{position:fixed;pointer-events:none;background:#0b0f17;border:1px solid var(--line);border-radius:8px;
     padding:6px 9px;font-size:12px;display:none;z-index:20;max-width:240px}
 </style>
@@ -85,6 +94,9 @@
   <div>
     <h1>Georgia State House &amp; Senate: early vote</h1>
     <div class="sub">2026 general election (Nov 3) · <a href="/">← county dashboard (all states)</a></div>
+  </div>
+  <div class="seg" id="navSeg">
+    <button data-nav="#/">Early vote by district</button><button data-nav="#/polls">View Polling Data</button>
   </div>
   <div class="sp"></div>
   <div class="seg" id="modeSeg">
@@ -121,6 +133,13 @@ function modeLine(name, b, yr){
   const what = b.pace != null ? `<span class="pace ${paceCls(b.pace)}">${paceText(b.pace, yr)}</span>`
     : `<span class="muted">${b.now ? "too few ballots to compare yet" : "none cast yet"}</span>`;
   return `<div class="ml"><span class="mn">${name}</span>${what}<span class="muted">${fmt(b.now)} votes</span></div>`;
+}
+function raceLine(s){
+  const r = s.race24; if (!r) return "";
+  const who = `${esc(r.winner)} (${r.party || "?"})`;
+  const what = r.contested && r.margin != null
+    ? `won by ${who}, ${leanText(r.margin)}` : `uncontested, ${who}`;
+  return `<div class="muted" style="font-size:12.5px;margin-top:4px">2024 State ${s.chamber === "house" ? "House" : "Senate"} race: ${what}</div>`;
 }
 function leanText(l){ return l == null ? null : (l >= 0 ? "D +" : "R +") + Math.abs(l).toFixed(0); }
 function leanBadge(l){ return l == null ? '<span class="muted">n/a</span>' :
@@ -302,7 +321,7 @@ function viewDetail(cd, k){
     <div class="muted" style="font-size:12px">All early votes</div>
     <div class="big pace ${paceCls(s.pace)}">${paceText(s.pace, s.comp_year)}</div>
     <div class="modes">${modeLine("In-person", s.by_mode.inperson, s.comp_year)}${modeLine("Mail", s.by_mode.mail, s.comp_year)}</div>
-    <div class="lean">${leanLine}</div>
+    <div class="lean">${leanLine}${raceLine(s)}</div>
     ${s.by_county.length > 1 ? `<div class="muted" style="font-size:12.5px">This district spans ${s.by_county.length} counties. All numbers cover the whole district.</div>` : ""}
     <details><summary>Details</summary>
       <div class="kv">
@@ -325,11 +344,69 @@ function viewDetail(cd, k){
   box.classList.add("open");
 }
 
+
+// ---------- polling view ----------
+async function loadPolls(){ return S.polls ||= await getJSON("polling.json"); }
+const fmtDate = iso => { try { return new Date(iso).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}); } catch(e){ return iso; } };
+function margin(d, r, cands){
+  if (d == null || r == null) return "–";
+  const m = d - r, who = m >= 0 ? cands.find(c => c.party === "D") : cands.find(c => c.party === "R");
+  const last = who.name.split(" ").slice(-1)[0];
+  return Math.abs(m) < 0.05 ? "Tied" : `<span class="${who.party}">${esc(last)} +${Math.abs(m).toFixed(1)}</span>`;
+}
+function ratingCls(r){ return /\bD\b/.test(r) ? "D" : /\bR\b/.test(r) ? "R" : ""; }
+function raceCard(key, r){
+  const cs = r.cands, D = cs.find(c => c.party === "D"), R = cs.find(c => c.party === "R");
+  const head = `<th>${esc(D.name.split(" ").slice(-1)[0])} (D)</th><th>${esc(R.name.split(" ").slice(-1)[0])} (R)</th>`;
+  const ratings = (r.ratings || []).map(x => `<tr><td>${esc(x.source)}</td>
+      <td class="${ratingCls(x.rating)}"><b>${esc(x.rating)}</b></td><td class="muted">${esc(x.as_of)}</td></tr>`).join("");
+  const avgs = (r.averages || []).map(a => `<tr><td>${esc(a.source)}</td><td class="num">${a.D.toFixed(1)}%</td>
+      <td class="num">${a.R.toFixed(1)}%</td><td>${margin(a.D, a.R, cs)}</td><td class="muted">${esc(a.updated)}</td></tr>`).join("");
+  const aa = r.average_of_averages;
+  const avgRow = aa ? `<tr style="border-top:2px solid var(--line)"><td><b>Average of the averages</b></td><td class="num"><b>${aa.D.toFixed(1)}%</b></td>
+      <td class="num"><b>${aa.R.toFixed(1)}%</b></td><td><b>${margin(aa.D, aa.R, cs)}</b></td><td></td></tr>` : "";
+  const polls = (r.polls || []).map(p => `<tr><td>${esc(p.pollster)}</td><td class="muted">${esc(p.dates)}</td>
+      <td class="muted">${esc(p.sample)}</td><td class="num">${p.D}%</td><td class="num">${p.R}%</td><td>${margin(p.D, p.R, cs)}</td></tr>`).join("");
+  const pa = r.poll_avg;
+  const pollAvg = pa ? `<tr style="border-top:2px solid var(--line)"><td colspan="3"><b>Simple average of these ${r.polls.length} polls</b></td>
+      <td class="num"><b>${pa.D}%</b></td><td class="num"><b>${pa.R}%</b></td><td><b>${margin(pa.D, pa.R, cs)}</b></td></tr>` : "";
+  const mk = (r.markets || []).map(m => `<tr><td><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)}</a></td>
+      <td class="num D"><b>${m.D != null ? Math.round(m.D) + "%" : "–"}</b></td><td class="num R"><b>${m.R != null ? Math.round(m.R) + "%" : "–"}</b></td>
+      <td><div class="bar"><div class="d" style="width:${m.D || 0}%"></div><div class="r" style="width:${m.R || 0}%"></div></div></td>
+      <td class="muted">${fmtDate(m.fetched)}</td></tr>`).join("");
+  return `<div class="panel race">
+    <h2>Georgia ${esc(r.title)}</h2>
+    <div class="muted">${esc(D.name)} (D)${D.inc ? ", incumbent" : ""} vs ${esc(R.name)} (R)</div>
+    <h3>Race ratings</h3>
+    <table><thead><tr><th>Rater</th><th>Rating</th><th>As of</th></tr></thead><tbody>${ratings}</tbody></table>
+    <h3>Polling averages</h3>
+    <table><thead><tr><th>Aggregator</th>${head.replace(/<th>/g,'<th class="num">')}<th>Margin</th><th>Updated</th></tr></thead><tbody>${avgs}${avgRow}</tbody></table>
+    <h3>Betting markets: chance of winning</h3>
+    <table><thead><tr><th>Market</th>${head.replace(/<th>/g,'<th class="num">')}<th></th><th>Price as of</th></tr></thead><tbody>${mk}</tbody></table>
+    <div class="src">Last traded prices, read as the market's % chance. They can add up to a little more or less than 100%.</div>
+    <h3>Last ${(r.polls || []).length} polls</h3>
+    <div class="tablewrap" style="max-height:none"><table><thead><tr><th>Pollster</th><th>Dates</th><th>Sample</th>${head.replace(/<th>/g,'<th class="num">')}<th>Margin</th></tr></thead>
+      <tbody>${polls}${pollAvg}</tbody></table></div>
+    <div class="src">(R)/(D) after a pollster = partisan-affiliated or sponsored. LV = likely voters, RV = registered voters; where a poll
+      reports several versions, the likely-voter version without "leaners" is shown. Only polls with a cited source are included.
+      Polls, averages and ratings via <a href="${esc(r.url)}" target="_blank" rel="noopener">Wikipedia</a>, each row citing its original source${r.wiki_fetched ? `; fetched ${fmtDate(r.wiki_fetched)}` : ""}.</div>
+  </div>`;
+}
+async function viewPolls(){
+  const d = await loadPolls();
+  $("#app").innerHTML = `<div class="howto"><b>Polling data</b> for Georgia's two statewide races: race ratings from
+    five well-known forecasters, polling averages, betting-market odds and the latest polls. Updated ${fmtDate(d.updated)}.</div>
+    <div class="races">${Object.entries(d.races).map(([k, r]) => raceCard(k, r)).join("")}</div>`;
+}
+
 // ---------- router ----------
 async function route(){
   const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   document.querySelectorAll("#modeSeg button").forEach(b => b.classList.toggle("on", b.dataset.m === S.mode));
   hideTip();
+  document.querySelectorAll("#navSeg button").forEach(b => b.classList.toggle("on", (parts[0] === "polls") === (b.dataset.nav === "#/polls")));
+  $("#modeSeg").style.display = parts[0] === "polls" ? "none" : "";
+  if (parts[0] === "polls") { $("#detail").classList.remove("open"); await viewPolls(); scrollTo({top: 0}); return; }
   if (parts[0] === "c" && parts[1]) {
     const cd = await loadCounty(decodeURIComponent(parts[1]));
     if (parts[2] && CH[parts[2]]) S.chamber = parts[2];
@@ -340,6 +417,7 @@ async function route(){
 }
 document.querySelectorAll("#modeSeg button").forEach(b => b.onclick = () => {
   S.mode = b.dataset.m; try { localStorage.setItem("gaMode", S.mode); } catch(e) {} route(); });
+document.querySelectorAll("#navSeg button").forEach(b => b.onclick = () => location.hash = b.dataset.nav);
 addEventListener("hashchange", route);
 addEventListener("keydown", e => { if (e.key === "Escape" && $("#detail").classList.contains("open"))
   location.hash = location.hash.split("/").slice(0, 3).join("/"); });

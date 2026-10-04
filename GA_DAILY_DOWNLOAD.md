@@ -61,14 +61,19 @@ python ingestor/ga_districts.py 2026
 python web/build_ga_districts.py
 ```
 ```bash
+python ingestor/ga_polling.py
+```
+```bash
+python analytics/check_ga_districts.py
+```
+```bash
 git add data/ga_districts web/ga && git commit -m "GA early-vote update" && git push
 ```
 
-**First time only:** the new scripts aren't in git yet, so the first commit also needs them:
-
-```bash
-git add ingestor/ga_districts.py web/build_ga_districts.py GA_DAILY_DOWNLOAD.md
-```
+- `ga_polling.py` refreshes the **View Polling Data** page (polls, averages, ratings, betting
+  odds) from public sources. **No download needed**, and it can be run any time, even on days you
+  skip the early-vote file. If a source is down it keeps the last good copy and says when that was fetched.
+- `check_ga_districts.py` should end with **ALL CHECKS PASSED**. If it fails, don't push; ask Claude.
 
 Vercel redeploys automatically a minute or two after the push.
 
@@ -82,8 +87,12 @@ election (a runoff/special) or the download was incomplete. Re-download.
 
 | File in `data/incoming/ga/` | What | Why |
 |---|---|---|
-| `GA_2024_general.zip` | Nov 5 2024 general, final | Comparison year for districts redrawn before 2024; precinct→district weights for the 2024 lean |
+| `GA_2024_general.zip` | Nov 5 2024 general, final | Comparison year for districts redrawn before 2024 |
 | `GA_2022_general.zip` | Nov 8 2022 general, final (**not** the Dec 6 runoff) | Comparison year for districts unchanged since 2022; redraw detection |
+
+Also `data/raw/medsl/ga24.csv`: MIT Election Lab's official 2024 Georgia precinct results, all races
+(from `ga24.zip` at github.com/MEDSL/2024-elections-official → `individual_states`). It gives each
+district's 2024 presidential lean and its 2024 State House / Senate result.
 
 Same page, Election Year `2024` → `11/5/2024 - NOVEMBER 5, 2024 - GENERAL ELECTION`,
 and `2022` → `11/8/2022 - 11/08/2022 GENERAL/SPECIAL ELECTION`, County blank.

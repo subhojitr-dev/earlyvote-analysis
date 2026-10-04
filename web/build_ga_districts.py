@@ -5,8 +5,8 @@ page (web/ga/).
 Combines
   data/ga_districts/early_{2022,2024,2026}.csv   (from ingestor/ga_districts.py)
   data/ga_districts/redraw.csv                   (lines-unchanged proxy)
-  data/ga_districts/xwalk_2024.csv               (precinct -> district weights)
-  election-forecast/data/raw/2024-PRESIDENT-precinct-general.csv   (lean)
+  data/ga_districts/xwalk_2024.csv               (precinct -> district weights; no longer used for lean)
+  data/raw/medsl/ga24.csv  MIT Election Lab 2024 GA precinct results, all offices (lean + 2024 race)
   Census 2024 cartographic boundaries in data/raw/geo/  (counties, SLDL, SLDU)
 into
   web/ga/state.json            county outlines + statewide summary
@@ -50,14 +50,14 @@ from shapely.ops import polylabel
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "ga_districts"
 GEO = ROOT / "data" / "raw" / "geo"
-PRES = ROOT.parent / "election-forecast" / "data" / "raw" / "2024-PRESIDENT-precinct-general.csv"
+RACE = {}
+MEDSL24 = ROOT / "data" / "raw" / "medsl" / "ga24.csv"   # github.com/MEDSL/2024-elections-official (ga24.zip)
 OUT = ROOT / "web" / "ga"
 
 SAME_MIN = 0.90          # >= 90% same voters => "lines unchanged" (movers add ~2-4% noise)
 DEMO_DAYS_OUT = 15       # demo snapshot = one week into early voting
 STATE_TOL = 0.004        # geometry simplification (degrees) for the state map
 COUNTY_TOL = 0.0006      # finer for the single-county map
-LEAN_MIN_COVERAGE = 0.90  # show lean only if >= 90% of the district's voters are matched
 MIN_COUNTY_SHARE = 0.005  # hide counties with < 0.5% of a district's ballots (address noise)
 MIN_PIECE = 0.003        # drop district pieces < 0.3% of the county's area (slivers)
 CHAMBERS = {"house": ("sldl", "SLDLST", "HD"), "senate": ("sldu", "SLDUST", "SD")}
@@ -98,46 +98,59 @@ def load_redraw():
 
 
 def load_lean():
-    """2024 presidential D/R votes per district, allocating each precinct by its
-    share of 2024 early voters in each district (handles split precincts)."""
-    w = defaultdict(lambda: defaultdict(float))            # (county, precinct, ch) -> {dist: voters}
-    for r in csv.DictReader((DATA / "xwalk_2024.csv").open(encoding="utf-8")):
-        w[(key(r["county"]), r["precinct"].upper(), r["chamber"])][r["district"]] += int(r["voters"])
-    votes = defaultdict(lambda: [0, 0])                    # (county, precinct) -> [D, R]
-    with PRES.open(encoding="utf-8") as fh:
+    """2024 presidential margin per district (two-party, D minus R, in points) plus
+    the actual 2024 State House / State Senate result, from MIT Election Lab's
+    official 2024 Georgia precinct file (all offices). Each precinct's district is
+    read from the State House / Senate contest on its own ballot, so no matching of
+    precinct names across files is needed. Precincts split between districts (~260)
+    are shared out by each district's share of that precinct's legislative vote.
+    Returns (lean, race): lean[(ch, d)] = margin; race[(ch, d)] = {...}."""
+    pres = defaultdict(lambda: [0, 0])                      # precinct -> [D, R]
+    leg = {ch: defaultdict(lambda: defaultdict(int)) for ch in CHAMBERS}   # ch -> precinct -> {dist: votes}
+    cand = {ch: defaultdict(lambda: defaultdict(lambda: [0, ""])) for ch in CHAMBERS}  # ch -> dist -> name -> [votes, party]
+    office = {"STATE HOUSE": "house", "STATE SENATE": "senate"}
+    with MEDSL24.open(encoding="utf-8") as fh:
         for r in csv.DictReader(fh):
-            if r["state"] != "GEORGIA" or r["office"] != "US PRESIDENT":
+            k, v = (r["county_name"], r["precinct"]), int(r["votes"] or 0)
+            if r["office"] == "US PRESIDENT":
+                i = {"DEMOCRAT": 0, "REPUBLICAN": 1}.get(r["party_simplified"])
+                if i is not None:
+                    pres[k][i] += v
+            elif r["office"] in office:
+                ch, d = office[r["office"]], str(int(r["district"]))
+                leg[ch][k][d] += v
+                c = cand[ch][d][r["candidate"]]
+                c[0] += v
+                c[1] = r["party_simplified"]
+    lean = {}
+    tot = sum(d + rep for d, rep in pres.values())
+    for ch in CHAMBERS:
+        acc, hit = defaultdict(lambda: [0.0, 0.0]), 0
+        for k, (dv, rv) in pres.items():
+            dist = leg[ch].get(k)
+            if not dist or not sum(dist.values()):
                 continue
-            i = {"DEMOCRAT": 0, "REPUBLICAN": 1}.get(r["party_simplified"])
-            if i is not None:
-                votes[(key(r["county_name"]), r["precinct"].upper())][i] += int(r["votes"] or 0)
-    lean = defaultdict(lambda: [0.0, 0.0])
-    # coverage: share of each district's 2024 early voters whose precinct we could
-    # match to a presidential result (precinct names vs codes differ by county)
-    have = {k for k in votes}
-    cov_all, cov_hit = defaultdict(float), defaultdict(float)
-    for (cty, pct, ch), dist in w.items():
-        for k, v in dist.items():
-            cov_all[(ch, k)] += v
-            if (cty, pct) in have:
-                cov_hit[(ch, k)] += v
-    matched = total = 0
-    for (cty, pct), (d, rep) in votes.items():
-        total += d + rep
-        hit = False
-        for ch in CHAMBERS:
-            dist = w.get((cty, pct, ch))
-            if not dist:
-                continue
-            hit = True
+            hit += dv + rv
             s = sum(dist.values())
-            for k, v in dist.items():
-                lean[(ch, k)][0] += d * v / s
-                lean[(ch, k)][1] += rep * v / s
-        matched += (d + rep) if hit else 0
-    print(f"lean: {matched / total:.1%} of 2024 presidential votes matched to districts")
-    return {k: round((d - r) / (d + r) * 100, 1) for k, (d, r) in lean.items()
-            if d + r and cov_hit[k] / cov_all[k] >= LEAN_MIN_COVERAGE}
+            for d, v in dist.items():
+                acc[d][0] += dv * v / s
+                acc[d][1] += rv * v / s
+        print(f"lean ({ch}): {hit / tot:.1%} of 2024 presidential votes placed in districts")
+        for d, (dv, rv) in acc.items():
+            if dv + rv:
+                lean[(ch, d)] = round((dv - rv) / (dv + rv) * 100, 1)
+    race = {}
+    for ch in CHAMBERS:
+        for d, cs in cand[ch].items():
+            top = sorted(cs.items(), key=lambda kv: -kv[1][0])
+            if len(top) < 2 or not top[1][1][0]:
+                race[(ch, d)] = {"contested": False, "winner": top[0][0].title(), "party": top[0][1][1][:1]}
+                continue
+            dv = sum(v for v, p in cs.values() if p == "DEMOCRAT")
+            rv = sum(v for v, p in cs.values() if p == "REPUBLICAN")
+            race[(ch, d)] = {"contested": True, "winner": top[0][0].title(), "party": top[0][1][1][:1],
+                             "margin": round((dv - rv) / (dv + rv) * 100, 1) if dv + rv else None}
+    return lean, race
 
 
 # ---------------------------------------------------------------- geometry
@@ -186,6 +199,7 @@ def district_stats(ch, d, cur, comp22, comp24, totals, days_out, redraw, lean, m
         "reason": "Same lines since 2022" if unchanged else "Redrawn before 2024",
         "same_pct": same,
         "lean": lean.get((ch, d)),
+        "race24": RACE.get((ch, d)),
         "now": now, "then": then,
         "share_now": share_now, "share_then": share_then,
         "pace": None if pace is None else round(pace, 4),
@@ -249,7 +263,8 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "county").mkdir(exist_ok=True)
     e22, e24, e26 = load_early(2022), load_early(2024), load_early(2026)
-    redraw, lean = load_redraw(), load_lean()
+    global RACE
+    redraw, (lean, RACE) = load_redraw(), load_lean()
 
     live_days = min((d for byc in e26["all"].values() for s in byc.values() for d in s), default=30)
     modes = {

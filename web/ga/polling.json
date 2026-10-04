@@ -1,0 +1,394 @@
+{
+ "updated": "2026-10-04T16:45+00:00",
+ "races": {
+  "senate": {
+   "title": "U.S. Senate",
+   "cands": [
+    {
+     "name": "Jon Ossoff",
+     "match": "Ossoff",
+     "party": "D",
+     "inc": true
+    },
+    {
+     "name": "Mike Collins",
+     "match": "Collins",
+     "party": "R"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "InsiderAdvantage (R)",
+     "dates": "September 22\u201323, 2026",
+     "sample": "1,200 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 50.0,
+     "R": 42.0
+    },
+    {
+     "pollster": "Big Data Poll (R)",
+     "dates": "September 21\u201323, 2026",
+     "sample": "678 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 52.0,
+     "R": 41.0
+    },
+    {
+     "pollster": "YouGov",
+     "dates": "September 15\u201318, 2026",
+     "sample": "3,301 (LV)",
+     "moe": "\u00b1 2.8%",
+     "D": 52.0,
+     "R": 42.0
+    },
+    {
+     "pollster": "Quantus Insights (R)",
+     "dates": "September 14\u201316, 2026",
+     "sample": "645 (LV)",
+     "moe": "\u00b1 4.3%",
+     "D": 48.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "Rasmussen Reports (R)",
+     "dates": "September 14, 2026",
+     "sample": "1,019 (LV)",
+     "moe": "\u00b1 3.0%",
+     "D": 51.0,
+     "R": 42.0
+    },
+    {
+     "pollster": "Trafalgar Group (R)",
+     "dates": "September 10\u201312, 2026",
+     "sample": "1,091 (LV)",
+     "moe": "\u00b1 2.9%",
+     "D": 49.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "InsiderAdvantage (R)",
+     "dates": "August 16\u201317, 2026",
+     "sample": "800 (LV)",
+     "moe": "\u00b1 3.5%",
+     "D": 50.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "Fabrizio Ward (R)/Impact Research (D)",
+     "dates": "July 13\u201316, 2026",
+     "sample": "1,060 (LV)",
+     "moe": "\u00b1 3.0%",
+     "D": 52.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "Wick",
+     "dates": "June 27\u201330, 2026",
+     "sample": "1,175 (LV)",
+     "moe": "\u00b1 2.9%",
+     "D": 47.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "Beacon Research (D)/ Shaw & Co. Research (R)",
+     "dates": "June 23\u201327, 2026",
+     "sample": "1,002 (RV)",
+     "moe": "\u00b1 3.0%",
+     "D": 56.0,
+     "R": 43.0
+    }
+   ],
+   "averages": [
+    {
+     "source": "270toWin",
+     "dates": "September 14 \u2013 23, 2026",
+     "updated": "September 23, 2026",
+     "D": 50.0,
+     "R": 43.3
+    },
+    {
+     "source": "Decision Desk HQ",
+     "dates": "through September 18, 2026",
+     "updated": "September 23, 2026",
+     "D": 49.9,
+     "R": 42.7
+    },
+    {
+     "source": "FiftyPlusOne",
+     "dates": "through September 18, 2026",
+     "updated": "September 23, 2026",
+     "D": 51.2,
+     "R": 42.2
+    },
+    {
+     "source": "RealClearPolitics",
+     "dates": "July 13 \u2013 September 18, 2026",
+     "updated": "September 23, 2026",
+     "D": 50.5,
+     "R": 43.0
+    },
+    {
+     "source": "Silver Bulletin",
+     "dates": "through September 18, 2026",
+     "updated": "September 23, 2026",
+     "D": 51.1,
+     "R": 42.9
+    }
+   ],
+   "ratings": [
+    {
+     "source": "The Cook Political Report",
+     "rating": "Likely D",
+     "as_of": "September 23, 2026"
+    },
+    {
+     "source": "Sabato's Crystal Ball",
+     "rating": "Likely D",
+     "as_of": "September 22, 2026"
+    },
+    {
+     "source": "Inside Elections",
+     "rating": "Lean D",
+     "as_of": "October 1, 2026"
+    },
+    {
+     "source": "Decision Desk HQ",
+     "rating": "Likely D",
+     "as_of": "October 2, 2026"
+    },
+    {
+     "source": "Silver Bulletin",
+     "rating": "Safe D",
+     "as_of": "October 3, 2026"
+    }
+   ],
+   "average_of_averages": {
+    "D": 50.6,
+    "R": 42.8
+   },
+   "poll_avg": {
+    "D": 50.7,
+    "R": 42.6
+   },
+   "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+   "wiki_fetched": "2026-10-04T16:45+00:00",
+   "markets": [
+    {
+     "source": "Kalshi",
+     "url": "https://kalshi.com",
+     "D": 96.2,
+     "R": 4.4,
+     "fetched": "2026-10-04T16:45+00:00"
+    },
+    {
+     "source": "Polymarket",
+     "url": "https://polymarket.com/event/georgia-senate-election-winner",
+     "D": 97.2,
+     "R": 2.9,
+     "fetched": "2026-10-04T16:45+00:00"
+    },
+    {
+     "source": "PredictIt",
+     "url": "https://www.predictit.org/markets/detail/8156/Which-party-will-win-the-2026-US-Senate-election-in-Georgia",
+     "D": 94.0,
+     "R": 7.0,
+     "fetched": "2026-10-04T16:45+00:00"
+    }
+   ]
+  },
+  "governor": {
+   "title": "Governor",
+   "cands": [
+    {
+     "name": "Keisha Lance Bottoms",
+     "match": "Bottoms",
+     "party": "D"
+    },
+    {
+     "name": "Rick Jackson",
+     "match": "Jackson",
+     "party": "R"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "Wedgewood Polls",
+     "dates": "October 2\u20133, 2026",
+     "sample": "600 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 49.0,
+     "R": 51.0
+    },
+    {
+     "pollster": "InsiderAdvantage (R)",
+     "dates": "September 22\u201323, 2026",
+     "sample": "1,200 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 46.0,
+     "R": 48.0
+    },
+    {
+     "pollster": "Big Data Poll (R)",
+     "dates": "September 21\u201323, 2026",
+     "sample": "678 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 47.0,
+     "R": 49.0
+    },
+    {
+     "pollster": "YouGov",
+     "dates": "September 15\u201318, 2026",
+     "sample": "3,299 (LV)",
+     "moe": "\u00b1 2.8%",
+     "D": 44.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "Rasmussen Reports (R)",
+     "dates": "September 14, 2026",
+     "sample": "1,019 (LV)",
+     "moe": "\u00b1 3%",
+     "D": 45.0,
+     "R": 48.0
+    },
+    {
+     "pollster": "InsiderAdvantage (R)",
+     "dates": "August 16\u201317, 2026",
+     "sample": "800 (LV)",
+     "moe": "\u00b1 3.4%",
+     "D": 46.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "Quantus Insights (R)",
+     "dates": "July 29 \u2013 August 1, 2026",
+     "sample": "815 (LV)",
+     "moe": "\u00b1 3.6%",
+     "D": 46.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "Fabrizio Ward (R)/Impact Research (D)",
+     "dates": "July 13\u201316, 2026",
+     "sample": "1,060 (LV)",
+     "moe": "\u00b1 3.0%",
+     "D": 48.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "State Navigate",
+     "dates": "July 10\u201313, 2026",
+     "sample": "448 (LV)",
+     "moe": "\u00b1 4.6%",
+     "D": 50.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "Wick",
+     "dates": "June 27\u201330, 2026",
+     "sample": "1,175 (LV)",
+     "moe": "\u00b1 2.9%",
+     "D": 43.0,
+     "R": 43.0
+    }
+   ],
+   "averages": [
+    {
+     "source": "270toWin",
+     "dates": "September 23\u201325, 2026",
+     "updated": "September 27, 2026",
+     "D": 45.0,
+     "R": 47.0
+    },
+    {
+     "source": "Decision Desk HQ",
+     "dates": "through September 23, 2026",
+     "updated": "September 27, 2026",
+     "D": 45.6,
+     "R": 46.9
+    },
+    {
+     "source": "FiftyPlusOne",
+     "dates": "through September 23, 2026",
+     "updated": "September 27, 2026",
+     "D": 47.2,
+     "R": 44.7
+    },
+    {
+     "source": "RealClearPolitics",
+     "dates": "July 13 \u2013 September 18, 2026",
+     "updated": "September 23, 2026",
+     "D": 46.5,
+     "R": 47.2
+    },
+    {
+     "source": "Silver Bulletin",
+     "dates": "through September 23, 2026",
+     "updated": "September 27, 2026",
+     "D": 46.2,
+     "R": 46.7
+    }
+   ],
+   "ratings": [
+    {
+     "source": "The Cook Political Report",
+     "rating": "Toss-up",
+     "as_of": "September 17, 2026"
+    },
+    {
+     "source": "Sabato's Crystal Ball",
+     "rating": "Toss-up",
+     "as_of": "September 4, 2025"
+    },
+    {
+     "source": "Inside Elections",
+     "rating": "Toss-up",
+     "as_of": "September 17, 2026"
+    },
+    {
+     "source": "Decision Desk HQ",
+     "rating": "Toss-up",
+     "as_of": "September 24, 2026"
+    },
+    {
+     "source": "Silver Bulletin",
+     "rating": "Lean D (flip)",
+     "as_of": "October 3, 2026"
+    }
+   ],
+   "average_of_averages": {
+    "D": 46.1,
+    "R": 46.5
+   },
+   "poll_avg": {
+    "D": 46.4,
+    "R": 46.5
+   },
+   "url": "https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election",
+   "wiki_fetched": "2026-10-04T16:45+00:00",
+   "markets": [
+    {
+     "source": "Kalshi",
+     "url": "https://kalshi.com",
+     "D": 48.0,
+     "R": 54.0,
+     "fetched": "2026-10-04T16:45+00:00"
+    },
+    {
+     "source": "Polymarket",
+     "url": "https://polymarket.com/event/georgia-governor-winner-2026",
+     "D": 45.5,
+     "R": 54.5,
+     "fetched": "2026-10-04T16:45+00:00"
+    },
+    {
+     "source": "PredictIt",
+     "url": "https://www.predictit.org/markets/detail/8416/Which-party-will-win-the-2026-election-for-governor-of-Georgia",
+     "R": 56.0,
+     "D": 47.0,
+     "fetched": "2026-10-04T16:45+00:00"
+    }
+   ]
+  }
+ }
+}

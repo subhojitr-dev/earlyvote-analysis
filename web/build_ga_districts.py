@@ -317,7 +317,8 @@ def main():
                                "continues": round(1 - inter.area / g.area, 3) > 0.01})
         cdata = {"county": ck, "name": cname, "outline": rings(cgeom, COUNTY_TOL),
                  "pieces": pieces, "modes": {}}
-        summary = {"county": ck, "name": cname, "rings": rings(cgeom, STATE_TOL), "modes": {}}
+        summary = {"county": ck, "name": cname, "rings": rings(cgeom, STATE_TOL),
+                   "label_at": label_pt(cgeom), "modes": {}}
         for m, (dd, totals, stats) in modes.items():
             ds = {k: stats[k] for k in dists if k in stats}
             cdata["modes"][m] = {"days_out": dd, "districts": ds}

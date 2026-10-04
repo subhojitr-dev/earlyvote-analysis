@@ -42,6 +42,7 @@
   svg.map path.cont{stroke-dasharray:4 3}
   svg.map text{fill:#0b0f17;font-weight:700;pointer-events:none;text-anchor:middle;dominant-baseline:central;
     paint-order:stroke;stroke:rgba(255,255,255,.55);stroke-width:2.5px}
+  svg.map text.cname{font-weight:600;stroke-width:2px}
   svg.map path.outline{fill:none;stroke:var(--ink);stroke-width:1.4;pointer-events:none}
   .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin-top:8px;align-items:center}
   .sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px}
@@ -227,6 +228,12 @@ function viewState(){
     const rows = [...st.counties].sort((a,b) => a.name.localeCompare(b.name)).map(c => {
       const cm = c.modes[S.mode], bm = cm.now_by_mode || {};
       return `<tr data-c="${c.county}"><td>${esc(c.name)}</td><td>${cm.n ? `${cm.ahead} of ${cm.n}` : "–"}</td><td>${fmt(cm.now)}</td><td>${fmt(bm.inperson)}</td><td>${fmt(bm.mail)}</td></tr>`;
+    }).join("");
+    labels = st.counties.map(c => {                // every county named; font scales with its size
+      if (!c.label_at) return "";
+      const [w,h] = P.box(c.rings), sz = Math.max(6, Math.min(11, h/2.5, w*0.95/(c.name.length*0.58)));
+      const [x,y] = P(c.label_at);
+      return `<text class="cname" x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="${sz.toFixed(1)}">${esc(c.name)}</text>`;
     }).join("");
     headline = `<span class="n">${m.house_ahead}</span> of ${m.house_n} Georgia House districts are ahead of pace`;
     hint = "Click a county to see its State House and State Senate districts, or switch the map to show districts.";

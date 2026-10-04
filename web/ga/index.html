@@ -199,38 +199,95 @@ const HOWTO = `<div class="howto"><b>How to read this.</b> Each district's early
   The same comparison is shown for <b>all early votes</b>, and separately for <b>in-person</b> and <b>mail</b> votes.</div>`;
 
 // ---------- views ----------
+const CHS = {house:"HD", senate:"SD"};
+const fullName = (ch, n) => `State ${CH[ch]} District ${n}`;
+const KEY = `<span class="muted" style="font-size:12px">HD = State House District · SD = State Senate District</span>`;
+
+function measureSeg(){
+  return `<div class="seg" id="msSeg" title="Which votes colour the map">${Object.entries(MEAS).map(([k,v]) => `<button data-ms="${k}">${v}</button>`).join("")}</div>`;
+}
+function wireMeasure(){
+  document.querySelectorAll("#msSeg button").forEach(b => {
+    b.classList.toggle("on", b.dataset.ms === S.measure);
+    b.onclick = () => { S.measure = b.dataset.ms; route(); };
+  });
+}
+
 function viewState(){
-  const st = S.state, m = st.modes[S.mode];
+  const st = S.state, m = st.modes[S.mode], layer = S.layer || "counties";
   const P = projector(st.counties.map(c => c.rings), 760);
-  const paths = st.counties.map(c => {
-    const cm = c.modes[S.mode], f = cm.n ? cm.ahead/cm.n : null;
-    return `<path d="${P.d(c.rings)}" fill="${shareColor(f)}" data-c="${c.county}"></path>`;
-  }).join("");
-  const rows = [...st.counties].sort((a,b) => a.name.localeCompare(b.name)).map(c => {
-    const cm = c.modes[S.mode];
-    const bm = cm.now_by_mode || {};
-    return `<tr data-c="${c.county}"><td>${esc(c.name)}</td><td>${cm.n ? `${cm.ahead} of ${cm.n}` : "–"}</td><td>${fmt(cm.now)}</td><td>${fmt(bm.inperson)}</td><td>${fmt(bm.mail)}</td></tr>`;
-  }).join("");
-  $("#app").innerHTML = modeBanner() + HOWTO + `
-    <div class="headline"><span class="n">${m.house_ahead}</span> of ${m.house_n} Georgia House districts are ahead of pace</div>
-    <div class="muted" style="margin-bottom:12px">Click a county to see its State House and State Senate districts.</div>
-    <div class="grid">
-      <div class="panel"><svg class="map" viewBox="0 0 ${P.W} ${P.H}">${paths}</svg>
-        <div class="legend"><span><span class="sw" style="background:rgba(45,212,191,.9)"></span>most districts ahead</span>
-        <span><span class="sw" style="background:rgba(251,146,60,.9)"></span>most districts behind</span>
-        <span><span class="sw" style="background:var(--none)"></span>no comparison</span></div></div>
-      <div class="panel"><h3>Counties</h3><input class="search" placeholder="Find a county…" id="q">
+  const layerSeg = `<div class="seg" id="laySeg">
+      <button data-l="counties">Counties</button><button data-l="house">State House districts</button><button data-l="senate">State Senate districts</button></div>`;
+  let paths, labels = "", panel, headline, hint;
+  if (layer === "counties") {
+    paths = st.counties.map(c => {
+      const cm = c.modes[S.mode], f = cm.n ? cm.ahead/cm.n : null;
+      return `<path d="${P.d(c.rings)}" fill="${shareColor(f)}" data-c="${c.county}"></path>`;
+    }).join("");
+    const rows = [...st.counties].sort((a,b) => a.name.localeCompare(b.name)).map(c => {
+      const cm = c.modes[S.mode], bm = cm.now_by_mode || {};
+      return `<tr data-c="${c.county}"><td>${esc(c.name)}</td><td>${cm.n ? `${cm.ahead} of ${cm.n}` : "–"}</td><td>${fmt(cm.now)}</td><td>${fmt(bm.inperson)}</td><td>${fmt(bm.mail)}</td></tr>`;
+    }).join("");
+    headline = `<span class="n">${m.house_ahead}</span> of ${m.house_n} Georgia House districts are ahead of pace`;
+    hint = "Click a county to see its State House and State Senate districts, or switch the map to show districts.";
+    panel = `<h3>Counties</h3><input class="search" placeholder="Find a county…" id="q">
         <div class="tablewrap"><table><thead><tr><th>County</th><th>House districts ahead</th><th>All early votes</th><th>In-person</th><th>Mail</th></tr></thead>
-        <tbody id="ctab">${rows}</tbody></table></div></div>
+        <tbody id="ctab">${rows}</tbody></table></div>`;
+  } else {
+    const ds = st.districts.filter(d => d.chamber === layer), dst = m.dstats;
+    const pc = d => { const x = dst[`${d.chamber}:${d.district}`]; return !x ? null : S.measure === "all" ? x.pace : x[S.measure]; };
+    paths = ds.map(d => `<path d="${P.d(d.rings)}" fill="${paceColor(pc(d))}" data-d="${d.chamber}:${d.district}"></path>`).join("");
+    labels = ds.map(d => {
+      const [w,h] = P.box(d.rings); if (Math.min(w,h) < 30) return "";
+      const [x,y] = P(d.label_at), sz = Math.max(8, Math.min(12, Math.min(w,h)/4));
+      return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="${sz.toFixed(0)}">${CHS[layer]} ${d.district}</text>`;
+    }).join("");
+    const withP = ds.filter(d => pc(d) != null), ahead = withP.filter(d => pc(d) > 0).length;
+    headline = `<span class="n">${ahead}</span> of ${withP.length} Georgia State ${CH[layer]} districts are ahead of pace${S.measure === "all" ? "" : ` <span class="muted" style="font-size:15px">(${MEAS[S.measure].toLowerCase()} votes)</span>`}`;
+    hint = `Hover a district for its name; click it to open it. Metro Atlanta districts are small, so click a county or use the list to find them. ${KEY}`;
+    const rows = ds.map(d => `<tr data-d="${d.chamber}:${d.district}"><td><b>${fullName(d.chamber, d.district)}</b></td>
+        <td class="pace ${paceCls(pc(d))}">${paceShort(pc(d))}</td><td>${leanBadge(d.lean)}</td>
+        <td class="muted">${esc(d.counties.slice(0,3).map(title).join(", "))}${d.counties.length > 3 ? ` +${d.counties.length - 3}` : ""}</td></tr>`).join("");
+    panel = `<h3>State ${CH[layer]} districts</h3><input class="search" placeholder="Find a district number or county…" id="q">
+        <div class="tablewrap"><table><thead><tr><th>District</th><th>vs pace</th><th>Leans</th><th>Counties</th></tr></thead>
+        <tbody id="ctab">${rows}</tbody></table></div>`;
+  }
+  $("#app").innerHTML = modeBanner() + HOWTO + `
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:8px">
+      <div class="muted" style="font-size:12.5px">Show on map:</div>${layerSeg}${layer === "counties" ? "" : measureSeg()}</div>
+    <div class="headline">${headline}</div>
+    <div class="muted" style="margin-bottom:12px">${hint}</div>
+    <div class="grid">
+      <div class="panel"><svg class="map" viewBox="0 0 ${P.W} ${P.H}">${paths}${labels}</svg>
+        <div class="legend"><span><span class="sw" style="background:rgba(45,212,191,.9)"></span>${layer === "counties" ? "most districts ahead" : "ahead of pace"}</span>
+        <span><span class="sw" style="background:rgba(251,146,60,.9)"></span>${layer === "counties" ? "most districts behind" : "behind pace"}</span>
+        <span><span class="sw" style="background:var(--none)"></span>no comparison yet</span></div></div>
+      <div class="panel">${panel}</div>
     </div>`;
+  document.querySelectorAll("#laySeg button").forEach(b => {
+    b.classList.toggle("on", b.dataset.l === layer);
+    b.onclick = () => { S.layer = b.dataset.l; route(); };
+  });
+  wireMeasure();
   const byKey = Object.fromEntries(st.counties.map(c => [c.county, c]));
   document.querySelectorAll("[data-c]").forEach(el => {
     el.onclick = () => location.hash = `#/c/${el.dataset.c}`;
     if (el.tagName === "path") {
       el.onmousemove = e => { const c = byKey[el.dataset.c], cm = c.modes[S.mode];
-        showTip(e, `<b>${esc(c.name)}</b><br>${cm.n ? `${cm.ahead} of ${cm.n} House districts ahead` : "No comparison yet"}`); };
+        showTip(e, `<b>${esc(c.name)} County</b><br>${cm.n ? `${cm.ahead} of ${cm.n} House districts ahead` : "No comparison yet"}`); };
       el.onmouseleave = hideTip;
     }
+  });
+  const dByKey = Object.fromEntries(st.districts.map(d => [`${d.chamber}:${d.district}`, d]));
+  const hi = (k, on) => document.querySelectorAll(`[data-d="${k}"]`).forEach(el => el.classList.toggle("hi", on));
+  document.querySelectorAll("[data-d]").forEach(el => {
+    const k = el.dataset.d, d = dByKey[k];
+    el.onclick = () => { S.chamber = d.chamber; location.hash = `#/c/${d.county}/${d.chamber}/${d.district}`; };
+    el.onmouseenter = () => hi(k, true);
+    el.onmouseleave = () => { hi(k, false); hideTip(); };
+    if (el.tagName === "path") el.onmousemove = e => {
+      const x = m.dstats[k] || {}, p = S.measure === "all" ? x.pace : x[S.measure];
+      showTip(e, `<b>${fullName(d.chamber, d.district)}</b><br>${paceText(p, d.comp_year)}<br>Leans ${leanText(d.lean) || "n/a"}<br><span class="muted">${esc(d.counties.map(title).join(", "))}</span>`); };
   });
   $("#q").oninput = e => { const q = e.target.value.toLowerCase();
     document.querySelectorAll("#ctab tr").forEach(tr => tr.style.display = tr.textContent.toLowerCase().includes(q) ? "" : "none"); };
@@ -254,13 +311,13 @@ function viewCounty(cd){
   }).join("");
   const labels = pieces.map(p => {
     const [w,h] = P.box(p.rings), sz = Math.max(9, Math.min(15, Math.min(w,h)/3.2));
-    if (Math.min(w,h) < 22) return "";            // too small to label: use the table
+    if (Math.min(w,h) < 30) return "";            // too small to label: use the table
     const [x,y] = P(p.label_at);
-    return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="${sz.toFixed(0)}">${p.district}${p.continues ? "↗" : ""}</text>`;
+    return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="${sz.toFixed(0)}">${CHS[p.chamber]} ${p.district}${p.continues ? "↗" : ""}</text>`;
   }).join("");
   const withPace = list.filter(d => pm(d) != null), ahead = withPace.filter(d => pm(d) > 0).length;
   const rows = list.map(d => `<tr data-k="${d.chamber}:${d.district}">
-      <td><b>${d.label}</b>${d.by_county.length > 1 ? ` <span class="muted" title="Continues into ${d.by_county.length - 1} other ${d.by_county.length > 2 ? "counties" : "county"}">↗</span>` : ""}</td>
+      <td><b>${fullName(d.chamber, d.district)}</b>${d.by_county.length > 1 ? ` <span class="muted" title="Continues into ${d.by_county.length - 1} other ${d.by_county.length > 2 ? "counties" : "county"}">↗</span>` : ""}</td>
       <td class="pace ${paceCls(d.pace)}">${paceShort(d.pace)}</td>
       <td class="pace ${paceCls(pm(d,"inperson"))}">${paceShort(pm(d,"inperson"))}</td>
       <td class="pace ${paceCls(pm(d,"mail"))}">${paceShort(pm(d,"mail"))}</td>
@@ -269,9 +326,10 @@ function viewCounty(cd){
     <div class="crumbs"><a href="#/">Georgia</a> › ${esc(cd.name)} County</div>
     <div style="display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;margin-bottom:12px">
       <div><div class="headline">${esc(cd.name)}: <span class="n">${ahead}</span> of ${withPace.length} State ${CH[S.chamber]} districts ahead of pace${S.measure === "all" ? "" : ` <span class="muted" style="font-size:15px">(${MEAS[S.measure].toLowerCase()} votes)</span>`}</div>
-      <div class="muted">Click a district on the map or in the table. Districts marked ↗ (dashed edge) continue into another county; their numbers cover the whole district.</div></div>
+      <div class="muted">Click a district on the map or in the table. Districts marked ↗ (dashed edge) continue into another county; their numbers cover the whole district.</div>
+      <div style="margin-top:4px">${KEY}</div></div>
       <div class="sp" style="flex:1"></div>
-      <div class="seg" id="msSeg" title="Which votes colour the map">${Object.entries(MEAS).map(([k,v]) => `<button data-ms="${k}">${v}</button>`).join("")}</div>
+      ${measureSeg()}
       <div class="seg" id="chSeg"><button data-ch="house">State House</button><button data-ch="senate">State Senate</button></div>
     </div>
     <div class="grid">
@@ -283,10 +341,7 @@ function viewCounty(cd){
         <div class="tablewrap"><table><thead><tr><th>District</th><th>All early votes</th><th>In-person</th><th>Mail</th><th>Compared with</th><th>Leans</th></tr></thead>
         <tbody>${rows}</tbody></table></div></div>
     </div>`;
-  document.querySelectorAll("#msSeg button").forEach(b => {
-    b.classList.toggle("on", b.dataset.ms === S.measure);
-    b.onclick = () => { S.measure = b.dataset.ms; route(); };
-  });
+  wireMeasure();
   document.querySelectorAll("#chSeg button").forEach(b => {
     b.classList.toggle("on", b.dataset.ch === S.chamber);
     b.onclick = () => { S.chamber = b.dataset.ch; location.hash = `#/c/${cd.county}`; route(); };
@@ -298,7 +353,7 @@ function viewCounty(cd){
     el.onmouseenter = () => hi(k, true);
     el.onmouseleave = () => { hi(k, false); hideTip(); };
     if (el.tagName === "path") el.onmousemove = e => { const s = ds[k];
-      showTip(e, `<b>${s ? s.label : k}</b><br>${s ? paceText(s.pace, s.comp_year) : ""}${s && S.measure !== "all" ? `<br>${MEAS[S.measure]}: ${paceText(pm(s), s.comp_year)}` : ""}`); };
+      showTip(e, `<b>${s ? fullName(s.chamber, s.district) : k}</b><br>${s ? paceText(s.pace, s.comp_year) : ""}${s && S.measure !== "all" ? `<br>${MEAS[S.measure]}: ${paceText(pm(s), s.comp_year)}` : ""}`); };
   });
 }
 
@@ -316,7 +371,7 @@ function viewDetail(cd, k){
       `<a href="#/c/${b.county}/${k.replace(":", "/")}">${esc(title(b.county))}</a>`}</td>
       <td>${fmt(b.now)}</td><td>${fmt(b.now_inperson)}</td><td>${fmt(b.now_mail)}</td><td>${s.now ? Math.round(b.now/s.now*100) + "%" : "–"}</td><td>${fmt(b.then)}</td></tr>`).join("");
   box.innerHTML = `<button class="x" onclick="location.hash='#/c/${cd.county}'">Close ✕</button>
-    <h2>${s.label}</h2>
+    <h2>${fullName(s.chamber, s.district)}</h2>
     <div class="reason">Compared with: ${s.comp_year} (${s.reason === "Redrawn before 2024" ? "district redrawn before 2024" : "same lines since 2022"})</div>
     <div class="muted" style="font-size:12px">All early votes</div>
     <div class="big pace ${paceCls(s.pace)}">${paceText(s.pace, s.comp_year)}</div>

@@ -280,7 +280,26 @@ def main():
     for m, (dd, totals, stats) in modes.items():
         state["modes"][m] = {"days_out": dd, "totals": totals,
                              "house_ahead": sum(1 for s in stats.values() if s["chamber"] == "house" and (s["pace"] or 0) > 0),
-                             "house_n": sum(1 for s in stats.values() if s["chamber"] == "house" and s["pace"] is not None)}
+                             "house_n": sum(1 for s in stats.values() if s["chamber"] == "house" and s["pace"] is not None),
+                             # compact per-district numbers for the statewide district maps
+                             "dstats": {k: {"pace": s["pace"], "inperson": s["by_mode"]["inperson"]["pace"],
+                                            "mail": s["by_mode"]["mail"]["pace"], "now": s["now"]}
+                                        for k, s in stats.items()}}
+
+    # statewide district outlines (House + Senate) for the Georgia map's district views;
+    # each links to the county holding most of its early votes
+    live_stats = modes["live"][2]
+    state["districts"] = []                     # county = most comparison-year early votes
+    for ch, shapes in dshapes.items():
+        for st, g in sorted(shapes.items(), key=lambda kv: int(kv[0])):
+            d = str(int(st))
+            s = modes["demo"][2].get(f"{ch}:{d}") or live_stats.get(f"{ch}:{d}") or {}   # demo = full comparison-year counts
+            bc = s.get("by_county") or []
+            main = max(bc, key=lambda b: b["then"])["county"] if bc else None
+            state["districts"].append({
+                "chamber": ch, "district": d, "rings": rings(g, STATE_TOL), "label_at": label_pt(g),
+                "lean": s.get("lean"), "comp_year": s.get("comp_year"), "county": main,
+                "counties": [b["county"] for b in bc]})
 
     for ck, (cgeom, cname) in sorted(counties.items()):
         pieces, dists = [], set()

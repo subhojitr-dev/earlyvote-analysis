@@ -13,9 +13,11 @@ https://mvp.sos.ga.gov/s/voter-absentee-files):
     (a single-county CSV such as FULTON_2026_general.csv also works)
 
 Outputs (data/ga_districts/, small, committed):
-    early_{year}.csv      county, chamber, district, days_out, ballots
-                          accepted early in-person + mail ballots, by the number
-                          of days before Election Day they were cast/returned
+    early_{year}.csv      county, chamber, district, mode, days_out, ballots
+                          accepted ballots by the number of days before Election
+                          Day they were cast/returned; mode = inperson (EARLY
+                          IN-PERSON) or mail (ABSENTEE BY MAIL + ELECTRONIC BALLOT
+                          DELIVERY, i.e. mostly military/overseas)
     xwalk_2024.csv        county, precinct, chamber, district, voters
                           precinct -> district weights (2024 early voters), used
                           to put 2024 presidential precinct results into districts
@@ -43,6 +45,7 @@ OUT = ROOT / "data" / "ga_districts"
 
 ELECTION_DAY = {2022: date(2022, 11, 8), 2024: date(2024, 11, 5), 2026: date(2026, 11, 3)}
 CHAMBERS = {"house": "HOUSE", "senate": "SEN"}
+MODES = {"EARLY IN-PERSON": "inperson", "ABSENTEE BY MAIL": "mail", "ELECTRONIC BALLOT DELIVERY": "mail"}
 
 
 def _dist(v: str) -> str | None:
@@ -73,7 +76,8 @@ def _rows(year: int):
 
 def aggregate(year: int, keep_ids: bool = False):
     eday = ELECTION_DAY[year]
-    early = Counter()                      # (county, chamber, district, days_out) -> n
+    early = Counter()                      # (county, chamber, district, mode, days_out) -> n
+    other = Counter()                      # unrecognised ballot styles (reported, not counted)
     xwalk = Counter()                      # (county, precinct, chamber, district) -> n
     ids = {}                               # reg# -> (house, senate)   [in memory only]
     n = 0
@@ -87,6 +91,10 @@ def aggregate(year: int, keep_ids: bool = False):
         days_out = (eday - d).days
         if days_out < 0:
             continue
+        mode = MODES.get((r.get("Ballot Style") or "").strip().upper())
+        if mode is None:
+            other[r.get("Ballot Style")] += 1
+            continue
         county = r["County"].strip().upper()
         n += 1
         dists = {}
@@ -95,11 +103,13 @@ def aggregate(year: int, keep_ids: bool = False):
             dists[ch] = dist
             if dist is None:
                 continue
-            early[(county, ch, dist, days_out)] += 1
+            early[(county, ch, dist, mode, days_out)] += 1
             if year == 2024:
                 xwalk[(county, r.get("County Precinct", "").strip(), ch, dist)] += 1
         if keep_ids:
             ids[r["Voter Registration #"]] = (dists["house"], dists["senate"])
+    if other:
+        print(f"{year}: skipped unrecognised ballot styles: {dict(other)}")
     return n, early, xwalk, ids
 
 
@@ -117,7 +127,7 @@ def main(years: list[int]):
     for y in years:
         n, early, xwalk, ids = aggregate(y, keep_ids=need_redraw and y in (2022, 2024))
         print(f"{y}: {n:,} accepted early/mail ballots")
-        _write(OUT / f"early_{y}.csv", ["county", "chamber", "district", "days_out", "ballots"],
+        _write(OUT / f"early_{y}.csv", ["county", "chamber", "district", "mode", "days_out", "ballots"],
                sorted((*k, v) for k, v in early.items()))
         if y == 2024:
             _write(OUT / "xwalk_2024.csv", ["county", "precinct", "chamber", "district", "voters"],

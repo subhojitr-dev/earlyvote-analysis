@@ -71,6 +71,9 @@
   .detail .lean{margin:10px 0 14px;font-size:14px}
   .detail details{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}
   .detail summary{cursor:pointer;color:var(--accent);font-weight:600}
+  .modes{margin:8px 0 4px;padding:8px 10px;background:var(--panel2);border-radius:8px}
+  .ml{display:grid;grid-template-columns:78px 1fr auto;gap:8px;font-size:13px;padding:3px 0;align-items:baseline}
+  .ml .mn{color:var(--muted)}
   .kv{display:grid;grid-template-columns:1fr auto;gap:4px 12px;margin:10px 0;font-size:13px}
   .kv div:nth-child(odd){color:var(--muted)}
   .tip{position:fixed;pointer-events:none;background:#0b0f17;border:1px solid var(--line);border-radius:8px;
@@ -93,7 +96,7 @@
 <div class="tip" id="tip"></div>
 
 <script>
-const S = {state:null, county:{}, mode:null, chamber:"house", sel:null};
+const S = {state:null, county:{}, mode:null, chamber:"house", measure:"all", sel:null};
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmt = n => n == null ? "–" : n.toLocaleString("en-US");
@@ -102,7 +105,7 @@ const CH = {house:"House", senate:"Senate"};
 
 // ---------- wording (kept identical everywhere) ----------
 function paceText(p, yr){
-  if (p == null) return "No comparison yet";
+  if (p == null) return "Too few votes to compare yet";
   const v = Math.round(Math.abs(p)*100);
   if (v === 0) return `On ${yr}'s pace`;
   return `${p > 0 ? "Ahead of" : "Behind"} ${yr}'s pace by ${v}%`;
@@ -110,6 +113,15 @@ function paceText(p, yr){
 function paceCls(p){ const v = p == null ? 0 : Math.round(p*100); return v > 0 ? "up" : v < 0 ? "down" : ""; }
 function paceShort(p){ if (p == null) return "–"; const v = Math.round(p*100);
   return v === 0 ? "even" : (v > 0 ? "▲ " : "▼ ") + Math.abs(v) + "%"; }
+const MEAS = {all:"All early votes", inperson:"In-person", mail:"Mail"};
+// pace for the chosen measure: overall, early in-person only, or mail only
+function pm(s, m = S.measure){ return !s ? null : m === "all" ? s.pace : (s.by_mode[m] || {}).pace; }
+function modeLine(name, b, yr){
+  if (!b) return "";
+  const what = b.pace != null ? `<span class="pace ${paceCls(b.pace)}">${paceText(b.pace, yr)}</span>`
+    : `<span class="muted">${b.now ? "too few ballots to compare yet" : "none cast yet"}</span>`;
+  return `<div class="ml"><span class="mn">${name}</span>${what}<span class="muted">${fmt(b.now)} votes</span></div>`;
+}
 function leanText(l){ return l == null ? null : (l >= 0 ? "D +" : "R +") + Math.abs(l).toFixed(0); }
 function leanBadge(l){ return l == null ? '<span class="muted">n/a</span>' :
   `<span class="badge ${l >= 0 ? "D" : "R"}">${leanText(l)}</span>`; }
@@ -164,7 +176,8 @@ function modeBanner(){
 const HOWTO = `<div class="howto"><b>How to read this.</b> Each district's early voting is compared with the
   <b>last election held on the same district lines</b>, at the same point in early voting.
   "Ahead by 8%" means the district makes up a bigger slice of Georgia's early vote than it did then.
-  Districts redrawn before the 2024 election are compared with 2024; districts with the same lines since 2022 are compared with 2022.</div>`;
+  Districts redrawn before the 2024 election are compared with 2024; districts with the same lines since 2022 are compared with 2022.
+  The same comparison is shown for <b>all early votes</b>, and separately for <b>in-person</b> and <b>mail</b> votes.</div>`;
 
 // ---------- views ----------
 function viewState(){
@@ -176,7 +189,8 @@ function viewState(){
   }).join("");
   const rows = [...st.counties].sort((a,b) => a.name.localeCompare(b.name)).map(c => {
     const cm = c.modes[S.mode];
-    return `<tr data-c="${c.county}"><td>${esc(c.name)}</td><td>${cm.n ? `${cm.ahead} of ${cm.n}` : "–"}</td><td>${fmt(cm.now)}</td></tr>`;
+    const bm = cm.now_by_mode || {};
+    return `<tr data-c="${c.county}"><td>${esc(c.name)}</td><td>${cm.n ? `${cm.ahead} of ${cm.n}` : "–"}</td><td>${fmt(cm.now)}</td><td>${fmt(bm.inperson)}</td><td>${fmt(bm.mail)}</td></tr>`;
   }).join("");
   $("#app").innerHTML = modeBanner() + HOWTO + `
     <div class="headline"><span class="n">${m.house_ahead}</span> of ${m.house_n} Georgia House districts are ahead of pace</div>
@@ -187,7 +201,7 @@ function viewState(){
         <span><span class="sw" style="background:rgba(251,146,60,.9)"></span>most districts behind</span>
         <span><span class="sw" style="background:var(--none)"></span>no comparison</span></div></div>
       <div class="panel"><h3>Counties</h3><input class="search" placeholder="Find a county…" id="q">
-        <div class="tablewrap"><table><thead><tr><th>County</th><th>House districts ahead</th><th>Early votes</th></tr></thead>
+        <div class="tablewrap"><table><thead><tr><th>County</th><th>House districts ahead</th><th>All early votes</th><th>In-person</th><th>Mail</th></tr></thead>
         <tbody id="ctab">${rows}</tbody></table></div></div>
     </div>`;
   const byKey = Object.fromEntries(st.counties.map(c => [c.county, c]));
@@ -216,7 +230,7 @@ function viewCounty(cd){
   const W = P.W;
   const paths = pieces.map(p => {
     const s = ds[`${p.chamber}:${p.district}`];
-    return `<path d="${P.d(p.rings)}" fill="${paceColor(s && s.pace)}" class="${p.continues ? "cont" : ""}"
+    return `<path d="${P.d(p.rings)}" fill="${paceColor(pm(s))}" class="${p.continues ? "cont" : ""}"
       data-k="${p.chamber}:${p.district}"></path>`;
   }).join("");
   const labels = pieces.map(p => {
@@ -225,17 +239,20 @@ function viewCounty(cd){
     const [x,y] = P(p.label_at);
     return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="${sz.toFixed(0)}">${p.district}${p.continues ? "↗" : ""}</text>`;
   }).join("");
-  const withPace = list.filter(d => d.pace != null), ahead = withPace.filter(d => d.pace > 0).length;
+  const withPace = list.filter(d => pm(d) != null), ahead = withPace.filter(d => pm(d) > 0).length;
   const rows = list.map(d => `<tr data-k="${d.chamber}:${d.district}">
       <td><b>${d.label}</b>${d.by_county.length > 1 ? ` <span class="muted" title="Continues into ${d.by_county.length - 1} other ${d.by_county.length > 2 ? "counties" : "county"}">↗</span>` : ""}</td>
       <td class="pace ${paceCls(d.pace)}">${paceShort(d.pace)}</td>
+      <td class="pace ${paceCls(pm(d,"inperson"))}">${paceShort(pm(d,"inperson"))}</td>
+      <td class="pace ${paceCls(pm(d,"mail"))}">${paceShort(pm(d,"mail"))}</td>
       <td>${d.comp_year}</td><td>${leanBadge(d.lean)}</td></tr>`).join("");
   $("#app").innerHTML = modeBanner() + `
     <div class="crumbs"><a href="#/">Georgia</a> › ${esc(cd.name)} County</div>
     <div style="display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;margin-bottom:12px">
-      <div><div class="headline">${esc(cd.name)}: <span class="n">${ahead}</span> of ${withPace.length} State ${CH[S.chamber]} districts ahead of pace</div>
+      <div><div class="headline">${esc(cd.name)}: <span class="n">${ahead}</span> of ${withPace.length} State ${CH[S.chamber]} districts ahead of pace${S.measure === "all" ? "" : ` <span class="muted" style="font-size:15px">(${MEAS[S.measure].toLowerCase()} votes)</span>`}</div>
       <div class="muted">Click a district on the map or in the table. Districts marked ↗ (dashed edge) continue into another county; their numbers cover the whole district.</div></div>
       <div class="sp" style="flex:1"></div>
+      <div class="seg" id="msSeg" title="Which votes colour the map">${Object.entries(MEAS).map(([k,v]) => `<button data-ms="${k}">${v}</button>`).join("")}</div>
       <div class="seg" id="chSeg"><button data-ch="house">State House</button><button data-ch="senate">State Senate</button></div>
     </div>
     <div class="grid">
@@ -244,9 +261,13 @@ function viewCounty(cd){
         <span><span class="sw" style="background:rgba(251,146,60,.9)"></span>behind pace</span>
         <span>brighter = bigger gap</span></div></div>
       <div class="panel"><h3>State ${CH[S.chamber]} districts in ${esc(cd.name)}</h3>
-        <div class="tablewrap"><table><thead><tr><th>District</th><th>vs pace</th><th>Compared with</th><th>Leans</th></tr></thead>
+        <div class="tablewrap"><table><thead><tr><th>District</th><th>All early votes</th><th>In-person</th><th>Mail</th><th>Compared with</th><th>Leans</th></tr></thead>
         <tbody>${rows}</tbody></table></div></div>
     </div>`;
+  document.querySelectorAll("#msSeg button").forEach(b => {
+    b.classList.toggle("on", b.dataset.ms === S.measure);
+    b.onclick = () => { S.measure = b.dataset.ms; route(); };
+  });
   document.querySelectorAll("#chSeg button").forEach(b => {
     b.classList.toggle("on", b.dataset.ch === S.chamber);
     b.onclick = () => { S.chamber = b.dataset.ch; location.hash = `#/c/${cd.county}`; route(); };
@@ -258,7 +279,7 @@ function viewCounty(cd){
     el.onmouseenter = () => hi(k, true);
     el.onmouseleave = () => { hi(k, false); hideTip(); };
     if (el.tagName === "path") el.onmousemove = e => { const s = ds[k];
-      showTip(e, `<b>${s ? s.label : k}</b><br>${s ? paceText(s.pace, s.comp_year) : ""}`); };
+      showTip(e, `<b>${s ? s.label : k}</b><br>${s ? paceText(s.pace, s.comp_year) : ""}${s && S.measure !== "all" ? `<br>${MEAS[S.measure]}: ${paceText(pm(s), s.comp_year)}` : ""}`); };
   });
 }
 
@@ -274,26 +295,32 @@ function viewDetail(cd, k){
     : `Leans: ${leanBadge(s.lean)} <span class="muted" style="font-size:12px">(2024 presidential vote in this district)</span>`;
   const counties = s.by_county.map(b => `<tr><td>${b.county === cd.county ? `<b>${esc(title(b.county))}</b>` :
       `<a href="#/c/${b.county}/${k.replace(":", "/")}">${esc(title(b.county))}</a>`}</td>
-      <td>${fmt(b.now)}</td><td>${s.now ? Math.round(b.now/s.now*100) + "%" : "–"}</td><td>${fmt(b.then)}</td></tr>`).join("");
+      <td>${fmt(b.now)}</td><td>${fmt(b.now_inperson)}</td><td>${fmt(b.now_mail)}</td><td>${s.now ? Math.round(b.now/s.now*100) + "%" : "–"}</td><td>${fmt(b.then)}</td></tr>`).join("");
   box.innerHTML = `<button class="x" onclick="location.hash='#/c/${cd.county}'">Close ✕</button>
     <h2>${s.label}</h2>
     <div class="reason">Compared with: ${s.comp_year} (${s.reason === "Redrawn before 2024" ? "district redrawn before 2024" : "same lines since 2022"})</div>
+    <div class="muted" style="font-size:12px">All early votes</div>
     <div class="big pace ${paceCls(s.pace)}">${paceText(s.pace, s.comp_year)}</div>
+    <div class="modes">${modeLine("In-person", s.by_mode.inperson, s.comp_year)}${modeLine("Mail", s.by_mode.mail, s.comp_year)}</div>
     <div class="lean">${leanLine}</div>
     ${s.by_county.length > 1 ? `<div class="muted" style="font-size:12.5px">This district spans ${s.by_county.length} counties. All numbers cover the whole district.</div>` : ""}
     <details><summary>Details</summary>
       <div class="kv">
         <div>Early votes so far (${days} days out)</div><div><b>${fmt(s.now)}</b></div>
         <div>Same day in ${s.comp_year}</div><div>${fmt(s.then)}</div>
+        <div>&nbsp;· in-person now / ${s.comp_year}</div><div>${fmt(s.by_mode.inperson.now)} / ${fmt(s.by_mode.inperson.then)}</div>
+        <div>&nbsp;· mail now / ${s.comp_year}</div><div>${fmt(s.by_mode.mail.now)} / ${fmt(s.by_mode.mail.then)}</div>
         <div>Share of Georgia's early vote now</div><div>${pct(s.share_now)}</div>
         <div>Share at the same day in ${s.comp_year}</div><div>${pct(s.share_then)}</div>
         ${s.same_pct != null ? `<div>Voters in the same district as 2022</div><div>${Math.round(s.same_pct*100)}%</div>` : ""}
       </div>
       <h3 style="font-size:13px;margin:14px 0 6px">Early votes by county</h3>
-      <table><thead><tr><th>County</th><th>Now</th><th>% of district</th><th>${s.comp_year}</th></tr></thead><tbody>${counties}</tbody></table>
+      <table><thead><tr><th>County</th><th>Now</th><th>In-person</th><th>Mail</th><th>% of district</th><th>${s.comp_year}</th></tr></thead><tbody>${counties}</tbody></table>
       <p class="muted" style="font-size:11.5px;line-height:1.5;margin-top:12px">"Pace" compares this district's share of all Georgia early votes
       with its share at the same number of days before Election Day in ${s.comp_year}. Using shares, not raw counts,
-      keeps a midterm comparable with a presidential year. Only the Nov general elections are used, never the Dec 2022 runoff.</p>
+      keeps a midterm comparable with a presidential year. The in-person and mail lines do the same using
+      only in-person (or only mail) votes; mail includes electronic ballots from military and overseas voters.
+      Fewer than 30 ballots is too few to compare. Only the Nov general elections are used, never the Dec 2022 runoff.</p>
     </details>`;
   box.classList.add("open");
 }

@@ -23,6 +23,9 @@ THE COMPARISON RULE (agreed with the user)
   Headline = district's SHARE of Georgia's early vote vs its share at the same
   number of days before Election Day in the comparison year:
       pace = share_now / share_then - 1      ("ahead / behind pace by X%")
+  The same pace is also worked out separately for early in-person votes and for
+  mail votes (each as a share of Georgia's in-person / mail total), shown under
+  the overall headline. Too-small samples (< MIN_MODE_BALLOTS) show no pace.
 
 DEMO MODE
   Until in-person early voting opens (Oct 13 2026) the real 2026 file is tiny,
@@ -58,6 +61,8 @@ LEAN_MIN_COVERAGE = 0.90  # show lean only if >= 90% of the district's voters ar
 MIN_COUNTY_SHARE = 0.005  # hide counties with < 0.5% of a district's ballots (address noise)
 MIN_PIECE = 0.003        # drop district pieces < 0.3% of the county's area (slivers)
 CHAMBERS = {"house": ("sldl", "SLDLST", "HD"), "senate": ("sldu", "SLDUST", "SD")}
+MODES = ("all", "inperson", "mail")   # overall, early in-person, mail (incl. electronic)
+MIN_MODE_BALLOTS = 30    # pace (overall, in-person, mail) shown only with >= 30 ballots now AND then
 
 
 def key(name: str) -> str:
@@ -65,14 +70,20 @@ def key(name: str) -> str:
 
 
 # ---------------------------------------------------------------- data loading
+def _early():
+    return defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+
+
 def load_early(year: int):
-    """{(chamber, district): {county: {days_out: n}}}"""
-    out = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    """{mode: {(chamber, district): {county: {days_out: n}}}} for mode in MODES"""
+    out = {m: _early() for m in MODES}
     p = DATA / f"early_{year}.csv"
     if not p.exists():
         return out
     for r in csv.DictReader(p.open(encoding="utf-8")):
-        out[(r["chamber"], r["district"])][key(r["county"])][int(r["days_out"])] += int(r["ballots"])
+        k, c, d, n = (r["chamber"], r["district"]), key(r["county"]), int(r["days_out"]), int(r["ballots"])
+        out["all"][k][c][d] += n
+        out[r["mode"]][k][c][d] += n
     return out
 
 
@@ -155,7 +166,7 @@ def label_pt(geom):
 
 
 # ---------------------------------------------------------------- metrics
-def district_stats(ch, d, cur, comp22, comp24, totals, days_out, redraw, lean):
+def district_stats(ch, d, cur, comp22, comp24, totals, days_out, redraw, lean, min_n=0):
     same = redraw.get((ch, d))
     unchanged = same is not None and same >= SAME_MIN
     comp_year = 2022 if unchanged else 2024
@@ -166,6 +177,8 @@ def district_stats(ch, d, cur, comp22, comp24, totals, days_out, redraw, lean):
     share_now = now / totals["now"] if totals["now"] else None
     share_then = then / totals[comp_year] if totals[comp_year] else None
     pace = (share_now / share_then - 1) if share_now is not None and share_then else None
+    if min(now, then) < min_n:
+        pace = None
     return {
         "chamber": ch, "district": d,
         "label": f"{CHAMBERS[ch][2]}-{d}",
@@ -184,15 +197,15 @@ def district_stats(ch, d, cur, comp22, comp24, totals, days_out, redraw, lean):
     }
 
 
-def make_demo(e22, e24, redraw):
+def make_demo(e22, e24, redraw, seed=2026):
     """Synthetic 2026 on CURRENT lines: each district's own comparison-year ballots
     up to DEMO_DAYS_OUT (2022 if lines unchanged, else 2024), tilted +/-20% per
     district. Built this way so the demo has no fake regional pattern; the only
     ups and downs are the random per-district tilts."""
-    rnd = random.Random(2026)
-    demo = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    rnd = random.Random(seed)
+    demo = _early()
     tot = lambda e: sum(upto(s, DEMO_DAYS_OUT) for (ch, _), b in e.items() if ch == "house" for s in b.values())
-    scale24 = tot(e22) / tot(e24)          # put 2024-based districts on the same (midterm) scale
+    scale24 = tot(e22) / tot(e24) if tot(e24) else 1   # put 2024-based districts on the same (midterm) scale
     for ch, d in sorted(set(e22) | set(e24), key=lambda k: (k[0], int(k[1]))):
         unchanged = redraw.get((ch, d), 0) >= SAME_MIN
         base = e22 if unchanged else e24
@@ -203,13 +216,33 @@ def make_demo(e22, e24, redraw):
 
 
 def build_mode(cur, e22, e24, days_out, redraw, lean):
+    """cur/e22/e24 are {mode: early-structure}. Returns overall totals + per-district
+    stats (overall), each carrying by_mode = {inperson: {...}, mail: {...}}."""
     def total(e, dd):
         return sum(upto(s, dd) for (ch, _), byc in e.items() if ch == "house" for s in byc.values())
-    totals = {"now": total(cur, days_out), 2022: total(e22, days_out), 2024: total(e24, days_out)}
-    keys = set(e22) | set(e24) | set(cur)
-    stats = {f"{ch}:{d}": district_stats(ch, d, cur, e22, e24, totals, days_out, redraw, lean)
-             for ch, d in keys if d != "0"}
-    return totals, stats
+    keys = set(e22["all"]) | set(e24["all"]) | set(cur["all"])
+    out_totals, out_stats = {}, {}
+    for m in MODES:
+        totals = {"now": total(cur[m], days_out), 2022: total(e22[m], days_out), 2024: total(e24[m], days_out)}
+        out_totals[m] = totals
+        for ch, d in keys:
+            if d == "0":
+                continue
+            s = district_stats(ch, d, cur[m], e22[m], e24[m], totals, days_out, redraw, lean,
+                               min_n=MIN_MODE_BALLOTS)
+            k = f"{ch}:{d}"
+            if m == "all":
+                out_stats[k] = s
+                s["by_mode"] = {}
+                continue
+            base = out_stats[k]
+            base["by_mode"][m] = {f: s[f] for f in ("now", "then", "share_now", "share_then", "pace")}
+            per = {b["county"]: b for b in s["by_county"]}
+            for b in base["by_county"]:
+                b[f"now_{m}"] = per.get(b["county"], {}).get("now", 0)
+    totals = dict(out_totals["all"])
+    totals["by_mode"] = {m: out_totals[m] for m in MODES if m != "all"}
+    return totals, out_stats
 
 
 def main():
@@ -218,10 +251,10 @@ def main():
     e22, e24, e26 = load_early(2022), load_early(2024), load_early(2026)
     redraw, lean = load_redraw(), load_lean()
 
-    live_days = min((d for byc in e26.values() for s in byc.values() for d in s), default=30)
+    live_days = min((d for byc in e26["all"].values() for s in byc.values() for d in s), default=30)
     modes = {
         "live": (live_days, *build_mode(e26, e22, e24, live_days, redraw, lean)),
-        "demo": (DEMO_DAYS_OUT, *build_mode(make_demo(e22, e24, redraw), e22, e24, DEMO_DAYS_OUT, redraw, lean)),
+        "demo": (DEMO_DAYS_OUT, *build_mode(demo_modes(e22, e24, redraw), e22, e24, DEMO_DAYS_OUT, redraw, lean)),
     }
 
     counties = {key(k): (v, k) for k, v in
@@ -257,13 +290,29 @@ def main():
             house = [s for s in ds.values() if s["chamber"] == "house" and s["pace"] is not None]
             now = sum(next((b["now"] for b in s["by_county"] if b["county"] == ck), 0)
                       for s in ds.values() if s["chamber"] == "house")
-            summary["modes"][m] = {"ahead": sum(1 for s in house if s["pace"] > 0), "n": len(house), "now": now}
+            now_m = {bm: sum(next((b.get(f"now_{bm}", 0) for b in s["by_county"] if b["county"] == ck), 0)
+                             for s in ds.values() if s["chamber"] == "house") for bm in MODES[1:]}
+            summary["modes"][m] = {"ahead": sum(1 for s in house if s["pace"] > 0), "n": len(house),
+                                   "now": now, "now_by_mode": now_m}
         (OUT / "county" / f"{ck}.json").write_text(json.dumps(cdata, separators=(",", ":")), encoding="utf-8")
         state["counties"].append(summary)
 
     (OUT / "state.json").write_text(json.dumps(state, separators=(",", ":")), encoding="utf-8")
     print(f"wrote state.json + {len(counties)} county files; live days_out={live_days}, "
           f"live ballots={modes['live'][1]['now']:,}")
+
+
+def demo_modes(e22, e24, redraw):
+    """Demo snapshot per ballot mode (separate random tilts), plus their sum."""
+    out = {"inperson": make_demo(e22["inperson"], e24["inperson"], redraw, seed=2026),
+           "mail": make_demo(e22["mail"], e24["mail"], redraw, seed=2027)}
+    out["all"] = _early()
+    for m in ("inperson", "mail"):
+        for k, byc in out[m].items():
+            for c, s in byc.items():
+                for d, n in s.items():
+                    out["all"][k][c][d] += n
+    return out
 
 
 def read_county_shapes():

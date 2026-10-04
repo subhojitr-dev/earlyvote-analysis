@@ -1,6 +1,7 @@
 """
 ga_polling.py — polls, polling averages, race ratings and betting odds for the 2026
-Georgia U.S. Senate and Governor races, for the "View Polling Data" page (web/ga/).
+U.S. Senate and Governor races in Georgia, Michigan, Ohio and Texas, for the
+"View Polling Data" page (web/ga/). Add a state by adding two race(...) lines below.
 
 Sources (all public, no keys):
   * Wikipedia race pages (wikitext via the MediaWiki API): the general-election poll
@@ -35,26 +36,39 @@ N_POLLS = 10
 RATERS = ["The Cook Political Report", "Sabato's Crystal Ball", "Inside Elections",
           "Decision Desk HQ", "Silver Bulletin"]
 
-RACES = {
-    "senate": {
-        "title": "U.S. Senate",
-        "wiki": "2026_United_States_Senate_election_in_Georgia",
-        "cands": [{"name": "Jon Ossoff", "match": "Ossoff", "party": "D", "inc": True},
-                  {"name": "Mike Collins", "match": "Collins", "party": "R"}],
-        "kalshi": {"D": "SENATEGA-26-D", "R": "SENATEGA-26-R"},
-        "polymarket": "georgia-senate-election-winner",
-        "predictit": 8156,
-    },
-    "governor": {
-        "title": "Governor",
-        "wiki": "2026_Georgia_gubernatorial_election",
-        "cands": [{"name": "Keisha Lance Bottoms", "match": "Bottoms", "party": "D"},
-                  {"name": "Rick Jackson", "match": "Jackson", "party": "R"}],
-        "kalshi": {"D": "GOVPARTYGA-26-D", "R": "GOVPARTYGA-26-R"},
-        "polymarket": "georgia-governor-winner-2026",
-        "predictit": 8416,
-    },
-}
+STATES = {"GA": "Georgia", "MI": "Michigan", "OH": "Ohio", "TX": "Texas"}
+
+
+def race(st, office, wiki, d, r, kalshi, polymarket, predictit, title=None):
+    """d / r = (full name, word that identifies them in Wikipedia table headers[, incumbent])"""
+    cand = lambda c, party: {"name": c[0], "match": c[1], "party": party, **({"inc": True} if len(c) > 2 else {})}
+    return {"state": st, "state_name": STATES[st], "office": office,
+            "title": title or ("U.S. Senate" if office == "senate" else "Governor"),
+            "wiki": wiki, "cands": [cand(d, "D"), cand(r, "R")],
+            "kalshi": {"D": f"{kalshi}-26-D", "R": f"{kalshi}-26-R"},
+            "polymarket": polymarket, "predictit": predictit}
+
+
+_RACES = [
+    race("GA", "senate", "2026_United_States_Senate_election_in_Georgia",
+         ("Jon Ossoff", "Ossoff", 1), ("Mike Collins", "Collins"), "SENATEGA", "georgia-senate-election-winner", 8156),
+    race("GA", "governor", "2026_Georgia_gubernatorial_election",
+         ("Keisha Lance Bottoms", "Bottoms"), ("Rick Jackson", "Jackson"), "GOVPARTYGA", "georgia-governor-winner-2026", 8416),
+    race("MI", "senate", "2026_United_States_Senate_election_in_Michigan",
+         ("Abdul El-Sayed", "El-Sayed"), ("Mike Rogers", "Rogers"), "SENATEMI", "michigan-senate-election-winner", 8158),
+    race("MI", "governor", "2026_Michigan_gubernatorial_election",
+         ("Jocelyn Benson", "Benson"), ("John James", "James"), "GOVPARTYMI", "michigan-governor-winner-2026", 8212),
+    race("OH", "senate", "2026_United_States_Senate_special_election_in_Ohio",
+         ("Sherrod Brown", "Brown"), ("Jon Husted", "Husted", 1), "SENATEOHS", "ohio-senate-election-winner", 8175,
+         title="U.S. Senate (special election)"),
+    race("OH", "governor", "2026_Ohio_gubernatorial_election",
+         ("Amy Acton", "Acton"), ("Vivek Ramaswamy", "Ramaswamy"), "GOVPARTYOH", "ohio-governor-winner-2026", 8441),
+    race("TX", "senate", "2026_United_States_Senate_election_in_Texas",
+         ("James Talarico", "Talarico"), ("Ken Paxton", "Paxton"), "SENATETX", "texas-senate-election-winner", 8173),
+    race("TX", "governor", "2026_Texas_gubernatorial_election",
+         ("Gina Hinojosa", "Hinojosa"), ("Greg Abbott", "Abbott", 1), "GOVPARTYTX", "texas-governor-winner-2026", 8418),
+]
+RACES = {f"{r['state']}-{r['office']}": r for r in _RACES}
 
 
 def get(url: str):
@@ -290,7 +304,8 @@ def predictit(race, _cache={}):
     m = next(x for x in _cache["all"]["markets"] if x["id"] == race["predictit"])
     res = {}
     for c in m["contracts"]:
-        p = {"Democratic": "D", "Republican": "R"}.get(c["name"])
+        n = c["name"].lower()          # e.g. "Democratic", "Democrats (Talarico)", "Republican (Paxton)"
+        p = "D" if n.startswith("democrat") else "R" if n.startswith("republican") else None
         if p and c.get("lastTradePrice") is not None:
             res[p] = round(c["lastTradePrice"] * 100, 1)
     return {"source": "PredictIt", "url": m["url"], **res}
@@ -304,7 +319,7 @@ def main() -> int:
     problems = 0
     for key, race in RACES.items():
         prev = old.get("races", {}).get(key, {})
-        r = {"title": race["title"], "cands": race["cands"]}
+        r = {k: race[k] for k in ("state", "state_name", "office", "title", "cands")}
         try:
             w = wiki_race(race)
             if not w["polls"] or not w["ratings"]:

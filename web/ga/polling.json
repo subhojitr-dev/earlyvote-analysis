@@ -1,7 +1,10 @@
 {
- "updated": "2026-10-04T16:45+00:00",
+ "updated": "2026-10-04T19:16+00:00",
  "races": {
-  "senate": {
+  "GA-senate": {
+   "state": "GA",
+   "state_name": "Georgia",
+   "office": "senate",
    "title": "U.S. Senate",
    "cands": [
     {
@@ -17,6 +20,14 @@
     }
    ],
    "polls": [
+    {
+     "pollster": "Wedgewood Polls",
+     "dates": "October 2\u20133, 2026",
+     "sample": "600 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 55.0,
+     "R": 45.0
+    },
     {
      "pollster": "InsiderAdvantage (R)",
      "dates": "September 22\u201323, 2026",
@@ -87,14 +98,6 @@
      "sample": "1,175 (LV)",
      "moe": "\u00b1 2.9%",
      "D": 47.0,
-     "R": 43.0
-    },
-    {
-     "pollster": "Beacon Research (D)/ Shaw & Co. Research (R)",
-     "dates": "June 23\u201327, 2026",
-     "sample": "1,002 (RV)",
-     "moe": "\u00b1 3.0%",
-     "D": 56.0,
      "R": 43.0
     }
    ],
@@ -167,36 +170,39 @@
     "R": 42.8
    },
    "poll_avg": {
-    "D": 50.7,
-    "R": 42.6
+    "D": 50.6,
+    "R": 42.8
    },
    "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-   "wiki_fetched": "2026-10-04T16:45+00:00",
+   "wiki_fetched": "2026-10-04T19:16+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
      "D": 96.2,
-     "R": 4.4,
-     "fetched": "2026-10-04T16:45+00:00"
+     "R": 4.1,
+     "fetched": "2026-10-04T19:16+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/georgia-senate-election-winner",
      "D": 97.2,
      "R": 2.9,
-     "fetched": "2026-10-04T16:45+00:00"
+     "fetched": "2026-10-04T19:16+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8156/Which-party-will-win-the-2026-US-Senate-election-in-Georgia",
      "D": 94.0,
      "R": 7.0,
-     "fetched": "2026-10-04T16:45+00:00"
+     "fetched": "2026-10-04T19:16+00:00"
     }
    ]
   },
-  "governor": {
+  "GA-governor": {
+   "state": "GA",
+   "state_name": "Georgia",
+   "office": "governor",
    "title": "Governor",
    "cands": [
     {
@@ -365,28 +371,1240 @@
     "R": 46.5
    },
    "url": "https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election",
-   "wiki_fetched": "2026-10-04T16:45+00:00",
+   "wiki_fetched": "2026-10-04T19:16+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
-     "D": 48.0,
+     "D": 47.0,
      "R": 54.0,
-     "fetched": "2026-10-04T16:45+00:00"
+     "fetched": "2026-10-04T19:16+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/georgia-governor-winner-2026",
      "D": 45.5,
      "R": 54.5,
-     "fetched": "2026-10-04T16:45+00:00"
+     "fetched": "2026-10-04T19:16+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8416/Which-party-will-win-the-2026-election-for-governor-of-Georgia",
-     "R": 56.0,
+     "R": 54.0,
      "D": 47.0,
-     "fetched": "2026-10-04T16:45+00:00"
+     "fetched": "2026-10-04T19:16+00:00"
+    }
+   ]
+  },
+  "MI-senate": {
+   "state": "MI",
+   "state_name": "Michigan",
+   "office": "senate",
+   "title": "U.S. Senate",
+   "cands": [
+    {
+     "name": "Abdul El-Sayed",
+     "match": "El-Sayed",
+     "party": "D"
+    },
+    {
+     "name": "Mike Rogers",
+     "match": "Rogers",
+     "party": "R"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "Trafalgar Group (R)",
+     "dates": "September 28\u201330, 2026",
+     "sample": "1,085 (LV)",
+     "moe": "\u00b1{{nbsp}}2.9%",
+     "D": 47.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "Beacon Research (D)/ Shaw & Co. Research (R)",
+     "dates": "September 24\u201328, 2026",
+     "sample": "1,028 (LV)",
+     "moe": "\u00b1{{nbsp}}3.0%",
+     "D": 50.0,
+     "R": 49.0
+    },
+    {
+     "pollster": "Marist University",
+     "dates": "September 24\u201327, 2026",
+     "sample": "1,235 (RV)",
+     "moe": "\u00b1 3.8%",
+     "D": 51.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "Big Data Poll (R)",
+     "dates": "September 22\u201324, 2026",
+     "sample": "678 (LV)",
+     "moe": "\u00b1{{nbsp}}4.0%",
+     "D": 46.0,
+     "R": 40.0
+    },
+    {
+     "pollster": "co/efficient (R)",
+     "dates": "September 21\u201323, 2026",
+     "sample": "843 (LV)",
+     "moe": "\u00b1{{nbsp}}3.4%",
+     "D": 45.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "GBAO (D)",
+     "dates": "September 19\u201322, 2026",
+     "sample": "800 (LV)",
+     "moe": "\u2013",
+     "D": 48.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "New York Times/Siena University",
+     "dates": "September 15\u201322, 2026",
+     "sample": "605 (LV)",
+     "moe": "\u00b1{{nbsp}}4.9%",
+     "D": 49.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "Cygnal (R)/Beacon Research (D)",
+     "dates": "September 18\u201321, 2026",
+     "sample": "600 (LV)",
+     "moe": "\u00b1{{nbsp}}4.0%",
+     "D": 45.0,
+     "R": 40.0
+    },
+    {
+     "pollster": "Suffolk University",
+     "dates": "September 16\u201320, 2026",
+     "sample": "500 (LV)",
+     "moe": "\u00b1{{nbsp}}4.4%",
+     "D": 47.0,
+     "R": 40.0
+    },
+    {
+     "pollster": "Torchlight Strategies (R)",
+     "dates": "September 15\u201319, 2026",
+     "sample": "643 (LV)",
+     "moe": "\u00b1{{nbsp}}4.7%",
+     "D": 43.0,
+     "R": 44.0
+    }
+   ],
+   "averages": [
+    {
+     "source": "270toWin",
+     "dates": "September 15\u201330, 2026",
+     "updated": "October 1, 2026",
+     "D": 48.4,
+     "R": 44.4
+    },
+    {
+     "source": "Decision Desk HQ",
+     "dates": "through September 30, 2026",
+     "updated": "October 1, 2026",
+     "D": 47.9,
+     "R": 44.3
+    },
+    {
+     "source": "FiftyPlusOne",
+     "dates": "through September 30, 2026",
+     "updated": "October 1, 2026",
+     "D": 47.9,
+     "R": 44.3
+    },
+    {
+     "source": "RealClearPolitics",
+     "dates": "September 10\u201330, 2026",
+     "updated": "October 1, 2026",
+     "D": 48.0,
+     "R": 44.5
+    },
+    {
+     "source": "Silver Bulletin",
+     "dates": "through September 30, 2026",
+     "updated": "October 1, 2026",
+     "D": 48.1,
+     "R": 44.4
+    }
+   ],
+   "ratings": [
+    {
+     "source": "The Cook Political Report",
+     "rating": "Toss-up",
+     "as_of": "September 23, 2026"
+    },
+    {
+     "source": "Sabato's Crystal Ball",
+     "rating": "Lean D",
+     "as_of": "September 22, 2026"
+    },
+    {
+     "source": "Inside Elections",
+     "rating": "Tilt D",
+     "as_of": "October 1, 2026"
+    },
+    {
+     "source": "Decision Desk HQ",
+     "rating": "Lean D",
+     "as_of": "October 2, 2026"
+    },
+    {
+     "source": "Silver Bulletin",
+     "rating": "Likely D",
+     "as_of": "October 3, 2026"
+    }
+   ],
+   "average_of_averages": {
+    "D": 48.1,
+    "R": 44.4
+   },
+   "poll_avg": {
+    "D": 47.1,
+    "R": 43.5
+   },
+   "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+   "wiki_fetched": "2026-10-04T19:16+00:00",
+   "markets": [
+    {
+     "source": "Kalshi",
+     "url": "https://kalshi.com",
+     "D": 72.0,
+     "R": 29.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "Polymarket",
+     "url": "https://polymarket.com/event/michigan-senate-election-winner",
+     "D": 73.5,
+     "R": 26.5,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "PredictIt",
+     "url": "https://www.predictit.org/markets/detail/8158/Which-party-will-win-the-2026-US-Senate-election-in-Michigan",
+     "D": 73.0,
+     "R": 27.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    }
+   ]
+  },
+  "MI-governor": {
+   "state": "MI",
+   "state_name": "Michigan",
+   "office": "governor",
+   "title": "Governor",
+   "cands": [
+    {
+     "name": "Jocelyn Benson",
+     "match": "Benson",
+     "party": "D"
+    },
+    {
+     "name": "John James",
+     "match": "James",
+     "party": "R"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "Beacon Research (D)/ Shaw & Co. Research (R)",
+     "dates": "September 24\u201328, 2026",
+     "sample": "1,203 (RV)",
+     "moe": "\u00b1{{nbsp}}3.0%",
+     "D": 54.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "Marist University",
+     "dates": "September 24\u201327, 2026",
+     "sample": "1,235 (RV)",
+     "moe": "\u00b1 3.8%",
+     "D": 53.0,
+     "R": 41.0
+    },
+    {
+     "pollster": "co/efficient (R)",
+     "dates": "September 21\u201323, 2026",
+     "sample": "843 (LV)",
+     "moe": "\u00b1{{nbsp}}3.36%",
+     "D": 47.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "New York Times/Siena University",
+     "dates": "September 15\u201322, 2026",
+     "sample": "605 (LV)",
+     "moe": "\u00b1{{nbsp}}4.9%",
+     "D": 48.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "Beacon Research (D)/ Cygnal (R)",
+     "dates": "September 18\u201321, 2026",
+     "sample": "600 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 45.0,
+     "R": 38.0
+    },
+    {
+     "pollster": "Suffolk University",
+     "dates": "September 16\u201320, 2026",
+     "sample": "500 (LV)",
+     "moe": "\u00b1{{nbsp}}4.4%",
+     "D": 51.0,
+     "R": 34.0
+    },
+    {
+     "pollster": "Torchlight Strategies (R)",
+     "dates": "September 15\u201319, 2026",
+     "sample": "643 (LV)",
+     "moe": "\u00b1{{nbsp}}4.7%",
+     "D": 42.0,
+     "R": 41.0
+    },
+    {
+     "pollster": "Emerson College",
+     "dates": "September 12\u201314, 2026",
+     "sample": "1,000 (LV)",
+     "moe": "\u00b1{{nbsp}}3.0%",
+     "D": 49.0,
+     "R": 42.0
+    },
+    {
+     "pollster": "The Washington Post/SSPG",
+     "dates": "September 10\u201314, 2026",
+     "sample": "803 (LV)",
+     "moe": "\u00b1{{nbsp}}3.9%",
+     "D": 53.0,
+     "R": 41.0
+    },
+    {
+     "pollster": "SSRS",
+     "dates": "August 31 \u2013 September 6, 2026",
+     "sample": "843 (LV)",
+     "moe": "\u00b1{{nbsp}}4.1%",
+     "D": 50.0,
+     "R": 41.0
+    }
+   ],
+   "averages": [
+    {
+     "source": "270toWin",
+     "dates": "September 23\u201330, 2026",
+     "updated": "September 30, 2026",
+     "D": 49.4,
+     "R": 42.2
+    },
+    {
+     "source": "Decision Desk HQ",
+     "dates": "through September 28, 2026",
+     "updated": "September 30, 2026",
+     "D": 48.9,
+     "R": 41.4
+    },
+    {
+     "source": "FiftyPlusOne",
+     "dates": "through September 28, 2026",
+     "updated": "September 30, 2026",
+     "D": 50.1,
+     "R": 42.1
+    },
+    {
+     "source": "RealClearPolitics",
+     "dates": "September 10\u201328, 2026",
+     "updated": "September 30, 2026",
+     "D": 50.0,
+     "R": 41.0
+    },
+    {
+     "source": "Silver Bulletin",
+     "dates": "through September 27, 2026",
+     "updated": "September 30, 2026",
+     "D": 50.0,
+     "R": 41.1
+    }
+   ],
+   "ratings": [
+    {
+     "source": "The Cook Political Report",
+     "rating": "Lean D",
+     "as_of": "July 12, 2026"
+    },
+    {
+     "source": "Sabato's Crystal Ball",
+     "rating": "Lean D",
+     "as_of": "July 23, 2026"
+    },
+    {
+     "source": "Inside Elections",
+     "rating": "Tilt D",
+     "as_of": "June 25, 2026"
+    },
+    {
+     "source": "Decision Desk HQ",
+     "rating": "Lean D",
+     "as_of": "September 23, 2026"
+    },
+    {
+     "source": "Silver Bulletin",
+     "rating": "Solid D",
+     "as_of": "October 3, 2026"
+    }
+   ],
+   "average_of_averages": {
+    "D": 49.6,
+    "R": 41.5
+   },
+   "poll_avg": {
+    "D": 49.2,
+    "R": 41.0
+   },
+   "url": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+   "wiki_fetched": "2026-10-04T19:16+00:00",
+   "markets": [
+    {
+     "source": "Kalshi",
+     "url": "https://kalshi.com",
+     "D": 93.3,
+     "R": 7.1,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "Polymarket",
+     "url": "https://polymarket.com/event/michigan-governor-winner-2026",
+     "D": 94.2,
+     "R": 5.5,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "PredictIt",
+     "url": "https://www.predictit.org/markets/detail/8212/Which-party-will-win-the-2026-election-for-governor-of-Michigan",
+     "D": 91.0,
+     "R": 10.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    }
+   ]
+  },
+  "OH-senate": {
+   "state": "OH",
+   "state_name": "Ohio",
+   "office": "senate",
+   "title": "U.S. Senate (special election)",
+   "cands": [
+    {
+     "name": "Sherrod Brown",
+     "match": "Brown",
+     "party": "D"
+    },
+    {
+     "name": "Jon Husted",
+     "match": "Husted",
+     "party": "R",
+     "inc": true
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "New York Times/Siena University",
+     "dates": "September 22 \u2013 October 1, 2026",
+     "sample": "616 (LV)",
+     "moe": "\u00b1 4.5%",
+     "D": 49.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "InsiderAdvantage (R)",
+     "dates": "September 28\u201329, 2026",
+     "sample": "1,200 (LV)",
+     "moe": "\u00b1{{nbsp}}2.8%",
+     "D": 44.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "Big Data Poll (R)",
+     "dates": "September 26\u201327, 2026",
+     "sample": "680 (LV)",
+     "moe": "\u00b1{{nbsp}}4.0%",
+     "D": 46.0,
+     "R": 41.0
+    },
+    {
+     "pollster": "Marist University",
+     "dates": "September 24\u201327, 2026",
+     "sample": "1,298 (RV)",
+     "moe": "\u00b1 3.8%",
+     "D": 51.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "Suffolk University",
+     "dates": "September 23\u201327, 2026",
+     "sample": "500 (LV)",
+     "moe": "\u00b1 4.4%",
+     "D": 47.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "Rasmussen Reports (R)",
+     "dates": "September 22\u201323, 2026",
+     "sample": "1,115 (LV)",
+     "moe": "\u00b1 3.0%",
+     "D": 46.0,
+     "R": 43.0
+    },
+    {
+     "pollster": "Quantus Insights (R)",
+     "dates": "September 21\u201323, 2026",
+     "sample": "695 (LV)",
+     "moe": "\u00b1{{nbsp}}4.2%",
+     "D": 46.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "Trafalgar Group (R)",
+     "dates": "September 14\u201316, 2026",
+     "sample": "1,085 (LV)",
+     "moe": "\u00b1{{nbsp}}2.9%",
+     "D": 45.0,
+     "R": 42.0
+    },
+    {
+     "pollster": "Bowling Green State University/YouGov",
+     "dates": "September 1\u201310, 2026",
+     "sample": "1,000 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 48.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "InsiderAdvantage (R)",
+     "dates": "September 8\u20139, 2026",
+     "sample": "1,200 (LV)",
+     "moe": "\u00b1{{nbsp}}2.8%",
+     "D": 47.0,
+     "R": 42.0
+    }
+   ],
+   "averages": [
+    {
+     "source": "270toWin",
+     "dates": "September 24 \u2013 October 3, 2026",
+     "updated": "October 3, 2026",
+     "D": 47.6,
+     "R": 44.6
+    },
+    {
+     "source": "Decision Desk HQ",
+     "dates": "through October 1, 2026",
+     "updated": "October 3, 2026",
+     "D": 45.3,
+     "R": 43.0
+    },
+    {
+     "source": "FiftyPlusOne",
+     "dates": "through October 1, 2026",
+     "updated": "October 3, 2026",
+     "D": 47.7,
+     "R": 43.8
+    },
+    {
+     "source": "Race to the WH",
+     "dates": "through October 1, 2026",
+     "updated": "October 3, 2026",
+     "D": 47.5,
+     "R": 44.2
+    },
+    {
+     "source": "RealClearPolitics",
+     "dates": "September 1 \u2013 October 1, 2026",
+     "updated": "October 3, 2026",
+     "D": 47.1,
+     "R": 44.0
+    },
+    {
+     "source": "Silver Bulletin",
+     "dates": "through October 1, 2026",
+     "updated": "October 3, 2026",
+     "D": 48.3,
+     "R": 44.1
+    }
+   ],
+   "ratings": [
+    {
+     "source": "The Cook Political Report",
+     "rating": "Toss-up",
+     "as_of": "September 23, 2026"
+    },
+    {
+     "source": "Sabato's Crystal Ball",
+     "rating": "Toss-up",
+     "as_of": "September 22, 2026"
+    },
+    {
+     "source": "Inside Elections",
+     "rating": "Toss-up",
+     "as_of": "October 1, 2026"
+    },
+    {
+     "source": "Decision Desk HQ",
+     "rating": "Toss-up",
+     "as_of": "October 2, 2026"
+    },
+    {
+     "source": "Silver Bulletin",
+     "rating": "Lean D (flip)",
+     "as_of": "October 3, 2026"
+    }
+   ],
+   "average_of_averages": {
+    "D": 47.3,
+    "R": 44.0
+   },
+   "poll_avg": {
+    "D": 46.9,
+    "R": 43.4
+   },
+   "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
+   "wiki_fetched": "2026-10-04T19:16+00:00",
+   "markets": [
+    {
+     "source": "Kalshi",
+     "url": "https://kalshi.com",
+     "D": 65.0,
+     "R": 38.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "Polymarket",
+     "url": "https://polymarket.com/event/ohio-senate-election-winner",
+     "D": 61.5,
+     "R": 38.5,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "PredictIt",
+     "url": "https://www.predictit.org/markets/detail/8175/Which-party-will-win-the-2026-US-Senate-special-election-in-Ohio",
+     "D": 65.0,
+     "R": 35.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    }
+   ]
+  },
+  "OH-governor": {
+   "state": "OH",
+   "state_name": "Ohio",
+   "office": "governor",
+   "title": "Governor",
+   "cands": [
+    {
+     "name": "Amy Acton",
+     "match": "Acton",
+     "party": "D"
+    },
+    {
+     "name": "Vivek Ramaswamy",
+     "match": "Ramaswamy",
+     "party": "R"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "New York Times/Siena University",
+     "dates": "September 22 \u2013 October 1, 2026",
+     "sample": "616 (LV)",
+     "moe": "\u00b1 4.5%",
+     "D": 49.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "Big Data Poll (R)",
+     "dates": "September 26\u201327, 2026",
+     "sample": "680 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 44.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "Marist University",
+     "dates": "September 24\u201327, 2026",
+     "sample": "1,298 (RV)",
+     "moe": "\u00b1 3.8%",
+     "D": 50.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "Suffolk University",
+     "dates": "September 23\u201327, 2026",
+     "sample": "500 (LV)",
+     "moe": "\u00b1 4.4%",
+     "D": 50.0,
+     "R": 41.0
+    },
+    {
+     "pollster": "Bowling Green State University/YouGov",
+     "dates": "September 1\u201310, 2026",
+     "sample": "1,000 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 48.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "Wedgewood Polls",
+     "dates": "August 11\u201313, 2026",
+     "sample": "800 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 47.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "Beacon Research (D)/ Shaw & Co. Research (R)",
+     "dates": "August 6\u201310, 2026",
+     "sample": "1,008 (RV)",
+     "moe": "\u00b1 3.0%",
+     "D": 48.0,
+     "R": 50.0
+    },
+    {
+     "pollster": "Tulchin Research (D)",
+     "dates": "July 29 \u2013 August 4, 2026",
+     "sample": "600 (LV)",
+     "moe": "\u00b1 4.0%",
+     "D": 46.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "New York Times/Siena University",
+     "dates": "June 15\u201328, 2026",
+     "sample": "601 (LV)",
+     "moe": "\u00b1 4.7%",
+     "D": 47.0,
+     "R": 47.0
+    },
+    {
+     "pollster": "Fabrizio Ward (R)/ Impact Research (D)",
+     "dates": "June 14\u201316, 2026",
+     "sample": "800 (LV)",
+     "moe": "\u00b1 3.5%",
+     "D": 47.0,
+     "R": 44.0
+    }
+   ],
+   "averages": [
+    {
+     "source": "270toWin",
+     "dates": "September 16 \u2013 October 4, 2026",
+     "updated": "October 4, 2026",
+     "D": 49.3,
+     "R": 43.8
+    },
+    {
+     "source": "Decision Desk HQ",
+     "dates": "through October 1, 2026",
+     "updated": "October 4, 2026",
+     "D": 49.4,
+     "R": 43.9
+    },
+    {
+     "source": "FiftyPlusOne",
+     "dates": "through October 1, 2026",
+     "updated": "October 4, 2026",
+     "D": 48.3,
+     "R": 45.4
+    },
+    {
+     "source": "Race to the WH",
+     "dates": "through October 1, 2026",
+     "updated": "October 4, 2026",
+     "D": 48.6,
+     "R": 44.8
+    },
+    {
+     "source": "RealClearPolitics",
+     "dates": "August 6 \u2013 October 1, 2026",
+     "updated": "October 4, 2026",
+     "D": 48.7,
+     "R": 45.5
+    },
+    {
+     "source": "Silver Bulletin",
+     "dates": "through September 27, 2026",
+     "updated": "October 4, 2026",
+     "D": 49.9,
+     "R": 44.8
+    }
+   ],
+   "ratings": [
+    {
+     "source": "The Cook Political Report",
+     "rating": "Toss-up",
+     "as_of": "September 17, 2026"
+    },
+    {
+     "source": "Sabato's Crystal Ball",
+     "rating": "Toss-up",
+     "as_of": "September 22, 2026"
+    },
+    {
+     "source": "Inside Elections",
+     "rating": "Toss-up",
+     "as_of": "October 1, 2026"
+    },
+    {
+     "source": "Decision Desk HQ",
+     "rating": "Toss-up",
+     "as_of": "September 23, 2026"
+    },
+    {
+     "source": "Silver Bulletin",
+     "rating": "Likely D (flip)",
+     "as_of": "September 29, 2026"
+    }
+   ],
+   "average_of_averages": {
+    "D": 49.0,
+    "R": 44.7
+   },
+   "poll_avg": {
+    "D": 47.6,
+    "R": 45.2
+   },
+   "url": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
+   "wiki_fetched": "2026-10-04T19:16+00:00",
+   "markets": [
+    {
+     "source": "Kalshi",
+     "url": "https://kalshi.com",
+     "D": 66.0,
+     "R": 36.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "Polymarket",
+     "url": "https://polymarket.com/event/ohio-governor-winner-2026",
+     "D": 66.5,
+     "R": 33.5,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "PredictIt",
+     "url": "https://www.predictit.org/markets/detail/8441/Which-party-will-win-the-2026-election-for-governor-of-Ohio",
+     "D": 65.0,
+     "R": 38.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    }
+   ]
+  },
+  "TX-senate": {
+   "state": "TX",
+   "state_name": "Texas",
+   "office": "senate",
+   "title": "U.S. Senate",
+   "cands": [
+    {
+     "name": "James Talarico",
+     "match": "Talarico",
+     "party": "D"
+    },
+    {
+     "name": "Ken Paxton",
+     "match": "Paxton",
+     "party": "R"
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "New York Times/Siena University",
+     "dates": "September 21\u201330, 2026",
+     "sample": "615 (LV)",
+     "moe": "\u00b1{{nbsp}}4.5%",
+     "D": 51.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "Rasmussen Reports (R)",
+     "dates": "September 28\u201329, 2026",
+     "sample": "1,128 (LV)",
+     "moe": "\u00b1{{nbsp}}3.0%",
+     "D": 46.0,
+     "R": 45.0
+    },
+    {
+     "pollster": "Beacon Research (D)/ Shaw & Co. Research (R)",
+     "dates": "September 24\u201328, 2026",
+     "sample": "881 (LV)",
+     "moe": "\u00b1{{nbsp}}3.0%",
+     "D": 51.0,
+     "R": 49.0
+    },
+    {
+     "pollster": "Pulse Decision Science (R)",
+     "dates": "September 24\u201327, 2026",
+     "sample": "800 (LV)",
+     "moe": "\u00b1 3.5%",
+     "D": 45.0,
+     "R": 48.0
+    },
+    {
+     "pollster": "Big Data Poll",
+     "dates": "September 24\u201326, 2026",
+     "sample": "698 (LV)",
+     "moe": "\u00b1{{nbsp}}4.0%",
+     "D": 45.0,
+     "R": 42.0
+    },
+    {
+     "pollster": "Stratus Intelligence (R)",
+     "dates": "September 22\u201324, 2026",
+     "sample": "856 (LV)",
+     "moe": "\u00b1 3.5%",
+     "D": 48.0,
+     "R": 48.0
+    },
+    {
+     "pollster": "Texas Public Opinion Research (D)",
+     "dates": "September 19\u201322, 2026",
+     "sample": "1,007 (LV)",
+     "moe": "\u00b1{{nbsp}}3.6%",
+     "D": 49.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "Marist University",
+     "dates": "September 17\u201320, 2026",
+     "sample": "1,139 (RV)",
+     "moe": "\u00b1{{nbsp}}4.4%",
+     "D": 50.0,
+     "R": 44.0
+    },
+    {
+     "pollster": "Texas Southern University",
+     "dates": "September 15\u201319, 2026",
+     "sample": "1,800 (LV)",
+     "moe": "\u00b1{{nbsp}}2.3%",
+     "D": 47.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "Trafalgar Group (R)",
+     "dates": "September 15\u201317, 2026",
+     "sample": "1,079 (LV)",
+     "moe": "\u00b1{{nbsp}}2.9%",
+     "D": 46.0,
+     "R": 45.0
+    }
+   ],
+   "averages": [
+    {
+     "source": "270toWin",
+     "dates": "September 15\u201330, 2026",
+     "updated": "October 3, 2026",
+     "D": 49.6,
+     "R": 45.6
+    },
+    {
+     "source": "Decision Desk HQ",
+     "dates": "through September 30, 2026",
+     "updated": "October 3, 2026",
+     "D": 47.8,
+     "R": 44.8
+    },
+    {
+     "source": "FiftyPlusOne",
+     "dates": "through September 30, 2026",
+     "updated": "October 3, 2026",
+     "D": 48.4,
+     "R": 45.2
+    },
+    {
+     "source": "RealClearPolitics",
+     "dates": "September 12\u201330, 2026",
+     "updated": "October 3, 2026",
+     "D": 48.2,
+     "R": 45.4
+    },
+    {
+     "source": "The Texas Tribune",
+     "dates": "through September 29, 2026",
+     "updated": "September 30, 2026",
+     "D": 47.8,
+     "R": 45.7
+    },
+    {
+     "source": "Silver Bulletin",
+     "dates": "through September 27, 2026",
+     "updated": "October 1, 2026",
+     "D": 48.9,
+     "R": 45.5
+    }
+   ],
+   "ratings": [
+    {
+     "source": "The Cook Political Report",
+     "rating": "Toss-up",
+     "as_of": "September 23, 2026"
+    },
+    {
+     "source": "Sabato's Crystal Ball",
+     "rating": "Toss-up",
+     "as_of": "September 22, 2026"
+    },
+    {
+     "source": "Inside Elections",
+     "rating": "Tilt R",
+     "as_of": "October 1, 2026"
+    },
+    {
+     "source": "Decision Desk HQ",
+     "rating": "Toss-up",
+     "as_of": "October 2, 2026"
+    },
+    {
+     "source": "Silver Bulletin",
+     "rating": "Lean D (flip)",
+     "as_of": "October 3, 2026"
+    }
+   ],
+   "average_of_averages": {
+    "D": 48.5,
+    "R": 45.4
+   },
+   "poll_avg": {
+    "D": 47.8,
+    "R": 45.6
+   },
+   "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+   "wiki_fetched": "2026-10-04T19:16+00:00",
+   "markets": [
+    {
+     "source": "Kalshi",
+     "url": "https://kalshi.com",
+     "D": 64.0,
+     "R": 36.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "Polymarket",
+     "url": "https://polymarket.com/event/texas-senate-election-winner",
+     "D": 64.5,
+     "R": 35.5,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "PredictIt",
+     "url": "https://www.predictit.org/markets/detail/8173/Which-party-will-win-the-2026-US-Senate-election-in-Texas",
+     "D": 62.0,
+     "R": 41.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    }
+   ]
+  },
+  "TX-governor": {
+   "state": "TX",
+   "state_name": "Texas",
+   "office": "governor",
+   "title": "Governor",
+   "cands": [
+    {
+     "name": "Gina Hinojosa",
+     "match": "Hinojosa",
+     "party": "D"
+    },
+    {
+     "name": "Greg Abbott",
+     "match": "Abbott",
+     "party": "R",
+     "inc": true
+    }
+   ],
+   "polls": [
+    {
+     "pollster": "New York Times/Siena University",
+     "dates": "September 22 \u2013 October 1, 2026",
+     "sample": "615 (LV)",
+     "moe": "\u00b1 2.1%",
+     "D": 49.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "Beacon Research (D)/ Shaw & Co. Research (R)",
+     "dates": "September 24\u201328, 2026",
+     "sample": "1,005 (LV)",
+     "moe": "\u00b1{{nbsp}}3.0%",
+     "D": 47.0,
+     "R": 52.0
+    },
+    {
+     "pollster": "Big Data Poll",
+     "dates": "September 24\u201326, 2026",
+     "sample": "698 (LV)",
+     "moe": "\u00b1{{nbsp}}4.0%",
+     "D": 44.0,
+     "R": 47.0
+    },
+    {
+     "pollster": "Stratus Intelligence (R)",
+     "dates": "September 22\u201324, 2026",
+     "sample": "865 (LV)",
+     "moe": "\u00b1{{nbsp}}3.5%",
+     "D": 45.0,
+     "R": 50.0
+    },
+    {
+     "pollster": "Texas Public Opinion Research",
+     "dates": "September 19\u201322, 2026",
+     "sample": "1,007 (LV)",
+     "moe": "\u00b1{{nbsp}}3.6%",
+     "D": 46.0,
+     "R": 50.0
+    },
+    {
+     "pollster": "Marist University",
+     "dates": "September 17\u201320, 2026",
+     "sample": "1,139 (RV)",
+     "moe": "\u00b1{{nbsp}}4.4%",
+     "D": 49.0,
+     "R": 46.0
+    },
+    {
+     "pollster": "Texas Southern University",
+     "dates": "September 15\u201319, 2026",
+     "sample": "1,800 (LV)",
+     "moe": "\u00b1{{nbsp}}2.3%",
+     "D": 45.0,
+     "R": 49.0
+    },
+    {
+     "pollster": "Emerson College",
+     "dates": "September 12\u201314, 2026",
+     "sample": "1,000 (LV)",
+     "moe": "\u00b1{{nbsp}}3.0%",
+     "D": 46.0,
+     "R": 49.0
+    },
+    {
+     "pollster": "SoCal Strategies (R)",
+     "dates": "September 12\u201313, 2026",
+     "sample": "649 (LV)",
+     "moe": "\u2013",
+     "D": 44.0,
+     "R": 52.0
+    },
+    {
+     "pollster": "ReconMR/Siena University",
+     "dates": "September 8\u201311, 2026",
+     "sample": "614 (LV)",
+     "moe": "\u00b1{{nbsp}}4.3%",
+     "D": 49.0,
+     "R": 45.0
+    }
+   ],
+   "averages": [
+    {
+     "source": "270toWin",
+     "dates": "September 17 \u2013 October 1, 2026",
+     "updated": "October 1, 2026",
+     "D": 47.0,
+     "R": 48.5
+    },
+    {
+     "source": "Decision Desk HQ",
+     "dates": "through September 28, 2026",
+     "updated": "October 1, 2026",
+     "D": 46.0,
+     "R": 48.9
+    },
+    {
+     "source": "FiftyPlusOne",
+     "dates": "through September 28, 2026",
+     "updated": "October 1, 2026",
+     "D": 46.1,
+     "R": 49.2
+    },
+    {
+     "source": "Race to the WH",
+     "dates": "through September 28, 2026",
+     "updated": "October 1, 2026",
+     "D": 45.8,
+     "R": 48.9
+    },
+    {
+     "source": "RealClearPolitics",
+     "dates": "September 8\u201328, 2026",
+     "updated": "October 1, 2026",
+     "D": 45.9,
+     "R": 48.5
+    },
+    {
+     "source": "Silver Bulletin",
+     "dates": "through September 28, 2026",
+     "updated": "October 1, 2026",
+     "D": 46.6,
+     "R": 49.0
+    }
+   ],
+   "ratings": [
+    {
+     "source": "The Cook Political Report",
+     "rating": "Lean R",
+     "as_of": "October 1, 2026"
+    },
+    {
+     "source": "Sabato's Crystal Ball",
+     "rating": "Lean R",
+     "as_of": "September 22, 2026"
+    },
+    {
+     "source": "Inside Elections",
+     "rating": "Likely R",
+     "as_of": "September 17, 2026"
+    },
+    {
+     "source": "Decision Desk HQ",
+     "rating": "Lean R",
+     "as_of": "September 23, 2026"
+    },
+    {
+     "source": "Silver Bulletin",
+     "rating": "Lean R",
+     "as_of": "September 23, 2026"
+    }
+   ],
+   "average_of_averages": {
+    "D": 46.2,
+    "R": 48.8
+   },
+   "poll_avg": {
+    "D": 46.4,
+    "R": 48.6
+   },
+   "url": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
+   "wiki_fetched": "2026-10-04T19:16+00:00",
+   "markets": [
+    {
+     "source": "Kalshi",
+     "url": "https://kalshi.com",
+     "D": 26.0,
+     "R": 74.0,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "Polymarket",
+     "url": "https://polymarket.com/event/texas-governor-winner-2026",
+     "D": 25.5,
+     "R": 75.1,
+     "fetched": "2026-10-04T19:16+00:00"
+    },
+    {
+     "source": "PredictIt",
+     "url": "https://www.predictit.org/markets/detail/8418/Which-party-will-win-the-2026-election-for-governor-of-Texas",
+     "R": 74.0,
+     "D": 27.0,
+     "fetched": "2026-10-04T19:16+00:00"
     }
    ]
   }

@@ -70,7 +70,7 @@ python analytics/check_ga_districts.py
 git add data/ga_districts web/ga && git commit -m "GA early-vote update" && git push
 ```
 
-- `ga_polling.py` refreshes the **View Polling Data** page (polls, averages, ratings, betting
+- `ga_polling.py` refreshes the **View Polling Data** page for GA, MI, OH & TX (polls, averages, ratings, betting
   odds) from public sources. **No download needed**, and it can be run any time, even on days you
   skip the early-vote file. If a source is down it keeps the last good copy and says when that was fetched.
 - `check_ga_districts.py` should end with **ALL CHECKS PASSED**. If it fails, don't push; ask Claude.

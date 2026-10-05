@@ -1,6 +1,6 @@
 """
 ga_polling.py — polls, polling averages, race ratings and betting odds for the 2026
-U.S. Senate and Governor races in Georgia, Michigan, Ohio and Texas, for the
+U.S. Senate and Governor races in Georgia, Michigan, North Carolina, Ohio and Texas, for the
 "View Polling Data" page (web/ga/). Add a state by adding two race(...) lines below.
 
 Sources (all public, no keys):
@@ -36,7 +36,7 @@ N_POLLS = 10
 RATERS = ["The Cook Political Report", "Sabato's Crystal Ball", "Inside Elections",
           "Decision Desk HQ", "Silver Bulletin"]
 
-STATES = {"GA": "Georgia", "MI": "Michigan", "OH": "Ohio", "TX": "Texas"}
+STATES = {"GA": "Georgia", "MI": "Michigan", "NC": "North Carolina", "OH": "Ohio", "TX": "Texas"}
 
 
 def race(st, office, wiki, d, r, kalshi, polymarket, predictit, title=None):
@@ -58,6 +58,8 @@ _RACES = [
          ("Abdul El-Sayed", "El-Sayed"), ("Mike Rogers", "Rogers"), "SENATEMI", "michigan-senate-election-winner", 8158),
     race("MI", "governor", "2026_Michigan_gubernatorial_election",
          ("Jocelyn Benson", "Benson"), ("John James", "James"), "GOVPARTYMI", "michigan-governor-winner-2026", 8212),
+    race("NC", "senate", "2026_United_States_Senate_election_in_North_Carolina",       # no NC governor race in 2026
+         ("Roy Cooper", "Cooper"), ("Michael Whatley", "Whatley"), "SENATENC", "north-carolina-senate-election-winner", 8160),
     race("OH", "senate", "2026_United_States_Senate_special_election_in_Ohio",
          ("Sherrod Brown", "Brown"), ("Jon Husted", "Husted", 1), "SENATEOHS", "ohio-senate-election-winner", 8175,
          title="U.S. Senate (special election)"),

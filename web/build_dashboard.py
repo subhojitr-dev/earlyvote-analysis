@@ -129,7 +129,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
   <div class="sub">County-level early-voting signal vs 2020, 2022 &amp; 2024 &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
-  <div class="sub" style="margin-top:6px"><b>New for Georgia:</b> <a href="/ga/" style="color:var(--accent)">early vote by State House &amp; Senate district &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
+  <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a> and <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">
   <div class="tabs" id="tabs"></div>

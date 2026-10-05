@@ -106,3 +106,34 @@ and `2022` → `11/8/2022 - 11/08/2022 GENERAL/SPECIAL ELECTION`, County blank.
   page can be checked at realistic early-voting volumes.
 - **First real in-person day:** Wed Oct 14 morning's file (covering Tue Oct 13) is the
   first one with in-person early votes. Check that the counts jump and the page updates.
+
+---
+
+## North Carolina (no manual download)
+
+The NC page (`/nc/`) uses the NC State Board of Elections absentee file, which is a **public
+direct download** (no anti-bot check), so one command fetches it. It also carries each early
+voter's race, ethnicity, gender, age and party, which feed the "Who has voted early" tables.
+NC in-person early voting runs **Thu Oct 15 – Sat Oct 31, 2026**.
+
+```bash
+python ingestor/nc_districts.py 2026
+```
+```bash
+python web/build_ga_districts.py NC
+```
+```bash
+python analytics/check_ga_districts.py NC
+```
+```bash
+git add data/nc_districts web/nc && git commit -m "NC early-vote update" && git push
+```
+
+One-time files (already downloaded): `data/incoming/nc/NC_2022_general.zip`, `NC_2024_general.zip`, and
+`data/raw/ncsbe/STATEWIDE_PRECINCT_SORT_2024.txt`, the Board's **precinct-sorted** 2024 results, used
+for the district lean. That file matters: other 2024 files report many counties' early votes by
+voting *site*, which mixes districts and threw some NC district leans off by up to 14 points.
+
+`data/nc_districts/demo_*.csv` also holds the early electorate's make-up for each **congressional**
+district, for the Demographic Analysis app.
+

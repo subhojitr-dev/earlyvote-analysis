@@ -1,6 +1,6 @@
 """
-build_ga_districts.py — data for the Georgia State House / State Senate drill-down
-page (web/ga/).
+build_ga_districts.py — data for the State House / State Senate drill-down pages:
+Georgia (web/ga/) and North Carolina (web/nc/). Same method for both states.
 
 Combines
   data/ga_districts/early_{2022,2024,2026}.csv   (from ingestor/ga_districts.py)
@@ -32,7 +32,14 @@ DEMO MODE
   so a clearly-labelled synthetic snapshot is also built (each district's
   comparison-year pattern a week into early voting, seeded random tilt per district).
 
-Run:  python web/build_ga_districts.py
+DEMOGRAPHICS (states whose files carry them — North Carolina)
+  data/{st}_districts/demo_{year}.csv (race, age, gender, party of early voters).
+  Each district gets the make-up of its early voters now vs the same day in its
+  comparison year (same comparison rule as above), shown as shares; groups with
+  < MIN_GROUP voters are not shown separately.
+
+Run:  python web/build_ga_districts.py        (Georgia)
+      python web/build_ga_districts.py NC     (North Carolina)
 """
 from __future__ import annotations
 
@@ -40,6 +47,8 @@ import csv
 import json
 import random
 import re
+import shutil
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -48,11 +57,21 @@ from shapely.geometry import shape as to_shape, mapping
 from shapely.ops import polylabel
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data" / "ga_districts"
 GEO = ROOT / "data" / "raw" / "geo"
 RACE = {}
-MEDSL24 = ROOT / "data" / "raw" / "medsl" / "ga24.csv"   # github.com/MEDSL/2024-elections-official (ga24.zip)
-OUT = ROOT / "web" / "ga"
+STATES = {
+    "GA": {"name": "Georgia", "fips": "13", "ev_start": "Oct 13",
+           "source": "Georgia Secretary of State absentee file"},
+    "NC": {"name": "North Carolina", "fips": "37", "ev_start": "Oct 15",
+           "source": "NC State Board of Elections absentee file"},
+}
+ST = (sys.argv[1] if len(sys.argv) > 1 else "GA").upper()
+CFG = STATES[ST]
+DATA = ROOT / "data" / f"{ST.lower()}_districts"
+# MIT Election Lab 2024 precinct results, all offices: github.com/MEDSL/2024-elections-official ({st}24.zip)
+MEDSL24 = ROOT / "data" / "raw" / "medsl" / f"{ST.lower()}24.csv"
+OUT = ROOT / "web" / ST.lower()
+MIN_GROUP = 10           # demographic groups with fewer voters are folded into "Other / not shown"
 
 SAME_MIN = 0.90          # >= 90% same voters => "lines unchanged" (movers add ~2-4% noise)
 DEMO_DAYS_OUT = 15       # demo snapshot = one week into early voting
@@ -81,6 +100,8 @@ def load_early(year: int):
     if not p.exists():
         return out
     for r in csv.DictReader(p.open(encoding="utf-8")):
+        if r["chamber"] not in CHAMBERS:
+            continue
         k, c, d, n = (r["chamber"], r["district"]), key(r["county"]), int(r["days_out"]), int(r["ballots"])
         out["all"][k][c][d] += n
         out[r["mode"]][k][c][d] += n
@@ -126,6 +147,11 @@ def load_lean():
     tot = sum(d + rep for d, rep in pres.values())
     for ch in CHAMBERS:
         acc, hit = defaultdict(lambda: [0.0, 0.0]), 0
+        # Each precinct's presidential vote goes to the district(s) on its ballot;
+        # precincts split between districts are shared out by each district's share
+        # of that precinct's legislative vote. (Needs results reported by real
+        # precinct — for NC that is the State Board's precinct-sorted file; see
+        # ingestor/nc_districts.py. Tested against published district results.)
         for k, (dv, rv) in pres.items():
             dist = leg[ch].get(k)
             if not dist or not sum(dist.values()):
@@ -143,11 +169,11 @@ def load_lean():
     for ch in CHAMBERS:
         for d, cs in cand[ch].items():
             top = sorted(cs.items(), key=lambda kv: -kv[1][0])
-            if len(top) < 2 or not top[1][1][0]:
-                race[(ch, d)] = {"contested": False, "winner": top[0][0].title(), "party": top[0][1][1][:1]}
-                continue
             dv = sum(v for v, p in cs.values() if p == "DEMOCRAT")
             rv = sum(v for v, p in cs.values() if p == "REPUBLICAN")
+            if not (dv and rv):          # no D-vs-R contest (write-ins / minor parties only)
+                race[(ch, d)] = {"contested": False, "winner": top[0][0].title(), "party": top[0][1][1][:1]}
+                continue
             race[(ch, d)] = {"contested": True, "winner": top[0][0].title(), "party": top[0][1][1][:1],
                              "margin": round((dv - rv) / (dv + rv) * 100, 1) if dv + rv else None}
     return lean, race
@@ -159,7 +185,7 @@ def read_shapes(stem: str, field: str, state_only=True):
     out = {}
     for sr in r.iterShapeRecords():
         rec = sr.record.as_dict()
-        if state_only and rec.get("STATEFP") != "13":
+        if state_only and rec.get("STATEFP") != CFG["fips"]:
             continue
         out[rec[field]] = to_shape(sr.shape.__geo_interface__).buffer(0)
     return out
@@ -248,6 +274,9 @@ def build_mode(cur, e22, e24, days_out, redraw, lean):
             if m == "all":
                 out_stats[k] = s
                 s["by_mode"] = {}
+                if DEMO:
+                    s["demo"] = demo_compare(DEMO["cur"].get((ch, d)), DEMO[s["comp_year"]].get((ch, d)),
+                                             days_out, MIN_MODE_BALLOTS)
                 continue
             base = out_stats[k]
             base["by_mode"][m] = {f: s[f] for f in ("now", "then", "share_now", "share_then", "pace")}
@@ -263,20 +292,28 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "county").mkdir(exist_ok=True)
     e22, e24, e26 = load_early(2022), load_early(2024), load_early(2026)
-    global RACE
+    global RACE, DEMO
+    d22, d24, d26 = load_demo(2022), load_demo(2024), load_demo(2026)
     redraw, (lean, RACE) = load_redraw(), load_lean()
 
-    live_days = min((d for byc in e26["all"].values() for s in byc.values() for d in s), default=30)
-    modes = {
-        "live": (live_days, *build_mode(e26, e22, e24, live_days, redraw, lean)),
-        "demo": (DEMO_DAYS_OUT, *build_mode(demo_modes(e22, e24, redraw), e22, e24, DEMO_DAYS_OUT, redraw, lean)),
-    }
+    # latest day in the file — but never later than today (guards against mistyped future dates)
+    from datetime import date
+    live_days = max(min((d for byc in e26["all"].values() for s in byc.values() for d in s), default=30),
+                    (date(2026, 11, 3) - date.today()).days)
+    DEMO = d26 and {"cur": d26, 2022: d22, 2024: d24}
+    live = build_mode(e26, e22, e24, live_days, redraw, lean)
+    # demo mode: demographic make-up = each district's comparison year (no invented shifts)
+    DEMO = d26 and {"cur": {k: v for k, v in demo_from_comp(d22, d24, redraw).items()}, 2022: d22, 2024: d24}
+    demo = build_mode(demo_modes(e22, e24, redraw), e22, e24, DEMO_DAYS_OUT, redraw, lean)
+    modes = {"live": (live_days, *live), "demo": (DEMO_DAYS_OUT, *demo)}
 
     counties = {key(k): (v, k) for k, v in
                 ((rec_name, g) for rec_name, g in read_county_shapes().items())}
-    dshapes = {ch: read_shapes(f"cb_2024_13_{stem}_500k", fld) for ch, (stem, fld, _) in CHAMBERS.items()}
+    dshapes = {ch: read_shapes(f"cb_2024_{CFG['fips']}_{stem}_500k", fld) for ch, (stem, fld, _) in CHAMBERS.items()}
 
-    state = {"counties": [], "modes": {}}
+    state = {"counties": [], "modes": {},
+             "meta": {"state": ST, "name": CFG["name"], "ev_start": CFG["ev_start"], "source": CFG["source"],
+                      "has_demo": bool(d26)}}
     for m, (dd, totals, stats) in modes.items():
         state["modes"][m] = {"days_out": dd, "totals": totals,
                              "house_ahead": sum(1 for s in stats.values() if s["chamber"] == "house" and (s["pace"] or 0) > 0),
@@ -332,7 +369,15 @@ def main():
         (OUT / "county" / f"{ck}.json").write_text(json.dumps(cdata, separators=(",", ":")), encoding="utf-8")
         state["counties"].append(summary)
 
+    if d26:   # statewide make-up of early voters (House districts cover every voter once)
+        for m, (dd, _, _) in modes.items():
+            src = d26 if m == "live" else demo_from_comp(d22, d24, {}, all22=True)
+            state["modes"][m]["demo"] = {str(y): demo_compare(statewide(src), statewide(dy), dd, 1)
+                                         for y, dy in ((2022, d22), (2024, d24))}
     (OUT / "state.json").write_text(json.dumps(state, separators=(",", ":")), encoding="utf-8")
+    page = ROOT / "web" / "ga" / "index.html"          # one page for every state
+    if OUT != page.parent:
+        shutil.copyfile(page, OUT / "index.html")
     print(f"wrote state.json + {len(counties)} county files; live days_out={live_days}, "
           f"live ballots={modes['live'][1]['now']:,}")
 
@@ -350,10 +395,68 @@ def demo_modes(e22, e24, redraw):
     return out
 
 
+DEMO = {}
+DIMS = ("race", "age", "gender", "party")
+
+
+def load_demo(year: int):
+    """{(chamber, district): {dim: {group: {days_out: n}}}} or {} if the state has no demographics."""
+    p = DATA / f"demo_{year}.csv"
+    if not p.exists():
+        return {}
+    out = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(int))))
+    for r in csv.DictReader(p.open(encoding="utf-8")):
+        out[(r["chamber"], r["district"])][r["dim"]][r["group"]][int(r["days_out"])] += int(r["ballots"])
+    return out
+
+
+def statewide(demo):
+    """Sum House districts (every voter is in exactly one) into one statewide record."""
+    tot = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    for (ch, _), dims in demo.items():
+        if ch != "house":
+            continue
+        for dim, groups in dims.items():
+            for g, series in groups.items():
+                for d, n in series.items():
+                    tot[dim][g][d] += n
+    return tot
+
+
+def demo_from_comp(d22, d24, redraw, all22=False):
+    """Demo-mode make-up: each district's own comparison-year make-up."""
+    if all22:
+        return d22
+    return {k: (d22 if redraw.get(k, 0) >= SAME_MIN else d24).get(k, {}) for k in set(d22) | set(d24)}
+
+
+def demo_compare(now, then, days_out, min_n):
+    """-> {dim: [{g, now, share_now, share_then}]} ; None if too few voters."""
+    if not now or not then:
+        return None
+    out = {}
+    for dim in DIMS:
+        gn = {g: upto(s, days_out) for g, s in now.get(dim, {}).items()}
+        gt = {g: upto(s, days_out) for g, s in then.get(dim, {}).items()}
+        tn, tt = sum(gn.values()), sum(gt.values())
+        if tn < min_n or not tt:
+            return None
+        rows = []
+        for g in sorted(set(gn) | set(gt), key=lambda g: -(gt.get(g, 0) + gn.get(g, 0))):
+            rows.append({"g": g, "now": gn.get(g, 0), "share_now": round(gn.get(g, 0) / tn, 4),
+                         "share_then": round(gt.get(g, 0) / tt, 4)})
+        # privacy: don't show a separate count for tiny groups
+        for r in rows:
+            if 0 < r["now"] < MIN_GROUP:
+                r["now"] = None
+        out[dim] = rows
+    return out
+
+
 def read_county_shapes():
     r = shapefile.Reader(str(GEO / "cb_2024_us_county_500k" / "cb_2024_us_county_500k"))
     return {sr.record["NAME"]: to_shape(sr.shape.__geo_interface__).buffer(0)
-            for sr in r.iterShapeRecords() if sr.record["STATEFP"] == "13"}
+            for sr in r.iterShapeRecords() if sr.record["STATEFP"] == CFG["fips"]}
 
 
 if __name__ == "__main__":

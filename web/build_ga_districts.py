@@ -64,6 +64,16 @@ STATES = {
            "source": "Georgia Secretary of State absentee file"},
     "NC": {"name": "North Carolina", "fips": "37", "ev_start": "Oct 15",
            "source": "NC State Board of Elections absentee file"},
+    # Texas: districts from the Texas Legislative Council (current plans), lean from its
+    # Red-206 district election reports; congressional map redrawn in 2025.
+    "TX": {"name": "Texas", "fips": "48", "ev_start": "Oct 19",
+           "source": "Texas Secretary of State early-voting rosters",
+           "chambers": {"house": ("tlc:PLANH2316", "District", "HD"),
+                        "senate": ("tlc:PLANS2168", "District", "SD"),
+                        "congress": ("tlc:PLANC2333", "District", "CD")},
+           "lean": "tlc",
+           "min_county_share": 0,       # votes are placed by precinct, so there is no stray-address noise to hide
+           "reason": {"congress": "Redrawn in 2025; 2024 votes re-counted on the new lines"}},
 }
 ST = (sys.argv[1] if len(sys.argv) > 1 else "GA").upper()
 CFG = STATES[ST]
@@ -77,9 +87,9 @@ SAME_MIN = 0.90          # >= 90% same voters => "lines unchanged" (movers add ~
 DEMO_DAYS_OUT = 15       # demo snapshot = one week into early voting
 STATE_TOL = 0.004        # geometry simplification (degrees) for the state map
 COUNTY_TOL = 0.0006      # finer for the single-county map
-MIN_COUNTY_SHARE = 0.005  # hide counties with < 0.5% of a district's ballots (address noise)
+MIN_COUNTY_SHARE = CFG.get("min_county_share", 0.005)  # hide counties with < 0.5% of a district's ballots (address noise)
 MIN_PIECE = 0.003        # drop district pieces < 0.3% of the county's area (slivers)
-CHAMBERS = {"house": ("sldl", "SLDLST", "HD"), "senate": ("sldu", "SLDUST", "SD")}
+CHAMBERS = CFG.get("chambers") or {"house": ("sldl", "SLDLST", "HD"), "senate": ("sldu", "SLDUST", "SD")}
 MODES = ("all", "inperson", "mail")   # overall, early in-person, mail (incl. electronic)
 MIN_MODE_BALLOTS = 30    # pace (overall, in-person, mail) shown only with >= 30 ballots now AND then
 
@@ -222,7 +232,7 @@ def district_stats(ch, d, cur, comp22, comp24, totals, days_out, redraw, lean, m
         "chamber": ch, "district": d,
         "label": f"{CHAMBERS[ch][2]}-{d}",
         "comp_year": comp_year,
-        "reason": "Same lines since 2022" if unchanged else "Redrawn before 2024",
+        "reason": "Same lines since 2022" if unchanged else CFG.get("reason", {}).get(ch, "Redrawn before 2024"),
         "same_pct": same,
         "lean": lean.get((ch, d)),
         "race24": RACE.get((ch, d)),
@@ -294,26 +304,29 @@ def main():
     e22, e24, e26 = load_early(2022), load_early(2024), load_early(2026)
     global RACE, DEMO
     d22, d24, d26 = load_demo(2022), load_demo(2024), load_demo(2026)
-    redraw, (lean, RACE) = load_redraw(), load_lean()
+    redraw, (lean, RACE) = load_redraw(), (load_lean_tlc() if CFG.get("lean") == "tlc" else load_lean())
 
     # latest day in the file — but never later than today (guards against mistyped future dates)
     from datetime import date
     live_days = max(min((d for byc in e26["all"].values() for s in byc.values() for d in s), default=30),
                     (date(2026, 11, 3) - date.today()).days)
-    DEMO = d26 and {"cur": d26, 2022: d22, 2024: d24}
+    has_demo = bool(d22 or d24)           # the state's files carry demographics (NC) or surname estimates (TX)
+    DEMO = has_demo and {"cur": d26, 2022: d22, 2024: d24}
     live = build_mode(e26, e22, e24, live_days, redraw, lean)
     # demo mode: demographic make-up = each district's comparison year (no invented shifts)
-    DEMO = d26 and {"cur": {k: v for k, v in demo_from_comp(d22, d24, redraw).items()}, 2022: d22, 2024: d24}
+    DEMO = has_demo and {"cur": {k: v for k, v in demo_from_comp(d22, d24, redraw).items()}, 2022: d22, 2024: d24}
     demo = build_mode(demo_modes(e22, e24, redraw), e22, e24, DEMO_DAYS_OUT, redraw, lean)
     modes = {"live": (live_days, *live), "demo": (DEMO_DAYS_OUT, *demo)}
 
     counties = {key(k): (v, k) for k, v in
                 ((rec_name, g) for rec_name, g in read_county_shapes().items())}
-    dshapes = {ch: read_shapes(f"cb_2024_{CFG['fips']}_{stem}_500k", fld) for ch, (stem, fld, _) in CHAMBERS.items()}
+    dshapes = {ch: (read_tlc(stem[4:]) if stem.startswith("tlc:") else read_shapes(f"cb_2024_{CFG['fips']}_{stem}_500k", fld))
+               for ch, (stem, fld, _) in CHAMBERS.items()}
 
     state = {"counties": [], "modes": {},
              "meta": {"state": ST, "name": CFG["name"], "ev_start": CFG["ev_start"], "source": CFG["source"],
-                      "has_demo": bool(d26)}}
+                      "has_demo": has_demo, "demo_kind": "surname" if ST == "TX" else "record",
+                      "chambers": list(CHAMBERS)}}
     for m, (dd, totals, stats) in modes.items():
         state["modes"][m] = {"days_out": dd, "totals": totals,
                              "house_ahead": sum(1 for s in stats.values() if s["chamber"] == "house" and (s["pace"] or 0) > 0),
@@ -369,7 +382,7 @@ def main():
         (OUT / "county" / f"{ck}.json").write_text(json.dumps(cdata, separators=(",", ":")), encoding="utf-8")
         state["counties"].append(summary)
 
-    if d26:   # statewide make-up of early voters (House districts cover every voter once)
+    if has_demo:   # statewide make-up of early voters (House districts cover every voter once)
         for m, (dd, _, _) in modes.items():
             src = d26 if m == "live" else demo_from_comp(d22, d24, {}, all22=True)
             state["modes"][m]["demo"] = {str(y): demo_compare(statewide(src), statewide(dy), dd, 1)
@@ -396,7 +409,7 @@ def demo_modes(e22, e24, redraw):
 
 
 DEMO = {}
-DIMS = ("race", "age", "gender", "party")
+DIMS = ("race", "age", "gender", "party", "surname")   # surname = TX Hispanic / Asian estimate
 
 
 def load_demo(year: int):
@@ -436,6 +449,8 @@ def demo_compare(now, then, days_out, min_n):
         return None
     out = {}
     for dim in DIMS:
+        if dim not in now and dim not in then:
+            continue
         gn = {g: upto(s, days_out) for g, s in now.get(dim, {}).items()}
         gt = {g: upto(s, days_out) for g, s in then.get(dim, {}).items()}
         tn, tt = sum(gn.values()), sum(gt.values())
@@ -451,6 +466,44 @@ def demo_compare(now, then, days_out, min_n):
                 r["now"] = None
         out[dim] = rows
     return out
+
+
+def read_tlc(plan: str):
+    """Texas Legislative Council plan shapefile (Lambert conformal conic) -> lon/lat shapes."""
+    import pyproj
+    from shapely.ops import transform
+    base = ROOT / "data" / "raw" / "tlc" / plan / plan / plan
+    tr = pyproj.Transformer.from_crs(pyproj.CRS.from_wkt(base.with_suffix(".prj").read_text()), "EPSG:4326",
+                                     always_xy=True)
+    r = shapefile.Reader(str(base))
+    return {str(sr.record["District"]): transform(tr.transform, to_shape(sr.shape.__geo_interface__)).buffer(0)
+            for sr in r.iterShapeRecords()}
+
+
+def load_lean_tlc():
+    """Texas: 2024 presidential vote by district straight from the Legislative Council's
+    Red-206 'Election Analysis' report for each current plan (no allocation needed)."""
+    import os
+    import xlrd
+    plans = {ch: stem[4:] for ch, (stem, _, _) in CHAMBERS.items()}
+    lean = {}
+    for ch, plan in plans.items():
+        b = xlrd.open_workbook(ROOT / "data" / "raw" / "tlc" / f"{plan}_r206_Election24G.xls", logfile=open(os.devnull, "w"))
+        sh = b.sheet_by_index(1)
+        rows = [sh.row_values(i) for i in range(sh.nrows)]
+        hi = next(i for i, r in enumerate(rows) if any(str(x).startswith("Harris-D") for x in r))
+        cd = next(j for j, x in enumerate(rows[hi]) if str(x).startswith("Harris-D"))
+        cr = next(j for j, x in enumerate(rows[hi]) if str(x).startswith("Trump-R"))
+        for r in rows[hi + 1:]:
+            if isinstance(r[0], float) or str(r[0]).strip().isdigit() or isinstance(r[1], float):
+                dcol = next(x for x in r[:3] if x != "")
+                if str(dcol).upper() == "STATE":
+                    continue
+                d, dv, rv = str(int(float(dcol))), float(r[cd] or 0), float(r[cr] or 0)
+                if dv + rv:
+                    lean[(ch, d)] = round((dv - rv) / (dv + rv) * 100, 1)
+        print(f"lean ({ch}): {sum(1 for k in lean if k[0] == ch)} districts from {plan} Red-206")
+    return lean, {}
 
 
 def read_county_shapes():

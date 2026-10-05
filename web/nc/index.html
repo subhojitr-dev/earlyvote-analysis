@@ -116,7 +116,10 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmt = n => n == null ? "–" : n.toLocaleString("en-US");
 const title = s => s.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
-const CH = {house:"House", senate:"Senate"};
+const CH = {house:"House", senate:"Senate", congress:"Congressional"};
+const CHAMBERS = () => (S.state && S.state.meta && S.state.meta.chambers) || ["house", "senate"];
+// "State House districts" / "congressional districts"
+const chPlural = ch => ch === "congress" ? "congressional districts" : `State ${CH[ch]} districts`;
 
 // ---------- wording (kept identical everywhere) ----------
 function paceText(p, yr){
@@ -137,7 +140,8 @@ function modeLine(name, b, yr){
     : `<span class="muted">${b.now ? "too few ballots to compare yet" : "none cast yet"}</span>`;
   return `<div class="ml"><span class="mn">${name}</span>${what}<span class="muted">${fmt(b.now)} votes</span></div>`;
 }
-const DIM = {race: "Race / ethnicity", age: "Age", gender: "Gender", party: "Party registration"};
+const DIM = {race: "Race / ethnicity", age: "Age", gender: "Gender", party: "Party registration",
+             surname: "Hispanic / Asian (estimate)"};
 function demoTable(dm, yr, label){
   if (!dm) return "";
   const dims = Object.keys(DIM).filter(k => dm[k]);
@@ -154,7 +158,9 @@ function demoTable(dm, yr, label){
     <table><thead><tr><th>Group</th><th class="num">Now</th><th class="num">${label || yr}</th><th class="num">Change</th><th class="num">Voters</th></tr></thead>
     <tbody>${rows}</tbody></table>
     <div class="src">Share of early voters in each group now, vs the same number of days before Election Day in ${yr}.
-      From the voter's registration record; nobody's vote is known. Groups under 10 voters show "&lt;10".</div></div>`;
+      ${sel === "surname"
+        ? `Texas records no race, so this is an <b>estimate from surnames</b> (Census 2010 surname list: the share of people with each surname who are Hispanic or Asian / Pacific Islander). It tracks the Texas Legislative Council's Spanish-surname registration figures closely (correlation 0.99 across House districts), but individuals can be misclassified, e.g. by married names.`
+        : `From the voter's registration record; nobody's vote is known. Groups under 10 voters show "&lt;10".`}</div></div>`;
 }
 function wireDims(rerender){
   document.querySelectorAll(".dimseg button").forEach(b => b.onclick = () => { S.dim = b.dataset.dim; rerender(); });
@@ -225,9 +231,9 @@ const HOWTO_ = () => `<div class="howto"><b>How to read this.</b> Each district'
   The same comparison is shown for <b>all early votes</b>, and separately for <b>in-person</b> and <b>mail</b> votes.</div>`;
 
 // ---------- views ----------
-const CHS = {house:"HD", senate:"SD"};
-const fullName = (ch, n) => `State ${CH[ch]} District ${n}`;
-const KEY = `<span class="muted" style="font-size:12px">HD = State House District · SD = State Senate District</span>`;
+const CHS = {house:"HD", senate:"SD", congress:"CD"};
+const fullName = (ch, n) => ch === "congress" ? `Congressional District ${n}` : `State ${CH[ch]} District ${n}`;
+const KEY_ = () => `<span class="muted" style="font-size:12px">HD = State House District · SD = State Senate District${CHAMBERS().includes("congress") ? " · CD = Congressional District" : ""}</span>`;
 
 function measureSeg(){
   return `<div class="seg" id="msSeg" title="Which votes colour the map">${Object.entries(MEAS).map(([k,v]) => `<button data-ms="${k}">${v}</button>`).join("")}</div>`;
@@ -243,7 +249,7 @@ function viewState(){
   const st = S.state, m = st.modes[S.mode], layer = S.layer || "counties";
   const P = projector(st.counties.map(c => c.rings), 760);
   const layerSeg = `<div class="seg" id="laySeg">
-      <button data-l="counties">Counties</button><button data-l="house">State House districts</button><button data-l="senate">State Senate districts</button></div>`;
+      <button data-l="counties">Counties</button>${CHAMBERS().map(c => `<button data-l="${c}">${c === "congress" ? "Congressional districts" : `State ${CH[c]} districts`}</button>`).join("")}</div>`;
   let paths, labels = "", panel, headline, hint;
   if (layer === "counties") {
     paths = st.counties.map(c => {
@@ -275,12 +281,12 @@ function viewState(){
       return `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="${sz.toFixed(0)}">${CHS[layer]} ${d.district}</text>`;
     }).join("");
     const withP = ds.filter(d => pc(d) != null), ahead = withP.filter(d => pc(d) > 0).length;
-    headline = `<span class="n">${ahead}</span> of ${withP.length} ${esc(META().name)} State ${CH[layer]} districts are ahead of pace${S.measure === "all" ? "" : ` <span class="muted" style="font-size:15px">(${MEAS[S.measure].toLowerCase()} votes)</span>`}`;
-    hint = `Hover a district for its name; click it to open it. Metro Atlanta districts are small, so click a county or use the list to find them. ${KEY}`;
+    headline = `<span class="n">${ahead}</span> of ${withP.length} ${esc(META().name)} ${chPlural(layer)} are ahead of pace${S.measure === "all" ? "" : ` <span class="muted" style="font-size:15px">(${MEAS[S.measure].toLowerCase()} votes)</span>`}`;
+    hint = `Hover a district for its name; click it to open it. Metro Atlanta districts are small, so click a county or use the list to find them. ${KEY_()}`;
     const rows = ds.map(d => `<tr data-d="${d.chamber}:${d.district}"><td><b>${fullName(d.chamber, d.district)}</b></td>
         <td class="pace ${paceCls(pc(d))}">${paceShort(pc(d))}</td><td>${leanBadge(d.lean)}</td>
         <td class="muted">${esc(d.counties.slice(0,3).map(title).join(", "))}${d.counties.length > 3 ? ` +${d.counties.length - 3}` : ""}</td></tr>`).join("");
-    panel = `<h3>State ${CH[layer]} districts</h3><input class="search" placeholder="Find a district number or county…" id="q">
+    panel = `<h3>${chPlural(layer).replace(/^./, c => c.toUpperCase())}</h3><input class="search" placeholder="Find a district number or county…" id="q">
         <div class="tablewrap"><table><thead><tr><th>District</th><th>vs pace</th><th>Leans</th><th>Counties</th></tr></thead>
         <tbody id="ctab">${rows}</tbody></table></div>`;
   }
@@ -362,19 +368,19 @@ function viewCounty(cd){
   $("#app").innerHTML = modeBanner() + `
     <div class="crumbs"><a href="#/">${esc(META().name)}</a> › ${esc(cd.name)} County</div>
     <div style="display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;margin-bottom:12px">
-      <div><div class="headline">${esc(cd.name)}: <span class="n">${ahead}</span> of ${withPace.length} State ${CH[S.chamber]} districts ahead of pace${S.measure === "all" ? "" : ` <span class="muted" style="font-size:15px">(${MEAS[S.measure].toLowerCase()} votes)</span>`}</div>
+      <div><div class="headline">${esc(cd.name)}: <span class="n">${ahead}</span> of ${withPace.length} ${chPlural(S.chamber)} ahead of pace${S.measure === "all" ? "" : ` <span class="muted" style="font-size:15px">(${MEAS[S.measure].toLowerCase()} votes)</span>`}</div>
       <div class="muted">Click a district on the map or in the table. Districts marked ↗ (dashed edge) continue into another county; their numbers cover the whole district.</div>
-      <div style="margin-top:4px">${KEY}</div></div>
+      <div style="margin-top:4px">${KEY_()}</div></div>
       <div class="sp" style="flex:1"></div>
       ${measureSeg()}
-      <div class="seg" id="chSeg"><button data-ch="house">State House</button><button data-ch="senate">State Senate</button></div>
+      <div class="seg" id="chSeg">${CHAMBERS().map(c => `<button data-ch="${c}">${c === "congress" ? "Congressional" : `State ${CH[c]}`}</button>`).join("")}</div>
     </div>
     <div class="grid">
       <div class="panel"><svg class="map" viewBox="0 0 ${W} ${P.H}">${paths}<path class="outline" d="${P.d(cd.outline)}"></path>${labels}</svg>
         <div class="legend"><span><span class="sw" style="background:rgba(45,212,191,.9)"></span>ahead of pace</span>
         <span><span class="sw" style="background:rgba(251,146,60,.9)"></span>behind pace</span>
         <span>brighter = bigger gap</span></div></div>
-      <div class="panel"><h3>State ${CH[S.chamber]} districts in ${esc(cd.name)}</h3>
+      <div class="panel"><h3>${chPlural(S.chamber).replace(/^./, c => c.toUpperCase())} in ${esc(cd.name)}</h3>
         <div class="tablewrap"><table><thead><tr><th>District</th><th>All early votes</th><th>In-person</th><th>Mail</th><th>Compared with</th><th>Leans</th></tr></thead>
         <tbody>${rows}</tbody></table></div></div>
     </div>`;
@@ -409,7 +415,7 @@ function viewDetail(cd, k){
       <td>${fmt(b.now)}</td><td>${fmt(b.now_inperson)}</td><td>${fmt(b.now_mail)}</td><td>${s.now ? Math.round(b.now/s.now*100) + "%" : "–"}</td><td>${fmt(b.then)}</td></tr>`).join("");
   box.innerHTML = `<button class="x" onclick="location.hash='#/c/${cd.county}'">Close ✕</button>
     <h2>${fullName(s.chamber, s.district)}</h2>
-    <div class="reason">Compared with: ${s.comp_year} (${s.reason === "Redrawn before 2024" ? "district redrawn before 2024" : "same lines since 2022"})</div>
+    <div class="reason">Compared with: ${s.comp_year} (${esc(s.reason.charAt(0).toLowerCase() + s.reason.slice(1))})</div>
     <div class="muted" style="font-size:12px">All early votes</div>
     <div class="big pace ${paceCls(s.pace)}">${paceText(s.pace, s.comp_year)}</div>
     <div class="modes">${modeLine("In-person", s.by_mode.inperson, s.comp_year)}${modeLine("Mail", s.by_mode.mail, s.comp_year)}</div>

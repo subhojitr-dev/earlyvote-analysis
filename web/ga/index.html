@@ -228,7 +228,7 @@ const META = () => (S.state && S.state.meta) || {state: "GA", name: "Georgia", e
 const HOWTO_ = () => `<div class="howto"><b>How to read this.</b> Each district's early voting is compared with the
   ${META().only_2022 ? `<b>2022 general election</b> (the last midterm), at the same day of early voting.` : `<b>last election held on the same district lines</b>, at the same point in early voting.`}
   "Ahead by 8%" means the district makes up a bigger slice of ${esc(META().name)}'s early vote than it did then.
-  ${META().only_2022 ? `Districts redrawn in Dec 2023 are compared with their 2022 early votes <b>re-counted on today's lines</b> (each 2022 voter placed by their precinct).`
+  ${META().only_2022 ? (META().redraw_note || "")
     : `Districts redrawn before the 2024 election are compared with 2024; districts with the same lines since 2022 are compared with 2022.`}
   The same comparison is shown for <b>all early votes</b>, and separately for <b>in-person</b> and <b>mail</b> votes.</div>`;
 
@@ -305,7 +305,7 @@ function viewState(){
       <div class="panel">${panel}</div>
     </div>
     ${m.demo ? `<div class="panel" style="margin-top:14px"><h3>Who has voted early in ${esc(META().name)} so far</h3>
-      <div class="seg" id="dyrSeg" style="margin:4px 0 2px">${["2022","2024"].map(y => `<button data-y="${y}" class="${(S.dyr||"2022") === y ? "on" : ""}">vs ${y}${y === "2022" ? " (last midterm)" : ""}</button>`).join("")}</div>
+      <div class="seg" id="dyrSeg" style="margin:4px 0 2px">${(META().only_2022 ? ["2022"] : ["2022","2024"]).map(y => `<button data-y="${y}" class="${(S.dyr||"2022") === y ? "on" : ""}">vs ${y}${y === "2022" ? " (last midterm)" : ""}</button>`).join("")}</div>
       ${demoTable(m.demo[S.dyr || "2022"], S.dyr || "2022")}</div>` : ""}`;
   document.querySelectorAll("#dyrSeg button").forEach(b => b.onclick = () => { S.dyr = b.dataset.y; route(); });
   wireDims(() => route());

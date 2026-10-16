@@ -1,4 +1,3039 @@
 chamber,district,dim,group,days_out,ballots
+congress,1,surname,All others (est.),4,15583
+congress,1,surname,All others (est.),5,12144
+congress,1,surname,All others (est.),6,9956
+congress,1,surname,All others (est.),7,10695
+congress,1,surname,All others (est.),8,11117
+congress,1,surname,All others (est.),9,1920
+congress,1,surname,All others (est.),10,5963
+congress,1,surname,All others (est.),11,12165
+congress,1,surname,All others (est.),12,12937
+congress,1,surname,All others (est.),13,13678
+congress,1,surname,All others (est.),14,15076
+congress,1,surname,All others (est.),15,15969
+congress,1,surname,All others (est.),17,23
+congress,1,surname,All others (est.),18,353
+congress,1,surname,All others (est.),19,384
+congress,1,surname,All others (est.),20,333
+congress,1,surname,All others (est.),21,354
+congress,1,surname,All others (est.),22,711
+congress,1,surname,All others (est.),24,102
+congress,1,surname,All others (est.),25,575
+congress,1,surname,All others (est.),26,380
+congress,1,surname,All others (est.),27,379
+congress,1,surname,All others (est.),28,254
+congress,1,surname,All others (est.),29,201
+congress,1,surname,All others (est.),32,193
+congress,1,surname,All others (est.),33,151
+congress,1,surname,All others (est.),34,70
+congress,1,surname,All others (est.),35,1
+congress,1,surname,All others (est.),36,35
+congress,1,surname,All others (est.),37,14
+congress,1,surname,Asian (est.),4,238
+congress,1,surname,Asian (est.),5,185
+congress,1,surname,Asian (est.),6,141
+congress,1,surname,Asian (est.),7,160
+congress,1,surname,Asian (est.),8,155
+congress,1,surname,Asian (est.),9,37
+congress,1,surname,Asian (est.),10,100
+congress,1,surname,Asian (est.),11,172
+congress,1,surname,Asian (est.),12,171
+congress,1,surname,Asian (est.),13,169
+congress,1,surname,Asian (est.),14,191
+congress,1,surname,Asian (est.),15,219
+congress,1,surname,Asian (est.),18,5
+congress,1,surname,Asian (est.),19,8
+congress,1,surname,Asian (est.),20,4
+congress,1,surname,Asian (est.),21,5
+congress,1,surname,Asian (est.),22,7
+congress,1,surname,Asian (est.),24,1
+congress,1,surname,Asian (est.),25,6
+congress,1,surname,Asian (est.),26,5
+congress,1,surname,Asian (est.),27,4
+congress,1,surname,Asian (est.),28,3
+congress,1,surname,Asian (est.),29,3
+congress,1,surname,Asian (est.),32,2
+congress,1,surname,Asian (est.),33,4
+congress,1,surname,Asian (est.),34,1
+congress,1,surname,Asian (est.),36,1
+congress,1,surname,Hispanic (est.),4,1164
+congress,1,surname,Hispanic (est.),5,765
+congress,1,surname,Hispanic (est.),6,625
+congress,1,surname,Hispanic (est.),7,602
+congress,1,surname,Hispanic (est.),8,606
+congress,1,surname,Hispanic (est.),9,142
+congress,1,surname,Hispanic (est.),10,413
+congress,1,surname,Hispanic (est.),11,670
+congress,1,surname,Hispanic (est.),12,629
+congress,1,surname,Hispanic (est.),13,708
+congress,1,surname,Hispanic (est.),14,741
+congress,1,surname,Hispanic (est.),15,822
+congress,1,surname,Hispanic (est.),17,3
+congress,1,surname,Hispanic (est.),18,14
+congress,1,surname,Hispanic (est.),19,16
+congress,1,surname,Hispanic (est.),20,12
+congress,1,surname,Hispanic (est.),21,17
+congress,1,surname,Hispanic (est.),22,29
+congress,1,surname,Hispanic (est.),24,6
+congress,1,surname,Hispanic (est.),25,30
+congress,1,surname,Hispanic (est.),26,15
+congress,1,surname,Hispanic (est.),27,15
+congress,1,surname,Hispanic (est.),28,10
+congress,1,surname,Hispanic (est.),29,9
+congress,1,surname,Hispanic (est.),32,9
+congress,1,surname,Hispanic (est.),33,10
+congress,1,surname,Hispanic (est.),34,4
+congress,1,surname,Hispanic (est.),36,2
+congress,1,surname,Hispanic (est.),37,1
+congress,10,surname,All others (est.),4,19668
+congress,10,surname,All others (est.),5,14218
+congress,10,surname,All others (est.),6,12379
+congress,10,surname,All others (est.),7,11558
+congress,10,surname,All others (est.),8,11893
+congress,10,surname,All others (est.),9,3075
+congress,10,surname,All others (est.),10,6887
+congress,10,surname,All others (est.),11,12767
+congress,10,surname,All others (est.),12,12575
+congress,10,surname,All others (est.),13,13255
+congress,10,surname,All others (est.),14,14040
+congress,10,surname,All others (est.),15,14988
+congress,10,surname,All others (est.),17,79
+congress,10,surname,All others (est.),18,519
+congress,10,surname,All others (est.),19,1012
+congress,10,surname,All others (est.),20,265
+congress,10,surname,All others (est.),21,351
+congress,10,surname,All others (est.),22,896
+congress,10,surname,All others (est.),24,6
+congress,10,surname,All others (est.),25,978
+congress,10,surname,All others (est.),26,453
+congress,10,surname,All others (est.),27,227
+congress,10,surname,All others (est.),28,307
+congress,10,surname,All others (est.),29,11
+congress,10,surname,All others (est.),32,145
+congress,10,surname,All others (est.),33,71
+congress,10,surname,All others (est.),34,59
+congress,10,surname,All others (est.),35,74
+congress,10,surname,All others (est.),36,63
+congress,10,surname,All others (est.),37,134
+congress,10,surname,Asian (est.),4,1190
+congress,10,surname,Asian (est.),5,738
+congress,10,surname,Asian (est.),6,572
+congress,10,surname,Asian (est.),7,502
+congress,10,surname,Asian (est.),8,521
+congress,10,surname,Asian (est.),9,265
+congress,10,surname,Asian (est.),10,440
+congress,10,surname,Asian (est.),11,552
+congress,10,surname,Asian (est.),12,469
+congress,10,surname,Asian (est.),13,486
+congress,10,surname,Asian (est.),14,472
+congress,10,surname,Asian (est.),15,484
+congress,10,surname,Asian (est.),17,4
+congress,10,surname,Asian (est.),18,16
+congress,10,surname,Asian (est.),19,35
+congress,10,surname,Asian (est.),20,6
+congress,10,surname,Asian (est.),21,8
+congress,10,surname,Asian (est.),22,21
+congress,10,surname,Asian (est.),25,24
+congress,10,surname,Asian (est.),26,14
+congress,10,surname,Asian (est.),27,4
+congress,10,surname,Asian (est.),28,7
+congress,10,surname,Asian (est.),32,2
+congress,10,surname,Asian (est.),33,1
+congress,10,surname,Asian (est.),34,1
+congress,10,surname,Asian (est.),35,1
+congress,10,surname,Asian (est.),36,1
+congress,10,surname,Asian (est.),37,1
+congress,10,surname,Hispanic (est.),4,2802
+congress,10,surname,Hispanic (est.),5,1668
+congress,10,surname,Hispanic (est.),6,1363
+congress,10,surname,Hispanic (est.),7,1221
+congress,10,surname,Hispanic (est.),8,1187
+congress,10,surname,Hispanic (est.),9,468
+congress,10,surname,Hispanic (est.),10,809
+congress,10,surname,Hispanic (est.),11,1306
+congress,10,surname,Hispanic (est.),12,1220
+congress,10,surname,Hispanic (est.),13,1252
+congress,10,surname,Hispanic (est.),14,1284
+congress,10,surname,Hispanic (est.),15,1511
+congress,10,surname,Hispanic (est.),17,7
+congress,10,surname,Hispanic (est.),18,39
+congress,10,surname,Hispanic (est.),19,90
+congress,10,surname,Hispanic (est.),20,14
+congress,10,surname,Hispanic (est.),21,24
+congress,10,surname,Hispanic (est.),22,58
+congress,10,surname,Hispanic (est.),25,65
+congress,10,surname,Hispanic (est.),26,30
+congress,10,surname,Hispanic (est.),27,14
+congress,10,surname,Hispanic (est.),28,25
+congress,10,surname,Hispanic (est.),32,11
+congress,10,surname,Hispanic (est.),33,4
+congress,10,surname,Hispanic (est.),34,3
+congress,10,surname,Hispanic (est.),35,4
+congress,10,surname,Hispanic (est.),36,3
+congress,10,surname,Hispanic (est.),37,6
+congress,11,surname,All others (est.),4,13395
+congress,11,surname,All others (est.),5,9656
+congress,11,surname,All others (est.),6,8376
+congress,11,surname,All others (est.),7,7878
+congress,11,surname,All others (est.),8,8067
+congress,11,surname,All others (est.),9,1968
+congress,11,surname,All others (est.),10,4485
+congress,11,surname,All others (est.),11,9753
+congress,11,surname,All others (est.),12,8838
+congress,11,surname,All others (est.),13,9497
+congress,11,surname,All others (est.),14,9628
+congress,11,surname,All others (est.),15,10100
+congress,11,surname,All others (est.),17,10
+congress,11,surname,All others (est.),18,161
+congress,11,surname,All others (est.),19,277
+congress,11,surname,All others (est.),20,124
+congress,11,surname,All others (est.),21,189
+congress,11,surname,All others (est.),22,352
+congress,11,surname,All others (est.),25,278
+congress,11,surname,All others (est.),26,255
+congress,11,surname,All others (est.),27,141
+congress,11,surname,All others (est.),28,225
+congress,11,surname,All others (est.),29,40
+congress,11,surname,All others (est.),31,32
+congress,11,surname,All others (est.),32,130
+congress,11,surname,All others (est.),33,144
+congress,11,surname,All others (est.),34,130
+congress,11,surname,All others (est.),35,113
+congress,11,surname,All others (est.),36,120
+congress,11,surname,All others (est.),37,241
+congress,11,surname,Asian (est.),4,650
+congress,11,surname,Asian (est.),5,443
+congress,11,surname,Asian (est.),6,318
+congress,11,surname,Asian (est.),7,288
+congress,11,surname,Asian (est.),8,285
+congress,11,surname,Asian (est.),9,159
+congress,11,surname,Asian (est.),10,245
+congress,11,surname,Asian (est.),11,348
+congress,11,surname,Asian (est.),12,276
+congress,11,surname,Asian (est.),13,286
+congress,11,surname,Asian (est.),14,262
+congress,11,surname,Asian (est.),15,290
+congress,11,surname,Asian (est.),18,4
+congress,11,surname,Asian (est.),19,12
+congress,11,surname,Asian (est.),20,4
+congress,11,surname,Asian (est.),21,4
+congress,11,surname,Asian (est.),22,12
+congress,11,surname,Asian (est.),25,6
+congress,11,surname,Asian (est.),26,5
+congress,11,surname,Asian (est.),27,2
+congress,11,surname,Asian (est.),28,3
+congress,11,surname,Asian (est.),32,3
+congress,11,surname,Asian (est.),33,3
+congress,11,surname,Asian (est.),34,2
+congress,11,surname,Asian (est.),35,1
+congress,11,surname,Asian (est.),36,1
+congress,11,surname,Asian (est.),37,2
+congress,11,surname,Hispanic (est.),4,3530
+congress,11,surname,Hispanic (est.),5,2124
+congress,11,surname,Hispanic (est.),6,1660
+congress,11,surname,Hispanic (est.),7,1533
+congress,11,surname,Hispanic (est.),8,1479
+congress,11,surname,Hispanic (est.),9,536
+congress,11,surname,Hispanic (est.),10,1093
+congress,11,surname,Hispanic (est.),11,1771
+congress,11,surname,Hispanic (est.),12,1557
+congress,11,surname,Hispanic (est.),13,1519
+congress,11,surname,Hispanic (est.),14,1548
+congress,11,surname,Hispanic (est.),15,1679
+congress,11,surname,Hispanic (est.),17,1
+congress,11,surname,Hispanic (est.),18,17
+congress,11,surname,Hispanic (est.),19,48
+congress,11,surname,Hispanic (est.),20,22
+congress,11,surname,Hispanic (est.),21,36
+congress,11,surname,Hispanic (est.),22,58
+congress,11,surname,Hispanic (est.),25,45
+congress,11,surname,Hispanic (est.),26,39
+congress,11,surname,Hispanic (est.),27,20
+congress,11,surname,Hispanic (est.),28,25
+congress,11,surname,Hispanic (est.),29,18
+congress,11,surname,Hispanic (est.),31,10
+congress,11,surname,Hispanic (est.),32,21
+congress,11,surname,Hispanic (est.),33,15
+congress,11,surname,Hispanic (est.),34,25
+congress,11,surname,Hispanic (est.),35,24
+congress,11,surname,Hispanic (est.),36,13
+congress,11,surname,Hispanic (est.),37,11
+congress,12,surname,All others (est.),4,15755
+congress,12,surname,All others (est.),5,11822
+congress,12,surname,All others (est.),6,9884
+congress,12,surname,All others (est.),7,9640
+congress,12,surname,All others (est.),8,10070
+congress,12,surname,All others (est.),9,3178
+congress,12,surname,All others (est.),10,7956
+congress,12,surname,All others (est.),11,9731
+congress,12,surname,All others (est.),12,9794
+congress,12,surname,All others (est.),13,10128
+congress,12,surname,All others (est.),14,10656
+congress,12,surname,All others (est.),15,9839
+congress,12,surname,All others (est.),18,349
+congress,12,surname,All others (est.),19,423
+congress,12,surname,All others (est.),20,525
+congress,12,surname,All others (est.),21,143
+congress,12,surname,All others (est.),22,849
+congress,12,surname,All others (est.),25,442
+congress,12,surname,All others (est.),26,71
+congress,12,surname,All others (est.),27,8
+congress,12,surname,All others (est.),28,73
+congress,12,surname,All others (est.),32,69
+congress,12,surname,All others (est.),33,81
+congress,12,surname,All others (est.),34,73
+congress,12,surname,All others (est.),35,2
+congress,12,surname,All others (est.),36,73
+congress,12,surname,All others (est.),37,5
+congress,12,surname,Asian (est.),4,509
+congress,12,surname,Asian (est.),5,369
+congress,12,surname,Asian (est.),6,278
+congress,12,surname,Asian (est.),7,291
+congress,12,surname,Asian (est.),8,250
+congress,12,surname,Asian (est.),9,127
+congress,12,surname,Asian (est.),10,259
+congress,12,surname,Asian (est.),11,252
+congress,12,surname,Asian (est.),12,255
+congress,12,surname,Asian (est.),13,236
+congress,12,surname,Asian (est.),14,253
+congress,12,surname,Asian (est.),15,233
+congress,12,surname,Asian (est.),18,7
+congress,12,surname,Asian (est.),19,7
+congress,12,surname,Asian (est.),20,17
+congress,12,surname,Asian (est.),21,6
+congress,12,surname,Asian (est.),22,24
+congress,12,surname,Asian (est.),25,11
+congress,12,surname,Asian (est.),26,3
+congress,12,surname,Asian (est.),28,3
+congress,12,surname,Asian (est.),32,1
+congress,12,surname,Asian (est.),33,1
+congress,12,surname,Asian (est.),34,1
+congress,12,surname,Asian (est.),36,1
+congress,12,surname,Hispanic (est.),4,3375
+congress,12,surname,Hispanic (est.),5,2174
+congress,12,surname,Hispanic (est.),6,1677
+congress,12,surname,Hispanic (est.),7,1512
+congress,12,surname,Hispanic (est.),8,1543
+congress,12,surname,Hispanic (est.),9,552
+congress,12,surname,Hispanic (est.),10,1472
+congress,12,surname,Hispanic (est.),11,1369
+congress,12,surname,Hispanic (est.),12,1214
+congress,12,surname,Hispanic (est.),13,1367
+congress,12,surname,Hispanic (est.),14,1304
+congress,12,surname,Hispanic (est.),15,1169
+congress,12,surname,Hispanic (est.),18,24
+congress,12,surname,Hispanic (est.),19,43
+congress,12,surname,Hispanic (est.),20,52
+congress,12,surname,Hispanic (est.),21,18
+congress,12,surname,Hispanic (est.),22,100
+congress,12,surname,Hispanic (est.),25,44
+congress,12,surname,Hispanic (est.),26,4
+congress,12,surname,Hispanic (est.),28,3
+congress,12,surname,Hispanic (est.),32,4
+congress,12,surname,Hispanic (est.),33,4
+congress,12,surname,Hispanic (est.),34,5
+congress,12,surname,Hispanic (est.),36,2
+congress,12,surname,Hispanic (est.),37,2
+congress,13,surname,All others (est.),4,15137
+congress,13,surname,All others (est.),5,10508
+congress,13,surname,All others (est.),6,9369
+congress,13,surname,All others (est.),7,9219
+congress,13,surname,All others (est.),8,9326
+congress,13,surname,All others (est.),9,2348
+congress,13,surname,All others (est.),10,6265
+congress,13,surname,All others (est.),11,10557
+congress,13,surname,All others (est.),12,10498
+congress,13,surname,All others (est.),13,10989
+congress,13,surname,All others (est.),14,12541
+congress,13,surname,All others (est.),15,11415
+congress,13,surname,All others (est.),16,3
+congress,13,surname,All others (est.),17,30
+congress,13,surname,All others (est.),18,306
+congress,13,surname,All others (est.),19,396
+congress,13,surname,All others (est.),20,219
+congress,13,surname,All others (est.),21,264
+congress,13,surname,All others (est.),22,780
+congress,13,surname,All others (est.),23,2
+congress,13,surname,All others (est.),25,372
+congress,13,surname,All others (est.),26,701
+congress,13,surname,All others (est.),27,248
+congress,13,surname,All others (est.),28,571
+congress,13,surname,All others (est.),29,136
+congress,13,surname,All others (est.),32,247
+congress,13,surname,All others (est.),33,237
+congress,13,surname,All others (est.),34,217
+congress,13,surname,All others (est.),35,34
+congress,13,surname,All others (est.),36,408
+congress,13,surname,All others (est.),37,95
+congress,13,surname,Asian (est.),4,365
+congress,13,surname,Asian (est.),5,230
+congress,13,surname,Asian (est.),6,177
+congress,13,surname,Asian (est.),7,176
+congress,13,surname,Asian (est.),8,181
+congress,13,surname,Asian (est.),9,62
+congress,13,surname,Asian (est.),10,161
+congress,13,surname,Asian (est.),11,188
+congress,13,surname,Asian (est.),12,174
+congress,13,surname,Asian (est.),13,176
+congress,13,surname,Asian (est.),14,218
+congress,13,surname,Asian (est.),15,201
+congress,13,surname,Asian (est.),18,5
+congress,13,surname,Asian (est.),19,7
+congress,13,surname,Asian (est.),20,4
+congress,13,surname,Asian (est.),21,5
+congress,13,surname,Asian (est.),22,11
+congress,13,surname,Asian (est.),25,7
+congress,13,surname,Asian (est.),26,15
+congress,13,surname,Asian (est.),27,6
+congress,13,surname,Asian (est.),28,7
+congress,13,surname,Asian (est.),29,2
+congress,13,surname,Asian (est.),32,3
+congress,13,surname,Asian (est.),33,3
+congress,13,surname,Asian (est.),34,3
+congress,13,surname,Asian (est.),35,1
+congress,13,surname,Asian (est.),36,5
+congress,13,surname,Asian (est.),37,2
+congress,13,surname,Hispanic (est.),4,2183
+congress,13,surname,Hispanic (est.),5,1359
+congress,13,surname,Hispanic (est.),6,1156
+congress,13,surname,Hispanic (est.),7,1028
+congress,13,surname,Hispanic (est.),8,1018
+congress,13,surname,Hispanic (est.),9,323
+congress,13,surname,Hispanic (est.),10,803
+congress,13,surname,Hispanic (est.),11,1180
+congress,13,surname,Hispanic (est.),12,1037
+congress,13,surname,Hispanic (est.),13,946
+congress,13,surname,Hispanic (est.),14,1071
+congress,13,surname,Hispanic (est.),15,1073
+congress,13,surname,Hispanic (est.),17,1
+congress,13,surname,Hispanic (est.),18,21
+congress,13,surname,Hispanic (est.),19,26
+congress,13,surname,Hispanic (est.),20,17
+congress,13,surname,Hispanic (est.),21,11
+congress,13,surname,Hispanic (est.),22,62
+congress,13,surname,Hispanic (est.),25,23
+congress,13,surname,Hispanic (est.),26,68
+congress,13,surname,Hispanic (est.),27,16
+congress,13,surname,Hispanic (est.),28,46
+congress,13,surname,Hispanic (est.),29,10
+congress,13,surname,Hispanic (est.),32,15
+congress,13,surname,Hispanic (est.),33,18
+congress,13,surname,Hispanic (est.),34,8
+congress,13,surname,Hispanic (est.),35,2
+congress,13,surname,Hispanic (est.),36,25
+congress,13,surname,Hispanic (est.),37,3
+congress,14,surname,All others (est.),4,18823
+congress,14,surname,All others (est.),5,12193
+congress,14,surname,All others (est.),6,10417
+congress,14,surname,All others (est.),7,8048
+congress,14,surname,All others (est.),8,11044
+congress,14,surname,All others (est.),9,3563
+congress,14,surname,All others (est.),10,8565
+congress,14,surname,All others (est.),11,12562
+congress,14,surname,All others (est.),12,11332
+congress,14,surname,All others (est.),13,11949
+congress,14,surname,All others (est.),14,13901
+congress,14,surname,All others (est.),15,14591
+congress,14,surname,All others (est.),17,40
+congress,14,surname,All others (est.),18,648
+congress,14,surname,All others (est.),19,182
+congress,14,surname,All others (est.),20,415
+congress,14,surname,All others (est.),21,196
+congress,14,surname,All others (est.),22,765
+congress,14,surname,All others (est.),23,267
+congress,14,surname,All others (est.),25,382
+congress,14,surname,All others (est.),26,479
+congress,14,surname,All others (est.),27,39
+congress,14,surname,All others (est.),28,277
+congress,14,surname,All others (est.),29,31
+congress,14,surname,All others (est.),32,67
+congress,14,surname,All others (est.),33,42
+congress,14,surname,All others (est.),34,59
+congress,14,surname,All others (est.),35,2
+congress,14,surname,All others (est.),36,59
+congress,14,surname,All others (est.),37,3
+congress,14,surname,Asian (est.),4,930
+congress,14,surname,Asian (est.),5,557
+congress,14,surname,Asian (est.),6,432
+congress,14,surname,Asian (est.),7,350
+congress,14,surname,Asian (est.),8,468
+congress,14,surname,Asian (est.),9,206
+congress,14,surname,Asian (est.),10,458
+congress,14,surname,Asian (est.),11,498
+congress,14,surname,Asian (est.),12,400
+congress,14,surname,Asian (est.),13,417
+congress,14,surname,Asian (est.),14,463
+congress,14,surname,Asian (est.),15,463
+congress,14,surname,Asian (est.),17,1
+congress,14,surname,Asian (est.),18,16
+congress,14,surname,Asian (est.),19,12
+congress,14,surname,Asian (est.),20,8
+congress,14,surname,Asian (est.),21,3
+congress,14,surname,Asian (est.),22,26
+congress,14,surname,Asian (est.),23,6
+congress,14,surname,Asian (est.),25,11
+congress,14,surname,Asian (est.),26,16
+congress,14,surname,Asian (est.),27,1
+congress,14,surname,Asian (est.),28,15
+congress,14,surname,Asian (est.),29,2
+congress,14,surname,Asian (est.),32,3
+congress,14,surname,Asian (est.),33,1
+congress,14,surname,Asian (est.),34,3
+congress,14,surname,Asian (est.),36,2
+congress,14,surname,Hispanic (est.),4,3129
+congress,14,surname,Hispanic (est.),5,1750
+congress,14,surname,Hispanic (est.),6,1360
+congress,14,surname,Hispanic (est.),7,1058
+congress,14,surname,Hispanic (est.),8,1450
+congress,14,surname,Hispanic (est.),9,509
+congress,14,surname,Hispanic (est.),10,1280
+congress,14,surname,Hispanic (est.),11,1645
+congress,14,surname,Hispanic (est.),12,1351
+congress,14,surname,Hispanic (est.),13,1383
+congress,14,surname,Hispanic (est.),14,1608
+congress,14,surname,Hispanic (est.),15,1682
+congress,14,surname,Hispanic (est.),17,4
+congress,14,surname,Hispanic (est.),18,62
+congress,14,surname,Hispanic (est.),19,26
+congress,14,surname,Hispanic (est.),20,44
+congress,14,surname,Hispanic (est.),21,14
+congress,14,surname,Hispanic (est.),22,87
+congress,14,surname,Hispanic (est.),23,17
+congress,14,surname,Hispanic (est.),25,39
+congress,14,surname,Hispanic (est.),26,52
+congress,14,surname,Hispanic (est.),27,3
+congress,14,surname,Hispanic (est.),28,34
+congress,14,surname,Hispanic (est.),29,7
+congress,14,surname,Hispanic (est.),32,5
+congress,14,surname,Hispanic (est.),33,6
+congress,14,surname,Hispanic (est.),34,15
+congress,14,surname,Hispanic (est.),35,1
+congress,14,surname,Hispanic (est.),36,12
+congress,15,surname,All others (est.),4,5107
+congress,15,surname,All others (est.),5,3425
+congress,15,surname,All others (est.),6,3298
+congress,15,surname,All others (est.),7,2832
+congress,15,surname,All others (est.),8,3107
+congress,15,surname,All others (est.),9,381
+congress,15,surname,All others (est.),10,2207
+congress,15,surname,All others (est.),11,3938
+congress,15,surname,All others (est.),12,3750
+congress,15,surname,All others (est.),13,4411
+congress,15,surname,All others (est.),14,5337
+congress,15,surname,All others (est.),15,5418
+congress,15,surname,All others (est.),16,1
+congress,15,surname,All others (est.),18,114
+congress,15,surname,All others (est.),19,70
+congress,15,surname,All others (est.),20,218
+congress,15,surname,All others (est.),21,153
+congress,15,surname,All others (est.),22,112
+congress,15,surname,All others (est.),24,1
+congress,15,surname,All others (est.),25,164
+congress,15,surname,All others (est.),26,85
+congress,15,surname,All others (est.),27,161
+congress,15,surname,All others (est.),28,99
+congress,15,surname,All others (est.),29,11
+congress,15,surname,All others (est.),32,54
+congress,15,surname,All others (est.),33,68
+congress,15,surname,All others (est.),34,85
+congress,15,surname,All others (est.),35,37
+congress,15,surname,All others (est.),36,33
+congress,15,surname,All others (est.),37,1
+congress,15,surname,Asian (est.),4,276
+congress,15,surname,Asian (est.),5,177
+congress,15,surname,Asian (est.),6,144
+congress,15,surname,Asian (est.),7,130
+congress,15,surname,Asian (est.),8,138
+congress,15,surname,Asian (est.),9,40
+congress,15,surname,Asian (est.),10,137
+congress,15,surname,Asian (est.),11,170
+congress,15,surname,Asian (est.),12,153
+congress,15,surname,Asian (est.),13,167
+congress,15,surname,Asian (est.),14,203
+congress,15,surname,Asian (est.),15,234
+congress,15,surname,Asian (est.),16,1
+congress,15,surname,Asian (est.),18,6
+congress,15,surname,Asian (est.),19,2
+congress,15,surname,Asian (est.),20,9
+congress,15,surname,Asian (est.),21,9
+congress,15,surname,Asian (est.),22,3
+congress,15,surname,Asian (est.),25,7
+congress,15,surname,Asian (est.),26,4
+congress,15,surname,Asian (est.),27,8
+congress,15,surname,Asian (est.),28,2
+congress,15,surname,Asian (est.),32,1
+congress,15,surname,Asian (est.),33,2
+congress,15,surname,Asian (est.),34,2
+congress,15,surname,Asian (est.),36,1
+congress,15,surname,Hispanic (est.),4,9420
+congress,15,surname,Hispanic (est.),5,5265
+congress,15,surname,Hispanic (est.),6,4620
+congress,15,surname,Hispanic (est.),7,3920
+congress,15,surname,Hispanic (est.),8,3961
+congress,15,surname,Hispanic (est.),9,1497
+congress,15,surname,Hispanic (est.),10,4658
+congress,15,surname,Hispanic (est.),11,5157
+congress,15,surname,Hispanic (est.),12,4534
+congress,15,surname,Hispanic (est.),13,5155
+congress,15,surname,Hispanic (est.),14,6073
+congress,15,surname,Hispanic (est.),15,6609
+congress,15,surname,Hispanic (est.),18,135
+congress,15,surname,Hispanic (est.),19,29
+congress,15,surname,Hispanic (est.),20,236
+congress,15,surname,Hispanic (est.),21,168
+congress,15,surname,Hispanic (est.),22,104
+congress,15,surname,Hispanic (est.),24,7
+congress,15,surname,Hispanic (est.),25,162
+congress,15,surname,Hispanic (est.),26,54
+congress,15,surname,Hispanic (est.),27,270
+congress,15,surname,Hispanic (est.),28,49
+congress,15,surname,Hispanic (est.),29,13
+congress,15,surname,Hispanic (est.),32,25
+congress,15,surname,Hispanic (est.),33,25
+congress,15,surname,Hispanic (est.),34,48
+congress,15,surname,Hispanic (est.),35,5
+congress,15,surname,Hispanic (est.),36,29
+congress,16,surname,All others (est.),4,4680
+congress,16,surname,All others (est.),5,3217
+congress,16,surname,All others (est.),6,2790
+congress,16,surname,All others (est.),7,2329
+congress,16,surname,All others (est.),8,2362
+congress,16,surname,All others (est.),9,789
+congress,16,surname,All others (est.),10,1541
+congress,16,surname,All others (est.),11,2849
+congress,16,surname,All others (est.),12,2816
+congress,16,surname,All others (est.),13,3102
+congress,16,surname,All others (est.),14,3404
+congress,16,surname,All others (est.),15,3629
+congress,16,surname,All others (est.),17,77
+congress,16,surname,All others (est.),18,65
+congress,16,surname,All others (est.),19,24
+congress,16,surname,All others (est.),20,35
+congress,16,surname,All others (est.),21,107
+congress,16,surname,All others (est.),22,209
+congress,16,surname,All others (est.),25,155
+congress,16,surname,All others (est.),26,196
+congress,16,surname,All others (est.),27,729
+congress,16,surname,Asian (est.),4,333
+congress,16,surname,Asian (est.),5,226
+congress,16,surname,Asian (est.),6,186
+congress,16,surname,Asian (est.),7,142
+congress,16,surname,Asian (est.),8,146
+congress,16,surname,Asian (est.),9,63
+congress,16,surname,Asian (est.),10,124
+congress,16,surname,Asian (est.),11,187
+congress,16,surname,Asian (est.),12,197
+congress,16,surname,Asian (est.),13,189
+congress,16,surname,Asian (est.),14,212
+congress,16,surname,Asian (est.),15,211
+congress,16,surname,Asian (est.),17,3
+congress,16,surname,Asian (est.),18,6
+congress,16,surname,Asian (est.),19,1
+congress,16,surname,Asian (est.),20,2
+congress,16,surname,Asian (est.),21,9
+congress,16,surname,Asian (est.),22,18
+congress,16,surname,Asian (est.),25,13
+congress,16,surname,Asian (est.),26,20
+congress,16,surname,Asian (est.),27,67
+congress,16,surname,Hispanic (est.),4,10201
+congress,16,surname,Hispanic (est.),5,6101
+congress,16,surname,Hispanic (est.),6,4969
+congress,16,surname,Hispanic (est.),7,4150
+congress,16,surname,Hispanic (est.),8,3674
+congress,16,surname,Hispanic (est.),9,1417
+congress,16,surname,Hispanic (est.),10,2628
+congress,16,surname,Hispanic (est.),11,4787
+congress,16,surname,Hispanic (est.),12,4575
+congress,16,surname,Hispanic (est.),13,4761
+congress,16,surname,Hispanic (est.),14,5071
+congress,16,surname,Hispanic (est.),15,4822
+congress,16,surname,Hispanic (est.),17,162
+congress,16,surname,Hispanic (est.),18,83
+congress,16,surname,Hispanic (est.),19,20
+congress,16,surname,Hispanic (est.),20,21
+congress,16,surname,Hispanic (est.),21,71
+congress,16,surname,Hispanic (est.),22,88
+congress,16,surname,Hispanic (est.),25,47
+congress,16,surname,Hispanic (est.),26,95
+congress,16,surname,Hispanic (est.),27,259
+congress,16,surname,Hispanic (est.),31,1
+congress,16,surname,Hispanic (est.),34,1
+congress,17,surname,All others (est.),4,16477
+congress,17,surname,All others (est.),5,12009
+congress,17,surname,All others (est.),6,10281
+congress,17,surname,All others (est.),7,9518
+congress,17,surname,All others (est.),8,9917
+congress,17,surname,All others (est.),9,2874
+congress,17,surname,All others (est.),10,6975
+congress,17,surname,All others (est.),11,10633
+congress,17,surname,All others (est.),12,10677
+congress,17,surname,All others (est.),13,11312
+congress,17,surname,All others (est.),14,12039
+congress,17,surname,All others (est.),15,12382
+congress,17,surname,All others (est.),16,25
+congress,17,surname,All others (est.),18,374
+congress,17,surname,All others (est.),19,485
+congress,17,surname,All others (est.),20,278
+congress,17,surname,All others (est.),21,221
+congress,17,surname,All others (est.),22,674
+congress,17,surname,All others (est.),23,16
+congress,17,surname,All others (est.),24,341
+congress,17,surname,All others (est.),25,206
+congress,17,surname,All others (est.),26,558
+congress,17,surname,All others (est.),27,254
+congress,17,surname,All others (est.),28,284
+congress,17,surname,All others (est.),29,68
+congress,17,surname,All others (est.),32,122
+congress,17,surname,All others (est.),33,38
+congress,17,surname,All others (est.),34,30
+congress,17,surname,All others (est.),35,38
+congress,17,surname,All others (est.),36,42
+congress,17,surname,All others (est.),37,57
+congress,17,surname,Asian (est.),4,907
+congress,17,surname,Asian (est.),5,554
+congress,17,surname,Asian (est.),6,473
+congress,17,surname,Asian (est.),7,366
+congress,17,surname,Asian (est.),8,386
+congress,17,surname,Asian (est.),9,202
+congress,17,surname,Asian (est.),10,362
+congress,17,surname,Asian (est.),11,436
+congress,17,surname,Asian (est.),12,352
+congress,17,surname,Asian (est.),13,372
+congress,17,surname,Asian (est.),14,390
+congress,17,surname,Asian (est.),15,420
+congress,17,surname,Asian (est.),18,9
+congress,17,surname,Asian (est.),19,7
+congress,17,surname,Asian (est.),20,6
+congress,17,surname,Asian (est.),21,3
+congress,17,surname,Asian (est.),22,18
+congress,17,surname,Asian (est.),24,6
+congress,17,surname,Asian (est.),25,8
+congress,17,surname,Asian (est.),26,8
+congress,17,surname,Asian (est.),27,6
+congress,17,surname,Asian (est.),28,5
+congress,17,surname,Asian (est.),29,3
+congress,17,surname,Asian (est.),32,2
+congress,17,surname,Asian (est.),36,1
+congress,17,surname,Asian (est.),37,1
+congress,17,surname,Hispanic (est.),4,2807
+congress,17,surname,Hispanic (est.),5,1814
+congress,17,surname,Hispanic (est.),6,1396
+congress,17,surname,Hispanic (est.),7,1213
+congress,17,surname,Hispanic (est.),8,1253
+congress,17,surname,Hispanic (est.),9,498
+congress,17,surname,Hispanic (est.),10,1086
+congress,17,surname,Hispanic (est.),11,1473
+congress,17,surname,Hispanic (est.),12,1394
+congress,17,surname,Hispanic (est.),13,1358
+congress,17,surname,Hispanic (est.),14,1354
+congress,17,surname,Hispanic (est.),15,1475
+congress,17,surname,Hispanic (est.),16,3
+congress,17,surname,Hispanic (est.),18,38
+congress,17,surname,Hispanic (est.),19,36
+congress,17,surname,Hispanic (est.),20,25
+congress,17,surname,Hispanic (est.),21,22
+congress,17,surname,Hispanic (est.),22,52
+congress,17,surname,Hispanic (est.),23,2
+congress,17,surname,Hispanic (est.),24,30
+congress,17,surname,Hispanic (est.),25,25
+congress,17,surname,Hispanic (est.),26,49
+congress,17,surname,Hispanic (est.),27,19
+congress,17,surname,Hispanic (est.),28,26
+congress,17,surname,Hispanic (est.),29,11
+congress,17,surname,Hispanic (est.),32,15
+congress,17,surname,Hispanic (est.),33,3
+congress,17,surname,Hispanic (est.),34,2
+congress,17,surname,Hispanic (est.),35,3
+congress,17,surname,Hispanic (est.),36,1
+congress,17,surname,Hispanic (est.),37,5
+congress,18,surname,All others (est.),4,15483
+congress,18,surname,All others (est.),5,10225
+congress,18,surname,All others (est.),6,8309
+congress,18,surname,All others (est.),7,5745
+congress,18,surname,All others (est.),8,7333
+congress,18,surname,All others (est.),9,3414
+congress,18,surname,All others (est.),10,5430
+congress,18,surname,All others (est.),11,6918
+congress,18,surname,All others (est.),12,7329
+congress,18,surname,All others (est.),13,7609
+congress,18,surname,All others (est.),14,7727
+congress,18,surname,All others (est.),15,7484
+congress,18,surname,All others (est.),17,1377
+congress,18,surname,All others (est.),18,593
+congress,18,surname,All others (est.),19,804
+congress,18,surname,All others (est.),20,362
+congress,18,surname,All others (est.),21,163
+congress,18,surname,All others (est.),22,97
+congress,18,surname,All others (est.),25,150
+congress,18,surname,All others (est.),26,138
+congress,18,surname,All others (est.),27,34
+congress,18,surname,All others (est.),28,184
+congress,18,surname,All others (est.),29,2
+congress,18,surname,All others (est.),32,22
+congress,18,surname,All others (est.),33,25
+congress,18,surname,All others (est.),34,3
+congress,18,surname,All others (est.),35,3
+congress,18,surname,All others (est.),36,4
+congress,18,surname,Asian (est.),4,1088
+congress,18,surname,Asian (est.),5,698
+congress,18,surname,Asian (est.),6,576
+congress,18,surname,Asian (est.),7,368
+congress,18,surname,Asian (est.),8,462
+congress,18,surname,Asian (est.),9,253
+congress,18,surname,Asian (est.),10,462
+congress,18,surname,Asian (est.),11,448
+congress,18,surname,Asian (est.),12,430
+congress,18,surname,Asian (est.),13,445
+congress,18,surname,Asian (est.),14,465
+congress,18,surname,Asian (est.),15,431
+congress,18,surname,Asian (est.),17,33
+congress,18,surname,Asian (est.),18,24
+congress,18,surname,Asian (est.),19,33
+congress,18,surname,Asian (est.),20,11
+congress,18,surname,Asian (est.),21,8
+congress,18,surname,Asian (est.),22,7
+congress,18,surname,Asian (est.),25,9
+congress,18,surname,Asian (est.),26,7
+congress,18,surname,Asian (est.),27,1
+congress,18,surname,Asian (est.),28,9
+congress,18,surname,Asian (est.),32,1
+congress,18,surname,Asian (est.),33,1
+congress,18,surname,Hispanic (est.),4,3343
+congress,18,surname,Hispanic (est.),5,2025
+congress,18,surname,Hispanic (est.),6,1491
+congress,18,surname,Hispanic (est.),7,1031
+congress,18,surname,Hispanic (est.),8,1241
+congress,18,surname,Hispanic (est.),9,673
+congress,18,surname,Hispanic (est.),10,1192
+congress,18,surname,Hispanic (est.),11,1243
+congress,18,surname,Hispanic (est.),12,1251
+congress,18,surname,Hispanic (est.),13,1256
+congress,18,surname,Hispanic (est.),14,1349
+congress,18,surname,Hispanic (est.),15,1281
+congress,18,surname,Hispanic (est.),17,114
+congress,18,surname,Hispanic (est.),18,45
+congress,18,surname,Hispanic (est.),19,76
+congress,18,surname,Hispanic (est.),20,42
+congress,18,surname,Hispanic (est.),21,16
+congress,18,surname,Hispanic (est.),22,7
+congress,18,surname,Hispanic (est.),25,19
+congress,18,surname,Hispanic (est.),26,17
+congress,18,surname,Hispanic (est.),27,2
+congress,18,surname,Hispanic (est.),28,20
+congress,18,surname,Hispanic (est.),32,5
+congress,18,surname,Hispanic (est.),33,4
+congress,19,surname,All others (est.),4,12361
+congress,19,surname,All others (est.),5,8597
+congress,19,surname,All others (est.),6,7957
+congress,19,surname,All others (est.),7,7791
+congress,19,surname,All others (est.),8,8162
+congress,19,surname,All others (est.),9,2116
+congress,19,surname,All others (est.),10,4267
+congress,19,surname,All others (est.),11,8816
+congress,19,surname,All others (est.),12,9301
+congress,19,surname,All others (est.),13,9440
+congress,19,surname,All others (est.),14,10228
+congress,19,surname,All others (est.),15,10463
+congress,19,surname,All others (est.),17,67
+congress,19,surname,All others (est.),18,137
+congress,19,surname,All others (est.),19,141
+congress,19,surname,All others (est.),20,235
+congress,19,surname,All others (est.),21,196
+congress,19,surname,All others (est.),22,356
+congress,19,surname,All others (est.),23,48
+congress,19,surname,All others (est.),25,147
+congress,19,surname,All others (est.),26,279
+congress,19,surname,All others (est.),27,330
+congress,19,surname,All others (est.),28,213
+congress,19,surname,All others (est.),29,27
+congress,19,surname,All others (est.),30,2
+congress,19,surname,All others (est.),32,170
+congress,19,surname,All others (est.),33,162
+congress,19,surname,All others (est.),34,169
+congress,19,surname,All others (est.),35,223
+congress,19,surname,All others (est.),36,202
+congress,19,surname,All others (est.),37,70
+congress,19,surname,Asian (est.),4,246
+congress,19,surname,Asian (est.),5,176
+congress,19,surname,Asian (est.),6,154
+congress,19,surname,Asian (est.),7,136
+congress,19,surname,Asian (est.),8,138
+congress,19,surname,Asian (est.),9,53
+congress,19,surname,Asian (est.),10,86
+congress,19,surname,Asian (est.),11,160
+congress,19,surname,Asian (est.),12,141
+congress,19,surname,Asian (est.),13,167
+congress,19,surname,Asian (est.),14,170
+congress,19,surname,Asian (est.),15,165
+congress,19,surname,Asian (est.),17,1
+congress,19,surname,Asian (est.),18,2
+congress,19,surname,Asian (est.),19,2
+congress,19,surname,Asian (est.),20,5
+congress,19,surname,Asian (est.),21,3
+congress,19,surname,Asian (est.),22,4
+congress,19,surname,Asian (est.),25,3
+congress,19,surname,Asian (est.),26,3
+congress,19,surname,Asian (est.),27,5
+congress,19,surname,Asian (est.),28,4
+congress,19,surname,Asian (est.),29,1
+congress,19,surname,Asian (est.),32,2
+congress,19,surname,Asian (est.),33,3
+congress,19,surname,Asian (est.),34,2
+congress,19,surname,Asian (est.),35,2
+congress,19,surname,Asian (est.),36,2
+congress,19,surname,Asian (est.),37,2
+congress,19,surname,Hispanic (est.),4,2844
+congress,19,surname,Hispanic (est.),5,1660
+congress,19,surname,Hispanic (est.),6,1413
+congress,19,surname,Hispanic (est.),7,1373
+congress,19,surname,Hispanic (est.),8,1301
+congress,19,surname,Hispanic (est.),9,372
+congress,19,surname,Hispanic (est.),10,764
+congress,19,surname,Hispanic (est.),11,1475
+congress,19,surname,Hispanic (est.),12,1403
+congress,19,surname,Hispanic (est.),13,1444
+congress,19,surname,Hispanic (est.),14,1576
+congress,19,surname,Hispanic (est.),15,1553
+congress,19,surname,Hispanic (est.),17,6
+congress,19,surname,Hispanic (est.),18,14
+congress,19,surname,Hispanic (est.),19,31
+congress,19,surname,Hispanic (est.),20,37
+congress,19,surname,Hispanic (est.),21,28
+congress,19,surname,Hispanic (est.),22,49
+congress,19,surname,Hispanic (est.),23,2
+congress,19,surname,Hispanic (est.),25,28
+congress,19,surname,Hispanic (est.),26,30
+congress,19,surname,Hispanic (est.),27,55
+congress,19,surname,Hispanic (est.),28,28
+congress,19,surname,Hispanic (est.),29,2
+congress,19,surname,Hispanic (est.),32,24
+congress,19,surname,Hispanic (est.),33,20
+congress,19,surname,Hispanic (est.),34,21
+congress,19,surname,Hispanic (est.),35,25
+congress,19,surname,Hispanic (est.),36,20
+congress,19,surname,Hispanic (est.),37,6
+congress,2,surname,All others (est.),4,16276
+congress,2,surname,All others (est.),5,12309
+congress,2,surname,All others (est.),6,11072
+congress,2,surname,All others (est.),7,9016
+congress,2,surname,All others (est.),8,9787
+congress,2,surname,All others (est.),9,4850
+congress,2,surname,All others (est.),10,9015
+congress,2,surname,All others (est.),11,11466
+congress,2,surname,All others (est.),12,10530
+congress,2,surname,All others (est.),13,10860
+congress,2,surname,All others (est.),14,11259
+congress,2,surname,All others (est.),15,10603
+congress,2,surname,All others (est.),17,738
+congress,2,surname,All others (est.),18,556
+congress,2,surname,All others (est.),19,670
+congress,2,surname,All others (est.),20,346
+congress,2,surname,All others (est.),21,576
+congress,2,surname,All others (est.),22,99
+congress,2,surname,All others (est.),25,146
+congress,2,surname,All others (est.),26,245
+congress,2,surname,All others (est.),27,38
+congress,2,surname,All others (est.),28,462
+congress,2,surname,All others (est.),29,71
+congress,2,surname,All others (est.),32,55
+congress,2,surname,All others (est.),33,125
+congress,2,surname,All others (est.),34,315
+congress,2,surname,All others (est.),35,41
+congress,2,surname,All others (est.),36,25
+congress,2,surname,All others (est.),37,3
+congress,2,surname,Asian (est.),4,860
+congress,2,surname,Asian (est.),5,646
+congress,2,surname,Asian (est.),6,488
+congress,2,surname,Asian (est.),7,395
+congress,2,surname,Asian (est.),8,474
+congress,2,surname,Asian (est.),9,314
+congress,2,surname,Asian (est.),10,509
+congress,2,surname,Asian (est.),11,467
+congress,2,surname,Asian (est.),12,441
+congress,2,surname,Asian (est.),13,407
+congress,2,surname,Asian (est.),14,404
+congress,2,surname,Asian (est.),15,410
+congress,2,surname,Asian (est.),17,24
+congress,2,surname,Asian (est.),18,21
+congress,2,surname,Asian (est.),19,20
+congress,2,surname,Asian (est.),20,11
+congress,2,surname,Asian (est.),21,20
+congress,2,surname,Asian (est.),22,2
+congress,2,surname,Asian (est.),25,3
+congress,2,surname,Asian (est.),26,4
+congress,2,surname,Asian (est.),27,1
+congress,2,surname,Asian (est.),28,8
+congress,2,surname,Asian (est.),29,1
+congress,2,surname,Asian (est.),32,1
+congress,2,surname,Asian (est.),33,3
+congress,2,surname,Asian (est.),34,6
+congress,2,surname,Asian (est.),35,1
+congress,2,surname,Hispanic (est.),4,3362
+congress,2,surname,Hispanic (est.),5,2215
+congress,2,surname,Hispanic (est.),6,1688
+congress,2,surname,Hispanic (est.),7,1394
+congress,2,surname,Hispanic (est.),8,1493
+congress,2,surname,Hispanic (est.),9,887
+congress,2,surname,Hispanic (est.),10,1610
+congress,2,surname,Hispanic (est.),11,1772
+congress,2,surname,Hispanic (est.),12,1429
+congress,2,surname,Hispanic (est.),13,1464
+congress,2,surname,Hispanic (est.),14,1541
+congress,2,surname,Hispanic (est.),15,1515
+congress,2,surname,Hispanic (est.),17,90
+congress,2,surname,Hispanic (est.),18,45
+congress,2,surname,Hispanic (est.),19,64
+congress,2,surname,Hispanic (est.),20,27
+congress,2,surname,Hispanic (est.),21,46
+congress,2,surname,Hispanic (est.),22,9
+congress,2,surname,Hispanic (est.),25,11
+congress,2,surname,Hispanic (est.),26,22
+congress,2,surname,Hispanic (est.),27,2
+congress,2,surname,Hispanic (est.),28,34
+congress,2,surname,Hispanic (est.),29,3
+congress,2,surname,Hispanic (est.),32,4
+congress,2,surname,Hispanic (est.),33,7
+congress,2,surname,Hispanic (est.),34,23
+congress,2,surname,Hispanic (est.),35,5
+congress,2,surname,Hispanic (est.),36,2
+congress,20,surname,All others (est.),4,6618
+congress,20,surname,All others (est.),5,4678
+congress,20,surname,All others (est.),6,3837
+congress,20,surname,All others (est.),7,3590
+congress,20,surname,All others (est.),8,3517
+congress,20,surname,All others (est.),9,1546
+congress,20,surname,All others (est.),10,3307
+congress,20,surname,All others (est.),11,3805
+congress,20,surname,All others (est.),12,3959
+congress,20,surname,All others (est.),13,4181
+congress,20,surname,All others (est.),14,4288
+congress,20,surname,All others (est.),15,4647
+congress,20,surname,All others (est.),17,190
+congress,20,surname,All others (est.),18,220
+congress,20,surname,All others (est.),19,241
+congress,20,surname,All others (est.),20,175
+congress,20,surname,All others (est.),21,219
+congress,20,surname,All others (est.),22,116
+congress,20,surname,All others (est.),23,5
+congress,20,surname,All others (est.),24,118
+congress,20,surname,All others (est.),25,149
+congress,20,surname,All others (est.),26,175
+congress,20,surname,All others (est.),27,164
+congress,20,surname,All others (est.),28,187
+congress,20,surname,All others (est.),31,2
+congress,20,surname,All others (est.),32,36
+congress,20,surname,All others (est.),33,39
+congress,20,surname,All others (est.),34,9
+congress,20,surname,All others (est.),35,2
+congress,20,surname,All others (est.),36,12
+congress,20,surname,All others (est.),37,1
+congress,20,surname,Asian (est.),4,448
+congress,20,surname,Asian (est.),5,258
+congress,20,surname,Asian (est.),6,211
+congress,20,surname,Asian (est.),7,175
+congress,20,surname,Asian (est.),8,170
+congress,20,surname,Asian (est.),9,72
+congress,20,surname,Asian (est.),10,190
+congress,20,surname,Asian (est.),11,197
+congress,20,surname,Asian (est.),12,196
+congress,20,surname,Asian (est.),13,199
+congress,20,surname,Asian (est.),14,214
+congress,20,surname,Asian (est.),15,238
+congress,20,surname,Asian (est.),17,8
+congress,20,surname,Asian (est.),18,8
+congress,20,surname,Asian (est.),19,11
+congress,20,surname,Asian (est.),20,4
+congress,20,surname,Asian (est.),21,9
+congress,20,surname,Asian (est.),22,3
+congress,20,surname,Asian (est.),24,5
+congress,20,surname,Asian (est.),25,6
+congress,20,surname,Asian (est.),26,5
+congress,20,surname,Asian (est.),27,7
+congress,20,surname,Asian (est.),28,9
+congress,20,surname,Asian (est.),32,2
+congress,20,surname,Asian (est.),33,1
+congress,20,surname,Asian (est.),37,1
+congress,20,surname,Hispanic (est.),4,8420
+congress,20,surname,Hispanic (est.),5,5585
+congress,20,surname,Hispanic (est.),6,4303
+congress,20,surname,Hispanic (est.),7,3977
+congress,20,surname,Hispanic (est.),8,3557
+congress,20,surname,Hispanic (est.),9,1574
+congress,20,surname,Hispanic (est.),10,3818
+congress,20,surname,Hispanic (est.),11,4265
+congress,20,surname,Hispanic (est.),12,4284
+congress,20,surname,Hispanic (est.),13,4540
+congress,20,surname,Hispanic (est.),14,4719
+congress,20,surname,Hispanic (est.),15,4820
+congress,20,surname,Hispanic (est.),17,193
+congress,20,surname,Hispanic (est.),18,196
+congress,20,surname,Hispanic (est.),19,199
+congress,20,surname,Hispanic (est.),20,131
+congress,20,surname,Hispanic (est.),21,186
+congress,20,surname,Hispanic (est.),22,98
+congress,20,surname,Hispanic (est.),23,4
+congress,20,surname,Hispanic (est.),24,186
+congress,20,surname,Hispanic (est.),25,155
+congress,20,surname,Hispanic (est.),26,195
+congress,20,surname,Hispanic (est.),27,239
+congress,20,surname,Hispanic (est.),28,284
+congress,20,surname,Hispanic (est.),32,59
+congress,20,surname,Hispanic (est.),33,62
+congress,20,surname,Hispanic (est.),34,21
+congress,20,surname,Hispanic (est.),37,1
+congress,21,surname,All others (est.),4,19403
+congress,21,surname,All others (est.),5,14757
+congress,21,surname,All others (est.),6,13314
+congress,21,surname,All others (est.),7,13368
+congress,21,surname,All others (est.),8,13355
+congress,21,surname,All others (est.),9,3685
+congress,21,surname,All others (est.),10,9006
+congress,21,surname,All others (est.),11,16198
+congress,21,surname,All others (est.),12,15144
+congress,21,surname,All others (est.),13,16386
+congress,21,surname,All others (est.),14,16912
+congress,21,surname,All others (est.),15,17151
+congress,21,surname,All others (est.),17,419
+congress,21,surname,All others (est.),18,423
+congress,21,surname,All others (est.),19,598
+congress,21,surname,All others (est.),20,632
+congress,21,surname,All others (est.),21,665
+congress,21,surname,All others (est.),22,606
+congress,21,surname,All others (est.),23,33
+congress,21,surname,All others (est.),24,323
+congress,21,surname,All others (est.),25,752
+congress,21,surname,All others (est.),26,795
+congress,21,surname,All others (est.),27,358
+congress,21,surname,All others (est.),28,536
+congress,21,surname,All others (est.),32,293
+congress,21,surname,All others (est.),33,87
+congress,21,surname,All others (est.),34,48
+congress,21,surname,All others (est.),35,18
+congress,21,surname,All others (est.),36,6
+congress,21,surname,All others (est.),37,5
+congress,21,surname,Asian (est.),4,647
+congress,21,surname,Asian (est.),5,463
+congress,21,surname,Asian (est.),6,392
+congress,21,surname,Asian (est.),7,392
+congress,21,surname,Asian (est.),8,341
+congress,21,surname,Asian (est.),9,163
+congress,21,surname,Asian (est.),10,323
+congress,21,surname,Asian (est.),11,400
+congress,21,surname,Asian (est.),12,401
+congress,21,surname,Asian (est.),13,447
+congress,21,surname,Asian (est.),14,424
+congress,21,surname,Asian (est.),15,440
+congress,21,surname,Asian (est.),17,11
+congress,21,surname,Asian (est.),18,9
+congress,21,surname,Asian (est.),19,16
+congress,21,surname,Asian (est.),20,16
+congress,21,surname,Asian (est.),21,17
+congress,21,surname,Asian (est.),22,17
+congress,21,surname,Asian (est.),23,2
+congress,21,surname,Asian (est.),24,9
+congress,21,surname,Asian (est.),25,16
+congress,21,surname,Asian (est.),26,19
+congress,21,surname,Asian (est.),27,6
+congress,21,surname,Asian (est.),28,10
+congress,21,surname,Asian (est.),32,6
+congress,21,surname,Asian (est.),33,1
+congress,21,surname,Asian (est.),34,2
+congress,21,surname,Asian (est.),36,1
+congress,21,surname,Hispanic (est.),4,6170
+congress,21,surname,Hispanic (est.),5,4091
+congress,21,surname,Hispanic (est.),6,3351
+congress,21,surname,Hispanic (est.),7,3232
+congress,21,surname,Hispanic (est.),8,3073
+congress,21,surname,Hispanic (est.),9,1235
+congress,21,surname,Hispanic (est.),10,2888
+congress,21,surname,Hispanic (est.),11,3686
+congress,21,surname,Hispanic (est.),12,3500
+congress,21,surname,Hispanic (est.),13,3483
+congress,21,surname,Hispanic (est.),14,3716
+congress,21,surname,Hispanic (est.),15,3795
+congress,21,surname,Hispanic (est.),17,78
+congress,21,surname,Hispanic (est.),18,77
+congress,21,surname,Hispanic (est.),19,96
+congress,21,surname,Hispanic (est.),20,87
+congress,21,surname,Hispanic (est.),21,120
+congress,21,surname,Hispanic (est.),22,89
+congress,21,surname,Hispanic (est.),23,3
+congress,21,surname,Hispanic (est.),24,94
+congress,21,surname,Hispanic (est.),25,117
+congress,21,surname,Hispanic (est.),26,137
+congress,21,surname,Hispanic (est.),27,63
+congress,21,surname,Hispanic (est.),28,77
+congress,21,surname,Hispanic (est.),32,51
+congress,21,surname,Hispanic (est.),33,8
+congress,21,surname,Hispanic (est.),34,5
+congress,21,surname,Hispanic (est.),35,3
+congress,21,surname,Hispanic (est.),37,1
+congress,22,surname,All others (est.),4,17968
+congress,22,surname,All others (est.),5,11499
+congress,22,surname,All others (est.),6,10151
+congress,22,surname,All others (est.),7,8289
+congress,22,surname,All others (est.),8,9926
+congress,22,surname,All others (est.),9,3472
+congress,22,surname,All others (est.),10,8392
+congress,22,surname,All others (est.),11,12488
+congress,22,surname,All others (est.),12,11276
+congress,22,surname,All others (est.),13,12191
+congress,22,surname,All others (est.),14,13091
+congress,22,surname,All others (est.),15,13766
+congress,22,surname,All others (est.),17,198
+congress,22,surname,All others (est.),18,363
+congress,22,surname,All others (est.),19,411
+congress,22,surname,All others (est.),20,159
+congress,22,surname,All others (est.),21,251
+congress,22,surname,All others (est.),22,281
+congress,22,surname,All others (est.),25,319
+congress,22,surname,All others (est.),26,447
+congress,22,surname,All others (est.),27,63
+congress,22,surname,All others (est.),28,464
+congress,22,surname,All others (est.),29,53
+congress,22,surname,All others (est.),32,156
+congress,22,surname,All others (est.),33,137
+congress,22,surname,All others (est.),34,101
+congress,22,surname,All others (est.),35,10
+congress,22,surname,All others (est.),36,104
+congress,22,surname,All others (est.),37,5
+congress,22,surname,Asian (est.),4,2434
+congress,22,surname,Asian (est.),5,1463
+congress,22,surname,Asian (est.),6,1239
+congress,22,surname,Asian (est.),7,855
+congress,22,surname,Asian (est.),8,1053
+congress,22,surname,Asian (est.),9,603
+congress,22,surname,Asian (est.),10,1295
+congress,22,surname,Asian (est.),11,1211
+congress,22,surname,Asian (est.),12,1065
+congress,22,surname,Asian (est.),13,1047
+congress,22,surname,Asian (est.),14,1088
+congress,22,surname,Asian (est.),15,1028
+congress,22,surname,Asian (est.),17,11
+congress,22,surname,Asian (est.),18,39
+congress,22,surname,Asian (est.),19,34
+congress,22,surname,Asian (est.),20,13
+congress,22,surname,Asian (est.),21,23
+congress,22,surname,Asian (est.),22,18
+congress,22,surname,Asian (est.),25,21
+congress,22,surname,Asian (est.),26,40
+congress,22,surname,Asian (est.),27,7
+congress,22,surname,Asian (est.),28,31
+congress,22,surname,Asian (est.),29,1
+congress,22,surname,Asian (est.),32,7
+congress,22,surname,Asian (est.),33,4
+congress,22,surname,Asian (est.),34,3
+congress,22,surname,Asian (est.),35,2
+congress,22,surname,Asian (est.),36,1
+congress,22,surname,Hispanic (est.),4,4109
+congress,22,surname,Hispanic (est.),5,2361
+congress,22,surname,Hispanic (est.),6,1918
+congress,22,surname,Hispanic (est.),7,1547
+congress,22,surname,Hispanic (est.),8,1763
+congress,22,surname,Hispanic (est.),9,767
+congress,22,surname,Hispanic (est.),10,1881
+congress,22,surname,Hispanic (est.),11,2150
+congress,22,surname,Hispanic (est.),12,1882
+congress,22,surname,Hispanic (est.),13,1966
+congress,22,surname,Hispanic (est.),14,2047
+congress,22,surname,Hispanic (est.),15,2258
+congress,22,surname,Hispanic (est.),17,24
+congress,22,surname,Hispanic (est.),18,42
+congress,22,surname,Hispanic (est.),19,46
+congress,22,surname,Hispanic (est.),20,17
+congress,22,surname,Hispanic (est.),21,30
+congress,22,surname,Hispanic (est.),22,32
+congress,22,surname,Hispanic (est.),25,43
+congress,22,surname,Hispanic (est.),26,61
+congress,22,surname,Hispanic (est.),27,12
+congress,22,surname,Hispanic (est.),28,72
+congress,22,surname,Hispanic (est.),29,7
+congress,22,surname,Hispanic (est.),32,25
+congress,22,surname,Hispanic (est.),33,15
+congress,22,surname,Hispanic (est.),34,11
+congress,22,surname,Hispanic (est.),35,1
+congress,22,surname,Hispanic (est.),36,13
+congress,23,surname,All others (est.),4,10921
+congress,23,surname,All others (est.),5,8462
+congress,23,surname,All others (est.),6,7535
+congress,23,surname,All others (est.),7,7294
+congress,23,surname,All others (est.),8,7156
+congress,23,surname,All others (est.),9,2323
+congress,23,surname,All others (est.),10,5276
+congress,23,surname,All others (est.),11,8562
+congress,23,surname,All others (est.),12,8323
+congress,23,surname,All others (est.),13,8318
+congress,23,surname,All others (est.),14,8939
+congress,23,surname,All others (est.),15,9169
+congress,23,surname,All others (est.),16,1
+congress,23,surname,All others (est.),17,236
+congress,23,surname,All others (est.),18,315
+congress,23,surname,All others (est.),19,366
+congress,23,surname,All others (est.),20,325
+congress,23,surname,All others (est.),21,400
+congress,23,surname,All others (est.),22,325
+congress,23,surname,All others (est.),23,4
+congress,23,surname,All others (est.),24,290
+congress,23,surname,All others (est.),25,284
+congress,23,surname,All others (est.),26,328
+congress,23,surname,All others (est.),27,129
+congress,23,surname,All others (est.),28,216
+congress,23,surname,All others (est.),31,2
+congress,23,surname,All others (est.),32,49
+congress,23,surname,All others (est.),33,47
+congress,23,surname,All others (est.),34,16
+congress,23,surname,All others (est.),35,6
+congress,23,surname,All others (est.),36,6
+congress,23,surname,All others (est.),37,6
+congress,23,surname,Asian (est.),4,571
+congress,23,surname,Asian (est.),5,401
+congress,23,surname,Asian (est.),6,349
+congress,23,surname,Asian (est.),7,336
+congress,23,surname,Asian (est.),8,287
+congress,23,surname,Asian (est.),9,142
+congress,23,surname,Asian (est.),10,323
+congress,23,surname,Asian (est.),11,314
+congress,23,surname,Asian (est.),12,336
+congress,23,surname,Asian (est.),13,318
+congress,23,surname,Asian (est.),14,334
+congress,23,surname,Asian (est.),15,322
+congress,23,surname,Asian (est.),17,5
+congress,23,surname,Asian (est.),18,9
+congress,23,surname,Asian (est.),19,14
+congress,23,surname,Asian (est.),20,10
+congress,23,surname,Asian (est.),21,13
+congress,23,surname,Asian (est.),22,9
+congress,23,surname,Asian (est.),24,9
+congress,23,surname,Asian (est.),25,5
+congress,23,surname,Asian (est.),26,8
+congress,23,surname,Asian (est.),27,4
+congress,23,surname,Asian (est.),28,6
+congress,23,surname,Asian (est.),32,1
+congress,23,surname,Asian (est.),33,2
+congress,23,surname,Asian (est.),34,1
+congress,23,surname,Hispanic (est.),4,8292
+congress,23,surname,Hispanic (est.),5,5383
+congress,23,surname,Hispanic (est.),6,4470
+congress,23,surname,Hispanic (est.),7,4260
+congress,23,surname,Hispanic (est.),8,3642
+congress,23,surname,Hispanic (est.),9,1463
+congress,23,surname,Hispanic (est.),10,3772
+congress,23,surname,Hispanic (est.),11,4764
+congress,23,surname,Hispanic (est.),12,4325
+congress,23,surname,Hispanic (est.),13,4326
+congress,23,surname,Hispanic (est.),14,4411
+congress,23,surname,Hispanic (est.),15,4670
+congress,23,surname,Hispanic (est.),16,19
+congress,23,surname,Hispanic (est.),17,74
+congress,23,surname,Hispanic (est.),18,140
+congress,23,surname,Hispanic (est.),19,147
+congress,23,surname,Hispanic (est.),20,178
+congress,23,surname,Hispanic (est.),21,129
+congress,23,surname,Hispanic (est.),22,122
+congress,23,surname,Hispanic (est.),23,1
+congress,23,surname,Hispanic (est.),24,72
+congress,23,surname,Hispanic (est.),25,68
+congress,23,surname,Hispanic (est.),26,141
+congress,23,surname,Hispanic (est.),27,54
+congress,23,surname,Hispanic (est.),28,138
+congress,23,surname,Hispanic (est.),32,53
+congress,23,surname,Hispanic (est.),33,49
+congress,23,surname,Hispanic (est.),34,21
+congress,23,surname,Hispanic (est.),35,8
+congress,23,surname,Hispanic (est.),36,9
+congress,23,surname,Hispanic (est.),37,10
+congress,24,surname,All others (est.),4,21813
+congress,24,surname,All others (est.),5,16978
+congress,24,surname,All others (est.),6,14468
+congress,24,surname,All others (est.),7,13977
+congress,24,surname,All others (est.),8,14407
+congress,24,surname,All others (est.),9,4992
+congress,24,surname,All others (est.),10,13150
+congress,24,surname,All others (est.),11,13965
+congress,24,surname,All others (est.),12,15094
+congress,24,surname,All others (est.),13,15762
+congress,24,surname,All others (est.),14,16898
+congress,24,surname,All others (est.),15,15548
+congress,24,surname,All others (est.),17,1164
+congress,24,surname,All others (est.),18,296
+congress,24,surname,All others (est.),19,369
+congress,24,surname,All others (est.),20,445
+congress,24,surname,All others (est.),21,116
+congress,24,surname,All others (est.),22,649
+congress,24,surname,All others (est.),25,288
+congress,24,surname,All others (est.),26,12
+congress,24,surname,All others (est.),27,2
+congress,24,surname,All others (est.),28,50
+congress,24,surname,All others (est.),32,8
+congress,24,surname,All others (est.),33,5
+congress,24,surname,All others (est.),34,9
+congress,24,surname,All others (est.),36,3
+congress,24,surname,All others (est.),37,6
+congress,24,surname,Asian (est.),4,1515
+congress,24,surname,Asian (est.),5,1080
+congress,24,surname,Asian (est.),6,863
+congress,24,surname,Asian (est.),7,720
+congress,24,surname,Asian (est.),8,733
+congress,24,surname,Asian (est.),9,392
+congress,24,surname,Asian (est.),10,889
+congress,24,surname,Asian (est.),11,630
+congress,24,surname,Asian (est.),12,645
+congress,24,surname,Asian (est.),13,685
+congress,24,surname,Asian (est.),14,711
+congress,24,surname,Asian (est.),15,602
+congress,24,surname,Asian (est.),17,34
+congress,24,surname,Asian (est.),18,11
+congress,24,surname,Asian (est.),19,15
+congress,24,surname,Asian (est.),20,12
+congress,24,surname,Asian (est.),21,2
+congress,24,surname,Asian (est.),22,25
+congress,24,surname,Asian (est.),25,8
+congress,24,surname,Asian (est.),26,1
+congress,24,surname,Asian (est.),28,3
+congress,24,surname,Hispanic (est.),4,2961
+congress,24,surname,Hispanic (est.),5,2099
+congress,24,surname,Hispanic (est.),6,1665
+congress,24,surname,Hispanic (est.),7,1638
+congress,24,surname,Hispanic (est.),8,1580
+congress,24,surname,Hispanic (est.),9,653
+congress,24,surname,Hispanic (est.),10,1745
+congress,24,surname,Hispanic (est.),11,1515
+congress,24,surname,Hispanic (est.),12,1501
+congress,24,surname,Hispanic (est.),13,1618
+congress,24,surname,Hispanic (est.),14,1679
+congress,24,surname,Hispanic (est.),15,1559
+congress,24,surname,Hispanic (est.),17,71
+congress,24,surname,Hispanic (est.),18,21
+congress,24,surname,Hispanic (est.),19,27
+congress,24,surname,Hispanic (est.),20,31
+congress,24,surname,Hispanic (est.),21,9
+congress,24,surname,Hispanic (est.),22,50
+congress,24,surname,Hispanic (est.),25,20
+congress,24,surname,Hispanic (est.),26,1
+congress,24,surname,Hispanic (est.),28,7
+congress,25,surname,All others (est.),4,15205
+congress,25,surname,All others (est.),5,11730
+congress,25,surname,All others (est.),6,9782
+congress,25,surname,All others (est.),7,10278
+congress,25,surname,All others (est.),8,11010
+congress,25,surname,All others (est.),9,2458
+congress,25,surname,All others (est.),10,6603
+congress,25,surname,All others (est.),11,10049
+congress,25,surname,All others (est.),12,10489
+congress,25,surname,All others (est.),13,10874
+congress,25,surname,All others (est.),14,11777
+congress,25,surname,All others (est.),15,10948
+congress,25,surname,All others (est.),18,432
+congress,25,surname,All others (est.),19,378
+congress,25,surname,All others (est.),20,536
+congress,25,surname,All others (est.),21,228
+congress,25,surname,All others (est.),22,894
+congress,25,surname,All others (est.),24,52
+congress,25,surname,All others (est.),25,477
+congress,25,surname,All others (est.),26,152
+congress,25,surname,All others (est.),27,62
+congress,25,surname,All others (est.),28,70
+congress,25,surname,All others (est.),32,54
+congress,25,surname,All others (est.),33,52
+congress,25,surname,All others (est.),34,59
+congress,25,surname,All others (est.),35,10
+congress,25,surname,All others (est.),36,39
+congress,25,surname,All others (est.),37,7
+congress,25,surname,Asian (est.),4,509
+congress,25,surname,Asian (est.),5,364
+congress,25,surname,Asian (est.),6,285
+congress,25,surname,Asian (est.),7,270
+congress,25,surname,Asian (est.),8,284
+congress,25,surname,Asian (est.),9,115
+congress,25,surname,Asian (est.),10,264
+congress,25,surname,Asian (est.),11,244
+congress,25,surname,Asian (est.),12,250
+congress,25,surname,Asian (est.),13,246
+congress,25,surname,Asian (est.),14,244
+congress,25,surname,Asian (est.),15,225
+congress,25,surname,Asian (est.),18,9
+congress,25,surname,Asian (est.),19,15
+congress,25,surname,Asian (est.),20,7
+congress,25,surname,Asian (est.),21,5
+congress,25,surname,Asian (est.),22,16
+congress,25,surname,Asian (est.),24,1
+congress,25,surname,Asian (est.),25,6
+congress,25,surname,Asian (est.),26,1
+congress,25,surname,Asian (est.),27,1
+congress,25,surname,Asian (est.),28,1
+congress,25,surname,Asian (est.),32,1
+congress,25,surname,Asian (est.),33,1
+congress,25,surname,Asian (est.),34,1
+congress,25,surname,Asian (est.),36,1
+congress,25,surname,Hispanic (est.),4,2174
+congress,25,surname,Hispanic (est.),5,1518
+congress,25,surname,Hispanic (est.),6,1147
+congress,25,surname,Hispanic (est.),7,1148
+congress,25,surname,Hispanic (est.),8,1089
+congress,25,surname,Hispanic (est.),9,366
+congress,25,surname,Hispanic (est.),10,974
+congress,25,surname,Hispanic (est.),11,1023
+congress,25,surname,Hispanic (est.),12,944
+congress,25,surname,Hispanic (est.),13,1035
+congress,25,surname,Hispanic (est.),14,1084
+congress,25,surname,Hispanic (est.),15,957
+congress,25,surname,Hispanic (est.),18,25
+congress,25,surname,Hispanic (est.),19,30
+congress,25,surname,Hispanic (est.),20,38
+congress,25,surname,Hispanic (est.),21,15
+congress,25,surname,Hispanic (est.),22,71
+congress,25,surname,Hispanic (est.),24,4
+congress,25,surname,Hispanic (est.),25,33
+congress,25,surname,Hispanic (est.),26,13
+congress,25,surname,Hispanic (est.),27,3
+congress,25,surname,Hispanic (est.),28,2
+congress,25,surname,Hispanic (est.),32,2
+congress,25,surname,Hispanic (est.),33,2
+congress,25,surname,Hispanic (est.),34,3
+congress,25,surname,Hispanic (est.),36,1
+congress,25,surname,Hispanic (est.),37,1
+congress,26,surname,All others (est.),4,20229
+congress,26,surname,All others (est.),5,15300
+congress,26,surname,All others (est.),6,13461
+congress,26,surname,All others (est.),7,12508
+congress,26,surname,All others (est.),8,13308
+congress,26,surname,All others (est.),9,5513
+congress,26,surname,All others (est.),10,12956
+congress,26,surname,All others (est.),11,13449
+congress,26,surname,All others (est.),12,13496
+congress,26,surname,All others (est.),13,14223
+congress,26,surname,All others (est.),14,15600
+congress,26,surname,All others (est.),15,14140
+congress,26,surname,All others (est.),17,91
+congress,26,surname,All others (est.),18,59
+congress,26,surname,All others (est.),19,601
+congress,26,surname,All others (est.),20,146
+congress,26,surname,All others (est.),21,507
+congress,26,surname,All others (est.),22,383
+congress,26,surname,All others (est.),25,563
+congress,26,surname,All others (est.),26,835
+congress,26,surname,All others (est.),27,118
+congress,26,surname,All others (est.),28,294
+congress,26,surname,All others (est.),29,52
+congress,26,surname,All others (est.),32,43
+congress,26,surname,All others (est.),33,66
+congress,26,surname,All others (est.),34,58
+congress,26,surname,All others (est.),35,9
+congress,26,surname,All others (est.),36,34
+congress,26,surname,All others (est.),37,38
+congress,26,surname,Asian (est.),4,1200
+congress,26,surname,Asian (est.),5,825
+congress,26,surname,Asian (est.),6,659
+congress,26,surname,Asian (est.),7,634
+congress,26,surname,Asian (est.),8,642
+congress,26,surname,Asian (est.),9,427
+congress,26,surname,Asian (est.),10,820
+congress,26,surname,Asian (est.),11,608
+congress,26,surname,Asian (est.),12,564
+congress,26,surname,Asian (est.),13,566
+congress,26,surname,Asian (est.),14,645
+congress,26,surname,Asian (est.),15,494
+congress,26,surname,Asian (est.),17,5
+congress,26,surname,Asian (est.),18,4
+congress,26,surname,Asian (est.),19,23
+congress,26,surname,Asian (est.),20,11
+congress,26,surname,Asian (est.),21,15
+congress,26,surname,Asian (est.),22,10
+congress,26,surname,Asian (est.),25,17
+congress,26,surname,Asian (est.),26,34
+congress,26,surname,Asian (est.),27,6
+congress,26,surname,Asian (est.),28,10
+congress,26,surname,Asian (est.),32,1
+congress,26,surname,Asian (est.),33,1
+congress,26,surname,Hispanic (est.),4,2720
+congress,26,surname,Hispanic (est.),5,1808
+congress,26,surname,Hispanic (est.),6,1541
+congress,26,surname,Hispanic (est.),7,1325
+congress,26,surname,Hispanic (est.),8,1416
+congress,26,surname,Hispanic (est.),9,738
+congress,26,surname,Hispanic (est.),10,1721
+congress,26,surname,Hispanic (est.),11,1363
+congress,26,surname,Hispanic (est.),12,1313
+congress,26,surname,Hispanic (est.),13,1317
+congress,26,surname,Hispanic (est.),14,1438
+congress,26,surname,Hispanic (est.),15,1350
+congress,26,surname,Hispanic (est.),17,5
+congress,26,surname,Hispanic (est.),18,3
+congress,26,surname,Hispanic (est.),19,45
+congress,26,surname,Hispanic (est.),20,12
+congress,26,surname,Hispanic (est.),21,37
+congress,26,surname,Hispanic (est.),22,26
+congress,26,surname,Hispanic (est.),25,46
+congress,26,surname,Hispanic (est.),26,47
+congress,26,surname,Hispanic (est.),27,11
+congress,26,surname,Hispanic (est.),28,22
+congress,26,surname,Hispanic (est.),29,3
+congress,26,surname,Hispanic (est.),32,2
+congress,26,surname,Hispanic (est.),33,4
+congress,26,surname,Hispanic (est.),34,2
+congress,26,surname,Hispanic (est.),36,1
+congress,26,surname,Hispanic (est.),37,2
+congress,27,surname,All others (est.),4,14400
+congress,27,surname,All others (est.),5,10242
+congress,27,surname,All others (est.),6,9270
+congress,27,surname,All others (est.),7,7716
+congress,27,surname,All others (est.),8,8947
+congress,27,surname,All others (est.),9,2242
+congress,27,surname,All others (est.),10,5396
+congress,27,surname,All others (est.),11,10395
+congress,27,surname,All others (est.),12,9701
+congress,27,surname,All others (est.),13,10742
+congress,27,surname,All others (est.),14,11687
+congress,27,surname,All others (est.),15,11933
+congress,27,surname,All others (est.),17,198
+congress,27,surname,All others (est.),18,425
+congress,27,surname,All others (est.),19,274
+congress,27,surname,All others (est.),20,595
+congress,27,surname,All others (est.),21,506
+congress,27,surname,All others (est.),22,542
+congress,27,surname,All others (est.),25,367
+congress,27,surname,All others (est.),26,456
+congress,27,surname,All others (est.),27,85
+congress,27,surname,All others (est.),28,241
+congress,27,surname,All others (est.),29,6
+congress,27,surname,All others (est.),32,233
+congress,27,surname,All others (est.),33,96
+congress,27,surname,All others (est.),34,103
+congress,27,surname,All others (est.),35,11
+congress,27,surname,All others (est.),36,148
+congress,27,surname,All others (est.),37,70
+congress,27,surname,Asian (est.),4,480
+congress,27,surname,Asian (est.),5,270
+congress,27,surname,Asian (est.),6,248
+congress,27,surname,Asian (est.),7,193
+congress,27,surname,Asian (est.),8,241
+congress,27,surname,Asian (est.),9,78
+congress,27,surname,Asian (est.),10,177
+congress,27,surname,Asian (est.),11,255
+congress,27,surname,Asian (est.),12,223
+congress,27,surname,Asian (est.),13,236
+congress,27,surname,Asian (est.),14,266
+congress,27,surname,Asian (est.),15,263
+congress,27,surname,Asian (est.),17,5
+congress,27,surname,Asian (est.),18,11
+congress,27,surname,Asian (est.),19,6
+congress,27,surname,Asian (est.),20,13
+congress,27,surname,Asian (est.),21,15
+congress,27,surname,Asian (est.),22,12
+congress,27,surname,Asian (est.),25,9
+congress,27,surname,Asian (est.),26,10
+congress,27,surname,Asian (est.),27,1
+congress,27,surname,Asian (est.),28,4
+congress,27,surname,Asian (est.),32,7
+congress,27,surname,Asian (est.),33,2
+congress,27,surname,Asian (est.),34,2
+congress,27,surname,Asian (est.),35,2
+congress,27,surname,Asian (est.),36,3
+congress,27,surname,Asian (est.),37,1
+congress,27,surname,Hispanic (est.),4,4731
+congress,27,surname,Hispanic (est.),5,2907
+congress,27,surname,Hispanic (est.),6,2246
+congress,27,surname,Hispanic (est.),7,1816
+congress,27,surname,Hispanic (est.),8,2021
+congress,27,surname,Hispanic (est.),9,625
+congress,27,surname,Hispanic (est.),10,1802
+congress,27,surname,Hispanic (est.),11,2445
+congress,27,surname,Hispanic (est.),12,2134
+congress,27,surname,Hispanic (est.),13,2307
+congress,27,surname,Hispanic (est.),14,2366
+congress,27,surname,Hispanic (est.),15,2469
+congress,27,surname,Hispanic (est.),17,40
+congress,27,surname,Hispanic (est.),18,90
+congress,27,surname,Hispanic (est.),19,95
+congress,27,surname,Hispanic (est.),20,160
+congress,27,surname,Hispanic (est.),21,165
+congress,27,surname,Hispanic (est.),22,189
+congress,27,surname,Hispanic (est.),25,82
+congress,27,surname,Hispanic (est.),26,118
+congress,27,surname,Hispanic (est.),27,13
+congress,27,surname,Hispanic (est.),28,35
+congress,27,surname,Hispanic (est.),29,2
+congress,27,surname,Hispanic (est.),32,50
+congress,27,surname,Hispanic (est.),33,20
+congress,27,surname,Hispanic (est.),34,17
+congress,27,surname,Hispanic (est.),35,3
+congress,27,surname,Hispanic (est.),36,33
+congress,27,surname,Hispanic (est.),37,8
+congress,28,surname,All others (est.),4,2939
+congress,28,surname,All others (est.),5,1818
+congress,28,surname,All others (est.),6,1678
+congress,28,surname,All others (est.),7,1592
+congress,28,surname,All others (est.),8,1534
+congress,28,surname,All others (est.),9,324
+congress,28,surname,All others (est.),10,1223
+congress,28,surname,All others (est.),11,1917
+congress,28,surname,All others (est.),12,1983
+congress,28,surname,All others (est.),13,2091
+congress,28,surname,All others (est.),14,2533
+congress,28,surname,All others (est.),15,2772
+congress,28,surname,All others (est.),18,54
+congress,28,surname,All others (est.),19,83
+congress,28,surname,All others (est.),20,73
+congress,28,surname,All others (est.),21,77
+congress,28,surname,All others (est.),22,33
+congress,28,surname,All others (est.),25,87
+congress,28,surname,All others (est.),26,15
+congress,28,surname,All others (est.),27,56
+congress,28,surname,All others (est.),28,17
+congress,28,surname,All others (est.),29,1
+congress,28,surname,All others (est.),32,5
+congress,28,surname,All others (est.),33,6
+congress,28,surname,Asian (est.),4,276
+congress,28,surname,Asian (est.),5,150
+congress,28,surname,Asian (est.),6,133
+congress,28,surname,Asian (est.),7,113
+congress,28,surname,Asian (est.),8,116
+congress,28,surname,Asian (est.),9,43
+congress,28,surname,Asian (est.),10,118
+congress,28,surname,Asian (est.),11,146
+congress,28,surname,Asian (est.),12,141
+congress,28,surname,Asian (est.),13,144
+congress,28,surname,Asian (est.),14,168
+congress,28,surname,Asian (est.),15,177
+congress,28,surname,Asian (est.),18,3
+congress,28,surname,Asian (est.),19,6
+congress,28,surname,Asian (est.),20,4
+congress,28,surname,Asian (est.),21,3
+congress,28,surname,Asian (est.),22,2
+congress,28,surname,Asian (est.),25,6
+congress,28,surname,Asian (est.),26,1
+congress,28,surname,Asian (est.),27,4
+congress,28,surname,Asian (est.),28,1
+congress,28,surname,Hispanic (est.),4,11098
+congress,28,surname,Hispanic (est.),5,6191
+congress,28,surname,Hispanic (est.),6,5216
+congress,28,surname,Hispanic (est.),7,4557
+congress,28,surname,Hispanic (est.),8,4346
+congress,28,surname,Hispanic (est.),9,1834
+congress,28,surname,Hispanic (est.),10,5327
+congress,28,surname,Hispanic (est.),11,5656
+congress,28,surname,Hispanic (est.),12,5156
+congress,28,surname,Hispanic (est.),13,5753
+congress,28,surname,Hispanic (est.),14,6338
+congress,28,surname,Hispanic (est.),15,7431
+congress,28,surname,Hispanic (est.),18,134
+congress,28,surname,Hispanic (est.),19,284
+congress,28,surname,Hispanic (est.),20,180
+congress,28,surname,Hispanic (est.),21,196
+congress,28,surname,Hispanic (est.),22,75
+congress,28,surname,Hispanic (est.),24,1
+congress,28,surname,Hispanic (est.),25,199
+congress,28,surname,Hispanic (est.),26,23
+congress,28,surname,Hispanic (est.),27,155
+congress,28,surname,Hispanic (est.),28,25
+congress,28,surname,Hispanic (est.),29,9
+congress,28,surname,Hispanic (est.),32,15
+congress,28,surname,Hispanic (est.),33,4
+congress,28,surname,Hispanic (est.),34,1
+congress,29,surname,All others (est.),4,8265
+congress,29,surname,All others (est.),5,5835
+congress,29,surname,All others (est.),6,4657
+congress,29,surname,All others (est.),7,3356
+congress,29,surname,All others (est.),8,3914
+congress,29,surname,All others (est.),9,2005
+congress,29,surname,All others (est.),10,3106
+congress,29,surname,All others (est.),11,3983
+congress,29,surname,All others (est.),12,4109
+congress,29,surname,All others (est.),13,4316
+congress,29,surname,All others (est.),14,4347
+congress,29,surname,All others (est.),15,4093
+congress,29,surname,All others (est.),17,656
+congress,29,surname,All others (est.),18,365
+congress,29,surname,All others (est.),19,401
+congress,29,surname,All others (est.),20,257
+congress,29,surname,All others (est.),21,130
+congress,29,surname,All others (est.),25,30
+congress,29,surname,All others (est.),26,2
+congress,29,surname,All others (est.),27,2
+congress,29,surname,All others (est.),28,3
+congress,29,surname,All others (est.),32,2
+congress,29,surname,All others (est.),34,2
+congress,29,surname,Asian (est.),4,512
+congress,29,surname,Asian (est.),5,376
+congress,29,surname,Asian (est.),6,291
+congress,29,surname,Asian (est.),7,193
+congress,29,surname,Asian (est.),8,258
+congress,29,surname,Asian (est.),9,152
+congress,29,surname,Asian (est.),10,223
+congress,29,surname,Asian (est.),11,243
+congress,29,surname,Asian (est.),12,216
+congress,29,surname,Asian (est.),13,233
+congress,29,surname,Asian (est.),14,256
+congress,29,surname,Asian (est.),15,232
+congress,29,surname,Asian (est.),17,26
+congress,29,surname,Asian (est.),18,9
+congress,29,surname,Asian (est.),19,13
+congress,29,surname,Asian (est.),20,14
+congress,29,surname,Asian (est.),21,7
+congress,29,surname,Asian (est.),25,5
+congress,29,surname,Asian (est.),27,1
+congress,29,surname,Hispanic (est.),4,3911
+congress,29,surname,Hispanic (est.),5,2482
+congress,29,surname,Hispanic (est.),6,1667
+congress,29,surname,Hispanic (est.),7,1195
+congress,29,surname,Hispanic (est.),8,1309
+congress,29,surname,Hispanic (est.),9,770
+congress,29,surname,Hispanic (est.),10,1300
+congress,29,surname,Hispanic (est.),11,1431
+congress,29,surname,Hispanic (est.),12,1382
+congress,29,surname,Hispanic (est.),13,1468
+congress,29,surname,Hispanic (est.),14,1404
+congress,29,surname,Hispanic (est.),15,1561
+congress,29,surname,Hispanic (est.),17,142
+congress,29,surname,Hispanic (est.),18,66
+congress,29,surname,Hispanic (est.),19,96
+congress,29,surname,Hispanic (est.),20,74
+congress,29,surname,Hispanic (est.),21,27
+congress,29,surname,Hispanic (est.),25,8
+congress,29,surname,Hispanic (est.),27,1
+congress,3,surname,All others (est.),4,18696
+congress,3,surname,All others (est.),5,14685
+congress,3,surname,All others (est.),6,12162
+congress,3,surname,All others (est.),7,12074
+congress,3,surname,All others (est.),8,12521
+congress,3,surname,All others (est.),9,4482
+congress,3,surname,All others (est.),10,11020
+congress,3,surname,All others (est.),11,11612
+congress,3,surname,All others (est.),12,12511
+congress,3,surname,All others (est.),13,13424
+congress,3,surname,All others (est.),14,14220
+congress,3,surname,All others (est.),15,12461
+congress,3,surname,All others (est.),17,14
+congress,3,surname,All others (est.),18,221
+congress,3,surname,All others (est.),19,295
+congress,3,surname,All others (est.),20,267
+congress,3,surname,All others (est.),21,315
+congress,3,surname,All others (est.),22,407
+congress,3,surname,All others (est.),24,40
+congress,3,surname,All others (est.),25,333
+congress,3,surname,All others (est.),26,505
+congress,3,surname,All others (est.),27,314
+congress,3,surname,All others (est.),28,359
+congress,3,surname,All others (est.),29,26
+congress,3,surname,All others (est.),31,9
+congress,3,surname,All others (est.),32,155
+congress,3,surname,All others (est.),33,135
+congress,3,surname,All others (est.),34,168
+congress,3,surname,All others (est.),35,14
+congress,3,surname,All others (est.),36,39
+congress,3,surname,All others (est.),37,4
+congress,3,surname,Asian (est.),4,1580
+congress,3,surname,Asian (est.),5,1088
+congress,3,surname,Asian (est.),6,760
+congress,3,surname,Asian (est.),7,751
+congress,3,surname,Asian (est.),8,787
+congress,3,surname,Asian (est.),9,438
+congress,3,surname,Asian (est.),10,983
+congress,3,surname,Asian (est.),11,661
+congress,3,surname,Asian (est.),12,624
+congress,3,surname,Asian (est.),13,623
+congress,3,surname,Asian (est.),14,586
+congress,3,surname,Asian (est.),15,515
+congress,3,surname,Asian (est.),17,2
+congress,3,surname,Asian (est.),18,13
+congress,3,surname,Asian (est.),19,15
+congress,3,surname,Asian (est.),20,13
+congress,3,surname,Asian (est.),21,20
+congress,3,surname,Asian (est.),22,17
+congress,3,surname,Asian (est.),25,8
+congress,3,surname,Asian (est.),26,22
+congress,3,surname,Asian (est.),27,8
+congress,3,surname,Asian (est.),28,12
+congress,3,surname,Asian (est.),32,5
+congress,3,surname,Asian (est.),33,1
+congress,3,surname,Asian (est.),34,2
+congress,3,surname,Asian (est.),35,1
+congress,3,surname,Asian (est.),36,1
+congress,3,surname,Hispanic (est.),4,2412
+congress,3,surname,Hispanic (est.),5,1717
+congress,3,surname,Hispanic (est.),6,1326
+congress,3,surname,Hispanic (est.),7,1292
+congress,3,surname,Hispanic (est.),8,1274
+congress,3,surname,Hispanic (est.),9,548
+congress,3,surname,Hispanic (est.),10,1429
+congress,3,surname,Hispanic (est.),11,1183
+congress,3,surname,Hispanic (est.),12,1126
+congress,3,surname,Hispanic (est.),13,1189
+congress,3,surname,Hispanic (est.),14,1336
+congress,3,surname,Hispanic (est.),15,1130
+congress,3,surname,Hispanic (est.),17,2
+congress,3,surname,Hispanic (est.),18,13
+congress,3,surname,Hispanic (est.),19,19
+congress,3,surname,Hispanic (est.),20,20
+congress,3,surname,Hispanic (est.),21,18
+congress,3,surname,Hispanic (est.),22,25
+congress,3,surname,Hispanic (est.),24,1
+congress,3,surname,Hispanic (est.),25,16
+congress,3,surname,Hispanic (est.),26,34
+congress,3,surname,Hispanic (est.),27,21
+congress,3,surname,Hispanic (est.),28,19
+congress,3,surname,Hispanic (est.),29,3
+congress,3,surname,Hispanic (est.),31,1
+congress,3,surname,Hispanic (est.),32,6
+congress,3,surname,Hispanic (est.),33,7
+congress,3,surname,Hispanic (est.),34,11
+congress,3,surname,Hispanic (est.),36,4
+congress,30,surname,All others (est.),4,13277
+congress,30,surname,All others (est.),5,10553
+congress,30,surname,All others (est.),6,8193
+congress,30,surname,All others (est.),7,7878
+congress,30,surname,All others (est.),8,8198
+congress,30,surname,All others (est.),9,2593
+congress,30,surname,All others (est.),10,5862
+congress,30,surname,All others (est.),11,5800
+congress,30,surname,All others (est.),12,8149
+congress,30,surname,All others (est.),13,8354
+congress,30,surname,All others (est.),14,8493
+congress,30,surname,All others (est.),15,7080
+congress,30,surname,All others (est.),17,1462
+congress,30,surname,All others (est.),18,53
+congress,30,surname,All others (est.),19,68
+congress,30,surname,All others (est.),20,71
+congress,30,surname,All others (est.),21,47
+congress,30,surname,All others (est.),22,102
+congress,30,surname,All others (est.),25,44
+congress,30,surname,All others (est.),26,3
+congress,30,surname,All others (est.),28,12
+congress,30,surname,All others (est.),32,1
+congress,30,surname,All others (est.),33,1
+congress,30,surname,All others (est.),34,1
+congress,30,surname,Asian (est.),4,689
+congress,30,surname,Asian (est.),5,465
+congress,30,surname,Asian (est.),6,369
+congress,30,surname,Asian (est.),7,376
+congress,30,surname,Asian (est.),8,438
+congress,30,surname,Asian (est.),9,256
+congress,30,surname,Asian (est.),10,389
+congress,30,surname,Asian (est.),11,241
+congress,30,surname,Asian (est.),12,337
+congress,30,surname,Asian (est.),13,383
+congress,30,surname,Asian (est.),14,372
+congress,30,surname,Asian (est.),15,295
+congress,30,surname,Asian (est.),17,32
+congress,30,surname,Asian (est.),18,3
+congress,30,surname,Asian (est.),19,5
+congress,30,surname,Asian (est.),20,5
+congress,30,surname,Asian (est.),21,4
+congress,30,surname,Asian (est.),22,8
+congress,30,surname,Asian (est.),25,1
+congress,30,surname,Asian (est.),26,1
+congress,30,surname,Hispanic (est.),4,3073
+congress,30,surname,Hispanic (est.),5,2011
+congress,30,surname,Hispanic (est.),6,1441
+congress,30,surname,Hispanic (est.),7,1268
+congress,30,surname,Hispanic (est.),8,1230
+congress,30,surname,Hispanic (est.),9,440
+congress,30,surname,Hispanic (est.),10,1084
+congress,30,surname,Hispanic (est.),11,971
+congress,30,surname,Hispanic (est.),12,1109
+congress,30,surname,Hispanic (est.),13,1215
+congress,30,surname,Hispanic (est.),14,1191
+congress,30,surname,Hispanic (est.),15,1050
+congress,30,surname,Hispanic (est.),17,104
+congress,30,surname,Hispanic (est.),18,5
+congress,30,surname,Hispanic (est.),19,6
+congress,30,surname,Hispanic (est.),20,12
+congress,30,surname,Hispanic (est.),21,9
+congress,30,surname,Hispanic (est.),22,25
+congress,30,surname,Hispanic (est.),25,7
+congress,30,surname,Hispanic (est.),28,1
+congress,31,surname,All others (est.),4,18149
+congress,31,surname,All others (est.),5,12973
+congress,31,surname,All others (est.),6,11430
+congress,31,surname,All others (est.),7,11126
+congress,31,surname,All others (est.),8,11592
+congress,31,surname,All others (est.),9,3470
+congress,31,surname,All others (est.),10,7991
+congress,31,surname,All others (est.),11,12921
+congress,31,surname,All others (est.),12,13143
+congress,31,surname,All others (est.),13,13669
+congress,31,surname,All others (est.),14,14028
+congress,31,surname,All others (est.),15,14663
+congress,31,surname,All others (est.),16,222
+congress,31,surname,All others (est.),17,7
+congress,31,surname,All others (est.),18,478
+congress,31,surname,All others (est.),19,423
+congress,31,surname,All others (est.),20,348
+congress,31,surname,All others (est.),21,227
+congress,31,surname,All others (est.),22,1386
+congress,31,surname,All others (est.),23,3
+congress,31,surname,All others (est.),25,220
+congress,31,surname,All others (est.),26,512
+congress,31,surname,All others (est.),27,311
+congress,31,surname,All others (est.),28,345
+congress,31,surname,All others (est.),29,23
+congress,31,surname,All others (est.),32,132
+congress,31,surname,All others (est.),33,90
+congress,31,surname,All others (est.),34,48
+congress,31,surname,All others (est.),35,12
+congress,31,surname,All others (est.),36,157
+congress,31,surname,All others (est.),37,230
+congress,31,surname,Asian (est.),4,724
+congress,31,surname,Asian (est.),5,438
+congress,31,surname,Asian (est.),6,344
+congress,31,surname,Asian (est.),7,328
+congress,31,surname,Asian (est.),8,303
+congress,31,surname,Asian (est.),9,168
+congress,31,surname,Asian (est.),10,283
+congress,31,surname,Asian (est.),11,346
+congress,31,surname,Asian (est.),12,339
+congress,31,surname,Asian (est.),13,310
+congress,31,surname,Asian (est.),14,342
+congress,31,surname,Asian (est.),15,386
+congress,31,surname,Asian (est.),16,3
+congress,31,surname,Asian (est.),18,12
+congress,31,surname,Asian (est.),19,12
+congress,31,surname,Asian (est.),20,10
+congress,31,surname,Asian (est.),21,7
+congress,31,surname,Asian (est.),22,33
+congress,31,surname,Asian (est.),23,2
+congress,31,surname,Asian (est.),25,5
+congress,31,surname,Asian (est.),26,11
+congress,31,surname,Asian (est.),27,8
+congress,31,surname,Asian (est.),28,7
+congress,31,surname,Asian (est.),29,1
+congress,31,surname,Asian (est.),32,6
+congress,31,surname,Asian (est.),33,1
+congress,31,surname,Asian (est.),34,1
+congress,31,surname,Asian (est.),36,3
+congress,31,surname,Asian (est.),37,3
+congress,31,surname,Hispanic (est.),4,3065
+congress,31,surname,Hispanic (est.),5,1957
+congress,31,surname,Hispanic (est.),6,1653
+congress,31,surname,Hispanic (est.),7,1488
+congress,31,surname,Hispanic (est.),8,1436
+congress,31,surname,Hispanic (est.),9,557
+congress,31,surname,Hispanic (est.),10,1243
+congress,31,surname,Hispanic (est.),11,1577
+congress,31,surname,Hispanic (est.),12,1556
+congress,31,surname,Hispanic (est.),13,1644
+congress,31,surname,Hispanic (est.),14,1676
+congress,31,surname,Hispanic (est.),15,1786
+congress,31,surname,Hispanic (est.),16,23
+congress,31,surname,Hispanic (est.),18,43
+congress,31,surname,Hispanic (est.),19,40
+congress,31,surname,Hispanic (est.),20,39
+congress,31,surname,Hispanic (est.),21,20
+congress,31,surname,Hispanic (est.),22,136
+congress,31,surname,Hispanic (est.),25,23
+congress,31,surname,Hispanic (est.),26,51
+congress,31,surname,Hispanic (est.),27,25
+congress,31,surname,Hispanic (est.),28,34
+congress,31,surname,Hispanic (est.),29,2
+congress,31,surname,Hispanic (est.),32,10
+congress,31,surname,Hispanic (est.),33,12
+congress,31,surname,Hispanic (est.),34,3
+congress,31,surname,Hispanic (est.),36,14
+congress,31,surname,Hispanic (est.),37,18
+congress,32,surname,All others (est.),4,14879
+congress,32,surname,All others (est.),5,12462
+congress,32,surname,All others (est.),6,10310
+congress,32,surname,All others (est.),7,10240
+congress,32,surname,All others (est.),8,10330
+congress,32,surname,All others (est.),9,3053
+congress,32,surname,All others (est.),10,7961
+congress,32,surname,All others (est.),11,10015
+congress,32,surname,All others (est.),12,11321
+congress,32,surname,All others (est.),13,12570
+congress,32,surname,All others (est.),14,12821
+congress,32,surname,All others (est.),15,11639
+congress,32,surname,All others (est.),17,1699
+congress,32,surname,All others (est.),18,163
+congress,32,surname,All others (est.),19,108
+congress,32,surname,All others (est.),20,133
+congress,32,surname,All others (est.),21,77
+congress,32,surname,All others (est.),22,294
+congress,32,surname,All others (est.),24,1
+congress,32,surname,All others (est.),25,292
+congress,32,surname,All others (est.),26,80
+congress,32,surname,All others (est.),27,65
+congress,32,surname,All others (est.),28,159
+congress,32,surname,All others (est.),29,139
+congress,32,surname,All others (est.),31,1
+congress,32,surname,All others (est.),32,24
+congress,32,surname,All others (est.),33,55
+congress,32,surname,All others (est.),34,48
+congress,32,surname,All others (est.),35,65
+congress,32,surname,All others (est.),36,14
+congress,32,surname,All others (est.),37,14
+congress,32,surname,Asian (est.),4,1027
+congress,32,surname,Asian (est.),5,722
+congress,32,surname,Asian (est.),6,539
+congress,32,surname,Asian (est.),7,488
+congress,32,surname,Asian (est.),8,563
+congress,32,surname,Asian (est.),9,264
+congress,32,surname,Asian (est.),10,544
+congress,32,surname,Asian (est.),11,425
+congress,32,surname,Asian (est.),12,544
+congress,32,surname,Asian (est.),13,514
+congress,32,surname,Asian (est.),14,501
+congress,32,surname,Asian (est.),15,434
+congress,32,surname,Asian (est.),17,67
+congress,32,surname,Asian (est.),18,3
+congress,32,surname,Asian (est.),19,3
+congress,32,surname,Asian (est.),20,4
+congress,32,surname,Asian (est.),21,3
+congress,32,surname,Asian (est.),22,5
+congress,32,surname,Asian (est.),25,4
+congress,32,surname,Asian (est.),26,2
+congress,32,surname,Asian (est.),27,2
+congress,32,surname,Asian (est.),28,5
+congress,32,surname,Asian (est.),29,2
+congress,32,surname,Asian (est.),34,1
+congress,32,surname,Asian (est.),35,1
+congress,32,surname,Hispanic (est.),4,2497
+congress,32,surname,Hispanic (est.),5,1744
+congress,32,surname,Hispanic (est.),6,1257
+congress,32,surname,Hispanic (est.),7,1188
+congress,32,surname,Hispanic (est.),8,1132
+congress,32,surname,Hispanic (est.),9,477
+congress,32,surname,Hispanic (est.),10,1076
+congress,32,surname,Hispanic (est.),11,1137
+congress,32,surname,Hispanic (est.),12,1133
+congress,32,surname,Hispanic (est.),13,1220
+congress,32,surname,Hispanic (est.),14,1249
+congress,32,surname,Hispanic (est.),15,1203
+congress,32,surname,Hispanic (est.),17,122
+congress,32,surname,Hispanic (est.),18,8
+congress,32,surname,Hispanic (est.),19,8
+congress,32,surname,Hispanic (est.),20,7
+congress,32,surname,Hispanic (est.),21,7
+congress,32,surname,Hispanic (est.),22,17
+congress,32,surname,Hispanic (est.),25,15
+congress,32,surname,Hispanic (est.),26,2
+congress,32,surname,Hispanic (est.),27,5
+congress,32,surname,Hispanic (est.),28,9
+congress,32,surname,Hispanic (est.),29,7
+congress,32,surname,Hispanic (est.),32,2
+congress,32,surname,Hispanic (est.),33,2
+congress,32,surname,Hispanic (est.),34,2
+congress,32,surname,Hispanic (est.),35,3
+congress,32,surname,Hispanic (est.),36,1
+congress,32,surname,Hispanic (est.),37,1
+congress,33,surname,All others (est.),4,9110
+congress,33,surname,All others (est.),5,6887
+congress,33,surname,All others (est.),6,5469
+congress,33,surname,All others (est.),7,4774
+congress,33,surname,All others (est.),8,4977
+congress,33,surname,All others (est.),9,1739
+congress,33,surname,All others (est.),10,3946
+congress,33,surname,All others (est.),11,4197
+congress,33,surname,All others (est.),12,5232
+congress,33,surname,All others (est.),13,5472
+congress,33,surname,All others (est.),14,6001
+congress,33,surname,All others (est.),15,5521
+congress,33,surname,All others (est.),17,1074
+congress,33,surname,All others (est.),18,1
+congress,33,surname,All others (est.),19,8
+congress,33,surname,All others (est.),20,3
+congress,33,surname,All others (est.),21,9
+congress,33,surname,All others (est.),22,14
+congress,33,surname,All others (est.),28,20
+congress,33,surname,Asian (est.),4,585
+congress,33,surname,Asian (est.),5,418
+congress,33,surname,Asian (est.),6,321
+congress,33,surname,Asian (est.),7,241
+congress,33,surname,Asian (est.),8,258
+congress,33,surname,Asian (est.),9,147
+congress,33,surname,Asian (est.),10,246
+congress,33,surname,Asian (est.),11,213
+congress,33,surname,Asian (est.),12,235
+congress,33,surname,Asian (est.),13,276
+congress,33,surname,Asian (est.),14,273
+congress,33,surname,Asian (est.),15,242
+congress,33,surname,Asian (est.),17,38
+congress,33,surname,Asian (est.),19,1
+congress,33,surname,Asian (est.),22,1
+congress,33,surname,Asian (est.),28,2
+congress,33,surname,Hispanic (est.),4,3841
+congress,33,surname,Hispanic (est.),5,2560
+congress,33,surname,Hispanic (est.),6,1857
+congress,33,surname,Hispanic (est.),7,1434
+congress,33,surname,Hispanic (est.),8,1419
+congress,33,surname,Hispanic (est.),9,587
+congress,33,surname,Hispanic (est.),10,1306
+congress,33,surname,Hispanic (est.),11,1203
+congress,33,surname,Hispanic (est.),12,1444
+congress,33,surname,Hispanic (est.),13,1461
+congress,33,surname,Hispanic (est.),14,1569
+congress,33,surname,Hispanic (est.),15,1458
+congress,33,surname,Hispanic (est.),17,185
+congress,33,surname,Hispanic (est.),19,2
+congress,33,surname,Hispanic (est.),22,2
+congress,33,surname,Hispanic (est.),28,3
+congress,34,surname,All others (est.),4,6650
+congress,34,surname,All others (est.),5,4166
+congress,34,surname,All others (est.),6,3837
+congress,34,surname,All others (est.),7,2982
+congress,34,surname,All others (est.),8,3645
+congress,34,surname,All others (est.),9,415
+congress,34,surname,All others (est.),10,2722
+congress,34,surname,All others (est.),11,4654
+congress,34,surname,All others (est.),12,4198
+congress,34,surname,All others (est.),13,4866
+congress,34,surname,All others (est.),14,5916
+congress,34,surname,All others (est.),15,6916
+congress,34,surname,All others (est.),18,178
+congress,34,surname,All others (est.),19,233
+congress,34,surname,All others (est.),20,387
+congress,34,surname,All others (est.),21,267
+congress,34,surname,All others (est.),22,662
+congress,34,surname,All others (est.),25,208
+congress,34,surname,All others (est.),26,344
+congress,34,surname,All others (est.),27,8
+congress,34,surname,All others (est.),28,17
+congress,34,surname,All others (est.),32,13
+congress,34,surname,All others (est.),33,9
+congress,34,surname,All others (est.),34,2
+congress,34,surname,All others (est.),35,1
+congress,34,surname,All others (est.),36,21
+congress,34,surname,All others (est.),37,1
+congress,34,surname,Asian (est.),4,365
+congress,34,surname,Asian (est.),5,206
+congress,34,surname,Asian (est.),6,181
+congress,34,surname,Asian (est.),7,148
+congress,34,surname,Asian (est.),8,162
+congress,34,surname,Asian (est.),9,27
+congress,34,surname,Asian (est.),10,144
+congress,34,surname,Asian (est.),11,195
+congress,34,surname,Asian (est.),12,178
+congress,34,surname,Asian (est.),13,200
+congress,34,surname,Asian (est.),14,243
+congress,34,surname,Asian (est.),15,269
+congress,34,surname,Asian (est.),18,7
+congress,34,surname,Asian (est.),19,8
+congress,34,surname,Asian (est.),20,18
+congress,34,surname,Asian (est.),21,6
+congress,34,surname,Asian (est.),22,21
+congress,34,surname,Asian (est.),25,5
+congress,34,surname,Asian (est.),26,11
+congress,34,surname,Asian (est.),36,1
+congress,34,surname,Hispanic (est.),4,9416
+congress,34,surname,Hispanic (est.),5,5298
+congress,34,surname,Hispanic (est.),6,4386
+congress,34,surname,Hispanic (est.),7,3580
+congress,34,surname,Hispanic (est.),8,3583
+congress,34,surname,Hispanic (est.),9,898
+congress,34,surname,Hispanic (est.),10,3746
+congress,34,surname,Hispanic (est.),11,5294
+congress,34,surname,Hispanic (est.),12,4588
+congress,34,surname,Hispanic (est.),13,5325
+congress,34,surname,Hispanic (est.),14,6185
+congress,34,surname,Hispanic (est.),15,7272
+congress,34,surname,Hispanic (est.),18,144
+congress,34,surname,Hispanic (est.),19,199
+congress,34,surname,Hispanic (est.),20,377
+congress,34,surname,Hispanic (est.),21,193
+congress,34,surname,Hispanic (est.),22,560
+congress,34,surname,Hispanic (est.),25,161
+congress,34,surname,Hispanic (est.),26,334
+congress,34,surname,Hispanic (est.),27,10
+congress,34,surname,Hispanic (est.),28,11
+congress,34,surname,Hispanic (est.),29,1
+congress,34,surname,Hispanic (est.),32,17
+congress,34,surname,Hispanic (est.),33,10
+congress,34,surname,Hispanic (est.),34,12
+congress,34,surname,Hispanic (est.),35,3
+congress,34,surname,Hispanic (est.),36,37
+congress,34,surname,Hispanic (est.),37,3
+congress,35,surname,All others (est.),4,10617
+congress,35,surname,All others (est.),5,8179
+congress,35,surname,All others (est.),6,6931
+congress,35,surname,All others (est.),7,6771
+congress,35,surname,All others (est.),8,6717
+congress,35,surname,All others (est.),9,2513
+congress,35,surname,All others (est.),10,6184
+congress,35,surname,All others (est.),11,8454
+congress,35,surname,All others (est.),12,9033
+congress,35,surname,All others (est.),13,7900
+congress,35,surname,All others (est.),14,8018
+congress,35,surname,All others (est.),15,8364
+congress,35,surname,All others (est.),17,303
+congress,35,surname,All others (est.),18,364
+congress,35,surname,All others (est.),19,426
+congress,35,surname,All others (est.),20,388
+congress,35,surname,All others (est.),21,295
+congress,35,surname,All others (est.),22,256
+congress,35,surname,All others (est.),23,4
+congress,35,surname,All others (est.),24,65
+congress,35,surname,All others (est.),25,199
+congress,35,surname,All others (est.),26,307
+congress,35,surname,All others (est.),27,71
+congress,35,surname,All others (est.),28,300
+congress,35,surname,All others (est.),29,13
+congress,35,surname,All others (est.),31,1
+congress,35,surname,All others (est.),32,34
+congress,35,surname,All others (est.),33,79
+congress,35,surname,All others (est.),34,98
+congress,35,surname,All others (est.),35,32
+congress,35,surname,All others (est.),36,121
+congress,35,surname,All others (est.),37,165
+congress,35,surname,Asian (est.),4,425
+congress,35,surname,Asian (est.),5,283
+congress,35,surname,Asian (est.),6,237
+congress,35,surname,Asian (est.),7,204
+congress,35,surname,Asian (est.),8,208
+congress,35,surname,Asian (est.),9,96
+congress,35,surname,Asian (est.),10,226
+congress,35,surname,Asian (est.),11,246
+congress,35,surname,Asian (est.),12,251
+congress,35,surname,Asian (est.),13,240
+congress,35,surname,Asian (est.),14,235
+congress,35,surname,Asian (est.),15,243
+congress,35,surname,Asian (est.),17,8
+congress,35,surname,Asian (est.),18,12
+congress,35,surname,Asian (est.),19,12
+congress,35,surname,Asian (est.),20,11
+congress,35,surname,Asian (est.),21,8
+congress,35,surname,Asian (est.),22,6
+congress,35,surname,Asian (est.),24,2
+congress,35,surname,Asian (est.),25,7
+congress,35,surname,Asian (est.),26,6
+congress,35,surname,Asian (est.),27,3
+congress,35,surname,Asian (est.),28,7
+congress,35,surname,Asian (est.),31,2
+congress,35,surname,Asian (est.),32,1
+congress,35,surname,Asian (est.),33,3
+congress,35,surname,Asian (est.),34,4
+congress,35,surname,Asian (est.),35,1
+congress,35,surname,Asian (est.),36,3
+congress,35,surname,Asian (est.),37,4
+congress,35,surname,Hispanic (est.),4,7227
+congress,35,surname,Hispanic (est.),5,4814
+congress,35,surname,Hispanic (est.),6,3832
+congress,35,surname,Hispanic (est.),7,3399
+congress,35,surname,Hispanic (est.),8,3125
+congress,35,surname,Hispanic (est.),9,1425
+congress,35,surname,Hispanic (est.),10,3326
+congress,35,surname,Hispanic (est.),11,4122
+congress,35,surname,Hispanic (est.),12,3848
+congress,35,surname,Hispanic (est.),13,3862
+congress,35,surname,Hispanic (est.),14,3995
+congress,35,surname,Hispanic (est.),15,4177
+congress,35,surname,Hispanic (est.),17,128
+congress,35,surname,Hispanic (est.),18,140
+congress,35,surname,Hispanic (est.),19,176
+congress,35,surname,Hispanic (est.),20,164
+congress,35,surname,Hispanic (est.),21,132
+congress,35,surname,Hispanic (est.),22,94
+congress,35,surname,Hispanic (est.),23,3
+congress,35,surname,Hispanic (est.),24,54
+congress,35,surname,Hispanic (est.),25,104
+congress,35,surname,Hispanic (est.),26,141
+congress,35,surname,Hispanic (est.),27,104
+congress,35,surname,Hispanic (est.),28,106
+congress,35,surname,Hispanic (est.),29,8
+congress,35,surname,Hispanic (est.),32,52
+congress,35,surname,Hispanic (est.),33,74
+congress,35,surname,Hispanic (est.),34,106
+congress,35,surname,Hispanic (est.),35,7
+congress,35,surname,Hispanic (est.),36,23
+congress,35,surname,Hispanic (est.),37,35
+congress,36,surname,All others (est.),4,15207
+congress,36,surname,All others (est.),5,10405
+congress,36,surname,All others (est.),6,10489
+congress,36,surname,All others (est.),7,8919
+congress,36,surname,All others (est.),8,9202
+congress,36,surname,All others (est.),9,3167
+congress,36,surname,All others (est.),10,6453
+congress,36,surname,All others (est.),11,11505
+congress,36,surname,All others (est.),12,10860
+congress,36,surname,All others (est.),13,10310
+congress,36,surname,All others (est.),14,11251
+congress,36,surname,All others (est.),15,11360
+congress,36,surname,All others (est.),17,680
+congress,36,surname,All others (est.),18,495
+congress,36,surname,All others (est.),19,378
+congress,36,surname,All others (est.),20,317
+congress,36,surname,All others (est.),21,228
+congress,36,surname,All others (est.),22,417
+congress,36,surname,All others (est.),24,23
+congress,36,surname,All others (est.),25,381
+congress,36,surname,All others (est.),26,342
+congress,36,surname,All others (est.),27,158
+congress,36,surname,All others (est.),28,161
+congress,36,surname,All others (est.),29,47
+congress,36,surname,All others (est.),31,69
+congress,36,surname,All others (est.),32,52
+congress,36,surname,All others (est.),33,38
+congress,36,surname,All others (est.),34,63
+congress,36,surname,All others (est.),35,1
+congress,36,surname,All others (est.),36,66
+congress,36,surname,All others (est.),37,1
+congress,36,surname,Asian (est.),4,1014
+congress,36,surname,Asian (est.),5,710
+congress,36,surname,Asian (est.),6,615
+congress,36,surname,Asian (est.),7,464
+congress,36,surname,Asian (est.),8,525
+congress,36,surname,Asian (est.),9,294
+congress,36,surname,Asian (est.),10,482
+congress,36,surname,Asian (est.),11,530
+congress,36,surname,Asian (est.),12,496
+congress,36,surname,Asian (est.),13,472
+congress,36,surname,Asian (est.),14,453
+congress,36,surname,Asian (est.),15,517
+congress,36,surname,Asian (est.),17,35
+congress,36,surname,Asian (est.),18,21
+congress,36,surname,Asian (est.),19,17
+congress,36,surname,Asian (est.),20,13
+congress,36,surname,Asian (est.),21,11
+congress,36,surname,Asian (est.),22,12
+congress,36,surname,Asian (est.),24,1
+congress,36,surname,Asian (est.),25,13
+congress,36,surname,Asian (est.),26,7
+congress,36,surname,Asian (est.),27,8
+congress,36,surname,Asian (est.),28,5
+congress,36,surname,Asian (est.),29,2
+congress,36,surname,Asian (est.),31,1
+congress,36,surname,Asian (est.),32,1
+congress,36,surname,Asian (est.),33,2
+congress,36,surname,Asian (est.),34,3
+congress,36,surname,Asian (est.),36,3
+congress,36,surname,Hispanic (est.),4,3054
+congress,36,surname,Hispanic (est.),5,1780
+congress,36,surname,Hispanic (est.),6,1504
+congress,36,surname,Hispanic (est.),7,1184
+congress,36,surname,Hispanic (est.),8,1324
+congress,36,surname,Hispanic (est.),9,548
+congress,36,surname,Hispanic (est.),10,1117
+congress,36,surname,Hispanic (est.),11,1564
+congress,36,surname,Hispanic (est.),12,1360
+congress,36,surname,Hispanic (est.),13,1404
+congress,36,surname,Hispanic (est.),14,1477
+congress,36,surname,Hispanic (est.),15,1532
+congress,36,surname,Hispanic (est.),17,93
+congress,36,surname,Hispanic (est.),18,51
+congress,36,surname,Hispanic (est.),19,37
+congress,36,surname,Hispanic (est.),20,44
+congress,36,surname,Hispanic (est.),21,25
+congress,36,surname,Hispanic (est.),22,26
+congress,36,surname,Hispanic (est.),24,2
+congress,36,surname,Hispanic (est.),25,29
+congress,36,surname,Hispanic (est.),26,19
+congress,36,surname,Hispanic (est.),27,12
+congress,36,surname,Hispanic (est.),28,6
+congress,36,surname,Hispanic (est.),29,4
+congress,36,surname,Hispanic (est.),31,3
+congress,36,surname,Hispanic (est.),32,5
+congress,36,surname,Hispanic (est.),33,6
+congress,36,surname,Hispanic (est.),34,6
+congress,36,surname,Hispanic (est.),36,6
+congress,37,surname,All others (est.),4,24256
+congress,37,surname,All others (est.),5,16143
+congress,37,surname,All others (est.),6,13207
+congress,37,surname,All others (est.),7,10722
+congress,37,surname,All others (est.),8,10248
+congress,37,surname,All others (est.),9,4222
+congress,37,surname,All others (est.),10,7710
+congress,37,surname,All others (est.),11,11909
+congress,37,surname,All others (est.),12,10828
+congress,37,surname,All others (est.),13,11441
+congress,37,surname,All others (est.),14,10739
+congress,37,surname,All others (est.),15,11453
+congress,37,surname,All others (est.),17,135
+congress,37,surname,All others (est.),18,310
+congress,37,surname,All others (est.),19,815
+congress,37,surname,All others (est.),20,16
+congress,37,surname,All others (est.),21,308
+congress,37,surname,All others (est.),22,557
+congress,37,surname,All others (est.),25,839
+congress,37,surname,All others (est.),26,426
+congress,37,surname,All others (est.),27,9
+congress,37,surname,All others (est.),28,194
+congress,37,surname,Asian (est.),4,2025
+congress,37,surname,Asian (est.),5,1170
+congress,37,surname,Asian (est.),6,881
+congress,37,surname,Asian (est.),7,713
+congress,37,surname,Asian (est.),8,710
+congress,37,surname,Asian (est.),9,329
+congress,37,surname,Asian (est.),10,533
+congress,37,surname,Asian (est.),11,813
+congress,37,surname,Asian (est.),12,666
+congress,37,surname,Asian (est.),13,702
+congress,37,surname,Asian (est.),14,631
+congress,37,surname,Asian (est.),15,676
+congress,37,surname,Asian (est.),17,4
+congress,37,surname,Asian (est.),18,10
+congress,37,surname,Asian (est.),19,27
+congress,37,surname,Asian (est.),20,1
+congress,37,surname,Asian (est.),21,7
+congress,37,surname,Asian (est.),22,17
+congress,37,surname,Asian (est.),25,27
+congress,37,surname,Asian (est.),26,16
+congress,37,surname,Asian (est.),28,6
+congress,37,surname,Hispanic (est.),4,6357
+congress,37,surname,Hispanic (est.),5,3866
+congress,37,surname,Hispanic (est.),6,3072
+congress,37,surname,Hispanic (est.),7,2455
+congress,37,surname,Hispanic (est.),8,2212
+congress,37,surname,Hispanic (est.),9,1085
+congress,37,surname,Hispanic (est.),10,1935
+congress,37,surname,Hispanic (est.),11,2784
+congress,37,surname,Hispanic (est.),12,2382
+congress,37,surname,Hispanic (est.),13,2443
+congress,37,surname,Hispanic (est.),14,2362
+congress,37,surname,Hispanic (est.),15,2629
+congress,37,surname,Hispanic (est.),17,14
+congress,37,surname,Hispanic (est.),18,51
+congress,37,surname,Hispanic (est.),19,131
+congress,37,surname,Hispanic (est.),20,1
+congress,37,surname,Hispanic (est.),21,61
+congress,37,surname,Hispanic (est.),22,99
+congress,37,surname,Hispanic (est.),25,161
+congress,37,surname,Hispanic (est.),26,73
+congress,37,surname,Hispanic (est.),27,1
+congress,37,surname,Hispanic (est.),28,31
+congress,38,surname,All others (est.),4,18805
+congress,38,surname,All others (est.),5,14796
+congress,38,surname,All others (est.),6,12873
+congress,38,surname,All others (est.),7,10674
+congress,38,surname,All others (est.),8,11174
+congress,38,surname,All others (est.),9,5385
+congress,38,surname,All others (est.),10,8740
+congress,38,surname,All others (est.),11,13289
+congress,38,surname,All others (est.),12,12549
+congress,38,surname,All others (est.),13,13210
+congress,38,surname,All others (est.),14,13438
+congress,38,surname,All others (est.),15,12784
+congress,38,surname,All others (est.),17,1255
+congress,38,surname,All others (est.),18,767
+congress,38,surname,All others (est.),19,625
+congress,38,surname,All others (est.),20,613
+congress,38,surname,All others (est.),21,434
+congress,38,surname,All others (est.),25,87
+congress,38,surname,All others (est.),26,10
+congress,38,surname,All others (est.),27,7
+congress,38,surname,All others (est.),28,11
+congress,38,surname,All others (est.),29,1
+congress,38,surname,All others (est.),32,5
+congress,38,surname,All others (est.),33,7
+congress,38,surname,All others (est.),34,2
+congress,38,surname,All others (est.),36,2
+congress,38,surname,All others (est.),37,1
+congress,38,surname,Asian (est.),4,1586
+congress,38,surname,Asian (est.),5,1299
+congress,38,surname,Asian (est.),6,976
+congress,38,surname,Asian (est.),7,737
+congress,38,surname,Asian (est.),8,837
+congress,38,surname,Asian (est.),9,547
+congress,38,surname,Asian (est.),10,804
+congress,38,surname,Asian (est.),11,891
+congress,38,surname,Asian (est.),12,767
+congress,38,surname,Asian (est.),13,786
+congress,38,surname,Asian (est.),14,799
+congress,38,surname,Asian (est.),15,776
+congress,38,surname,Asian (est.),17,62
+congress,38,surname,Asian (est.),18,30
+congress,38,surname,Asian (est.),19,36
+congress,38,surname,Asian (est.),20,37
+congress,38,surname,Asian (est.),21,31
+congress,38,surname,Asian (est.),25,13
+congress,38,surname,Asian (est.),27,2
+congress,38,surname,Asian (est.),33,1
+congress,38,surname,Asian (est.),34,1
+congress,38,surname,Asian (est.),35,2
+congress,38,surname,Asian (est.),37,1
+congress,38,surname,Hispanic (est.),4,3800
+congress,38,surname,Hispanic (est.),5,2702
+congress,38,surname,Hispanic (est.),6,2034
+congress,38,surname,Hispanic (est.),7,1553
+congress,38,surname,Hispanic (est.),8,1671
+congress,38,surname,Hispanic (est.),9,943
+congress,38,surname,Hispanic (est.),10,1604
+congress,38,surname,Hispanic (est.),11,1898
+congress,38,surname,Hispanic (est.),12,1718
+congress,38,surname,Hispanic (est.),13,1827
+congress,38,surname,Hispanic (est.),14,1954
+congress,38,surname,Hispanic (est.),15,1891
+congress,38,surname,Hispanic (est.),17,114
+congress,38,surname,Hispanic (est.),18,67
+congress,38,surname,Hispanic (est.),19,53
+congress,38,surname,Hispanic (est.),20,40
+congress,38,surname,Hispanic (est.),21,39
+congress,38,surname,Hispanic (est.),25,15
+congress,38,surname,Hispanic (est.),26,2
+congress,38,surname,Hispanic (est.),28,4
+congress,38,surname,Hispanic (est.),33,2
+congress,38,surname,Hispanic (est.),34,1
+congress,38,surname,Hispanic (est.),37,1
+congress,4,surname,All others (est.),4,17418
+congress,4,surname,All others (est.),5,14113
+congress,4,surname,All others (est.),6,11892
+congress,4,surname,All others (est.),7,11740
+congress,4,surname,All others (est.),8,12373
+congress,4,surname,All others (est.),9,4507
+congress,4,surname,All others (est.),10,10018
+congress,4,surname,All others (est.),11,11834
+congress,4,surname,All others (est.),12,12889
+congress,4,surname,All others (est.),13,13662
+congress,4,surname,All others (est.),14,15022
+congress,4,surname,All others (est.),15,12386
+congress,4,surname,All others (est.),16,1
+congress,4,surname,All others (est.),17,39
+congress,4,surname,All others (est.),18,352
+congress,4,surname,All others (est.),19,401
+congress,4,surname,All others (est.),20,150
+congress,4,surname,All others (est.),21,426
+congress,4,surname,All others (est.),22,382
+congress,4,surname,All others (est.),23,1
+congress,4,surname,All others (est.),24,12
+congress,4,surname,All others (est.),25,526
+congress,4,surname,All others (est.),26,506
+congress,4,surname,All others (est.),27,337
+congress,4,surname,All others (est.),28,323
+congress,4,surname,All others (est.),29,12
+congress,4,surname,All others (est.),31,14
+congress,4,surname,All others (est.),32,236
+congress,4,surname,All others (est.),33,240
+congress,4,surname,All others (est.),34,56
+congress,4,surname,All others (est.),35,66
+congress,4,surname,Asian (est.),4,2035
+congress,4,surname,Asian (est.),5,1284
+congress,4,surname,Asian (est.),6,985
+congress,4,surname,Asian (est.),7,922
+congress,4,surname,Asian (est.),8,933
+congress,4,surname,Asian (est.),9,676
+congress,4,surname,Asian (est.),10,1251
+congress,4,surname,Asian (est.),11,741
+congress,4,surname,Asian (est.),12,725
+congress,4,surname,Asian (est.),13,775
+congress,4,surname,Asian (est.),14,784
+congress,4,surname,Asian (est.),15,644
+congress,4,surname,Asian (est.),17,1
+congress,4,surname,Asian (est.),18,12
+congress,4,surname,Asian (est.),19,18
+congress,4,surname,Asian (est.),20,9
+congress,4,surname,Asian (est.),21,27
+congress,4,surname,Asian (est.),22,12
+congress,4,surname,Asian (est.),24,2
+congress,4,surname,Asian (est.),25,12
+congress,4,surname,Asian (est.),26,19
+congress,4,surname,Asian (est.),27,27
+congress,4,surname,Asian (est.),28,12
+congress,4,surname,Asian (est.),29,1
+congress,4,surname,Asian (est.),32,9
+congress,4,surname,Asian (est.),33,5
+congress,4,surname,Asian (est.),34,2
+congress,4,surname,Asian (est.),35,2
+congress,4,surname,Hispanic (est.),4,1890
+congress,4,surname,Hispanic (est.),5,1408
+congress,4,surname,Hispanic (est.),6,1118
+congress,4,surname,Hispanic (est.),7,1061
+congress,4,surname,Hispanic (est.),8,1070
+congress,4,surname,Hispanic (est.),9,534
+congress,4,surname,Hispanic (est.),10,1120
+congress,4,surname,Hispanic (est.),11,987
+congress,4,surname,Hispanic (est.),12,983
+congress,4,surname,Hispanic (est.),13,1036
+congress,4,surname,Hispanic (est.),14,1118
+congress,4,surname,Hispanic (est.),15,979
+congress,4,surname,Hispanic (est.),17,3
+congress,4,surname,Hispanic (est.),18,19
+congress,4,surname,Hispanic (est.),19,21
+congress,4,surname,Hispanic (est.),20,7
+congress,4,surname,Hispanic (est.),21,30
+congress,4,surname,Hispanic (est.),22,27
+congress,4,surname,Hispanic (est.),25,29
+congress,4,surname,Hispanic (est.),26,34
+congress,4,surname,Hispanic (est.),27,23
+congress,4,surname,Hispanic (est.),28,18
+congress,4,surname,Hispanic (est.),29,1
+congress,4,surname,Hispanic (est.),31,1
+congress,4,surname,Hispanic (est.),32,11
+congress,4,surname,Hispanic (est.),33,12
+congress,4,surname,Hispanic (est.),34,5
+congress,4,surname,Hispanic (est.),35,2
+congress,5,surname,All others (est.),4,13183
+congress,5,surname,All others (est.),5,10388
+congress,5,surname,All others (est.),6,8869
+congress,5,surname,All others (est.),7,8606
+congress,5,surname,All others (est.),8,9330
+congress,5,surname,All others (est.),9,2502
+congress,5,surname,All others (est.),10,6370
+congress,5,surname,All others (est.),11,7966
+congress,5,surname,All others (est.),12,9972
+congress,5,surname,All others (est.),13,10529
+congress,5,surname,All others (est.),14,11149
+congress,5,surname,All others (est.),15,10555
+congress,5,surname,All others (est.),17,1110
+congress,5,surname,All others (est.),18,217
+congress,5,surname,All others (est.),19,131
+congress,5,surname,All others (est.),20,127
+congress,5,surname,All others (est.),21,35
+congress,5,surname,All others (est.),22,117
+congress,5,surname,All others (est.),24,29
+congress,5,surname,All others (est.),25,245
+congress,5,surname,All others (est.),26,87
+congress,5,surname,All others (est.),28,83
+congress,5,surname,All others (est.),29,52
+congress,5,surname,All others (est.),32,5
+congress,5,surname,All others (est.),33,26
+congress,5,surname,All others (est.),34,4
+congress,5,surname,All others (est.),35,1
+congress,5,surname,All others (est.),36,1
+congress,5,surname,Asian (est.),4,424
+congress,5,surname,Asian (est.),5,308
+congress,5,surname,Asian (est.),6,257
+congress,5,surname,Asian (est.),7,227
+congress,5,surname,Asian (est.),8,257
+congress,5,surname,Asian (est.),9,93
+congress,5,surname,Asian (est.),10,207
+congress,5,surname,Asian (est.),11,210
+congress,5,surname,Asian (est.),12,229
+congress,5,surname,Asian (est.),13,251
+congress,5,surname,Asian (est.),14,241
+congress,5,surname,Asian (est.),15,252
+congress,5,surname,Asian (est.),17,29
+congress,5,surname,Asian (est.),18,2
+congress,5,surname,Asian (est.),19,2
+congress,5,surname,Asian (est.),20,1
+congress,5,surname,Asian (est.),21,1
+congress,5,surname,Asian (est.),22,2
+congress,5,surname,Asian (est.),25,3
+congress,5,surname,Asian (est.),26,1
+congress,5,surname,Asian (est.),28,1
+congress,5,surname,Hispanic (est.),4,2291
+congress,5,surname,Hispanic (est.),5,1570
+congress,5,surname,Hispanic (est.),6,1213
+congress,5,surname,Hispanic (est.),7,1078
+congress,5,surname,Hispanic (est.),8,1094
+congress,5,surname,Hispanic (est.),9,404
+congress,5,surname,Hispanic (est.),10,941
+congress,5,surname,Hispanic (est.),11,962
+congress,5,surname,Hispanic (est.),12,1055
+congress,5,surname,Hispanic (est.),13,1127
+congress,5,surname,Hispanic (est.),14,1148
+congress,5,surname,Hispanic (est.),15,1165
+congress,5,surname,Hispanic (est.),17,112
+congress,5,surname,Hispanic (est.),18,10
+congress,5,surname,Hispanic (est.),19,7
+congress,5,surname,Hispanic (est.),20,3
+congress,5,surname,Hispanic (est.),21,3
+congress,5,surname,Hispanic (est.),22,10
+congress,5,surname,Hispanic (est.),24,2
+congress,5,surname,Hispanic (est.),25,19
+congress,5,surname,Hispanic (est.),26,3
+congress,5,surname,Hispanic (est.),28,3
+congress,5,surname,Hispanic (est.),29,2
+congress,5,surname,Hispanic (est.),33,1
+congress,5,surname,Hispanic (est.),36,1
+congress,6,surname,All others (est.),4,14774
+congress,6,surname,All others (est.),5,12062
+congress,6,surname,All others (est.),6,9934
+congress,6,surname,All others (est.),7,9837
+congress,6,surname,All others (est.),8,10358
+congress,6,surname,All others (est.),9,2862
+congress,6,surname,All others (est.),10,7459
+congress,6,surname,All others (est.),11,9385
+congress,6,surname,All others (est.),12,11013
+congress,6,surname,All others (est.),13,11307
+congress,6,surname,All others (est.),14,12249
+congress,6,surname,All others (est.),15,10932
+congress,6,surname,All others (est.),16,52
+congress,6,surname,All others (est.),17,270
+congress,6,surname,All others (est.),18,251
+congress,6,surname,All others (est.),19,327
+congress,6,surname,All others (est.),20,378
+congress,6,surname,All others (est.),21,219
+congress,6,surname,All others (est.),22,524
+congress,6,surname,All others (est.),24,98
+congress,6,surname,All others (est.),25,275
+congress,6,surname,All others (est.),26,328
+congress,6,surname,All others (est.),27,39
+congress,6,surname,All others (est.),28,97
+congress,6,surname,All others (est.),32,70
+congress,6,surname,All others (est.),33,88
+congress,6,surname,All others (est.),34,6
+congress,6,surname,All others (est.),35,5
+congress,6,surname,All others (est.),36,25
+congress,6,surname,All others (est.),37,3
+congress,6,surname,Asian (est.),4,584
+congress,6,surname,Asian (est.),5,403
+congress,6,surname,Asian (est.),6,320
+congress,6,surname,Asian (est.),7,313
+congress,6,surname,Asian (est.),8,302
+congress,6,surname,Asian (est.),9,126
+congress,6,surname,Asian (est.),10,272
+congress,6,surname,Asian (est.),11,266
+congress,6,surname,Asian (est.),12,282
+congress,6,surname,Asian (est.),13,314
+congress,6,surname,Asian (est.),14,316
+congress,6,surname,Asian (est.),15,267
+congress,6,surname,Asian (est.),16,1
+congress,6,surname,Asian (est.),17,9
+congress,6,surname,Asian (est.),18,5
+congress,6,surname,Asian (est.),19,6
+congress,6,surname,Asian (est.),20,7
+congress,6,surname,Asian (est.),21,3
+congress,6,surname,Asian (est.),22,13
+congress,6,surname,Asian (est.),24,1
+congress,6,surname,Asian (est.),25,5
+congress,6,surname,Asian (est.),26,4
+congress,6,surname,Asian (est.),28,3
+congress,6,surname,Asian (est.),32,1
+congress,6,surname,Asian (est.),33,2
+congress,6,surname,Hispanic (est.),4,2703
+congress,6,surname,Hispanic (est.),5,1936
+congress,6,surname,Hispanic (est.),6,1438
+congress,6,surname,Hispanic (est.),7,1289
+congress,6,surname,Hispanic (est.),8,1328
+congress,6,surname,Hispanic (est.),9,467
+congress,6,surname,Hispanic (est.),10,1146
+congress,6,surname,Hispanic (est.),11,1217
+congress,6,surname,Hispanic (est.),12,1193
+congress,6,surname,Hispanic (est.),13,1259
+congress,6,surname,Hispanic (est.),14,1403
+congress,6,surname,Hispanic (est.),15,1301
+congress,6,surname,Hispanic (est.),16,6
+congress,6,surname,Hispanic (est.),17,38
+congress,6,surname,Hispanic (est.),18,21
+congress,6,surname,Hispanic (est.),19,26
+congress,6,surname,Hispanic (est.),20,28
+congress,6,surname,Hispanic (est.),21,13
+congress,6,surname,Hispanic (est.),22,35
+congress,6,surname,Hispanic (est.),24,5
+congress,6,surname,Hispanic (est.),25,18
+congress,6,surname,Hispanic (est.),26,18
+congress,6,surname,Hispanic (est.),27,5
+congress,6,surname,Hispanic (est.),28,8
+congress,6,surname,Hispanic (est.),32,4
+congress,6,surname,Hispanic (est.),33,10
+congress,6,surname,Hispanic (est.),34,2
+congress,6,surname,Hispanic (est.),36,3
+congress,7,surname,All others (est.),4,13464
+congress,7,surname,All others (est.),5,9372
+congress,7,surname,All others (est.),6,8180
+congress,7,surname,All others (est.),7,6463
+congress,7,surname,All others (est.),8,6872
+congress,7,surname,All others (est.),9,3410
+congress,7,surname,All others (est.),10,5920
+congress,7,surname,All others (est.),11,7879
+congress,7,surname,All others (est.),12,7155
+congress,7,surname,All others (est.),13,7505
+congress,7,surname,All others (est.),14,7628
+congress,7,surname,All others (est.),15,7533
+congress,7,surname,All others (est.),17,676
+congress,7,surname,All others (est.),18,417
+congress,7,surname,All others (est.),19,522
+congress,7,surname,All others (est.),20,306
+congress,7,surname,All others (est.),21,129
+congress,7,surname,All others (est.),22,37
+congress,7,surname,All others (est.),25,81
+congress,7,surname,All others (est.),26,124
+congress,7,surname,All others (est.),27,26
+congress,7,surname,All others (est.),28,126
+congress,7,surname,All others (est.),29,5
+congress,7,surname,All others (est.),32,40
+congress,7,surname,All others (est.),33,23
+congress,7,surname,All others (est.),34,9
+congress,7,surname,All others (est.),35,1
+congress,7,surname,All others (est.),36,3
+congress,7,surname,All others (est.),37,1
+congress,7,surname,Asian (est.),4,2419
+congress,7,surname,Asian (est.),5,1570
+congress,7,surname,Asian (est.),6,1254
+congress,7,surname,Asian (est.),7,926
+congress,7,surname,Asian (est.),8,1133
+congress,7,surname,Asian (est.),9,672
+congress,7,surname,Asian (est.),10,1229
+congress,7,surname,Asian (est.),11,1144
+congress,7,surname,Asian (est.),12,1139
+congress,7,surname,Asian (est.),13,1135
+congress,7,surname,Asian (est.),14,1124
+congress,7,surname,Asian (est.),15,1035
+congress,7,surname,Asian (est.),17,40
+congress,7,surname,Asian (est.),18,49
+congress,7,surname,Asian (est.),19,68
+congress,7,surname,Asian (est.),20,33
+congress,7,surname,Asian (est.),21,27
+congress,7,surname,Asian (est.),22,7
+congress,7,surname,Asian (est.),25,31
+congress,7,surname,Asian (est.),26,20
+congress,7,surname,Asian (est.),27,3
+congress,7,surname,Asian (est.),28,21
+congress,7,surname,Asian (est.),32,4
+congress,7,surname,Asian (est.),33,4
+congress,7,surname,Asian (est.),34,1
+congress,7,surname,Asian (est.),37,2
+congress,7,surname,Hispanic (est.),4,3213
+congress,7,surname,Hispanic (est.),5,2157
+congress,7,surname,Hispanic (est.),6,1537
+congress,7,surname,Hispanic (est.),7,1258
+congress,7,surname,Hispanic (est.),8,1390
+congress,7,surname,Hispanic (est.),9,752
+congress,7,surname,Hispanic (est.),10,1362
+congress,7,surname,Hispanic (est.),11,1518
+congress,7,surname,Hispanic (est.),12,1347
+congress,7,surname,Hispanic (est.),13,1472
+congress,7,surname,Hispanic (est.),14,1478
+congress,7,surname,Hispanic (est.),15,1448
+congress,7,surname,Hispanic (est.),17,78
+congress,7,surname,Hispanic (est.),18,46
+congress,7,surname,Hispanic (est.),19,67
+congress,7,surname,Hispanic (est.),20,39
+congress,7,surname,Hispanic (est.),21,18
+congress,7,surname,Hispanic (est.),22,3
+congress,7,surname,Hispanic (est.),25,16
+congress,7,surname,Hispanic (est.),26,8
+congress,7,surname,Hispanic (est.),27,3
+congress,7,surname,Hispanic (est.),28,24
+congress,7,surname,Hispanic (est.),32,4
+congress,7,surname,Hispanic (est.),33,3
+congress,7,surname,Hispanic (est.),34,2
+congress,8,surname,All others (est.),4,13602
+congress,8,surname,All others (est.),5,10220
+congress,8,surname,All others (est.),6,9015
+congress,8,surname,All others (est.),7,7172
+congress,8,surname,All others (est.),8,8329
+congress,8,surname,All others (est.),9,3820
+congress,8,surname,All others (est.),10,7237
+congress,8,surname,All others (est.),11,9025
+congress,8,surname,All others (est.),12,8768
+congress,8,surname,All others (est.),13,9270
+congress,8,surname,All others (est.),14,9082
+congress,8,surname,All others (est.),15,9210
+congress,8,surname,All others (est.),17,370
+congress,8,surname,All others (est.),18,353
+congress,8,surname,All others (est.),19,410
+congress,8,surname,All others (est.),20,295
+congress,8,surname,All others (est.),21,254
+congress,8,surname,All others (est.),22,135
+congress,8,surname,All others (est.),24,1
+congress,8,surname,All others (est.),25,118
+congress,8,surname,All others (est.),26,229
+congress,8,surname,All others (est.),27,22
+congress,8,surname,All others (est.),28,301
+congress,8,surname,All others (est.),29,60
+congress,8,surname,All others (est.),32,50
+congress,8,surname,All others (est.),33,150
+congress,8,surname,All others (est.),34,283
+congress,8,surname,All others (est.),35,58
+congress,8,surname,All others (est.),36,33
+congress,8,surname,All others (est.),37,1
+congress,8,surname,Asian (est.),4,866
+congress,8,surname,Asian (est.),5,642
+congress,8,surname,Asian (est.),6,560
+congress,8,surname,Asian (est.),7,372
+congress,8,surname,Asian (est.),8,458
+congress,8,surname,Asian (est.),9,276
+congress,8,surname,Asian (est.),10,439
+congress,8,surname,Asian (est.),11,463
+congress,8,surname,Asian (est.),12,415
+congress,8,surname,Asian (est.),13,446
+congress,8,surname,Asian (est.),14,440
+congress,8,surname,Asian (est.),15,454
+congress,8,surname,Asian (est.),17,23
+congress,8,surname,Asian (est.),18,19
+congress,8,surname,Asian (est.),19,30
+congress,8,surname,Asian (est.),20,21
+congress,8,surname,Asian (est.),21,16
+congress,8,surname,Asian (est.),22,2
+congress,8,surname,Asian (est.),25,8
+congress,8,surname,Asian (est.),26,7
+congress,8,surname,Asian (est.),27,1
+congress,8,surname,Asian (est.),28,6
+congress,8,surname,Asian (est.),32,1
+congress,8,surname,Asian (est.),33,2
+congress,8,surname,Asian (est.),34,9
+congress,8,surname,Asian (est.),35,1
+congress,8,surname,Asian (est.),36,1
+congress,8,surname,Hispanic (est.),4,2921
+congress,8,surname,Hispanic (est.),5,1858
+congress,8,surname,Hispanic (est.),6,1582
+congress,8,surname,Hispanic (est.),7,1167
+congress,8,surname,Hispanic (est.),8,1267
+congress,8,surname,Hispanic (est.),9,740
+congress,8,surname,Hispanic (est.),10,1337
+congress,8,surname,Hispanic (est.),11,1362
+congress,8,surname,Hispanic (est.),12,1199
+congress,8,surname,Hispanic (est.),13,1269
+congress,8,surname,Hispanic (est.),14,1312
+congress,8,surname,Hispanic (est.),15,1212
+congress,8,surname,Hispanic (est.),17,48
+congress,8,surname,Hispanic (est.),18,34
+congress,8,surname,Hispanic (est.),19,43
+congress,8,surname,Hispanic (est.),20,37
+congress,8,surname,Hispanic (est.),21,21
+congress,8,surname,Hispanic (est.),22,8
+congress,8,surname,Hispanic (est.),25,12
+congress,8,surname,Hispanic (est.),26,16
+congress,8,surname,Hispanic (est.),27,2
+congress,8,surname,Hispanic (est.),28,20
+congress,8,surname,Hispanic (est.),29,4
+congress,8,surname,Hispanic (est.),32,5
+congress,8,surname,Hispanic (est.),33,7
+congress,8,surname,Hispanic (est.),34,22
+congress,8,surname,Hispanic (est.),35,5
+congress,8,surname,Hispanic (est.),36,2
+congress,8,surname,Hispanic (est.),37,2
+congress,9,surname,All others (est.),4,7783
+congress,9,surname,All others (est.),5,5553
+congress,9,surname,All others (est.),6,4777
+congress,9,surname,All others (est.),7,3803
+congress,9,surname,All others (est.),8,4308
+congress,9,surname,All others (est.),9,1718
+congress,9,surname,All others (est.),10,2817
+congress,9,surname,All others (est.),11,5179
+congress,9,surname,All others (est.),12,5271
+congress,9,surname,All others (est.),13,5981
+congress,9,surname,All others (est.),14,6502
+congress,9,surname,All others (est.),15,6399
+congress,9,surname,All others (est.),17,902
+congress,9,surname,All others (est.),18,441
+congress,9,surname,All others (est.),19,375
+congress,9,surname,All others (est.),20,231
+congress,9,surname,All others (est.),21,129
+congress,9,surname,All others (est.),22,76
+congress,9,surname,All others (est.),25,21
+congress,9,surname,All others (est.),27,1
+congress,9,surname,All others (est.),28,2
+congress,9,surname,All others (est.),32,1
+congress,9,surname,All others (est.),33,1
+congress,9,surname,All others (est.),35,2
+congress,9,surname,Asian (est.),4,287
+congress,9,surname,Asian (est.),5,210
+congress,9,surname,Asian (est.),6,159
+congress,9,surname,Asian (est.),7,125
+congress,9,surname,Asian (est.),8,139
+congress,9,surname,Asian (est.),9,61
+congress,9,surname,Asian (est.),10,127
+congress,9,surname,Asian (est.),11,158
+congress,9,surname,Asian (est.),12,132
+congress,9,surname,Asian (est.),13,179
+congress,9,surname,Asian (est.),14,170
+congress,9,surname,Asian (est.),15,188
+congress,9,surname,Asian (est.),17,23
+congress,9,surname,Asian (est.),18,10
+congress,9,surname,Asian (est.),19,12
+congress,9,surname,Asian (est.),20,6
+congress,9,surname,Asian (est.),21,2
+congress,9,surname,Asian (est.),22,2
+congress,9,surname,Hispanic (est.),4,4567
+congress,9,surname,Hispanic (est.),5,2662
+congress,9,surname,Hispanic (est.),6,2015
+congress,9,surname,Hispanic (est.),7,1570
+congress,9,surname,Hispanic (est.),8,1528
+congress,9,surname,Hispanic (est.),9,836
+congress,9,surname,Hispanic (est.),10,1462
+congress,9,surname,Hispanic (est.),11,1919
+congress,9,surname,Hispanic (est.),12,1755
+congress,9,surname,Hispanic (est.),13,1923
+congress,9,surname,Hispanic (est.),14,2024
+congress,9,surname,Hispanic (est.),15,2123
+congress,9,surname,Hispanic (est.),17,245
+congress,9,surname,Hispanic (est.),18,104
+congress,9,surname,Hispanic (est.),19,113
+congress,9,surname,Hispanic (est.),20,61
+congress,9,surname,Hispanic (est.),21,37
+congress,9,surname,Hispanic (est.),22,5
+congress,9,surname,Hispanic (est.),25,10
+congress,9,surname,Hispanic (est.),27,1
+congress,9,surname,Hispanic (est.),37,2
 house,1,surname,All others (est.),4,3650
 house,1,surname,All others (est.),5,2644
 house,1,surname,All others (est.),6,2404
@@ -10784,47 +13819,47 @@ senate,20,surname,Hispanic (est.),25,348
 senate,20,surname,Hispanic (est.),26,188
 senate,20,surname,Hispanic (est.),27,248
 senate,20,surname,Hispanic (est.),33,1
-senate,21,surname,All others (est.),4,11005
-senate,21,surname,All others (est.),5,7137
-senate,21,surname,All others (est.),6,5725
-senate,21,surname,All others (est.),7,5079
-senate,21,surname,All others (est.),8,5238
-senate,21,surname,All others (est.),9,1708
-senate,21,surname,All others (est.),10,4565
-senate,21,surname,All others (est.),11,6796
-senate,21,surname,All others (est.),12,6982
-senate,21,surname,All others (est.),13,6194
-senate,21,surname,All others (est.),14,6494
-senate,21,surname,All others (est.),15,6968
-senate,21,surname,All others (est.),17,145
+senate,21,surname,All others (est.),4,11048
+senate,21,surname,All others (est.),5,7165
+senate,21,surname,All others (est.),6,5747
+senate,21,surname,All others (est.),7,5099
+senate,21,surname,All others (est.),8,5263
+senate,21,surname,All others (est.),9,1722
+senate,21,surname,All others (est.),10,4588
+senate,21,surname,All others (est.),11,6825
+senate,21,surname,All others (est.),12,7003
+senate,21,surname,All others (est.),13,6236
+senate,21,surname,All others (est.),14,6532
+senate,21,surname,All others (est.),15,7008
+senate,21,surname,All others (est.),17,146
 senate,21,surname,All others (est.),18,143
 senate,21,surname,All others (est.),19,257
 senate,21,surname,All others (est.),20,170
-senate,21,surname,All others (est.),21,224
+senate,21,surname,All others (est.),21,226
 senate,21,surname,All others (est.),22,179
 senate,21,surname,All others (est.),25,205
 senate,21,surname,All others (est.),26,275
 senate,21,surname,All others (est.),27,76
 senate,21,surname,All others (est.),28,79
 senate,21,surname,All others (est.),29,14
-senate,21,surname,All others (est.),32,220
+senate,21,surname,All others (est.),32,221
 senate,21,surname,All others (est.),33,13
 senate,21,surname,All others (est.),34,6
 senate,21,surname,All others (est.),35,1
 senate,21,surname,All others (est.),36,9
 senate,21,surname,All others (est.),37,16
-senate,21,surname,Asian (est.),4,592
-senate,21,surname,Asian (est.),5,324
-senate,21,surname,Asian (est.),6,268
-senate,21,surname,Asian (est.),7,213
+senate,21,surname,Asian (est.),4,594
+senate,21,surname,Asian (est.),5,325
+senate,21,surname,Asian (est.),6,269
+senate,21,surname,Asian (est.),7,214
 senate,21,surname,Asian (est.),8,239
 senate,21,surname,Asian (est.),9,106
-senate,21,surname,Asian (est.),10,230
+senate,21,surname,Asian (est.),10,231
 senate,21,surname,Asian (est.),11,255
-senate,21,surname,Asian (est.),12,259
+senate,21,surname,Asian (est.),12,260
 senate,21,surname,Asian (est.),13,263
 senate,21,surname,Asian (est.),14,257
-senate,21,surname,Asian (est.),15,268
+senate,21,surname,Asian (est.),15,269
 senate,21,surname,Asian (est.),17,3
 senate,21,surname,Asian (est.),18,6
 senate,21,surname,Asian (est.),19,11
@@ -10836,18 +13871,18 @@ senate,21,surname,Asian (est.),26,7
 senate,21,surname,Asian (est.),27,2
 senate,21,surname,Asian (est.),28,2
 senate,21,surname,Asian (est.),32,8
-senate,21,surname,Hispanic (est.),4,10881
-senate,21,surname,Hispanic (est.),5,6370
-senate,21,surname,Hispanic (est.),6,5118
-senate,21,surname,Hispanic (est.),7,4253
-senate,21,surname,Hispanic (est.),8,4230
-senate,21,surname,Hispanic (est.),9,1894
-senate,21,surname,Hispanic (est.),10,5087
-senate,21,surname,Hispanic (est.),11,5393
-senate,21,surname,Hispanic (est.),12,4983
-senate,21,surname,Hispanic (est.),13,5251
-senate,21,surname,Hispanic (est.),14,5570
-senate,21,surname,Hispanic (est.),15,6341
+senate,21,surname,Hispanic (est.),4,10900
+senate,21,surname,Hispanic (est.),5,6379
+senate,21,surname,Hispanic (est.),6,5123
+senate,21,surname,Hispanic (est.),7,4260
+senate,21,surname,Hispanic (est.),8,4235
+senate,21,surname,Hispanic (est.),9,1898
+senate,21,surname,Hispanic (est.),10,5098
+senate,21,surname,Hispanic (est.),11,5405
+senate,21,surname,Hispanic (est.),12,4990
+senate,21,surname,Hispanic (est.),13,5258
+senate,21,surname,Hispanic (est.),14,5579
+senate,21,surname,Hispanic (est.),15,6355
 senate,21,surname,Hispanic (est.),17,46
 senate,21,surname,Hispanic (est.),18,128
 senate,21,surname,Hispanic (est.),19,356
@@ -11099,48 +14134,48 @@ senate,24,surname,Hispanic (est.),34,6
 senate,24,surname,Hispanic (est.),35,3
 senate,24,surname,Hispanic (est.),36,19
 senate,24,surname,Hispanic (est.),37,31
-senate,25,surname,All others (est.),4,26865
-senate,25,surname,All others (est.),5,20771
-senate,25,surname,All others (est.),6,18627
-senate,25,surname,All others (est.),7,17803
-senate,25,surname,All others (est.),8,18057
-senate,25,surname,All others (est.),9,6224
-senate,25,surname,All others (est.),10,13793
-senate,25,surname,All others (est.),11,21131
-senate,25,surname,All others (est.),12,19787
-senate,25,surname,All others (est.),13,20774
-senate,25,surname,All others (est.),14,20785
-senate,25,surname,All others (est.),15,21051
-senate,25,surname,All others (est.),17,638
+senate,25,surname,All others (est.),4,26822
+senate,25,surname,All others (est.),5,20744
+senate,25,surname,All others (est.),6,18604
+senate,25,surname,All others (est.),7,17783
+senate,25,surname,All others (est.),8,18032
+senate,25,surname,All others (est.),9,6209
+senate,25,surname,All others (est.),10,13770
+senate,25,surname,All others (est.),11,21102
+senate,25,surname,All others (est.),12,19766
+senate,25,surname,All others (est.),13,20732
+senate,25,surname,All others (est.),14,20747
+senate,25,surname,All others (est.),15,21012
+senate,25,surname,All others (est.),17,637
 senate,25,surname,All others (est.),18,634
 senate,25,surname,All others (est.),19,973
 senate,25,surname,All others (est.),20,735
-senate,25,surname,All others (est.),21,968
+senate,25,surname,All others (est.),21,966
 senate,25,surname,All others (est.),22,711
 senate,25,surname,All others (est.),23,4
 senate,25,surname,All others (est.),24,405
 senate,25,surname,All others (est.),25,950
-senate,25,surname,All others (est.),26,1078
-senate,25,surname,All others (est.),27,223
+senate,25,surname,All others (est.),26,1077
+senate,25,surname,All others (est.),27,222
 senate,25,surname,All others (est.),28,582
-senate,25,surname,All others (est.),32,212
+senate,25,surname,All others (est.),32,211
 senate,25,surname,All others (est.),33,98
 senate,25,surname,All others (est.),34,57
 senate,25,surname,All others (est.),35,26
 senate,25,surname,All others (est.),36,85
 senate,25,surname,All others (est.),37,123
-senate,25,surname,Asian (est.),4,1196
-senate,25,surname,Asian (est.),5,784
+senate,25,surname,Asian (est.),4,1195
+senate,25,surname,Asian (est.),5,783
 senate,25,surname,Asian (est.),6,663
-senate,25,surname,Asian (est.),7,641
+senate,25,surname,Asian (est.),7,640
 senate,25,surname,Asian (est.),8,590
 senate,25,surname,Asian (est.),9,317
 senate,25,surname,Asian (est.),10,607
 senate,25,surname,Asian (est.),11,654
 senate,25,surname,Asian (est.),12,638
-senate,25,surname,Asian (est.),13,670
+senate,25,surname,Asian (est.),13,669
 senate,25,surname,Asian (est.),14,600
-senate,25,surname,Asian (est.),15,627
+senate,25,surname,Asian (est.),15,626
 senate,25,surname,Asian (est.),17,17
 senate,25,surname,Asian (est.),18,15
 senate,25,surname,Asian (est.),19,26
@@ -11159,18 +14194,18 @@ senate,25,surname,Asian (est.),34,2
 senate,25,surname,Asian (est.),35,1
 senate,25,surname,Asian (est.),36,2
 senate,25,surname,Asian (est.),37,3
-senate,25,surname,Hispanic (est.),4,6715
-senate,25,surname,Hispanic (est.),5,4709
-senate,25,surname,Hispanic (est.),6,3952
-senate,25,surname,Hispanic (est.),7,3682
-senate,25,surname,Hispanic (est.),8,3416
-senate,25,surname,Hispanic (est.),9,1559
-senate,25,surname,Hispanic (est.),10,3384
-senate,25,surname,Hispanic (est.),11,4201
-senate,25,surname,Hispanic (est.),12,3809
-senate,25,surname,Hispanic (est.),13,3856
-senate,25,surname,Hispanic (est.),14,3836
-senate,25,surname,Hispanic (est.),15,3906
+senate,25,surname,Hispanic (est.),4,6696
+senate,25,surname,Hispanic (est.),5,4700
+senate,25,surname,Hispanic (est.),6,3947
+senate,25,surname,Hispanic (est.),7,3674
+senate,25,surname,Hispanic (est.),8,3411
+senate,25,surname,Hispanic (est.),9,1555
+senate,25,surname,Hispanic (est.),10,3373
+senate,25,surname,Hispanic (est.),11,4189
+senate,25,surname,Hispanic (est.),12,3802
+senate,25,surname,Hispanic (est.),13,3850
+senate,25,surname,Hispanic (est.),14,3828
+senate,25,surname,Hispanic (est.),15,3892
 senate,25,surname,Hispanic (est.),17,97
 senate,25,surname,Hispanic (est.),18,93
 senate,25,surname,Hispanic (est.),19,134
@@ -11181,7 +14216,7 @@ senate,25,surname,Hispanic (est.),23,1
 senate,25,surname,Hispanic (est.),24,65
 senate,25,surname,Hispanic (est.),25,122
 senate,25,surname,Hispanic (est.),26,115
-senate,25,surname,Hispanic (est.),27,29
+senate,25,surname,Hispanic (est.),27,28
 senate,25,surname,Hispanic (est.),28,73
 senate,25,surname,Hispanic (est.),32,20
 senate,25,surname,Hispanic (est.),33,16

@@ -23,8 +23,11 @@ PRECINCT → DISTRICT (Texas Legislative Council, data.capitol.texas.gov)
   data/raw/tlc/Precincts{22G,24G,26P}_Districts.*   precinct → House (PLANH2316),
       Senate (PLANS2168) and, for 2026 precincts, Congress (PLANC2333, the 2025 map)
   data/raw/tlc/PLANC2333_r365_Prec24G.xls             2024 precincts → 2025 congressional map
-  House and Senate lines are unchanged since 2022 → compared with 2022.
-  Congressional lines were redrawn in 2025 → compared with 2024 (re-tallied on the new lines).
+  Every district is compared with 2022 (user's choice: last midterm only). House and Senate
+  lines are unchanged since 2022. Congressional lines were redrawn in 2025, so 2022 votes are
+  re-counted on the new lines: each 2022 precinct takes the 2025 district of the same precinct
+  code in 2024 (codes are stable; the House district agrees for 9,570 of 9,571).
+  2026 rosters from the new SoS site are CUMULATIVE; days_from_csv turns them into daily counts.
   Votes whose precinct code can't be matched (~1%) are shared out within their county
   in proportion to that county's matched votes.
 
@@ -118,6 +121,14 @@ def load_xwalk(year: int):
             if cds:
                 for i, d in enumerate(rows_):
                     d["congress"] = cds[i % len(cds)]
+    if year == 2022:          # 2022 precincts on the 2025 congressional map, via the same precinct
+        x24 = load_xwalk(2024)  # code in 2024 (codes are stable: House district agrees 9,570 of 9,571)
+        for k, rows_ in out.items():
+            m = next((x24[(k[0], c)] for c in pcands(k[1]) if (k[0], c) in x24), None)
+            houses = {d["house"] for d in rows_}
+            m = [d for d in (m or []) if d.get("congress") and d["house"] in houses]
+            if m:
+                out[k] = [dict(d) for d in m]
     return out
 
 
@@ -154,31 +165,68 @@ def days_from_json(year: int):
     return {day: v["rows"] for day, v in d["days"].items()}
 
 
+def _reduce_roster(f: str, sn, other):
+    """One roster CSV -> {(county, precinct, mode): [n, hisp_est, asian_est]}. Cached next
+    to the roster (.agg_*.json, counts only) so each daily run reads just the new file."""
+    cache = Path(f).with_name(".agg_" + Path(f).stem + ".json")
+    if cache.exists() and cache.stat().st_mtime >= Path(f).stat().st_mtime:
+        return {tuple(k.split("|")): v for k, v in json.loads(cache.read_text()).items()}
+    agg = defaultdict(lambda: [0, 0.0, 0.0])
+    with open(f, encoding="utf-8-sig", errors="replace", newline="") as fh:
+        r = csv.reader(fh)
+        hdr = [c.strip().upper() for c in next(r)]
+        col = lambda *keys: next(i for i, c in enumerate(hdr) if any(k in c for k in keys))
+        ci, ni, mi, pi = col("COUNTY"), col("NAME"), col("METHOD", "TYPE"), col("PRECINCT", "PCT")
+        for row in r:
+            if len(row) <= max(ci, ni, mi, pi):
+                continue
+            h, a = surname_p(row[ni].split(",")[0], sn, other)
+            k = (row[ci].strip().upper(), row[pi].strip(), "mail" if "MAIL" in row[mi].upper() else "inperson")
+            v = agg[k]
+            v[0] += 1; v[1] += h; v[2] += a
+    cache.write_text(json.dumps({"|".join(k): v for k, v in agg.items()}))
+    return dict(agg)
+
+
+def _is_cumulative(day: str, n: int) -> bool:
+    """The 2026 site's rosters are CUMULATIVE (the Oct 15 file = everyone through Oct 15),
+    unlike the old site's one-day files. Checked against the SoS county totals for that day
+    (data/tx_county/turnout_{day}.csv from tx_fetch.py)."""
+    p = ROOT / "data" / "tx_county" / f"turnout_{day}.csv"
+    if not p.exists():
+        return True                     # the 2026 site has only ever served cumulative files
+    tot = sum(int(r["inperson"]) + int(r["mail"]) for r in csv.DictReader(p.open(encoding="utf-8")))
+    return tot > 0 and abs(n - tot) <= 0.02 * tot
+
+
 def days_from_csv(year: int):
-    """Raw daily rosters (2026). Reduced here to the same rows as the browser JSON."""
+    """2026 rosters -> per-day rows like the browser JSON. Cumulative files are turned
+    into daily increments by differencing consecutive days (no voter IDs kept)."""
     sn, other = load_surnames()
-    out = {}
-    for f in sorted(glob.glob(str(INCOMING / str(year) / "*.csv"))):
+    files = {}
+    for f in glob.glob(str(INCOMING / str(year) / "*.csv")):
         m = re.search(r"(\d{4}-\d{2}-\d{2})", Path(f).name) or re.search(r"(\d{2})[._-](\d{2})[._-](\d{4})", Path(f).name)
         if not m:
             print(f"skip {f}: no date in file name")
             continue
-        day = m.group(1) if len(m.groups()) == 1 else f"{m.group(3)}-{m.group(1)}-{m.group(2)}"
-        agg = defaultdict(lambda: [0, 0.0, 0.0])
-        with open(f, encoding="utf-8-sig", errors="replace", newline="") as fh:
-            r = csv.reader(fh)
-            hdr = [c.strip().upper() for c in next(r)]
-            col = lambda *keys: next(i for i, c in enumerate(hdr) if any(k in c for k in keys))
-            ci, ni, mi, pi = col("COUNTY"), col("NAME"), col("METHOD", "TYPE"), col("PRECINCT", "PCT")
-            for row in r:
-                if len(row) <= max(ci, ni, mi, pi):
-                    continue
-                h, a = surname_p(row[ni].split(",")[0], sn, other)
-                k = (row[ci].strip().upper(), row[pi].strip(), "mail" if "MAIL" in row[mi].upper() else "inperson")
-                v = agg[k]
-                v[0] += 1; v[1] += h; v[2] += a
-        out[day] = [[*k, v[0], v[1], v[2]] for k, v in agg.items()]
-        print(f"{Path(f).name}: {sum(v[0] for v in agg.values()):,} voters")
+        files[m.group(1) if len(m.groups()) == 1 else f"{m.group(3)}-{m.group(1)}-{m.group(2)}"] = f
+    out, prev = {}, {}
+    for day in sorted(files):
+        agg = _reduce_roster(files[day], sn, other)
+        n = sum(v[0] for v in agg.values())
+        cum = _is_cumulative(day, n)
+        if cum:
+            inc = {}
+            for k, v in agg.items():
+                p = prev.get(k, [0, 0.0, 0.0])
+                if v[0] > p[0]:
+                    inc[k] = [v[0] - p[0], max(v[1] - p[1], 0.0), max(v[2] - p[2], 0.0)]
+            prev = agg
+        else:
+            inc = agg
+        out[day] = [[*k, *v] for k, v in inc.items()]
+        print(f"{Path(files[day]).name}: {n:,} voters ({'cumulative' if cum else 'one day'}), "
+              f"{sum(v[0] for v in inc.values()):,} new")
     return out
 
 
@@ -193,6 +241,7 @@ def aggregate(year: int):
     unmatched = []                                  # (county, mode, days_out, n, h, a)
     no_cd = []                                      # matched precinct, but no congressional district
     cd_mix = defaultdict(Counter)                   # county -> Counter(congressional district)
+    cdh_mix = defaultdict(Counter)                  # (county, house) -> Counter(congressional district)
     county_mix = defaultdict(Counter)               # county -> Counter(district-triple)
     tot = hit = 0
     for day, rows in days.items():
@@ -215,8 +264,9 @@ def aggregate(year: int):
                 _add(early, demo, county, d, mode, days_out, n * share, h * share, a * share)
                 if d.get("congress"):
                     cd_mix[county][d["congress"]] += n * share
-                elif year != 2022:                  # 2022 isn't used for congressional comparisons
-                    no_cd.append((county, mode, days_out, n * share, h * share, a * share))
+                    cdh_mix[(county, d.get("house"))][d["congress"]] += n * share
+                else:
+                    no_cd.append((county, d.get("house"), mode, days_out, n * share, h * share, a * share))
     for county, mode, days_out, n, h, a in unmatched:       # share out within the county
         mix = county_mix.get(county)
         if not mix:
@@ -225,8 +275,8 @@ def aggregate(year: int):
         for trip, w in mix.items():
             f = w / s
             _add(early, demo, county, dict(zip(CHAMBERS, trip)), mode, days_out, n * f, h * f, a * f)
-    for county, mode, days_out, n, h, a in no_cd:           # congressional district from the county's mix
-        mix = cd_mix.get(county)
+    for county, house, mode, days_out, n, h, a in no_cd:    # congressional district from the mix of the
+        mix = cdh_mix.get((county, house)) or cd_mix.get(county)   # same county + House district, else county
         if not mix:
             continue
         s = sum(mix.values())
@@ -234,7 +284,7 @@ def aggregate(year: int):
             f = w / s
             _add(early, demo, county, {"congress": cdn}, mode, days_out, n * f, h * f, a * f)
     print(f"{year}: {tot:,} early/mail voters; precinct matched {hit / tot:.1%}; "
-          f"congressional district from county mix for {sum(x[3] for x in no_cd) / max(tot, 1):.1%}")
+          f"congressional district from county / House-district mix for {sum(x[4] for x in no_cd) / max(tot, 1):.1%}")
     return early, demo
 
 

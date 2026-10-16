@@ -75,13 +75,11 @@ def series_by_year_county(state: str):
 
 
 def _apply_sameday(state, out):
-    """GA with real 2026 data: compare against 2020 & 2022 only (no 2024), and
+    """GA / TX with real 2026 data: compare against 2022 only, and
     replace each year's END-of-cycle early vote with its early vote at the SAME
-    day of early voting (analytics/ga_sameday.py). Totals stay full-cycle."""
-    if state != "GA":
-        return out
-    from ga_sameday import sameday
-    s = sameday()
+    day of early voting (analytics/sameday.py). Totals stay full-cycle."""
+    from sameday import sameday
+    s = sameday(state)
     if not s:
         return out
     res = {}
@@ -94,11 +92,11 @@ def _apply_sameday(state, out):
 
 def sameday_info(state):
     """Metadata for the same-day comparison, or None (synthetic/end-of-cycle)."""
-    if state != "GA":
-        return None
-    from ga_sameday import sameday
-    s = sameday()
+    from sameday import sameday
+    s = sameday(state)
     return None if not s else {"as_of": s["as_of"], "day": s["day"], "source": s["source"],
+                               "basis": s["basis"], "mail": s["mail"], "mail_counties": s["mail_counties"],
+                               "counties": s["counties"],
                                "years": {y: {k: r[k] for k in ("used", "source")} for y, r in s["years"].items()}}
 
 

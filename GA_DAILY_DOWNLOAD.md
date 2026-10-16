@@ -168,30 +168,15 @@ district, for the Demographic Analysis app.
 
 ---
 
-## Texas (manual daily download, from Mon Oct 19)
+## Texas (automatic, no download)
 
-The TX page (`/tx/`) shows mail and in-person early votes by **congressional, State House and State
-Senate district**, plus an **estimate** of Hispanic and Asian early voters from surnames. Texas posts a
-daily list of everyone who voted early (name, voter ID, voting method, precinct), but the site has a
-browser check, so it's downloaded by hand. Texas early voting runs **Mon Oct 19 – Fri Oct 30, 2026**.
+The Texas Secretary of State's early-voting site runs on a public JSON API, so the county counts and the
+statewide voter roster are **fetched automatically**. No browser, no CAPTCHA. Run once a day after ~11 AM
+(Texas law requires each day's report by 11 AM the next morning):
 
-### Step 1: download yesterday's statewide report (after ~11 AM; the law requires posting by 11 AM)
-
-1. Open https://goelect.txelections.civixapps.com/ivis-evr-ui/evr
-2. **Select Election:** `2026 NOVEMBER GENERAL ELECTION`
-3. **Unofficial Early Voting Turnout by Date:** pick the day → **Submit**
-4. On the turnout page click **Generate Statewide Report**. It saves a CSV like
-   `STATEWIDE.<election>.EarlyVoting.<date>.csv`.
-5. Move it, **without renaming it** (the date in the name is used), into
-   `C:\Users\subho\earlyvote-analysis\data\incoming\tx\2026\`.
-   Each day's file holds only that day's voters, so **keep every day's file** (unlike GA/NC).
-   If you missed a day, download that day too.
-
-> 🔒 These files contain voters' names. `data/incoming/` is gitignored; the processing step
-> uses surnames only to look up the Census surname table and writes **only counts**.
-
-### Step 2: process and publish
-
+```bash
+python ingestor/tx_fetch.py
+```
 ```bash
 python ingestor/tx_districts.py 2026
 ```
@@ -199,25 +184,34 @@ python ingestor/tx_districts.py 2026
 python web/build_ga_districts.py TX
 ```
 ```bash
+python web/build_dashboard.py
+```
+```bash
 python analytics/check_ga_districts.py TX
 ```
 ```bash
-git add data/tx_districts web/tx && git commit -m "TX early-vote update" && git push
+git add data/tx_county data/tx_districts web/tx web/index.html && git commit -m "TX early-vote update" && git push
 ```
 
-**First day (Oct 19):** the 2026 file format on the new Texas site hasn't been seen yet (the site
-takes reports down after each election). The script finds columns by name, but check that
-`tx_districts.py 2026` prints a sensible voter count, and ask Claude if it doesn't.
+- `tx_fetch.py` gets every posted day not already on disk: county totals → `data/tx_county/turnout_{date}.csv`
+  (+ the main dashboard's TX tab) and the statewide roster → `data/incoming/tx/2026/` (names, gitignored).
+- **The 2026 rosters are cumulative** (each day's file = everyone through that day), unlike the old site's
+  one-day files. `tx_districts.py` turns them into daily counts by differencing consecutive days.
+- **Everything compares with 2022 only.** House and Senate lines are unchanged since 2022; congressional
+  lines were redrawn in 2025, so 2022 votes are re-counted on the new lines (each 2022 precinct takes the
+  2025 district of the same precinct code in 2024; codes are stable).
+- Early voting opened 15 days before Election Day in both years (Mon Oct 24 2022, Mon Oct 19 2026).
+- **Main dashboard TX tab = in-person early votes only.** The new site's mail counts lag badly by county
+  (on Oct 15 only 85 of 254 counties had reported any), which would fake a partisan signal. Until in-person
+  voting opens the tab shows a "first comparison Tue Oct 20" notice.
+- County lean = 2022 governor's race by county (MIT Election Lab, `python analytics/add_tx_baseline.py`).
 
-### How the Texas numbers are built
+### How the Texas district numbers are built
 - Precinct → district: Texas Legislative Council tables (2022 / 2024 general and 2026 primary
   precincts), `data/raw/tlc/`. ~1% of votes have precinct codes that don't match; those are shared
   out within their county.
-- House and Senate lines are unchanged since 2022 → compared with 2022. Congressional lines were
-  redrawn in 2025 → compared with 2024 votes re-counted on the new lines (6% of 2024 votes got their
-  congressional district from their county's mix).
 - District lean: 2024 presidential vote by district from the Council's Red-206 reports.
 - Hispanic / Asian: Census 2010 surname table (`web/tx/surnames.txt`). Checked against the Council's
   Spanish-surname registration share: correlation 0.99 across House districts.
-- 2022 / 2024 history: `data/incoming/tx/tx_ev_{2022,2024}.json`, counts reduced in the browser from
-  the Secretary of State's old early-voting site (earlyvoting.texas-election.com).
+- 2022 history: `data/incoming/tx/tx_ev_2022.json`, counts reduced in the browser from the Secretary of
+  State's old early-voting site (earlyvoting.texas-election.com).

@@ -21,10 +21,14 @@ from turnout_compare import (compare, group_deviation, composite_lean,   # noqa:
                              turnout_progress, turnout_rate, sameday_info)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
-STATES = ["GA", "NC", "AZ", "NV", "PA"]
+STATES = ["GA", "TX", "NC", "AZ", "NV", "PA"]
 
 
 def state_data(state):
+    sd = sameday_info(state)
+    if sd and sd["day"] < 1 and state == "TX":
+        # before in-person early voting opens, TX has only patchy mail counts -> no comparison yet
+        return {"state": state, "pending": sd}
     ref_years, basis, rows, hist, cur, lean = compare(state)
     gd = group_deviation(state, SPLIT)
     cur_total, ov = overall_turnout(state)
@@ -131,7 +135,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
-  <div class="sub">County-level early-voting signal vs past cycles (Georgia: 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
+  <div class="sub">County-level early-voting signal vs past cycles (Georgia &amp; Texas: 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
   <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a>, <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a> and <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">
@@ -165,7 +169,20 @@ function shiftBg(x){if(x==null)return"";const a=(Math.min(Math.abs(x)/0.15,1)*0.
 
 function tabs(){document.getElementById("tabs").innerHTML=
   Object.keys(DATA).map(s=>`<div class="tab ${s===cur?'on':''}" onclick="pick('${s}')">${s}</div>`).join("");}
-function pick(s){cur=s;sortKey="share";sortDir=-1;tabs();cards();panels();render();}
+function pick(s){cur=s;sortKey="share";sortDir=-1;tabs();
+  const show=!DATA[cur].pending;
+  ["panels",".toolbar",".tablewrap","foot"].forEach(id=>{const e=id[0]==="."?document.querySelector(id):document.getElementById(id);e.style.display=show?"":"none";});
+  if(!show){pendingView();return;}
+  cards();panels();render();}
+function pendingView(){const p=DATA[cur].pending;
+  document.getElementById("cards").innerHTML=`<div class="card" style="grid-column:1/-1">
+    <div class="lab">Texas &middot; waiting for in-person early voting</div>
+    <div class="big" style="font-size:20px">First comparison with 2022: Tue Oct 20 morning</div>
+    <div class="note">In-person early voting opens <b>Mon Oct 19</b>. Through ${p.as_of} the Secretary of State shows only
+      <b>${(p.mail||0).toLocaleString()} mail ballots</b>, and just <b>${p.mail_counties} of ${p.counties} counties</b> have reported any
+      (in 2022, 233 had by this point), so a county comparison now would only measure which counties have uploaded.
+      Texas is compared on <b>in-person early votes</b> (94% of its 2022 early vote), lined up by day of early voting
+      (opened Oct 24 2022, Oct 19 2026). State House, Senate and congressional detail: <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a></div></div>`;}
 
 function cards(){const d=DATA[cur],ys=d.ref_years;
   const nc=y=>{const n=d.net[y];if(n==null)return"";const dem=n>0,col=dem?"var(--dem)":"var(--rep)";
@@ -174,7 +191,8 @@ function cards(){const d=DATA[cur],ys=d.ref_years;
       <div class="note">toward <b>${dem?'Democratic':'Republican'}</b> &middot; Dem-lean ${pct(d.groups.Dem.dev[y],1)}, Rep-lean ${pct(d.groups.Rep.dev[y],1)}</div></div>`;};
   const ov=ys.map(y=>`${y}: <b>${Math.round(d.overall[y]*100)}%</b>`).join(" &middot; ");
   const sd=d.sameday;
-  const lab=sd?`Early ballots through ${sd.as_of} (day ${sd.day})`:"Early ballots so far (2026)";
+  const dayTxt=sd?(sd.day>0?`day ${sd.day}`:`mail only; in-person opens in ${1-sd.day} day${sd.day===0?"":"s"}`):"";
+  const lab=sd?`Early ballots through ${sd.as_of} (${dayTxt})`:"Early ballots so far (2026)";
   const ovNote=sd?`vs the same day of early voting &middot; ${ov}`:`of each year's full early vote &middot; ${ov}`;
   document.getElementById("cards").innerHTML=
     `<div class="card"><div class="lab">${lab}</div>
@@ -246,8 +264,8 @@ function render(){header();const d=DATA[cur],ys=d.ref_years;
     ? `<b>Partisan shift:</b> each cell = how much bigger (<span class="pill" style="background:rgba(34,197,94,.4)">green</span>) or smaller (<span class="pill" style="background:rgba(239,68,68,.4)">red</span>) a slice of the early vote that county is now, vs that year. Dem-leaning green + Rep-leaning red = Democratic edge.`
     : `<b>Turnout progress:</b> 2026 early ballots as a % of that county's FULL turnout in the given year. <span class="pill" style="background:rgba(34,197,94,.4)">Green bar</span> = already past 100% (exceeded that whole election).`;
   const sd=d.sameday;
-  const src=sd?`<br><b>Real 2026 data</b> through ${sd.as_of} (early-voting day ${sd.day}) &middot; source: ${sd.source}. `+
-      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Early voting opened Oct 12 2020, Oct 17 2022, Oct 13 2026; mail ballots returned by each cutoff are included.`
+  const src=sd?`<br><b>Real 2026 data</b> through ${sd.as_of} (${sd.day>0?"early-voting day "+sd.day:"before in-person early voting opens"}) &middot; source: ${sd.source}. `+
+      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by day of in-person early voting (${cur==="TX"?"opened Oct 24 2022, Oct 19 2026":"opened Oct 17 2022, Oct 13 2026"}); mail ballots returned by each cutoff are included.`
     :d.live?`<br>Real 2026 data.`:`<br><b>${cur}: 2026 figures are synthetic stand-ins</b> until the real feed for this state is wired in.`;
   document.getElementById("foot").innerHTML=foot+src+` Partisan lean from county results; share metrics measure WHERE early voters come from, not who they voted for.`;}
 
@@ -258,7 +276,7 @@ document.getElementById("viewSeg").addEventListener("click",e=>{
   render();});
 document.getElementById("q").addEventListener("input",render);
 document.getElementById("grp").addEventListener("change",render);
-tabs();cards();panels();render();
+pick(cur);
 </script>
 </body>
 </html>
@@ -273,7 +291,7 @@ def main():
     body = html.split("<body>", 1)[1].split("</body>", 1)[0]
     (out.parent / "_widget.html").write_text(body, encoding="utf-8")
     print(f"  wrote {out}  ({out.stat().st_size//1024} KB, "
-          f"{sum(len(d['counties']) for d in data.values())} counties)")
+          f"{sum(len(d.get('counties', [])) for d in data.values())} counties)")
 
 
 if __name__ == "__main__":

@@ -67,6 +67,8 @@ STATES = {
     "GA": {"name": "Georgia", "fips": "13", "ev_start": "Oct 13",
            "source": "Georgia Secretary of State absentee file",
            "only_2022": "early_2022_cur.csv", "shift": {2022: 1},
+           "redraw_note": "Districts redrawn in Dec 2023 are compared with their 2022 early votes "
+                          "<b>re-counted on today's lines</b> (each 2022 voter placed by their precinct).",
            "reason": {"house": "Redrawn Dec 2023; 2022 votes re-counted on today's lines",
                       "senate": "Redrawn Dec 2023; 2022 votes re-counted on today's lines"}},
     "NC": {"name": "North Carolina", "fips": "37", "ev_start": "Oct 15",
@@ -80,7 +82,13 @@ STATES = {
                         "congress": ("tlc:PLANC2333", "District", "CD")},
            "lean": "tlc",
            "min_county_share": 0,       # votes are placed by precinct, so there is no stray-address noise to hide
-           "reason": {"congress": "Redrawn in 2025; 2024 votes re-counted on the new lines"}},
+           # compared with 2022 only (user's choice). Early voting opened 15 days out in both
+           # 2022 (Oct 24) and 2026 (Oct 19), so no shift is needed.
+           "only_2022": "early_2022.csv",
+           "redraw_note": "State House and Senate lines are unchanged since 2022. Congressional lines were "
+                          "redrawn in 2025, so their 2022 early votes are <b>re-counted on the new lines</b> "
+                          "(each 2022 precinct placed in its 2025 district).",
+           "reason": {"congress": "Redrawn in 2025; 2022 votes re-counted on the new lines"}},
 }
 ST = (sys.argv[1] if len(sys.argv) > 1 else "GA").upper()
 CFG = STATES[ST]
@@ -344,6 +352,7 @@ def main():
     state = {"counties": [], "modes": {},
              "meta": {"state": ST, "name": CFG["name"], "ev_start": CFG["ev_start"], "source": CFG["source"],
                       "only_2022": ONLY_2022, "align": "ev_day" if SHIFT else "days_out",
+                      "redraw_note": CFG.get("redraw_note", ""),
                       "has_demo": has_demo, "demo_kind": "surname" if ST == "TX" else "record",
                       "chambers": list(CHAMBERS)}}
     for m, (dd, totals, stats) in modes.items():

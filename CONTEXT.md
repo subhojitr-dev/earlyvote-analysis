@@ -28,6 +28,17 @@ Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD
   +3.1 pts toward D. District page live view waits on the user's daily SoS download (9–10 AM ET).
 - NC/AZ/NV/PA main-dashboard tabs still synthetic (footnote says so). Routine: GA_DAILY_DOWNLOAD.md.
 
+## 🟢 2026-10-16: TX AUTOMATED, COMPARED WITH 2022 ONLY
+- TX SoS site = public JSON API (getFile?type=EVR_ELECTION / EVR_EARLYVOTING / EVR_STATEWIDE, base64
+  payloads): ingestor/tx_fetch.py pulls county totals + statewide rosters daily, no manual download.
+- 2026 rosters are CUMULATIVE; tx_districts.py differences consecutive days (per-file counts cached
+  in data/incoming/tx/2026/.agg_*.json).
+- Every TX district vs 2022; congressional (2025 map) uses 2022 re-counted via same precinct code in
+  2024 (House district agrees 9,570/9,571). Builder STATES["TX"] only_2022.
+- Main dashboard TX tab (analytics/sameday.py, generic GA/TX): IN-PERSON ONLY (mail reporting lags by
+  county: 85/254 on Oct 15) and a pending notice until in-person opens Oct 19. Lean = 2022 governor
+  (analytics/add_tx_baseline.py, MEDSL tx22.zip).
+
 ## 🚦 WHERE WE ARE (2026-07-01)
 - **DEPLOYED & public** on Vercel (static, auto-deploys on push to `main`).
 - **5 states live: GA, NC, AZ, NV, PA** (358 counties). WI/MI next.

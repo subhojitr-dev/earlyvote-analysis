@@ -81,6 +81,7 @@
   .race h2{margin:0 0 2px;font-size:18px}
   .race h3{margin:16px 0 6px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
   .race table td,.race table th{padding:5px 8px;font-size:12.5px}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
   .race td.num,.race th.num{text-align:right}
   .bar{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--panel2);min-width:120px}
   .bar .d{background:var(--dem)} .bar .r{background:var(--rep)}
@@ -276,6 +277,7 @@ function viewState(){
   } else {
     const ds = st.districts.filter(d => d.chamber === layer), dst = m.dstats;
     const pc = d => { const x = dst[`${d.chamber}:${d.district}`]; return !x ? null : S.measure === "all" ? x.pace : x[S.measure]; };
+    const vc = (d, w) => { const x = dst[`${d.chamber}:${d.district}`]; return !x ? null : S.measure === "all" ? x[w] : x[`${w}_${S.measure}`]; };
     paths = ds.map(d => `<path d="${P.d(d.rings)}" fill="${paceColor(pc(d))}" data-d="${d.chamber}:${d.district}"></path>`).join("");
     labels = ds.map(d => {
       const [w,h] = P.box(d.rings); if (Math.min(w,h) < 30) return "";
@@ -284,12 +286,13 @@ function viewState(){
     }).join("");
     const withP = ds.filter(d => pc(d) != null), ahead = withP.filter(d => pc(d) > 0).length;
     headline = `<span class="n">${ahead}</span> of ${withP.length} ${esc(META().name)} ${chPlural(layer)} are ahead of pace${S.measure === "all" ? "" : ` <span class="muted" style="font-size:15px">(${MEAS[S.measure].toLowerCase()} votes)</span>`}`;
-    hint = `Hover a district for its name; click it to open it. Metro Atlanta districts are small, so click a county or use the list to find them. ${KEY_()}`;
+    hint = `Hover a district for its name and votes; click it to open it. City districts are small, so click a county or use the list to find them. ${KEY_()}`;
     const rows = ds.map(d => `<tr data-d="${d.chamber}:${d.district}"><td><b>${fullName(d.chamber, d.district)}</b></td>
+        <td class="num">${fmt(vc(d, "now"))}</td><td class="num muted">${fmt(vc(d, "then"))}</td>
         <td class="pace ${paceCls(pc(d))}">${paceShort(pc(d))}</td><td>${leanBadge(d.lean)}</td>
         <td class="muted">${esc(d.counties.slice(0,3).map(title).join(", "))}${d.counties.length > 3 ? ` +${d.counties.length - 3}` : ""}</td></tr>`).join("");
     panel = `<h3>${chPlural(layer).replace(/^./, c => c.toUpperCase())}</h3><input class="search" placeholder="Find a district number or county…" id="q">
-        <div class="tablewrap"><table><thead><tr><th>District</th><th>vs pace</th><th>Leans</th><th>Counties</th></tr></thead>
+        <div class="tablewrap"><table><thead><tr><th>District</th><th>Early votes</th><th>2022 same day</th><th>vs pace</th><th>Leans</th><th>Counties</th></tr></thead>
         <tbody id="ctab">${rows}</tbody></table></div>`;
   }
   $("#app").innerHTML = modeBanner() + HOWTO_() + `
@@ -332,7 +335,8 @@ function viewState(){
     el.onmouseleave = () => { hi(k, false); hideTip(); };
     if (el.tagName === "path") el.onmousemove = e => {
       const x = m.dstats[k] || {}, p = S.measure === "all" ? x.pace : x[S.measure];
-      showTip(e, `<b>${fullName(d.chamber, d.district)}</b><br>${paceText(p, d.comp_year)}<br>Leans ${leanText(d.lean) || "n/a"}<br><span class="muted">${esc(d.counties.map(title).join(", "))}</span>`); };
+      const vn = S.measure === "all" ? x.now : x[`now_${S.measure}`], vt = S.measure === "all" ? x.then : x[`then_${S.measure}`];
+      showTip(e, `<b>${fullName(d.chamber, d.district)}</b><br>${paceText(p, d.comp_year)}<br>${fmt(vn)} early votes${S.measure === "all" ? "" : ` (${MEAS[S.measure].toLowerCase()})`} · ${d.comp_year} same day: ${fmt(vt)}<br>Leans ${leanText(d.lean) || "n/a"}<br><span class="muted">${esc(d.counties.map(title).join(", "))}</span>`); };
   });
   $("#q").oninput = e => { const q = e.target.value.toLowerCase();
     document.querySelectorAll("#ctab tr").forEach(tr => tr.style.display = tr.textContent.toLowerCase().includes(q) ? "" : "none"); };
@@ -363,6 +367,7 @@ function viewCounty(cd){
   const withPace = list.filter(d => pm(d) != null), ahead = withPace.filter(d => pm(d) > 0).length;
   const rows = list.map(d => `<tr data-k="${d.chamber}:${d.district}">
       <td><b>${fullName(d.chamber, d.district)}</b>${d.by_county.length > 1 ? ` <span class="muted" title="Continues into ${d.by_county.length - 1} other ${d.by_county.length > 2 ? "counties" : "county"}">↗</span>` : ""}</td>
+      <td class="num">${fmt(d.now)}</td><td class="num muted">${fmt(d.then)}</td>
       <td class="pace ${paceCls(d.pace)}">${paceShort(d.pace)}</td>
       <td class="pace ${paceCls(pm(d,"inperson"))}">${paceShort(pm(d,"inperson"))}</td>
       <td class="pace ${paceCls(pm(d,"mail"))}">${paceShort(pm(d,"mail"))}</td>
@@ -383,7 +388,7 @@ function viewCounty(cd){
         <span><span class="sw" style="background:rgba(251,146,60,.9)"></span>behind pace</span>
         <span>brighter = bigger gap</span></div></div>
       <div class="panel"><h3>${chPlural(S.chamber).replace(/^./, c => c.toUpperCase())} in ${esc(cd.name)}</h3>
-        <div class="tablewrap"><table><thead><tr><th>District</th><th>All early votes</th><th>In-person</th><th>Mail</th><th>Compared with</th><th>Leans</th></tr></thead>
+        <div class="tablewrap"><table><thead><tr><th>District</th><th>Early votes</th><th>Same day then</th><th>Pace: all</th><th>Pace: in-person</th><th>Pace: mail</th><th>Compared with</th><th>Leans</th></tr></thead>
         <tbody>${rows}</tbody></table></div></div>
     </div>`;
   wireMeasure();
@@ -398,7 +403,7 @@ function viewCounty(cd){
     el.onmouseenter = () => hi(k, true);
     el.onmouseleave = () => { hi(k, false); hideTip(); };
     if (el.tagName === "path") el.onmousemove = e => { const s = ds[k];
-      showTip(e, `<b>${s ? fullName(s.chamber, s.district) : k}</b><br>${s ? paceText(s.pace, s.comp_year) : ""}${s && S.measure !== "all" ? `<br>${MEAS[S.measure]}: ${paceText(pm(s), s.comp_year)}` : ""}`); };
+      showTip(e, `<b>${s ? fullName(s.chamber, s.district) : k}</b><br>${s ? paceText(s.pace, s.comp_year) : ""}${s && S.measure !== "all" ? `<br>${MEAS[S.measure]}: ${paceText(pm(s), s.comp_year)}` : ""}${s ? `<br>${fmt(s.now)} early votes · ${s.comp_year} same day: ${fmt(s.then)}` : ""}`); };
   });
 }
 

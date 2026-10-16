@@ -369,7 +369,11 @@ def main():
                              "house_n": sum(1 for s in stats.values() if s["chamber"] == "house" and s["pace"] is not None),
                              # compact per-district numbers for the statewide district maps
                              "dstats": {k: {"pace": s["pace"], "inperson": s["by_mode"]["inperson"]["pace"],
-                                            "mail": s["by_mode"]["mail"]["pace"], "now": s["now"]}
+                                            "mail": s["by_mode"]["mail"]["pace"], "now": s["now"], "then": s["then"],
+                                            "now_inperson": s["by_mode"]["inperson"]["now"],
+                                            "then_inperson": s["by_mode"]["inperson"]["then"],
+                                            "now_mail": s["by_mode"]["mail"]["now"],
+                                            "then_mail": s["by_mode"]["mail"]["then"]}
                                         for k, s in stats.items()}}
 
     # statewide district outlines (House + Senate) for the Georgia map's district views;

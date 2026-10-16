@@ -318,7 +318,15 @@ def main():
 
     # latest day in the file — but never later than today (guards against mistyped future dates)
     from datetime import date
-    live_days = max(min((d for byc in e26["all"].values() for s in byc.values() for d in s), default=30),
+    # (and ignoring stray days with a handful of mistyped dates, e.g. one ballot stamped Oct 26 on Oct 16)
+    per_day = defaultdict(int)
+    for (ch, _), byc in e26["all"].items():
+        if ch == "house":
+            for srs in byc.values():
+                for d, n in srs.items():
+                    per_day[d] += n
+    floor = 0.001 * sum(per_day.values())
+    live_days = max(min((d for d, n in per_day.items() if n >= floor), default=30),
                     (date(2026, 11, 3) - date.today()).days)
     has_demo = bool(d22 or d24)           # the state's files carry demographics (NC) or surname estimates (TX)
     DEMO = has_demo and {"cur": d26, 2022: d22, 2024: d24}

@@ -73,6 +73,16 @@ def aggregate(year: int):
     return counts
 
 
+def _file_date(year: int):
+    """Date the SoS built the zip (its members' timestamps), or None."""
+    zp = INCOMING / f"GA_{year}_general.zip"
+    if not zp.exists():
+        return None
+    import zipfile
+    with zipfile.ZipFile(zp) as z:
+        return max(date(*i.date_time[:3]) for i in z.infolist())
+
+
 def _fips_by_name():
     return {r["county_name"].upper().replace(" ", ""): r["county_fips"]
             for r in csv.DictReader((ROOT / "data" / "baseline" / "county_lean.csv").open(encoding="utf-8"))
@@ -88,6 +98,9 @@ def main(years):
         for (_c, m, _d), v in counts.items():
             by_mode[m] += v
         last = max((d for (_c, _m, d) in counts), default="-")
+        stamp = _file_date(y)
+        if stamp:   # votes run through the day BEFORE the file was built; later dates are typos
+            last = max((d for (_c, _m, d) in counts if d < stamp.isoformat()), default=last)
         print(f"{y}: {n:,} accepted ballots ({by_mode['inperson']:,} in person, "
               f"{by_mode['mail']:,} mail) through {last}")
         with (OUT / f"early_{y}.csv").open("w", encoding="utf-8", newline="") as fh:

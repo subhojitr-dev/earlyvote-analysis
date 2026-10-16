@@ -71,7 +71,35 @@ def series_by_year_county(state: str):
         out[y] = {c: {"early": early[y].get(c, 0),
                       "total": total_row[y][c] if total_row[y].get(c) else modes_sum[y].get(c, 0)}
                   for c in counties}
-    return out
+    return _apply_sameday(state, out)
+
+
+def _apply_sameday(state, out):
+    """GA with real 2026 data: compare against 2020 & 2022 only (no 2024), and
+    replace each year's END-of-cycle early vote with its early vote at the SAME
+    day of early voting (analytics/ga_sameday.py). Totals stay full-cycle."""
+    if state != "GA":
+        return out
+    from ga_sameday import sameday
+    s = sameday()
+    if not s:
+        return out
+    res = {}
+    for y, rec in s["years"].items():
+        counts = rec["counts"]
+        res[y] = {c: {"early": counts.get(c.replace(" ", ""), 0), "total": v["total"]}
+                  for c, v in out.get(y, {}).items()}
+    return res
+
+
+def sameday_info(state):
+    """Metadata for the same-day comparison, or None (synthetic/end-of-cycle)."""
+    if state != "GA":
+        return None
+    from ga_sameday import sameday
+    s = sameday()
+    return None if not s else {"as_of": s["as_of"], "day": s["day"], "source": s["source"],
+                               "years": {y: {k: r[k] for k in ("used", "source")} for y, r in s["years"].items()}}
 
 
 def lean_by_county(state: str):

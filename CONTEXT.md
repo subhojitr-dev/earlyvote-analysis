@@ -14,6 +14,17 @@ than a comparable past cycle?** Statewide signal + county drill-down + turnout p
 Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD.md
 (how to read), README.md (run/deploy).
 
+## 🟢 2026-10-16: GA MAIN DASHBOARD IS ON REAL DATA
+- GA tab = real 2026 county early vote (ingestor/ga_georgiavotes.py, daily; or the official SoS
+  file via ingestor/ga_county.py 2026, whichever is newer) vs **2020 & 2022 at the same day of
+  early voting** (analytics/ga_sameday.py; hooked into turnout_compare.series_by_year_county,
+  so every view uses it). 2024 dropped for GA by request.
+- Baselines: data/ga_county/early_2022.csv (SoS file, per day), snapshots_2020.csv (Elections
+  Project daily pages, ingestor/ga_2020_snapshots.py). Optional exact 2020: GA_2020_general.zip.
+- First read (through Oct 15, day 3): 552,066 ballots = 124% of 2022 / 60% of 2020 same day;
+  net share edge +3.1 pts D vs 2022, +1.4 vs 2020.
+- NC/AZ/NV/PA tabs still synthetic (footnote says so). Daily routine: GA_DAILY_DOWNLOAD.md.
+
 ## 🚦 WHERE WE ARE (2026-07-01)
 - **DEPLOYED & public** on Vercel (static, auto-deploys on push to `main`).
 - **5 states live: GA, NC, AZ, NV, PA** (358 counties). WI/MI next.

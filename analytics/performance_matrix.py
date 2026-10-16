@@ -20,7 +20,7 @@ from __future__ import annotations
 import sys
 
 from turnout_compare import (compare, group_deviation, series_by_year_county,
-                             load_current)
+                             load_current, sameday_info)
 
 SPLIT = 0.50  # lean_dem >= SPLIT => Dem-leaning
 
@@ -49,10 +49,14 @@ def matrix(state="GA"):
 
     # ---- [1] OVERALL TURNOUT (volume) ----
     print("\n[1] OVERALL EARLY-VOTE TURNOUT  (raw volume -- context only, see note)")
-    print(f"    2026 early ballots so far: {cur_total:,}")
+    sd = sameday_info(state)
+    print(f"    2026 early ballots so far: {cur_total:,}"
+          + (f"  (REAL, through {sd['as_of']} = early-voting day {sd['day']})" if sd else ""))
     for y in ref_years:
         p = ov[y]["pct_of"]
-        print(f"      = {p:5.0%} of {y}'s full early-vote total ({ov[y]['ref_early']:,}, {ov[y]['basis']})")
+        what = (f"early vote at the same day ({sd['years'][y]['used']})" if sd
+                else "full early-vote total")
+        print(f"      = {p:5.0%} of {y}'s {what} ({ov[y]['ref_early']:,}, {ov[y]['basis']})")
     print("    (2026 is incomplete + a midterm; treat as 'how far along', not turnout vs.)")
 
     # ---- [2] PARTISAN PERFORMANCE (share, normalized) ----

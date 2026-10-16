@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "analytics"))
 from turnout_compare import (compare, group_deviation, composite_lean,   # noqa: E402
-                             turnout_progress, turnout_rate)
+                             turnout_progress, turnout_rate, sameday_info)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
 STATES = ["GA", "NC", "AZ", "NV", "PA"]
@@ -60,6 +60,9 @@ def state_data(state):
         "complean": {str(y): cl[y] for y in _cy} | {"cur": cl["cur"]},
         "progress": {str(y): pagg[y] for y in _py},
         "turnout_rate": tr_agg,
+        "sameday": sameday_info(state),
+        "live": (Path(__file__).resolve().parent.parent / "data" / "live"
+                 / f"{state.lower()}_current.csv").exists(),
     }
 
 
@@ -128,7 +131,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
-  <div class="sub">County-level early-voting signal vs 2020, 2022 &amp; 2024 &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
+  <div class="sub">County-level early-voting signal vs past cycles (Georgia: 2020 &amp; 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
   <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a>, <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a> and <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">
@@ -170,10 +173,13 @@ function cards(){const d=DATA[cur],ys=d.ref_years;
       <div class="big" style="color:${col}">${(n*100>0?'+':'')}${(n*100).toFixed(1)} pts</div>
       <div class="note">toward <b>${dem?'Democratic':'Republican'}</b> &middot; Dem-lean ${pct(d.groups.Dem.dev[y],1)}, Rep-lean ${pct(d.groups.Rep.dev[y],1)}</div></div>`;};
   const ov=ys.map(y=>`${y}: <b>${Math.round(d.overall[y]*100)}%</b>`).join(" &middot; ");
+  const sd=d.sameday;
+  const lab=sd?`Early ballots through ${sd.as_of} (day ${sd.day})`:"Early ballots so far (2026)";
+  const ovNote=sd?`vs the same day of early voting &middot; ${ov}`:`of each year's full early vote &middot; ${ov}`;
   document.getElementById("cards").innerHTML=
-    `<div class="card"><div class="lab">Early ballots so far (2026)</div>
+    `<div class="card"><div class="lab">${lab}</div>
        <div class="big">${d.cur_total.toLocaleString()}</div>
-       <div class="note">of each year's full early vote &middot; ${ov}</div></div>`+nc(2022)+nc(2020);}
+       <div class="note">${ovNote}</div></div>`+ys.slice().reverse().map(nc).join("");}
 
 function panels(){const d=DATA[cur];
   const cl=d.complean, cy=d.ref_years.concat(["cur"]);
@@ -184,10 +190,11 @@ function panels(){const d=DATA[cur];
       <div class="track"><div class="fill" style="width:${clScale(v).toFixed(0)}%;background:${is26?'var(--accent)':'var(--dem)'}"></div>
       <div class="mark" style="left:${clScale(0.50).toFixed(0)}%"></div></div>
       <span class="vl" style="${is26?'color:var(--accent)':''}">${(v*100).toFixed(1)}% D</span></div>`;}).join("");
-  const dv=(cl.cur-cl["2024"])*100, best=cl.cur>=Math.max(cl["2020"],cl["2022"],cl["2024"]);
+  const ry=d.ref_years, best=ry.every(y=>cl.cur>=cl[y]), worst=ry.every(y=>cl.cur<cl[y]);
   const clRead=`2026 early electorate is <b>${(cl.cur*100).toFixed(1)}% Dem-tilted</b> &mdash; `+
-    `${pct(cl.cur-cl["2020"],1)} vs 2020, ${pct(cl.cur-cl["2022"],1)} vs 2022, ${pct(cl.cur-cl["2024"],1)} vs 2024. `+
-    (best?`Above all three &mdash; the +${dv.toFixed(1)}pt jump vs 2024 <b>erases the 2024 dip</b>.`:`Mixed vs prior cycles.`);
+    ry.map(y=>`${pct(cl.cur-cl[y],1)} vs ${y}`).join(", ")+". "+
+    (best?`<b>Above every comparison year</b>${d.sameday?" at the same point of early voting":""}.`
+      :worst?`<b>Below every comparison year</b>.`:`Mixed vs prior cycles.`);
 
   const pr=d.progress, py=d.ref_years;
   const prScale=v=>Math.min(v,1.5)/1.5*100;
@@ -196,7 +203,7 @@ function panels(){const d=DATA[cur];
       <div class="track"><div class="fill" style="width:${prScale(v).toFixed(0)}%;background:${over?'var(--pos)':'var(--accent)'}"></div>
       <div class="mark" style="left:${(100/1.5).toFixed(0)}%"></div></div>
       <span class="vl" style="${over?'color:var(--pos)':''}">${Math.round(v*100)}%</span></div>`;}).join("");
-  const prRead=`Marker = 100% (a full prior turnout). Bars past it = 2026 early vote alone has <b>already exceeded</b> that year's total turnout. Climbs daily as early voting runs.`;
+  const prRead=`Marker = 100% (a full prior turnout, all voting methods). Bars past it = 2026 early vote alone has <b>already exceeded</b> that year's total turnout. Climbs daily as early voting runs.`;
   const tr=d.turnout_rate;
   const trStat=tr==null?"":`<div style="margin-bottom:8px;font-size:13px"><b style="font-size:18px;color:var(--accent)">${Math.round(tr*100)}%</b> of registered voters have voted early <span style="color:var(--muted)">(est. — see note)</span></div>`;
 
@@ -238,7 +245,11 @@ function render(){header();const d=DATA[cur],ys=d.ref_years;
   const foot=view==="partisan"
     ? `<b>Partisan shift:</b> each cell = how much bigger (<span class="pill" style="background:rgba(34,197,94,.4)">green</span>) or smaller (<span class="pill" style="background:rgba(239,68,68,.4)">red</span>) a slice of the early vote that county is now, vs that year. Dem-leaning green + Rep-leaning red = Democratic edge.`
     : `<b>Turnout progress:</b> 2026 early ballots as a % of that county's FULL turnout in the given year. <span class="pill" style="background:rgba(34,197,94,.4)">Green bar</span> = already past 100% (exceeded that whole election).`;
-  document.getElementById("foot").innerHTML=foot+`<br>2026 figures are synthetic stand-ins until real early voting opens (~Oct 2026). Partisan lean from county results; share metrics measure WHERE early voters come from, not who they voted for.`;}
+  const sd=d.sameday;
+  const src=sd?`<br><b>Real 2026 data</b> through ${sd.as_of} (early-voting day ${sd.day}) &middot; source: ${sd.source}. `+
+      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Early voting opened Oct 12 2020, Oct 17 2022, Oct 13 2026; mail ballots returned by each cutoff are included.`
+    :d.live?`<br>Real 2026 data.`:`<br><b>${cur}: 2026 figures are synthetic stand-ins</b> until the real feed for this state is wired in.`;
+  document.getElementById("foot").innerHTML=foot+src+` Partisan lean from county results; share metrics measure WHERE early voters come from, not who they voted for.`;}
 
 document.getElementById("viewSeg").addEventListener("click",e=>{
   const b=e.target.closest("button");if(!b)return;view=b.dataset.v;

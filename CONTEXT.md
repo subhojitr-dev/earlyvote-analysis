@@ -28,6 +28,15 @@ Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD
   +3.1 pts toward D. District page live view waits on the user's daily SoS download (9–10 AM ET).
 - NC/AZ/NV/PA main-dashboard tabs still synthetic (footnote says so). Routine: GA_DAILY_DOWNLOAD.md.
 
+## 🟢 2026-10-16: NC ON REAL DATA, COMPARED WITH 2022 ONLY
+- nc_districts.py 2026 (public SBE file) now also writes data/nc_county/early_{y}.csv + data/live/nc_*;
+  main dashboard NC tab = real vs 2022 same day (analytics/sameday.py, NC opened 19 days out both years).
+- District page: every NC district vs 2022; redrawn (Oct 2023) use early_2022_cur.csv + demo_2022_cur.csv
+  (nc_districts.py recount, NCID precinct crosswalk). Builder STATES["NC"] only_2022 + demo_2022.
+- Day 1 (Oct 15): 237,539 ballots = 125% of 2022 same day; net +8.7 pts D by county share; party mix
+  D 46.9 / U 33.4 / R 19.5 vs 2022 day 1 D 41.8 / U 29.4 / R 28.6.
+- Daily noon scheduled task "daily-tx-ga-earlyvote-refresh" runs TX + NC + GA fallback, checks, pushes.
+
 ## 🟢 2026-10-16: TX AUTOMATED, COMPARED WITH 2022 ONLY
 - TX SoS site = public JSON API (getFile?type=EVR_ELECTION / EVR_EARLYVOTING / EVR_STATEWIDE, base64
   payloads): ingestor/tx_fetch.py pulls county totals + statewide rosters daily, no manual download.

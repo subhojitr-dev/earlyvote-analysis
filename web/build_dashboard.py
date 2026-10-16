@@ -135,7 +135,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
-  <div class="sub">County-level early-voting signal vs past cycles (Georgia &amp; Texas: 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
+  <div class="sub">County-level early-voting signal vs past cycles (Georgia, North Carolina &amp; Texas: 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
   <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a>, <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a> and <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">
@@ -265,7 +265,7 @@ function render(){header();const d=DATA[cur],ys=d.ref_years;
     : `<b>Turnout progress:</b> 2026 early ballots as a % of that county's FULL turnout in the given year. <span class="pill" style="background:rgba(34,197,94,.4)">Green bar</span> = already past 100% (exceeded that whole election).`;
   const sd=d.sameday;
   const src=sd?`<br><b>Real 2026 data</b> through ${sd.as_of} (${sd.day>0?"early-voting day "+sd.day:"before in-person early voting opens"}) &middot; source: ${sd.source}. `+
-      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by day of in-person early voting (${cur==="TX"?"opened Oct 24 2022, Oct 19 2026":"opened Oct 17 2022, Oct 13 2026"}); mail ballots returned by each cutoff are included.`
+      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by day of in-person early voting (${({TX:"opened Oct 24 2022, Oct 19 2026",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026"})[cur]}); mail ballots returned by each cutoff are included.`
     :d.live?`<br>Real 2026 data.`:`<br><b>${cur}: 2026 figures are synthetic stand-ins</b> until the real feed for this state is wired in.`;
   document.getElementById("foot").innerHTML=foot+src+` Partisan lean from county results; share metrics measure WHERE early voters come from, not who they voted for.`;}
 

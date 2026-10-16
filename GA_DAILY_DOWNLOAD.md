@@ -138,11 +138,11 @@ and `2022` → `11/8/2022 - 11/08/2022 GENERAL/SPECIAL ELECTION`, County blank.
 
 ---
 
-## North Carolina (no manual download)
+## North Carolina (no manual download; runs in the daily noon task)
 
-The NC page (`/nc/`) uses the NC State Board of Elections absentee file, which is a **public
-direct download** (no anti-bot check), so one command fetches it. It also carries each early
-voter's race, ethnicity, gender, age and party, which feed the "Who has voted early" tables.
+The NC pages use the NC State Board of Elections absentee file, a **public direct download** (no anti-bot
+check), rebuilt ~5 AM ET each day. One command fetches and processes it. It also carries each early voter's
+race, ethnicity, gender, age and party, which feed the "Who has voted early" tables.
 NC in-person early voting runs **Thu Oct 15 – Sat Oct 31, 2026**.
 
 ```bash
@@ -152,16 +152,28 @@ python ingestor/nc_districts.py 2026
 python web/build_ga_districts.py NC
 ```
 ```bash
+python web/build_dashboard.py
+```
+```bash
 python analytics/check_ga_districts.py NC
 ```
 ```bash
-git add data/nc_districts web/nc && git commit -m "NC early-vote update" && git push
+git add data/nc_districts data/nc_county web/nc web/index.html && git commit -m "NC early-vote update" && git push
 ```
+
+- **Everything compares with 2022 only**, at the same day of early voting (opened 19 days before Election
+  Day both years: Thu Oct 20 2022, Thu Oct 15 2026).
+- `nc_districts.py 2026` also writes the main dashboard's NC tab feed (`data/nc_county/early_2026.csv`,
+  `data/live/nc_current.csv`).
+- Districts redrawn in Oct 2023 (70 of 120 House, 28 of 50 Senate) use the 2022 votes **and demographics
+  re-counted on today's lines** (`data/nc_districts/early_2022_cur.csv`, `demo_2022_cur.csv`; built once by
+  `python ingestor/nc_districts.py recount`, each 2022 voter placed by their precinct). Check: unchanged
+  districts match the original 2022 counts within 0.17% (House) / 0.01% (Senate) median.
 
 One-time files (already downloaded): `data/incoming/nc/NC_2022_general.zip`, `NC_2024_general.zip`, and
 `data/raw/ncsbe/STATEWIDE_PRECINCT_SORT_2024.txt`, the Board's **precinct-sorted** 2024 results, used
-for the district lean. That file matters: other 2024 files report many counties' early votes by
-voting *site*, which mixes districts and threw some NC district leans off by up to 14 points.
+for the district lean. That file matters: other 2024 files report many counties' early votes by voting
+*site*, which mixes districts and threw some NC district leans off by up to 14 points.
 
 `data/nc_districts/demo_*.csv` also holds the early electorate's make-up for each **congressional**
 district, for the Demographic Analysis app.

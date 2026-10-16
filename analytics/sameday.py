@@ -1,19 +1,22 @@
 """
 sameday.py — 2026 early vote vs the SAME POINT of early voting in 2022 (the last
-midterm), by county. By the user's choice GA and TX are compared with 2022 only.
+midterm), by county. By the user's choice GA, NC and TX are compared with 2022 only.
 
 Alignment: by day of in-person early voting. If 2026 data runs through day k of
 early voting (k may be negative = mail-only days before it opens), 2022 is cut at
 its own opening + k. Mail ballots returned by that cutoff are included.
     GA: opened Mon Oct 17 2022 / Tue Oct 13 2026  (22 vs 21 days before Election Day)
+    NC: opened Thu Oct 20 2022 / Thu Oct 15 2026  (19 days before Election Day both)
     TX: opened Mon Oct 24 2022 / Mon Oct 19 2026  (15 days before Election Day both)
 
 Sources (all real):
     2026  data/live/{st}_meta.json + {st}_current.csv
           GA: SoS absentee file (ga_county.py) or georgiavotes.com (ga_georgiavotes.py)
+          NC: State Board absentee file (nc_districts.py)
           TX: SoS early-voting turnout API (tx_fetch.py)
     2022  data/{st}_county/early_2022.csv   per county per day
-          GA: SoS absentee file   TX: SoS daily rosters (data/incoming/tx/tx_ev_2022.json)
+          GA: SoS absentee file   NC: State Board absentee file
+          TX: SoS daily rosters (data/incoming/tx/tx_ev_2022.json)
 
 Run:  python analytics/sameday.py GA
       python analytics/sameday.py TX
@@ -32,6 +35,9 @@ CFG = {
     "GA": {"ev_start": {2022: date(2022, 10, 17), 2026: date(2026, 10, 13)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "GA SoS absentee file"},
+    "NC": {"ev_start": {2022: date(2022, 10, 20), 2026: date(2026, 10, 15)},
+           "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
+           "source22": "NC State Board of Elections absentee file"},
     "TX": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "TX SoS daily early-voting rosters",

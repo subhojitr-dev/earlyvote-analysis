@@ -71,8 +71,16 @@ STATES = {
                           "<b>re-counted on today's lines</b> (each 2022 voter placed by their precinct).",
            "reason": {"house": "Redrawn Dec 2023; 2022 votes re-counted on today's lines",
                       "senate": "Redrawn Dec 2023; 2022 votes re-counted on today's lines"}},
+    # North Carolina: compared with 2022 only (user's choice). Districts redrawn in Oct 2023 use
+    # the 2022 votes and demographics re-counted on today's lines (ingestor/nc_districts.py recount).
+    # Early voting opened 19 days before Election Day in both years (Oct 20 2022, Oct 15 2026).
     "NC": {"name": "North Carolina", "fips": "37", "ev_start": "Oct 15",
-           "source": "NC State Board of Elections absentee file"},
+           "source": "NC State Board of Elections absentee file",
+           "only_2022": "early_2022_cur.csv", "demo_2022": "demo_2022_cur.csv",
+           "redraw_note": "Districts redrawn in Oct 2023 are compared with their 2022 early votes "
+                          "<b>re-counted on today's lines</b> (each 2022 voter placed by their precinct).",
+           "reason": {"house": "Redrawn Oct 2023; 2022 votes re-counted on today's lines",
+                      "senate": "Redrawn Oct 2023; 2022 votes re-counted on today's lines"}},
     # Texas: districts from the Texas Legislative Council (current plans), lean from its
     # Red-206 district election reports; congressional map redrawn in 2025.
     "TX": {"name": "Texas", "fips": "48", "ev_start": "Oct 19",
@@ -321,7 +329,7 @@ def main():
     (OUT / "county").mkdir(exist_ok=True)
     e22, e24, e26 = load_early(2022, CFG.get("only_2022")), load_early(2024), load_early(2026)
     global RACE, DEMO
-    d22, d24, d26 = load_demo(2022), load_demo(2024), load_demo(2026)
+    d22, d24, d26 = load_demo(2022, CFG.get("demo_2022")), load_demo(2024), load_demo(2026)
     redraw, (lean, RACE) = load_redraw(), (load_lean_tlc() if CFG.get("lean") == "tlc" else load_lean())
 
     # latest day in the file — but never later than today (guards against mistyped future dates)
@@ -440,9 +448,9 @@ DEMO = {}
 DIMS = ("race", "age", "gender", "party", "surname")   # surname = TX Hispanic / Asian estimate
 
 
-def load_demo(year: int):
+def load_demo(year: int, fname: str | None = None):
     """{(chamber, district): {dim: {group: {days_out: n}}}} or {} if the state has no demographics."""
-    p = DATA / f"demo_{year}.csv"
+    p = DATA / (fname or f"demo_{year}.csv")
     if not p.exists():
         return {}
     out = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(int))))
@@ -466,7 +474,7 @@ def statewide(demo):
 
 def demo_from_comp(d22, d24, redraw, all22=False):
     """Demo-mode make-up: each district's own comparison-year make-up."""
-    if all22:
+    if all22 or ONLY_2022:
         return d22
     return {k: (d22 if redraw.get(k, 0) >= SAME_MIN else d24).get(k, {}) for k in set(d22) | set(d24)}
 

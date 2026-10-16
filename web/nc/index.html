@@ -221,13 +221,15 @@ function modeBanner(){
   const low = m.totals.now < 50000;
   return `<div class="banner live"><b>Live data</b> from the ${esc(META().source)}:
     ${fmt(m.totals.now)} accepted ballots statewide, ${m.days_out} days before Election Day.
+    ${META().only_2022 ? `Every district is compared with <b>2022</b> (the last midterm) at the same day of early voting.` : ""}
     ${low ? `In-person early voting starts <b>${esc(META().ev_start)}</b>. Until then, counts are only a handful of mail ballots, so the comparisons below are very noisy.` : ""}</div>`;
 }
 const META = () => (S.state && S.state.meta) || {state: "GA", name: "Georgia", ev_start: "Oct 13", source: "Georgia Secretary of State absentee file"};
 const HOWTO_ = () => `<div class="howto"><b>How to read this.</b> Each district's early voting is compared with the
-  <b>last election held on the same district lines</b>, at the same point in early voting.
+  ${META().only_2022 ? `<b>2022 general election</b> (the last midterm), at the same day of early voting.` : `<b>last election held on the same district lines</b>, at the same point in early voting.`}
   "Ahead by 8%" means the district makes up a bigger slice of ${esc(META().name)}'s early vote than it did then.
-  Districts redrawn before the 2024 election are compared with 2024; districts with the same lines since 2022 are compared with 2022.
+  ${META().only_2022 ? (META().redraw_note || "")
+    : `Districts redrawn before the 2024 election are compared with 2024; districts with the same lines since 2022 are compared with 2022.`}
   The same comparison is shown for <b>all early votes</b>, and separately for <b>in-person</b> and <b>mail</b> votes.</div>`;
 
 // ---------- views ----------
@@ -303,7 +305,7 @@ function viewState(){
       <div class="panel">${panel}</div>
     </div>
     ${m.demo ? `<div class="panel" style="margin-top:14px"><h3>Who has voted early in ${esc(META().name)} so far</h3>
-      <div class="seg" id="dyrSeg" style="margin:4px 0 2px">${["2022","2024"].map(y => `<button data-y="${y}" class="${(S.dyr||"2022") === y ? "on" : ""}">vs ${y}${y === "2022" ? " (last midterm)" : ""}</button>`).join("")}</div>
+      <div class="seg" id="dyrSeg" style="margin:4px 0 2px">${(META().only_2022 ? ["2022"] : ["2022","2024"]).map(y => `<button data-y="${y}" class="${(S.dyr||"2022") === y ? "on" : ""}">vs ${y}${y === "2022" ? " (last midterm)" : ""}</button>`).join("")}</div>
       ${demoTable(m.demo[S.dyr || "2022"], S.dyr || "2022")}</div>` : ""}`;
   document.querySelectorAll("#dyrSeg button").forEach(b => b.onclick = () => { S.dyr = b.dataset.y; route(); });
   wireDims(() => route());
@@ -436,7 +438,7 @@ function viewDetail(cd, k){
       <h3 style="font-size:13px;margin:14px 0 6px">Early votes by county</h3>
       <table><thead><tr><th>County</th><th>Now</th><th>In-person</th><th>Mail</th><th>% of district</th><th>${s.comp_year}</th></tr></thead><tbody>${counties}</tbody></table>
       <p class="muted" style="font-size:11.5px;line-height:1.5;margin-top:12px">"Pace" compares this district's share of all ${esc(META().name)} early votes
-      with its share at the same number of days before Election Day in ${s.comp_year}. Using shares, not raw counts,
+      with its share at the same ${META().align === "ev_day" ? "day of early voting" : "number of days before Election Day"} in ${s.comp_year}. Using shares, not raw counts,
       keeps a midterm comparable with a presidential year. The in-person and mail lines do the same using
       only in-person (or only mail) votes; mail includes electronic ballots from military and overseas voters.
       Fewer than 30 ballots is too few to compare. Only the Nov general elections are used, never the Dec 2022 runoff.</p>

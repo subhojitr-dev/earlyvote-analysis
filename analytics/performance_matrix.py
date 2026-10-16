@@ -44,7 +44,7 @@ def matrix(state="GA"):
     cur_total, ov = overall_turnout(state)
 
     print(f"\n############  {state} EARLY-VOTE PERFORMANCE MATRIX  ############")
-    print(f"#  2026 (in-progress) vs 2020 (presidential) & 2022 (midterm)")
+    print(f"#  2026 (in-progress) vs " + " & ".join(str(y) for y in ref_years))
     print(f"#  reference basis per year: " + ", ".join(f"{y}={basis[y]}" for y in ref_years))
 
     # ---- [1] OVERALL TURNOUT (volume) ----

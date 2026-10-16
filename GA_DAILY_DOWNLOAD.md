@@ -1,32 +1,20 @@
 # Georgia daily early-vote update
 
-## Main dashboard (county level): automatic, no download
+**Every Georgia comparison is against 2022 only** (the last midterm), at the same day of
+early voting. In-person early voting opened Mon Oct 17 2022 and Tue Oct 13 2026, so day 3 of 2026
+(Oct 15) is compared with day 3 of 2022 (Oct 19). 2020 and 2024 are not used for GA.
+- Main dashboard (`/`, GA tab): county shares vs 2022 (`analytics/ga_sameday.py`).
+- District page (`/ga/`): every House / Senate district vs 2022. Districts redrawn in Dec 2023
+  use the 2022 votes **re-counted on today's lines** (`data/ga_districts/early_2022_cur.csv`, built
+  once by `python ingestor/ga_districts.py recount`; each 2022 voter placed by their precinct).
 
-The main page (`/`, GA tab) uses **real** 2026 county counts and compares them with **2020 and
-2022 at the same day of early voting** (2024 is not used for GA). Run any time after ~10:30 AM:
+**When:** download the official file daily, **9:00–10:00 AM Eastern** (the SoS rebuilds it ~8 AM,
+weekends included; any later time that day gets the same file). Steps 1–3 below.
 
-```bash
-python ingestor/ga_georgiavotes.py
-```
-```bash
-python web/build_dashboard.py
-```
-```bash
-git add web/index.html && git commit -m "GA county early-vote update" && git push
-```
-
-- `ga_georgiavotes.py` reads the county table on georgiavotes.com, which is rebuilt each morning
-  from the SoS absentee file (no reCAPTCHA there). It prints e.g. `552,066 ballots ... through 2026-10-15`.
-- When you DO download the official SoS file (below), also run `python ingestor/ga_county.py 2026`.
-  The official file then takes over automatically (whichever source is newer wins).
-- Comparison years: **2022** = exact per-day counts from `GA_2022_general.zip`
-  (`data/ga_county/early_2022.csv`); **2020** = the U.S. Elections Project's daily snapshots of the
-  2020 SoS file (`python ingestor/ga_2020_snapshots.py`, already run, one-time). Optional: download
-  `GA_2020_general.zip` (Election Year `2020` → `11/3/2020 - GENERAL/SPECIAL ELECTION`, County blank),
-  put it in `data/incoming/ga/`, run `python ingestor/ga_county.py 2020`, and 2020 switches to exact
-  per-day counts.
-- Alignment = day of in-person early voting (opened Mon Oct 12 2020, Mon Oct 17 2022, Tue Oct 13 2026).
-  See `analytics/ga_sameday.py`.
+**Skipped a day?** The main dashboard can still refresh without the download (the district page
+can't): `python ingestor/ga_georgiavotes.py`, then `python web/build_dashboard.py`, then commit
+`web/index.html`. Georgia Votes rebuilds its county table each morning from the same SoS file.
+Whichever source is newer wins automatically.
 
 ---
 
@@ -90,7 +78,13 @@ From `C:\Users\subho\earlyvote-analysis`:
 python ingestor/ga_districts.py 2026
 ```
 ```bash
+python ingestor/ga_county.py 2026
+```
+```bash
 python web/build_ga_districts.py
+```
+```bash
+python web/build_dashboard.py
 ```
 ```bash
 python ingestor/ga_polling.py
@@ -99,8 +93,11 @@ python ingestor/ga_polling.py
 python analytics/check_ga_districts.py
 ```
 ```bash
-git add data/ga_districts web/ga && git commit -m "GA early-vote update" && git push
+git add data/ga_districts data/ga_county web/ga web/index.html && git commit -m "GA early-vote update" && git push
 ```
+
+- `ga_districts.py 2026` feeds the district page; `ga_county.py 2026` feeds the main dashboard's GA tab
+  (it prints `2026: N accepted ballots ... through <yesterday>`).
 
 - `ga_polling.py` refreshes the **View Polling Data** page for GA, MI, OH & TX (polls, averages, ratings, betting
   odds) from public sources. **No download needed**, and it can be run any time, even on days you

@@ -14,16 +14,19 @@ than a comparable past cycle?** Statewide signal + county drill-down + turnout p
 Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD.md
 (how to read), README.md (run/deploy).
 
-## 🟢 2026-10-16: GA MAIN DASHBOARD IS ON REAL DATA
-- GA tab = real 2026 county early vote (ingestor/ga_georgiavotes.py, daily; or the official SoS
-  file via ingestor/ga_county.py 2026, whichever is newer) vs **2020 & 2022 at the same day of
-  early voting** (analytics/ga_sameday.py; hooked into turnout_compare.series_by_year_county,
-  so every view uses it). 2024 dropped for GA by request.
-- Baselines: data/ga_county/early_2022.csv (SoS file, per day), snapshots_2020.csv (Elections
-  Project daily pages, ingestor/ga_2020_snapshots.py). Optional exact 2020: GA_2020_general.zip.
-- First read (through Oct 15, day 3): 552,066 ballots = 124% of 2022 / 60% of 2020 same day;
-  net share edge +3.1 pts D vs 2022, +1.4 vs 2020.
-- NC/AZ/NV/PA tabs still synthetic (footnote says so). Daily routine: GA_DAILY_DOWNLOAD.md.
+## 🟢 2026-10-16: GA IS ON REAL DATA, COMPARED WITH 2022 ONLY
+- **User's rule: GA compares with 2022 only** (no 2020, no 2024), at the same DAY OF EARLY VOTING
+  (opened Oct 17 2022 / Oct 13 2026; 2026 day k vs 2022 day k).
+- Main dashboard GA tab: real 2026 county counts — official SoS file (ingestor/ga_county.py 2026)
+  or georgiavotes.com fallback (ingestor/ga_georgiavotes.py), newer wins — vs 2022 same day
+  (analytics/ga_sameday.py, hooked into turnout_compare.series_by_year_county).
+- District page /ga/: every district vs 2022. Redrawn (Dec 2023) districts use 2022 votes re-counted
+  on today's lines: ingestor/ga_districts.py recount -> data/ga_districts/early_2022_cur.csv (precinct
+  crosswalk from voters in both 2022 & 2024 files; validated: unchanged districts match the original
+  2022 counts within 0.17% median, 2.8% worst). Builder: STATES["GA"] only_2022 + shift {2022: 1}.
+- First read (through Oct 15, day 3): 552,066 ballots = 124% of 2022 same day; net share edge
+  +3.1 pts toward D. District page live view waits on the user's daily SoS download (9–10 AM ET).
+- NC/AZ/NV/PA main-dashboard tabs still synthetic (footnote says so). Routine: GA_DAILY_DOWNLOAD.md.
 
 ## 🚦 WHERE WE ARE (2026-07-01)
 - **DEPLOYED & public** on Vercel (static, auto-deploys on push to `main`).

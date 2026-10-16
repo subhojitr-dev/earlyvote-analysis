@@ -60,8 +60,15 @@ ROOT = Path(__file__).resolve().parent.parent
 GEO = ROOT / "data" / "raw" / "geo"
 RACE = {}
 STATES = {
+    # Georgia: compared with 2022 ONLY (user's choice). Districts redrawn in Dec 2023 use the
+    # 2022 votes re-counted on today's lines (early_2022_cur.csv, ingestor/ga_districts.py recount).
+    # Lined up by day of in-person early voting: it opened 22 days out in 2022 (Oct 17) and 21
+    # days out in 2026 (Oct 13), so 2022 is read one day further from Election Day.
     "GA": {"name": "Georgia", "fips": "13", "ev_start": "Oct 13",
-           "source": "Georgia Secretary of State absentee file"},
+           "source": "Georgia Secretary of State absentee file",
+           "only_2022": "early_2022_cur.csv", "shift": {2022: 1},
+           "reason": {"house": "Redrawn Dec 2023; 2022 votes re-counted on today's lines",
+                      "senate": "Redrawn Dec 2023; 2022 votes re-counted on today's lines"}},
     "NC": {"name": "North Carolina", "fips": "37", "ev_start": "Oct 15",
            "source": "NC State Board of Elections absentee file"},
     # Texas: districts from the Texas Legislative Council (current plans), lean from its
@@ -92,6 +99,8 @@ MIN_PIECE = 0.003        # drop district pieces < 0.3% of the county's area (sli
 CHAMBERS = CFG.get("chambers") or {"house": ("sldl", "SLDLST", "HD"), "senate": ("sldu", "SLDUST", "SD")}
 MODES = ("all", "inperson", "mail")   # overall, early in-person, mail (incl. electronic)
 MIN_MODE_BALLOTS = 30    # pace (overall, in-person, mail) shown only with >= 30 ballots now AND then
+ONLY_2022 = bool(CFG.get("only_2022"))   # every district compared with 2022 (no 2024)
+SHIFT = CFG.get("shift", {})             # comparison year read this many days further out (align by early-voting day)
 
 
 def key(name: str) -> str:
@@ -103,10 +112,10 @@ def _early():
     return defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
 
 
-def load_early(year: int):
+def load_early(year: int, fname: str | None = None):
     """{mode: {(chamber, district): {county: {days_out: n}}}} for mode in MODES"""
     out = {m: _early() for m in MODES}
-    p = DATA / f"early_{year}.csv"
+    p = DATA / (fname or f"early_{year}.csv")
     if not p.exists():
         return out
     for r in csv.DictReader(p.open(encoding="utf-8")):
@@ -218,10 +227,10 @@ def label_pt(geom):
 def district_stats(ch, d, cur, comp22, comp24, totals, days_out, redraw, lean, min_n=0):
     same = redraw.get((ch, d))
     unchanged = same is not None and same >= SAME_MIN
-    comp_year = 2022 if unchanged else 2024
-    comp = comp22 if unchanged else comp24
+    comp_year = 2022 if (unchanged or ONLY_2022) else 2024
+    comp = comp22 if comp_year == 2022 else comp24
     now_by_cty = {c: upto(s, days_out) for c, s in cur.get((ch, d), {}).items()}
-    then_by_cty = {c: upto(s, days_out) for c, s in comp.get((ch, d), {}).items()}
+    then_by_cty = {c: upto(s, days_out + SHIFT.get(comp_year, 0)) for c, s in comp.get((ch, d), {}).items()}
     now, then = sum(now_by_cty.values()), sum(then_by_cty.values())
     share_now = now / totals["now"] if totals["now"] else None
     share_then = then / totals[comp_year] if totals[comp_year] else None
@@ -257,11 +266,11 @@ def make_demo(e22, e24, redraw, seed=2026):
     tot = lambda e: sum(upto(s, DEMO_DAYS_OUT) for (ch, _), b in e.items() if ch == "house" for s in b.values())
     scale24 = tot(e22) / tot(e24) if tot(e24) else 1   # put 2024-based districts on the same (midterm) scale
     for ch, d in sorted(set(e22) | set(e24), key=lambda k: (k[0], int(k[1]))):
-        unchanged = redraw.get((ch, d), 0) >= SAME_MIN
+        unchanged = redraw.get((ch, d), 0) >= SAME_MIN or ONLY_2022
         base = e22 if unchanged else e24
         t = rnd.uniform(0.8, 1.2) * (1 if unchanged else scale24)
         for c, s in base.get((ch, d), {}).items():
-            demo[(ch, d)][c][DEMO_DAYS_OUT] = round(upto(s, DEMO_DAYS_OUT) * t)
+            demo[(ch, d)][c][DEMO_DAYS_OUT] = round(upto(s, DEMO_DAYS_OUT + SHIFT.get(2022 if unchanged else 2024, 0)) * t)
     return demo
 
 
@@ -273,7 +282,8 @@ def build_mode(cur, e22, e24, days_out, redraw, lean):
     keys = set(e22["all"]) | set(e24["all"]) | set(cur["all"])
     out_totals, out_stats = {}, {}
     for m in MODES:
-        totals = {"now": total(cur[m], days_out), 2022: total(e22[m], days_out), 2024: total(e24[m], days_out)}
+        totals = {"now": total(cur[m], days_out), 2022: total(e22[m], days_out + SHIFT.get(2022, 0)),
+                  2024: total(e24[m], days_out + SHIFT.get(2024, 0))}
         out_totals[m] = totals
         for ch, d in keys:
             if d == "0":
@@ -301,7 +311,7 @@ def build_mode(cur, e22, e24, days_out, redraw, lean):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "county").mkdir(exist_ok=True)
-    e22, e24, e26 = load_early(2022), load_early(2024), load_early(2026)
+    e22, e24, e26 = load_early(2022, CFG.get("only_2022")), load_early(2024), load_early(2026)
     global RACE, DEMO
     d22, d24, d26 = load_demo(2022), load_demo(2024), load_demo(2026)
     redraw, (lean, RACE) = load_redraw(), (load_lean_tlc() if CFG.get("lean") == "tlc" else load_lean())
@@ -325,6 +335,7 @@ def main():
 
     state = {"counties": [], "modes": {},
              "meta": {"state": ST, "name": CFG["name"], "ev_start": CFG["ev_start"], "source": CFG["source"],
+                      "only_2022": ONLY_2022, "align": "ev_day" if SHIFT else "days_out",
                       "has_demo": has_demo, "demo_kind": "surname" if ST == "TX" else "record",
                       "chambers": list(CHAMBERS)}}
     for m, (dd, totals, stats) in modes.items():

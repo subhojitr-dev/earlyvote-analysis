@@ -21,6 +21,10 @@ Outputs (data/ga_districts/, small, committed):
     xwalk_2024.csv        county, precinct, chamber, district, voters
                           precinct -> district weights (2024 early voters), used
                           to put 2024 presidential precinct results into districts
+    early_2022_cur.csv    same columns as early_{year}.csv: the 2022 early votes
+                          RE-COUNTED ON TODAY'S LINES (python ingestor/ga_districts.py
+                          recount). Lets every district be compared with 2022, the
+                          last midterm, even where lines were redrawn in Dec 2023.
     redraw.csv            chamber, district, matched, same_pct
                           of voters who voted early in BOTH 2022 and 2024, the
                           share whose 2022 district had the same number as their
@@ -28,6 +32,7 @@ Outputs (data/ga_districts/, small, committed):
 
 Run:  python ingestor/ga_districts.py            (all years present)
       python ingestor/ga_districts.py 2026       (just refresh 2026)
+      python ingestor/ga_districts.py recount    (one-time: 2022 on current lines)
 """
 from __future__ import annotations
 
@@ -153,7 +158,92 @@ def main(years: list[int]):
         print(f"redraw.csv: {len(tot)} districts")
 
 
+def recount_2022(min_share: float = 0.03):
+    """2022 early votes placed on the CURRENT (Dec 2023) House / Senate lines.
+
+    Each 2022 ballot is placed by its 2022 precinct, not by the individual voter:
+    for every (county, 2022 precinct, 2022 district) we look up where voters from it
+    are registered now, using everyone who appears in both the 2022 and 2024 files
+    and still lives in the same county (so movers don't drag votes elsewhere). A
+    precinct split between new districts is shared out in proportion; shares under
+    `min_share` are treated as mover noise. Precincts with no matched voters fall
+    back to their (county, 2022 district) pattern, then their county's."""
+    now = {}                                           # reg# -> (county, house, senate) on 2024 lines
+    for r in _rows(2024):
+        reg = (r.get("Voter Registration #") or "").strip()
+        if reg:
+            now[reg] = (r["County"].replace(" ", "").upper(), _dist(r.get("HOUSE", "")), _dist(r.get("SEN", "")))
+    print(f"recount: {len(now):,} voters on current lines (2024 file)")
+
+    eday = ELECTION_DAY[2022]
+    xw = {ch: defaultdict(Counter) for ch in CHAMBERS}          # (county, precinct, d22) -> Counter(d_now)
+    ballots = Counter()                                         # (county, precinct, h22, s22, mode, days_out) -> n
+    seen = set()
+    for r in _rows(2022):
+        reg = (r.get("Voter Registration #") or "").strip()
+        county, prec = r["County"].strip().upper(), (r.get("County Precinct") or "").strip()
+        d22 = {ch: _dist(r.get(col, "")) for ch, col in CHAMBERS.items()}
+        cur = now.get(reg)
+        if cur and cur[0] == county.replace(" ", "") and reg not in seen:
+            seen.add(reg)
+            for i, ch in enumerate(CHAMBERS):
+                if cur[1 + i] is not None:
+                    xw[ch][(county, prec, d22[ch])][cur[1 + i]] += 1
+        if r.get("Ballot Status") != "A":
+            continue
+        try:
+            d = datetime.strptime(r["Ballot Return Date"], "%m/%d/%Y").date()
+        except (KeyError, ValueError):
+            continue
+        days_out = (eday - d).days
+        mode = MODES.get((r.get("Ballot Style") or "").strip().upper())
+        if days_out < 0 or mode is None:
+            continue
+        ballots[(county, prec, d22["house"], d22["senate"], mode, days_out)] += 1
+    del now
+
+    def norm(c: Counter):
+        tot = sum(c.values())
+        keep = {k: v for k, v in c.items() if v / tot >= min_share} or dict(c)
+        t = sum(keep.values())
+        return {k: v / t for k, v in keep.items()}
+
+    out = Counter()
+    how = Counter()
+    for i, ch in enumerate(CHAMBERS):
+        by_cd, by_c = defaultdict(Counter), defaultdict(Counter)    # fallbacks
+        for (county, _p, d22), c in xw[ch].items():
+            by_cd[(county, d22)].update(c)
+            by_c[county].update(c)
+        cache = {}
+        for (county, prec, h22, s22, mode, days_out), n in ballots.items():
+            d22 = (h22, s22)[i]
+            k = (county, prec, d22)
+            if k not in cache:
+                if xw[ch].get(k):
+                    cache[k] = ("precinct", norm(xw[ch][k]))
+                elif by_cd.get((county, d22)):
+                    cache[k] = ("county+district", norm(by_cd[(county, d22)]))
+                elif by_c.get(county):
+                    cache[k] = ("county", norm(by_c[county]))
+                else:
+                    cache[k] = ("unplaced", {})
+            kind, dist = cache[k]
+            how[(ch, kind)] += n
+            for dnow, f in dist.items():
+                out[(county, ch, dnow, mode, days_out)] += n * f
+    for ch in CHAMBERS:
+        tot = sum(v for (c, k), v in how.items() if c == ch)
+        print(f"recount {ch}: " + ", ".join(f"{k} {v / tot:.1%}" for (c, k), v in sorted(how.items()) if c == ch))
+    _write(OUT / "early_2022_cur.csv", ["county", "chamber", "district", "mode", "days_out", "ballots"],
+           sorted((*k, round(v)) for k, v in out.items() if round(v) > 0))
+    print(f"wrote early_2022_cur.csv: {sum(out.values()) / len(CHAMBERS):,.0f} ballots per chamber")
+
+
 if __name__ == "__main__":
+    if sys.argv[1:] == ["recount"]:
+        recount_2022()
+        raise SystemExit
     ys = [int(a) for a in sys.argv[1:]] or [y for y in ELECTION_DAY
                                             if (INCOMING / f"GA_{y}_general.zip").exists()
                                             or list(INCOMING.glob(f"*_{y}_general.csv"))]

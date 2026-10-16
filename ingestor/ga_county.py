@@ -16,8 +16,7 @@ Outputs:
                                       the synthetic fixture automatically
     data/live/ga_meta.json            as-of date of the 2026 file
 
-Years: 2020 and 2022 are the comparison years (2022 = last midterm, 2020 =
-last election on the same calendar, Nov 3); 2026 is the live year.
+Years: 2022 (last midterm) is the comparison year; 2026 is the live year.
 
 Run:  python ingestor/ga_county.py          (every year whose zip is present)
       python ingestor/ga_county.py 2026     (daily refresh)
@@ -37,14 +36,13 @@ from ga_districts import INCOMING, _rows  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "ga_county"
 LIVE = ROOT / "data" / "live"
-YEARS = (2020, 2022, 2026)
-ELECTION_DAY = {2020: date(2020, 11, 3), 2022: date(2022, 11, 8), 2026: date(2026, 11, 3)}
+YEARS = (2022, 2026)
+ELECTION_DAY = {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)}
 
 
 def _mode(style: str) -> str | None:
-    """Ballot Style -> inperson / mail. Labels drift by year (2022+: 'EARLY
-    IN-PERSON', 'ABSENTEE BY MAIL', 'ELECTRONIC BALLOT DELIVERY'; 2020: 'IN
-    PERSON', 'MAILED', 'ELECTRONIC')."""
+    """Ballot Style -> inperson / mail ('EARLY IN-PERSON' / 'ABSENTEE BY MAIL',
+    'ELECTRONIC BALLOT DELIVERY')."""
     s = (style or "").strip().upper()
     if "PERSON" in s:
         return "inperson"

@@ -131,7 +131,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
-  <div class="sub">County-level early-voting signal vs past cycles (Georgia: 2020 &amp; 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
+  <div class="sub">County-level early-voting signal vs past cycles (Georgia: 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
   <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a>, <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a> and <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">

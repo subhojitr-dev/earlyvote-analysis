@@ -180,6 +180,41 @@ district, for the Demographic Analysis app.
 
 ---
 
+## Maine (automatic, no download; runs in the daily noon task)
+
+Maine has no separate early voting: voting early = **absentee**, cast in person at the town clerk or returned
+by mail / drop box. The Secretary of State posts one statewide absentee voter file (one row per voter: town,
+party, ward, congressional / State Senate / State House district, received type and date), refreshed during
+the voting period. The site returns 403 to bare scripts, so the ingestor sends a normal browser User-Agent
+(the file is public; no login or CAPTCHA).
+
+```bash
+python ingestor/me_absentee.py 2026
+```
+```bash
+python web/build_ga_districts.py ME
+```
+```bash
+python web/build_dashboard.py
+```
+```bash
+python analytics/check_ga_districts.py ME
+```
+```bash
+git add data/me_county data/me_districts web/me web/index.html && git commit -m "ME early-vote update" && git push
+```
+
+- **Compared with 2022 only**, by days before Election Day (both Tuesdays). District lines are unchanged
+  since 2022 (town/ward → district agrees for 608 of 611 pairs), so no re-count is needed.
+- The file is named "as of <date>" and that day is only partly counted, so the data runs through the day before.
+- Town → county from MIT Election Lab's 2022 Maine file (`data/raw/medsl/me22.zip`) plus a few unorganized
+  townships; ~0.1% of ballots (tiny townships) have no county and are left out.
+- County lean = 2022 governor by county (`python analytics/add_baseline_2022.py ME`); district lean = 2024
+  presidential (`data/raw/medsl/me24.csv`). Party registration feeds the "Who has voted early" tables.
+- One-time file: `data/incoming/me/ME_2022_general.txt` (Nov 8 2022 final), downloaded automatically.
+
+---
+
 ## Texas (automatic, no download)
 
 The Texas Secretary of State's early-voting site runs on a public JSON API, so the county counts and the
@@ -216,7 +251,7 @@ git add data/tx_county data/tx_districts web/tx web/index.html && git commit -m 
 - **Main dashboard TX tab = in-person early votes only.** The new site's mail counts lag badly by county
   (on Oct 15 only 85 of 254 counties had reported any), which would fake a partisan signal. Until in-person
   voting opens the tab shows a "first comparison Tue Oct 20" notice.
-- County lean = 2022 governor's race by county (MIT Election Lab, `python analytics/add_tx_baseline.py`).
+- County lean = 2022 governor's race by county (MIT Election Lab, `python analytics/add_baseline_2022.py`).
 
 ### How the Texas district numbers are built
 - Precinct → district: Texas Legislative Council tables (2022 / 2024 general and 2026 primary

@@ -81,6 +81,16 @@ STATES = {
                           "<b>re-counted on today's lines</b> (each 2022 voter placed by their precinct).",
            "reason": {"house": "Redrawn Oct 2023; 2022 votes re-counted on today's lines",
                       "senate": "Redrawn Oct 2023; 2022 votes re-counted on today's lines"}},
+    # Maine: early = absentee (in person at the clerk or returned). District lines unchanged
+    # since 2022, so every district compares directly with 2022, by days before Election Day.
+    "ME": {"name": "Maine", "fips": "23", "ev_start": "Oct 5",
+           "source": "Maine Secretary of State absentee voter file",
+           "chambers": {"house": ("sldl", "SLDLST", "HD"), "senate": ("sldu", "SLDUST", "SD"),
+                        "congress": ("us:cd119", "CD119FP", "CD")},
+           "only_2022": "early_2022.csv",
+           "redraw_note": "Maine's district lines are unchanged since 2022, so every district compares directly "
+                          "with 2022. Early voting in Maine = absentee ballots, cast in person at the town clerk "
+                          "or returned by mail / drop box."},
     # Texas: districts from the Texas Legislative Council (current plans), lean from its
     # Red-206 district election reports; congressional map redrawn in 2025.
     "TX": {"name": "Texas", "fips": "48", "ev_start": "Oct 19",
@@ -153,6 +163,9 @@ def load_redraw():
             for r in csv.DictReader((DATA / "redraw.csv").open(encoding="utf-8"))}
 
 
+NOT_A_CANDIDATE = re.compile(r"TOTAL|BALLOTS CAST|BLANK|OVER ?VOTE|UNDER ?VOTE|OVER/UNDER", re.I)
+
+
 def load_lean():
     """2024 presidential margin per district (two-party, D minus R, in points) plus
     the actual 2024 State House / State Senate result, from MIT Election Lab's
@@ -164,15 +177,18 @@ def load_lean():
     pres = defaultdict(lambda: [0, 0])                      # precinct -> [D, R]
     leg = {ch: defaultdict(lambda: defaultdict(int)) for ch in CHAMBERS}   # ch -> precinct -> {dist: votes}
     cand = {ch: defaultdict(lambda: defaultdict(lambda: [0, ""])) for ch in CHAMBERS}  # ch -> dist -> name -> [votes, party]
-    office = {"STATE HOUSE": "house", "STATE SENATE": "senate"}
+    office = {k: v for k, v in {"STATE HOUSE": "house", "STATE SENATE": "senate", "US HOUSE": "congress"}.items()
+              if v in CHAMBERS}
     with MEDSL24.open(encoding="utf-8") as fh:
         for r in csv.DictReader(fh):
-            k, v = (r["county_name"], r["precinct"]), int(r["votes"] or 0)
+            k, v = (r["county_name"].upper(), r["precinct"].strip().upper()), int(r["votes"] or 0)   # case differs by office (ME)
             if r["office"] == "US PRESIDENT":
                 i = {"DEMOCRAT": 0, "REPUBLICAN": 1}.get(r["party_simplified"])
                 if i is not None:
                     pres[k][i] += v
             elif r["office"] in office:
+                if NOT_A_CANDIDATE.search(r["candidate"] or ""):   # ME files carry "Total Ballots Cast", blanks...
+                    continue
                 ch, d = office[r["office"]], str(int(r["district"]))
                 leg[ch][k][d] += v
                 c = cand[ch][d][r["candidate"]]
@@ -344,6 +360,11 @@ def main():
     floor = 0.001 * sum(per_day.values())
     live_days = max(min((d for d, n in per_day.items() if n >= floor), default=30),
                     (date(2026, 11, 3) - date.today()).days)
+    meta = ROOT / "data" / "live" / f"{ST.lower()}_meta.json"      # same as-of day as the main dashboard
+    if meta.exists():                                              # (e.g. Maine's file holds a partial last day)
+        asof = json.loads(meta.read_text()).get("as_of", "")
+        if re.match(r"\d{4}-\d{2}-\d{2}$", asof):
+            live_days = max(live_days, (date(2026, 11, 3) - date.fromisoformat(asof)).days)
     has_demo = bool(d22 or d24)           # the state's files carry demographics (NC) or surname estimates (TX)
     DEMO = has_demo and {"cur": d26, 2022: d22, 2024: d24}
     live = build_mode(e26, e22, e24, live_days, redraw, lean)
@@ -354,7 +375,9 @@ def main():
 
     counties = {key(k): (v, k) for k, v in
                 ((rec_name, g) for rec_name, g in read_county_shapes().items())}
-    dshapes = {ch: (read_tlc(stem[4:]) if stem.startswith("tlc:") else read_shapes(f"cb_2024_{CFG['fips']}_{stem}_500k", fld))
+    dshapes = {ch: (read_tlc(stem[4:]) if stem.startswith("tlc:") else
+                    read_shapes(f"cb_2024_us_{stem[3:]}_500k", fld) if stem.startswith("us:") else
+                    read_shapes(f"cb_2024_{CFG['fips']}_{stem}_500k", fld))
                for ch, (stem, fld, _) in CHAMBERS.items()}
 
     state = {"counties": [], "modes": {},
@@ -398,7 +421,7 @@ def main():
                 if not g.intersects(cgeom):
                     continue
                 inter = g.intersection(cgeom)
-                if inter.area < MIN_PIECE * cgeom.area:
+                if inter.area < MIN_PIECE * cgeom.area and inter.area < 0.5 * g.area:   # sliver, unless it is most of a small (city) district
                     continue
                 d = str(int(st))
                 dists.add(f"{ch}:{d}")

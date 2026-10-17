@@ -1,6 +1,6 @@
 """
 sameday.py — 2026 early vote vs the SAME POINT of early voting in 2022 (the last
-midterm), by county. By the user's choice GA, NC and TX are compared with 2022 only.
+midterm), by county. By the user's choice GA, ME, NC and TX are compared with 2022 only.
 
 Alignment: by day of in-person early voting. If 2026 data runs through day k of
 early voting (k may be negative = mail-only days before it opens), 2022 is cut at
@@ -38,6 +38,11 @@ CFG = {
     "NC": {"ev_start": {2022: date(2022, 10, 20), 2026: date(2026, 10, 15)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "NC State Board of Elections absentee file"},
+    # Maine: early = absentee (in person at the clerk or returned). Ballots go out 30 days
+    # before Election Day, so align by days before Election Day (both are Tuesdays).
+    "ME": {"ev_start": {2022: date(2022, 10, 10), 2026: date(2026, 10, 5)},
+           "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
+           "source22": "Maine SoS absentee voter file"},
     "TX": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "TX SoS daily early-voting rosters",

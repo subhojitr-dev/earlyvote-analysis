@@ -24,7 +24,7 @@ from pathlib import Path
 
 ST = (sys.argv[1] if len(sys.argv) > 1 else "GA").upper()
 WEB = Path(__file__).resolve().parent.parent / "web" / ST.lower()
-SIZE = {"GA": (180, 56), "NC": (120, 50), "TX": (150, 31)}[ST]
+SIZE = {"GA": (180, 56), "NC": (120, 50), "TX": (150, 31), "ME": (151, 35)}[ST]
 
 
 # 2024 presidential margin (D minus R, % of all votes) — akashic.app, retrieved 2026-10-04/05
@@ -34,6 +34,9 @@ PUBLISHED = {
     "NC": {"house:1": -28.7, "house:34": 30.8, "house:98": 2.6,
            "senate:7": -5.5, "senate:18": -0.5, "senate:42": 6.5},
     "TX": {},   # Texas leans come straight from the Legislative Council's district reports (no allocation)
+    # Maine: 2024 presidential two-party margin in its two congressional districts (official results:
+    # ME-1 Harris 60.0 / Trump 37.9; ME-2 Trump 53.0 / Harris 43.9)
+    "ME": {"congress:1": 22.6, "congress:2": -9.4},
 }[ST]
 TOL = 2.0   # third-party votes: published margins use all votes, ours D-vs-R only
 

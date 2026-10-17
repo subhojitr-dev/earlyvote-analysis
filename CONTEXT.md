@@ -28,6 +28,17 @@ Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD
   +3.1 pts toward D. District page live view waits on the user's daily SoS download (9–10 AM ET).
 - NC/AZ/NV/PA main-dashboard tabs still synthetic (footnote says so). Routine: GA_DAILY_DOWNLOAD.md.
 
+## 🟢 2026-10-17: MAINE ADDED (main dashboard ME tab + /me/ district page), vs 2022 only
+- ingestor/me_absentee.py: SoS statewide absentee voter file (per voter: town, party, CG/SS/SR, rec type/date);
+  needs a browser User-Agent (403 otherwise). Data through the day before the file's "as of" date.
+- District lines unchanged since 2022 → direct comparison; builder STATES["ME"] with house/senate/congress
+  (congress shapes from national cb_2024_us_cd119, stem "us:cd119"). Lean = MEDSL 2024 (me24.csv).
+- Builder fixes for all states: precinct names matched case-insensitively; district page uses the live
+  {st}_meta.json as-of day; small city districts kept on county maps; non-candidate rows ("Total Ballots
+  Cast") skipped in 2024 race results; congressional race label "U.S. House".
+- First read (thru Oct 15): 96,762 = 138% of 2022 same day; county share net +11.2 D, but party mix about flat
+  (D-R gap 34.2 vs 33.6), growth among unenrolled (25.0% vs 21.1%).
+
 ## 🟢 2026-10-16: NC ON REAL DATA, COMPARED WITH 2022 ONLY
 - nc_districts.py 2026 (public SBE file) now also writes data/nc_county/early_{y}.csv + data/live/nc_*;
   main dashboard NC tab = real vs 2022 same day (analytics/sameday.py, NC opened 19 days out both years).
@@ -46,7 +57,7 @@ Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD
   2024 (House district agrees 9,570/9,571). Builder STATES["TX"] only_2022.
 - Main dashboard TX tab (analytics/sameday.py, generic GA/TX): IN-PERSON ONLY (mail reporting lags by
   county: 85/254 on Oct 15) and a pending notice until in-person opens Oct 19. Lean = 2022 governor
-  (analytics/add_tx_baseline.py, MEDSL tx22.zip).
+  (analytics/add_baseline_2022.py, MEDSL tx22.zip).
 
 ## 🚦 WHERE WE ARE (2026-07-01)
 - **DEPLOYED & public** on Vercel (static, auto-deploys on push to `main`).

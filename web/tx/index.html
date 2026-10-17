@@ -171,7 +171,7 @@ function raceLine(s){
   const who = `${esc(r.winner)} (${r.party || "?"})`;
   const what = r.contested && r.margin != null
     ? `won by ${who}, ${leanText(r.margin)}` : `uncontested, ${who}`;
-  return `<div class="muted" style="font-size:12.5px;margin-top:4px">2024 State ${s.chamber === "house" ? "House" : "Senate"} race: ${what}</div>`;
+  return `<div class="muted" style="font-size:12.5px;margin-top:4px">2024 ${({house:"State House",senate:"State Senate",congress:"U.S. House"})[s.chamber] || "State Senate"} race: ${what}</div>`;
 }
 function leanText(l){ return l == null ? null : (l >= 0 ? "D +" : "R +") + Math.abs(l).toFixed(0); }
 function leanBadge(l){ return l == null ? '<span class="muted">n/a</span>' :

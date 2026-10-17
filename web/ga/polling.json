@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T19:47+00:00",
+ "updated": "2026-10-17T15:06+00:00",
  "races": {
   "GA-senate": {
    "state": "GA",
@@ -174,28 +174,28 @@
     "R": 42.8
    },
    "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
      "D": 95.4,
      "R": 4.9,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/georgia-senate-election-winner",
-     "D": 96.2,
-     "R": 3.9,
-     "fetched": "2026-10-16T19:47+00:00"
+     "D": 95.9,
+     "R": 4.0,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8156/Which-party-will-win-the-2026-US-Senate-election-in-Georgia",
-     "D": 95.0,
+     "D": 94.0,
      "R": 7.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   },
@@ -371,28 +371,28 @@
     "R": 47.1
    },
    "url": "https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
      "D": 47.0,
-     "R": 53.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "R": 51.0,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/georgia-governor-winner-2026",
      "D": 50.5,
-     "R": 49.5,
-     "fetched": "2026-10-16T19:47+00:00"
+     "R": 48.5,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8416/Which-party-will-win-the-2026-election-for-governor-of-Georgia",
-     "R": 57.0,
+     "R": 54.0,
      "D": 49.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   },
@@ -414,6 +414,14 @@
     }
    ],
    "polls": [
+    {
+     "pollster": "Rasmussen Reports (R)",
+     "dates": "October 12\u201314, 2026",
+     "sample": "798 (LV)",
+     "moe": "\u00b1{{nbsp}}3.0%",
+     "D": 46.0,
+     "R": 44.0
+    },
     {
      "pollster": "InsiderAdvantage (R)",
      "dates": "October 9\u201310, 2026",
@@ -485,14 +493,6 @@
      "moe": "\u00b1{{nbsp}}3.0%",
      "D": 50.0,
      "R": 49.0
-    },
-    {
-     "pollster": "Marist University",
-     "dates": "September 24\u201327, 2026",
-     "sample": "1,235 (RV)",
-     "moe": "\u00b1 3.8%",
-     "D": 51.0,
-     "R": 44.0
     }
    ],
    "averages": [
@@ -505,31 +505,31 @@
     },
     {
      "source": "Decision Desk HQ",
-     "dates": "through October 10, 2026",
-     "updated": "October 12, 2026",
-     "D": 49.3,
+     "dates": "through October 14, 2026",
+     "updated": "October 16, 2026",
+     "D": 48.1,
      "R": 45.9
     },
     {
      "source": "FiftyPlusOne",
      "dates": "through October 10, 2026",
-     "updated": "October 11, 2026",
-     "D": 48.2,
-     "R": 44.7
+     "updated": "October 16, 2026",
+     "D": 47.9,
+     "R": 44.6
     },
     {
      "source": "RealClearPolitics",
-     "dates": "September 15 \u2013 October 10, 2026",
-     "updated": "October 12, 2026",
+     "dates": "September 24 \u2013 October 1014 2026",
+     "updated": "October 16, 2026",
      "D": 48.1,
-     "R": 45.0
+     "R": 45.5
     },
     {
      "source": "Silver Bulletin",
-     "dates": "through October 9, 2026",
-     "updated": "October 10, 2026",
+     "dates": "through October 10, 2026",
+     "updated": "October 16, 2026",
      "D": 48.5,
-     "R": 45.0
+     "R": 45.1
     }
    ],
    "ratings": [
@@ -560,36 +560,36 @@
     }
    ],
    "average_of_averages": {
-    "D": 48.4,
-    "R": 44.9
+    "D": 48.1,
+    "R": 45.0
    },
    "poll_avg": {
-    "D": 48.5,
+    "D": 48.0,
     "R": 45.5
    },
    "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
-     "D": 69.0,
-     "R": 33.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "D": 68.0,
+     "R": 32.0,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/michigan-senate-election-winner",
-     "D": 69.5,
+     "D": 70.5,
      "R": 30.5,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8158/Which-party-will-win-the-2026-US-Senate-election-in-Michigan",
      "D": 68.0,
-     "R": 34.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "R": 31.0,
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   },
@@ -765,28 +765,28 @@
     "R": 42.5
    },
    "url": "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
-     "D": 93.0,
-     "R": 7.5,
-     "fetched": "2026-10-16T19:47+00:00"
+     "D": 94.5,
+     "R": 7.0,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/michigan-governor-winner-2026",
-     "D": 94.9,
-     "R": 5.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "D": 95.5,
+     "R": 4.5,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8212/Which-party-will-win-the-2026-election-for-governor-of-Michigan",
      "D": 90.0,
      "R": 9.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   },
@@ -962,28 +962,28 @@
     "R": 40.9
    },
    "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
      "D": 95.5,
      "R": 4.8,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/north-carolina-senate-election-winner",
      "D": 96.0,
-     "R": 4.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "R": 3.9,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8160/Which-party-will-win-the-2026-US-Senate-election-in-North-Carolina",
-     "D": 94.0,
+     "D": 96.0,
      "R": 7.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   },
@@ -1008,7 +1008,7 @@
    "polls": [
     {
      "pollster": "Bowling Green State University/YouGov",
-     "dates": "September 29 - October 9, 2026",
+     "dates": "September 29 \u2013 October 9, 2026",
      "sample": "1,000 (LV)",
      "moe": "\u00b1 4.0%",
      "D": 48.0,
@@ -1160,28 +1160,28 @@
     "R": 43.6
    },
    "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
      "D": 65.0,
-     "R": 36.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "R": 37.0,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/ohio-senate-election-winner",
-     "D": 65.0,
+     "D": 65.5,
      "R": 35.5,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8175/Which-party-will-win-the-2026-US-Senate-special-election-in-Ohio",
-     "D": 63.0,
+     "D": 64.0,
      "R": 37.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   },
@@ -1205,7 +1205,7 @@
    "polls": [
     {
      "pollster": "Bowling Green State University/YouGov",
-     "dates": "September 29 - October 9, 2026",
+     "dates": "September 29 \u2013 October 9, 2026",
      "sample": "1,000 (LV)",
      "moe": "\u00b1 4.0%",
      "D": 50.0,
@@ -1357,28 +1357,28 @@
     "R": 44.2
    },
    "url": "https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
      "D": 71.0,
      "R": 31.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/ohio-governor-winner-2026",
-     "D": 72.5,
+     "D": 71.5,
      "R": 28.5,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8441/Which-party-will-win-the-2026-election-for-governor-of-Ohio",
-     "D": 71.0,
-     "R": 30.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "D": 73.0,
+     "R": 29.0,
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   },
@@ -1492,23 +1492,23 @@
     {
      "source": "Decision Desk HQ",
      "dates": "through October 14, 2026",
-     "updated": "October 15, 2026",
-     "D": 48.9,
+     "updated": "October 16, 2026",
+     "D": 48.4,
      "R": 46.1
     },
     {
      "source": "FiftyPlusOne",
      "dates": "through October 14, 2026",
-     "updated": "October 15, 2026",
+     "updated": "October 16, 2026",
      "D": 48.4,
-     "R": 45.4
+     "R": 45.5
     },
     {
      "source": "RealClearPolitics",
-     "dates": "September 18 \u2013 October 14, 2026",
-     "updated": "October 15, 2026",
-     "D": 48.1,
-     "R": 45.8
+     "dates": "September 24 \u2013 October 14, 2026",
+     "updated": "October 16, 2026",
+     "D": 48.2,
+     "R": 46.0
     },
     {
      "source": "The Texas Tribune",
@@ -1519,10 +1519,10 @@
     },
     {
      "source": "Silver Bulletin",
-     "dates": "through October 11, 2026",
-     "updated": "October 15, 2026",
+     "dates": "through October 14, 2026",
+     "updated": "October 16, 2026",
      "D": 48.4,
-     "R": 45.5
+     "R": 45.8
     }
    ],
    "ratings": [
@@ -1553,36 +1553,36 @@
     }
    ],
    "average_of_averages": {
-    "D": 48.5,
-    "R": 45.6
+    "D": 48.4,
+    "R": 45.7
    },
    "poll_avg": {
     "D": 48.6,
     "R": 45.8
    },
    "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
      "D": 62.0,
-     "R": 40.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "R": 39.0,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/texas-senate-election-winner",
      "D": 62.5,
      "R": 37.5,
-     "fetched": "2026-10-16T19:47+00:00"
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8173/Which-party-will-win-the-2026-US-Senate-election-in-Texas",
-     "D": 60.0,
-     "R": 40.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "D": 61.0,
+     "R": 41.0,
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   },
@@ -1759,28 +1759,28 @@
     "R": 48.0
    },
    "url": "https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election",
-   "wiki_fetched": "2026-10-16T19:47+00:00",
+   "wiki_fetched": "2026-10-17T15:06+00:00",
    "markets": [
     {
      "source": "Kalshi",
      "url": "https://kalshi.com",
-     "D": 26.0,
-     "R": 76.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "D": 25.0,
+     "R": 77.0,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "Polymarket",
      "url": "https://polymarket.com/event/texas-governor-winner-2026",
      "D": 23.5,
-     "R": 76.7,
-     "fetched": "2026-10-16T19:47+00:00"
+     "R": 76.5,
+     "fetched": "2026-10-17T15:06+00:00"
     },
     {
      "source": "PredictIt",
      "url": "https://www.predictit.org/markets/detail/8418/Which-party-will-win-the-2026-election-for-governor-of-Texas",
-     "R": 78.0,
-     "D": 24.0,
-     "fetched": "2026-10-16T19:47+00:00"
+     "R": 80.0,
+     "D": 23.0,
+     "fetched": "2026-10-17T15:06+00:00"
     }
    ]
   }

@@ -180,6 +180,32 @@ district, for the Demographic Analysis app.
 
 ---
 
+## Michigan (automatic, no download; runs in the daily noon task)
+
+```bash
+python ingestor/mi_fetch.py
+```
+```bash
+python web/build_dashboard.py
+```
+```bash
+git add data/mi_county data/reference/registration.csv web/index.html && git commit -m "MI early-vote update" && git push
+```
+
+- **2026:** the SoS Michigan Voting Dashboard is a public Power BI report; `mi_fetch.py` asks Power BI's public
+  query service for the same tables the page shows (daily, by county: absentee ballots returned / sent, early
+  in-person votes from Oct 24, registered voters). Checked: Oct 13 statewide returned = 440,677, the SoS figure.
+- **2022:** the dashboard has no 2022 data. Each weekly SoS press release attaches 2022 ballot stats by
+  jurisdiction for the same point (file dated the day before the 2022 count it pairs with). `mi_fetch.py` checks
+  for new ones each run (`data/incoming/mi/MI_2022_<date>.xlsx`); towns are rolled up to counties.
+- **Compared on absentee ballots returned** (Michigan had no early in-person voting in 2022), with 2026 cut back
+  to the same days before Election Day as the latest 2022 snapshot. Early in-person votes are shown as 2026-only.
+- County lean = 2022 governor by county (`python analytics/add_baseline_2022.py MI`; the MIT file reports some
+  precincts both as TOTAL and by mode, so the script uses TOTAL when present).
+- No district page (the dashboard has no district data).
+
+---
+
 ## Ohio (on request: say "run Ohio" to Claude; weekdays after ~11:30 AM)
 
 Ohio's statewide absentee / early-vote file (one row per voter, ~270 MB, updated **weekdays** ~11 AM) is

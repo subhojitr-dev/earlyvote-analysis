@@ -21,7 +21,7 @@ from turnout_compare import (compare, group_deviation, composite_lean,   # noqa:
                              turnout_progress, turnout_rate, sameday_info)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
-STATES = ["GA", "TX", "NC", "OH", "ME", "AZ", "NV", "PA"]
+STATES = ["GA", "TX", "NC", "OH", "MI", "ME", "AZ", "NV", "PA"]
 
 
 def state_data(state):
@@ -136,7 +136,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
-  <div class="sub">County-level early-voting signal vs past cycles (Georgia, Maine, North Carolina, Ohio &amp; Texas: 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
+  <div class="sub">County-level early-voting signal vs past cycles (Georgia, Maine, Michigan, North Carolina, Ohio &amp; Texas: 2022 at the same point of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
   <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a>, <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a>, <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a> and <a href="/me/" style="color:var(--accent)">Maine &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">
@@ -206,8 +206,11 @@ function cards(){const d=DATA[cur],ys=d.ref_years;
   const ov=ys.map(y=>`${y}: <b>${Math.round(d.overall[y]*100)}%</b>`).join(" &middot; ");
   const sd=d.sameday;
   const dayTxt=sd?(sd.day>0?`day ${sd.day}`:`mail only; in-person opens in ${1-sd.day} day${sd.day===0?"":"s"}`):"";
-  const lab=sd?`Early ballots through ${sd.as_of} (${dayTxt})`:"Early ballots so far (2026)";
-  const ovNote=sd?`vs the same day of early voting &middot; ${ov}`:`of each year's full early vote &middot; ${ov}`;
+  let lab=sd?`Early ballots through ${sd.as_of} (${dayTxt})`:"Early ballots so far (2026)";
+  let ovNote=sd?`vs the same day of early voting &middot; ${ov}`:`of each year's full early vote &middot; ${ov}`;
+  if(cur==="MI"&&sd){lab=`Absentee ballots returned as of ${sd.as_of}`;
+    ovNote=`vs 2022 at the same point (${sd.snapshot_2022}) &middot; ${ov}<br>Latest (${sd.latest}): ${sd.latest_returned.toLocaleString()} returned, ${sd.latest_sent.toLocaleString()} sent`+
+      (sd.latest_ev?`, ${sd.latest_ev.toLocaleString()} early in person (2026 only)`:`; early in-person voting opens Oct 24 (none in 2022)`);}
   document.getElementById("cards").innerHTML=
     `<div class="card"><div class="lab">${lab}</div>
        <div class="big">${d.cur_total.toLocaleString()}</div>
@@ -279,7 +282,7 @@ function render(){header();const d=DATA[cur],ys=d.ref_years;
     : `<b>Turnout progress:</b> 2026 early ballots as a % of that county's FULL turnout in the given year. <span class="pill" style="background:rgba(34,197,94,.4)">Green bar</span> = already past 100% (exceeded that whole election).`;
   const sd=d.sameday;
   const src=sd?`<br><b>Real 2026 data</b> through ${sd.as_of} (${sd.day>0?"early-voting day "+sd.day:"before in-person early voting opens"}) &middot; source: ${sd.source}. `+
-      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by ${cur==="OH"?"days before Election Day: Ohio published 2022 county numbers only through Oct 24, Oct 31 and Nov 6 2022, so 2026 is cut back to the latest of those points it has reached; in-person early votes only":"day of in-person early voting"} (${({OH:"early voting opened Oct 12 2022, Oct 6 2026",TX:"opened Oct 24 2022, Oct 19 2026",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026",ME:"in-person absentee from about 29 days out both years: Oct 10 2022, Oct 5 2026"})[cur]}); mail ballots returned by each cutoff are included.`
+      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by ${cur==="MI"?"days before Election Day: Michigan published 2022 numbers only weekly (by town, rolled up to counties), so 2026 is cut back to the latest 2022 point it has reached; absentee ballots returned (Michigan had no early in-person voting in 2022)":cur==="OH"?"days before Election Day: Ohio published 2022 county numbers only through Oct 24, Oct 31 and Nov 6 2022, so 2026 is cut back to the latest of those points it has reached; in-person early votes only":"day of in-person early voting"} (${({MI:"early in-person voting opens Oct 24 2026",OH:"early voting opened Oct 12 2022, Oct 6 2026",TX:"opened Oct 24 2022, Oct 19 2026",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026",ME:"in-person absentee from about 29 days out both years: Oct 10 2022, Oct 5 2026"})[cur]}); mail ballots returned by each cutoff are included.`
     :d.live?`<br>Real 2026 data.`:`<br><b>${cur}: 2026 figures are synthetic stand-ins</b> until the real feed for this state is wired in.`;
   document.getElementById("foot").innerHTML=foot+src+` Partisan lean from county results; share metrics measure WHERE early voters come from, not who they voted for.`;}
 

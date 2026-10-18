@@ -23,22 +23,32 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "baseline" / "county_results.csv"
-MEMBER = {"TX": "TX-cleaned.csv", "ME": "me_final.csv", "OH": "oh22_cleaned.csv"}
+MEMBER = {"TX": "TX-cleaned.csv", "ME": "me_final.csv", "OH": "oh22_cleaned.csv", "MI": "mi22_cleaned.csv"}
 # Ohio's 2022 governor race was a DeWine landslide (R+25) that would make Cincinnati, Akron and
 # Dayton "Republican-leaning"; the 2022 Senate race (Vance vs Ryan, R+6) is the better partisan read.
-OFFICE = {"TX": "GOVERNOR", "ME": "GOVERNOR", "OH": "US SENATE"}
+OFFICE = {"TX": "GOVERNOR", "ME": "GOVERNOR", "OH": "US SENATE", "MI": "GOVERNOR"}
 
 
 def main(st: str = "TX"):
-    votes, names = Counter(), {}
+    # Per precinct use the TOTAL row when there is one, else the sum of its mode rows: some files
+    # (Michigan) report a precinct both as TOTAL and as ABSENTEE + ELECTION DAY, which would double-count.
+    total, modes, names = Counter(), Counter(), {}
     with zipfile.ZipFile(ROOT / "data" / "raw" / "medsl" / f"{st.lower()}22.zip") as z, z.open(MEMBER[st]) as fh:
         for r in csv.DictReader(io.TextIOWrapper(fh, encoding="utf-8")):
             if r["office"] != OFFICE[st] or r["stage"] != "GEN":
                 continue
             fips = r["county_fips"].zfill(5)
             party = r["party_simplified"] if r["party_simplified"] in ("DEMOCRAT", "REPUBLICAN") else "OTHER"
-            votes[(fips, party)] += int(r["votes"] or 0)
+            k = (fips, r["precinct"], party)
+            (total if r["mode"].upper() == "TOTAL" else modes)[k] += int(r["votes"] or 0)
             names[fips] = r["county_name"].strip().upper()
+    has_total = {k[:2] for k in total}
+    votes = Counter()
+    for (f, pr, party), v in total.items():
+        votes[(f, party)] += v
+    for (f, pr, party), v in modes.items():
+        if (f, pr) not in has_total:
+            votes[(f, party)] += v
     rows = [r for r in csv.DictReader(OUT.open(encoding="utf-8")) if r["state"] != st]
     fields = ["year", "office", "state", "county_fips", "county_name", "party", "mode", "votes"]
     rows += [{"year": 2022, "office": OFFICE[st], "state": st, "county_fips": f, "county_name": names[f],

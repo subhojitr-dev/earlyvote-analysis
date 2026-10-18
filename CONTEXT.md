@@ -28,6 +28,15 @@ Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD
   +3.1 pts toward D. District page live view waits on the user's daily SoS download (9–10 AM ET).
 - NC/AZ/NV/PA main-dashboard tabs still synthetic (footnote says so). Routine: GA_DAILY_DOWNLOAD.md.
 
+## 🟢 2026-10-18: MICHIGAN ADDED (main dashboard MI tab), vs 2022, AUTOMATIC
+- ingestor/mi_fetch.py: Power BI public querydata API (wabi-us-gov-iowa, resource key 197238ed..., model 764331)
+  → COUNTY_AV_BALLOT_COUNT (running totals per COUNT_DATE), COUNTY_IN_PERSON_EV_VOTE_COUNT_SUM, COUNTY_VOTER_COUNT.
+  Model holds 2024 general, 2026 primary, 2026 general only (no 2022).
+- 2022 = weekly SoS xlsx by jurisdiction attached to 2026 press releases (file date + 1 = 2022 count date);
+  2026 cut back to the latest snapshot's days-out. Metric = absentee returned (no MI EV in 2022).
+- add_baseline_2022.py now uses each precinct's TOTAL row when present (MI file double-reports some precincts).
+- First read: 2026 Oct 13 440,677 vs 2022 Oct 18 432,960 = 102%; county share net -3.6 pts (toward R).
+
 ## 🟢 2026-10-18: OHIO ADDED (main dashboard OH tab), vs 2022, ON REQUEST
 - 2026: SoS DATA Act file (per voter) blocks scripts; readable from the data.ohiosos.gov page in the browser pane:
   ingestor/oh_browser_aggregate.js → counts-only OH_2026_agg_<date>.txt → ingestor/oh_absentee.py.

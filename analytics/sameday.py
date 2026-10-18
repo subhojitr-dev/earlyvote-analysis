@@ -48,6 +48,11 @@ CFG = {
     "OH": {"ev_start": {2022: date(2022, 10, 11), 2026: date(2026, 10, 6)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "Ohio SoS county report (2022 snapshot)", "modes": {"inperson"}},
+    # Michigan: absentee ballots returned; 2022 only as weekly snapshots (ingestor/mi_fetch.py), 2026 cut
+    # back to the snapshot's days out. Early in-person voting (none in 2022) opens Oct 24 2026.
+    "MI": {"ev_start": {2022: date(2022, 10, 29), 2026: date(2026, 10, 24)},
+           "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
+           "source22": "Michigan SoS 2022 ballot stats by jurisdiction (weekly snapshot)"},
     "TX": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "TX SoS daily early-voting rosters",
@@ -94,12 +99,13 @@ def sameday(state: str = "GA"):
            "mail": meta.get("mail"), "mail_counties": meta.get("mail_counties"),
            "counties": meta.get("counties"), "years": {},
            **{k: meta[k] for k in ("pending", "statewide", "latest", "latest_inperson", "latest_mail",
-                                   "snapshot_2022", "first_through", "first_compare") if k in meta}}
+                                   "snapshot_2022", "first_through", "first_compare",
+                                   "latest_returned", "latest_sent", "latest_ev") if k in meta}}
     for y in YEARS:
         cut = cutoff(state, y, asof)
         counts = _from_daily(BASE / f"{state.lower()}_county" / f"early_{y}.csv", cut, c.get("modes"))
         out["years"][y] = {"cutoff": cut.isoformat(), "used": cut.isoformat(), "source": c["source22"],
-                           "counts": {k.replace(" ", ""): v for k, v in counts.items()}}
+                           "counts": {k.replace(" ", "").replace(".", ""): v for k, v in counts.items()}}
     return out
 
 

@@ -85,7 +85,7 @@ def _apply_sameday(state, out):
     res = {}
     for y, rec in s["years"].items():
         counts = rec["counts"]
-        res[y] = {c: {"early": counts.get(c.replace(" ", ""), 0), "total": v["total"]}
+        res[y] = {c: {"early": counts.get(c.replace(" ", "").replace(".", ""), 0), "total": v["total"]}
                   for c, v in out.get(y, {}).items()}
     return res
 
@@ -98,7 +98,8 @@ def sameday_info(state):
                                "basis": s["basis"], "mail": s["mail"], "mail_counties": s["mail_counties"],
                                "counties": s["counties"],
                                **{k: s[k] for k in ("pending", "statewide", "latest", "latest_inperson", "latest_mail",
-                                                    "snapshot_2022", "first_through", "first_compare") if k in s},
+                                                    "snapshot_2022", "first_through", "first_compare",
+                                                    "latest_returned", "latest_sent", "latest_ev") if k in s},
                                "years": {y: {k: r[k] for k in ("used", "source")} for y, r in s["years"].items()}}
 
 

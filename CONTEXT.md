@@ -28,6 +28,16 @@ Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD
   +3.1 pts toward D. District page live view waits on the user's daily SoS download (9–10 AM ET).
 - NC/AZ/NV/PA main-dashboard tabs still synthetic (footnote says so). Routine: GA_DAILY_DOWNLOAD.md.
 
+## 🟢 2026-10-18: OHIO ADDED (main dashboard OH tab), vs 2022, ON REQUEST
+- 2026: SoS DATA Act file (per voter) blocks scripts; readable from the data.ohiosos.gov page in the browser pane:
+  ingestor/oh_browser_aggregate.js → counts-only OH_2026_agg_<date>.txt → ingestor/oh_absentee.py.
+  (Pane downloads don't reach Downloads; returning a padded result string that gets saved to a tool-result
+  file, then parsing it, works.) In person = sent date == returned date (validated vs SoS week-1 194,841).
+- 2022: only county snapshots through Oct 24 / Oct 31 / Nov 6 2022 (Internet Archive xlsx); early_2022.csv
+  holds in-person increments; 2026 cut back to the latest reached snapshot's days-out. Pending notice
+  (statewide 3.9x) until data through Oct 19. Lean = 2022 US Senate (add_baseline_2022.py OFFICE map).
+- Not in the noon task (needs the browser); run on request. No OH district page (no 2022 district data).
+
 ## 🟢 2026-10-17: MAINE ADDED (main dashboard ME tab + /me/ district page), vs 2022 only
 - ingestor/me_absentee.py: SoS statewide absentee voter file (per voter: town, party, CG/SS/SR, rec type/date);
   needs a browser User-Agent (403 otherwise). Data through the day before the file's "as of" date.

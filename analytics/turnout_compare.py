@@ -97,6 +97,8 @@ def sameday_info(state):
     return None if not s else {"as_of": s["as_of"], "day": s["day"], "source": s["source"],
                                "basis": s["basis"], "mail": s["mail"], "mail_counties": s["mail_counties"],
                                "counties": s["counties"],
+                               **{k: s[k] for k in ("pending", "statewide", "latest", "latest_inperson", "latest_mail",
+                                                    "snapshot_2022", "first_through", "first_compare") if k in s},
                                "years": {y: {k: r[k] for k in ("used", "source")} for y, r in s["years"].items()}}
 
 

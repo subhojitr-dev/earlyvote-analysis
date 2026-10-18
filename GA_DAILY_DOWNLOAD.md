@@ -180,6 +180,37 @@ district, for the Demographic Analysis app.
 
 ---
 
+## Ohio (on request: say "run Ohio" to Claude; weekdays after ~11:30 AM)
+
+Ohio's statewide absentee / early-vote file (one row per voter, ~270 MB, updated **weekdays** ~11 AM) is
+refused to scripts, but opens normally in a browser on the Secretary of State's data portal. So Claude:
+
+1. opens https://data.ohiosos.gov/portal/election-dashboards in the browser pane,
+2. runs `ingestor/oh_browser_aggregate.js` there, which reduces the file to **counts only** (county x day x
+   in-person/mail, plus party by day) and saves `data/incoming/oh/OH_2026_agg_<date>.txt`,
+3. runs:
+
+```bash
+python ingestor/oh_absentee.py
+```
+```bash
+python web/build_dashboard.py
+```
+```bash
+git add data/oh_county web/index.html && git commit -m "OH early-vote update" && git push
+```
+
+- **Compared with 2022 on in-person early votes by county.** For 2022 Ohio only published county numbers at
+  three points (votes through Oct 24, Oct 31 and Nov 6 2022 = 15, 8 and 2 days before Election Day;
+  `data/incoming/oh/oh22_*.xlsx`, from the Internet Archive). 2026 is cut back to the same number of days out
+  as the latest of those points it has reached. Before the first one (data through Mon Oct 19, posted ~Tue
+  Oct 20) the OH tab shows the statewide comparison only (2022: 50,368 in person through Oct 17).
+- In person = ballot issued and cast the same day; matches the state's own week-1 total (194,841) within 1%.
+- County lean = 2022 **U.S. Senate** race (Vance vs Ryan); the governor race (DeWine +25) was too lopsided.
+- No district page: no 2022 district-level data exists for Ohio.
+
+---
+
 ## Maine (automatic, no download; runs in the daily noon task)
 
 Maine has no separate early voting: voting early = **absentee**, cast in person at the town clerk or returned

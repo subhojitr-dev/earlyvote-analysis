@@ -23,14 +23,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "baseline" / "county_results.csv"
-MEMBER = {"TX": "TX-cleaned.csv", "ME": "me_final.csv"}
+MEMBER = {"TX": "TX-cleaned.csv", "ME": "me_final.csv", "OH": "oh22_cleaned.csv"}
+# Ohio's 2022 governor race was a DeWine landslide (R+25) that would make Cincinnati, Akron and
+# Dayton "Republican-leaning"; the 2022 Senate race (Vance vs Ryan, R+6) is the better partisan read.
+OFFICE = {"TX": "GOVERNOR", "ME": "GOVERNOR", "OH": "US SENATE"}
 
 
 def main(st: str = "TX"):
     votes, names = Counter(), {}
     with zipfile.ZipFile(ROOT / "data" / "raw" / "medsl" / f"{st.lower()}22.zip") as z, z.open(MEMBER[st]) as fh:
         for r in csv.DictReader(io.TextIOWrapper(fh, encoding="utf-8")):
-            if r["office"] != "GOVERNOR" or r["stage"] != "GEN":
+            if r["office"] != OFFICE[st] or r["stage"] != "GEN":
                 continue
             fips = r["county_fips"].zfill(5)
             party = r["party_simplified"] if r["party_simplified"] in ("DEMOCRAT", "REPUBLICAN") else "OTHER"
@@ -38,7 +41,7 @@ def main(st: str = "TX"):
             names[fips] = r["county_name"].strip().upper()
     rows = [r for r in csv.DictReader(OUT.open(encoding="utf-8")) if r["state"] != st]
     fields = ["year", "office", "state", "county_fips", "county_name", "party", "mode", "votes"]
-    rows += [{"year": 2022, "office": "GOVERNOR", "state": st, "county_fips": f, "county_name": names[f],
+    rows += [{"year": 2022, "office": OFFICE[st], "state": st, "county_fips": f, "county_name": names[f],
               "party": p, "mode": "TOTAL", "votes": v} for (f, p), v in sorted(votes.items())]
     with OUT.open("w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
@@ -46,7 +49,7 @@ def main(st: str = "TX"):
         w.writerows(rows)
     d = sum(v for (_f, p), v in votes.items() if p == "DEMOCRAT")
     r_ = sum(v for (_f, p), v in votes.items() if p == "REPUBLICAN")
-    print(f"{st} 2022 governor: {len(names)} counties, D {d:,} / R {r_:,} ({d / (d + r_):.1%} D two-party)")
+    print(f"{st} 2022 {OFFICE[st].lower()}: {len(names)} counties, D {d:,} / R {r_:,} ({d / (d + r_):.1%} D two-party)")
 
 
 if __name__ == "__main__":

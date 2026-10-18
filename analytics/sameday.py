@@ -43,6 +43,11 @@ CFG = {
     "ME": {"ev_start": {2022: date(2022, 10, 10), 2026: date(2026, 10, 5)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "Maine SoS absentee voter file"},
+    # Ohio: 2022 exists only as county snapshots (ingestor/oh_absentee.py); 2026 is cut back to the
+    # snapshot's days-before-Election-Day there, so align purely by days out (28 days before both).
+    "OH": {"ev_start": {2022: date(2022, 10, 11), 2026: date(2026, 10, 6)},
+           "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
+           "source22": "Ohio SoS county report (2022 snapshot)", "modes": {"inperson"}},
     "TX": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "TX SoS daily early-voting rosters",
@@ -87,7 +92,9 @@ def sameday(state: str = "GA"):
     out = {"as_of": asof.isoformat(), "day": (asof - c["ev_start"][2026]).days + 1,
            "source": meta.get("source"), "basis": meta.get("basis", "in-person + mail"),
            "mail": meta.get("mail"), "mail_counties": meta.get("mail_counties"),
-           "counties": meta.get("counties"), "years": {}}
+           "counties": meta.get("counties"), "years": {},
+           **{k: meta[k] for k in ("pending", "statewide", "latest", "latest_inperson", "latest_mail",
+                                   "snapshot_2022", "first_through", "first_compare") if k in meta}}
     for y in YEARS:
         cut = cutoff(state, y, asof)
         counts = _from_daily(BASE / f"{state.lower()}_county" / f"early_{y}.csv", cut, c.get("modes"))
@@ -108,4 +115,8 @@ if __name__ == "__main__":
     print(f"{st} 2026 through {s['as_of']} (early-voting day {s['day']}): {tot:,}  [{s['source']}]")
     for y, rec in s["years"].items():
         n = sum(rec["counts"].values())
+        if not n:
+            print(f"{y}: no county data at this point yet ({rec['source']})"
+                  + (f"; statewide 2026 {s['statewide']['n26']:,} vs {s['statewide']['n22']:,}" if s.get("statewide") else ""))
+            continue
         print(f"{y} through {rec['used']} (same day): {n:,}   2026 = {tot / n:.0%} of {y}  [{rec['source']}]")

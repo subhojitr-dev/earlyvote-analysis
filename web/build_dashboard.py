@@ -21,13 +21,14 @@ from turnout_compare import (compare, group_deviation, composite_lean,   # noqa:
                              turnout_progress, turnout_rate, sameday_info)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
-STATES = ["GA", "TX", "NC", "ME", "AZ", "NV", "PA"]
+STATES = ["GA", "TX", "NC", "OH", "ME", "AZ", "NV", "PA"]
 
 
 def state_data(state):
     sd = sameday_info(state)
-    if sd and sd["day"] < 1 and state == "TX":
-        # before in-person early voting opens, TX has only patchy mail counts -> no comparison yet
+    if sd and (sd.get("pending") or (sd["day"] < 1 and state == "TX")):
+        # TX before in-person voting opens (patchy mail counts only); OH before its first 2022
+        # county snapshot point (only a statewide comparison exists) -> notice, no county table
         return {"state": state, "pending": sd}
     ref_years, basis, rows, hist, cur, lean = compare(state)
     gd = group_deviation(state, SPLIT)
@@ -135,7 +136,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
-  <div class="sub">County-level early-voting signal vs past cycles (Georgia, Maine, North Carolina &amp; Texas: 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
+  <div class="sub">County-level early-voting signal vs past cycles (Georgia, Maine, North Carolina, Ohio &amp; Texas: 2022 at the same day of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
   <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a>, <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a>, <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a> and <a href="/me/" style="color:var(--accent)">Maine &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">
@@ -175,6 +176,19 @@ function pick(s){cur=s;sortKey="share";sortDir=-1;tabs();
   if(!show){pendingView();return;}
   cards();panels();render();}
 function pendingView(){const p=DATA[cur].pending;
+  if(cur==="OH"){const s=p.statewide, x=(s.n26/s.n22).toFixed(1);
+    document.getElementById("cards").innerHTML=`<div class="card"><div class="lab">Ohio in-person early votes through ${p.latest}</div>
+      <div class="big">${p.latest_inperson.toLocaleString()}</div><div class="note">plus ${p.latest_mail.toLocaleString()} mail ballots returned</div></div>
+      <div class="card"><div class="lab">Statewide vs 2022, same point (22 days out)</div>
+      <div class="big" style="color:var(--accent)">${x}&times;</div><div class="note">${s.n26.toLocaleString()} in person through ${s.d26} vs ${s.n22.toLocaleString()} through ${s.d22}</div></div>
+      <div class="card" style="grid-column:1/-1"><div class="lab">County comparison with 2022</div>
+      <div class="big" style="font-size:20px">Starts with data through ${p.first_through} (posted ~${p.first_compare})</div>
+      <div class="note">For 2022 Ohio published county early-vote numbers only at three points (votes through Oct 24, Oct 31 and Nov 6, 2022:
+      15, 8 and 2 days before Election Day). Ohio is compared on <b>in-person early votes</b> by county, with 2026 cut back to the same number
+      of days out as the latest of those points. Until 2026 reaches the first one, only the statewide figure above exists.
+      Source: Ohio Secretary of State absentee/early-vote file (in person = ballot issued and cast the same day; matches the state's
+      own week-1 total of 194,841 within 1%).</div></div>`;
+    return;}
   document.getElementById("cards").innerHTML=`<div class="card" style="grid-column:1/-1">
     <div class="lab">Texas &middot; waiting for in-person early voting</div>
     <div class="big" style="font-size:20px">First comparison with 2022: Tue Oct 20 morning</div>
@@ -265,7 +279,7 @@ function render(){header();const d=DATA[cur],ys=d.ref_years;
     : `<b>Turnout progress:</b> 2026 early ballots as a % of that county's FULL turnout in the given year. <span class="pill" style="background:rgba(34,197,94,.4)">Green bar</span> = already past 100% (exceeded that whole election).`;
   const sd=d.sameday;
   const src=sd?`<br><b>Real 2026 data</b> through ${sd.as_of} (${sd.day>0?"early-voting day "+sd.day:"before in-person early voting opens"}) &middot; source: ${sd.source}. `+
-      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by day of in-person early voting (${({TX:"opened Oct 24 2022, Oct 19 2026",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026",ME:"in-person absentee from about 29 days out both years: Oct 10 2022, Oct 5 2026"})[cur]}); mail ballots returned by each cutoff are included.`
+      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by ${cur==="OH"?"days before Election Day: Ohio published 2022 county numbers only through Oct 24, Oct 31 and Nov 6 2022, so 2026 is cut back to the latest of those points it has reached; in-person early votes only":"day of in-person early voting"} (${({OH:"early voting opened Oct 12 2022, Oct 6 2026",TX:"opened Oct 24 2022, Oct 19 2026",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026",ME:"in-person absentee from about 29 days out both years: Oct 10 2022, Oct 5 2026"})[cur]}); mail ballots returned by each cutoff are included.`
     :d.live?`<br>Real 2026 data.`:`<br><b>${cur}: 2026 figures are synthetic stand-ins</b> until the real feed for this state is wired in.`;
   document.getElementById("foot").innerHTML=foot+src+` Partisan lean from county results; share metrics measure WHERE early voters come from, not who they voted for.`;}
 

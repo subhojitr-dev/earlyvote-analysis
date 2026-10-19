@@ -1,0 +1,3515 @@
+asof,chamber,district,dim,group,ballots
+2026-10-19,state,0,race,White,445292
+2026-10-19,state,0,race,Black,304299
+2026-10-19,state,0,race,Hispanic,24442
+2026-10-19,state,0,race,Asian,20350
+2026-10-19,state,0,race,Other,68397
+2026-10-19,state,0,gender,Women,473670
+2026-10-19,state,0,gender,Men,387307
+2026-10-19,state,0,gender,Not stated,1803
+2026-10-19,state,0,age,18-29,58390
+2026-10-19,state,0,age,30-39,61803
+2026-10-19,state,0,age,40-49,88168
+2026-10-19,state,0,age,50-64,250632
+2026-10-19,state,0,age,65+,403405
+2026-10-19,state,0,age,Not stated,382
+2026-10-19,house,1,race,White,1941
+2026-10-19,house,1,race,Black,69
+2026-10-19,house,1,race,Hispanic,16
+2026-10-19,house,1,race,Asian,9
+2026-10-19,house,1,race,Other,119
+2026-10-19,house,1,gender,Women,1097
+2026-10-19,house,1,gender,Men,1053
+2026-10-19,house,1,gender,Not stated,4
+2026-10-19,house,1,age,18-29,63
+2026-10-19,house,1,age,30-39,77
+2026-10-19,house,1,age,40-49,131
+2026-10-19,house,1,age,50-64,520
+2026-10-19,house,1,age,65+,1361
+2026-10-19,house,1,age,Not stated,2
+2026-10-19,house,2,race,White,2523
+2026-10-19,house,2,race,Black,122
+2026-10-19,house,2,race,Hispanic,131
+2026-10-19,house,2,race,Asian,16
+2026-10-19,house,2,race,Other,169
+2026-10-19,house,2,gender,Women,1477
+2026-10-19,house,2,gender,Men,1482
+2026-10-19,house,2,gender,Not stated,2
+2026-10-19,house,2,age,18-29,186
+2026-10-19,house,2,age,30-39,182
+2026-10-19,house,2,age,40-49,215
+2026-10-19,house,2,age,50-64,800
+2026-10-19,house,2,age,65+,1578
+2026-10-19,house,2,age,Not stated,0
+2026-10-19,house,3,race,White,4234
+2026-10-19,house,3,race,Black,144
+2026-10-19,house,3,race,Hispanic,51
+2026-10-19,house,3,race,Asian,24
+2026-10-19,house,3,race,Other,250
+2026-10-19,house,3,gender,Women,2457
+2026-10-19,house,3,gender,Men,2239
+2026-10-19,house,3,gender,Not stated,7
+2026-10-19,house,3,age,18-29,175
+2026-10-19,house,3,age,30-39,233
+2026-10-19,house,3,age,40-49,339
+2026-10-19,house,3,age,50-64,1143
+2026-10-19,house,3,age,65+,2813
+2026-10-19,house,3,age,Not stated,0
+2026-10-19,house,4,race,White,1197
+2026-10-19,house,4,race,Black,129
+2026-10-19,house,4,race,Hispanic,576
+2026-10-19,house,4,race,Asian,11
+2026-10-19,house,4,race,Other,110
+2026-10-19,house,4,gender,Women,1103
+2026-10-19,house,4,gender,Men,918
+2026-10-19,house,4,gender,Not stated,2
+2026-10-19,house,4,age,18-29,315
+2026-10-19,house,4,age,30-39,195
+2026-10-19,house,4,age,40-49,194
+2026-10-19,house,4,age,50-64,427
+2026-10-19,house,4,age,65+,892
+2026-10-19,house,4,age,Not stated,0
+2026-10-19,house,5,race,White,2514
+2026-10-19,house,5,race,Black,210
+2026-10-19,house,5,race,Hispanic,149
+2026-10-19,house,5,race,Asian,19
+2026-10-19,house,5,race,Other,139
+2026-10-19,house,5,gender,Women,1536
+2026-10-19,house,5,gender,Men,1493
+2026-10-19,house,5,gender,Not stated,2
+2026-10-19,house,5,age,18-29,183
+2026-10-19,house,5,age,30-39,185
+2026-10-19,house,5,age,40-49,240
+2026-10-19,house,5,age,50-64,831
+2026-10-19,house,5,age,65+,1590
+2026-10-19,house,5,age,Not stated,2
+2026-10-19,house,6,race,White,2559
+2026-10-19,house,6,race,Black,52
+2026-10-19,house,6,race,Hispanic,136
+2026-10-19,house,6,race,Asian,4
+2026-10-19,house,6,race,Other,115
+2026-10-19,house,6,gender,Women,1432
+2026-10-19,house,6,gender,Men,1430
+2026-10-19,house,6,gender,Not stated,4
+2026-10-19,house,6,age,18-29,172
+2026-10-19,house,6,age,30-39,145
+2026-10-19,house,6,age,40-49,223
+2026-10-19,house,6,age,50-64,792
+2026-10-19,house,6,age,65+,1532
+2026-10-19,house,6,age,Not stated,2
+2026-10-19,house,7,race,White,4937
+2026-10-19,house,7,race,Black,24
+2026-10-19,house,7,race,Hispanic,87
+2026-10-19,house,7,race,Asian,16
+2026-10-19,house,7,race,Other,302
+2026-10-19,house,7,gender,Women,2671
+2026-10-19,house,7,gender,Men,2689
+2026-10-19,house,7,gender,Not stated,6
+2026-10-19,house,7,age,18-29,112
+2026-10-19,house,7,age,30-39,107
+2026-10-19,house,7,age,40-49,200
+2026-10-19,house,7,age,50-64,1182
+2026-10-19,house,7,age,65+,3765
+2026-10-19,house,7,age,Not stated,0
+2026-10-19,house,8,race,White,6835
+2026-10-19,house,8,race,Black,37
+2026-10-19,house,8,race,Hispanic,74
+2026-10-19,house,8,race,Asian,35
+2026-10-19,house,8,race,Other,401
+2026-10-19,house,8,gender,Women,3775
+2026-10-19,house,8,gender,Men,3604
+2026-10-19,house,8,gender,Not stated,3
+2026-10-19,house,8,age,18-29,164
+2026-10-19,house,8,age,30-39,171
+2026-10-19,house,8,age,40-49,289
+2026-10-19,house,8,age,50-64,1548
+2026-10-19,house,8,age,65+,5210
+2026-10-19,house,8,age,Not stated,0
+2026-10-19,house,9,race,White,5181
+2026-10-19,house,9,race,Black,47
+2026-10-19,house,9,race,Hispanic,105
+2026-10-19,house,9,race,Asian,34
+2026-10-19,house,9,race,Other,302
+2026-10-19,house,9,gender,Women,2881
+2026-10-19,house,9,gender,Men,2783
+2026-10-19,house,9,gender,Not stated,5
+2026-10-19,house,9,age,18-29,231
+2026-10-19,house,9,age,30-39,246
+2026-10-19,house,9,age,40-49,329
+2026-10-19,house,9,age,50-64,1423
+2026-10-19,house,9,age,65+,3438
+2026-10-19,house,9,age,Not stated,2
+2026-10-19,house,10,race,White,4630
+2026-10-19,house,10,race,Black,72
+2026-10-19,house,10,race,Hispanic,83
+2026-10-19,house,10,race,Asian,36
+2026-10-19,house,10,race,Other,264
+2026-10-19,house,10,gender,Women,2614
+2026-10-19,house,10,gender,Men,2465
+2026-10-19,house,10,gender,Not stated,6
+2026-10-19,house,10,age,18-29,153
+2026-10-19,house,10,age,30-39,166
+2026-10-19,house,10,age,40-49,271
+2026-10-19,house,10,age,50-64,1204
+2026-10-19,house,10,age,65+,3289
+2026-10-19,house,10,age,Not stated,2
+2026-10-19,house,11,race,White,4763
+2026-10-19,house,11,race,Black,106
+2026-10-19,house,11,race,Hispanic,92
+2026-10-19,house,11,race,Asian,55
+2026-10-19,house,11,race,Other,480
+2026-10-19,house,11,gender,Women,2762
+2026-10-19,house,11,gender,Men,2730
+2026-10-19,house,11,gender,Not stated,4
+2026-10-19,house,11,age,18-29,238
+2026-10-19,house,11,age,30-39,233
+2026-10-19,house,11,age,40-49,392
+2026-10-19,house,11,age,50-64,1487
+2026-10-19,house,11,age,65+,3146
+2026-10-19,house,11,age,Not stated,0
+2026-10-19,house,12,race,White,2560
+2026-10-19,house,12,race,Black,334
+2026-10-19,house,12,race,Hispanic,56
+2026-10-19,house,12,race,Asian,12
+2026-10-19,house,12,race,Other,158
+2026-10-19,house,12,gender,Women,1613
+2026-10-19,house,12,gender,Men,1502
+2026-10-19,house,12,gender,Not stated,5
+2026-10-19,house,12,age,18-29,141
+2026-10-19,house,12,age,30-39,125
+2026-10-19,house,12,age,40-49,208
+2026-10-19,house,12,age,50-64,799
+2026-10-19,house,12,age,65+,1845
+2026-10-19,house,12,age,Not stated,2
+2026-10-19,house,13,race,White,2602
+2026-10-19,house,13,race,Black,837
+2026-10-19,house,13,race,Hispanic,84
+2026-10-19,house,13,race,Asian,30
+2026-10-19,house,13,race,Other,138
+2026-10-19,house,13,gender,Women,2010
+2026-10-19,house,13,gender,Men,1677
+2026-10-19,house,13,gender,Not stated,4
+2026-10-19,house,13,age,18-29,194
+2026-10-19,house,13,age,30-39,195
+2026-10-19,house,13,age,40-49,272
+2026-10-19,house,13,age,50-64,865
+2026-10-19,house,13,age,65+,2163
+2026-10-19,house,13,age,Not stated,2
+2026-10-19,house,14,race,White,3006
+2026-10-19,house,14,race,Black,322
+2026-10-19,house,14,race,Hispanic,104
+2026-10-19,house,14,race,Asian,25
+2026-10-19,house,14,race,Other,269
+2026-10-19,house,14,gender,Women,1888
+2026-10-19,house,14,gender,Men,1831
+2026-10-19,house,14,gender,Not stated,7
+2026-10-19,house,14,age,18-29,197
+2026-10-19,house,14,age,30-39,197
+2026-10-19,house,14,age,40-49,262
+2026-10-19,house,14,age,50-64,1070
+2026-10-19,house,14,age,65+,2000
+2026-10-19,house,14,age,Not stated,0
+2026-10-19,house,15,race,White,2779
+2026-10-19,house,15,race,Black,504
+2026-10-19,house,15,race,Hispanic,108
+2026-10-19,house,15,race,Asian,32
+2026-10-19,house,15,race,Other,254
+2026-10-19,house,15,gender,Women,1924
+2026-10-19,house,15,gender,Men,1746
+2026-10-19,house,15,gender,Not stated,7
+2026-10-19,house,15,age,18-29,217
+2026-10-19,house,15,age,30-39,217
+2026-10-19,house,15,age,40-49,285
+2026-10-19,house,15,age,50-64,980
+2026-10-19,house,15,age,65+,1977
+2026-10-19,house,15,age,Not stated,1
+2026-10-19,house,16,race,White,2970
+2026-10-19,house,16,race,Black,528
+2026-10-19,house,16,race,Hispanic,55
+2026-10-19,house,16,race,Asian,17
+2026-10-19,house,16,race,Other,209
+2026-10-19,house,16,gender,Women,1895
+2026-10-19,house,16,gender,Men,1882
+2026-10-19,house,16,gender,Not stated,2
+2026-10-19,house,16,age,18-29,162
+2026-10-19,house,16,age,30-39,145
+2026-10-19,house,16,age,40-49,303
+2026-10-19,house,16,age,50-64,1035
+2026-10-19,house,16,age,65+,2134
+2026-10-19,house,16,age,Not stated,0
+2026-10-19,house,17,race,White,2566
+2026-10-19,house,17,race,Black,1346
+2026-10-19,house,17,race,Hispanic,157
+2026-10-19,house,17,race,Asian,42
+2026-10-19,house,17,race,Other,438
+2026-10-19,house,17,gender,Women,2449
+2026-10-19,house,17,gender,Men,2093
+2026-10-19,house,17,gender,Not stated,7
+2026-10-19,house,17,age,18-29,294
+2026-10-19,house,17,age,30-39,293
+2026-10-19,house,17,age,40-49,511
+2026-10-19,house,17,age,50-64,1481
+2026-10-19,house,17,age,65+,1970
+2026-10-19,house,17,age,Not stated,0
+2026-10-19,house,18,race,White,2639
+2026-10-19,house,18,race,Black,388
+2026-10-19,house,18,race,Hispanic,45
+2026-10-19,house,18,race,Asian,16
+2026-10-19,house,18,race,Other,172
+2026-10-19,house,18,gender,Women,1662
+2026-10-19,house,18,gender,Men,1597
+2026-10-19,house,18,gender,Not stated,1
+2026-10-19,house,18,age,18-29,150
+2026-10-19,house,18,age,30-39,172
+2026-10-19,house,18,age,40-49,266
+2026-10-19,house,18,age,50-64,994
+2026-10-19,house,18,age,65+,1677
+2026-10-19,house,18,age,Not stated,1
+2026-10-19,house,19,race,White,3422
+2026-10-19,house,19,race,Black,1915
+2026-10-19,house,19,race,Hispanic,157
+2026-10-19,house,19,race,Asian,76
+2026-10-19,house,19,race,Other,521
+2026-10-19,house,19,gender,Women,3356
+2026-10-19,house,19,gender,Men,2725
+2026-10-19,house,19,gender,Not stated,10
+2026-10-19,house,19,age,18-29,422
+2026-10-19,house,19,age,30-39,318
+2026-10-19,house,19,age,40-49,626
+2026-10-19,house,19,age,50-64,1978
+2026-10-19,house,19,age,65+,2744
+2026-10-19,house,19,age,Not stated,3
+2026-10-19,house,20,race,White,4177
+2026-10-19,house,20,race,Black,474
+2026-10-19,house,20,race,Hispanic,151
+2026-10-19,house,20,race,Asian,72
+2026-10-19,house,20,race,Other,412
+2026-10-19,house,20,gender,Women,2755
+2026-10-19,house,20,gender,Men,2526
+2026-10-19,house,20,gender,Not stated,5
+2026-10-19,house,20,age,18-29,351
+2026-10-19,house,20,age,30-39,303
+2026-10-19,house,20,age,40-49,422
+2026-10-19,house,20,age,50-64,1501
+2026-10-19,house,20,age,65+,2708
+2026-10-19,house,20,age,Not stated,1
+2026-10-19,house,21,race,White,5072
+2026-10-19,house,21,race,Black,330
+2026-10-19,house,21,race,Hispanic,202
+2026-10-19,house,21,race,Asian,83
+2026-10-19,house,21,race,Other,516
+2026-10-19,house,21,gender,Women,3223
+2026-10-19,house,21,gender,Men,2973
+2026-10-19,house,21,gender,Not stated,7
+2026-10-19,house,21,age,18-29,326
+2026-10-19,house,21,age,30-39,374
+2026-10-19,house,21,age,40-49,571
+2026-10-19,house,21,age,50-64,1676
+2026-10-19,house,21,age,65+,3255
+2026-10-19,house,21,age,Not stated,1
+2026-10-19,house,22,race,White,3322
+2026-10-19,house,22,race,Black,891
+2026-10-19,house,22,race,Hispanic,249
+2026-10-19,house,22,race,Asian,135
+2026-10-19,house,22,race,Other,453
+2026-10-19,house,22,gender,Women,2701
+2026-10-19,house,22,gender,Men,2337
+2026-10-19,house,22,gender,Not stated,12
+2026-10-19,house,22,age,18-29,384
+2026-10-19,house,22,age,30-39,446
+2026-10-19,house,22,age,40-49,527
+2026-10-19,house,22,age,50-64,1410
+2026-10-19,house,22,age,65+,2281
+2026-10-19,house,22,age,Not stated,2
+2026-10-19,house,23,race,White,5041
+2026-10-19,house,23,race,Black,295
+2026-10-19,house,23,race,Hispanic,154
+2026-10-19,house,23,race,Asian,47
+2026-10-19,house,23,race,Other,480
+2026-10-19,house,23,gender,Women,3112
+2026-10-19,house,23,gender,Men,2901
+2026-10-19,house,23,gender,Not stated,4
+2026-10-19,house,23,age,18-29,270
+2026-10-19,house,23,age,30-39,287
+2026-10-19,house,23,age,40-49,374
+2026-10-19,house,23,age,50-64,1310
+2026-10-19,house,23,age,65+,3775
+2026-10-19,house,23,age,Not stated,1
+2026-10-19,house,24,race,White,3539
+2026-10-19,house,24,race,Black,311
+2026-10-19,house,24,race,Hispanic,161
+2026-10-19,house,24,race,Asian,343
+2026-10-19,house,24,race,Other,928
+2026-10-19,house,24,gender,Women,2761
+2026-10-19,house,24,gender,Men,2505
+2026-10-19,house,24,gender,Not stated,16
+2026-10-19,house,24,age,18-29,380
+2026-10-19,house,24,age,30-39,266
+2026-10-19,house,24,age,40-49,597
+2026-10-19,house,24,age,50-64,1717
+2026-10-19,house,24,age,65+,2321
+2026-10-19,house,24,age,Not stated,1
+2026-10-19,house,25,race,White,2942
+2026-10-19,house,25,race,Black,354
+2026-10-19,house,25,race,Hispanic,155
+2026-10-19,house,25,race,Asian,760
+2026-10-19,house,25,race,Other,882
+2026-10-19,house,25,gender,Women,2606
+2026-10-19,house,25,gender,Men,2468
+2026-10-19,house,25,gender,Not stated,19
+2026-10-19,house,25,age,18-29,481
+2026-10-19,house,25,age,30-39,163
+2026-10-19,house,25,age,40-49,439
+2026-10-19,house,25,age,50-64,1818
+2026-10-19,house,25,age,65+,2191
+2026-10-19,house,25,age,Not stated,1
+2026-10-19,house,26,race,White,3524
+2026-10-19,house,26,race,Black,189
+2026-10-19,house,26,race,Hispanic,148
+2026-10-19,house,26,race,Asian,323
+2026-10-19,house,26,race,Other,857
+2026-10-19,house,26,gender,Women,2601
+2026-10-19,house,26,gender,Men,2422
+2026-10-19,house,26,gender,Not stated,18
+2026-10-19,house,26,age,18-29,340
+2026-10-19,house,26,age,30-39,234
+2026-10-19,house,26,age,40-49,414
+2026-10-19,house,26,age,50-64,1397
+2026-10-19,house,26,age,65+,2655
+2026-10-19,house,26,age,Not stated,1
+2026-10-19,house,27,race,White,4634
+2026-10-19,house,27,race,Black,146
+2026-10-19,house,27,race,Hispanic,143
+2026-10-19,house,27,race,Asian,35
+2026-10-19,house,27,race,Other,270
+2026-10-19,house,27,gender,Women,2653
+2026-10-19,house,27,gender,Men,2568
+2026-10-19,house,27,gender,Not stated,7
+2026-10-19,house,27,age,18-29,258
+2026-10-19,house,27,age,30-39,267
+2026-10-19,house,27,age,40-49,336
+2026-10-19,house,27,age,50-64,1312
+2026-10-19,house,27,age,65+,3054
+2026-10-19,house,27,age,Not stated,1
+2026-10-19,house,28,race,White,4396
+2026-10-19,house,28,race,Black,154
+2026-10-19,house,28,race,Hispanic,193
+2026-10-19,house,28,race,Asian,107
+2026-10-19,house,28,race,Other,848
+2026-10-19,house,28,gender,Women,2967
+2026-10-19,house,28,gender,Men,2715
+2026-10-19,house,28,gender,Not stated,16
+2026-10-19,house,28,age,18-29,360
+2026-10-19,house,28,age,30-39,269
+2026-10-19,house,28,age,40-49,503
+2026-10-19,house,28,age,50-64,1574
+2026-10-19,house,28,age,65+,2991
+2026-10-19,house,28,age,Not stated,1
+2026-10-19,house,29,race,White,2042
+2026-10-19,house,29,race,Black,474
+2026-10-19,house,29,race,Hispanic,282
+2026-10-19,house,29,race,Asian,68
+2026-10-19,house,29,race,Other,226
+2026-10-19,house,29,gender,Women,1712
+2026-10-19,house,29,gender,Men,1377
+2026-10-19,house,29,gender,Not stated,3
+2026-10-19,house,29,age,18-29,288
+2026-10-19,house,29,age,30-39,201
+2026-10-19,house,29,age,40-49,240
+2026-10-19,house,29,age,50-64,641
+2026-10-19,house,29,age,65+,1722
+2026-10-19,house,29,age,Not stated,0
+2026-10-19,house,30,race,White,4713
+2026-10-19,house,30,race,Black,522
+2026-10-19,house,30,race,Hispanic,295
+2026-10-19,house,30,race,Asian,120
+2026-10-19,house,30,race,Other,470
+2026-10-19,house,30,gender,Women,3306
+2026-10-19,house,30,gender,Men,2801
+2026-10-19,house,30,gender,Not stated,13
+2026-10-19,house,30,age,18-29,402
+2026-10-19,house,30,age,30-39,287
+2026-10-19,house,30,age,40-49,470
+2026-10-19,house,30,age,50-64,1514
+2026-10-19,house,30,age,65+,3444
+2026-10-19,house,30,age,Not stated,3
+2026-10-19,house,31,race,White,3767
+2026-10-19,house,31,race,Black,543
+2026-10-19,house,31,race,Hispanic,254
+2026-10-19,house,31,race,Asian,59
+2026-10-19,house,31,race,Other,326
+2026-10-19,house,31,gender,Women,2600
+2026-10-19,house,31,gender,Men,2336
+2026-10-19,house,31,gender,Not stated,13
+2026-10-19,house,31,age,18-29,318
+2026-10-19,house,31,age,30-39,287
+2026-10-19,house,31,age,40-49,466
+2026-10-19,house,31,age,50-64,1319
+2026-10-19,house,31,age,65+,2557
+2026-10-19,house,31,age,Not stated,2
+2026-10-19,house,32,race,White,3920
+2026-10-19,house,32,race,Black,275
+2026-10-19,house,32,race,Hispanic,45
+2026-10-19,house,32,race,Asian,22
+2026-10-19,house,32,race,Other,179
+2026-10-19,house,32,gender,Women,2215
+2026-10-19,house,32,gender,Men,2222
+2026-10-19,house,32,gender,Not stated,4
+2026-10-19,house,32,age,18-29,140
+2026-10-19,house,32,age,30-39,200
+2026-10-19,house,32,age,40-49,265
+2026-10-19,house,32,age,50-64,1205
+2026-10-19,house,32,age,65+,2630
+2026-10-19,house,32,age,Not stated,1
+2026-10-19,house,33,race,White,3545
+2026-10-19,house,33,race,Black,258
+2026-10-19,house,33,race,Hispanic,46
+2026-10-19,house,33,race,Asian,17
+2026-10-19,house,33,race,Other,204
+2026-10-19,house,33,gender,Women,2000
+2026-10-19,house,33,gender,Men,2068
+2026-10-19,house,33,gender,Not stated,2
+2026-10-19,house,33,age,18-29,130
+2026-10-19,house,33,age,30-39,158
+2026-10-19,house,33,age,40-49,207
+2026-10-19,house,33,age,50-64,1016
+2026-10-19,house,33,age,65+,2559
+2026-10-19,house,33,age,Not stated,0
+2026-10-19,house,34,race,White,4464
+2026-10-19,house,34,race,Black,1572
+2026-10-19,house,34,race,Hispanic,225
+2026-10-19,house,34,race,Asian,172
+2026-10-19,house,34,race,Other,597
+2026-10-19,house,34,gender,Women,3718
+2026-10-19,house,34,gender,Men,3297
+2026-10-19,house,34,gender,Not stated,15
+2026-10-19,house,34,age,18-29,533
+2026-10-19,house,34,age,30-39,431
+2026-10-19,house,34,age,40-49,740
+2026-10-19,house,34,age,50-64,2058
+2026-10-19,house,34,age,65+,3268
+2026-10-19,house,34,age,Not stated,0
+2026-10-19,house,35,race,White,1955
+2026-10-19,house,35,race,Black,1431
+2026-10-19,house,35,race,Hispanic,246
+2026-10-19,house,35,race,Asian,117
+2026-10-19,house,35,race,Other,373
+2026-10-19,house,35,gender,Women,2377
+2026-10-19,house,35,gender,Men,1736
+2026-10-19,house,35,gender,Not stated,9
+2026-10-19,house,35,age,18-29,534
+2026-10-19,house,35,age,30-39,482
+2026-10-19,house,35,age,40-49,507
+2026-10-19,house,35,age,50-64,1142
+2026-10-19,house,35,age,65+,1456
+2026-10-19,house,35,age,Not stated,1
+2026-10-19,house,36,race,White,4393
+2026-10-19,house,36,race,Black,1289
+2026-10-19,house,36,race,Hispanic,237
+2026-10-19,house,36,race,Asian,111
+2026-10-19,house,36,race,Other,565
+2026-10-19,house,36,gender,Women,3501
+2026-10-19,house,36,gender,Men,3081
+2026-10-19,house,36,gender,Not stated,13
+2026-10-19,house,36,age,18-29,509
+2026-10-19,house,36,age,30-39,391
+2026-10-19,house,36,age,40-49,744
+2026-10-19,house,36,age,50-64,2135
+2026-10-19,house,36,age,65+,2813
+2026-10-19,house,36,age,Not stated,3
+2026-10-19,house,37,race,White,2242
+2026-10-19,house,37,race,Black,1053
+2026-10-19,house,37,race,Hispanic,187
+2026-10-19,house,37,race,Asian,114
+2026-10-19,house,37,race,Other,319
+2026-10-19,house,37,gender,Women,2175
+2026-10-19,house,37,gender,Men,1732
+2026-10-19,house,37,gender,Not stated,8
+2026-10-19,house,37,age,18-29,276
+2026-10-19,house,37,age,30-39,393
+2026-10-19,house,37,age,40-49,458
+2026-10-19,house,37,age,50-64,1091
+2026-10-19,house,37,age,65+,1695
+2026-10-19,house,37,age,Not stated,2
+2026-10-19,house,38,race,White,1395
+2026-10-19,house,38,race,Black,4043
+2026-10-19,house,38,race,Hispanic,274
+2026-10-19,house,38,race,Asian,57
+2026-10-19,house,38,race,Other,619
+2026-10-19,house,38,gender,Women,3830
+2026-10-19,house,38,gender,Men,2552
+2026-10-19,house,38,gender,Not stated,6
+2026-10-19,house,38,age,18-29,533
+2026-10-19,house,38,age,30-39,542
+2026-10-19,house,38,age,40-49,768
+2026-10-19,house,38,age,50-64,2126
+2026-10-19,house,38,age,65+,2416
+2026-10-19,house,38,age,Not stated,3
+2026-10-19,house,39,race,White,1100
+2026-10-19,house,39,race,Black,3546
+2026-10-19,house,39,race,Hispanic,244
+2026-10-19,house,39,race,Asian,63
+2026-10-19,house,39,race,Other,550
+2026-10-19,house,39,gender,Women,3181
+2026-10-19,house,39,gender,Men,2312
+2026-10-19,house,39,gender,Not stated,10
+2026-10-19,house,39,age,18-29,435
+2026-10-19,house,39,age,30-39,577
+2026-10-19,house,39,age,40-49,816
+2026-10-19,house,39,age,50-64,1942
+2026-10-19,house,39,age,65+,1731
+2026-10-19,house,39,age,Not stated,2
+2026-10-19,house,40,race,White,2313
+2026-10-19,house,40,race,Black,1789
+2026-10-19,house,40,race,Hispanic,118
+2026-10-19,house,40,race,Asian,26
+2026-10-19,house,40,race,Other,428
+2026-10-19,house,40,gender,Women,2521
+2026-10-19,house,40,gender,Men,2144
+2026-10-19,house,40,gender,Not stated,9
+2026-10-19,house,40,age,18-29,319
+2026-10-19,house,40,age,30-39,261
+2026-10-19,house,40,age,40-49,442
+2026-10-19,house,40,age,50-64,1641
+2026-10-19,house,40,age,65+,2010
+2026-10-19,house,40,age,Not stated,1
+2026-10-19,house,41,race,White,1304
+2026-10-19,house,41,race,Black,2187
+2026-10-19,house,41,race,Hispanic,365
+2026-10-19,house,41,race,Asian,87
+2026-10-19,house,41,race,Other,413
+2026-10-19,house,41,gender,Women,2529
+2026-10-19,house,41,gender,Men,1815
+2026-10-19,house,41,gender,Not stated,12
+2026-10-19,house,41,age,18-29,406
+2026-10-19,house,41,age,30-39,429
+2026-10-19,house,41,age,40-49,484
+2026-10-19,house,41,age,50-64,1273
+2026-10-19,house,41,age,65+,1762
+2026-10-19,house,41,age,Not stated,2
+2026-10-19,house,42,race,White,2289
+2026-10-19,house,42,race,Black,1601
+2026-10-19,house,42,race,Hispanic,227
+2026-10-19,house,42,race,Asian,118
+2026-10-19,house,42,race,Other,467
+2026-10-19,house,42,gender,Women,2628
+2026-10-19,house,42,gender,Men,2067
+2026-10-19,house,42,gender,Not stated,7
+2026-10-19,house,42,age,18-29,399
+2026-10-19,house,42,age,30-39,794
+2026-10-19,house,42,age,40-49,776
+2026-10-19,house,42,age,50-64,1393
+2026-10-19,house,42,age,65+,1339
+2026-10-19,house,42,age,Not stated,1
+2026-10-19,house,43,race,White,2245
+2026-10-19,house,43,race,Black,1021
+2026-10-19,house,43,race,Hispanic,196
+2026-10-19,house,43,race,Asian,169
+2026-10-19,house,43,race,Other,392
+2026-10-19,house,43,gender,Women,2129
+2026-10-19,house,43,gender,Men,1890
+2026-10-19,house,43,gender,Not stated,4
+2026-10-19,house,43,age,18-29,379
+2026-10-19,house,43,age,30-39,489
+2026-10-19,house,43,age,40-49,572
+2026-10-19,house,43,age,50-64,1190
+2026-10-19,house,43,age,65+,1393
+2026-10-19,house,43,age,Not stated,0
+2026-10-19,house,44,race,White,3990
+2026-10-19,house,44,race,Black,728
+2026-10-19,house,44,race,Hispanic,242
+2026-10-19,house,44,race,Asian,203
+2026-10-19,house,44,race,Other,491
+2026-10-19,house,44,gender,Women,3089
+2026-10-19,house,44,gender,Men,2555
+2026-10-19,house,44,gender,Not stated,10
+2026-10-19,house,44,age,18-29,335
+2026-10-19,house,44,age,30-39,504
+2026-10-19,house,44,age,40-49,608
+2026-10-19,house,44,age,50-64,1483
+2026-10-19,house,44,age,65+,2723
+2026-10-19,house,44,age,Not stated,1
+2026-10-19,house,45,race,White,4511
+2026-10-19,house,45,race,Black,381
+2026-10-19,house,45,race,Hispanic,177
+2026-10-19,house,45,race,Asian,431
+2026-10-19,house,45,race,Other,502
+2026-10-19,house,45,gender,Women,3093
+2026-10-19,house,45,gender,Men,2896
+2026-10-19,house,45,gender,Not stated,13
+2026-10-19,house,45,age,18-29,440
+2026-10-19,house,45,age,30-39,381
+2026-10-19,house,45,age,40-49,700
+2026-10-19,house,45,age,50-64,1637
+2026-10-19,house,45,age,65+,2843
+2026-10-19,house,45,age,Not stated,1
+2026-10-19,house,46,race,White,4659
+2026-10-19,house,46,race,Black,553
+2026-10-19,house,46,race,Hispanic,239
+2026-10-19,house,46,race,Asian,326
+2026-10-19,house,46,race,Other,551
+2026-10-19,house,46,gender,Women,3348
+2026-10-19,house,46,gender,Men,2968
+2026-10-19,house,46,gender,Not stated,12
+2026-10-19,house,46,age,18-29,455
+2026-10-19,house,46,age,30-39,385
+2026-10-19,house,46,age,40-49,732
+2026-10-19,house,46,age,50-64,1796
+2026-10-19,house,46,age,65+,2958
+2026-10-19,house,46,age,Not stated,2
+2026-10-19,house,47,race,White,3553
+2026-10-19,house,47,race,Black,619
+2026-10-19,house,47,race,Hispanic,187
+2026-10-19,house,47,race,Asian,276
+2026-10-19,house,47,race,Other,596
+2026-10-19,house,47,gender,Women,2714
+2026-10-19,house,47,gender,Men,2492
+2026-10-19,house,47,gender,Not stated,25
+2026-10-19,house,47,age,18-29,450
+2026-10-19,house,47,age,30-39,300
+2026-10-19,house,47,age,40-49,549
+2026-10-19,house,47,age,50-64,1922
+2026-10-19,house,47,age,65+,2004
+2026-10-19,house,47,age,Not stated,6
+2026-10-19,house,48,race,White,4036
+2026-10-19,house,48,race,Black,728
+2026-10-19,house,48,race,Hispanic,203
+2026-10-19,house,48,race,Asian,487
+2026-10-19,house,48,race,Other,676
+2026-10-19,house,48,gender,Women,3178
+2026-10-19,house,48,gender,Men,2923
+2026-10-19,house,48,gender,Not stated,29
+2026-10-19,house,48,age,18-29,489
+2026-10-19,house,48,age,30-39,413
+2026-10-19,house,48,age,40-49,697
+2026-10-19,house,48,age,50-64,1848
+2026-10-19,house,48,age,65+,2678
+2026-10-19,house,48,age,Not stated,5
+2026-10-19,house,49,race,White,5274
+2026-10-19,house,49,race,Black,571
+2026-10-19,house,49,race,Hispanic,230
+2026-10-19,house,49,race,Asian,445
+2026-10-19,house,49,race,Other,779
+2026-10-19,house,49,gender,Women,3869
+2026-10-19,house,49,gender,Men,3405
+2026-10-19,house,49,gender,Not stated,25
+2026-10-19,house,49,age,18-29,593
+2026-10-19,house,49,age,30-39,421
+2026-10-19,house,49,age,40-49,721
+2026-10-19,house,49,age,50-64,2345
+2026-10-19,house,49,age,65+,3215
+2026-10-19,house,49,age,Not stated,4
+2026-10-19,house,50,race,White,2676
+2026-10-19,house,50,race,Black,846
+2026-10-19,house,50,race,Hispanic,211
+2026-10-19,house,50,race,Asian,1089
+2026-10-19,house,50,race,Other,739
+2026-10-19,house,50,gender,Women,2860
+2026-10-19,house,50,gender,Men,2676
+2026-10-19,house,50,gender,Not stated,25
+2026-10-19,house,50,age,18-29,643
+2026-10-19,house,50,age,30-39,300
+2026-10-19,house,50,age,40-49,670
+2026-10-19,house,50,age,50-64,2039
+2026-10-19,house,50,age,65+,1906
+2026-10-19,house,50,age,Not stated,3
+2026-10-19,house,51,race,White,3714
+2026-10-19,house,51,race,Black,1065
+2026-10-19,house,51,race,Hispanic,235
+2026-10-19,house,51,race,Asian,194
+2026-10-19,house,51,race,Other,584
+2026-10-19,house,51,gender,Women,3053
+2026-10-19,house,51,gender,Men,2718
+2026-10-19,house,51,gender,Not stated,21
+2026-10-19,house,51,age,18-29,474
+2026-10-19,house,51,age,30-39,618
+2026-10-19,house,51,age,40-49,637
+2026-10-19,house,51,age,50-64,1645
+2026-10-19,house,51,age,65+,2410
+2026-10-19,house,51,age,Not stated,8
+2026-10-19,house,52,race,White,3599
+2026-10-19,house,52,race,Black,973
+2026-10-19,house,52,race,Hispanic,210
+2026-10-19,house,52,race,Asian,297
+2026-10-19,house,52,race,Other,591
+2026-10-19,house,52,gender,Women,3130
+2026-10-19,house,52,gender,Men,2522
+2026-10-19,house,52,gender,Not stated,18
+2026-10-19,house,52,age,18-29,463
+2026-10-19,house,52,age,30-39,640
+2026-10-19,house,52,age,40-49,795
+2026-10-19,house,52,age,50-64,1632
+2026-10-19,house,52,age,65+,2136
+2026-10-19,house,52,age,Not stated,4
+2026-10-19,house,53,race,White,5071
+2026-10-19,house,53,race,Black,742
+2026-10-19,house,53,race,Hispanic,196
+2026-10-19,house,53,race,Asian,198
+2026-10-19,house,53,race,Other,676
+2026-10-19,house,53,gender,Women,3613
+2026-10-19,house,53,gender,Men,3235
+2026-10-19,house,53,gender,Not stated,35
+2026-10-19,house,53,age,18-29,479
+2026-10-19,house,53,age,30-39,519
+2026-10-19,house,53,age,40-49,756
+2026-10-19,house,53,age,50-64,2048
+2026-10-19,house,53,age,65+,3073
+2026-10-19,house,53,age,Not stated,8
+2026-10-19,house,54,race,White,3426
+2026-10-19,house,54,race,Black,1068
+2026-10-19,house,54,race,Hispanic,197
+2026-10-19,house,54,race,Asian,219
+2026-10-19,house,54,race,Other,583
+2026-10-19,house,54,gender,Women,2931
+2026-10-19,house,54,gender,Men,2541
+2026-10-19,house,54,gender,Not stated,21
+2026-10-19,house,54,age,18-29,458
+2026-10-19,house,54,age,30-39,652
+2026-10-19,house,54,age,40-49,610
+2026-10-19,house,54,age,50-64,1464
+2026-10-19,house,54,age,65+,2304
+2026-10-19,house,54,age,Not stated,5
+2026-10-19,house,55,race,White,1848
+2026-10-19,house,55,race,Black,3068
+2026-10-19,house,55,race,Hispanic,109
+2026-10-19,house,55,race,Asian,96
+2026-10-19,house,55,race,Other,499
+2026-10-19,house,55,gender,Women,3172
+2026-10-19,house,55,gender,Men,2428
+2026-10-19,house,55,gender,Not stated,20
+2026-10-19,house,55,age,18-29,404
+2026-10-19,house,55,age,30-39,801
+2026-10-19,house,55,age,40-49,791
+2026-10-19,house,55,age,50-64,1442
+2026-10-19,house,55,age,65+,2178
+2026-10-19,house,55,age,Not stated,4
+2026-10-19,house,56,race,White,1082
+2026-10-19,house,56,race,Black,2245
+2026-10-19,house,56,race,Hispanic,131
+2026-10-19,house,56,race,Asian,230
+2026-10-19,house,56,race,Other,419
+2026-10-19,house,56,gender,Women,2037
+2026-10-19,house,56,gender,Men,2045
+2026-10-19,house,56,gender,Not stated,25
+2026-10-19,house,56,age,18-29,802
+2026-10-19,house,56,age,30-39,685
+2026-10-19,house,56,age,40-49,594
+2026-10-19,house,56,age,50-64,989
+2026-10-19,house,56,age,65+,1031
+2026-10-19,house,56,age,Not stated,6
+2026-10-19,house,57,race,White,4697
+2026-10-19,house,57,race,Black,1004
+2026-10-19,house,57,race,Hispanic,254
+2026-10-19,house,57,race,Asian,265
+2026-10-19,house,57,race,Other,632
+2026-10-19,house,57,gender,Women,2996
+2026-10-19,house,57,gender,Men,3830
+2026-10-19,house,57,gender,Not stated,26
+2026-10-19,house,57,age,18-29,693
+2026-10-19,house,57,age,30-39,1058
+2026-10-19,house,57,age,40-49,961
+2026-10-19,house,57,age,50-64,1953
+2026-10-19,house,57,age,65+,2184
+2026-10-19,house,57,age,Not stated,3
+2026-10-19,house,58,race,White,2073
+2026-10-19,house,58,race,Black,2809
+2026-10-19,house,58,race,Hispanic,142
+2026-10-19,house,58,race,Asian,133
+2026-10-19,house,58,race,Other,500
+2026-10-19,house,58,gender,Women,2936
+2026-10-19,house,58,gender,Men,2701
+2026-10-19,house,58,gender,Not stated,20
+2026-10-19,house,58,age,18-29,513
+2026-10-19,house,58,age,30-39,916
+2026-10-19,house,58,age,40-49,851
+2026-10-19,house,58,age,50-64,1529
+2026-10-19,house,58,age,65+,1845
+2026-10-19,house,58,age,Not stated,3
+2026-10-19,house,59,race,White,1108
+2026-10-19,house,59,race,Black,3527
+2026-10-19,house,59,race,Hispanic,100
+2026-10-19,house,59,race,Asian,68
+2026-10-19,house,59,race,Other,501
+2026-10-19,house,59,gender,Women,3042
+2026-10-19,house,59,gender,Men,2246
+2026-10-19,house,59,gender,Not stated,16
+2026-10-19,house,59,age,18-29,399
+2026-10-19,house,59,age,30-39,930
+2026-10-19,house,59,age,40-49,797
+2026-10-19,house,59,age,50-64,1295
+2026-10-19,house,59,age,65+,1883
+2026-10-19,house,59,age,Not stated,0
+2026-10-19,house,60,race,White,2228
+2026-10-19,house,60,race,Black,2817
+2026-10-19,house,60,race,Hispanic,116
+2026-10-19,house,60,race,Asian,113
+2026-10-19,house,60,race,Other,587
+2026-10-19,house,60,gender,Women,3401
+2026-10-19,house,60,gender,Men,2435
+2026-10-19,house,60,gender,Not stated,25
+2026-10-19,house,60,age,18-29,411
+2026-10-19,house,60,age,30-39,743
+2026-10-19,house,60,age,40-49,784
+2026-10-19,house,60,age,50-64,1569
+2026-10-19,house,60,age,65+,2344
+2026-10-19,house,60,age,Not stated,10
+2026-10-19,house,61,race,White,1896
+2026-10-19,house,61,race,Black,5006
+2026-10-19,house,61,race,Hispanic,144
+2026-10-19,house,61,race,Asian,143
+2026-10-19,house,61,race,Other,761
+2026-10-19,house,61,gender,Women,4694
+2026-10-19,house,61,gender,Men,3236
+2026-10-19,house,61,gender,Not stated,20
+2026-10-19,house,61,age,18-29,562
+2026-10-19,house,61,age,30-39,751
+2026-10-19,house,61,age,40-49,1168
+2026-10-19,house,61,age,50-64,2476
+2026-10-19,house,61,age,65+,2991
+2026-10-19,house,61,age,Not stated,2
+2026-10-19,house,62,race,White,1372
+2026-10-19,house,62,race,Black,3715
+2026-10-19,house,62,race,Hispanic,130
+2026-10-19,house,62,race,Asian,65
+2026-10-19,house,62,race,Other,498
+2026-10-19,house,62,gender,Women,3241
+2026-10-19,house,62,gender,Men,2533
+2026-10-19,house,62,gender,Not stated,6
+2026-10-19,house,62,age,18-29,381
+2026-10-19,house,62,age,30-39,851
+2026-10-19,house,62,age,40-49,946
+2026-10-19,house,62,age,50-64,1507
+2026-10-19,house,62,age,65+,2092
+2026-10-19,house,62,age,Not stated,3
+2026-10-19,house,63,race,White,1255
+2026-10-19,house,63,race,Black,2906
+2026-10-19,house,63,race,Hispanic,126
+2026-10-19,house,63,race,Asian,79
+2026-10-19,house,63,race,Other,428
+2026-10-19,house,63,gender,Women,2651
+2026-10-19,house,63,gender,Men,2131
+2026-10-19,house,63,gender,Not stated,12
+2026-10-19,house,63,age,18-29,352
+2026-10-19,house,63,age,30-39,737
+2026-10-19,house,63,age,40-49,809
+2026-10-19,house,63,age,50-64,1408
+2026-10-19,house,63,age,65+,1486
+2026-10-19,house,63,age,Not stated,2
+2026-10-19,house,64,race,White,1524
+2026-10-19,house,64,race,Black,4086
+2026-10-19,house,64,race,Hispanic,154
+2026-10-19,house,64,race,Asian,47
+2026-10-19,house,64,race,Other,637
+2026-10-19,house,64,gender,Women,3724
+2026-10-19,house,64,gender,Men,2709
+2026-10-19,house,64,gender,Not stated,15
+2026-10-19,house,64,age,18-29,525
+2026-10-19,house,64,age,30-39,425
+2026-10-19,house,64,age,40-49,812
+2026-10-19,house,64,age,50-64,2315
+2026-10-19,house,64,age,65+,2368
+2026-10-19,house,64,age,Not stated,3
+2026-10-19,house,65,race,White,1452
+2026-10-19,house,65,race,Black,6428
+2026-10-19,house,65,race,Hispanic,96
+2026-10-19,house,65,race,Asian,38
+2026-10-19,house,65,race,Other,809
+2026-10-19,house,65,gender,Women,5115
+2026-10-19,house,65,gender,Men,3691
+2026-10-19,house,65,gender,Not stated,17
+2026-10-19,house,65,age,18-29,620
+2026-10-19,house,65,age,30-39,596
+2026-10-19,house,65,age,40-49,1345
+2026-10-19,house,65,age,50-64,3068
+2026-10-19,house,65,age,65+,3185
+2026-10-19,house,65,age,Not stated,9
+2026-10-19,house,66,race,White,1113
+2026-10-19,house,66,race,Black,3023
+2026-10-19,house,66,race,Hispanic,137
+2026-10-19,house,66,race,Asian,29
+2026-10-19,house,66,race,Other,460
+2026-10-19,house,66,gender,Women,2840
+2026-10-19,house,66,gender,Men,1904
+2026-10-19,house,66,gender,Not stated,18
+2026-10-19,house,66,age,18-29,340
+2026-10-19,house,66,age,30-39,398
+2026-10-19,house,66,age,40-49,544
+2026-10-19,house,66,age,50-64,1506
+2026-10-19,house,66,age,65+,1971
+2026-10-19,house,66,age,Not stated,3
+2026-10-19,house,67,race,White,1518
+2026-10-19,house,67,race,Black,3916
+2026-10-19,house,67,race,Hispanic,140
+2026-10-19,house,67,race,Asian,43
+2026-10-19,house,67,race,Other,568
+2026-10-19,house,67,gender,Women,3613
+2026-10-19,house,67,gender,Men,2560
+2026-10-19,house,67,gender,Not stated,12
+2026-10-19,house,67,age,18-29,460
+2026-10-19,house,67,age,30-39,493
+2026-10-19,house,67,age,40-49,788
+2026-10-19,house,67,age,50-64,2100
+2026-10-19,house,67,age,65+,2342
+2026-10-19,house,67,age,Not stated,2
+2026-10-19,house,68,race,White,2049
+2026-10-19,house,68,race,Black,3760
+2026-10-19,house,68,race,Hispanic,119
+2026-10-19,house,68,race,Asian,87
+2026-10-19,house,68,race,Other,617
+2026-10-19,house,68,gender,Women,3866
+2026-10-19,house,68,gender,Men,2752
+2026-10-19,house,68,gender,Not stated,14
+2026-10-19,house,68,age,18-29,458
+2026-10-19,house,68,age,30-39,506
+2026-10-19,house,68,age,40-49,765
+2026-10-19,house,68,age,50-64,2025
+2026-10-19,house,68,age,65+,2874
+2026-10-19,house,68,age,Not stated,4
+2026-10-19,house,69,race,White,1512
+2026-10-19,house,69,race,Black,5219
+2026-10-19,house,69,race,Hispanic,130
+2026-10-19,house,69,race,Asian,88
+2026-10-19,house,69,race,Other,805
+2026-10-19,house,69,gender,Women,4576
+2026-10-19,house,69,gender,Men,3156
+2026-10-19,house,69,gender,Not stated,22
+2026-10-19,house,69,age,18-29,483
+2026-10-19,house,69,age,30-39,567
+2026-10-19,house,69,age,40-49,766
+2026-10-19,house,69,age,50-64,2138
+2026-10-19,house,69,age,65+,3795
+2026-10-19,house,69,age,Not stated,5
+2026-10-19,house,70,race,White,2205
+2026-10-19,house,70,race,Black,1260
+2026-10-19,house,70,race,Hispanic,99
+2026-10-19,house,70,race,Asian,43
+2026-10-19,house,70,race,Other,328
+2026-10-19,house,70,gender,Women,2239
+2026-10-19,house,70,gender,Men,1691
+2026-10-19,house,70,gender,Not stated,5
+2026-10-19,house,70,age,18-29,223
+2026-10-19,house,70,age,30-39,265
+2026-10-19,house,70,age,40-49,382
+2026-10-19,house,70,age,50-64,1114
+2026-10-19,house,70,age,65+,1950
+2026-10-19,house,70,age,Not stated,1
+2026-10-19,house,71,race,White,1833
+2026-10-19,house,71,race,Black,839
+2026-10-19,house,71,race,Hispanic,68
+2026-10-19,house,71,race,Asian,14
+2026-10-19,house,71,race,Other,248
+2026-10-19,house,71,gender,Women,1673
+2026-10-19,house,71,gender,Men,1324
+2026-10-19,house,71,gender,Not stated,5
+2026-10-19,house,71,age,18-29,173
+2026-10-19,house,71,age,30-39,210
+2026-10-19,house,71,age,40-49,331
+2026-10-19,house,71,age,50-64,882
+2026-10-19,house,71,age,65+,1405
+2026-10-19,house,71,age,Not stated,1
+2026-10-19,house,72,race,White,2372
+2026-10-19,house,72,race,Black,594
+2026-10-19,house,72,race,Hispanic,63
+2026-10-19,house,72,race,Asian,18
+2026-10-19,house,72,race,Other,175
+2026-10-19,house,72,gender,Women,1742
+2026-10-19,house,72,gender,Men,1475
+2026-10-19,house,72,gender,Not stated,5
+2026-10-19,house,72,age,18-29,202
+2026-10-19,house,72,age,30-39,141
+2026-10-19,house,72,age,40-49,230
+2026-10-19,house,72,age,50-64,833
+2026-10-19,house,72,age,65+,1815
+2026-10-19,house,72,age,Not stated,1
+2026-10-19,house,73,race,White,5007
+2026-10-19,house,73,race,Black,1193
+2026-10-19,house,73,race,Hispanic,238
+2026-10-19,house,73,race,Asian,150
+2026-10-19,house,73,race,Other,685
+2026-10-19,house,73,gender,Women,3916
+2026-10-19,house,73,gender,Men,3343
+2026-10-19,house,73,gender,Not stated,14
+2026-10-19,house,73,age,18-29,369
+2026-10-19,house,73,age,30-39,364
+2026-10-19,house,73,age,40-49,577
+2026-10-19,house,73,age,50-64,1925
+2026-10-19,house,73,age,65+,4038
+2026-10-19,house,73,age,Not stated,0
+2026-10-19,house,74,race,White,1056
+2026-10-19,house,74,race,Black,5022
+2026-10-19,house,74,race,Hispanic,143
+2026-10-19,house,74,race,Asian,37
+2026-10-19,house,74,race,Other,609
+2026-10-19,house,74,gender,Women,4113
+2026-10-19,house,74,gender,Men,2741
+2026-10-19,house,74,gender,Not stated,13
+2026-10-19,house,74,age,18-29,565
+2026-10-19,house,74,age,30-39,536
+2026-10-19,house,74,age,40-49,813
+2026-10-19,house,74,age,50-64,2380
+2026-10-19,house,74,age,65+,2568
+2026-10-19,house,74,age,Not stated,5
+2026-10-19,house,75,race,White,324
+2026-10-19,house,75,race,Black,4003
+2026-10-19,house,75,race,Hispanic,130
+2026-10-19,house,75,race,Asian,57
+2026-10-19,house,75,race,Other,377
+2026-10-19,house,75,gender,Women,3073
+2026-10-19,house,75,gender,Men,1811
+2026-10-19,house,75,gender,Not stated,7
+2026-10-19,house,75,age,18-29,373
+2026-10-19,house,75,age,30-39,403
+2026-10-19,house,75,age,40-49,550
+2026-10-19,house,75,age,50-64,1631
+2026-10-19,house,75,age,65+,1932
+2026-10-19,house,75,age,Not stated,2
+2026-10-19,house,76,race,White,350
+2026-10-19,house,76,race,Black,4153
+2026-10-19,house,76,race,Hispanic,159
+2026-10-19,house,76,race,Asian,139
+2026-10-19,house,76,race,Other,380
+2026-10-19,house,76,gender,Women,3214
+2026-10-19,house,76,gender,Men,1957
+2026-10-19,house,76,gender,Not stated,10
+2026-10-19,house,76,age,18-29,432
+2026-10-19,house,76,age,30-39,428
+2026-10-19,house,76,age,40-49,604
+2026-10-19,house,76,age,50-64,1772
+2026-10-19,house,76,age,65+,1942
+2026-10-19,house,76,age,Not stated,3
+2026-10-19,house,77,race,White,217
+2026-10-19,house,77,race,Black,3506
+2026-10-19,house,77,race,Hispanic,122
+2026-10-19,house,77,race,Asian,74
+2026-10-19,house,77,race,Other,285
+2026-10-19,house,77,gender,Women,2565
+2026-10-19,house,77,gender,Men,1626
+2026-10-19,house,77,gender,Not stated,13
+2026-10-19,house,77,age,18-29,277
+2026-10-19,house,77,age,30-39,360
+2026-10-19,house,77,age,40-49,392
+2026-10-19,house,77,age,50-64,1323
+2026-10-19,house,77,age,65+,1849
+2026-10-19,house,77,age,Not stated,3
+2026-10-19,house,78,race,White,1066
+2026-10-19,house,78,race,Black,4607
+2026-10-19,house,78,race,Hispanic,169
+2026-10-19,house,78,race,Asian,133
+2026-10-19,house,78,race,Other,579
+2026-10-19,house,78,gender,Women,3843
+2026-10-19,house,78,gender,Men,2705
+2026-10-19,house,78,gender,Not stated,6
+2026-10-19,house,78,age,18-29,531
+2026-10-19,house,78,age,30-39,444
+2026-10-19,house,78,age,40-49,718
+2026-10-19,house,78,age,50-64,2311
+2026-10-19,house,78,age,65+,2548
+2026-10-19,house,78,age,Not stated,2
+2026-10-19,house,79,race,White,228
+2026-10-19,house,79,race,Black,2556
+2026-10-19,house,79,race,Hispanic,154
+2026-10-19,house,79,race,Asian,89
+2026-10-19,house,79,race,Other,256
+2026-10-19,house,79,gender,Women,2018
+2026-10-19,house,79,gender,Men,1260
+2026-10-19,house,79,gender,Not stated,5
+2026-10-19,house,79,age,18-29,282
+2026-10-19,house,79,age,30-39,270
+2026-10-19,house,79,age,40-49,332
+2026-10-19,house,79,age,50-64,1075
+2026-10-19,house,79,age,65+,1321
+2026-10-19,house,79,age,Not stated,3
+2026-10-19,house,80,race,White,3324
+2026-10-19,house,80,race,Black,564
+2026-10-19,house,80,race,Hispanic,245
+2026-10-19,house,80,race,Asian,328
+2026-10-19,house,80,race,Other,407
+2026-10-19,house,80,gender,Women,2652
+2026-10-19,house,80,gender,Men,2206
+2026-10-19,house,80,gender,Not stated,10
+2026-10-19,house,80,age,18-29,385
+2026-10-19,house,80,age,30-39,486
+2026-10-19,house,80,age,40-49,641
+2026-10-19,house,80,age,50-64,1329
+2026-10-19,house,80,age,65+,2024
+2026-10-19,house,80,age,Not stated,3
+2026-10-19,house,81,race,White,2319
+2026-10-19,house,81,race,Black,2663
+2026-10-19,house,81,race,Hispanic,124
+2026-10-19,house,81,race,Asian,65
+2026-10-19,house,81,race,Other,559
+2026-10-19,house,81,gender,Women,3145
+2026-10-19,house,81,gender,Men,2570
+2026-10-19,house,81,gender,Not stated,15
+2026-10-19,house,81,age,18-29,445
+2026-10-19,house,81,age,30-39,358
+2026-10-19,house,81,age,40-49,706
+2026-10-19,house,81,age,50-64,2080
+2026-10-19,house,81,age,65+,2137
+2026-10-19,house,81,age,Not stated,4
+2026-10-19,house,82,race,White,3641
+2026-10-19,house,82,race,Black,1999
+2026-10-19,house,82,race,Hispanic,123
+2026-10-19,house,82,race,Asian,75
+2026-10-19,house,82,race,Other,478
+2026-10-19,house,82,gender,Women,3478
+2026-10-19,house,82,gender,Men,2828
+2026-10-19,house,82,gender,Not stated,10
+2026-10-19,house,82,age,18-29,296
+2026-10-19,house,82,age,30-39,245
+2026-10-19,house,82,age,40-49,453
+2026-10-19,house,82,age,50-64,1565
+2026-10-19,house,82,age,65+,3756
+2026-10-19,house,82,age,Not stated,1
+2026-10-19,house,83,race,White,2402
+2026-10-19,house,83,race,Black,763
+2026-10-19,house,83,race,Hispanic,204
+2026-10-19,house,83,race,Asian,249
+2026-10-19,house,83,race,Other,379
+2026-10-19,house,83,gender,Women,2041
+2026-10-19,house,83,gender,Men,1949
+2026-10-19,house,83,gender,Not stated,7
+2026-10-19,house,83,age,18-29,363
+2026-10-19,house,83,age,30-39,655
+2026-10-19,house,83,age,40-49,628
+2026-10-19,house,83,age,50-64,1092
+2026-10-19,house,83,age,65+,1257
+2026-10-19,house,83,age,Not stated,2
+2026-10-19,house,84,race,White,2773
+2026-10-19,house,84,race,Black,2775
+2026-10-19,house,84,race,Hispanic,152
+2026-10-19,house,84,race,Asian,180
+2026-10-19,house,84,race,Other,489
+2026-10-19,house,84,gender,Women,3765
+2026-10-19,house,84,gender,Men,2592
+2026-10-19,house,84,gender,Not stated,12
+2026-10-19,house,84,age,18-29,499
+2026-10-19,house,84,age,30-39,728
+2026-10-19,house,84,age,40-49,793
+2026-10-19,house,84,age,50-64,1756
+2026-10-19,house,84,age,65+,2592
+2026-10-19,house,84,age,Not stated,1
+2026-10-19,house,85,race,White,1904
+2026-10-19,house,85,race,Black,2581
+2026-10-19,house,85,race,Hispanic,119
+2026-10-19,house,85,race,Asian,139
+2026-10-19,house,85,race,Other,449
+2026-10-19,house,85,gender,Women,3071
+2026-10-19,house,85,gender,Men,2112
+2026-10-19,house,85,gender,Not stated,9
+2026-10-19,house,85,age,18-29,391
+2026-10-19,house,85,age,30-39,675
+2026-10-19,house,85,age,40-49,708
+2026-10-19,house,85,age,50-64,1450
+2026-10-19,house,85,age,65+,1964
+2026-10-19,house,85,age,Not stated,4
+2026-10-19,house,86,race,White,2014
+2026-10-19,house,86,race,Black,2309
+2026-10-19,house,86,race,Hispanic,124
+2026-10-19,house,86,race,Asian,198
+2026-10-19,house,86,race,Other,451
+2026-10-19,house,86,gender,Women,2939
+2026-10-19,house,86,gender,Men,2149
+2026-10-19,house,86,gender,Not stated,8
+2026-10-19,house,86,age,18-29,389
+2026-10-19,house,86,age,30-39,509
+2026-10-19,house,86,age,40-49,577
+2026-10-19,house,86,age,50-64,1344
+2026-10-19,house,86,age,65+,2274
+2026-10-19,house,86,age,Not stated,3
+2026-10-19,house,87,race,White,2118
+2026-10-19,house,87,race,Black,2412
+2026-10-19,house,87,race,Hispanic,169
+2026-10-19,house,87,race,Asian,178
+2026-10-19,house,87,race,Other,410
+2026-10-19,house,87,gender,Women,3075
+2026-10-19,house,87,gender,Men,2203
+2026-10-19,house,87,gender,Not stated,9
+2026-10-19,house,87,age,18-29,370
+2026-10-19,house,87,age,30-39,535
+2026-10-19,house,87,age,40-49,625
+2026-10-19,house,87,age,50-64,1519
+2026-10-19,house,87,age,65+,2236
+2026-10-19,house,87,age,Not stated,2
+2026-10-19,house,88,race,White,1291
+2026-10-19,house,88,race,Black,3434
+2026-10-19,house,88,race,Hispanic,144
+2026-10-19,house,88,race,Asian,162
+2026-10-19,house,88,race,Other,459
+2026-10-19,house,88,gender,Women,3177
+2026-10-19,house,88,gender,Men,2304
+2026-10-19,house,88,gender,Not stated,9
+2026-10-19,house,88,age,18-29,387
+2026-10-19,house,88,age,30-39,494
+2026-10-19,house,88,age,40-49,548
+2026-10-19,house,88,age,50-64,1628
+2026-10-19,house,88,age,65+,2431
+2026-10-19,house,88,age,Not stated,2
+2026-10-19,house,89,race,White,3006
+2026-10-19,house,89,race,Black,3164
+2026-10-19,house,89,race,Hispanic,135
+2026-10-19,house,89,race,Asian,184
+2026-10-19,house,89,race,Other,586
+2026-10-19,house,89,gender,Women,4143
+2026-10-19,house,89,gender,Men,2903
+2026-10-19,house,89,gender,Not stated,29
+2026-10-19,house,89,age,18-29,548
+2026-10-19,house,89,age,30-39,871
+2026-10-19,house,89,age,40-49,1138
+2026-10-19,house,89,age,50-64,1914
+2026-10-19,house,89,age,65+,2590
+2026-10-19,house,89,age,Not stated,14
+2026-10-19,house,90,race,White,3409
+2026-10-19,house,90,race,Black,2956
+2026-10-19,house,90,race,Hispanic,173
+2026-10-19,house,90,race,Asian,162
+2026-10-19,house,90,race,Other,577
+2026-10-19,house,90,gender,Women,3986
+2026-10-19,house,90,gender,Men,3280
+2026-10-19,house,90,gender,Not stated,11
+2026-10-19,house,90,age,18-29,539
+2026-10-19,house,90,age,30-39,1198
+2026-10-19,house,90,age,40-49,1234
+2026-10-19,house,90,age,50-64,2087
+2026-10-19,house,90,age,65+,2219
+2026-10-19,house,90,age,Not stated,0
+2026-10-19,house,91,race,White,705
+2026-10-19,house,91,race,Black,4991
+2026-10-19,house,91,race,Hispanic,60
+2026-10-19,house,91,race,Asian,18
+2026-10-19,house,91,race,Other,577
+2026-10-19,house,91,gender,Women,3809
+2026-10-19,house,91,gender,Men,2533
+2026-10-19,house,91,gender,Not stated,9
+2026-10-19,house,91,age,18-29,443
+2026-10-19,house,91,age,30-39,426
+2026-10-19,house,91,age,40-49,639
+2026-10-19,house,91,age,50-64,2134
+2026-10-19,house,91,age,65+,2703
+2026-10-19,house,91,age,Not stated,6
+2026-10-19,house,92,race,White,855
+2026-10-19,house,92,race,Black,4694
+2026-10-19,house,92,race,Hispanic,90
+2026-10-19,house,92,race,Asian,58
+2026-10-19,house,92,race,Other,680
+2026-10-19,house,92,gender,Women,3822
+2026-10-19,house,92,gender,Men,2543
+2026-10-19,house,92,gender,Not stated,12
+2026-10-19,house,92,age,18-29,463
+2026-10-19,house,92,age,30-39,408
+2026-10-19,house,92,age,40-49,614
+2026-10-19,house,92,age,50-64,2189
+2026-10-19,house,92,age,65+,2696
+2026-10-19,house,92,age,Not stated,7
+2026-10-19,house,93,race,White,865
+2026-10-19,house,93,race,Black,3718
+2026-10-19,house,93,race,Hispanic,181
+2026-10-19,house,93,race,Asian,64
+2026-10-19,house,93,race,Other,558
+2026-10-19,house,93,gender,Women,3332
+2026-10-19,house,93,gender,Men,2039
+2026-10-19,house,93,gender,Not stated,15
+2026-10-19,house,93,age,18-29,506
+2026-10-19,house,93,age,30-39,433
+2026-10-19,house,93,age,40-49,557
+2026-10-19,house,93,age,50-64,1817
+2026-10-19,house,93,age,65+,2069
+2026-10-19,house,93,age,Not stated,4
+2026-10-19,house,94,race,White,1326
+2026-10-19,house,94,race,Black,3847
+2026-10-19,house,94,race,Hispanic,142
+2026-10-19,house,94,race,Asian,221
+2026-10-19,house,94,race,Other,570
+2026-10-19,house,94,gender,Women,3580
+2026-10-19,house,94,gender,Men,2512
+2026-10-19,house,94,gender,Not stated,14
+2026-10-19,house,94,age,18-29,514
+2026-10-19,house,94,age,30-39,482
+2026-10-19,house,94,age,40-49,665
+2026-10-19,house,94,age,50-64,1929
+2026-10-19,house,94,age,65+,2515
+2026-10-19,house,94,age,Not stated,1
+2026-10-19,house,95,race,White,780
+2026-10-19,house,95,race,Black,3909
+2026-10-19,house,95,race,Hispanic,137
+2026-10-19,house,95,race,Asian,58
+2026-10-19,house,95,race,Other,540
+2026-10-19,house,95,gender,Women,3256
+2026-10-19,house,95,gender,Men,2152
+2026-10-19,house,95,gender,Not stated,16
+2026-10-19,house,95,age,18-29,450
+2026-10-19,house,95,age,30-39,399
+2026-10-19,house,95,age,40-49,658
+2026-10-19,house,95,age,50-64,1877
+2026-10-19,house,95,age,65+,2038
+2026-10-19,house,95,age,Not stated,2
+2026-10-19,house,96,race,White,897
+2026-10-19,house,96,race,Black,765
+2026-10-19,house,96,race,Hispanic,342
+2026-10-19,house,96,race,Asian,333
+2026-10-19,house,96,race,Other,224
+2026-10-19,house,96,gender,Women,1447
+2026-10-19,house,96,gender,Men,1099
+2026-10-19,house,96,gender,Not stated,15
+2026-10-19,house,96,age,18-29,349
+2026-10-19,house,96,age,30-39,323
+2026-10-19,house,96,age,40-49,317
+2026-10-19,house,96,age,50-64,710
+2026-10-19,house,96,age,65+,856
+2026-10-19,house,96,age,Not stated,6
+2026-10-19,house,97,race,White,2178
+2026-10-19,house,97,race,Black,1041
+2026-10-19,house,97,race,Hispanic,237
+2026-10-19,house,97,race,Asian,435
+2026-10-19,house,97,race,Other,485
+2026-10-19,house,97,gender,Women,2358
+2026-10-19,house,97,gender,Men,2001
+2026-10-19,house,97,gender,Not stated,17
+2026-10-19,house,97,age,18-29,372
+2026-10-19,house,97,age,30-39,541
+2026-10-19,house,97,age,40-49,473
+2026-10-19,house,97,age,50-64,1316
+2026-10-19,house,97,age,65+,1670
+2026-10-19,house,97,age,Not stated,4
+2026-10-19,house,98,race,White,377
+2026-10-19,house,98,race,Black,549
+2026-10-19,house,98,race,Hispanic,299
+2026-10-19,house,98,race,Asian,212
+2026-10-19,house,98,race,Other,169
+2026-10-19,house,98,gender,Women,875
+2026-10-19,house,98,gender,Men,718
+2026-10-19,house,98,gender,Not stated,13
+2026-10-19,house,98,age,18-29,261
+2026-10-19,house,98,age,30-39,193
+2026-10-19,house,98,age,40-49,173
+2026-10-19,house,98,age,50-64,442
+2026-10-19,house,98,age,65+,535
+2026-10-19,house,98,age,Not stated,2
+2026-10-19,house,99,race,White,2212
+2026-10-19,house,99,race,Black,1028
+2026-10-19,house,99,race,Hispanic,191
+2026-10-19,house,99,race,Asian,771
+2026-10-19,house,99,race,Other,515
+2026-10-19,house,99,gender,Women,2462
+2026-10-19,house,99,gender,Men,2226
+2026-10-19,house,99,gender,Not stated,29
+2026-10-19,house,99,age,18-29,448
+2026-10-19,house,99,age,30-39,347
+2026-10-19,house,99,age,40-49,593
+2026-10-19,house,99,age,50-64,1591
+2026-10-19,house,99,age,65+,1731
+2026-10-19,house,99,age,Not stated,7
+2026-10-19,house,100,race,White,2489
+2026-10-19,house,100,race,Black,529
+2026-10-19,house,100,race,Hispanic,227
+2026-10-19,house,100,race,Asian,397
+2026-10-19,house,100,race,Other,463
+2026-10-19,house,100,gender,Women,2151
+2026-10-19,house,100,gender,Men,1932
+2026-10-19,house,100,gender,Not stated,22
+2026-10-19,house,100,age,18-29,421
+2026-10-19,house,100,age,30-39,221
+2026-10-19,house,100,age,40-49,471
+2026-10-19,house,100,age,50-64,1469
+2026-10-19,house,100,age,65+,1522
+2026-10-19,house,100,age,Not stated,1
+2026-10-19,house,101,race,White,3164
+2026-10-19,house,101,race,Black,664
+2026-10-19,house,101,race,Hispanic,237
+2026-10-19,house,101,race,Asian,339
+2026-10-19,house,101,race,Other,428
+2026-10-19,house,101,gender,Women,2427
+2026-10-19,house,101,gender,Men,2395
+2026-10-19,house,101,gender,Not stated,10
+2026-10-19,house,101,age,18-29,427
+2026-10-19,house,101,age,30-39,568
+2026-10-19,house,101,age,40-49,605
+2026-10-19,house,101,age,50-64,1405
+2026-10-19,house,101,age,65+,1823
+2026-10-19,house,101,age,Not stated,4
+2026-10-19,house,102,race,White,1135
+2026-10-19,house,102,race,Black,2168
+2026-10-19,house,102,race,Hispanic,337
+2026-10-19,house,102,race,Asian,200
+2026-10-19,house,102,race,Other,411
+2026-10-19,house,102,gender,Women,2467
+2026-10-19,house,102,gender,Men,1766
+2026-10-19,house,102,gender,Not stated,18
+2026-10-19,house,102,age,18-29,486
+2026-10-19,house,102,age,30-39,379
+2026-10-19,house,102,age,40-49,546
+2026-10-19,house,102,age,50-64,1412
+2026-10-19,house,102,age,65+,1424
+2026-10-19,house,102,age,Not stated,4
+2026-10-19,house,103,race,White,2814
+2026-10-19,house,103,race,Black,1099
+2026-10-19,house,103,race,Hispanic,308
+2026-10-19,house,103,race,Asian,323
+2026-10-19,house,103,race,Other,512
+2026-10-19,house,103,gender,Women,2652
+2026-10-19,house,103,gender,Men,2384
+2026-10-19,house,103,gender,Not stated,20
+2026-10-19,house,103,age,18-29,448
+2026-10-19,house,103,age,30-39,345
+2026-10-19,house,103,age,40-49,593
+2026-10-19,house,103,age,50-64,1584
+2026-10-19,house,103,age,65+,2084
+2026-10-19,house,103,age,Not stated,2
+2026-10-19,house,104,race,White,2168
+2026-10-19,house,104,race,Black,1156
+2026-10-19,house,104,race,Hispanic,237
+2026-10-19,house,104,race,Asian,157
+2026-10-19,house,104,race,Other,408
+2026-10-19,house,104,gender,Women,2229
+2026-10-19,house,104,gender,Men,1883
+2026-10-19,house,104,gender,Not stated,14
+2026-10-19,house,104,age,18-29,385
+2026-10-19,house,104,age,30-39,308
+2026-10-19,house,104,age,40-49,530
+2026-10-19,house,104,age,50-64,1389
+2026-10-19,house,104,age,65+,1512
+2026-10-19,house,104,age,Not stated,2
+2026-10-19,house,105,race,White,2068
+2026-10-19,house,105,race,Black,1738
+2026-10-19,house,105,race,Hispanic,362
+2026-10-19,house,105,race,Asian,290
+2026-10-19,house,105,race,Other,558
+2026-10-19,house,105,gender,Women,2800
+2026-10-19,house,105,gender,Men,2201
+2026-10-19,house,105,gender,Not stated,15
+2026-10-19,house,105,age,18-29,486
+2026-10-19,house,105,age,30-39,413
+2026-10-19,house,105,age,40-49,630
+2026-10-19,house,105,age,50-64,1642
+2026-10-19,house,105,age,65+,1843
+2026-10-19,house,105,age,Not stated,2
+2026-10-19,house,106,race,White,1279
+2026-10-19,house,106,race,Black,1558
+2026-10-19,house,106,race,Hispanic,383
+2026-10-19,house,106,race,Asian,378
+2026-10-19,house,106,race,Other,434
+2026-10-19,house,106,gender,Women,2244
+2026-10-19,house,106,gender,Men,1765
+2026-10-19,house,106,gender,Not stated,23
+2026-10-19,house,106,age,18-29,441
+2026-10-19,house,106,age,30-39,344
+2026-10-19,house,106,age,40-49,425
+2026-10-19,house,106,age,50-64,1260
+2026-10-19,house,106,age,65+,1560
+2026-10-19,house,106,age,Not stated,2
+2026-10-19,house,107,race,White,1400
+2026-10-19,house,107,race,Black,1333
+2026-10-19,house,107,race,Hispanic,390
+2026-10-19,house,107,race,Asian,390
+2026-10-19,house,107,race,Other,427
+2026-10-19,house,107,gender,Women,2190
+2026-10-19,house,107,gender,Men,1737
+2026-10-19,house,107,gender,Not stated,13
+2026-10-19,house,107,age,18-29,469
+2026-10-19,house,107,age,30-39,371
+2026-10-19,house,107,age,40-49,436
+2026-10-19,house,107,age,50-64,1249
+2026-10-19,house,107,age,65+,1411
+2026-10-19,house,107,age,Not stated,4
+2026-10-19,house,108,race,White,2631
+2026-10-19,house,108,race,Black,1114
+2026-10-19,house,108,race,Hispanic,289
+2026-10-19,house,108,race,Asian,459
+2026-10-19,house,108,race,Other,533
+2026-10-19,house,108,gender,Women,2711
+2026-10-19,house,108,gender,Men,2297
+2026-10-19,house,108,gender,Not stated,18
+2026-10-19,house,108,age,18-29,488
+2026-10-19,house,108,age,30-39,369
+2026-10-19,house,108,age,40-49,624
+2026-10-19,house,108,age,50-64,1433
+2026-10-19,house,108,age,65+,2108
+2026-10-19,house,108,age,Not stated,4
+2026-10-19,house,109,race,White,393
+2026-10-19,house,109,race,Black,844
+2026-10-19,house,109,race,Hispanic,344
+2026-10-19,house,109,race,Asian,198
+2026-10-19,house,109,race,Other,205
+2026-10-19,house,109,gender,Women,1149
+2026-10-19,house,109,gender,Men,826
+2026-10-19,house,109,gender,Not stated,9
+2026-10-19,house,109,age,18-29,305
+2026-10-19,house,109,age,30-39,296
+2026-10-19,house,109,age,40-49,224
+2026-10-19,house,109,age,50-64,574
+2026-10-19,house,109,age,65+,580
+2026-10-19,house,109,age,Not stated,5
+2026-10-19,house,110,race,White,1562
+2026-10-19,house,110,race,Black,3472
+2026-10-19,house,110,race,Hispanic,267
+2026-10-19,house,110,race,Asian,157
+2026-10-19,house,110,race,Other,782
+2026-10-19,house,110,gender,Women,3602
+2026-10-19,house,110,gender,Men,2615
+2026-10-19,house,110,gender,Not stated,23
+2026-10-19,house,110,age,18-29,636
+2026-10-19,house,110,age,30-39,420
+2026-10-19,house,110,age,40-49,842
+2026-10-19,house,110,age,50-64,2152
+2026-10-19,house,110,age,65+,2183
+2026-10-19,house,110,age,Not stated,7
+2026-10-19,house,111,race,White,3099
+2026-10-19,house,111,race,Black,1904
+2026-10-19,house,111,race,Hispanic,205
+2026-10-19,house,111,race,Asian,91
+2026-10-19,house,111,race,Other,605
+2026-10-19,house,111,gender,Women,3152
+2026-10-19,house,111,gender,Men,2738
+2026-10-19,house,111,gender,Not stated,14
+2026-10-19,house,111,age,18-29,460
+2026-10-19,house,111,age,30-39,336
+2026-10-19,house,111,age,40-49,659
+2026-10-19,house,111,age,50-64,1977
+2026-10-19,house,111,age,65+,2466
+2026-10-19,house,111,age,Not stated,6
+2026-10-19,house,112,race,White,3449
+2026-10-19,house,112,race,Black,1347
+2026-10-19,house,112,race,Hispanic,107
+2026-10-19,house,112,race,Asian,32
+2026-10-19,house,112,race,Other,451
+2026-10-19,house,112,gender,Women,2945
+2026-10-19,house,112,gender,Men,2430
+2026-10-19,house,112,gender,Not stated,11
+2026-10-19,house,112,age,18-29,326
+2026-10-19,house,112,age,30-39,253
+2026-10-19,house,112,age,40-49,391
+2026-10-19,house,112,age,50-64,1635
+2026-10-19,house,112,age,65+,2780
+2026-10-19,house,112,age,Not stated,1
+2026-10-19,house,113,race,White,1132
+2026-10-19,house,113,race,Black,3886
+2026-10-19,house,113,race,Hispanic,93
+2026-10-19,house,113,race,Asian,33
+2026-10-19,house,113,race,Other,363
+2026-10-19,house,113,gender,Women,3369
+2026-10-19,house,113,gender,Men,2132
+2026-10-19,house,113,gender,Not stated,6
+2026-10-19,house,113,age,18-29,427
+2026-10-19,house,113,age,30-39,313
+2026-10-19,house,113,age,40-49,661
+2026-10-19,house,113,age,50-64,2041
+2026-10-19,house,113,age,65+,2063
+2026-10-19,house,113,age,Not stated,2
+2026-10-19,house,114,race,White,3785
+2026-10-19,house,114,race,Black,1577
+2026-10-19,house,114,race,Hispanic,61
+2026-10-19,house,114,race,Asian,35
+2026-10-19,house,114,race,Other,282
+2026-10-19,house,114,gender,Women,3134
+2026-10-19,house,114,gender,Men,2602
+2026-10-19,house,114,gender,Not stated,4
+2026-10-19,house,114,age,18-29,309
+2026-10-19,house,114,age,30-39,291
+2026-10-19,house,114,age,40-49,438
+2026-10-19,house,114,age,50-64,1699
+2026-10-19,house,114,age,65+,3003
+2026-10-19,house,114,age,Not stated,0
+2026-10-19,house,115,race,White,495
+2026-10-19,house,115,race,Black,6253
+2026-10-19,house,115,race,Hispanic,61
+2026-10-19,house,115,race,Asian,27
+2026-10-19,house,115,race,Other,558
+2026-10-19,house,115,gender,Women,4270
+2026-10-19,house,115,gender,Men,3119
+2026-10-19,house,115,gender,Not stated,5
+2026-10-19,house,115,age,18-29,538
+2026-10-19,house,115,age,30-39,457
+2026-10-19,house,115,age,40-49,735
+2026-10-19,house,115,age,50-64,2328
+2026-10-19,house,115,age,65+,3333
+2026-10-19,house,115,age,Not stated,3
+2026-10-19,house,116,race,White,545
+2026-10-19,house,116,race,Black,4949
+2026-10-19,house,116,race,Hispanic,71
+2026-10-19,house,116,race,Asian,54
+2026-10-19,house,116,race,Other,460
+2026-10-19,house,116,gender,Women,3745
+2026-10-19,house,116,gender,Men,2319
+2026-10-19,house,116,gender,Not stated,15
+2026-10-19,house,116,age,18-29,428
+2026-10-19,house,116,age,30-39,433
+2026-10-19,house,116,age,40-49,634
+2026-10-19,house,116,age,50-64,2078
+2026-10-19,house,116,age,65+,2498
+2026-10-19,house,116,age,Not stated,8
+2026-10-19,house,117,race,White,1145
+2026-10-19,house,117,race,Black,4260
+2026-10-19,house,117,race,Hispanic,154
+2026-10-19,house,117,race,Asian,65
+2026-10-19,house,117,race,Other,626
+2026-10-19,house,117,gender,Women,3779
+2026-10-19,house,117,gender,Men,2458
+2026-10-19,house,117,gender,Not stated,13
+2026-10-19,house,117,age,18-29,503
+2026-10-19,house,117,age,30-39,579
+2026-10-19,house,117,age,40-49,846
+2026-10-19,house,117,age,50-64,2166
+2026-10-19,house,117,age,65+,2149
+2026-10-19,house,117,age,Not stated,7
+2026-10-19,house,118,race,White,3040
+2026-10-19,house,118,race,Black,1829
+2026-10-19,house,118,race,Hispanic,73
+2026-10-19,house,118,race,Asian,15
+2026-10-19,house,118,race,Other,303
+2026-10-19,house,118,gender,Women,2808
+2026-10-19,house,118,gender,Men,2443
+2026-10-19,house,118,gender,Not stated,9
+2026-10-19,house,118,age,18-29,250
+2026-10-19,house,118,age,30-39,291
+2026-10-19,house,118,age,40-49,512
+2026-10-19,house,118,age,50-64,1745
+2026-10-19,house,118,age,65+,2461
+2026-10-19,house,118,age,Not stated,1
+2026-10-19,house,119,race,White,3184
+2026-10-19,house,119,race,Black,777
+2026-10-19,house,119,race,Hispanic,181
+2026-10-19,house,119,race,Asian,49
+2026-10-19,house,119,race,Other,319
+2026-10-19,house,119,gender,Women,2429
+2026-10-19,house,119,gender,Men,2078
+2026-10-19,house,119,gender,Not stated,3
+2026-10-19,house,119,age,18-29,313
+2026-10-19,house,119,age,30-39,247
+2026-10-19,house,119,age,40-49,436
+2026-10-19,house,119,age,50-64,1246
+2026-10-19,house,119,age,65+,2267
+2026-10-19,house,119,age,Not stated,1
+2026-10-19,house,120,race,White,2797
+2026-10-19,house,120,race,Black,464
+2026-10-19,house,120,race,Hispanic,99
+2026-10-19,house,120,race,Asian,52
+2026-10-19,house,120,race,Other,226
+2026-10-19,house,120,gender,Women,1915
+2026-10-19,house,120,gender,Men,1709
+2026-10-19,house,120,gender,Not stated,14
+2026-10-19,house,120,age,18-29,242
+2026-10-19,house,120,age,30-39,204
+2026-10-19,house,120,age,40-49,338
+2026-10-19,house,120,age,50-64,888
+2026-10-19,house,120,age,65+,1964
+2026-10-19,house,120,age,Not stated,2
+2026-10-19,house,121,race,White,4138
+2026-10-19,house,121,race,Black,268
+2026-10-19,house,121,race,Hispanic,72
+2026-10-19,house,121,race,Asian,85
+2026-10-19,house,121,race,Other,295
+2026-10-19,house,121,gender,Women,2557
+2026-10-19,house,121,gender,Men,2290
+2026-10-19,house,121,gender,Not stated,11
+2026-10-19,house,121,age,18-29,373
+2026-10-19,house,121,age,30-39,269
+2026-10-19,house,121,age,40-49,515
+2026-10-19,house,121,age,50-64,1241
+2026-10-19,house,121,age,65+,2457
+2026-10-19,house,121,age,Not stated,3
+2026-10-19,house,122,race,White,1012
+2026-10-19,house,122,race,Black,763
+2026-10-19,house,122,race,Hispanic,80
+2026-10-19,house,122,race,Asian,26
+2026-10-19,house,122,race,Other,120
+2026-10-19,house,122,gender,Women,1097
+2026-10-19,house,122,gender,Men,889
+2026-10-19,house,122,gender,Not stated,15
+2026-10-19,house,122,age,18-29,246
+2026-10-19,house,122,age,30-39,240
+2026-10-19,house,122,age,40-49,231
+2026-10-19,house,122,age,50-64,538
+2026-10-19,house,122,age,65+,741
+2026-10-19,house,122,age,Not stated,5
+2026-10-19,house,123,race,White,2813
+2026-10-19,house,123,race,Black,1276
+2026-10-19,house,123,race,Hispanic,31
+2026-10-19,house,123,race,Asian,40
+2026-10-19,house,123,race,Other,225
+2026-10-19,house,123,gender,Women,2337
+2026-10-19,house,123,gender,Men,2043
+2026-10-19,house,123,gender,Not stated,5
+2026-10-19,house,123,age,18-29,197
+2026-10-19,house,123,age,30-39,203
+2026-10-19,house,123,age,40-49,312
+2026-10-19,house,123,age,50-64,1095
+2026-10-19,house,123,age,65+,2577
+2026-10-19,house,123,age,Not stated,1
+2026-10-19,house,124,race,White,4509
+2026-10-19,house,124,race,Black,1114
+2026-10-19,house,124,race,Hispanic,87
+2026-10-19,house,124,race,Asian,22
+2026-10-19,house,124,race,Other,299
+2026-10-19,house,124,gender,Women,3168
+2026-10-19,house,124,gender,Men,2858
+2026-10-19,house,124,gender,Not stated,5
+2026-10-19,house,124,age,18-29,186
+2026-10-19,house,124,age,30-39,243
+2026-10-19,house,124,age,40-49,300
+2026-10-19,house,124,age,50-64,1444
+2026-10-19,house,124,age,65+,3857
+2026-10-19,house,124,age,Not stated,1
+2026-10-19,house,125,race,White,2686
+2026-10-19,house,125,race,Black,1475
+2026-10-19,house,125,race,Hispanic,138
+2026-10-19,house,125,race,Asian,110
+2026-10-19,house,125,race,Other,392
+2026-10-19,house,125,gender,Women,2443
+2026-10-19,house,125,gender,Men,2350
+2026-10-19,house,125,gender,Not stated,8
+2026-10-19,house,125,age,18-29,320
+2026-10-19,house,125,age,30-39,368
+2026-10-19,house,125,age,40-49,644
+2026-10-19,house,125,age,50-64,1417
+2026-10-19,house,125,age,65+,2051
+2026-10-19,house,125,age,Not stated,1
+2026-10-19,house,126,race,White,1102
+2026-10-19,house,126,race,Black,3136
+2026-10-19,house,126,race,Hispanic,41
+2026-10-19,house,126,race,Asian,17
+2026-10-19,house,126,race,Other,255
+2026-10-19,house,126,gender,Women,2546
+2026-10-19,house,126,gender,Men,2000
+2026-10-19,house,126,gender,Not stated,5
+2026-10-19,house,126,age,18-29,200
+2026-10-19,house,126,age,30-39,228
+2026-10-19,house,126,age,40-49,320
+2026-10-19,house,126,age,50-64,1320
+2026-10-19,house,126,age,65+,2483
+2026-10-19,house,126,age,Not stated,0
+2026-10-19,house,127,race,White,3013
+2026-10-19,house,127,race,Black,890
+2026-10-19,house,127,race,Hispanic,106
+2026-10-19,house,127,race,Asian,122
+2026-10-19,house,127,race,Other,323
+2026-10-19,house,127,gender,Women,2326
+2026-10-19,house,127,gender,Men,2122
+2026-10-19,house,127,gender,Not stated,6
+2026-10-19,house,127,age,18-29,258
+2026-10-19,house,127,age,30-39,280
+2026-10-19,house,127,age,40-49,367
+2026-10-19,house,127,age,50-64,1035
+2026-10-19,house,127,age,65+,2513
+2026-10-19,house,127,age,Not stated,1
+2026-10-19,house,128,race,White,2534
+2026-10-19,house,128,race,Black,2647
+2026-10-19,house,128,race,Hispanic,15
+2026-10-19,house,128,race,Asian,7
+2026-10-19,house,128,race,Other,133
+2026-10-19,house,128,gender,Women,2965
+2026-10-19,house,128,gender,Men,2368
+2026-10-19,house,128,gender,Not stated,3
+2026-10-19,house,128,age,18-29,227
+2026-10-19,house,128,age,30-39,258
+2026-10-19,house,128,age,40-49,442
+2026-10-19,house,128,age,50-64,1559
+2026-10-19,house,128,age,65+,2850
+2026-10-19,house,128,age,Not stated,0
+2026-10-19,house,129,race,White,971
+2026-10-19,house,129,race,Black,1349
+2026-10-19,house,129,race,Hispanic,43
+2026-10-19,house,129,race,Asian,30
+2026-10-19,house,129,race,Other,178
+2026-10-19,house,129,gender,Women,1473
+2026-10-19,house,129,gender,Men,1090
+2026-10-19,house,129,gender,Not stated,8
+2026-10-19,house,129,age,18-29,158
+2026-10-19,house,129,age,30-39,180
+2026-10-19,house,129,age,40-49,203
+2026-10-19,house,129,age,50-64,636
+2026-10-19,house,129,age,65+,1394
+2026-10-19,house,129,age,Not stated,0
+2026-10-19,house,130,race,White,564
+2026-10-19,house,130,race,Black,2238
+2026-10-19,house,130,race,Hispanic,42
+2026-10-19,house,130,race,Asian,12
+2026-10-19,house,130,race,Other,213
+2026-10-19,house,130,gender,Women,1762
+2026-10-19,house,130,gender,Men,1297
+2026-10-19,house,130,gender,Not stated,10
+2026-10-19,house,130,age,18-29,162
+2026-10-19,house,130,age,30-39,172
+2026-10-19,house,130,age,40-49,251
+2026-10-19,house,130,age,50-64,846
+2026-10-19,house,130,age,65+,1638
+2026-10-19,house,130,age,Not stated,0
+2026-10-19,house,131,race,White,3729
+2026-10-19,house,131,race,Black,1316
+2026-10-19,house,131,race,Hispanic,157
+2026-10-19,house,131,race,Asian,152
+2026-10-19,house,131,race,Other,502
+2026-10-19,house,131,gender,Women,3004
+2026-10-19,house,131,gender,Men,2841
+2026-10-19,house,131,gender,Not stated,11
+2026-10-19,house,131,age,18-29,328
+2026-10-19,house,131,age,30-39,315
+2026-10-19,house,131,age,40-49,661
+2026-10-19,house,131,age,50-64,1689
+2026-10-19,house,131,age,65+,2862
+2026-10-19,house,131,age,Not stated,1
+2026-10-19,house,132,race,White,655
+2026-10-19,house,132,race,Black,2582
+2026-10-19,house,132,race,Hispanic,36
+2026-10-19,house,132,race,Asian,23
+2026-10-19,house,132,race,Other,235
+2026-10-19,house,132,gender,Women,2054
+2026-10-19,house,132,gender,Men,1470
+2026-10-19,house,132,gender,Not stated,7
+2026-10-19,house,132,age,18-29,209
+2026-10-19,house,132,age,30-39,224
+2026-10-19,house,132,age,40-49,366
+2026-10-19,house,132,age,50-64,1027
+2026-10-19,house,132,age,65+,1704
+2026-10-19,house,132,age,Not stated,1
+2026-10-19,house,133,race,White,2282
+2026-10-19,house,133,race,Black,1091
+2026-10-19,house,133,race,Hispanic,10
+2026-10-19,house,133,race,Asian,11
+2026-10-19,house,133,race,Other,108
+2026-10-19,house,133,gender,Women,1902
+2026-10-19,house,133,gender,Men,1597
+2026-10-19,house,133,gender,Not stated,3
+2026-10-19,house,133,age,18-29,180
+2026-10-19,house,133,age,30-39,145
+2026-10-19,house,133,age,40-49,285
+2026-10-19,house,133,age,50-64,956
+2026-10-19,house,133,age,65+,1935
+2026-10-19,house,133,age,Not stated,1
+2026-10-19,house,134,race,White,3347
+2026-10-19,house,134,race,Black,1666
+2026-10-19,house,134,race,Hispanic,34
+2026-10-19,house,134,race,Asian,15
+2026-10-19,house,134,race,Other,250
+2026-10-19,house,134,gender,Women,2876
+2026-10-19,house,134,gender,Men,2427
+2026-10-19,house,134,gender,Not stated,9
+2026-10-19,house,134,age,18-29,218
+2026-10-19,house,134,age,30-39,232
+2026-10-19,house,134,age,40-49,401
+2026-10-19,house,134,age,50-64,1597
+2026-10-19,house,134,age,65+,2864
+2026-10-19,house,134,age,Not stated,0
+2026-10-19,house,135,race,White,3542
+2026-10-19,house,135,race,Black,1169
+2026-10-19,house,135,race,Hispanic,41
+2026-10-19,house,135,race,Asian,29
+2026-10-19,house,135,race,Other,261
+2026-10-19,house,135,gender,Women,2720
+2026-10-19,house,135,gender,Men,2318
+2026-10-19,house,135,gender,Not stated,4
+2026-10-19,house,135,age,18-29,239
+2026-10-19,house,135,age,30-39,189
+2026-10-19,house,135,age,40-49,385
+2026-10-19,house,135,age,50-64,1525
+2026-10-19,house,135,age,65+,2704
+2026-10-19,house,135,age,Not stated,0
+2026-10-19,house,136,race,White,2673
+2026-10-19,house,136,race,Black,1157
+2026-10-19,house,136,race,Hispanic,62
+2026-10-19,house,136,race,Asian,30
+2026-10-19,house,136,race,Other,271
+2026-10-19,house,136,gender,Women,2239
+2026-10-19,house,136,gender,Men,1952
+2026-10-19,house,136,gender,Not stated,2
+2026-10-19,house,136,age,18-29,170
+2026-10-19,house,136,age,30-39,179
+2026-10-19,house,136,age,40-49,313
+2026-10-19,house,136,age,50-64,1250
+2026-10-19,house,136,age,65+,2281
+2026-10-19,house,136,age,Not stated,0
+2026-10-19,house,137,race,White,1326
+2026-10-19,house,137,race,Black,2882
+2026-10-19,house,137,race,Hispanic,85
+2026-10-19,house,137,race,Asian,32
+2026-10-19,house,137,race,Other,234
+2026-10-19,house,137,gender,Women,2569
+2026-10-19,house,137,gender,Men,1988
+2026-10-19,house,137,gender,Not stated,2
+2026-10-19,house,137,age,18-29,257
+2026-10-19,house,137,age,30-39,213
+2026-10-19,house,137,age,40-49,347
+2026-10-19,house,137,age,50-64,1314
+2026-10-19,house,137,age,65+,2426
+2026-10-19,house,137,age,Not stated,2
+2026-10-19,house,138,race,White,3065
+2026-10-19,house,138,race,Black,863
+2026-10-19,house,138,race,Hispanic,57
+2026-10-19,house,138,race,Asian,52
+2026-10-19,house,138,race,Other,222
+2026-10-19,house,138,gender,Women,2256
+2026-10-19,house,138,gender,Men,1995
+2026-10-19,house,138,gender,Not stated,8
+2026-10-19,house,138,age,18-29,164
+2026-10-19,house,138,age,30-39,171
+2026-10-19,house,138,age,40-49,267
+2026-10-19,house,138,age,50-64,1169
+2026-10-19,house,138,age,65+,2488
+2026-10-19,house,138,age,Not stated,0
+2026-10-19,house,139,race,White,2392
+2026-10-19,house,139,race,Black,1216
+2026-10-19,house,139,race,Hispanic,119
+2026-10-19,house,139,race,Asian,61
+2026-10-19,house,139,race,Other,242
+2026-10-19,house,139,gender,Women,2204
+2026-10-19,house,139,gender,Men,1823
+2026-10-19,house,139,gender,Not stated,3
+2026-10-19,house,139,age,18-29,236
+2026-10-19,house,139,age,30-39,229
+2026-10-19,house,139,age,40-49,377
+2026-10-19,house,139,age,50-64,1093
+2026-10-19,house,139,age,65+,2093
+2026-10-19,house,139,age,Not stated,2
+2026-10-19,house,140,race,White,536
+2026-10-19,house,140,race,Black,1553
+2026-10-19,house,140,race,Hispanic,31
+2026-10-19,house,140,race,Asian,18
+2026-10-19,house,140,race,Other,118
+2026-10-19,house,140,gender,Women,1384
+2026-10-19,house,140,gender,Men,870
+2026-10-19,house,140,gender,Not stated,2
+2026-10-19,house,140,age,18-29,102
+2026-10-19,house,140,age,30-39,136
+2026-10-19,house,140,age,40-49,172
+2026-10-19,house,140,age,50-64,581
+2026-10-19,house,140,age,65+,1265
+2026-10-19,house,140,age,Not stated,0
+2026-10-19,house,141,race,White,797
+2026-10-19,house,141,race,Black,3077
+2026-10-19,house,141,race,Hispanic,100
+2026-10-19,house,141,race,Asian,52
+2026-10-19,house,141,race,Other,214
+2026-10-19,house,141,gender,Women,2492
+2026-10-19,house,141,gender,Men,1742
+2026-10-19,house,141,gender,Not stated,6
+2026-10-19,house,141,age,18-29,236
+2026-10-19,house,141,age,30-39,248
+2026-10-19,house,141,age,40-49,349
+2026-10-19,house,141,age,50-64,1136
+2026-10-19,house,141,age,65+,2270
+2026-10-19,house,141,age,Not stated,1
+2026-10-19,house,142,race,White,1786
+2026-10-19,house,142,race,Black,2212
+2026-10-19,house,142,race,Hispanic,40
+2026-10-19,house,142,race,Asian,40
+2026-10-19,house,142,race,Other,174
+2026-10-19,house,142,gender,Women,2510
+2026-10-19,house,142,gender,Men,1739
+2026-10-19,house,142,gender,Not stated,3
+2026-10-19,house,142,age,18-29,286
+2026-10-19,house,142,age,30-39,310
+2026-10-19,house,142,age,40-49,405
+2026-10-19,house,142,age,50-64,1146
+2026-10-19,house,142,age,65+,2104
+2026-10-19,house,142,age,Not stated,1
+2026-10-19,house,143,race,White,1216
+2026-10-19,house,143,race,Black,2258
+2026-10-19,house,143,race,Hispanic,48
+2026-10-19,house,143,race,Asian,33
+2026-10-19,house,143,race,Other,213
+2026-10-19,house,143,gender,Women,2191
+2026-10-19,house,143,gender,Men,1570
+2026-10-19,house,143,gender,Not stated,7
+2026-10-19,house,143,age,18-29,229
+2026-10-19,house,143,age,30-39,281
+2026-10-19,house,143,age,40-49,395
+2026-10-19,house,143,age,50-64,1032
+2026-10-19,house,143,age,65+,1829
+2026-10-19,house,143,age,Not stated,2
+2026-10-19,house,144,race,White,3891
+2026-10-19,house,144,race,Black,1283
+2026-10-19,house,144,race,Hispanic,39
+2026-10-19,house,144,race,Asian,37
+2026-10-19,house,144,race,Other,173
+2026-10-19,house,144,gender,Women,2905
+2026-10-19,house,144,gender,Men,2517
+2026-10-19,house,144,gender,Not stated,1
+2026-10-19,house,144,age,18-29,288
+2026-10-19,house,144,age,30-39,235
+2026-10-19,house,144,age,40-49,441
+2026-10-19,house,144,age,50-64,1516
+2026-10-19,house,144,age,65+,2943
+2026-10-19,house,144,age,Not stated,0
+2026-10-19,house,145,race,White,1540
+2026-10-19,house,145,race,Black,2611
+2026-10-19,house,145,race,Hispanic,34
+2026-10-19,house,145,race,Asian,38
+2026-10-19,house,145,race,Other,220
+2026-10-19,house,145,gender,Women,2561
+2026-10-19,house,145,gender,Men,1878
+2026-10-19,house,145,gender,Not stated,4
+2026-10-19,house,145,age,18-29,268
+2026-10-19,house,145,age,30-39,277
+2026-10-19,house,145,age,40-49,410
+2026-10-19,house,145,age,50-64,1265
+2026-10-19,house,145,age,65+,2222
+2026-10-19,house,145,age,Not stated,1
+2026-10-19,house,146,race,White,3737
+2026-10-19,house,146,race,Black,2334
+2026-10-19,house,146,race,Hispanic,135
+2026-10-19,house,146,race,Asian,145
+2026-10-19,house,146,race,Other,506
+2026-10-19,house,146,gender,Women,3627
+2026-10-19,house,146,gender,Men,3217
+2026-10-19,house,146,gender,Not stated,13
+2026-10-19,house,146,age,18-29,450
+2026-10-19,house,146,age,30-39,437
+2026-10-19,house,146,age,40-49,774
+2026-10-19,house,146,age,50-64,2081
+2026-10-19,house,146,age,65+,3112
+2026-10-19,house,146,age,Not stated,3
+2026-10-19,house,147,race,White,2911
+2026-10-19,house,147,race,Black,2253
+2026-10-19,house,147,race,Hispanic,106
+2026-10-19,house,147,race,Asian,139
+2026-10-19,house,147,race,Other,389
+2026-10-19,house,147,gender,Women,3165
+2026-10-19,house,147,gender,Men,2624
+2026-10-19,house,147,gender,Not stated,9
+2026-10-19,house,147,age,18-29,404
+2026-10-19,house,147,age,30-39,382
+2026-10-19,house,147,age,40-49,610
+2026-10-19,house,147,age,50-64,1657
+2026-10-19,house,147,age,65+,2745
+2026-10-19,house,147,age,Not stated,0
+2026-10-19,house,148,race,White,2910
+2026-10-19,house,148,race,Black,1229
+2026-10-19,house,148,race,Hispanic,46
+2026-10-19,house,148,race,Asian,26
+2026-10-19,house,148,race,Other,229
+2026-10-19,house,148,gender,Women,2322
+2026-10-19,house,148,gender,Men,2114
+2026-10-19,house,148,gender,Not stated,4
+2026-10-19,house,148,age,18-29,219
+2026-10-19,house,148,age,30-39,214
+2026-10-19,house,148,age,40-49,398
+2026-10-19,house,148,age,50-64,1243
+2026-10-19,house,148,age,65+,2366
+2026-10-19,house,148,age,Not stated,0
+2026-10-19,house,149,race,White,2040
+2026-10-19,house,149,race,Black,2360
+2026-10-19,house,149,race,Hispanic,23
+2026-10-19,house,149,race,Asian,36
+2026-10-19,house,149,race,Other,125
+2026-10-19,house,149,gender,Women,2580
+2026-10-19,house,149,gender,Men,1999
+2026-10-19,house,149,gender,Not stated,5
+2026-10-19,house,149,age,18-29,223
+2026-10-19,house,149,age,30-39,242
+2026-10-19,house,149,age,40-49,409
+2026-10-19,house,149,age,50-64,1203
+2026-10-19,house,149,age,65+,2506
+2026-10-19,house,149,age,Not stated,1
+2026-10-19,house,150,race,White,1529
+2026-10-19,house,150,race,Black,2037
+2026-10-19,house,150,race,Hispanic,37
+2026-10-19,house,150,race,Asian,20
+2026-10-19,house,150,race,Other,148
+2026-10-19,house,150,gender,Women,2115
+2026-10-19,house,150,gender,Men,1653
+2026-10-19,house,150,gender,Not stated,3
+2026-10-19,house,150,age,18-29,175
+2026-10-19,house,150,age,30-39,184
+2026-10-19,house,150,age,40-49,267
+2026-10-19,house,150,age,50-64,1041
+2026-10-19,house,150,age,65+,2104
+2026-10-19,house,150,age,Not stated,0
+2026-10-19,house,151,race,White,1510
+2026-10-19,house,151,race,Black,2017
+2026-10-19,house,151,race,Hispanic,24
+2026-10-19,house,151,race,Asian,9
+2026-10-19,house,151,race,Other,115
+2026-10-19,house,151,gender,Women,2077
+2026-10-19,house,151,gender,Men,1591
+2026-10-19,house,151,gender,Not stated,7
+2026-10-19,house,151,age,18-29,162
+2026-10-19,house,151,age,30-39,183
+2026-10-19,house,151,age,40-49,291
+2026-10-19,house,151,age,50-64,1073
+2026-10-19,house,151,age,65+,1965
+2026-10-19,house,151,age,Not stated,1
+2026-10-19,house,152,race,White,1976
+2026-10-19,house,152,race,Black,1206
+2026-10-19,house,152,race,Hispanic,31
+2026-10-19,house,152,race,Asian,16
+2026-10-19,house,152,race,Other,149
+2026-10-19,house,152,gender,Women,1836
+2026-10-19,house,152,gender,Men,1537
+2026-10-19,house,152,gender,Not stated,5
+2026-10-19,house,152,age,18-29,146
+2026-10-19,house,152,age,30-39,141
+2026-10-19,house,152,age,40-49,293
+2026-10-19,house,152,age,50-64,961
+2026-10-19,house,152,age,65+,1836
+2026-10-19,house,152,age,Not stated,1
+2026-10-19,house,153,race,White,702
+2026-10-19,house,153,race,Black,2291
+2026-10-19,house,153,race,Hispanic,14
+2026-10-19,house,153,race,Asian,3
+2026-10-19,house,153,race,Other,121
+2026-10-19,house,153,gender,Women,1882
+2026-10-19,house,153,gender,Men,1240
+2026-10-19,house,153,gender,Not stated,9
+2026-10-19,house,153,age,18-29,176
+2026-10-19,house,153,age,30-39,165
+2026-10-19,house,153,age,40-49,284
+2026-10-19,house,153,age,50-64,921
+2026-10-19,house,153,age,65+,1582
+2026-10-19,house,153,age,Not stated,3
+2026-10-19,house,154,race,White,1211
+2026-10-19,house,154,race,Black,2083
+2026-10-19,house,154,race,Hispanic,13
+2026-10-19,house,154,race,Asian,4
+2026-10-19,house,154,race,Other,99
+2026-10-19,house,154,gender,Women,1963
+2026-10-19,house,154,gender,Men,1441
+2026-10-19,house,154,gender,Not stated,6
+2026-10-19,house,154,age,18-29,131
+2026-10-19,house,154,age,30-39,112
+2026-10-19,house,154,age,40-49,216
+2026-10-19,house,154,age,50-64,834
+2026-10-19,house,154,age,65+,2115
+2026-10-19,house,154,age,Not stated,2
+2026-10-19,house,155,race,White,2145
+2026-10-19,house,155,race,Black,1200
+2026-10-19,house,155,race,Hispanic,13
+2026-10-19,house,155,race,Asian,28
+2026-10-19,house,155,race,Other,156
+2026-10-19,house,155,gender,Women,1918
+2026-10-19,house,155,gender,Men,1619
+2026-10-19,house,155,gender,Not stated,5
+2026-10-19,house,155,age,18-29,179
+2026-10-19,house,155,age,30-39,147
+2026-10-19,house,155,age,40-49,254
+2026-10-19,house,155,age,50-64,1047
+2026-10-19,house,155,age,65+,1914
+2026-10-19,house,155,age,Not stated,1
+2026-10-19,house,156,race,White,2074
+2026-10-19,house,156,race,Black,998
+2026-10-19,house,156,race,Hispanic,41
+2026-10-19,house,156,race,Asian,6
+2026-10-19,house,156,race,Other,98
+2026-10-19,house,156,gender,Women,1739
+2026-10-19,house,156,gender,Men,1476
+2026-10-19,house,156,gender,Not stated,2
+2026-10-19,house,156,age,18-29,146
+2026-10-19,house,156,age,30-39,148
+2026-10-19,house,156,age,40-49,235
+2026-10-19,house,156,age,50-64,795
+2026-10-19,house,156,age,65+,1893
+2026-10-19,house,156,age,Not stated,0
+2026-10-19,house,157,race,White,2092
+2026-10-19,house,157,race,Black,709
+2026-10-19,house,157,race,Hispanic,60
+2026-10-19,house,157,race,Asian,7
+2026-10-19,house,157,race,Other,86
+2026-10-19,house,157,gender,Women,1566
+2026-10-19,house,157,gender,Men,1386
+2026-10-19,house,157,gender,Not stated,2
+2026-10-19,house,157,age,18-29,136
+2026-10-19,house,157,age,30-39,113
+2026-10-19,house,157,age,40-49,216
+2026-10-19,house,157,age,50-64,752
+2026-10-19,house,157,age,65+,1737
+2026-10-19,house,157,age,Not stated,0
+2026-10-19,house,158,race,White,2158
+2026-10-19,house,158,race,Black,1074
+2026-10-19,house,158,race,Hispanic,25
+2026-10-19,house,158,race,Asian,20
+2026-10-19,house,158,race,Other,119
+2026-10-19,house,158,gender,Women,1859
+2026-10-19,house,158,gender,Men,1534
+2026-10-19,house,158,gender,Not stated,3
+2026-10-19,house,158,age,18-29,149
+2026-10-19,house,158,age,30-39,162
+2026-10-19,house,158,age,40-49,270
+2026-10-19,house,158,age,50-64,902
+2026-10-19,house,158,age,65+,1912
+2026-10-19,house,158,age,Not stated,1
+2026-10-19,house,159,race,White,2617
+2026-10-19,house,159,race,Black,1012
+2026-10-19,house,159,race,Hispanic,49
+2026-10-19,house,159,race,Asian,16
+2026-10-19,house,159,race,Other,298
+2026-10-19,house,159,gender,Women,2090
+2026-10-19,house,159,gender,Men,1897
+2026-10-19,house,159,gender,Not stated,5
+2026-10-19,house,159,age,18-29,167
+2026-10-19,house,159,age,30-39,229
+2026-10-19,house,159,age,40-49,341
+2026-10-19,house,159,age,50-64,1218
+2026-10-19,house,159,age,65+,2033
+2026-10-19,house,159,age,Not stated,4
+2026-10-19,house,160,race,White,1911
+2026-10-19,house,160,race,Black,482
+2026-10-19,house,160,race,Hispanic,51
+2026-10-19,house,160,race,Asian,29
+2026-10-19,house,160,race,Other,168
+2026-10-19,house,160,gender,Women,1388
+2026-10-19,house,160,gender,Men,1248
+2026-10-19,house,160,gender,Not stated,5
+2026-10-19,house,160,age,18-29,181
+2026-10-19,house,160,age,30-39,169
+2026-10-19,house,160,age,40-49,247
+2026-10-19,house,160,age,50-64,691
+2026-10-19,house,160,age,65+,1353
+2026-10-19,house,160,age,Not stated,0
+2026-10-19,house,161,race,White,1857
+2026-10-19,house,161,race,Black,1116
+2026-10-19,house,161,race,Hispanic,98
+2026-10-19,house,161,race,Asian,56
+2026-10-19,house,161,race,Other,382
+2026-10-19,house,161,gender,Women,1826
+2026-10-19,house,161,gender,Men,1680
+2026-10-19,house,161,gender,Not stated,3
+2026-10-19,house,161,age,18-29,200
+2026-10-19,house,161,age,30-39,228
+2026-10-19,house,161,age,40-49,438
+2026-10-19,house,161,age,50-64,1052
+2026-10-19,house,161,age,65+,1591
+2026-10-19,house,161,age,Not stated,0
+2026-10-19,house,162,race,White,1509
+2026-10-19,house,162,race,Black,1946
+2026-10-19,house,162,race,Hispanic,107
+2026-10-19,house,162,race,Asian,54
+2026-10-19,house,162,race,Other,345
+2026-10-19,house,162,gender,Women,2278
+2026-10-19,house,162,gender,Men,1672
+2026-10-19,house,162,gender,Not stated,11
+2026-10-19,house,162,age,18-29,269
+2026-10-19,house,162,age,30-39,305
+2026-10-19,house,162,age,40-49,391
+2026-10-19,house,162,age,50-64,1149
+2026-10-19,house,162,age,65+,1843
+2026-10-19,house,162,age,Not stated,4
+2026-10-19,house,163,race,White,1508
+2026-10-19,house,163,race,Black,1343
+2026-10-19,house,163,race,Hispanic,65
+2026-10-19,house,163,race,Asian,35
+2026-10-19,house,163,race,Other,206
+2026-10-19,house,163,gender,Women,1761
+2026-10-19,house,163,gender,Men,1389
+2026-10-19,house,163,gender,Not stated,7
+2026-10-19,house,163,age,18-29,226
+2026-10-19,house,163,age,30-39,203
+2026-10-19,house,163,age,40-49,296
+2026-10-19,house,163,age,50-64,803
+2026-10-19,house,163,age,65+,1628
+2026-10-19,house,163,age,Not stated,1
+2026-10-19,house,164,race,White,2891
+2026-10-19,house,164,race,Black,1391
+2026-10-19,house,164,race,Hispanic,188
+2026-10-19,house,164,race,Asian,97
+2026-10-19,house,164,race,Other,427
+2026-10-19,house,164,gender,Women,2663
+2026-10-19,house,164,gender,Men,2317
+2026-10-19,house,164,gender,Not stated,14
+2026-10-19,house,164,age,18-29,286
+2026-10-19,house,164,age,30-39,329
+2026-10-19,house,164,age,40-49,515
+2026-10-19,house,164,age,50-64,1395
+2026-10-19,house,164,age,65+,2467
+2026-10-19,house,164,age,Not stated,2
+2026-10-19,house,165,race,White,1409
+2026-10-19,house,165,race,Black,1780
+2026-10-19,house,165,race,Hispanic,46
+2026-10-19,house,165,race,Asian,40
+2026-10-19,house,165,race,Other,227
+2026-10-19,house,165,gender,Women,2030
+2026-10-19,house,165,gender,Men,1462
+2026-10-19,house,165,gender,Not stated,10
+2026-10-19,house,165,age,18-29,187
+2026-10-19,house,165,age,30-39,279
+2026-10-19,house,165,age,40-49,339
+2026-10-19,house,165,age,50-64,869
+2026-10-19,house,165,age,65+,1826
+2026-10-19,house,165,age,Not stated,2
+2026-10-19,house,166,race,White,4992
+2026-10-19,house,166,race,Black,419
+2026-10-19,house,166,race,Hispanic,94
+2026-10-19,house,166,race,Asian,85
+2026-10-19,house,166,race,Other,417
+2026-10-19,house,166,gender,Women,3175
+2026-10-19,house,166,gender,Men,2820
+2026-10-19,house,166,gender,Not stated,12
+2026-10-19,house,166,age,18-29,219
+2026-10-19,house,166,age,30-39,198
+2026-10-19,house,166,age,40-49,443
+2026-10-19,house,166,age,50-64,1428
+2026-10-19,house,166,age,65+,3718
+2026-10-19,house,166,age,Not stated,1
+2026-10-19,house,167,race,White,3095
+2026-10-19,house,167,race,Black,1119
+2026-10-19,house,167,race,Hispanic,90
+2026-10-19,house,167,race,Asian,53
+2026-10-19,house,167,race,Other,286
+2026-10-19,house,167,gender,Women,2395
+2026-10-19,house,167,gender,Men,2241
+2026-10-19,house,167,gender,Not stated,7
+2026-10-19,house,167,age,18-29,201
+2026-10-19,house,167,age,30-39,238
+2026-10-19,house,167,age,40-49,405
+2026-10-19,house,167,age,50-64,1324
+2026-10-19,house,167,age,65+,2475
+2026-10-19,house,167,age,Not stated,0
+2026-10-19,house,168,race,White,1306
+2026-10-19,house,168,race,Black,2790
+2026-10-19,house,168,race,Hispanic,198
+2026-10-19,house,168,race,Asian,67
+2026-10-19,house,168,race,Other,339
+2026-10-19,house,168,gender,Women,2526
+2026-10-19,house,168,gender,Men,2169
+2026-10-19,house,168,gender,Not stated,5
+2026-10-19,house,168,age,18-29,220
+2026-10-19,house,168,age,30-39,274
+2026-10-19,house,168,age,40-49,419
+2026-10-19,house,168,age,50-64,1547
+2026-10-19,house,168,age,65+,2238
+2026-10-19,house,168,age,Not stated,2
+2026-10-19,house,169,race,White,2077
+2026-10-19,house,169,race,Black,1133
+2026-10-19,house,169,race,Hispanic,56
+2026-10-19,house,169,race,Asian,12
+2026-10-19,house,169,race,Other,131
+2026-10-19,house,169,gender,Women,1887
+2026-10-19,house,169,gender,Men,1518
+2026-10-19,house,169,gender,Not stated,4
+2026-10-19,house,169,age,18-29,162
+2026-10-19,house,169,age,30-39,158
+2026-10-19,house,169,age,40-49,281
+2026-10-19,house,169,age,50-64,924
+2026-10-19,house,169,age,65+,1884
+2026-10-19,house,169,age,Not stated,0
+2026-10-19,house,170,race,White,2285
+2026-10-19,house,170,race,Black,783
+2026-10-19,house,170,race,Hispanic,84
+2026-10-19,house,170,race,Asian,15
+2026-10-19,house,170,race,Other,131
+2026-10-19,house,170,gender,Women,1774
+2026-10-19,house,170,gender,Men,1520
+2026-10-19,house,170,gender,Not stated,4
+2026-10-19,house,170,age,18-29,171
+2026-10-19,house,170,age,30-39,173
+2026-10-19,house,170,age,40-49,304
+2026-10-19,house,170,age,50-64,921
+2026-10-19,house,170,age,65+,1726
+2026-10-19,house,170,age,Not stated,3
+2026-10-19,house,171,race,White,1480
+2026-10-19,house,171,race,Black,1210
+2026-10-19,house,171,race,Hispanic,25
+2026-10-19,house,171,race,Asian,10
+2026-10-19,house,171,race,Other,106
+2026-10-19,house,171,gender,Women,1577
+2026-10-19,house,171,gender,Men,1252
+2026-10-19,house,171,gender,Not stated,2
+2026-10-19,house,171,age,18-29,116
+2026-10-19,house,171,age,30-39,101
+2026-10-19,house,171,age,40-49,221
+2026-10-19,house,171,age,50-64,777
+2026-10-19,house,171,age,65+,1615
+2026-10-19,house,171,age,Not stated,1
+2026-10-19,house,172,race,White,1642
+2026-10-19,house,172,race,Black,770
+2026-10-19,house,172,race,Hispanic,71
+2026-10-19,house,172,race,Asian,9
+2026-10-19,house,172,race,Other,102
+2026-10-19,house,172,gender,Women,1393
+2026-10-19,house,172,gender,Men,1197
+2026-10-19,house,172,gender,Not stated,4
+2026-10-19,house,172,age,18-29,136
+2026-10-19,house,172,age,30-39,141
+2026-10-19,house,172,age,40-49,238
+2026-10-19,house,172,age,50-64,664
+2026-10-19,house,172,age,65+,1415
+2026-10-19,house,172,age,Not stated,0
+2026-10-19,house,173,race,White,2891
+2026-10-19,house,173,race,Black,1693
+2026-10-19,house,173,race,Hispanic,55
+2026-10-19,house,173,race,Asian,28
+2026-10-19,house,173,race,Other,224
+2026-10-19,house,173,gender,Women,2788
+2026-10-19,house,173,gender,Men,2097
+2026-10-19,house,173,gender,Not stated,6
+2026-10-19,house,173,age,18-29,241
+2026-10-19,house,173,age,30-39,246
+2026-10-19,house,173,age,40-49,440
+2026-10-19,house,173,age,50-64,1239
+2026-10-19,house,173,age,65+,2724
+2026-10-19,house,173,age,Not stated,1
+2026-10-19,house,174,race,White,2066
+2026-10-19,house,174,race,Black,559
+2026-10-19,house,174,race,Hispanic,24
+2026-10-19,house,174,race,Asian,3
+2026-10-19,house,174,race,Other,118
+2026-10-19,house,174,gender,Women,1438
+2026-10-19,house,174,gender,Men,1330
+2026-10-19,house,174,gender,Not stated,2
+2026-10-19,house,174,age,18-29,84
+2026-10-19,house,174,age,30-39,105
+2026-10-19,house,174,age,40-49,192
+2026-10-19,house,174,age,50-64,766
+2026-10-19,house,174,age,65+,1623
+2026-10-19,house,174,age,Not stated,0
+2026-10-19,house,175,race,White,2235
+2026-10-19,house,175,race,Black,1216
+2026-10-19,house,175,race,Hispanic,75
+2026-10-19,house,175,race,Asian,43
+2026-10-19,house,175,race,Other,213
+2026-10-19,house,175,gender,Women,2038
+2026-10-19,house,175,gender,Men,1740
+2026-10-19,house,175,gender,Not stated,4
+2026-10-19,house,175,age,18-29,180
+2026-10-19,house,175,age,30-39,186
+2026-10-19,house,175,age,40-49,330
+2026-10-19,house,175,age,50-64,1106
+2026-10-19,house,175,age,65+,1979
+2026-10-19,house,175,age,Not stated,1
+2026-10-19,house,176,race,White,1995
+2026-10-19,house,176,race,Black,748
+2026-10-19,house,176,race,Hispanic,48
+2026-10-19,house,176,race,Asian,16
+2026-10-19,house,176,race,Other,117
+2026-10-19,house,176,gender,Women,1574
+2026-10-19,house,176,gender,Men,1342
+2026-10-19,house,176,gender,Not stated,8
+2026-10-19,house,176,age,18-29,119
+2026-10-19,house,176,age,30-39,100
+2026-10-19,house,176,age,40-49,241
+2026-10-19,house,176,age,50-64,782
+2026-10-19,house,176,age,65+,1682
+2026-10-19,house,176,age,Not stated,0
+2026-10-19,house,177,race,White,1180
+2026-10-19,house,177,race,Black,1804
+2026-10-19,house,177,race,Hispanic,64
+2026-10-19,house,177,race,Asian,19
+2026-10-19,house,177,race,Other,165
+2026-10-19,house,177,gender,Women,1925
+2026-10-19,house,177,gender,Men,1303
+2026-10-19,house,177,gender,Not stated,4
+2026-10-19,house,177,age,18-29,203
+2026-10-19,house,177,age,30-39,221
+2026-10-19,house,177,age,40-49,325
+2026-10-19,house,177,age,50-64,846
+2026-10-19,house,177,age,65+,1635
+2026-10-19,house,177,age,Not stated,2
+2026-10-19,house,178,race,White,3355
+2026-10-19,house,178,race,Black,532
+2026-10-19,house,178,race,Hispanic,47
+2026-10-19,house,178,race,Asian,14
+2026-10-19,house,178,race,Other,172
+2026-10-19,house,178,gender,Women,2120
+2026-10-19,house,178,gender,Men,1998
+2026-10-19,house,178,gender,Not stated,2
+2026-10-19,house,178,age,18-29,179
+2026-10-19,house,178,age,30-39,172
+2026-10-19,house,178,age,40-49,286
+2026-10-19,house,178,age,50-64,1135
+2026-10-19,house,178,age,65+,2347
+2026-10-19,house,178,age,Not stated,1
+2026-10-19,house,179,race,White,4659
+2026-10-19,house,179,race,Black,1149
+2026-10-19,house,179,race,Hispanic,75
+2026-10-19,house,179,race,Asian,35
+2026-10-19,house,179,race,Other,316
+2026-10-19,house,179,gender,Women,3430
+2026-10-19,house,179,gender,Men,2798
+2026-10-19,house,179,gender,Not stated,6
+2026-10-19,house,179,age,18-29,220
+2026-10-19,house,179,age,30-39,225
+2026-10-19,house,179,age,40-49,344
+2026-10-19,house,179,age,50-64,1366
+2026-10-19,house,179,age,65+,4079
+2026-10-19,house,179,age,Not stated,0
+2026-10-19,house,180,race,White,2962
+2026-10-19,house,180,race,Black,866
+2026-10-19,house,180,race,Hispanic,76
+2026-10-19,house,180,race,Asian,53
+2026-10-19,house,180,race,Other,386
+2026-10-19,house,180,gender,Women,2241
+2026-10-19,house,180,gender,Men,2098
+2026-10-19,house,180,gender,Not stated,4
+2026-10-19,house,180,age,18-29,155
+2026-10-19,house,180,age,30-39,180
+2026-10-19,house,180,age,40-49,321
+2026-10-19,house,180,age,50-64,1167
+2026-10-19,house,180,age,65+,2520
+2026-10-19,house,180,age,Not stated,0
+2026-10-19,senate,1,race,White,9296
+2026-10-19,senate,1,race,Black,4612
+2026-10-19,senate,1,race,Hispanic,465
+2026-10-19,senate,1,race,Asian,247
+2026-10-19,senate,1,race,Other,1168
+2026-10-19,senate,1,gender,Women,8389
+2026-10-19,senate,1,gender,Men,7368
+2026-10-19,senate,1,gender,Not stated,31
+2026-10-19,senate,1,age,18-29,745
+2026-10-19,senate,1,age,30-39,818
+2026-10-19,senate,1,age,40-49,1393
+2026-10-19,senate,1,age,50-64,4418
+2026-10-19,senate,1,age,65+,8409
+2026-10-19,senate,1,age,Not stated,5
+2026-10-19,senate,2,race,White,4278
+2026-10-19,senate,2,race,Black,5286
+2026-10-19,senate,2,race,Hispanic,236
+2026-10-19,senate,2,race,Asian,119
+2026-10-19,senate,2,race,Other,842
+2026-10-19,senate,2,gender,Women,6159
+2026-10-19,senate,2,gender,Men,4576
+2026-10-19,senate,2,gender,Not stated,26
+2026-10-19,senate,2,age,18-29,699
+2026-10-19,senate,2,age,30-39,825
+2026-10-19,senate,2,age,40-49,1118
+2026-10-19,senate,2,age,50-64,2886
+2026-10-19,senate,2,age,65+,5227
+2026-10-19,senate,2,age,Not stated,6
+2026-10-19,senate,3,race,White,11377
+2026-10-19,senate,3,race,Black,3071
+2026-10-19,senate,3,race,Hispanic,212
+2026-10-19,senate,3,race,Asian,127
+2026-10-19,senate,3,race,Other,977
+2026-10-19,senate,3,gender,Women,8367
+2026-10-19,senate,3,gender,Men,7379
+2026-10-19,senate,3,gender,Not stated,18
+2026-10-19,senate,3,age,18-29,539
+2026-10-19,senate,3,age,30-39,610
+2026-10-19,senate,3,age,40-49,1036
+2026-10-19,senate,3,age,50-64,3919
+2026-10-19,senate,3,age,65+,9660
+2026-10-19,senate,3,age,Not stated,0
+2026-10-19,senate,4,race,White,7527
+2026-10-19,senate,4,race,Black,2676
+2026-10-19,senate,4,race,Hispanic,225
+2026-10-19,senate,4,race,Asian,126
+2026-10-19,senate,4,race,Other,849
+2026-10-19,senate,4,gender,Women,6003
+2026-10-19,senate,4,gender,Men,5383
+2026-10-19,senate,4,gender,Not stated,17
+2026-10-19,senate,4,age,18-29,613
+2026-10-19,senate,4,age,30-39,633
+2026-10-19,senate,4,age,40-49,1015
+2026-10-19,senate,4,age,50-64,3234
+2026-10-19,senate,4,age,65+,5902
+2026-10-19,senate,4,age,Not stated,6
+2026-10-19,senate,5,race,White,1582
+2026-10-19,senate,5,race,Black,3161
+2026-10-19,senate,5,race,Hispanic,1075
+2026-10-19,senate,5,race,Asian,661
+2026-10-19,senate,5,race,Other,729
+2026-10-19,senate,5,gender,Women,4091
+2026-10-19,senate,5,gender,Men,3070
+2026-10-19,senate,5,gender,Not stated,47
+2026-10-19,senate,5,age,18-29,1047
+2026-10-19,senate,5,age,30-39,846
+2026-10-19,senate,5,age,40-49,844
+2026-10-19,senate,5,age,50-64,2196
+2026-10-19,senate,5,age,65+,2264
+2026-10-19,senate,5,age,Not stated,11
+2026-10-19,senate,6,race,White,10782
+2026-10-19,senate,6,race,Black,3076
+2026-10-19,senate,6,race,Hispanic,385
+2026-10-19,senate,6,race,Asian,170
+2026-10-19,senate,6,race,Other,1282
+2026-10-19,senate,6,gender,Women,8371
+2026-10-19,senate,6,gender,Men,7297
+2026-10-19,senate,6,gender,Not stated,27
+2026-10-19,senate,6,age,18-29,803
+2026-10-19,senate,6,age,30-39,776
+2026-10-19,senate,6,age,40-49,1372
+2026-10-19,senate,6,age,50-64,4463
+2026-10-19,senate,6,age,65+,8278
+2026-10-19,senate,6,age,Not stated,3
+2026-10-19,senate,7,race,White,6378
+2026-10-19,senate,7,race,Black,3685
+2026-10-19,senate,7,race,Hispanic,965
+2026-10-19,senate,7,race,Asian,1686
+2026-10-19,senate,7,race,Other,1514
+2026-10-19,senate,7,gender,Women,7696
+2026-10-19,senate,7,gender,Men,6466
+2026-10-19,senate,7,gender,Not stated,66
+2026-10-19,senate,7,age,18-29,1456
+2026-10-19,senate,7,age,30-39,1387
+2026-10-19,senate,7,age,40-49,1625
+2026-10-19,senate,7,age,50-64,4389
+2026-10-19,senate,7,age,65+,5353
+2026-10-19,senate,7,age,Not stated,18
+2026-10-19,senate,8,race,White,6315
+2026-10-19,senate,8,race,Black,3646
+2026-10-19,senate,8,race,Hispanic,189
+2026-10-19,senate,8,race,Asian,75
+2026-10-19,senate,8,race,Other,530
+2026-10-19,senate,8,gender,Women,5910
+2026-10-19,senate,8,gender,Men,4830
+2026-10-19,senate,8,gender,Not stated,15
+2026-10-19,senate,8,age,18-29,534
+2026-10-19,senate,8,age,30-39,547
+2026-10-19,senate,8,age,40-49,938
+2026-10-19,senate,8,age,50-64,2978
+2026-10-19,senate,8,age,65+,5754
+2026-10-19,senate,8,age,Not stated,4
+2026-10-19,senate,9,race,White,5438
+2026-10-19,senate,9,race,Black,6165
+2026-10-19,senate,9,race,Hispanic,996
+2026-10-19,senate,9,race,Asian,1139
+2026-10-19,senate,9,race,Other,1669
+2026-10-19,senate,9,gender,Women,8611
+2026-10-19,senate,9,gender,Men,6735
+2026-10-19,senate,9,gender,Not stated,61
+2026-10-19,senate,9,age,18-29,1586
+2026-10-19,senate,9,age,30-39,1235
+2026-10-19,senate,9,age,40-49,1874
+2026-10-19,senate,9,age,50-64,4917
+2026-10-19,senate,9,age,65+,5780
+2026-10-19,senate,9,age,Not stated,15
+2026-10-19,senate,10,race,White,4713
+2026-10-19,senate,10,race,Black,14505
+2026-10-19,senate,10,race,Hispanic,348
+2026-10-19,senate,10,race,Asian,280
+2026-10-19,senate,10,race,Other,1651
+2026-10-19,senate,10,gender,Women,12768
+2026-10-19,senate,10,gender,Men,8706
+2026-10-19,senate,10,gender,Not stated,23
+2026-10-19,senate,10,age,18-29,1478
+2026-10-19,senate,10,age,30-39,2032
+2026-10-19,senate,10,age,40-49,2451
+2026-10-19,senate,10,age,50-64,6281
+2026-10-19,senate,10,age,65+,9246
+2026-10-19,senate,10,age,Not stated,9
+2026-10-19,senate,11,race,White,6387
+2026-10-19,senate,11,race,Black,3573
+2026-10-19,senate,11,race,Hispanic,165
+2026-10-19,senate,11,race,Asian,44
+2026-10-19,senate,11,race,Other,453
+2026-10-19,senate,11,gender,Women,5881
+2026-10-19,senate,11,gender,Men,4728
+2026-10-19,senate,11,gender,Not stated,13
+2026-10-19,senate,11,age,18-29,514
+2026-10-19,senate,11,age,30-39,503
+2026-10-19,senate,11,age,40-49,893
+2026-10-19,senate,11,age,50-64,2766
+2026-10-19,senate,11,age,65+,5944
+2026-10-19,senate,11,age,Not stated,2
+2026-10-19,senate,12,race,White,3614
+2026-10-19,senate,12,race,Black,7304
+2026-10-19,senate,12,race,Hispanic,46
+2026-10-19,senate,12,race,Asian,21
+2026-10-19,senate,12,race,Other,375
+2026-10-19,senate,12,gender,Women,6621
+2026-10-19,senate,12,gender,Men,4719
+2026-10-19,senate,12,gender,Not stated,20
+2026-10-19,senate,12,age,18-29,524
+2026-10-19,senate,12,age,30-39,507
+2026-10-19,senate,12,age,40-49,905
+2026-10-19,senate,12,age,50-64,3171
+2026-10-19,senate,12,age,65+,6248
+2026-10-19,senate,12,age,Not stated,5
+2026-10-19,senate,13,race,White,7232
+2026-10-19,senate,13,race,Black,3361
+2026-10-19,senate,13,race,Hispanic,167
+2026-10-19,senate,13,race,Asian,46
+2026-10-19,senate,13,race,Other,486
+2026-10-19,senate,13,gender,Women,6134
+2026-10-19,senate,13,gender,Men,5147
+2026-10-19,senate,13,gender,Not stated,11
+2026-10-19,senate,13,age,18-29,538
+2026-10-19,senate,13,age,30-39,497
+2026-10-19,senate,13,age,40-49,958
+2026-10-19,senate,13,age,50-64,3068
+2026-10-19,senate,13,age,65+,6227
+2026-10-19,senate,13,age,Not stated,4
+2026-10-19,senate,14,race,White,12095
+2026-10-19,senate,14,race,Black,3100
+2026-10-19,senate,14,race,Hispanic,722
+2026-10-19,senate,14,race,Asian,900
+2026-10-19,senate,14,race,Other,2035
+2026-10-19,senate,14,gender,Women,10032
+2026-10-19,senate,14,gender,Men,8743
+2026-10-19,senate,14,gender,Not stated,77
+2026-10-19,senate,14,age,18-29,1523
+2026-10-19,senate,14,age,30-39,1877
+2026-10-19,senate,14,age,40-49,2140
+2026-10-19,senate,14,age,50-64,5453
+2026-10-19,senate,14,age,65+,7841
+2026-10-19,senate,14,age,Not stated,18
+2026-10-19,senate,15,race,White,3337
+2026-10-19,senate,15,race,Black,7478
+2026-10-19,senate,15,race,Hispanic,190
+2026-10-19,senate,15,race,Asian,88
+2026-10-19,senate,15,race,Other,538
+2026-10-19,senate,15,gender,Women,6752
+2026-10-19,senate,15,gender,Men,4867
+2026-10-19,senate,15,gender,Not stated,12
+2026-10-19,senate,15,age,18-29,575
+2026-10-19,senate,15,age,30-39,622
+2026-10-19,senate,15,age,40-49,909
+2026-10-19,senate,15,age,50-64,3124
+2026-10-19,senate,15,age,65+,6398
+2026-10-19,senate,15,age,Not stated,3
+2026-10-19,senate,16,race,White,12260
+2026-10-19,senate,16,race,Black,5486
+2026-10-19,senate,16,race,Hispanic,384
+2026-10-19,senate,16,race,Asian,298
+2026-10-19,senate,16,race,Other,1555
+2026-10-19,senate,16,gender,Women,10830
+2026-10-19,senate,16,gender,Men,9119
+2026-10-19,senate,16,gender,Not stated,34
+2026-10-19,senate,16,age,18-29,1084
+2026-10-19,senate,16,age,30-39,847
+2026-10-19,senate,16,age,40-49,1582
+2026-10-19,senate,16,age,50-64,5540
+2026-10-19,senate,16,age,65+,10926
+2026-10-19,senate,16,age,Not stated,4
+2026-10-19,senate,17,race,White,3190
+2026-10-19,senate,17,race,Black,14766
+2026-10-19,senate,17,race,Hispanic,463
+2026-10-19,senate,17,race,Asian,283
+2026-10-19,senate,17,race,Other,1833
+2026-10-19,senate,17,gender,Women,12300
+2026-10-19,senate,17,gender,Men,8200
+2026-10-19,senate,17,gender,Not stated,35
+2026-10-19,senate,17,age,18-29,1660
+2026-10-19,senate,17,age,30-39,1556
+2026-10-19,senate,17,age,40-49,2382
+2026-10-19,senate,17,age,50-64,7153
+2026-10-19,senate,17,age,65+,7770
+2026-10-19,senate,17,age,Not stated,14
+2026-10-19,senate,18,race,White,9234
+2026-10-19,senate,18,race,Black,6501
+2026-10-19,senate,18,race,Hispanic,199
+2026-10-19,senate,18,race,Asian,198
+2026-10-19,senate,18,race,Other,899
+2026-10-19,senate,18,gender,Women,9320
+2026-10-19,senate,18,gender,Men,7693
+2026-10-19,senate,18,gender,Not stated,18
+2026-10-19,senate,18,age,18-29,980
+2026-10-19,senate,18,age,30-39,952
+2026-10-19,senate,18,age,40-49,1512
+2026-10-19,senate,18,age,50-64,4818
+2026-10-19,senate,18,age,65+,8768
+2026-10-19,senate,18,age,Not stated,1
+2026-10-19,senate,19,race,White,7174
+2026-10-19,senate,19,race,Black,2622
+2026-10-19,senate,19,race,Hispanic,177
+2026-10-19,senate,19,race,Asian,45
+2026-10-19,senate,19,race,Other,413
+2026-10-19,senate,19,gender,Women,5541
+2026-10-19,senate,19,gender,Men,4881
+2026-10-19,senate,19,gender,Not stated,9
+2026-10-19,senate,19,age,18-29,475
+2026-10-19,senate,19,age,30-39,479
+2026-10-19,senate,19,age,40-49,856
+2026-10-19,senate,19,age,50-64,2845
+2026-10-19,senate,19,age,65+,5776
+2026-10-19,senate,19,age,Not stated,0
+2026-10-19,senate,20,race,White,9385
+2026-10-19,senate,20,race,Black,4905
+2026-10-19,senate,20,race,Hispanic,191
+2026-10-19,senate,20,race,Asian,223
+2026-10-19,senate,20,race,Other,910
+2026-10-19,senate,20,gender,Women,8330
+2026-10-19,senate,20,gender,Men,7260
+2026-10-19,senate,20,gender,Not stated,24
+2026-10-19,senate,20,age,18-29,916
+2026-10-19,senate,20,age,30-39,836
+2026-10-19,senate,20,age,40-49,1554
+2026-10-19,senate,20,age,50-64,4647
+2026-10-19,senate,20,age,65+,7656
+2026-10-19,senate,20,age,Not stated,5
+2026-10-19,senate,21,race,White,15775
+2026-10-19,senate,21,race,Black,1417
+2026-10-19,senate,21,race,Hispanic,594
+2026-10-19,senate,21,race,Asian,608
+2026-10-19,senate,21,race,Other,1889
+2026-10-19,senate,21,gender,Women,10555
+2026-10-19,senate,21,gender,Men,9682
+2026-10-19,senate,21,gender,Not stated,46
+2026-10-19,senate,21,age,18-29,1247
+2026-10-19,senate,21,age,30-39,1043
+2026-10-19,senate,21,age,40-49,1722
+2026-10-19,senate,21,age,50-64,5959
+2026-10-19,senate,21,age,65+,10302
+2026-10-19,senate,21,age,Not stated,10
+2026-10-19,senate,22,race,White,2740
+2026-10-19,senate,22,race,Black,7886
+2026-10-19,senate,22,race,Hispanic,147
+2026-10-19,senate,22,race,Asian,79
+2026-10-19,senate,22,race,Other,823
+2026-10-19,senate,22,gender,Women,6655
+2026-10-19,senate,22,gender,Men,4989
+2026-10-19,senate,22,gender,Not stated,31
+2026-10-19,senate,22,age,18-29,656
+2026-10-19,senate,22,age,30-39,740
+2026-10-19,senate,22,age,40-49,1018
+2026-10-19,senate,22,age,50-64,3147
+2026-10-19,senate,22,age,65+,6113
+2026-10-19,senate,22,age,Not stated,1
+2026-10-19,senate,23,race,White,6254
+2026-10-19,senate,23,race,Black,5268
+2026-10-19,senate,23,race,Hispanic,195
+2026-10-19,senate,23,race,Asian,129
+2026-10-19,senate,23,race,Other,675
+2026-10-19,senate,23,gender,Women,6792
+2026-10-19,senate,23,gender,Men,5720
+2026-10-19,senate,23,gender,Not stated,9
+2026-10-19,senate,23,age,18-29,618
+2026-10-19,senate,23,age,30-39,756
+2026-10-19,senate,23,age,40-49,1203
+2026-10-19,senate,23,age,50-64,3494
+2026-10-19,senate,23,age,65+,6449
+2026-10-19,senate,23,age,Not stated,1
+2026-10-19,senate,24,race,White,12594
+2026-10-19,senate,24,race,Black,3636
+2026-10-19,senate,24,race,Hispanic,325
+2026-10-19,senate,24,race,Asian,310
+2026-10-19,senate,24,race,Other,1165
+2026-10-19,senate,24,gender,Women,9305
+2026-10-19,senate,24,gender,Men,8702
+2026-10-19,senate,24,gender,Not stated,23
+2026-10-19,senate,24,age,18-29,809
+2026-10-19,senate,24,age,30-39,805
+2026-10-19,senate,24,age,40-49,1405
+2026-10-19,senate,24,age,50-64,4630
+2026-10-19,senate,24,age,65+,10378
+2026-10-19,senate,24,age,Not stated,3
+2026-10-19,senate,25,race,White,10480
+2026-10-19,senate,25,race,Black,6096
+2026-10-19,senate,25,race,Hispanic,200
+2026-10-19,senate,25,race,Asian,93
+2026-10-19,senate,25,race,Other,836
+2026-10-19,senate,25,gender,Women,9594
+2026-10-19,senate,25,gender,Men,8096
+2026-10-19,senate,25,gender,Not stated,15
+2026-10-19,senate,25,age,18-29,926
+2026-10-19,senate,25,age,30-39,984
+2026-10-19,senate,25,age,40-49,1656
+2026-10-19,senate,25,age,50-64,5302
+2026-10-19,senate,25,age,65+,8835
+2026-10-19,senate,25,age,Not stated,2
+2026-10-19,senate,26,race,White,4174
+2026-10-19,senate,26,race,Black,7756
+2026-10-19,senate,26,race,Hispanic,105
+2026-10-19,senate,26,race,Asian,76
+2026-10-19,senate,26,race,Other,550
+2026-10-19,senate,26,gender,Women,7342
+2026-10-19,senate,26,gender,Men,5301
+2026-10-19,senate,26,gender,Not stated,18
+2026-10-19,senate,26,age,18-29,721
+2026-10-19,senate,26,age,30-39,808
+2026-10-19,senate,26,age,40-49,1194
+2026-10-19,senate,26,age,50-64,3538
+2026-10-19,senate,26,age,65+,6396
+2026-10-19,senate,26,age,Not stated,4
+2026-10-19,senate,27,race,White,12359
+2026-10-19,senate,27,race,Black,739
+2026-10-19,senate,27,race,Hispanic,521
+2026-10-19,senate,27,race,Asian,833
+2026-10-19,senate,27,race,Other,2943
+2026-10-19,senate,27,gender,Women,9041
+2026-10-19,senate,27,gender,Men,8303
+2026-10-19,senate,27,gender,Not stated,51
+2026-10-19,senate,27,age,18-29,1199
+2026-10-19,senate,27,age,30-39,876
+2026-10-19,senate,27,age,40-49,1675
+2026-10-19,senate,27,age,50-64,5281
+2026-10-19,senate,27,age,65+,8361
+2026-10-19,senate,27,age,Not stated,3
+2026-10-19,senate,28,race,White,4009
+2026-10-19,senate,28,race,Black,12928
+2026-10-19,senate,28,race,Hispanic,625
+2026-10-19,senate,28,race,Asian,201
+2026-10-19,senate,28,race,Other,1966
+2026-10-19,senate,28,gender,Women,11561
+2026-10-19,senate,28,gender,Men,8114
+2026-10-19,senate,28,gender,Not stated,54
+2026-10-19,senate,28,age,18-29,1532
+2026-10-19,senate,28,age,30-39,1745
+2026-10-19,senate,28,age,40-49,2715
+2026-10-19,senate,28,age,50-64,6923
+2026-10-19,senate,28,age,65+,6800
+2026-10-19,senate,28,age,Not stated,14
+2026-10-19,senate,29,race,White,7247
+2026-10-19,senate,29,race,Black,4082
+2026-10-19,senate,29,race,Hispanic,252
+2026-10-19,senate,29,race,Asian,158
+2026-10-19,senate,29,race,Other,666
+2026-10-19,senate,29,gender,Women,6699
+2026-10-19,senate,29,gender,Men,5691
+2026-10-19,senate,29,gender,Not stated,15
+2026-10-19,senate,29,age,18-29,598
+2026-10-19,senate,29,age,30-39,577
+2026-10-19,senate,29,age,40-49,896
+2026-10-19,senate,29,age,50-64,3536
+2026-10-19,senate,29,age,65+,6795
+2026-10-19,senate,29,age,Not stated,3
+2026-10-19,senate,30,race,White,6901
+2026-10-19,senate,30,race,Black,4177
+2026-10-19,senate,30,race,Hispanic,281
+2026-10-19,senate,30,race,Asian,73
+2026-10-19,senate,30,race,Other,970
+2026-10-19,senate,30,gender,Women,6821
+2026-10-19,senate,30,gender,Men,5566
+2026-10-19,senate,30,gender,Not stated,15
+2026-10-19,senate,30,age,18-29,775
+2026-10-19,senate,30,age,30-39,783
+2026-10-19,senate,30,age,40-49,1278
+2026-10-19,senate,30,age,50-64,3932
+2026-10-19,senate,30,age,65+,5631
+2026-10-19,senate,30,age,Not stated,3
+2026-10-19,senate,31,race,White,8822
+2026-10-19,senate,31,race,Black,3773
+2026-10-19,senate,31,race,Hispanic,367
+2026-10-19,senate,31,race,Asian,112
+2026-10-19,senate,31,race,Other,1180
+2026-10-19,senate,31,gender,Women,7640
+2026-10-19,senate,31,gender,Men,6593
+2026-10-19,senate,31,gender,Not stated,21
+2026-10-19,senate,31,age,18-29,837
+2026-10-19,senate,31,age,30-39,771
+2026-10-19,senate,31,age,40-49,1339
+2026-10-19,senate,31,age,50-64,4463
+2026-10-19,senate,31,age,65+,6840
+2026-10-19,senate,31,age,Not stated,4
+2026-10-19,senate,32,race,White,11028
+2026-10-19,senate,32,race,Black,2351
+2026-10-19,senate,32,race,Hispanic,645
+2026-10-19,senate,32,race,Asian,522
+2026-10-19,senate,32,race,Other,1391
+2026-10-19,senate,32,gender,Women,8535
+2026-10-19,senate,32,gender,Men,7373
+2026-10-19,senate,32,gender,Not stated,29
+2026-10-19,senate,32,age,18-29,1166
+2026-10-19,senate,32,age,30-39,1271
+2026-10-19,senate,32,age,40-49,1608
+2026-10-19,senate,32,age,50-64,4343
+2026-10-19,senate,32,age,65+,7545
+2026-10-19,senate,32,age,Not stated,4
+2026-10-19,senate,33,race,White,6243
+2026-10-19,senate,33,race,Black,6357
+2026-10-19,senate,33,race,Hispanic,821
+2026-10-19,senate,33,race,Asian,377
+2026-10-19,senate,33,race,Other,1385
+2026-10-19,senate,33,gender,Women,8660
+2026-10-19,senate,33,gender,Men,6502
+2026-10-19,senate,33,gender,Not stated,21
+2026-10-19,senate,33,age,18-29,1318
+2026-10-19,senate,33,age,30-39,1415
+2026-10-19,senate,33,age,40-49,1802
+2026-10-19,senate,33,age,50-64,4514
+2026-10-19,senate,33,age,65+,6130
+2026-10-19,senate,33,age,Not stated,4
+2026-10-19,senate,34,race,White,1802
+2026-10-19,senate,34,race,Black,11100
+2026-10-19,senate,34,race,Hispanic,460
+2026-10-19,senate,34,race,Asian,255
+2026-10-19,senate,34,race,Other,1266
+2026-10-19,senate,34,gender,Women,9013
+2026-10-19,senate,34,gender,Men,5835
+2026-10-19,senate,34,gender,Not stated,35
+2026-10-19,senate,34,age,18-29,1056
+2026-10-19,senate,34,age,30-39,1119
+2026-10-19,senate,34,age,40-49,1417
+2026-10-19,senate,34,age,50-64,4586
+2026-10-19,senate,34,age,65+,6694
+2026-10-19,senate,34,age,Not stated,11
+2026-10-19,senate,35,race,White,5135
+2026-10-19,senate,35,race,Black,12081
+2026-10-19,senate,35,race,Hispanic,475
+2026-10-19,senate,35,race,Asian,289
+2026-10-19,senate,35,race,Other,1921
+2026-10-19,senate,35,gender,Women,11608
+2026-10-19,senate,35,gender,Men,8246
+2026-10-19,senate,35,gender,Not stated,47
+2026-10-19,senate,35,age,18-29,1522
+2026-10-19,senate,35,age,30-39,2396
+2026-10-19,senate,35,age,40-49,2942
+2026-10-19,senate,35,age,50-64,6002
+2026-10-19,senate,35,age,65+,7026
+2026-10-19,senate,35,age,Not stated,13
+2026-10-19,senate,36,race,White,7523
+2026-10-19,senate,36,race,Black,7337
+2026-10-19,senate,36,race,Hispanic,562
+2026-10-19,senate,36,race,Asian,482
+2026-10-19,senate,36,race,Other,1713
+2026-10-19,senate,36,gender,Women,8796
+2026-10-19,senate,36,gender,Men,8766
+2026-10-19,senate,36,gender,Not stated,55
+2026-10-19,senate,36,age,18-29,1697
+2026-10-19,senate,36,age,30-39,3263
+2026-10-19,senate,36,age,40-49,2976
+2026-10-19,senate,36,age,50-64,4896
+2026-10-19,senate,36,age,65+,4777
+2026-10-19,senate,36,age,Not stated,8
+2026-10-19,senate,37,race,White,12258
+2026-10-19,senate,37,race,Black,4798
+2026-10-19,senate,37,race,Hispanic,767
+2026-10-19,senate,37,race,Asian,438
+2026-10-19,senate,37,race,Other,1682
+2026-10-19,senate,37,gender,Women,10698
+2026-10-19,senate,37,gender,Men,9205
+2026-10-19,senate,37,gender,Not stated,40
+2026-10-19,senate,37,age,18-29,1691
+2026-10-19,senate,37,age,30-39,1407
+2026-10-19,senate,37,age,40-49,2224
+2026-10-19,senate,37,age,50-64,6129
+2026-10-19,senate,37,age,65+,8488
+2026-10-19,senate,37,age,Not stated,4
+2026-10-19,senate,38,race,White,5584
+2026-10-19,senate,38,race,Black,12544
+2026-10-19,senate,38,race,Hispanic,364
+2026-10-19,senate,38,race,Asian,286
+2026-10-19,senate,38,race,Other,1892
+2026-10-19,senate,38,gender,Women,12129
+2026-10-19,senate,38,gender,Men,8484
+2026-10-19,senate,38,gender,Not stated,57
+2026-10-19,senate,38,age,18-29,1469
+2026-10-19,senate,38,age,30-39,2075
+2026-10-19,senate,38,age,40-49,2868
+2026-10-19,senate,38,age,50-64,6141
+2026-10-19,senate,38,age,65+,8106
+2026-10-19,senate,38,age,Not stated,11
+2026-10-19,senate,39,race,White,5573
+2026-10-19,senate,39,race,Black,9910
+2026-10-19,senate,39,race,Hispanic,409
+2026-10-19,senate,39,race,Asian,444
+2026-10-19,senate,39,race,Other,1560
+2026-10-19,senate,39,gender,Women,9739
+2026-10-19,senate,39,gender,Men,8093
+2026-10-19,senate,39,gender,Not stated,64
+2026-10-19,senate,39,age,18-29,1718
+2026-10-19,senate,39,age,30-39,2303
+2026-10-19,senate,39,age,40-49,2352
+2026-10-19,senate,39,age,50-64,4679
+2026-10-19,senate,39,age,65+,6831
+2026-10-19,senate,39,age,Not stated,13
+2026-10-19,senate,40,race,White,9091
+2026-10-19,senate,40,race,Black,2346
+2026-10-19,senate,40,race,Hispanic,680
+2026-10-19,senate,40,race,Asian,835
+2026-10-19,senate,40,race,Other,1287
+2026-10-19,senate,40,gender,Women,7634
+2026-10-19,senate,40,gender,Men,6568
+2026-10-19,senate,40,gender,Not stated,37
+2026-10-19,senate,40,age,18-29,1176
+2026-10-19,senate,40,age,30-39,1729
+2026-10-19,senate,40,age,40-49,2003
+2026-10-19,senate,40,age,50-64,3980
+2026-10-19,senate,40,age,65+,5339
+2026-10-19,senate,40,age,Not stated,12
+2026-10-19,senate,41,race,White,4507
+2026-10-19,senate,41,race,Black,8498
+2026-10-19,senate,41,race,Hispanic,399
+2026-10-19,senate,41,race,Asian,533
+2026-10-19,senate,41,race,Other,1245
+2026-10-19,senate,41,gender,Women,8686
+2026-10-19,senate,41,gender,Men,6467
+2026-10-19,senate,41,gender,Not stated,29
+2026-10-19,senate,41,age,18-29,1217
+2026-10-19,senate,41,age,30-39,1685
+2026-10-19,senate,41,age,40-49,1761
+2026-10-19,senate,41,age,50-64,4425
+2026-10-19,senate,41,age,65+,6081
+2026-10-19,senate,41,age,Not stated,13
+2026-10-19,senate,42,race,White,8599
+2026-10-19,senate,42,race,Black,7851
+2026-10-19,senate,42,race,Hispanic,332
+2026-10-19,senate,42,race,Asian,152
+2026-10-19,senate,42,race,Other,1347
+2026-10-19,senate,42,gender,Women,10237
+2026-10-19,senate,42,gender,Men,8016
+2026-10-19,senate,42,gender,Not stated,28
+2026-10-19,senate,42,age,18-29,1201
+2026-10-19,senate,42,age,30-39,1013
+2026-10-19,senate,42,age,40-49,1793
+2026-10-19,senate,42,age,50-64,6044
+2026-10-19,senate,42,age,65+,8221
+2026-10-19,senate,42,age,Not stated,9
+2026-10-19,senate,43,race,White,2949
+2026-10-19,senate,43,race,Black,13827
+2026-10-19,senate,43,race,Hispanic,411
+2026-10-19,senate,43,race,Asian,170
+2026-10-19,senate,43,race,Other,2068
+2026-10-19,senate,43,gender,Women,11673
+2026-10-19,senate,43,gender,Men,7710
+2026-10-19,senate,43,gender,Not stated,42
+2026-10-19,senate,43,age,18-29,1585
+2026-10-19,senate,43,age,30-39,1260
+2026-10-19,senate,43,age,40-49,2169
+2026-10-19,senate,43,age,50-64,6811
+2026-10-19,senate,43,age,65+,7587
+2026-10-19,senate,43,age,Not stated,13
+2026-10-19,senate,44,race,White,8454
+2026-10-19,senate,44,race,Black,10262
+2026-10-19,senate,44,race,Hispanic,521
+2026-10-19,senate,44,race,Asian,602
+2026-10-19,senate,44,race,Other,1742
+2026-10-19,senate,44,gender,Women,12472
+2026-10-19,senate,44,gender,Men,9050
+2026-10-19,senate,44,gender,Not stated,59
+2026-10-19,senate,44,age,18-29,1785
+2026-10-19,senate,44,age,30-39,2657
+2026-10-19,senate,44,age,40-49,3255
+2026-10-19,senate,44,age,50-64,6533
+2026-10-19,senate,44,age,65+,7334
+2026-10-19,senate,44,age,Not stated,17
+2026-10-19,senate,45,race,White,7402
+2026-10-19,senate,45,race,Black,3868
+2026-10-19,senate,45,race,Hispanic,835
+2026-10-19,senate,45,race,Asian,822
+2026-10-19,senate,45,race,Other,1427
+2026-10-19,senate,45,gender,Women,7714
+2026-10-19,senate,45,gender,Men,6588
+2026-10-19,senate,45,gender,Not stated,52
+2026-10-19,senate,45,age,18-29,1294
+2026-10-19,senate,45,age,30-39,960
+2026-10-19,senate,45,age,40-49,1724
+2026-10-19,senate,45,age,50-64,4698
+2026-10-19,senate,45,age,65+,5668
+2026-10-19,senate,45,age,Not stated,10
+2026-10-19,senate,46,race,White,10451
+2026-10-19,senate,46,race,Black,2835
+2026-10-19,senate,46,race,Hispanic,411
+2026-10-19,senate,46,race,Asian,211
+2026-10-19,senate,46,race,Other,1179
+2026-10-19,senate,46,gender,Women,8059
+2026-10-19,senate,46,gender,Men,6982
+2026-10-19,senate,46,gender,Not stated,46
+2026-10-19,senate,46,age,18-29,1120
+2026-10-19,senate,46,age,30-39,891
+2026-10-19,senate,46,age,40-49,1487
+2026-10-19,senate,46,age,50-64,4291
+2026-10-19,senate,46,age,65+,7287
+2026-10-19,senate,46,age,Not stated,11
+2026-10-19,senate,47,race,White,9111
+2026-10-19,senate,47,race,Black,1931
+2026-10-19,senate,47,race,Hispanic,409
+2026-10-19,senate,47,race,Asian,158
+2026-10-19,senate,47,race,Other,804
+2026-10-19,senate,47,gender,Women,6530
+2026-10-19,senate,47,gender,Men,5850
+2026-10-19,senate,47,gender,Not stated,33
+2026-10-19,senate,47,age,18-29,833
+2026-10-19,senate,47,age,30-39,845
+2026-10-19,senate,47,age,40-49,1251
+2026-10-19,senate,47,age,50-64,3235
+2026-10-19,senate,47,age,65+,6241
+2026-10-19,senate,47,age,Not stated,8
+2026-10-19,senate,48,race,White,8541
+2026-10-19,senate,48,race,Black,1931
+2026-10-19,senate,48,race,Hispanic,607
+2026-10-19,senate,48,race,Asian,2507
+2026-10-19,senate,48,race,Other,2223
+2026-10-19,senate,48,gender,Women,8122
+2026-10-19,senate,48,gender,Men,7620
+2026-10-19,senate,48,gender,Not stated,67
+2026-10-19,senate,48,age,18-29,1688
+2026-10-19,senate,48,age,30-39,724
+2026-10-19,senate,48,age,40-49,1775
+2026-10-19,senate,48,age,50-64,5657
+2026-10-19,senate,48,age,65+,5960
+2026-10-19,senate,48,age,Not stated,5
+2026-10-19,senate,49,race,White,12770
+2026-10-19,senate,49,race,Black,1234
+2026-10-19,senate,49,race,Hispanic,803
+2026-10-19,senate,49,race,Asian,246
+2026-10-19,senate,49,race,Other,1100
+2026-10-19,senate,49,gender,Women,8541
+2026-10-19,senate,49,gender,Men,7587
+2026-10-19,senate,49,gender,Not stated,25
+2026-10-19,senate,49,age,18-29,1026
+2026-10-19,senate,49,age,30-39,833
+2026-10-19,senate,49,age,40-49,1151
+2026-10-19,senate,49,age,50-64,3904
+2026-10-19,senate,49,age,65+,9237
+2026-10-19,senate,49,age,Not stated,2
+2026-10-19,senate,50,race,White,13791
+2026-10-19,senate,50,race,Black,561
+2026-10-19,senate,50,race,Hispanic,282
+2026-10-19,senate,50,race,Asian,85
+2026-10-19,senate,50,race,Other,717
+2026-10-19,senate,50,gender,Women,7841
+2026-10-19,senate,50,gender,Men,7579
+2026-10-19,senate,50,gender,Not stated,16
+2026-10-19,senate,50,age,18-29,538
+2026-10-19,senate,50,age,30-39,606
+2026-10-19,senate,50,age,40-49,817
+2026-10-19,senate,50,age,50-64,3815
+2026-10-19,senate,50,age,65+,9657
+2026-10-19,senate,50,age,Not stated,3
+2026-10-19,senate,51,race,White,16929
+2026-10-19,senate,51,race,Black,124
+2026-10-19,senate,51,race,Hispanic,274
+2026-10-19,senate,51,race,Asian,80
+2026-10-19,senate,51,race,Other,1040
+2026-10-19,senate,51,gender,Women,9339
+2026-10-19,senate,51,gender,Men,9093
+2026-10-19,senate,51,gender,Not stated,15
+2026-10-19,senate,51,age,18-29,516
+2026-10-19,senate,51,age,30-39,532
+2026-10-19,senate,51,age,40-49,861
+2026-10-19,senate,51,age,50-64,4227
+2026-10-19,senate,51,age,65+,12309
+2026-10-19,senate,51,age,Not stated,2
+2026-10-19,senate,52,race,White,8759
+2026-10-19,senate,52,race,Black,1762
+2026-10-19,senate,52,race,Hispanic,285
+2026-10-19,senate,52,race,Asian,84
+2026-10-19,senate,52,race,Other,649
+2026-10-19,senate,52,gender,Women,6073
+2026-10-19,senate,52,gender,Men,5447
+2026-10-19,senate,52,gender,Not stated,19
+2026-10-19,senate,52,age,18-29,638
+2026-10-19,senate,52,age,30-39,647
+2026-10-19,senate,52,age,40-49,878
+2026-10-19,senate,52,age,50-64,3051
+2026-10-19,senate,52,age,65+,6322
+2026-10-19,senate,52,age,Not stated,3
+2026-10-19,senate,53,race,White,9177
+2026-10-19,senate,53,race,Black,501
+2026-10-19,senate,53,race,Hispanic,114
+2026-10-19,senate,53,race,Asian,45
+2026-10-19,senate,53,race,Other,550
+2026-10-19,senate,53,gender,Women,5324
+2026-10-19,senate,53,gender,Men,5047
+2026-10-19,senate,53,gender,Not stated,16
+2026-10-19,senate,53,age,18-29,398
+2026-10-19,senate,53,age,30-39,454
+2026-10-19,senate,53,age,40-49,690
+2026-10-19,senate,53,age,50-64,2598
+2026-10-19,senate,53,age,65+,6243
+2026-10-19,senate,53,age,Not stated,4
+2026-10-19,senate,54,race,White,6821
+2026-10-19,senate,54,race,Black,427
+2026-10-19,senate,54,race,Hispanic,971
+2026-10-19,senate,54,race,Asian,45
+2026-10-19,senate,54,race,Other,433
+2026-10-19,senate,54,gender,Women,4466
+2026-10-19,senate,54,gender,Men,4222
+2026-10-19,senate,54,gender,Not stated,9
+2026-10-19,senate,54,age,18-29,760
+2026-10-19,senate,54,age,30-39,600
+2026-10-19,senate,54,age,40-49,732
+2026-10-19,senate,54,age,50-64,2233
+2026-10-19,senate,54,age,65+,4368
+2026-10-19,senate,54,age,Not stated,4
+2026-10-19,senate,55,race,White,4778
+2026-10-19,senate,55,race,Black,11596
+2026-10-19,senate,55,race,Hispanic,471
+2026-10-19,senate,55,race,Asian,445
+2026-10-19,senate,55,race,Other,1682
+2026-10-19,senate,55,gender,Women,11196
+2026-10-19,senate,55,gender,Men,7742
+2026-10-19,senate,55,gender,Not stated,34
+2026-10-19,senate,55,age,18-29,1461
+2026-10-19,senate,55,age,30-39,1517
+2026-10-19,senate,55,age,40-49,2022
+2026-10-19,senate,55,age,50-64,5847
+2026-10-19,senate,55,age,65+,8117
+2026-10-19,senate,55,age,Not stated,8
+2026-10-19,senate,56,race,White,15067
+2026-10-19,senate,56,race,Black,1530
+2026-10-19,senate,56,race,Hispanic,722
+2026-10-19,senate,56,race,Asian,789
+2026-10-19,senate,56,race,Other,1723
+2026-10-19,senate,56,gender,Women,10474
+2026-10-19,senate,56,gender,Men,9311
+2026-10-19,senate,56,gender,Not stated,46
+2026-10-19,senate,56,age,18-29,1310
+2026-10-19,senate,56,age,30-39,1328
+2026-10-19,senate,56,age,40-49,2152
+2026-10-19,senate,56,age,50-64,5522
+2026-10-19,senate,56,age,65+,9510
+2026-10-19,senate,56,age,Not stated,9
+2026-10-19,congress,1,race,White,33699
+2026-10-19,congress,1,race,Black,15691
+2026-10-19,congress,1,race,Hispanic,1151
+2026-10-19,congress,1,race,Asian,609
+2026-10-19,congress,1,race,Other,3808
+2026-10-19,congress,1,gender,Women,29467
+2026-10-19,congress,1,gender,Men,25398
+2026-10-19,congress,1,gender,Not stated,93
+2026-10-19,congress,1,age,18-29,2566
+2026-10-19,congress,1,age,30-39,2863
+2026-10-19,congress,1,age,40-49,4617
+2026-10-19,congress,1,age,50-64,14799
+2026-10-19,congress,1,age,65+,30099
+2026-10-19,congress,1,age,Not stated,14
+2026-10-19,congress,2,race,White,18586
+2026-10-19,congress,2,race,Black,27472
+2026-10-19,congress,2,race,Hispanic,588
+2026-10-19,congress,2,race,Asian,325
+2026-10-19,congress,2,race,Other,2229
+2026-10-19,congress,2,gender,Women,28185
+2026-10-19,congress,2,gender,Men,20950
+2026-10-19,congress,2,gender,Not stated,65
+2026-10-19,congress,2,age,18-29,2562
+2026-10-19,congress,2,age,30-39,2635
+2026-10-19,congress,2,age,40-49,4213
+2026-10-19,congress,2,age,50-64,13627
+2026-10-19,congress,2,age,65+,26145
+2026-10-19,congress,2,age,Not stated,18
+2026-10-19,congress,3,race,White,38324
+2026-10-19,congress,3,race,Black,17945
+2026-10-19,congress,3,race,Hispanic,1271
+2026-10-19,congress,3,race,Asian,685
+2026-10-19,congress,3,race,Other,4647
+2026-10-19,congress,3,gender,Women,34220
+2026-10-19,congress,3,gender,Men,28557
+2026-10-19,congress,3,gender,Not stated,95
+2026-10-19,congress,3,age,18-29,3403
+2026-10-19,congress,3,age,30-39,3090
+2026-10-19,congress,3,age,40-49,5293
+2026-10-19,congress,3,age,50-64,18129
+2026-10-19,congress,3,age,65+,32944
+2026-10-19,congress,3,age,Not stated,13
+2026-10-19,congress,4,race,White,16869
+2026-10-19,congress,4,race,Black,32519
+2026-10-19,congress,4,race,Hispanic,2212
+2026-10-19,congress,4,race,Asian,2514
+2026-10-19,congress,4,race,Other,4971
+2026-10-19,congress,4,gender,Women,34402
+2026-10-19,congress,4,gender,Men,24551
+2026-10-19,congress,4,gender,Not stated,132
+2026-10-19,congress,4,age,18-29,4744
+2026-10-19,congress,4,age,30-39,5946
+2026-10-19,congress,4,age,40-49,6721
+2026-10-19,congress,4,age,50-64,17115
+2026-10-19,congress,4,age,65+,24514
+2026-10-19,congress,4,age,Not stated,45
+2026-10-19,congress,5,race,White,28142
+2026-10-19,congress,5,race,Black,32129
+2026-10-19,congress,5,race,Hispanic,2069
+2026-10-19,congress,5,race,Asian,2284
+2026-10-19,congress,5,race,Other,6138
+2026-10-19,congress,5,gender,Women,38709
+2026-10-19,congress,5,gender,Men,31847
+2026-10-19,congress,5,gender,Not stated,206
+2026-10-19,congress,5,age,18-29,6219
+2026-10-19,congress,5,age,30-39,9998
+2026-10-19,congress,5,age,40-49,10454
+2026-10-19,congress,5,age,50-64,19824
+2026-10-19,congress,5,age,65+,24223
+2026-10-19,congress,5,age,Not stated,44
+2026-10-19,congress,6,race,White,21645
+2026-10-19,congress,6,race,Black,45575
+2026-10-19,congress,6,race,Hispanic,2243
+2026-10-19,congress,6,race,Asian,1178
+2026-10-19,congress,6,race,Other,7590
+2026-10-19,congress,6,gender,Women,45474
+2026-10-19,congress,6,gender,Men,32558
+2026-10-19,congress,6,gender,Not stated,199
+2026-10-19,congress,6,age,18-29,6016
+2026-10-19,congress,6,age,30-39,7907
+2026-10-19,congress,6,age,40-49,10393
+2026-10-19,congress,6,age,50-64,24387
+2026-10-19,congress,6,age,65+,29480
+2026-10-19,congress,6,age,Not stated,48
+2026-10-19,congress,7,race,White,52738
+2026-10-19,congress,7,race,Black,6246
+2026-10-19,congress,7,race,Hispanic,2512
+2026-10-19,congress,7,race,Asian,4590
+2026-10-19,congress,7,race,Other,8999
+2026-10-19,congress,7,gender,Women,39010
+2026-10-19,congress,7,gender,Men,35835
+2026-10-19,congress,7,gender,Not stated,240
+2026-10-19,congress,7,age,18-29,5581
+2026-10-19,congress,7,age,30-39,4371
+2026-10-19,congress,7,age,40-49,7246
+2026-10-19,congress,7,age,50-64,23024
+2026-10-19,congress,7,age,65+,34823
+2026-10-19,congress,7,age,Not stated,40
+2026-10-19,congress,8,race,White,30839
+2026-10-19,congress,8,race,Black,17675
+2026-10-19,congress,8,race,Hispanic,803
+2026-10-19,congress,8,race,Asian,521
+2026-10-19,congress,8,race,Other,2503
+2026-10-19,congress,8,gender,Women,28492
+2026-10-19,congress,8,gender,Men,23790
+2026-10-19,congress,8,gender,Not stated,59
+2026-10-19,congress,8,age,18-29,2878
+2026-10-19,congress,8,age,30-39,2802
+2026-10-19,congress,8,age,40-49,4881
+2026-10-19,congress,8,age,50-64,14580
+2026-10-19,congress,8,age,65+,27189
+2026-10-19,congress,8,age,Not stated,11
+2026-10-19,congress,9,race,White,43070
+2026-10-19,congress,9,race,Black,9201
+2026-10-19,congress,9,race,Hispanic,2655
+2026-10-19,congress,9,race,Asian,2200
+2026-10-19,congress,9,race,Other,4674
+2026-10-19,congress,9,gender,Women,32538
+2026-10-19,congress,9,gender,Men,29103
+2026-10-19,congress,9,gender,Not stated,159
+2026-10-19,congress,9,age,18-29,4133
+2026-10-19,congress,9,age,30-39,3300
+2026-10-19,congress,9,age,40-49,5297
+2026-10-19,congress,9,age,50-64,16951
+2026-10-19,congress,9,age,65+,32095
+2026-10-19,congress,9,age,Not stated,24
+2026-10-19,congress,10,race,White,38818
+2026-10-19,congress,10,race,Black,17715
+2026-10-19,congress,10,race,Hispanic,1370
+2026-10-19,congress,10,race,Asian,574
+2026-10-19,congress,10,race,Other,4442
+2026-10-19,congress,10,gender,Women,33933
+2026-10-19,congress,10,gender,Men,28867
+2026-10-19,congress,10,gender,Not stated,119
+2026-10-19,congress,10,age,18-29,3864
+2026-10-19,congress,10,age,30-39,3659
+2026-10-19,congress,10,age,40-49,5756
+2026-10-19,congress,10,age,50-64,18481
+2026-10-19,congress,10,age,65+,31127
+2026-10-19,congress,10,age,Not stated,32
+2026-10-19,congress,11,race,White,45328
+2026-10-19,congress,11,race,Black,7704
+2026-10-19,congress,11,race,Hispanic,2320
+2026-10-19,congress,11,race,Asian,1723
+2026-10-19,congress,11,race,Other,4939
+2026-10-19,congress,11,gender,Women,32795
+2026-10-19,congress,11,gender,Men,29123
+2026-10-19,congress,11,gender,Not stated,96
+2026-10-19,congress,11,age,18-29,4143
+2026-10-19,congress,11,age,30-39,4355
+2026-10-19,congress,11,age,40-49,6003
+2026-10-19,congress,11,age,50-64,16638
+2026-10-19,congress,11,age,65+,30862
+2026-10-19,congress,11,age,Not stated,13
+2026-10-19,congress,12,race,White,25838
+2026-10-19,congress,12,race,Black,20143
+2026-10-19,congress,12,race,Hispanic,750
+2026-10-19,congress,12,race,Asian,574
+2026-10-19,congress,12,race,Other,2970
+2026-10-19,congress,12,gender,Women,27249
+2026-10-19,congress,12,gender,Men,22948
+2026-10-19,congress,12,gender,Not stated,78
+2026-10-19,congress,12,age,18-29,2672
+2026-10-19,congress,12,age,30-39,2832
+2026-10-19,congress,12,age,40-49,4552
+2026-10-19,congress,12,age,50-64,13880
+2026-10-19,congress,12,age,65+,26330
+2026-10-19,congress,12,age,Not stated,9
+2026-10-19,congress,13,race,White,14744
+2026-10-19,congress,13,race,Black,44757
+2026-10-19,congress,13,race,Hispanic,2481
+2026-10-19,congress,13,race,Asian,2041
+2026-10-19,congress,13,race,Other,6831
+2026-10-19,congress,13,gender,Women,41517
+2026-10-19,congress,13,gender,Men,29157
+2026-10-19,congress,13,gender,Not stated,180
+2026-10-19,congress,13,age,18-29,6190
+2026-10-19,congress,13,age,30-39,5035
+2026-10-19,congress,13,age,40-49,7904
+2026-10-19,congress,13,age,50-64,24062
+2026-10-19,congress,13,age,65+,27608
+2026-10-19,congress,13,age,Not stated,55
+2026-10-19,congress,14,race,White,36652
+2026-10-19,congress,14,race,Black,9527
+2026-10-19,congress,14,race,Hispanic,2017
+2026-10-19,congress,14,race,Asian,532
+2026-10-19,congress,14,race,Other,3656
+2026-10-19,congress,14,gender,Women,27679
+2026-10-19,congress,14,gender,Men,24623
+2026-10-19,congress,14,gender,Not stated,82
+2026-10-19,congress,14,age,18-29,3419
+2026-10-19,congress,14,age,30-39,3010
+2026-10-19,congress,14,age,40-49,4838
+2026-10-19,congress,14,age,50-64,15135
+2026-10-19,congress,14,age,65+,25966
+2026-10-19,congress,14,age,Not stated,16

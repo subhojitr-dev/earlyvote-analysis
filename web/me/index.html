@@ -158,8 +158,10 @@ function demoTable(dm, yr, label){
     <div class="seg dimseg" style="margin:6px 0 8px">${dims.map(k => `<button data-dim="${k}" class="${k === sel ? "on" : ""}">${DIM[k]}</button>`).join("")}</div>
     <table><thead><tr><th>Group</th><th class="num">Now</th><th class="num">${label || yr}</th><th class="num">Change</th><th class="num">Voters</th></tr></thead>
     <tbody>${rows}</tbody></table>
-    <div class="src">Share of early voters in each group now, vs the same number of days before Election Day in ${yr}.
-      ${sel === "surname"
+    <div class="src">${META().demo_kind === "gv"
+        ? `Share of early voters in each group now, vs <b>all early voters in the 2024 general</b> (a presidential year and the full early period, not the same day: there is no free 2022 breakdown for Georgia). Race, gender and age come from the state voter list via <a href="https://georgiavotes.com" target="_blank" rel="noopener">Georgia Votes</a>${META().demo_asof ? `, data as of ${esc(META().demo_asof)}` : ""}; nobody's vote is known.`
+        : `Share of early voters in each group now, vs the same number of days before Election Day in ${yr}.`}
+      ${META().demo_kind === "gv" ? "" : sel === "surname"
         ? `Texas records no race, so this is an <b>estimate from surnames</b> (Census 2010 surname list: the share of people with each surname who are Hispanic or Asian / Pacific Islander). It tracks the Texas Legislative Council's Spanish-surname registration figures closely (correlation 0.99 across House districts), but individuals can be misclassified, e.g. by married names.`
         : `From the voter's registration record; nobody's vote is known. Groups under 10 voters show "&lt;10".`}</div></div>`;
 }
@@ -308,8 +310,8 @@ function viewState(){
       <div class="panel">${panel}</div>
     </div>
     ${m.demo ? `<div class="panel" style="margin-top:14px"><h3>Who has voted early in ${esc(META().name)} so far</h3>
-      <div class="seg" id="dyrSeg" style="margin:4px 0 2px">${(META().only_2022 ? ["2022"] : ["2022","2024"]).map(y => `<button data-y="${y}" class="${(S.dyr||"2022") === y ? "on" : ""}">vs ${y}${y === "2022" ? " (last midterm)" : ""}</button>`).join("")}</div>
-      ${demoTable(m.demo[S.dyr || "2022"], S.dyr || "2022")}</div>` : ""}`;
+      <div class="seg" id="dyrSeg" style="margin:4px 0 2px">${Object.keys(m.demo).map(y => `<button data-y="${y}" class="${(m.demo[S.dyr] ? S.dyr : Object.keys(m.demo)[0]) === y ? "on" : ""}">vs ${y}${y === "2022" ? " (last midterm)" : META().demo_kind === "gv" ? " (all early voters)" : ""}</button>`).join("")}</div>
+      ${demoTable(m.demo[m.demo[S.dyr] ? S.dyr : Object.keys(m.demo)[0]], S.dyr || Object.keys(m.demo)[0], META().demo_kind === "gv" ? "2024 (all early)" : "")}</div>` : ""}`;
   document.querySelectorAll("#dyrSeg button").forEach(b => b.onclick = () => { S.dyr = b.dataset.y; route(); });
   wireDims(() => route());
   document.querySelectorAll("#laySeg button").forEach(b => {
@@ -427,7 +429,7 @@ function viewDetail(cd, k){
     <div class="big pace ${paceCls(s.pace)}">${paceText(s.pace, s.comp_year)}</div>
     <div class="modes">${modeLine("In-person", s.by_mode.inperson, s.comp_year)}${modeLine("Mail", s.by_mode.mail, s.comp_year)}</div>
     <div class="lean">${leanLine}${raceLine(s)}</div>
-    ${s.demo ? `<h3 style="font-size:13px;margin:16px 0 2px">Who has voted early</h3>${demoTable(s.demo, s.comp_year)}` :
+    ${s.demo ? `<h3 style="font-size:13px;margin:16px 0 2px">Who has voted early</h3>${demoTable(s.demo, s.comp_year, s.demo_ref)}` :
       (META().has_demo ? `<div class="muted" style="font-size:12.5px;margin:10px 0">Who has voted: too few early votes yet to break down.</div>` : "")}
     ${s.by_county.length > 1 ? `<div class="muted" style="font-size:12.5px">This district spans ${s.by_county.length} counties. All numbers cover the whole district.</div>` : ""}
     <details><summary>Details</summary>

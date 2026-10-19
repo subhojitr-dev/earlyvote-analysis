@@ -373,6 +373,18 @@ def main():
     demo = build_mode(demo_modes(e22, e24, redraw), e22, e24, DEMO_DAYS_OUT, redraw, lean)
     modes = {"live": (live_days, *live), "demo": (DEMO_DAYS_OUT, *demo)}
 
+    # Georgia: who is voting (race / gender / age) from Georgia Votes, per district, vs the
+    # whole 2024 early electorate (ingestor/ga_demographics.py). Georgia's own file has no race.
+    gv = load_gv() if ST == "GA" else None
+    if gv:
+        cur, ref, gv_asof = gv
+        has_demo = True
+        for m, (_, _, stats) in modes.items():
+            for k, s in stats.items():
+                ch, d = k.split(":")
+                s["demo"] = gv_compare(cur.get((ch, d)) if m == "live" else ref.get((ch, d)), ref.get((ch, d)))
+                s["demo_ref"] = "2024 (all early)"
+
     counties = {key(k): (v, k) for k, v in
                 ((rec_name, g) for rec_name, g in read_county_shapes().items())}
     dshapes = {ch: (read_tlc(stem[4:]) if stem.startswith("tlc:") else
@@ -384,7 +396,8 @@ def main():
              "meta": {"state": ST, "name": CFG["name"], "ev_start": CFG["ev_start"], "source": CFG["source"],
                       "only_2022": ONLY_2022, "align": "ev_day" if SHIFT else "days_out",
                       "redraw_note": CFG.get("redraw_note", ""),
-                      "has_demo": has_demo, "demo_kind": "surname" if ST == "TX" else "record",
+                      "has_demo": has_demo, "demo_kind": "surname" if ST == "TX" else "gv" if gv else "record",
+                      "demo_asof": gv[2] if gv else None,
                       "chambers": list(CHAMBERS)}}
     for m, (dd, totals, stats) in modes.items():
         state["modes"][m] = {"days_out": dd, "totals": totals,
@@ -445,7 +458,11 @@ def main():
         (OUT / "county" / f"{ck}.json").write_text(json.dumps(cdata, separators=(",", ":")), encoding="utf-8")
         state["counties"].append(summary)
 
-    if has_demo:   # statewide make-up of early voters (House districts cover every voter once)
+    if gv:         # statewide make-up from Georgia Votes' statewide page
+        for m in modes:
+            state["modes"][m]["demo"] = {"2024": gv_compare(gv[0 if m == "live" else 1].get(("state", "0")),
+                                                            gv[1].get(("state", "0")))}
+    elif has_demo:   # statewide make-up of early voters (House districts cover every voter once)
         for m, (dd, _, _) in modes.items():
             src = d26 if m == "live" else demo_from_comp(d22, d24, {}, all22=True)
             state["modes"][m]["demo"] = {str(y): demo_compare(statewide(src), statewide(dy), dd, 1)
@@ -468,6 +485,42 @@ def demo_modes(e22, e24, redraw):
             for c, s in byc.items():
                 for d, n in s.items():
                     out["all"][k][c][d] += n
+    return out
+
+
+def load_gv():
+    """Georgia Votes snapshots -> (cur, ref, asof): {(chamber, district): {dim: {group: n}}}."""
+    f26, f24 = DATA / "gv_demo_2026.csv", DATA / "gv_demo_2024.csv"
+    if not (f26.exists() and f24.exists()):
+        return None
+    def read(f):
+        out, asof = defaultdict(lambda: defaultdict(dict)), None
+        for r in csv.DictReader(f.open(encoding="utf-8")):
+            out[(r["chamber"], r["district"])][r["dim"]][r["group"]] = int(r["ballots"])
+            asof = r.get("asof") or asof
+        return out, asof
+    (cur, asof), (ref, _) = read(f26), read(f24)
+    return cur, ref, asof
+
+
+def gv_compare(now, then):
+    """Like demo_compare, for one snapshot each side (no day-by-day series)."""
+    if not now or not then:
+        return None
+    out = {}
+    for dim in ("race", "gender", "age"):
+        gn, gt = now.get(dim, {}), then.get(dim, {})
+        tn, tt = sum(gn.values()), sum(gt.values())
+        if tn < MIN_MODE_BALLOTS or not tt:
+            return None
+        rows = [{"g": g, "now": gn.get(g, 0), "share_now": round(gn.get(g, 0) / tn, 4),
+                 "share_then": round(gt.get(g, 0) / tt, 4)} for g in gt if g in gn or gt[g]]
+        if dim != "age":
+            rows.sort(key=lambda r: -(r["share_now"] + r["share_then"]))
+        for r in rows:
+            if 0 < r["now"] < MIN_GROUP:
+                r["now"] = None
+        out[dim] = rows
     return out
 
 

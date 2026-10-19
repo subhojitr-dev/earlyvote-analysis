@@ -157,15 +157,25 @@ DALLAS,senate,2,mail,18,338
 DALLAS,senate,2,mail,20,1271
 DALLAS,senate,23,mail,18,623
 DALLAS,senate,23,mail,20,2156
+DENTON,congress,13,mail,16,365
 DENTON,congress,13,mail,20,312
+DENTON,congress,26,mail,16,1258
 DENTON,congress,26,mail,20,813
+DENTON,congress,4,mail,16,160
 DENTON,congress,4,mail,20,133
+DENTON,house,106,mail,16,323
 DENTON,house,106,mail,20,266
+DENTON,house,57,mail,16,322
 DENTON,house,57,mail,20,199
+DENTON,house,63,mail,16,349
 DENTON,house,63,mail,20,276
+DENTON,house,64,mail,16,325
 DENTON,house,64,mail,20,276
+DENTON,house,65,mail,16,463
 DENTON,house,65,mail,20,240
+DENTON,senate,12,mail,16,931
 DENTON,senate,12,mail,20,569
+DENTON,senate,30,mail,16,852
 DENTON,senate,30,mail,20,689
 DICKENS,congress,13,mail,18,1
 DICKENS,congress,13,mail,19,11
@@ -232,15 +242,19 @@ FORT BEND,senate,17,mail,17,67
 FORT BEND,senate,17,mail,20,12
 FORT BEND,senate,18,mail,17,163
 FORT BEND,senate,18,mail,20,26
+GALVESTON,congress,14,mail,16,61
 GALVESTON,congress,14,mail,18,30
 GALVESTON,congress,14,mail,19,57
 GALVESTON,congress,14,mail,20,38
+GALVESTON,house,23,mail,16,10
 GALVESTON,house,23,mail,18,20
 GALVESTON,house,23,mail,19,16
 GALVESTON,house,23,mail,20,16
+GALVESTON,house,24,mail,16,51
 GALVESTON,house,24,mail,18,10
 GALVESTON,house,24,mail,19,41
 GALVESTON,house,24,mail,20,22
+GALVESTON,senate,11,mail,16,61
 GALVESTON,senate,11,mail,18,30
 GALVESTON,senate,11,mail,19,57
 GALVESTON,senate,11,mail,20,38
@@ -387,9 +401,11 @@ LEON,senate,5,mail,20,4
 LIPSCOMB,congress,13,mail,20,17
 LIPSCOMB,house,87,mail,20,17
 LIPSCOMB,senate,31,mail,20,17
+LUBBOCK,congress,19,mail,16,1
 LUBBOCK,congress,19,mail,20,8
 LUBBOCK,house,83,mail,20,4
 LUBBOCK,house,84,mail,20,4
+LUBBOCK,senate,28,mail,16,1
 LUBBOCK,senate,28,mail,20,8
 LYNN,congress,19,mail,20,1
 LYNN,house,83,mail,20,1
@@ -400,9 +416,13 @@ MASON,house,53,mail,19,2
 MASON,house,53,mail,20,16
 MASON,senate,28,mail,19,2
 MASON,senate,28,mail,20,16
+MCLENNAN,congress,17,mail,16,627
 MCLENNAN,congress,17,mail,20,462
+MCLENNAN,house,13,mail,16,91
 MCLENNAN,house,13,mail,20,75
+MCLENNAN,house,56,mail,16,536
 MCLENNAN,house,56,mail,20,387
+MCLENNAN,senate,22,mail,16,627
 MCLENNAN,senate,22,mail,20,462
 MIDLAND,congress,11,mail,20,24
 MIDLAND,house,82,mail,20,24
@@ -431,11 +451,17 @@ NACOGDOCHES,senate,3,mail,20,310
 NAVARRO,congress,6,mail,20,3
 NAVARRO,house,8,mail,20,3
 NAVARRO,senate,2,mail,20,3
+NUECES,congress,27,mail,16,121
 NUECES,congress,27,mail,20,35
+NUECES,congress,34,mail,16,783
 NUECES,congress,34,mail,20,194
+NUECES,house,32,mail,16,531
 NUECES,house,32,mail,20,124
+NUECES,house,34,mail,16,373
 NUECES,house,34,mail,20,105
+NUECES,senate,20,mail,16,738
 NUECES,senate,20,mail,20,190
+NUECES,senate,27,mail,16,166
 NUECES,senate,27,mail,20,39
 PANOLA,congress,1,mail,20,2
 PANOLA,house,11,mail,20,2
@@ -473,57 +499,82 @@ SHACKELFORD,house,68,mail,18,11
 SHACKELFORD,house,68,mail,20,30
 SHACKELFORD,senate,10,mail,18,11
 SHACKELFORD,senate,10,mail,20,30
+SMITH,congress,1,mail,16,262
 SMITH,congress,1,mail,18,1028
 SMITH,congress,1,mail,20,11
+SMITH,house,5,mail,16,28
 SMITH,house,5,mail,18,159
 SMITH,house,5,mail,20,5
+SMITH,house,6,mail,16,234
 SMITH,house,6,mail,18,869
 SMITH,house,6,mail,20,6
+SMITH,senate,1,mail,16,262
 SMITH,senate,1,mail,18,1028
 SMITH,senate,1,mail,20,11
 STEPHENS,congress,25,mail,20,1
 STEPHENS,house,60,mail,20,1
 STEPHENS,senate,10,mail,20,1
+TARRANT,congress,12,mail,16,587
 TARRANT,congress,12,mail,17,439
 TARRANT,congress,12,mail,20,1215
+TARRANT,congress,24,mail,16,485
 TARRANT,congress,24,mail,17,338
 TARRANT,congress,24,mail,20,1364
+TARRANT,congress,25,mail,16,388
 TARRANT,congress,25,mail,17,317
 TARRANT,congress,25,mail,20,765
+TARRANT,congress,30,mail,16,108
 TARRANT,congress,30,mail,17,74
 TARRANT,congress,30,mail,20,293
+TARRANT,congress,6,mail,16,321
 TARRANT,congress,6,mail,17,156
 TARRANT,congress,6,mail,20,677
+TARRANT,house,101,mail,16,94
 TARRANT,house,101,mail,17,64
 TARRANT,house,101,mail,20,240
+TARRANT,house,90,mail,16,117
 TARRANT,house,90,mail,17,105
 TARRANT,house,90,mail,20,258
+TARRANT,house,91,mail,16,141
 TARRANT,house,91,mail,17,126
 TARRANT,house,91,mail,20,315
+TARRANT,house,92,mail,16,57
 TARRANT,house,92,mail,17,84
 TARRANT,house,92,mail,20,202
+TARRANT,house,93,mail,16,166
 TARRANT,house,93,mail,17,87
 TARRANT,house,93,mail,20,390
+TARRANT,house,94,mail,16,226
 TARRANT,house,94,mail,17,139
 TARRANT,house,94,mail,20,495
+TARRANT,house,95,mail,16,181
 TARRANT,house,95,mail,17,117
 TARRANT,house,95,mail,20,314
+TARRANT,house,96,mail,16,255
 TARRANT,house,96,mail,17,138
 TARRANT,house,96,mail,20,578
+TARRANT,house,97,mail,16,273
 TARRANT,house,97,mail,17,189
 TARRANT,house,97,mail,20,501
+TARRANT,house,98,mail,16,196
 TARRANT,house,98,mail,17,109
 TARRANT,house,98,mail,20,602
+TARRANT,house,99,mail,16,183
 TARRANT,house,99,mail,17,166
 TARRANT,house,99,mail,20,419
+TARRANT,senate,10,mail,16,720
 TARRANT,senate,10,mail,17,467
 TARRANT,senate,10,mail,20,1406
+TARRANT,senate,12,mail,16,100
 TARRANT,senate,12,mail,17,57
 TARRANT,senate,12,mail,20,333
+TARRANT,senate,22,mail,16,201
 TARRANT,senate,22,mail,17,182
 TARRANT,senate,22,mail,20,568
+TARRANT,senate,23,mail,16,44
 TARRANT,senate,23,mail,17,16
 TARRANT,senate,23,mail,20,92
+TARRANT,senate,9,mail,16,824
 TARRANT,senate,9,mail,17,602
 TARRANT,senate,9,mail,20,1915
 TAYLOR,congress,19,mail,20,1
@@ -538,12 +589,15 @@ THROCKMORTON,house,68,mail,20,2
 THROCKMORTON,senate,28,mail,18,1
 THROCKMORTON,senate,28,mail,19,1
 THROCKMORTON,senate,28,mail,20,2
+TOM GREEN,congress,11,mail,16,6
 TOM GREEN,congress,11,mail,17,221
 TOM GREEN,congress,11,mail,18,53
 TOM GREEN,congress,11,mail,20,595
+TOM GREEN,house,72,mail,16,6
 TOM GREEN,house,72,mail,17,221
 TOM GREEN,house,72,mail,18,53
 TOM GREEN,house,72,mail,20,595
+TOM GREEN,senate,28,mail,16,6
 TOM GREEN,senate,28,mail,17,221
 TOM GREEN,senate,28,mail,18,53
 TOM GREEN,senate,28,mail,20,595
@@ -618,33 +672,41 @@ WHEELER,senate,28,mail,20,1
 WICHITA,congress,13,mail,20,1
 WICHITA,house,69,mail,20,1
 WICHITA,senate,28,mail,20,1
+WILLIAMSON,congress,11,mail,16,5
 WILLIAMSON,congress,11,mail,17,6
 WILLIAMSON,congress,11,mail,18,8
 WILLIAMSON,congress,11,mail,19,18
+WILLIAMSON,congress,17,mail,16,20
 WILLIAMSON,congress,17,mail,17,45
 WILLIAMSON,congress,17,mail,18,56
 WILLIAMSON,congress,17,mail,19,203
 WILLIAMSON,congress,17,mail,20,2
+WILLIAMSON,congress,31,mail,16,13
 WILLIAMSON,congress,31,mail,17,86
 WILLIAMSON,congress,31,mail,18,150
 WILLIAMSON,congress,31,mail,19,353
 WILLIAMSON,congress,31,mail,20,14
+WILLIAMSON,house,136,mail,16,25
 WILLIAMSON,house,136,mail,17,27
 WILLIAMSON,house,136,mail,18,41
 WILLIAMSON,house,136,mail,19,101
 WILLIAMSON,house,136,mail,20,1
+WILLIAMSON,house,20,mail,16,1
 WILLIAMSON,house,20,mail,17,64
 WILLIAMSON,house,20,mail,18,111
 WILLIAMSON,house,20,mail,19,324
 WILLIAMSON,house,20,mail,20,12
+WILLIAMSON,house,52,mail,16,12
 WILLIAMSON,house,52,mail,17,46
 WILLIAMSON,house,52,mail,18,62
 WILLIAMSON,house,52,mail,19,149
 WILLIAMSON,house,52,mail,20,3
+WILLIAMSON,senate,24,mail,16,25
 WILLIAMSON,senate,24,mail,17,30
 WILLIAMSON,senate,24,mail,18,35
 WILLIAMSON,senate,24,mail,19,142
 WILLIAMSON,senate,24,mail,20,2
+WILLIAMSON,senate,5,mail,16,13
 WILLIAMSON,senate,5,mail,17,107
 WILLIAMSON,senate,5,mail,18,179
 WILLIAMSON,senate,5,mail,19,432

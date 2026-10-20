@@ -54,21 +54,23 @@ def get(url: str) -> str:
 
 
 def parse(page: str):
-    """-> {dim: {group: votes}} from the server-rendered 'By Race / Gender / Age' blocks."""
+    """-> {dim: {group: votes}} from the server-rendered 'By Race / Gender / Age' blocks.
+    Reads by content, not exact markup (the site restyled its pages on 2026-10-20): within the
+    block that starts at id="race" (etc.), the <p> texts are the column headers, then the group
+    names, then the vote counts, then the percentages."""
     out = {}
+    heads = {"Race", "Gender", "Age", "Votes", "Vote %", "Vote%"}
     for dim in ("race", "gender", "age"):
-        m = re.search(rf'<div class="threeup[a-z ]*" id="{dim}">(.*?)</div></div></div>', page, flags=re.S)
+        m = re.search(rf'id="{dim}"(.*?)(?=id="[a-z0-9]+"|</main>|$)', page, flags=re.S)
         if not m:
             continue
-        block = m.group(1)
-        types = re.search(r'<div class="third type">(.*?)</div>', block, flags=re.S)
-        nums = re.search(r'<div class="third right">((?:<p>[\d,]+</p>)+)</div>', block, flags=re.S)
-        if not types or not nums:
-            continue
-        groups = [html.unescape(g).strip() for g in re.findall(r"<p>(.*?)</p>", types.group(1))]
-        votes = [int(v.replace(",", "")) for v in re.findall(r"<p>([\d,]+)</p>", nums.group(1))]
-        if len(groups) == len(votes):
-            out[dim] = {RENAME[dim].get(g, g): v for g, v in zip(groups, votes)}
+        texts = [html.unescape(re.sub(r"<[^>]+>", "", t)).strip()
+                 for t in re.findall(r"<p[^>]*>(.*?)</p>", m.group(1), flags=re.S)]
+        texts = [t for t in texts if t and t not in heads]
+        names = [t for t in texts if not re.fullmatch(r"[\d,.]+%?", t)]
+        votes = [int(t.replace(",", "")) for t in texts if re.fullmatch(r"[\d,]+", t)]
+        if names and len(names) == len(votes):
+            out[dim] = {RENAME[dim].get(g, g): v for g, v in zip(names, votes)}
     return out
 
 

@@ -21,11 +21,14 @@ from turnout_compare import (compare, group_deviation, composite_lean,   # noqa:
                              turnout_progress, turnout_rate, sameday_info)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
-STATES = ["GA", "TX", "NC", "OH", "MI", "ME", "AZ", "NV", "PA"]
+STATES = ["GA", "TX", "NC", "FL", "SC", "OH", "MI", "ME", "AZ", "NV", "PA"]
+WAITING = {"SC"}   # real feed wired, but the state hasn't posted 2026 data yet -> notice, never synthetic
 
 
 def state_data(state):
     sd = sameday_info(state)
+    if sd is None and state in WAITING:
+        return {"state": state, "pending": {"waiting": True}}
     if sd and (sd.get("pending") or (sd["day"] < 1 and state == "TX")):
         # TX before in-person voting opens (patchy mail counts only); OH before its first 2022
         # county snapshot point (only a statewide comparison exists) -> notice, no county table
@@ -176,6 +179,16 @@ function pick(s){cur=s;sortKey="share";sortDir=-1;tabs();
   if(!show){pendingView();return;}
   cards();panels();render();}
 function pendingView(){const p=DATA[cur].pending;
+  if(p.waiting){
+    document.getElementById("cards").innerHTML=`<div class="card" style="grid-column:1/-1">
+      <div class="lab">South Carolina &middot; waiting for the state's first 2026 report</div>
+      <div class="big" style="font-size:20px">Early voting opened Mon Oct 19</div>
+      <div class="note">The SC Election Commission posts its early-voting report on
+        <a href="https://scvotes.gov/elections-statistics/voter-participation/" style="color:var(--accent)">scvotes.gov</a>;
+        the 2026 general-election report hasn't appeared yet. As soon as it does, the daily update picks it up and this tab compares
+        each county's <b>in-person early votes</b> with the same day of early voting in 2022 (opened Oct 24 2022, Oct 19 2026).
+        Mail ballots aren't compared: South Carolina published 2022 mail ballots only as a final total.</div></div>`;
+    return;}
   if(cur==="OH"){const s=p.statewide, x=(s.n26/s.n22).toFixed(1);
     document.getElementById("cards").innerHTML=`<div class="card"><div class="lab">Ohio in-person early votes through ${p.latest}</div>
       <div class="big">${p.latest_inperson.toLocaleString()}</div><div class="note">plus ${p.latest_mail.toLocaleString()} mail ballots returned</div></div>
@@ -282,7 +295,7 @@ function render(){header();const d=DATA[cur],ys=d.ref_years;
     : `<b>Turnout progress:</b> 2026 early ballots as a % of that county's FULL turnout in the given year. <span class="pill" style="background:rgba(34,197,94,.4)">Green bar</span> = already past 100% (exceeded that whole election).`;
   const sd=d.sameday;
   const src=sd?`<br><b>Real 2026 data</b> through ${sd.as_of} (${sd.day>0?"early-voting day "+sd.day:"before in-person early voting opens"}) &middot; source: ${sd.source}. `+
-      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by ${cur==="MI"?"days before Election Day: Michigan published 2022 numbers only weekly (by town, rolled up to counties), so 2026 is cut back to the latest 2022 point it has reached; absentee ballots returned (Michigan had no early in-person voting in 2022)":cur==="OH"?"days before Election Day: Ohio published 2022 county numbers only through Oct 24, Oct 31 and Nov 6 2022, so 2026 is cut back to the latest of those points it has reached; in-person early votes only":"day of in-person early voting"} (${({MI:"early in-person voting opens Oct 24 2026",OH:"early voting opened Oct 12 2022, Oct 6 2026",TX:"opened Oct 24 2022, Oct 19 2026",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026",ME:"in-person absentee from about 29 days out both years: Oct 10 2022, Oct 5 2026"})[cur]}); mail ballots returned by each cutoff are included.`
+      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by ${cur==="MI"?"days before Election Day: Michigan published 2022 numbers only weekly (by town, rolled up to counties), so 2026 is cut back to the latest 2022 point it has reached; absentee ballots returned (Michigan had no early in-person voting in 2022)":cur==="OH"?"days before Election Day: Ohio published 2022 county numbers only through Oct 24, Oct 31 and Nov 6 2022, so 2026 is cut back to the latest of those points it has reached; in-person early votes only":"day of in-person early voting"} (${({MI:"early in-person voting opens Oct 24 2026",OH:"early voting opened Oct 12 2022, Oct 6 2026",TX:"opened Oct 24 2022, Oct 19 2026",FL:"counties could open from Oct 24 2022 / Oct 19 2026; statewide from Oct 29 2022 / Oct 24 2026",SC:"opened Oct 24 2022, Oct 19 2026; in-person early votes only",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026",ME:"in-person absentee from about 29 days out both years: Oct 10 2022, Oct 5 2026"})[cur]}); mail ballots returned by each cutoff are included.`
     :d.live?`<br>Real 2026 data.`:`<br><b>${cur}: 2026 figures are synthetic stand-ins</b> until the real feed for this state is wired in.`;
   document.getElementById("foot").innerHTML=foot+src+` Partisan lean from county results; share metrics measure WHERE early voters come from, not who they voted for.`;}
 

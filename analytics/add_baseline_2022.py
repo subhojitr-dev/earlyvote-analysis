@@ -23,10 +23,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "baseline" / "county_results.csv"
-MEMBER = {"TX": "TX-cleaned.csv", "ME": "me_final.csv", "OH": "oh22_cleaned.csv", "MI": "mi22_cleaned.csv"}
+MEMBER = {"TX": "TX-cleaned.csv", "ME": "me_final.csv", "OH": "oh22_cleaned.csv", "MI": "mi22_cleaned.csv",
+          "FL": "fl22_cleaned.csv", "SC": "south_carolina_cleaned.csv"}
 # Ohio's 2022 governor race was a DeWine landslide (R+25) that would make Cincinnati, Akron and
 # Dayton "Republican-leaning"; the 2022 Senate race (Vance vs Ryan, R+6) is the better partisan read.
-OFFICE = {"TX": "GOVERNOR", "ME": "GOVERNOR", "OH": "US SENATE", "MI": "GOVERNOR"}
+# Florida 2022: both statewide races were landslides; the Senate race (Rubio vs Demings, R+16) is the
+# less lopsided read of the two (DeSantis won by 19). South Carolina: Governor (McMaster vs Cunningham).
+OFFICE = {"TX": "GOVERNOR", "ME": "GOVERNOR", "OH": "US SENATE", "MI": "GOVERNOR", "FL": "US SENATE", "SC": "GOVERNOR"}
 
 
 def main(st: str = "TX"):

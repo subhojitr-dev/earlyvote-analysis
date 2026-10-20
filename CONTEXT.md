@@ -14,6 +14,19 @@ than a comparable past cycle?** Statewide signal + county drill-down + turnout p
 Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD.md
 (how to read), README.md (run/deploy).
 
+## 🟢 2026-10-20: FLORIDA + SOUTH CAROLINA ADDED (main dashboard tabs), vs 2022, in the noon task
+- FL (ingestor/fl_fetch.py): Division of Elections daily stats files Stats_49894_{EarlyVoted,VbmVoted}.txt
+  (public; add a cache-busting ?ts= or a 1-2 day old copy comes back), county x party, cumulative through
+  the previous day; one snapshot stored per run (data/fl_county/snapshots_2026.csv). 2022 = Internet
+  Archive copies of the PublicStats page (14 days Oct 6-Nov 6 2022); early-Oct 2022 pages still list the
+  PRIMARY, so rows are filtered to election 26906. Compared in person + mail, by day of early voting
+  (counties may open 15 days out: Oct 24 2022 / Oct 19 2026). Day 1: 1,104,849 = 79% of 2022.
+- SC (ingestor/sc_fetch.py): 2022 = Commission's archived "EV Stats (2022 GE)" workbook (in person by
+  county by day, 561,563 total); 2026 = the general-election early-voting CSV on scvotes.gov
+  voter-participation page (found automatically; NOT posted yet on Oct 20 -> SC tab shows a waiting
+  notice via build_dashboard WAITING). In-person only (2022 mail exists only as a final total).
+- County leans: 2022 FL US Senate, 2022 SC Governor (analytics/add_baseline_2022.py, MEDSL fl22/sc22).
+
 ## 🟢 2026-10-16: GA IS ON REAL DATA, COMPARED WITH 2022 ONLY
 - **User's rule: GA compares with 2022 only** (no 2020, no 2024), at the same DAY OF EARLY VOTING
   (opened Oct 17 2022 / Oct 13 2026; 2026 day k vs 2022 day k).

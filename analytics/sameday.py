@@ -53,6 +53,17 @@ CFG = {
     "MI": {"ev_start": {2022: date(2022, 10, 29), 2026: date(2026, 10, 24)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "Michigan SoS 2022 ballot stats by jurisdiction (weekly snapshot)"},
+    # Florida: early in person + vote-by-mail returned, from the Division of Elections statistics
+    # (2022 = Internet Archive copies of the same page, ingestor/fl_fetch.py). Counties may open early
+    # voting from 15 days out (Oct 24 2022 / Oct 19 2026); mandatory statewide from 10 days out.
+    "FL": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
+           "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
+           "source22": "Florida Division of Elections statistics (Internet Archive copy)"},
+    # South Carolina: in-person early voting only (2022 mail exists only as a final total).
+    # Two weeks before Election Day both years: Oct 24 2022, Oct 19 2026 (ingestor/sc_fetch.py).
+    "SC": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
+           "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
+           "source22": "SC Election Commission early-voting report (2022 GE)", "modes": {"inperson"}},
     "TX": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "TX SoS daily early-voting rosters",

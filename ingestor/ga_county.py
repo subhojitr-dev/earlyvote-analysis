@@ -130,6 +130,9 @@ def main(years):
                 {"as_of": last, "ballots": n, "inperson": by_mode["inperson"], "mail": by_mode["mail"],
                  "source": "GA Secretary of State absentee voter file"}, indent=1))
             print(f"  wrote {LIVE / 'ga_current.csv'} ({len(per)} counties)")
+    if 2022 in years:   # the SoS 2022 file has holes (Fulton, Gwinnett): fill them again
+        from ga_fix2022 import main as fix2022
+        fix2022()
 
 
 if __name__ == "__main__":

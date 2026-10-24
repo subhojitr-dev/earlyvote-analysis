@@ -156,6 +156,9 @@ def main(years: list[int]):
                sorted(((ch, d, t, round(same[(ch, d)] / t, 4)) for (ch, d), t in tot.items()),
                       key=lambda r: (r[0], int(r[1]))))
         print(f"redraw.csv: {len(tot)} districts")
+    if 2022 in years:   # the SoS 2022 file has holes (Fulton, Gwinnett): fill them again
+        from ga_fix2022 import main as fix2022
+        fix2022()
 
 
 def recount_2022(min_share: float = 0.03):
@@ -238,6 +241,8 @@ def recount_2022(min_share: float = 0.03):
     _write(OUT / "early_2022_cur.csv", ["county", "chamber", "district", "mode", "days_out", "ballots"],
            sorted((*k, round(v)) for k, v in out.items() if round(v) > 0))
     print(f"wrote early_2022_cur.csv: {sum(out.values()) / len(CHAMBERS):,.0f} ballots per chamber")
+    from ga_fix2022 import main as fix2022        # the SoS 2022 file has holes (Fulton, Gwinnett)
+    fix2022()
 
 
 if __name__ == "__main__":

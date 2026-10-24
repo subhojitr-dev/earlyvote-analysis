@@ -340,6 +340,19 @@ def build_mode(cur, e22, e24, days_out, redraw, lean):
     return totals, out_stats
 
 
+def fix2022_note():
+    """Note shown when the 2022 comparison file had holes we estimated (ingestor/ga_fix2022.py)."""
+    p = ROOT / "data" / f"{ST.lower()}_county" / "fix2022.json"
+    if not p.exists():
+        return ""
+    from datetime import date as _d
+    md = lambda s: _d.fromisoformat(s).strftime("%b ") + str(_d.fromisoformat(s).day)
+    fx = json.loads(p.read_text(encoding="utf-8"))
+    parts = [f"{c.title()} ({md(i['days'][0])} &ndash; {md(i['days'][1])})" for c, i in sorted(fx.items())]
+    return ("The Secretary of State's 2022 file is missing most early in-person votes for " + " and ".join(parts)
+            + ". Those days are estimated so each county matches its certified 2022 total.")
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "county").mkdir(exist_ok=True)
@@ -396,6 +409,7 @@ def main():
              "meta": {"state": ST, "name": CFG["name"], "ev_start": CFG["ev_start"], "source": CFG["source"],
                       "only_2022": ONLY_2022, "align": "ev_day" if SHIFT else "days_out",
                       "redraw_note": CFG.get("redraw_note", ""),
+                      "note_2022": fix2022_note(),
                       "has_demo": has_demo, "demo_kind": "surname" if ST == "TX" else "gv" if gv else "record",
                       "demo_asof": gv[2] if gv else None,
                       "chambers": list(CHAMBERS)}}

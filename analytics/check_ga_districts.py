@@ -14,6 +14,9 @@ Checks
   3. Each district's in-person + mail counts add up to its overall count.
   4. The counties listed for a district cover >= 98% of its votes (counties with
      < 0.5% are hidden as address noise, so it is not exactly 100%).
+  5. GA only: every county's 2022 early in-person total (the comparison year) is within
+     5% of its certified 2022 advance-voting total. The SoS 2022 file is missing most of
+     Fulton's and Gwinnett's Oct 24 - Nov 4 records; ingestor/ga_fix2022.py fills them.
 Exits non-zero if anything fails.
 """
 from __future__ import annotations
@@ -79,6 +82,22 @@ def main() -> int:
             shown = sum(b["now"] for b in s["by_county"])
             if s["now"] and not 0.98 * s["now"] <= shown <= s["now"]:
                 fails.append(f"{k}: counties shown cover {shown / s['now']:.1%} of the district")
+
+    if ST == "GA":   # 2022 comparison year vs certified 2022 advance voting, by county
+        import csv
+        from collections import Counter
+        root = Path(__file__).resolve().parent.parent
+        cert, ours = Counter(), Counter()
+        for r in csv.DictReader(open(root / "data/baseline/county_results.csv", encoding="utf-8")):
+            if r["state"] == "GA" and r["year"] == "2022" and r["mode"] == "ADVANCED":
+                cert[r["county_name"]] += int(r["votes"])
+        for r in csv.DictReader(open(root / "data/ga_county/early_2022.csv", encoding="utf-8")):
+            if r["mode"] == "inperson":
+                ours[r["county"]] += int(r["ballots"])
+        off = {c: ours[c] / n - 1 for c, n in cert.items() if n >= 500 and abs(ours[c] / n - 1) > 0.05}
+        print(f"  2022 in-person vs certified advance voting: {len(cert) - len(off)}/{len(cert)} counties within 5%")
+        for c, d in sorted(off.items(), key=lambda x: x[1])[:10]:
+            fails.append(f"2022 {c}: file has {d:+.1%} vs certified (run python ingestor/ga_fix2022.py)")
 
     if ST == "TX":   # surname estimate vs the Council's Spanish-surname registration share, House districts
         import csv, os, statistics, xlrd

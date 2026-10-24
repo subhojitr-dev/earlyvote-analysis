@@ -25,6 +25,20 @@ STATES = ["GA", "TX", "NC", "FL", "SC", "OH", "MI", "ME", "AZ", "NV", "PA"]
 WAITING = {"SC"}   # real feed wired, but the state hasn't posted 2026 data yet -> notice, never synthetic
 
 
+def fix2022_note(state):
+    """Plain-English note when the 2022 comparison file had holes we estimated (GA)."""
+    p = Path(__file__).resolve().parent.parent / "data" / f"{state.lower()}_county" / "fix2022.json"
+    if not p.exists():
+        return ""
+    import json as _j
+    from datetime import date as _d
+    fx = _j.loads(p.read_text(encoding="utf-8"))
+    md = lambda s: _d.fromisoformat(s).strftime("%b ") + str(_d.fromisoformat(s).day)
+    parts = [f"{c.title()} ({md(i['days'][0])} &ndash; {md(i['days'][1])})" for c, i in sorted(fx.items())]
+    return ("2022 note: the Secretary of State's 2022 file is missing most early in-person votes for "
+            + " and ".join(parts) + ". Those days are estimated so each county matches its certified 2022 total.")
+
+
 def state_data(state):
     sd = sameday_info(state)
     if sd is None and state in WAITING:
@@ -69,6 +83,7 @@ def state_data(state):
         "progress": {str(y): pagg[y] for y in _py},
         "turnout_rate": tr_agg,
         "sameday": sameday_info(state),
+        "note2022": fix2022_note(state),
         "live": (Path(__file__).resolve().parent.parent / "data" / "live"
                  / f"{state.lower()}_current.csv").exists(),
     }
@@ -227,7 +242,7 @@ function cards(){const d=DATA[cur],ys=d.ref_years;
   document.getElementById("cards").innerHTML=
     `<div class="card"><div class="lab">${lab}</div>
        <div class="big">${d.cur_total.toLocaleString()}</div>
-       <div class="note">${ovNote}</div></div>`+ys.slice().reverse().map(nc).join("");}
+       <div class="note">${ovNote}${d.note2022?`<br><span style="color:var(--accent)">${d.note2022}</span>`:""}</div></div>`+ys.slice().reverse().map(nc).join("");}
 
 function panels(){const d=DATA[cur];
   const cl=d.complean, cy=d.ref_years.concat(["cur"]);

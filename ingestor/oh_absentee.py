@@ -10,9 +10,13 @@ Oct 13 release (194,841 in person after week 1; the file gives ~196,900 for thos
 
 2022: no per-voter file exists (the DATA Act began in 2024). The SoS published county
 spreadsheets at three points (from the Internet Archive; data/incoming/oh/oh22_*.xlsx):
-    released Oct 25 2022  → votes through Oct 24 (15 days out): early in person by county
-    released Nov 1 2022   → through Oct 31 (8 days out): in person + returned
-    released Nov 7 2022   → through Nov 6 (2 days out): in person + returned
+    released Oct 25 2022  → votes as of Fri Oct 21 (18 days out; the release says "current
+                            totals as of October 21"): early in person by county
+    released Nov 1 2022   → as of Fri Oct 28 (11 days out; no date given, weekly reports were
+                            cut off on Fridays): in person + returned
+    released Nov 7 2022   → through Mon Nov 7 2 pm, the end of early voting (1 day out)
+    (Corrected 2026-10-24: these were dated Oct 24 / Oct 31 / Nov 6, i.e. the day before each
+    release, which compared 2026 with three fewer days of 2022 voting and inflated the ratio.)
 So Ohio is compared on IN-PERSON early votes by county, with 2026 cut back to the same
 number of days before Election Day as the latest 2022 snapshot it has reached. Before the
 first snapshot point only a statewide comparison exists (Oct 18 2022 release: 50,368 in
@@ -44,9 +48,9 @@ INCOMING = ROOT / "data" / "incoming" / "oh"
 OUT = ROOT / "data" / "oh_county"
 LIVE = ROOT / "data" / "live"
 EDAY = {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)}
-SNAPSHOTS = {date(2022, 10, 24): "oh22_2022-10-25.xlsx",        # through-date -> file
-             date(2022, 10, 31): "oh22_2022-11-01.xlsx",
-             date(2022, 11, 6): "oh22_2022-11-07.xlsx"}
+SNAPSHOTS = {date(2022, 10, 21): "oh22_2022-10-25.xlsx",        # as-of date -> file
+             date(2022, 10, 28): "oh22_2022-11-01.xlsx",
+             date(2022, 11, 7): "oh22_2022-11-07.xlsx"}
 STATEWIDE_2022 = (date(2022, 10, 17), 50368)                    # Oct 18 2022 release, in person
 
 

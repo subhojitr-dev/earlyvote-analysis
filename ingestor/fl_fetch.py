@@ -172,17 +172,24 @@ def save_snaps(year: int, snaps):
 
 
 def write_daily(year: int, snaps):
-    """Increments between consecutive snapshots (never negative), dated by the through date."""
-    rows, prev = [], defaultdict(int)
+    """Increments between consecutive snapshots (never negative). When snapshots are more than
+    a day apart (the Internet Archive skipped days, e.g. no 2022 copy through Oct 28 or 29), the
+    increment is spread evenly over the days it covers. Dating it all on the later day made a
+    same-day comparison on a skipped day use the previous day's total (found 2026-10-24: FL read
+    105% of 2022 instead of ~97%)."""
+    rows, prev, last = [], defaultdict(int), None
     for d in sorted(snaps):
         tot = defaultdict(int)
         for (c, m, _p), v in snaps[d].items():
             tot[(c, m)] += v
+        span = [d] if last is None else [last + timedelta(days=i) for i in range(1, (d - last).days + 1)]
         for (c, m), v in sorted(tot.items()):
             inc = v - prev[(c, m)]
             if inc > 0:
-                rows.append([c, m, d.isoformat(), inc])
+                parts = [inc * (i + 1) // len(span) - inc * i // len(span) for i in range(len(span))]
+                rows.extend([c, m, day.isoformat(), n] for day, n in zip(span, parts) if n > 0)
             prev[(c, m)] = max(prev[(c, m)], v)
+        last = d
     with (OUT / f"early_{year}.csv").open("w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["county", "mode", "date", "ballots"])

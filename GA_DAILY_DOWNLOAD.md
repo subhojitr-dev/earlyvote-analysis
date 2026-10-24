@@ -230,7 +230,7 @@ git add data/oh_county web/index.html && git commit -m "OH early-vote update" &&
 ```
 
 - **Compared with 2022 on in-person early votes by county.** For 2022 Ohio only published county numbers at
-  three points (votes through Oct 24, Oct 31 and Nov 6 2022 = 15, 8 and 2 days before Election Day;
+  three points (votes as of Oct 21, Oct 28 and Nov 7 2022 = 18, 11 and 1 days before Election Day;
   `data/incoming/oh/oh22_*.xlsx`, from the Internet Archive). 2026 is cut back to the same number of days out
   as the latest of those points it has reached. Before the first one (data through Mon Oct 19, posted ~Tue
   Oct 20) the OH tab shows the statewide comparison only (2022: 50,368 in person through Oct 17).

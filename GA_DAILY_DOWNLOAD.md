@@ -1,5 +1,8 @@
 # Georgia daily early-vote update
 
+> **Since Oct 24 2026 this is automatic:** the noon daily task downloads the official GA file itself in Claude's built-in browser and runs these steps. You only need this guide if the task reports "GA SoS page unavailable" (blank page or CAPTCHA), in which case do it by hand as below.
+
+
 **Every Georgia comparison is against 2022 only** (the last midterm), at the same day of
 early voting. In-person early voting opened Mon Oct 17 2022 and Tue Oct 13 2026, so day 3 of 2026
 (Oct 15) is compared with day 3 of 2022 (Oct 19). 2020 and 2024 are not used for GA.

@@ -225,6 +225,7 @@ function modeBanner(){
   return `<div class="banner live"><b>Live data</b> from the ${esc(META().source)}:
     ${fmt(m.totals.now)} accepted ballots statewide, ${m.days_out} days before Election Day.
     ${META().only_2022 ? `Every district is compared with <b>2022</b> (the last midterm) at the same day of early voting.` : ""}
+    ${META().note_2022 ? `<br><b>2022 note:</b> ${META().note_2022}` : ""}
     ${low ? `In-person early voting starts <b>${esc(META().ev_start)}</b>. Until then, counts are only a handful of mail ballots, so the comparisons below are very noisy.` : ""}</div>`;
 }
 const META = () => (S.state && S.state.meta) || {state: "GA", name: "Georgia", ev_start: "Oct 13", source: "Georgia Secretary of State absentee file"};

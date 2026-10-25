@@ -21,7 +21,7 @@ from turnout_compare import (compare, group_deviation, composite_lean,   # noqa:
                              turnout_progress, turnout_rate, sameday_info)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
-STATES = ["GA", "TX", "NC", "FL", "SC", "OH", "MI", "ME", "AZ", "NV", "PA"]
+STATES = ["GA", "TX", "NC", "FL", "SC", "OH", "KS", "MI", "ME", "AZ", "NV", "PA"]
 WAITING = {"SC"}   # real feed wired, but the state hasn't posted 2026 data yet -> notice, never synthetic
 
 
@@ -39,7 +39,30 @@ def fix2022_note(state):
             + " and ".join(parts) + ". Those days are estimated so each county matches its certified 2022 total.")
 
 
+def ks_info():
+    """Kansas: statewide-only advance voting (ingestor/ks_fetch.py); no county or party breakdown."""
+    import csv as _csv
+    base = Path(__file__).resolve().parent.parent / "data" / "ks_state"
+    p = base / "daily_2026.csv"
+    if not p.exists():
+        return {"waiting": True}
+    import sys as _sys
+    _sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "ingestor"))
+    from ks_fetch import compare as _cmp, REF_2022
+    from datetime import date as _d
+    daily = [(_d.fromisoformat(r["date"]), int(r["sent"]), int(r["returned"]), int(r["inperson"]))
+             for r in _csv.DictReader(p.open(encoding="utf-8"))]
+    last = daily[-1]
+    final22 = min(REF_2022, key=lambda r: r[0])
+    return {"ks": True, "as_of": last[0].isoformat(), "inperson": last[3], "returned": last[2], "sent": last[1],
+            "daily": [[d.isoformat(), s, r, i] for d, s, r, i in daily], "cmp": _cmp(daily),
+            "ref22": [{"days_out": o, "sent": se, "returned": r, "inperson": i, "source": src} for o, se, r, i, src in REF_2022],
+            "final22": {"days_out": final22[0], "total": final22[2] + final22[3]}}
+
+
 def state_data(state):
+    if state == "KS":
+        return {"state": state, "pending": ks_info()}
     sd = sameday_info(state)
     if sd is None and state in WAITING:
         return {"state": state, "pending": {"waiting": True}}
@@ -154,7 +177,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
-  <div class="sub">County-level early-voting signal vs past cycles (Georgia, Maine, Michigan, North Carolina, Ohio &amp; Texas: 2022 at the same point of early voting) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
+  <div class="sub">County-level early-voting signal vs past cycles (Georgia, Florida, Kansas, Maine, Michigan, North Carolina, Ohio, South Carolina &amp; Texas: 2022 at the same point of early voting; Kansas statewide only) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
   <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a>, <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a>, <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a> and <a href="/me/" style="color:var(--accent)">Maine &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">
@@ -194,6 +217,27 @@ function pick(s){cur=s;sortKey="share";sortDir=-1;tabs();
   if(!show){pendingView();return;}
   cards();panels();render();}
 function pendingView(){const p=DATA[cur].pending;
+  if(p.ks){const c=p.cmp, tot=p.inperson+p.returned, f=p.final22;
+    const pc=(a,b)=>Math.round(a/b*100)+"%";
+    const cmpCard=c?`<div class="card"><div class="lab">Vs 2022, same point (${c.days_out} days before Election Day)</div>
+        <div class="big" style="color:var(--accent)">${pc(c.inperson26+c.returned26,c.inperson22+c.returned22)}</div>
+        <div class="note">${(c.inperson26+c.returned26).toLocaleString()} voted through ${c.d26} vs ${(c.inperson22+c.returned22).toLocaleString()} in 2022.
+        In person alone: ${pc(c.inperson26,c.inperson22)} (${c.inperson26.toLocaleString()} vs ${c.inperson22.toLocaleString()}).<br>
+        2022 source: ${c.source22}.</div></div>`:"";
+    const rows=p.daily.slice().reverse().map(([d,s,r,i])=>`<tr><td>${d}</td><td>${(i+r).toLocaleString()}</td><td>${i.toLocaleString()}</td><td>${r.toLocaleString()}</td><td>${s.toLocaleString()}</td></tr>`).join("");
+    document.getElementById("cards").innerHTML=`<div class="card"><div class="lab">Kansas advance ballots voted through ${p.as_of}</div>
+        <div class="big">${tot.toLocaleString()}</div>
+        <div class="note">${p.inperson.toLocaleString()} in person &middot; ${p.returned.toLocaleString()} mail returned (of ${p.sent.toLocaleString()} sent)</div></div>`+cmpCard+
+      `<div class="card"><div class="lab">Share of 2022's advance vote (as of ${f.days_out} days out)</div>
+        <div class="big">${pc(tot,f.total)}</div><div class="note">2026 so far vs ${f.total.toLocaleString()} advance ballots voted in 2022 by Nov 4 (in person + mail returned).</div></div>
+      <div class="card" style="grid-column:1/-1"><div class="lab">Statewide only</div>
+        <div class="note">The Kansas Secretary of State publishes advance voting as <b>statewide daily totals only</b>
+        (<a href="https://www.sos.ks.gov/elections/advance-voting-data.html" style="color:var(--accent)">sos.ks.gov</a>), with no county or party breakdown,
+        so Kansas has no county table or Dem/Rep-leaning county signal. No day-by-day 2022 series exists either: 2026 is compared at the
+        latest 2022 point it has reached (12 days out, from Secretary of State figures reported by WIBW; then Nov 4 2022, 4 days out).
+        All Kansas counties must offer in-person advance voting by Tue Oct 27 2026 (Nov 1 in 2022).</div>
+        <div class="tablewrap" style="margin-top:10px;max-height:40vh"><table><thead><tr><th>Report date</th><th>Voted</th><th>In person</th><th>Mail returned</th><th>Mail sent</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+    return;}
   if(p.waiting){
     document.getElementById("cards").innerHTML=`<div class="card" style="grid-column:1/-1">
       <div class="lab">South Carolina &middot; waiting for the state's first 2026 report</div>

@@ -209,7 +209,10 @@ git add data/mi_county data/reference/registration.csv web/index.html && git com
 
 ---
 
-## Ohio (on request: say "run Ohio" to Claude; weekdays after ~11:30 AM)
+## Ohio (automatic since Oct 25 2026: in the noon task; file posted weekdays and Saturdays ~11:30 AM)
+
+> The noon task runs `ingestor/oh_browser_return.js` in Claude's built-in browser and saves the counts with
+> `ingestor/oh_save_agg.py`; the steps below are what it does, and what to do by hand if it reports a problem.
 
 Ohio's statewide absentee / early-vote file (one row per voter, ~270 MB, updated **weekdays** ~11 AM) is
 refused to scripts, but opens normally in a browser on the Secretary of State's data portal. So Claude:

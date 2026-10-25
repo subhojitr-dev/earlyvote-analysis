@@ -58,7 +58,7 @@ Read the four docs: Overview.md (what/why/who), Architecture.md (how), DASHBOARD
 - 2022: only county snapshots as of Oct 21 / Oct 28 / Nov 7 2022 (dates corrected 2026-10-24) (Internet Archive xlsx); early_2022.csv
   holds in-person increments; 2026 cut back to the latest reached snapshot's days-out. Pending notice
   (statewide 3.9x) until data through Oct 19. Lean = 2022 US Senate (add_baseline_2022.py OFFICE map).
-- Not in the noon task (needs the browser); run on request. No OH district page (no 2022 district data).
+- In the noon task since 2026-10-25 (browser step: ingestor/oh_browser_return.js -> ingestor/oh_save_agg.py). SoS posts weekdays and Saturdays. No OH district page (no 2022 district data).
 
 ## 🟢 2026-10-17: MAINE ADDED (main dashboard ME tab + /me/ district page), vs 2022 only
 - ingestor/me_absentee.py: SoS statewide absentee voter file (per voter: town, party, CG/SS/SR, rec type/date);

@@ -21,7 +21,7 @@ from turnout_compare import (compare, group_deviation, composite_lean,   # noqa:
                              turnout_progress, turnout_rate, sameday_info)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
-STATES = ["GA", "TX", "NC", "FL", "SC", "OH", "KS", "MI", "ME", "AZ", "NV", "PA"]
+STATES = ["GA", "TX", "NC", "FL", "SC", "OH", "IA", "KS", "MI", "ME", "AZ", "NV", "PA"]
 WAITING = {"SC"}   # real feed wired, but the state hasn't posted 2026 data yet -> notice, never synthetic
 
 
@@ -37,6 +37,51 @@ def fix2022_note(state):
     parts = [f"{c.title()} ({md(i['days'][0])} &ndash; {md(i['days'][1])})" for c, i in sorted(fx.items())]
     return ("2022 note: the Secretary of State's 2022 file is missing most early in-person votes for "
             + " and ".join(parts) + ". Those days are estimated so each county matches its certified 2022 total.")
+
+
+def ia_info():
+    """Iowa: absentee (= early) ballots received by party, by congressional district (same day as
+    2022, from every 2022 report) and county (2026 only + progress vs 2022's full early vote, since
+    2022 county numbers exist only as a few snapshots). Data: ingestor/ia_fetch.py."""
+    import csv as _csv
+    from collections import defaultdict as _dd
+    from datetime import date as _d
+    root = Path(__file__).resolve().parent.parent
+    if not (root / "data" / "ia_state" / "cd_2026.csv").exists():
+        return {"waiting": True}
+    E = {2022: _d(2022, 11, 8), 2026: _d(2026, 11, 3)}
+
+    def load(p, key):
+        out = _dd(lambda: _dd(dict))
+        for r in _csv.DictReader(p.open(encoding="utf-8")):
+            out[_d.fromisoformat(r["report_date"])][r[key]][r["party"]] = int(r["received"])
+        return out
+    cd26, cd22 = load(root / "data/ia_state/cd_2026.csv", "district"), load(root / "data/ia_state/cd_2022.csv", "district")
+    co26, co22 = load(root / "data/ia_county/county_2026.csv", "county"), load(root / "data/ia_county/county_2022.csv", "county")
+    cmap = {r["county"]: r["district"] for r in _csv.DictReader((root / "data/ia_county/county_cd.csv").open(encoding="utf-8"))}
+    rd = max(cd26)
+    out26 = (E[2026] - rd).days
+    # latest 2022 report at or before the same number of days out (Iowa posts no weekend reports)
+    rd22 = max(d for d in cd22 if (E[2022] - d).days >= out26)
+    rd26 = max(d for d in cd26 if (E[2026] - d).days >= (E[2022] - rd22).days)
+
+    def stats(ps):
+        t = sum(ps.values()) or 1
+        return {"n": sum(ps.values()), "D": ps.get("D", 0) / t, "R": ps.get("R", 0) / t, "NP": ps.get("NP", 0) / t}
+    districts = [{"area": a, "now": stats(cd26[rd26][a]), "then": stats(cd22[rd22][a])}
+                 for a in ["STATE", "1", "2", "3", "4"]]
+    rdc = max(co26)
+    fin22 = max(co22)
+    counties = []
+    for c in sorted(co26[rdc]):
+        now, f22 = stats(co26[rdc][c]), stats(co22[fin22].get(c, {}))
+        counties.append({"county": c.title(), "cd": cmap.get(c), "now": now, "final22": f22,
+                         "progress": now["n"] / f22["n"] if f22["n"] else None})
+    daily = [[d.isoformat(), sum(cd26[d]["STATE"].values()), cd26[d]["STATE"].get("D", 0), cd26[d]["STATE"].get("R", 0)]
+             for d in sorted(cd26)]
+    return {"ia": True, "as_of": rd.isoformat(), "county_as_of": rdc.isoformat(), "cmp26": rd26.isoformat(),
+            "cmp22": rd22.isoformat(), "days_out": (E[2022] - rd22).days, "districts": districts,
+            "counties": counties, "final22": fin22.isoformat(), "daily": daily}
 
 
 def ks_info():
@@ -63,6 +108,8 @@ def ks_info():
 def state_data(state):
     if state == "KS":
         return {"state": state, "pending": ks_info()}
+    if state == "IA":
+        return {"state": state, "pending": ia_info()}
     sd = sameday_info(state)
     if sd is None and state in WAITING:
         return {"state": state, "pending": {"waiting": True}}
@@ -177,7 +224,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Early-Vote Performance Matrix <span style="color:var(--accent)">&middot; 2026</span></h1>
-  <div class="sub">County-level early-voting signal vs past cycles (Georgia, Florida, Kansas, Maine, Michigan, North Carolina, Ohio, South Carolina &amp; Texas: 2022 at the same point of early voting; Kansas statewide only) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
+  <div class="sub">County-level early-voting signal vs past cycles (Georgia, Florida, Iowa, Kansas, Maine, Michigan, North Carolina, Ohio, South Carolina &amp; Texas: 2022 at the same point of early voting; Kansas statewide only) &mdash; partisan share shift, aggregate Dem tilt, and turnout progress.</div>
   <div class="sub" style="margin-top:6px"><b>New:</b> early vote by State House &amp; Senate district for <a href="/ga/" style="color:var(--accent)">Georgia &rarr;</a>, <a href="/nc/" style="color:var(--accent)">North Carolina &rarr;</a>, <a href="/tx/" style="color:var(--accent)">Texas &rarr;</a> and <a href="/me/" style="color:var(--accent)">Maine &rarr;</a> &middot; <a href="/ga/#/polls" style="color:var(--accent)">Senate &amp; Governor polling data &rarr;</a></div>
 </header>
 <div class="wrap">
@@ -217,6 +264,40 @@ function pick(s){cur=s;sortKey="share";sortDir=-1;tabs();
   if(!show){pendingView();return;}
   cards();panels();render();}
 function pendingView(){const p=DATA[cur].pending;
+  if(p.ia){const pc=x=>x==null?"–":(x*100).toFixed(1)+"%", pp=x=>(x>0?"+":"")+(x*100).toFixed(1), n=x=>x.toLocaleString();
+    const mg=s=>s.D-s.R, mtxt=x=>(x>=0?"D +":"R +")+Math.abs(x*100).toFixed(1);
+    const st=p.districts[0];
+    const drow=d=>{const r=d.now.n/d.then.n, dm=mg(d.now)-mg(d.then);
+      return `<tr><td>${d.area==="STATE"?"<b>Statewide</b>":"IA-"+d.area}</td><td>${n(d.now.n)}</td><td>${n(d.then.n)}</td>
+      <td><b>${Math.round(r*100)}%</b></td><td>${pc(d.now.D)} <span style="color:var(--muted)">(${pc(d.then.D)})</span></td>
+      <td>${pc(d.now.R)} <span style="color:var(--muted)">(${pc(d.then.R)})</span></td><td>${mtxt(mg(d.now))}</td>
+      <td style="color:${dm>=0?'var(--dem)':'var(--rep)'}">${pp(dm)} pts</td></tr>`;};
+    const crow=c=>{const m=mg(c.now), m22=mg(c.final22);
+      return `<tr><td>${c.county}</td><td>IA-${c.cd}</td><td>${n(c.now.n)}</td><td>${pc(c.now.D)}</td><td>${pc(c.now.R)}</td><td>${pc(c.now.NP)}</td>
+      <td>${mtxt(m)}</td><td>${c.progress==null?"–":Math.round(c.progress*100)+"%"}</td><td style="color:var(--muted)">${mtxt(m22)}</td></tr>`;};
+    const cs=p.counties.slice().sort((a,b)=>b.now.n-a.now.n);
+    document.getElementById("cards").innerHTML=`<div class="card"><div class="lab">Iowa absentee/early ballots received (report ${p.as_of})</div>
+        <div class="big">${n(p.daily[p.daily.length-1][1])}</div><div class="note">Statewide by party of registration (report ${p.cmp26}): Democrats ${pc(st.now.D)} &middot; Republicans ${pc(st.now.R)} &middot; no party ${pc(st.now.NP)}</div></div>
+      <div class="card"><div class="lab">Vs 2022, same point (${p.days_out} days before Election Day)</div>
+        <div class="big" style="color:var(--accent)">${Math.round(st.now.n/st.then.n*100)}%</div>
+        <div class="note">${n(st.now.n)} (report ${p.cmp26}) vs ${n(st.then.n)} (report ${p.cmp22}).</div></div>
+      <div class="card"><div class="lab">Party margin of early voters vs 2022, same point</div>
+        <div class="big" style="color:${mg(st.now)-mg(st.then)>=0?'var(--dem)':'var(--rep)'}">${pp(mg(st.now)-mg(st.then))} pts</div>
+        <div class="note">${mtxt(mg(st.now))} now vs ${mtxt(mg(st.then))} in 2022 (registered Democrats minus Republicans as a share of ballots received; party registration, not votes cast).</div></div>
+      <div class="card" style="grid-column:1/-1"><div class="lab">By congressional district &middot; 2026 vs 2022 at the same point</div>
+        <div class="tablewrap" style="margin-top:8px"><table><thead><tr><th>District</th><th>2026 received</th><th>2022 same point</th><th>vs 2022</th>
+        <th>Dem share (2022)</th><th>Rep share (2022)</th><th>D&minus;R margin</th><th>Margin vs 2022</th></tr></thead><tbody>${p.districts.map(drow).join("")}</tbody></table></div>
+        <div class="note" style="margin-top:6px">Every 2022 report is available by district (Iowa SoS reports, as reproduced by
+        <a href="https://www.bleedingheartland.com/2022/10/20/iowa-absentee-ballot-numbers-in-the-2022-general-election/" style="color:var(--accent)">Bleeding Heartland</a>),
+        so these are true same-day comparisons, lined up by days before Election Day. Iowa posts no weekend reports.</div></div>
+      <div class="card" style="grid-column:1/-1"><div class="lab">By county &middot; 2026 (report ${p.county_as_of})</div>
+        <div class="tablewrap" style="margin-top:8px;max-height:55vh"><table><thead><tr><th>County</th><th>District</th><th>Received</th><th>Dem</th><th>Rep</th><th>No party</th>
+        <th>D&minus;R margin</th><th>% of 2022 full early vote</th><th>2022 full early-vote margin</th></tr></thead><tbody>${cs.map(crow).join("")}</tbody></table></div>
+        <div class="note" style="margin-top:6px">2022 county numbers survive only as a few snapshots (final report ${p.final22}), so counties are compared with
+        <b>2022's full early vote</b>, not the same day: "% of 2022 full early vote" is how far each county has already got, and the last column is the
+        party margin of its whole 2022 early electorate. Iowa's early voters lean more Democratic early in the voting period and less later, so a margin
+        above the 2022 figure now does not mean the county will finish above it. Source: Iowa Secretary of State absentee ballot statistics.</div></div>`;
+    return;}
   if(p.ks){const c=p.cmp, tot=p.inperson+p.returned, f=p.final22;
     const pc=(a,b)=>Math.round(a/b*100)+"%";
     const cmpCard=c?`<div class="card"><div class="lab">Vs 2022, same point (${c.days_out} days before Election Day)</div>

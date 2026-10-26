@@ -64,6 +64,11 @@ CFG = {
     "SC": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "SC Election Commission early-voting report (2022 GE)", "modes": {"inperson"}},
+    # Pennsylvania: no in-person early voting; mail ballots returned (data.pa.gov, ingestor/pa_fetch.py),
+    # lined up by days before Election Day (the reference dates are 15 days out both years).
+    "PA": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
+           "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
+           "source22": "PA Department of State mail ballot file (data.pa.gov)"},
     "TX": {"ev_start": {2022: date(2022, 10, 24), 2026: date(2026, 10, 19)},
            "election_day": {2022: date(2022, 11, 8), 2026: date(2026, 11, 3)},
            "source22": "TX SoS daily early-voting rosters",

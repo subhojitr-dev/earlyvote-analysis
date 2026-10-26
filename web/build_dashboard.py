@@ -21,7 +21,7 @@ from turnout_compare import (compare, group_deviation, composite_lean,   # noqa:
                              turnout_progress, turnout_rate, sameday_info)
 from performance_matrix import overall_turnout, SPLIT             # noqa: E402
 
-STATES = ["GA", "TX", "NC", "FL", "SC", "OH", "IA", "KS", "MI", "ME", "AZ", "NV", "PA"]
+STATES = ["GA", "TX", "NC", "PA", "FL", "SC", "OH", "IA", "KS", "MI", "ME", "NV"]
 WAITING = {"SC"}   # real feed wired, but the state hasn't posted 2026 data yet -> notice, never synthetic
 
 
@@ -37,6 +37,74 @@ def fix2022_note(state):
     parts = [f"{c.title()} ({md(i['days'][0])} &ndash; {md(i['days'][1])})" for c, i in sorted(fx.items())]
     return ("2022 note: the Secretary of State's 2022 file is missing most early in-person votes for "
             + " and ".join(parts) + ". Those days are estimated so each county matches its certified 2022 total.")
+
+
+def nv_info():
+    """Nevada: in-person early votes (daily, by county and party) and mail ballots returned (current
+    snapshot) from the SoS VIVID dashboard, vs the SoS 2022 weekly reports (end of early-voting week 1
+    and week 2). Data: ingestor/nv_fetch.py."""
+    import csv as _csv
+    from collections import defaultdict as _dd
+    from datetime import date as _d, timedelta as _td
+    root = Path(__file__).resolve().parent.parent / "data" / "nv_county"
+    if not (root / "inperson_2026.csv").exists():
+        return {"waiting": True}
+    E = {2022: _d(2022, 11, 8), 2026: _d(2026, 11, 3)}
+    ref = _dd(lambda: _dd(lambda: _dd(dict)))                 # point -> mode -> county -> party
+    for r in _csv.DictReader((root / "ref_2022.csv").open(encoding="utf-8")):
+        ref[r["point"]][r["mode"]][r["county"]][r["party"]] = int(r["ballots"])
+    ip = _dd(lambda: _dd(lambda: _dd(int)))                  # date -> county -> party
+    for r in _csv.DictReader((root / "inperson_2026.csv").open(encoding="utf-8")):
+        ip[r["date"]][r["county"]][r["party"]] += int(r["ballots"])
+    mail = _dd(lambda: _dd(dict))                            # snapshot -> county -> party
+    for r in _csv.DictReader((root / "mail_2026.csv").open(encoding="utf-8")):
+        mail[r["snapshot"]][r["county"]][r["party"]] = int(r["received"])
+    days = sorted(ip)
+    last_full = days[-2] if len(days) > 1 else days[-1]       # the newest day is still being counted
+    # latest 2022 point that 2026 has reached (same days before Election Day)
+    pts = [p for p in sorted(ref) if (E[2026] - _td(days=(E[2022] - _d.fromisoformat(p)).days)).isoformat() <= last_full]
+    point = pts[-1] if pts else None
+    p26 = (E[2026] - _td(days=(E[2022] - _d.fromisoformat(point)).days)).isoformat() if point else None
+
+    def cum(upto):
+        out = _dd(lambda: _dd(int))
+        for d in days:
+            if d <= upto:
+                for c, ps in ip[d].items():
+                    for k, v in ps.items():
+                        out[c][k] += v
+        return out
+    ip_pt = cum(p26) if point else {}
+    ip_now = cum(last_full)
+    snap = max(mail)
+    msnap_pt = max((s for s in mail if p26 and s <= (_d.fromisoformat(p26) + _td(days=1)).isoformat()), default=None)
+    final22 = max(ref)
+
+    def st(ps):
+        t = sum(ps.values()) or 1
+        return {"n": sum(ps.values()), "D": ps.get("D", 0) / t, "R": ps.get("R", 0) / t, "O": ps.get("O", 0) / t}
+
+    def tot(dct):
+        out = _dd(int)
+        for ps in dct.values():
+            for k, v in ps.items():
+                out[k] += v
+        return out
+    counties = []
+    for c in sorted(set(ip_now) | set(ref[final22]["inperson"])):
+        counties.append({"county": c.title(),
+                         "ip_pt": st(ip_pt.get(c, {})) if point else None,
+                         "ip22": st(ref[point]["inperson"].get(c, {})) if point else None,
+                         "ip_now": st(ip_now.get(c, {})),
+                         "mail_now": st(mail[snap].get(c, {})),
+                         "mail22_final": st({k: ref[final22]["mail"][c].get(k, 0) for k in "DRO"} if c in ref[final22]["mail"] else {})})
+    return {"nv": True, "as_of": last_full, "point22": point, "point26": p26,
+            "ip_pt": st(tot(ip_pt)) if point else None, "ip22": st(tot(ref[point]["inperson"])) if point else None,
+            "ip_now": st(tot(ip_now)), "mail_now": st(tot(mail[snap])), "mail_snap": snap,
+            "mail_pt": st(tot(mail[msnap_pt])) if msnap_pt and point and point != min(ref) else None,
+            "mail22_pt": st(tot(ref[point]["mail"])) if point else None,
+            "mail22_final": st(tot(ref[final22]["mail"])), "ip22_final": st(tot(ref[final22]["inperson"])),
+            "final22": final22, "counties": counties}
 
 
 def ia_info():
@@ -110,6 +178,8 @@ def state_data(state):
         return {"state": state, "pending": ks_info()}
     if state == "IA":
         return {"state": state, "pending": ia_info()}
+    if state == "NV":
+        return {"state": state, "pending": nv_info()}
     sd = sameday_info(state)
     if sd is None and state in WAITING:
         return {"state": state, "pending": {"waiting": True}}
@@ -264,6 +334,33 @@ function pick(s){cur=s;sortKey="share";sortDir=-1;tabs();
   if(!show){pendingView();return;}
   cards();panels();render();}
 function pendingView(){const p=DATA[cur].pending;
+  if(p.nv){const pc=x=>x==null?"–":(x*100).toFixed(1)+"%", pp=x=>(x>0?"+":"")+(x*100).toFixed(1), n=x=>x.toLocaleString();
+    const mg=s=>s.D-s.R, mtxt=x=>(x>=0?"D +":"R +")+Math.abs(x*100).toFixed(1);
+    const a=p.ip_pt, b=p.ip22;
+    const cmp=a?`<div class="card"><div class="lab">In-person early votes vs 2022, same point</div>
+        <div class="big" style="color:var(--accent)">${Math.round(a.n/b.n*100)}%</div>
+        <div class="note">${n(a.n)} through ${p.point26} vs ${n(b.n)} through ${p.point22} (${p.point22==="2022-10-28"?"end of early-voting week 1":"end of early voting"}).</div></div>
+      <div class="card"><div class="lab">Party margin of in-person early voters vs 2022</div>
+        <div class="big" style="color:${mg(a)-mg(b)>=0?'var(--dem)':'var(--rep)'}">${pp(mg(a)-mg(b))} pts</div>
+        <div class="note">${mtxt(mg(a))} now vs ${mtxt(mg(b))} in 2022 (Dem ${pc(a.D)} vs ${pc(b.D)}, Rep ${pc(a.R)} vs ${pc(b.R)}; party registration, not votes cast).</div></div>`:"";
+    const mailNote=p.mail_pt?`Same point as 2022: ${n(p.mail_pt.n)} vs ${n(p.mail22_pt.n)} (${Math.round(p.mail_pt.n/p.mail22_pt.n*100)}%).`
+      :`Nevada's dashboard shows only a current mail total, so a same-point mail comparison starts at the end of early-voting week 2 (2026 data through Oct 30 vs 2022 through Nov 4). 2022 had ${n(p.mail22_pt?p.mail22_pt.n:0)} returned by the end of week 1 and ${n(p.mail22_final.n)} by the end of early voting.`;
+    const crow=c=>{const r=c.ip_pt&&c.ip22&&c.ip22.n?Math.round(c.ip_pt.n/c.ip22.n*100)+"%":"–";
+      return `<tr><td>${c.county}</td><td>${c.ip_pt?n(c.ip_pt.n):"–"}</td><td>${c.ip22?n(c.ip22.n):"–"}</td><td><b>${r}</b></td>
+      <td>${c.ip_pt?mtxt(mg(c.ip_pt)):"–"}</td><td style="color:var(--muted)">${c.ip22?mtxt(mg(c.ip22)):"–"}</td>
+      <td>${n(c.mail_now.n)}</td><td>${mtxt(mg(c.mail_now))}</td><td>${c.mail22_final.n?Math.round(c.mail_now.n/c.mail22_final.n*100)+"%":"–"}</td></tr>`;};
+    const cs=p.counties.slice().sort((x,y)=>y.ip_now.n-x.ip_now.n);
+    document.getElementById("cards").innerHTML=`<div class="card"><div class="lab">Nevada early votes (in person through ${p.as_of}; mail as of ${p.mail_snap})</div>
+        <div class="big">${n(p.ip_now.n+p.mail_now.n)}</div><div class="note">${n(p.ip_now.n)} in person &middot; ${n(p.mail_now.n)} mail ballots returned</div></div>`+cmp+
+      `<div class="card"><div class="lab">Mail ballots returned (as of ${p.mail_snap})</div><div class="big">${n(p.mail_now.n)}</div>
+        <div class="note">Dem ${pc(p.mail_now.D)} &middot; Rep ${pc(p.mail_now.R)} &middot; other ${pc(p.mail_now.O)}. ${mailNote}</div></div>
+      <div class="card" style="grid-column:1/-1"><div class="lab">By county &middot; in person vs 2022 at the same point; mail so far</div>
+        <div class="tablewrap" style="margin-top:8px;max-height:55vh"><table><thead><tr><th>County</th><th>In person 2026</th><th>2022 same point</th><th>vs 2022</th>
+        <th>In-person margin</th><th>2022 margin</th><th>Mail returned</th><th>Mail margin</th><th>% of 2022 full mail</th></tr></thead><tbody>${cs.map(crow).join("")}</tbody></table></div>
+        <div class="note" style="margin-top:6px">2026: Nevada Secretary of State VIVID dashboard (in person daily; mail a current total). 2022: the Secretary of State's weekly early-voting
+        reports (week 1 through Oct 28, week 2 through Nov 4, by county and party), compared at the same number of days before Election Day.
+        Margins are registered Democrats minus Republicans among early voters; "other" includes nonpartisan voters, who are not in the margin.</div></div>`;
+    return;}
   if(p.ia){const pc=x=>x==null?"–":(x*100).toFixed(1)+"%", pp=x=>(x>0?"+":"")+(x*100).toFixed(1), n=x=>x.toLocaleString();
     const mg=s=>s.D-s.R, mtxt=x=>(x>=0?"D +":"R +")+Math.abs(x*100).toFixed(1);
     const st=p.districts[0];
@@ -435,7 +532,7 @@ function render(){header();const d=DATA[cur],ys=d.ref_years;
     : `<b>Turnout progress:</b> 2026 early ballots as a % of that county's FULL turnout in the given year. <span class="pill" style="background:rgba(34,197,94,.4)">Green bar</span> = already past 100% (exceeded that whole election).`;
   const sd=d.sameday;
   const src=sd?`<br><b>Real 2026 data</b> through ${sd.as_of} (${sd.day>0?"early-voting day "+sd.day:"before in-person early voting opens"}) &middot; source: ${sd.source}. `+
-      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by ${cur==="MI"?"days before Election Day: Michigan published 2022 numbers only weekly (by town, rolled up to counties), so 2026 is cut back to the latest 2022 point it has reached; absentee ballots returned (Michigan had no early in-person voting in 2022)":cur==="OH"?"days before Election Day: Ohio published 2022 county numbers only as of Oct 21, Oct 28 and Nov 7 2022, so 2026 is cut back to the latest of those points it has reached; in-person early votes only":"day of in-person early voting"} (${({MI:"early in-person voting opens Oct 24 2026",OH:"early voting opened Oct 12 2022, Oct 6 2026",TX:"opened Oct 24 2022, Oct 19 2026",FL:"counties could open from Oct 24 2022 / Oct 19 2026; statewide from Oct 29 2022 / Oct 24 2026",SC:"opened Oct 24 2022, Oct 19 2026; in-person early votes only",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026",ME:"in-person absentee from about 29 days out both years: Oct 10 2022, Oct 5 2026"})[cur]}); mail ballots returned by each cutoff are included.`
+      `Compared with the same day of early voting: `+d.ref_years.map(y=>`${y} through ${sd.years[y].used} (${sd.years[y].source})`).join("; ")+`. Lined up by ${cur==="MI"?"days before Election Day: Michigan published 2022 numbers only weekly (by town, rolled up to counties), so 2026 is cut back to the latest 2022 point it has reached; absentee ballots returned (Michigan had no early in-person voting in 2022)":cur==="OH"?"days before Election Day: Ohio published 2022 county numbers only as of Oct 21, Oct 28 and Nov 7 2022, so 2026 is cut back to the latest of those points it has reached; in-person early votes only":"day of in-person early voting"} (${({MI:"early in-person voting opens Oct 24 2026",OH:"early voting opened Oct 12 2022, Oct 6 2026",TX:"opened Oct 24 2022, Oct 19 2026",FL:"counties could open from Oct 24 2022 / Oct 19 2026; statewide from Oct 29 2022 / Oct 24 2026",SC:"opened Oct 24 2022, Oct 19 2026; in-person early votes only",NC:"opened Oct 20 2022, Oct 15 2026",GA:"opened Oct 17 2022, Oct 13 2026",PA:"Pennsylvania has no in-person early voting: mail ballots returned, lined up by days before Election Day",ME:"in-person absentee from about 29 days out both years: Oct 10 2022, Oct 5 2026"})[cur]}); mail ballots returned by each cutoff are included.`
     :d.live?`<br>Real 2026 data.`:`<br><b>${cur}: 2026 figures are synthetic stand-ins</b> until the real feed for this state is wired in.`;
   document.getElementById("foot").innerHTML=foot+src+` Partisan lean from county results; share metrics measure WHERE early voters come from, not who they voted for.`;}
 

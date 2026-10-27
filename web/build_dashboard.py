@@ -173,6 +173,69 @@ def ks_info():
             "final22": {"days_out": final22[0], "total": final22[2] + final22[3]}}
 
 
+def party_info(state):
+    """Early voters by REGISTERED party, 2026 vs 2022 at the same number of days before Election Day
+    (registration of the people who voted, not votes cast). NC / ME: district demo files (congressional
+    rows, party dimension); PA: data.pa.gov party files; FL: DOS county snapshots (2022 interpolated
+    between Internet Archive copies)."""
+    import csv as _csv
+    from collections import Counter as _C
+    from datetime import date as _d, timedelta as _td
+    root = Path(__file__).resolve().parent.parent / "data"
+    E = {2022: _d(2022, 11, 8), 2026: _d(2026, 11, 3)}
+    out26, out22, asof, days_out = _C(), _C(), None, None
+    try:
+        if state in ("NC", "ME"):
+            rows = [r for r in _csv.DictReader((root / f"{state.lower()}_districts" / "demo_2026.csv").open(encoding="utf-8"))
+                    if r["dim"] == "party" and r["chamber"] == "congress"]
+            days_out = min(int(r["days_out"]) for r in rows)
+            for r in rows:
+                out26[r["group"]] += int(r["ballots"])
+            for r in _csv.DictReader((root / f"{state.lower()}_districts" / "demo_2022.csv").open(encoding="utf-8")):
+                if r["dim"] == "party" and r["chamber"] == "congress" and int(r["days_out"]) >= days_out:
+                    out22[r["group"]] += int(r["ballots"])
+            asof = (E[2026] - _td(days=days_out)).isoformat()
+        elif state == "PA":
+            import json as _j
+            asof = _j.loads((root / "live" / "pa_meta.json").read_text())["as_of"]
+            days_out = (E[2026] - _d.fromisoformat(asof)).days
+            cut22 = (E[2022] - _td(days=days_out)).isoformat()
+            names = {"D": "Democrat", "R": "Republican", "O": "Other / no party"}
+            for y, cut, acc in ((2026, asof, out26), (2022, cut22, out22)):
+                for r in _csv.DictReader((root / "pa_county" / f"party_{y}.csv").open(encoding="utf-8")):
+                    if r["date"] <= cut:
+                        acc[names[r["party"]]] += int(r["ballots"])
+        elif state == "FL":
+            names = {"D": "Democrat", "R": "Republican", "N": "No party", "O": "Other party"}
+            snaps = {}
+            for y in (2026, 2022):
+                snaps[y] = {}
+                for r in _csv.DictReader((root / "fl_county" / f"snapshots_{y}.csv").open(encoding="utf-8")):
+                    snaps[y].setdefault(r["through"], _C())[names.get(r["party"], "Other party")] += int(r["cumulative"])
+            asof = max(snaps[2026])
+            out26 = snaps[2026][asof]
+            days_out = (E[2026] - _d.fromisoformat(asof)).days
+            t = E[2022] - _td(days=days_out)
+            ds = sorted(_d.fromisoformat(k) for k in snaps[2022])
+            lo = max(d for d in ds if d <= t)
+            hi = min((d for d in ds if d >= t), default=lo)
+            w = 0 if hi == lo else (t - lo).days / (hi - lo).days       # straight-line between archive copies
+            for k in set(snaps[2022][lo.isoformat()]) | set(snaps[2022][hi.isoformat()]):
+                out22[k] = round(snaps[2022][lo.isoformat()].get(k, 0) * (1 - w) + snaps[2022][hi.isoformat()].get(k, 0) * w)
+        else:
+            return None
+    except (FileNotFoundError, KeyError, ValueError):
+        return None
+    if not out26 or not out22:
+        return None
+    n26, n22 = sum(out26.values()), sum(out22.values())
+    order = ["Democrat", "Republican"] + sorted(k for k in set(out26) | set(out22) if k not in ("Democrat", "Republican"))
+    return {"as_of": asof, "days_out": days_out, "d22": (E[2022] - _td(days=days_out)).isoformat(),
+            "n26": n26, "n22": n22,
+            "rows": [{"party": k, "now": out26.get(k, 0) / n26, "then": out22.get(k, 0) / n22, "n": out26.get(k, 0)}
+                     for k in order if out26.get(k, 0) or out22.get(k, 0)]}
+
+
 def state_data(state):
     if state == "KS":
         return {"state": state, "pending": ks_info()}
@@ -223,6 +286,7 @@ def state_data(state):
         "progress": {str(y): pagg[y] for y in _py},
         "turnout_rate": tr_agg,
         "sameday": sameday_info(state),
+        "partyreg": party_info(state),
         "note2022": fix2022_note(state),
         "live": (Path(__file__).resolve().parent.parent / "data" / "live"
                  / f"{state.lower()}_current.csv").exists(),
@@ -464,7 +528,21 @@ function cards(){const d=DATA[cur],ys=d.ref_years;
   document.getElementById("cards").innerHTML=
     `<div class="card"><div class="lab">${lab}</div>
        <div class="big">${d.cur_total.toLocaleString()}</div>
-       <div class="note">${ovNote}${d.note2022?`<br><span style="color:var(--accent)">${d.note2022}</span>`:""}</div></div>`+ys.slice().reverse().map(nc).join("");}
+       <div class="note">${ovNote}${d.note2022?`<br><span style="color:var(--accent)">${d.note2022}</span>`:""}</div></div>`+ys.slice().reverse().map(nc).join("")+partyCard(d.partyreg);}
+function partyCard(p){if(!p)return"";const pc=x=>(x*100).toFixed(1)+"%";
+  const rows=p.rows.map(r=>{const dd=(r.now-r.then)*100, col=r.party==="Democrat"?"var(--dem)":r.party==="Republican"?"var(--rep)":"var(--ink)";
+    return `<tr><td style="color:${col}"><b>${r.party}</b></td><td>${pc(r.now)}</td><td style="color:var(--muted)">${pc(r.then)}</td>
+      <td>${dd>0?"+":""}${dd.toFixed(1)} pts</td><td>${r.n.toLocaleString()}</td></tr>`;}).join("");
+  const dm=p.rows.find(r=>r.party==="Democrat"), rm=p.rows.find(r=>r.party==="Republican");
+  const m=x=>x>=0?`D +${(x*100).toFixed(1)}`:`R +${(-x*100).toFixed(1)}`;
+  const mNow=dm&&rm?dm.now-rm.now:null, mThen=dm&&rm?dm.then-rm.then:null;
+  return `<div class="card" style="grid-column:1/-1"><div class="lab">Early voters by registered party &middot; 2026 vs 2022 at the same point (${p.days_out} days before Election Day)</div>
+    ${mNow!=null?`<div class="big" style="font-size:20px">${m(mNow)} <span style="font-size:13px;color:var(--muted)">vs ${m(mThen)} in 2022 (D&minus;R share of early voters)</span></div>`:""}
+    <div class="tablewrap" style="margin-top:8px;max-height:none"><table><thead><tr><th>Registered party</th><th>2026 share</th><th>2022 share</th><th>Change</th><th>2026 early voters</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>
+    <div class="note" style="margin-top:6px">2026 through ${p.as_of} (${p.n26.toLocaleString()} early voters) vs 2022 through ${p.d22} (${p.n22.toLocaleString()}).
+    <b>This is the party each early voter is registered with, not how they voted:</b> ballots are secret until counted, registered Democrats and
+    Republicans can cross over, and unaffiliated voters can go either way.</div></div>`;}
 
 function panels(){const d=DATA[cur];
   const cl=d.complean, cy=d.ref_years.concat(["cur"]);

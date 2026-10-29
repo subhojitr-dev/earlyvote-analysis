@@ -268,7 +268,7 @@ def state_data(state):
         ld = r["lean_dem"]
         rec = {"county": name.title(), "lean": ld,
                "group": "D" if (ld or 0) >= SPLIT else "R",
-               "share": r["cur_share"]}
+               "share": r["cur_share"], "n": cur.get(name, 0)}
         for y in ref_years:
             rec[f"vs{y}"] = r[f"vs_{y}"]
             rec[f"p{y}"] = per.get(name, {}).get(y)
@@ -584,7 +584,7 @@ function panels(){const d=DATA[cur];
        ${prRows}<div class="verdict">${prRead}</div></div>`;}
 
 function header(){const ys=DATA[cur].ref_years;
-  let cols=[["county","County"],["lean","Lean"],["group","Grp"],["share","2026 share"]];
+  let cols=[["county","County"],["lean","Lean"],["group","Grp"],["n","2026 early votes"],["share","2026 share"]];
   cols=cols.concat(view==="partisan"
     ? ys.map(y=>["vs"+y,"vs "+y])
     : ys.map(y=>["p"+y,"% of "+y]));
@@ -608,7 +608,7 @@ function render(){header();const d=DATA[cur],ys=d.ref_years;
       return `<td>${p0(v)}<span class="pbar"><i style="width:${w.toFixed(0)}%;background:${col}"></i></span></td>`;}).join("");}
     return `<tr><td>${c.county}</td><td>${Math.round(c.lean*100)}%</td>
       <td><span class="badge ${c.group}">${c.group}</span></td>
-      <td>${(c.share*100).toFixed(2)}%</td>${cells}</tr>`;}).join("");
+      <td>${(c.n||0).toLocaleString()}</td><td>${(c.share*100).toFixed(2)}%</td>${cells}</tr>`;}).join("");
   document.getElementById("count").textContent=rows.length+" counties";
   const foot=view==="partisan"
     ? `<b>Partisan shift:</b> each cell = how much bigger (<span class="pill" style="background:rgba(34,197,94,.4)">green</span>) or smaller (<span class="pill" style="background:rgba(239,68,68,.4)">red</span>) a slice of the early vote that county is now, vs that year. Dem-leaning green + Rep-leaning red = Democratic edge.`

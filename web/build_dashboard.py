@@ -188,9 +188,14 @@ def party_info(state):
         if state in ("NC", "ME"):
             rows = [r for r in _csv.DictReader((root / f"{state.lower()}_districts" / "demo_2026.csv").open(encoding="utf-8"))
                     if r["dim"] == "party" and r["chamber"] == "congress"]
-            days_out = min(int(r["days_out"]) for r in rows)
+            # data runs through the live file's as-of day; a stray ballot dated later (a partial
+            # day) must not pull the comparison a day further into 2022
+            import json as _j
+            meta_asof = _j.loads((root / "live" / f"{state.lower()}_meta.json").read_text())["as_of"]
+            days_out = (E[2026] - _d.fromisoformat(meta_asof)).days
             for r in rows:
-                out26[r["group"]] += int(r["ballots"])
+                if int(r["days_out"]) >= days_out:
+                    out26[r["group"]] += int(r["ballots"])
             for r in _csv.DictReader((root / f"{state.lower()}_districts" / "demo_2022.csv").open(encoding="utf-8")):
                 if r["dim"] == "party" and r["chamber"] == "congress" and int(r["days_out"]) >= days_out:
                     out22[r["group"]] += int(r["ballots"])
@@ -547,7 +552,7 @@ function partyCard(p){if(!p)return"";const pc=x=>(x*100).toFixed(1)+"%";
 function panels(){const d=DATA[cur];
   const cl=d.complean, cy=d.ref_years.concat(["cur"]);
   const lab=y=>y==="cur"?"2026":y;
-  const clScale=v=>Math.max(0,Math.min(1,(v-0.44)/(0.12)))*100;
+  const clScale=v=>Math.max(0,Math.min(1,(v-0.30)/(0.40)))*100;   // 30%..70% D, 50% marker in the middle
   const clRows=cy.map(y=>{const v=cl[y];const is26=y==="cur";
     return `<div class="brow"><span class="yl">${lab(y)}</span>
       <div class="track"><div class="fill" style="width:${clScale(v).toFixed(0)}%;background:${is26?'var(--accent)':'var(--dem)'}"></div>

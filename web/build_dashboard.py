@@ -524,7 +524,7 @@ function cards(){const d=DATA[cur],ys=d.ref_years;
   let ovNote=sd?`vs the same day of early voting &middot; ${ov}`:`of each year's full early vote &middot; ${ov}`;
   if(cur==="MI"&&sd){lab=`Absentee ballots returned as of ${sd.as_of}`;
     ovNote=`vs 2022 at the same point (${sd.snapshot_2022}) &middot; ${ov}<br>Latest (${sd.latest}): ${sd.latest_returned.toLocaleString()} returned, ${sd.latest_sent.toLocaleString()} sent`+
-      (sd.latest_ev?`, ${sd.latest_ev.toLocaleString()} early in person (2026 only)`:`; early in-person voting opens Oct 24 (none in 2022)`);}
+      (sd.latest_ev?`; ${sd.latest_ev.toLocaleString()} early in person through ${sd.latest_ev_date||sd.latest} (2026 only; none in 2022)`:`; early in-person voting opens Oct 24 (none in 2022)`);}
   document.getElementById("cards").innerHTML=
     `<div class="card"><div class="lab">${lab}</div>
        <div class="big">${d.cur_total.toLocaleString()}</div>

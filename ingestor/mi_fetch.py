@@ -113,25 +113,54 @@ def norm(c: str) -> str:
 
 
 # ---------------------------------------------------------------- 2022 snapshots
+RELEASE_SEED = "https://www.michigan.gov/sos/resources/news/2026/10/13/three-weeks-before-election-day-6-percent-of-voters-have-already-cast-their-ballot"
+
+
+def _get(url: str) -> bytes:
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+        return r.read()
+
+
 def fetch_snapshots():
+    """Download every weekly 2022 comparison spreadsheet linked from the SoS's 2026 press releases.
+    The file names change from week to week (PRNov2022BallotStatsByJurisdiction_10_17_2022.xlsx,
+    PRNov2022AV-BallotStats2022_10_24.xlsx, 10_31_2022_PRNov2022AVBallotStats.xlsx, ...), so links are
+    read from the release pages instead of guessed. Saved as MI_2022_<2022 file date>.xlsx."""
+    import html as _html
     INCOMING.mkdir(parents=True, exist_ok=True)
     have = {p.stem.split("_")[-1] for p in INCOMING.glob("MI_2022_*.xlsx")}
-    for k in range(40, -1, -1):                       # 2022 file dates up to Election Day eve
-        fd = EDAY[2022] - timedelta(days=k + 1)
-        if fd.isoformat() in have or fd > date.today() - (EDAY[2026] - EDAY[2022]) + timedelta(days=7):
+    try:
+        seed = _get(RELEASE_SEED).decode("utf-8", "replace")
+    except urllib.error.URLError as e:
+        print(f"  could not read SoS releases ({e}); keeping existing 2022 snapshots")
+        return
+    pages = {RELEASE_SEED} | {"https://www.michigan.gov" + m for m in
+                              re.findall(r'href="(/sos/resources/news/2026/1[01]/\d+/[^"#?]+)"', seed)}
+    for page in sorted(pages):
+        try:
+            html_ = seed if page == RELEASE_SEED else _get(page).decode("utf-8", "replace")
+        except urllib.error.URLError:
             continue
-        tag = fd.strftime("%m_%d_%Y")
-        for name in SNAP_NAMES:
-            url = SNAP_BASE + name.format(d=tag)
+        for href in re.findall(r'href="([^"]+\.xlsx[^"]*)"', html_):
+            name = href.split("/")[-1].split("?")[0]
+            if "2022" not in name:
+                continue
+            m = (re.search(r"(\d{2})_(\d{2})_(2022)", name) or re.search(r"(2022)_(\d{2})_(\d{2})", name))
+            if not m:
+                continue
+            g = m.groups()
+            fd = date(2022, int(g[0]), int(g[1])) if g[2] == "2022" else date(2022, int(g[1]), int(g[2]))
+            if fd.isoformat() in have:
+                continue
+            url = href if href.startswith("http") else "https://www.michigan.gov" + _html.unescape(href)
             try:
-                with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
-                    data = r.read()
-                if data[:2] == b"PK":                    # a real xlsx (missing files redirect to /sos/404)
-                    (INCOMING / f"MI_2022_{fd.isoformat()}.xlsx").write_bytes(data)
-                    print(f"  new 2022 snapshot: {name.format(d=tag)}")
-                    break
-            except urllib.error.HTTPError:
-                pass
+                data = _get(url)
+            except urllib.error.URLError:
+                continue
+            if data[:2] == b"PK":                        # a real xlsx (missing files redirect to /sos/404)
+                (INCOMING / f"MI_2022_{fd.isoformat()}.xlsx").write_bytes(data)
+                have.add(fd.isoformat())
+                print(f"  new 2022 snapshot: {name}")
 
 
 def read_snapshots():
@@ -141,7 +170,9 @@ def read_snapshots():
         fd = date.fromisoformat(p.stem.split("_")[-1])
         rows = list(openpyxl.load_workbook(p, read_only=True, data_only=True).worksheets[0].iter_rows(values_only=True))
         h = [str(x or "").upper() for x in rows[0]]
-        ic, ir, ia = h.index("COUNTY"), h.index("BALLOTS RECEIVED"), h.index("APPS RETURNED")
+        # column names drift between weekly files ("APPS RETURNED" / "APPS RECEIVED")
+        ic, ir = h.index("COUNTY"), h.index("BALLOTS RECEIVED")
+        ia = next(i for i, x in enumerate(h) if x in ("APPS RETURNED", "APPS RECEIVED"))
         snap = Counter(), Counter()
         for r in rows[1:]:
             if r[ic]:
@@ -210,10 +241,13 @@ def main():
     cur = {c: daily[(c, cut)][0] for c in counties if (c, cut) in daily}
     _write(LIVE / "mi_current.csv", ["state", "county_fips", "ballots"], sorted(("MI", fips[c], v) for c, v in cur.items()))
     tot = lambda d, i: sum(daily[(c, d)][i] for c in counties if (c, d) in daily)
+    # early in-person counts for the current day are posted only after it ends (the dashboard shows 0
+    # until then), so report them for the latest day that has any
+    ev_day = max((d for d in {d for _c, d in daily} if tot(d, 2) > 0), default=latest)
     meta = {"source": "Michigan SoS Voting Dashboard (absentee ballots returned)", "basis": "absentee returned",
             "as_of": cut.isoformat(), "ballots": sum(cur.values()), "pending": not reached,
             "latest": latest.isoformat(), "latest_returned": tot(latest, 0), "latest_sent": tot(latest, 1),
-            "latest_ev": tot(latest, 2)}
+            "latest_ev": tot(ev_day, 2), "latest_ev_date": ev_day.isoformat()}
     if reached:
         meta["snapshot_2022"] = max(reached).isoformat()
     (LIVE / "mi_meta.json").write_text(json.dumps(meta, indent=1))
@@ -228,7 +262,7 @@ def main():
         _write(rp, ["state", "county_fips", "county_name", "registered"], [list(r.values()) for r in keep])
 
     print(f"MI latest {latest}: {meta['latest_returned']:,} absentee returned, {meta['latest_sent']:,} sent, "
-          f"{meta['latest_ev']:,} early in person ({len(counties)} counties)")
+          f"{meta['latest_ev']:,} early in person through {meta['latest_ev_date']} ({len(counties)} counties)")
     print(f"  2022 snapshots: {[d.isoformat() for d in sorted(snaps)]}")
     if reached:
         s22 = sum(v[0] for v in snaps[max(reached)].values())

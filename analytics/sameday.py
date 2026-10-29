@@ -116,7 +116,7 @@ def sameday(state: str = "GA"):
            "counties": meta.get("counties"), "years": {},
            **{k: meta[k] for k in ("pending", "statewide", "latest", "latest_inperson", "latest_mail",
                                    "snapshot_2022", "first_through", "first_compare",
-                                   "latest_returned", "latest_sent", "latest_ev") if k in meta}}
+                                   "latest_returned", "latest_sent", "latest_ev", "latest_ev_date") if k in meta}}
     for y in YEARS:
         cut = cutoff(state, y, asof)
         counts = _from_daily(BASE / f"{state.lower()}_county" / f"early_{y}.csv", cut, c.get("modes"))

@@ -31,7 +31,7 @@ import csv
 import json
 import sys
 import urllib.request
-from datetime import date, datetime
+from datetime import timedelta, date, datetime
 from pathlib import Path
 
 import shapefile  # pyshp
@@ -71,7 +71,9 @@ def main():
     for d in days:
         iso, mdy = d.isoformat(), d.strftime("%m/%d/%Y")
         out = COUNTY_OUT / f"turnout_{iso}.csv"
-        if not out.exists():
+        # counties upload late, so the most recent days are re-fetched every run (a day saved while
+        # Dallas or Tarrant had not reported yet would otherwise stay incomplete for good)
+        if not out.exists() or d >= days[-1] - timedelta(days=2):
             raw = get(f"type=EVR_EARLYVOTING&electionId={eid}&electionDate={mdy}")
             rows = json.loads(raw)["turnout_by_county"] if raw else []
             if not rows:
@@ -96,6 +98,16 @@ def main():
         raise SystemExit("no county turnout posted yet")
 
     iso, path = latest
+    prev = sorted(p for p in COUNTY_OUT.glob("turnout_*.csv") if p.stem[8:] < iso)
+    if len(prev) >= 2:                 # is the newest day still missing big counties?
+        load = lambda p: {r["county"]: int(r["inperson"] or 0) for r in csv.DictReader(p.open(encoding="utf-8"))}
+        cur, p1, p2 = load(path), load(prev[-1]), load(prev[-2])
+        big = sorted(p1, key=lambda c: -p1[c])[:20]
+        stale = [c for c in big if (p1[c] - p2.get(c, 0)) > 500 and (cur.get(c, 0) - p1[c]) < 0.05 * (p1[c] - p2.get(c, 0))]
+        if len(stale) >= 3:
+            print(f"{iso} looks incomplete ({len(stale)} of the 20 largest counties barely changed: "
+                  f"{', '.join(stale[:5])}); using {prev[-1].stem[8:]} as the latest complete day")
+            iso, path = prev[-1].stem[8:], prev[-1]
     rows = list(csv.DictReader(path.open(encoding="utf-8")))
     fips = fips_by_name()
     missing = [r["county"] for r in rows if r["county"].replace(" ", "") not in fips]

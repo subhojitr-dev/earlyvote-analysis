@@ -152,6 +152,11 @@ def ia_info():
             "counties": counties, "final22": fin22.isoformat(), "daily": daily}
 
 
+def turnout_compare_hist(state):
+    from turnout_compare import series_by_year_county
+    return series_by_year_county(state)
+
+
 def ks_info():
     """Kansas: statewide-only advance voting (ingestor/ks_fetch.py); no county or party breakdown."""
     import csv as _csv
@@ -260,6 +265,24 @@ def state_data(state):
     cur_total, ov = overall_turnout(state)
     _cy, cl = composite_lean(state)
     _py, per, pagg = turnout_progress(state)
+    latest_all = None
+    if state == "OH" and sd and sd.get("latest_inperson") is not None:
+        # The county comparison uses in-person votes cut back to the 2022 report date, but progress
+        # toward 2022's TOTAL turnout should count every early vote so far (in person + mail).
+        import csv as _csv
+        from collections import Counter as _C
+        tot26 = _C()
+        for r in _csv.DictReader((Path(__file__).resolve().parent.parent / "data" / "oh_county" / "early_2026.csv").open(encoding="utf-8")):
+            if r["date"] <= sd["latest"]:
+                tot26[r["county"].strip().upper()] += int(r["ballots"])
+        latest_all = sd["latest_inperson"] + sd.get("latest_mail", 0)
+        _hist = turnout_compare_hist(state)
+        for y in _py:
+            den = sum(c["total"] for c in _hist[y].values())
+            pagg[y] = latest_all / den if den else None
+            for c in per:
+                t = _hist[y].get(c, {}).get("total", 0)
+                per[c][y] = tot26.get(c, 0) / t if t else None
     _tr_per, tr_agg = turnout_rate(state)
 
     counties = []
@@ -289,6 +312,7 @@ def state_data(state):
         "groups": groups, "net": net, "counties": counties,
         "complean": {str(y): cl[y] for y in _cy} | {"cur": cl["cur"]},
         "progress": {str(y): pagg[y] for y in _py},
+        "latest_all": latest_all,
         "turnout_rate": tr_agg,
         "sameday": sameday_info(state),
         "partyreg": party_info(state),
@@ -527,12 +551,16 @@ function cards(){const d=DATA[cur],ys=d.ref_years;
   const dayTxt=sd?(sd.day>0?`day ${sd.day}`:`mail only; in-person opens in ${1-sd.day} day${sd.day===0?"":"s"}`):"";
   let lab=sd?`Early ballots through ${sd.as_of} (${dayTxt})`:"Early ballots so far (2026)";
   let ovNote=sd?`vs the same day of early voting &middot; ${ov}`:`of each year's full early vote &middot; ${ov}`;
+  let big=d.cur_total;
+  if(cur==="OH"&&sd&&d.latest_all){lab=`Early ballots through ${sd.latest}`;big=d.latest_all;
+    ovNote=`${sd.latest_inperson.toLocaleString()} in person + ${sd.latest_mail.toLocaleString()} mail ballots returned.<br>`+
+      `Compared with 2022 on <b>in-person votes</b> at the same point: ${d.cur_total.toLocaleString()} through ${sd.as_of} vs Ohio's 2022 report as of ${sd.snapshot_2022} &middot; ${ov}`;}
   if(cur==="MI"&&sd){lab=`Absentee ballots returned as of ${sd.as_of}`;
     ovNote=`vs 2022 at the same point (${sd.snapshot_2022}) &middot; ${ov}<br>Latest (${sd.latest}): ${sd.latest_returned.toLocaleString()} returned, ${sd.latest_sent.toLocaleString()} sent`+
       (sd.latest_ev?`; ${sd.latest_ev.toLocaleString()} early in person through ${sd.latest_ev_date||sd.latest} (2026 only; none in 2022)`:`; early in-person voting opens Oct 24 (none in 2022)`);}
   document.getElementById("cards").innerHTML=
     `<div class="card"><div class="lab">${lab}</div>
-       <div class="big">${d.cur_total.toLocaleString()}</div>
+       <div class="big">${big.toLocaleString()}</div>
        <div class="note">${ovNote}${d.note2022?`<br><span style="color:var(--accent)">${d.note2022}</span>`:""}</div></div>`+ys.slice().reverse().map(nc).join("")+partyCard(d.partyreg);}
 function partyCard(p){if(!p)return"";const pc=x=>(x*100).toFixed(1)+"%";
   const rows=p.rows.map(r=>{const dd=(r.now-r.then)*100, col=r.party==="Democrat"?"var(--dem)":r.party==="Republican"?"var(--rep)":"var(--ink)";

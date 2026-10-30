@@ -1,4 +1,5 @@
 chamber,district,dim,group,days_out,ballots
+congress,1,surname,All others (est.),5,1170
 congress,1,surname,All others (est.),6,9850
 congress,1,surname,All others (est.),7,9808
 congress,1,surname,All others (est.),8,10738
@@ -12,6 +13,7 @@ congress,1,surname,All others (est.),15,6
 congress,1,surname,All others (est.),16,247
 congress,1,surname,All others (est.),18,954
 congress,1,surname,All others (est.),20,298
+congress,1,surname,Asian (est.),5,15
 congress,1,surname,Asian (est.),6,187
 congress,1,surname,Asian (est.),7,172
 congress,1,surname,Asian (est.),8,186
@@ -24,6 +26,7 @@ congress,1,surname,Asian (est.),14,277
 congress,1,surname,Asian (est.),16,4
 congress,1,surname,Asian (est.),18,14
 congress,1,surname,Asian (est.),20,4
+congress,1,surname,Hispanic (est.),5,81
 congress,1,surname,Hispanic (est.),6,1026
 congress,1,surname,Hispanic (est.),7,908
 congress,1,surname,Hispanic (est.),8,1040
@@ -37,6 +40,7 @@ congress,1,surname,Hispanic (est.),15,1
 congress,1,surname,Hispanic (est.),16,10
 congress,1,surname,Hispanic (est.),18,62
 congress,1,surname,Hispanic (est.),20,20
+congress,10,surname,All others (est.),5,424
 congress,10,surname,All others (est.),6,14005
 congress,10,surname,All others (est.),7,14426
 congress,10,surname,All others (est.),8,15251
@@ -51,6 +55,7 @@ congress,10,surname,All others (est.),17,4
 congress,10,surname,All others (est.),18,99
 congress,10,surname,All others (est.),19,90
 congress,10,surname,All others (est.),20,692
+congress,10,surname,Asian (est.),5,23
 congress,10,surname,Asian (est.),6,861
 congress,10,surname,Asian (est.),7,974
 congress,10,surname,Asian (est.),8,935
@@ -64,6 +69,7 @@ congress,10,surname,Asian (est.),15,20
 congress,10,surname,Asian (est.),18,6
 congress,10,surname,Asian (est.),19,2
 congress,10,surname,Asian (est.),20,24
+congress,10,surname,Hispanic (est.),5,43
 congress,10,surname,Hispanic (est.),6,2303
 congress,10,surname,Hispanic (est.),7,2134
 congress,10,surname,Hispanic (est.),8,2336
@@ -77,6 +83,7 @@ congress,10,surname,Hispanic (est.),15,34
 congress,10,surname,Hispanic (est.),18,7
 congress,10,surname,Hispanic (est.),19,7
 congress,10,surname,Hispanic (est.),20,52
+congress,11,surname,All others (est.),5,239
 congress,11,surname,All others (est.),6,9416
 congress,11,surname,All others (est.),7,9858
 congress,11,surname,All others (est.),8,9708
@@ -92,6 +99,7 @@ congress,11,surname,All others (est.),17,201
 congress,11,surname,All others (est.),18,140
 congress,11,surname,All others (est.),19,141
 congress,11,surname,All others (est.),20,1006
+congress,11,surname,Asian (est.),5,12
 congress,11,surname,Asian (est.),6,539
 congress,11,surname,Asian (est.),7,552
 congress,11,surname,Asian (est.),8,537
@@ -106,6 +114,7 @@ congress,11,surname,Asian (est.),17,4
 congress,11,surname,Asian (est.),18,6
 congress,11,surname,Asian (est.),19,3
 congress,11,surname,Asian (est.),20,29
+congress,11,surname,Hispanic (est.),5,36
 congress,11,surname,Hispanic (est.),6,2738
 congress,11,surname,Hispanic (est.),7,2533
 congress,11,surname,Hispanic (est.),8,2457
@@ -121,6 +130,7 @@ congress,11,surname,Hispanic (est.),17,23
 congress,11,surname,Hispanic (est.),18,20
 congress,11,surname,Hispanic (est.),19,23
 congress,11,surname,Hispanic (est.),20,164
+congress,12,surname,All others (est.),5,65
 congress,12,surname,All others (est.),6,12558
 congress,12,surname,All others (est.),7,5569
 congress,12,surname,All others (est.),8,13871
@@ -133,6 +143,7 @@ congress,12,surname,All others (est.),14,7599
 congress,12,surname,All others (est.),16,493
 congress,12,surname,All others (est.),17,367
 congress,12,surname,All others (est.),20,1031
+congress,12,surname,Asian (est.),5,1
 congress,12,surname,Asian (est.),6,538
 congress,12,surname,Asian (est.),7,116
 congress,12,surname,Asian (est.),8,591
@@ -145,6 +156,7 @@ congress,12,surname,Asian (est.),14,171
 congress,12,surname,Asian (est.),16,20
 congress,12,surname,Asian (est.),17,16
 congress,12,surname,Asian (est.),20,34
+congress,12,surname,Hispanic (est.),5,5
 congress,12,surname,Hispanic (est.),6,3123
 congress,12,surname,Hispanic (est.),7,717
 congress,12,surname,Hispanic (est.),8,3355
@@ -157,6 +169,7 @@ congress,12,surname,Hispanic (est.),14,866
 congress,12,surname,Hispanic (est.),16,75
 congress,12,surname,Hispanic (est.),17,56
 congress,12,surname,Hispanic (est.),20,150
+congress,13,surname,All others (est.),5,480
 congress,13,surname,All others (est.),6,8505
 congress,13,surname,All others (est.),7,10865
 congress,13,surname,All others (est.),8,8641
@@ -171,6 +184,7 @@ congress,13,surname,All others (est.),16,325
 congress,13,surname,All others (est.),18,1
 congress,13,surname,All others (est.),19,11
 congress,13,surname,All others (est.),20,312
+congress,13,surname,Asian (est.),5,6
 congress,13,surname,Asian (est.),6,189
 congress,13,surname,Asian (est.),7,286
 congress,13,surname,Asian (est.),8,237
@@ -183,6 +197,7 @@ congress,13,surname,Asian (est.),14,417
 congress,13,surname,Asian (est.),15,2
 congress,13,surname,Asian (est.),16,8
 congress,13,surname,Asian (est.),20,10
+congress,13,surname,Hispanic (est.),5,46
 congress,13,surname,Hispanic (est.),6,1460
 congress,13,surname,Hispanic (est.),7,1891
 congress,13,surname,Hispanic (est.),8,1714
@@ -196,6 +211,7 @@ congress,13,surname,Hispanic (est.),15,11
 congress,13,surname,Hispanic (est.),16,32
 congress,13,surname,Hispanic (est.),19,1
 congress,13,surname,Hispanic (est.),20,19
+congress,14,surname,All others (est.),5,402
 congress,14,surname,All others (est.),6,11152
 congress,14,surname,All others (est.),7,10900
 congress,14,surname,All others (est.),8,5971
@@ -211,6 +227,7 @@ congress,14,surname,All others (est.),17,9
 congress,14,surname,All others (est.),18,24
 congress,14,surname,All others (est.),19,51
 congress,14,surname,All others (est.),20,243
+congress,14,surname,Asian (est.),5,30
 congress,14,surname,Asian (est.),6,624
 congress,14,surname,Asian (est.),7,599
 congress,14,surname,Asian (est.),8,388
@@ -225,6 +242,7 @@ congress,14,surname,Asian (est.),16,3
 congress,14,surname,Asian (est.),17,1
 congress,14,surname,Asian (est.),19,3
 congress,14,surname,Asian (est.),20,7
+congress,14,surname,Hispanic (est.),5,47
 congress,14,surname,Hispanic (est.),6,2226
 congress,14,surname,Hispanic (est.),7,2120
 congress,14,surname,Hispanic (est.),8,1077
@@ -239,6 +257,7 @@ congress,14,surname,Hispanic (est.),16,6
 congress,14,surname,Hispanic (est.),18,5
 congress,14,surname,Hispanic (est.),19,2
 congress,14,surname,Hispanic (est.),20,27
+congress,15,surname,All others (est.),5,35
 congress,15,surname,All others (est.),6,3561
 congress,15,surname,All others (est.),7,3904
 congress,15,surname,All others (est.),8,4065
@@ -251,6 +270,7 @@ congress,15,surname,All others (est.),14,6602
 congress,15,surname,All others (est.),18,1
 congress,15,surname,All others (est.),19,75
 congress,15,surname,All others (est.),20,5
+congress,15,surname,Asian (est.),5,1
 congress,15,surname,Asian (est.),6,218
 congress,15,surname,Asian (est.),7,228
 congress,15,surname,Asian (est.),8,251
@@ -261,6 +281,7 @@ congress,15,surname,Asian (est.),12,266
 congress,15,surname,Asian (est.),13,312
 congress,15,surname,Asian (est.),14,351
 congress,15,surname,Asian (est.),19,3
+congress,15,surname,Hispanic (est.),5,18
 congress,15,surname,Hispanic (est.),6,7028
 congress,15,surname,Hispanic (est.),7,7137
 congress,15,surname,Hispanic (est.),8,7801
@@ -300,6 +321,7 @@ congress,16,surname,Hispanic (est.),11,8644
 congress,16,surname,Hispanic (est.),12,8239
 congress,16,surname,Hispanic (est.),13,9146
 congress,16,surname,Hispanic (est.),14,2484
+congress,17,surname,All others (est.),5,985
 congress,17,surname,All others (est.),6,11491
 congress,17,surname,All others (est.),7,11620
 congress,17,surname,All others (est.),8,12276
@@ -315,6 +337,7 @@ congress,17,surname,All others (est.),17,38
 congress,17,surname,All others (est.),18,51
 congress,17,surname,All others (est.),19,217
 congress,17,surname,All others (est.),20,437
+congress,17,surname,Asian (est.),5,20
 congress,17,surname,Asian (est.),6,653
 congress,17,surname,Asian (est.),7,640
 congress,17,surname,Asian (est.),8,692
@@ -330,6 +353,7 @@ congress,17,surname,Asian (est.),17,1
 congress,17,surname,Asian (est.),18,1
 congress,17,surname,Asian (est.),19,10
 congress,17,surname,Asian (est.),20,9
+congress,17,surname,Hispanic (est.),5,128
 congress,17,surname,Hispanic (est.),6,2118
 congress,17,surname,Hispanic (est.),7,2138
 congress,17,surname,Hispanic (est.),8,2297
@@ -345,6 +369,7 @@ congress,17,surname,Hispanic (est.),17,6
 congress,17,surname,Hispanic (est.),18,3
 congress,17,surname,Hispanic (est.),19,30
 congress,17,surname,Hispanic (est.),20,38
+congress,18,surname,All others (est.),5,729
 congress,18,surname,All others (est.),6,1457
 congress,18,surname,All others (est.),7,1507
 congress,18,surname,All others (est.),8,989
@@ -356,6 +381,7 @@ congress,18,surname,All others (est.),13,678
 congress,18,surname,All others (est.),14,8488
 congress,18,surname,All others (est.),17,309
 congress,18,surname,All others (est.),20,2441
+congress,18,surname,Asian (est.),5,47
 congress,18,surname,Asian (est.),6,81
 congress,18,surname,Asian (est.),7,99
 congress,18,surname,Asian (est.),8,67
@@ -367,6 +393,7 @@ congress,18,surname,Asian (est.),13,33
 congress,18,surname,Asian (est.),14,457
 congress,18,surname,Asian (est.),17,14
 congress,18,surname,Asian (est.),20,81
+congress,18,surname,Hispanic (est.),5,172
 congress,18,surname,Hispanic (est.),6,288
 congress,18,surname,Hispanic (est.),7,327
 congress,18,surname,Hispanic (est.),8,202
@@ -378,6 +405,7 @@ congress,18,surname,Hispanic (est.),13,145
 congress,18,surname,Hispanic (est.),14,1710
 congress,18,surname,Hispanic (est.),17,34
 congress,18,surname,Hispanic (est.),20,268
+congress,19,surname,All others (est.),5,247
 congress,19,surname,All others (est.),6,9983
 congress,19,surname,All others (est.),7,9763
 congress,19,surname,All others (est.),8,9159
@@ -391,6 +419,7 @@ congress,19,surname,All others (est.),15,92
 congress,19,surname,All others (est.),18,15
 congress,19,surname,All others (est.),19,4
 congress,19,surname,All others (est.),20,63
+congress,19,surname,Asian (est.),5,3
 congress,19,surname,Asian (est.),6,220
 congress,19,surname,Asian (est.),7,230
 congress,19,surname,Asian (est.),8,217
@@ -402,6 +431,7 @@ congress,19,surname,Asian (est.),13,268
 congress,19,surname,Asian (est.),14,313
 congress,19,surname,Asian (est.),15,1
 congress,19,surname,Asian (est.),20,1
+congress,19,surname,Hispanic (est.),5,85
 congress,19,surname,Hispanic (est.),6,2803
 congress,19,surname,Hispanic (est.),7,2484
 congress,19,surname,Hispanic (est.),8,2307
@@ -416,6 +446,7 @@ congress,19,surname,Hispanic (est.),16,1
 congress,19,surname,Hispanic (est.),18,2
 congress,19,surname,Hispanic (est.),19,2
 congress,19,surname,Hispanic (est.),20,5
+congress,2,surname,All others (est.),5,497
 congress,2,surname,All others (est.),6,7731
 congress,2,surname,All others (est.),7,7799
 congress,2,surname,All others (est.),8,7663
@@ -427,6 +458,7 @@ congress,2,surname,All others (est.),13,6539
 congress,2,surname,All others (est.),14,12278
 congress,2,surname,All others (est.),17,233
 congress,2,surname,All others (est.),20,2370
+congress,2,surname,Asian (est.),5,27
 congress,2,surname,Asian (est.),6,418
 congress,2,surname,Asian (est.),7,448
 congress,2,surname,Asian (est.),8,411
@@ -438,6 +470,7 @@ congress,2,surname,Asian (est.),13,293
 congress,2,surname,Asian (est.),14,581
 congress,2,surname,Asian (est.),17,18
 congress,2,surname,Asian (est.),20,100
+congress,2,surname,Hispanic (est.),5,126
 congress,2,surname,Hispanic (est.),6,1602
 congress,2,surname,Hispanic (est.),7,1522
 congress,2,surname,Hispanic (est.),8,1568
@@ -449,6 +482,7 @@ congress,2,surname,Hispanic (est.),13,1159
 congress,2,surname,Hispanic (est.),14,2273
 congress,2,surname,Hispanic (est.),17,29
 congress,2,surname,Hispanic (est.),20,277
+congress,20,surname,All others (est.),5,168
 congress,20,surname,All others (est.),6,5119
 congress,20,surname,All others (est.),7,5136
 congress,20,surname,All others (est.),8,3563
@@ -459,6 +493,7 @@ congress,20,surname,All others (est.),12,5159
 congress,20,surname,All others (est.),13,2
 congress,20,surname,All others (est.),14,5240
 congress,20,surname,All others (est.),20,1
+congress,20,surname,Asian (est.),5,15
 congress,20,surname,Asian (est.),6,372
 congress,20,surname,Asian (est.),7,330
 congress,20,surname,Asian (est.),8,221
@@ -467,6 +502,7 @@ congress,20,surname,Asian (est.),10,4
 congress,20,surname,Asian (est.),11,14
 congress,20,surname,Asian (est.),12,306
 congress,20,surname,Asian (est.),14,320
+congress,20,surname,Hispanic (est.),5,161
 congress,20,surname,Hispanic (est.),6,6769
 congress,20,surname,Hispanic (est.),7,6509
 congress,20,surname,Hispanic (est.),8,4226
@@ -477,6 +513,7 @@ congress,20,surname,Hispanic (est.),12,6646
 congress,20,surname,Hispanic (est.),13,4
 congress,20,surname,Hispanic (est.),14,6839
 congress,20,surname,Hispanic (est.),20,1
+congress,21,surname,All others (est.),5,1728
 congress,21,surname,All others (est.),6,16382
 congress,21,surname,All others (est.),7,18035
 congress,21,surname,All others (est.),8,16308
@@ -488,6 +525,7 @@ congress,21,surname,All others (est.),13,14404
 congress,21,surname,All others (est.),14,22280
 congress,21,surname,All others (est.),15,25
 congress,21,surname,All others (est.),20,555
+congress,21,surname,Asian (est.),5,40
 congress,21,surname,Asian (est.),6,622
 congress,21,surname,Asian (est.),7,602
 congress,21,surname,Asian (est.),8,498
@@ -498,6 +536,7 @@ congress,21,surname,Asian (est.),12,582
 congress,21,surname,Asian (est.),13,316
 congress,21,surname,Asian (est.),14,641
 congress,21,surname,Asian (est.),20,11
+congress,21,surname,Hispanic (est.),5,291
 congress,21,surname,Hispanic (est.),6,5267
 congress,21,surname,Hispanic (est.),7,5126
 congress,21,surname,Hispanic (est.),8,4038
@@ -509,6 +548,7 @@ congress,21,surname,Hispanic (est.),13,2541
 congress,21,surname,Hispanic (est.),14,6142
 congress,21,surname,Hispanic (est.),15,2
 congress,21,surname,Hispanic (est.),20,99
+congress,22,surname,All others (est.),5,753
 congress,22,surname,All others (est.),6,3097
 congress,22,surname,All others (est.),7,3413
 congress,22,surname,All others (est.),8,3840
@@ -520,6 +560,7 @@ congress,22,surname,All others (est.),13,3859
 congress,22,surname,All others (est.),14,11468
 congress,22,surname,All others (est.),17,212
 congress,22,surname,All others (est.),20,468
+congress,22,surname,Asian (est.),5,109
 congress,22,surname,Asian (est.),6,203
 congress,22,surname,Asian (est.),7,242
 congress,22,surname,Asian (est.),8,328
@@ -531,6 +572,7 @@ congress,22,surname,Asian (est.),13,99
 congress,22,surname,Asian (est.),14,724
 congress,22,surname,Asian (est.),17,19
 congress,22,surname,Asian (est.),20,26
+congress,22,surname,Hispanic (est.),5,187
 congress,22,surname,Hispanic (est.),6,770
 congress,22,surname,Hispanic (est.),7,784
 congress,22,surname,Hispanic (est.),8,783
@@ -542,6 +584,7 @@ congress,22,surname,Hispanic (est.),13,856
 congress,22,surname,Hispanic (est.),14,2248
 congress,22,surname,Hispanic (est.),17,32
 congress,22,surname,Hispanic (est.),20,66
+congress,23,surname,All others (est.),5,422
 congress,23,surname,All others (est.),6,9193
 congress,23,surname,All others (est.),7,9451
 congress,23,surname,All others (est.),8,6973
@@ -554,6 +597,7 @@ congress,23,surname,All others (est.),14,10471
 congress,23,surname,All others (est.),15,60
 congress,23,surname,All others (est.),18,1
 congress,23,surname,All others (est.),20,11
+congress,23,surname,Asian (est.),5,17
 congress,23,surname,Asian (est.),6,538
 congress,23,surname,Asian (est.),7,578
 congress,23,surname,Asian (est.),8,365
@@ -564,6 +608,7 @@ congress,23,surname,Asian (est.),12,519
 congress,23,surname,Asian (est.),13,111
 congress,23,surname,Asian (est.),14,462
 congress,23,surname,Asian (est.),15,2
+congress,23,surname,Hispanic (est.),5,198
 congress,23,surname,Hispanic (est.),6,6717
 congress,23,surname,Hispanic (est.),7,6342
 congress,23,surname,Hispanic (est.),8,5057
@@ -576,6 +621,7 @@ congress,23,surname,Hispanic (est.),14,7475
 congress,23,surname,Hispanic (est.),15,77
 congress,23,surname,Hispanic (est.),19,1
 congress,23,surname,Hispanic (est.),20,19
+congress,24,surname,All others (est.),5,42
 congress,24,surname,All others (est.),6,15833
 congress,24,surname,All others (est.),7,7951
 congress,24,surname,All others (est.),8,17824
@@ -589,6 +635,7 @@ congress,24,surname,All others (est.),16,424
 congress,24,surname,All others (est.),17,305
 congress,24,surname,All others (est.),18,206
 congress,24,surname,All others (est.),20,2019
+congress,24,surname,Asian (est.),5,1
 congress,24,surname,Asian (est.),6,1302
 congress,24,surname,Asian (est.),7,530
 congress,24,surname,Asian (est.),8,1410
@@ -602,6 +649,7 @@ congress,24,surname,Asian (est.),16,22
 congress,24,surname,Asian (est.),17,12
 congress,24,surname,Asian (est.),18,20
 congress,24,surname,Asian (est.),20,99
+congress,24,surname,Hispanic (est.),5,2
 congress,24,surname,Hispanic (est.),6,2338
 congress,24,surname,Hispanic (est.),7,883
 congress,24,surname,Hispanic (est.),8,2468
@@ -615,8 +663,9 @@ congress,24,surname,Hispanic (est.),16,39
 congress,24,surname,Hispanic (est.),17,21
 congress,24,surname,Hispanic (est.),18,20
 congress,24,surname,Hispanic (est.),20,165
+congress,25,surname,All others (est.),5,350
 congress,25,surname,All others (est.),6,11707
-congress,25,surname,All others (est.),7,7421
+congress,25,surname,All others (est.),7,7422
 congress,25,surname,All others (est.),8,12587
 congress,25,surname,All others (est.),9,5595
 congress,25,surname,All others (est.),10,11308
@@ -628,6 +677,7 @@ congress,25,surname,All others (est.),15,29
 congress,25,surname,All others (est.),16,343
 congress,25,surname,All others (est.),17,286
 congress,25,surname,All others (est.),20,678
+congress,25,surname,Asian (est.),5,9
 congress,25,surname,Asian (est.),6,486
 congress,25,surname,Asian (est.),7,149
 congress,25,surname,Asian (est.),8,548
@@ -640,6 +690,7 @@ congress,25,surname,Asian (est.),14,201
 congress,25,surname,Asian (est.),16,10
 congress,25,surname,Asian (est.),17,11
 congress,25,surname,Asian (est.),20,18
+congress,25,surname,Hispanic (est.),5,52
 congress,25,surname,Hispanic (est.),6,2263
 congress,25,surname,Hispanic (est.),7,841
 congress,25,surname,Hispanic (est.),8,2381
@@ -653,6 +704,7 @@ congress,25,surname,Hispanic (est.),15,6
 congress,25,surname,Hispanic (est.),16,35
 congress,25,surname,Hispanic (est.),17,20
 congress,25,surname,Hispanic (est.),20,73
+congress,26,surname,All others (est.),5,44
 congress,26,surname,All others (est.),6,5286
 congress,26,surname,All others (est.),7,14916
 congress,26,surname,All others (est.),8,16610
@@ -675,6 +727,7 @@ congress,26,surname,Asian (est.),13,1224
 congress,26,surname,Asian (est.),14,1506
 congress,26,surname,Asian (est.),16,77
 congress,26,surname,Asian (est.),20,39
+congress,26,surname,Hispanic (est.),5,5
 congress,26,surname,Hispanic (est.),6,566
 congress,26,surname,Hispanic (est.),7,2195
 congress,26,surname,Hispanic (est.),8,2517
@@ -686,6 +739,7 @@ congress,26,surname,Hispanic (est.),13,2719
 congress,26,surname,Hispanic (est.),14,3389
 congress,26,surname,Hispanic (est.),16,100
 congress,26,surname,Hispanic (est.),20,68
+congress,27,surname,All others (est.),5,273
 congress,27,surname,All others (est.),6,9568
 congress,27,surname,All others (est.),7,11703
 congress,27,surname,All others (est.),8,10808
@@ -700,6 +754,7 @@ congress,27,surname,All others (est.),16,39
 congress,27,surname,All others (est.),18,34
 congress,27,surname,All others (est.),19,16
 congress,27,surname,All others (est.),20,198
+congress,27,surname,Asian (est.),5,9
 congress,27,surname,Asian (est.),6,378
 congress,27,surname,Asian (est.),7,411
 congress,27,surname,Asian (est.),8,371
@@ -713,6 +768,7 @@ congress,27,surname,Asian (est.),15,3
 congress,27,surname,Asian (est.),16,2
 congress,27,surname,Asian (est.),18,2
 congress,27,surname,Asian (est.),20,7
+congress,27,surname,Hispanic (est.),5,60
 congress,27,surname,Hispanic (est.),6,3662
 congress,27,surname,Hispanic (est.),7,3926
 congress,27,surname,Hispanic (est.),8,3862
@@ -727,6 +783,7 @@ congress,27,surname,Hispanic (est.),16,80
 congress,27,surname,Hispanic (est.),18,5
 congress,27,surname,Hispanic (est.),19,3
 congress,27,surname,Hispanic (est.),20,66
+congress,28,surname,All others (est.),5,52
 congress,28,surname,All others (est.),6,2012
 congress,28,surname,All others (est.),7,1919
 congress,28,surname,All others (est.),8,1688
@@ -740,6 +797,7 @@ congress,28,surname,All others (est.),15,1
 congress,28,surname,All others (est.),18,3
 congress,28,surname,All others (est.),19,1
 congress,28,surname,All others (est.),20,7
+congress,28,surname,Asian (est.),5,2
 congress,28,surname,Asian (est.),6,187
 congress,28,surname,Asian (est.),7,176
 congress,28,surname,Asian (est.),8,121
@@ -751,6 +809,7 @@ congress,28,surname,Asian (est.),13,157
 congress,28,surname,Asian (est.),14,309
 congress,28,surname,Asian (est.),19,1
 congress,28,surname,Asian (est.),20,2
+congress,28,surname,Hispanic (est.),5,152
 congress,28,surname,Hispanic (est.),6,7696
 congress,28,surname,Hispanic (est.),7,7156
 congress,28,surname,Hispanic (est.),8,5023
@@ -764,6 +823,7 @@ congress,28,surname,Hispanic (est.),15,6
 congress,28,surname,Hispanic (est.),18,2
 congress,28,surname,Hispanic (est.),19,4
 congress,28,surname,Hispanic (est.),20,45
+congress,29,surname,All others (est.),5,450
 congress,29,surname,All others (est.),6,913
 congress,29,surname,All others (est.),7,843
 congress,29,surname,All others (est.),8,482
@@ -775,6 +835,7 @@ congress,29,surname,All others (est.),13,511
 congress,29,surname,All others (est.),14,3809
 congress,29,surname,All others (est.),17,244
 congress,29,surname,All others (est.),20,1463
+congress,29,surname,Asian (est.),5,31
 congress,29,surname,Asian (est.),6,44
 congress,29,surname,Asian (est.),7,45
 congress,29,surname,Asian (est.),8,34
@@ -786,6 +847,7 @@ congress,29,surname,Asian (est.),13,27
 congress,29,surname,Asian (est.),14,287
 congress,29,surname,Asian (est.),17,13
 congress,29,surname,Asian (est.),20,75
+congress,29,surname,Hispanic (est.),5,226
 congress,29,surname,Hispanic (est.),6,342
 congress,29,surname,Hispanic (est.),7,367
 congress,29,surname,Hispanic (est.),8,194
@@ -797,6 +859,7 @@ congress,29,surname,Hispanic (est.),13,250
 congress,29,surname,Hispanic (est.),14,2185
 congress,29,surname,Hispanic (est.),17,69
 congress,29,surname,Hispanic (est.),20,374
+congress,3,surname,All others (est.),5,70
 congress,3,surname,All others (est.),6,8385
 congress,3,surname,All others (est.),7,8596
 congress,3,surname,All others (est.),8,5695
@@ -808,6 +871,7 @@ congress,3,surname,All others (est.),13,15236
 congress,3,surname,All others (est.),14,14197
 congress,3,surname,All others (est.),18,260
 congress,3,surname,All others (est.),20,267
+congress,3,surname,Asian (est.),5,2
 congress,3,surname,Asian (est.),6,437
 congress,3,surname,Asian (est.),7,422
 congress,3,surname,Asian (est.),8,189
@@ -819,6 +883,7 @@ congress,3,surname,Asian (est.),13,952
 congress,3,surname,Asian (est.),14,541
 congress,3,surname,Asian (est.),18,19
 congress,3,surname,Asian (est.),20,8
+congress,3,surname,Hispanic (est.),5,7
 congress,3,surname,Hispanic (est.),6,981
 congress,3,surname,Hispanic (est.),7,1022
 congress,3,surname,Hispanic (est.),8,682
@@ -830,6 +895,7 @@ congress,3,surname,Hispanic (est.),13,1822
 congress,3,surname,Hispanic (est.),14,1368
 congress,3,surname,Hispanic (est.),18,18
 congress,3,surname,Hispanic (est.),20,23
+congress,30,surname,All others (est.),5,70
 congress,30,surname,All others (est.),6,9563
 congress,30,surname,All others (est.),7,7334
 congress,30,surname,All others (est.),8,10743
@@ -843,6 +909,7 @@ congress,30,surname,All others (est.),16,91
 congress,30,surname,All others (est.),17,48
 congress,30,surname,All others (est.),18,368
 congress,30,surname,All others (est.),20,1531
+congress,30,surname,Asian (est.),5,1
 congress,30,surname,Asian (est.),6,693
 congress,30,surname,Asian (est.),7,234
 congress,30,surname,Asian (est.),8,812
@@ -856,6 +923,7 @@ congress,30,surname,Asian (est.),16,4
 congress,30,surname,Asian (est.),17,8
 congress,30,surname,Asian (est.),18,10
 congress,30,surname,Asian (est.),20,46
+congress,30,surname,Hispanic (est.),5,2
 congress,30,surname,Hispanic (est.),6,3023
 congress,30,surname,Hispanic (est.),7,1941
 congress,30,surname,Hispanic (est.),8,3147
@@ -869,6 +937,7 @@ congress,30,surname,Hispanic (est.),16,12
 congress,30,surname,Hispanic (est.),17,18
 congress,30,surname,Hispanic (est.),18,35
 congress,30,surname,Hispanic (est.),20,161
+congress,31,surname,All others (est.),5,5185
 congress,31,surname,All others (est.),6,13429
 congress,31,surname,All others (est.),7,14278
 congress,31,surname,All others (est.),8,15290
@@ -884,6 +953,7 @@ congress,31,surname,All others (est.),17,71
 congress,31,surname,All others (est.),18,139
 congress,31,surname,All others (est.),19,659
 congress,31,surname,All others (est.),20,305
+congress,31,surname,Asian (est.),5,140
 congress,31,surname,Asian (est.),6,619
 congress,31,surname,Asian (est.),7,621
 congress,31,surname,Asian (est.),8,660
@@ -898,6 +968,7 @@ congress,31,surname,Asian (est.),17,5
 congress,31,surname,Asian (est.),18,4
 congress,31,surname,Asian (est.),19,23
 congress,31,surname,Asian (est.),20,8
+congress,31,surname,Hispanic (est.),5,933
 congress,31,surname,Hispanic (est.),6,2575
 congress,31,surname,Hispanic (est.),7,2447
 congress,31,surname,Hispanic (est.),8,2625
@@ -913,6 +984,7 @@ congress,31,surname,Hispanic (est.),17,10
 congress,31,surname,Hispanic (est.),18,7
 congress,31,surname,Hispanic (est.),19,72
 congress,31,surname,Hispanic (est.),20,37
+congress,32,surname,All others (est.),5,390
 congress,32,surname,All others (est.),6,11308
 congress,32,surname,All others (est.),7,11788
 congress,32,surname,All others (est.),8,11962
@@ -926,6 +998,7 @@ congress,32,surname,All others (est.),15,256
 congress,32,surname,All others (est.),18,393
 congress,32,surname,All others (est.),19,1
 congress,32,surname,All others (est.),20,1344
+congress,32,surname,Asian (est.),5,9
 congress,32,surname,Asian (est.),6,980
 congress,32,surname,Asian (est.),7,985
 congress,32,surname,Asian (est.),8,967
@@ -938,6 +1011,7 @@ congress,32,surname,Asian (est.),14,1627
 congress,32,surname,Asian (est.),15,4
 congress,32,surname,Asian (est.),18,30
 congress,32,surname,Asian (est.),20,91
+congress,32,surname,Hispanic (est.),5,43
 congress,32,surname,Hispanic (est.),6,2046
 congress,32,surname,Hispanic (est.),7,2071
 congress,32,surname,Hispanic (est.),8,2054
@@ -950,6 +1024,7 @@ congress,32,surname,Hispanic (est.),14,3386
 congress,32,surname,Hispanic (est.),15,20
 congress,32,surname,Hispanic (est.),18,33
 congress,32,surname,Hispanic (est.),20,119
+congress,33,surname,All others (est.),5,51
 congress,33,surname,All others (est.),6,6399
 congress,33,surname,All others (est.),7,6403
 congress,33,surname,All others (est.),8,6595
@@ -961,6 +1036,7 @@ congress,33,surname,All others (est.),13,8223
 congress,33,surname,All others (est.),14,14095
 congress,33,surname,All others (est.),18,295
 congress,33,surname,All others (est.),20,1059
+congress,33,surname,Asian (est.),5,1
 congress,33,surname,Asian (est.),6,588
 congress,33,surname,Asian (est.),7,540
 congress,33,surname,Asian (est.),8,584
@@ -972,6 +1048,7 @@ congress,33,surname,Asian (est.),13,597
 congress,33,surname,Asian (est.),14,814
 congress,33,surname,Asian (est.),18,16
 congress,33,surname,Asian (est.),20,42
+congress,33,surname,Hispanic (est.),5,4
 congress,33,surname,Hispanic (est.),6,3632
 congress,33,surname,Hispanic (est.),7,3418
 congress,33,surname,Hispanic (est.),8,3521
@@ -983,6 +1060,7 @@ congress,33,surname,Hispanic (est.),13,4123
 congress,33,surname,Hispanic (est.),14,5657
 congress,33,surname,Hispanic (est.),18,62
 congress,33,surname,Hispanic (est.),20,242
+congress,34,surname,All others (est.),5,71
 congress,34,surname,All others (est.),6,4762
 congress,34,surname,All others (est.),7,2643
 congress,34,surname,All others (est.),8,1845
@@ -995,6 +1073,7 @@ congress,34,surname,All others (est.),14,8145
 congress,34,surname,All others (est.),15,7
 congress,34,surname,All others (est.),16,456
 congress,34,surname,All others (est.),20,110
+congress,34,surname,Asian (est.),5,3
 congress,34,surname,Asian (est.),6,266
 congress,34,surname,Asian (est.),7,178
 congress,34,surname,Asian (est.),8,145
@@ -1006,6 +1085,7 @@ congress,34,surname,Asian (est.),13,183
 congress,34,surname,Asian (est.),14,414
 congress,34,surname,Asian (est.),16,19
 congress,34,surname,Asian (est.),20,3
+congress,34,surname,Hispanic (est.),5,68
 congress,34,surname,Hispanic (est.),6,6743
 congress,34,surname,Hispanic (est.),7,5173
 congress,34,surname,Hispanic (est.),8,4791
@@ -1018,6 +1098,7 @@ congress,34,surname,Hispanic (est.),14,10971
 congress,34,surname,Hispanic (est.),15,4
 congress,34,surname,Hispanic (est.),16,309
 congress,34,surname,Hispanic (est.),20,83
+congress,35,surname,All others (est.),5,175
 congress,35,surname,All others (est.),6,8581
 congress,35,surname,All others (est.),7,9035
 congress,35,surname,All others (est.),8,7727
@@ -1028,6 +1109,7 @@ congress,35,surname,All others (est.),12,9909
 congress,35,surname,All others (est.),13,4953
 congress,35,surname,All others (est.),14,11278
 congress,35,surname,All others (est.),20,1
+congress,35,surname,Asian (est.),5,6
 congress,35,surname,Asian (est.),6,351
 congress,35,surname,Asian (est.),7,349
 congress,35,surname,Asian (est.),8,265
@@ -1037,6 +1119,7 @@ congress,35,surname,Asian (est.),11,143
 congress,35,surname,Asian (est.),12,357
 congress,35,surname,Asian (est.),13,117
 congress,35,surname,Asian (est.),14,427
+congress,35,surname,Hispanic (est.),5,74
 congress,35,surname,Hispanic (est.),6,5998
 congress,35,surname,Hispanic (est.),7,5859
 congress,35,surname,Hispanic (est.),8,4145
@@ -1047,6 +1130,7 @@ congress,35,surname,Hispanic (est.),12,6339
 congress,35,surname,Hispanic (est.),13,1485
 congress,35,surname,Hispanic (est.),14,7398
 congress,35,surname,Hispanic (est.),20,2
+congress,36,surname,All others (est.),5,543
 congress,36,surname,All others (est.),6,7224
 congress,36,surname,All others (est.),7,7445
 congress,36,surname,All others (est.),8,8195
@@ -1059,6 +1143,7 @@ congress,36,surname,All others (est.),14,16375
 congress,36,surname,All others (est.),15,77
 congress,36,surname,All others (est.),17,163
 congress,36,surname,All others (est.),20,1179
+congress,36,surname,Asian (est.),5,48
 congress,36,surname,Asian (est.),6,389
 congress,36,surname,Asian (est.),7,420
 congress,36,surname,Asian (est.),8,451
@@ -1071,6 +1156,7 @@ congress,36,surname,Asian (est.),14,770
 congress,36,surname,Asian (est.),15,2
 congress,36,surname,Asian (est.),17,13
 congress,36,surname,Asian (est.),20,72
+congress,36,surname,Hispanic (est.),5,105
 congress,36,surname,Hispanic (est.),6,1087
 congress,36,surname,Hispanic (est.),7,1084
 congress,36,surname,Hispanic (est.),8,1121
@@ -1083,6 +1169,7 @@ congress,36,surname,Hispanic (est.),14,2495
 congress,36,surname,Hispanic (est.),15,2
 congress,36,surname,Hispanic (est.),17,28
 congress,36,surname,Hispanic (est.),20,190
+congress,37,surname,All others (est.),5,596
 congress,37,surname,All others (est.),6,14748
 congress,37,surname,All others (est.),7,14981
 congress,37,surname,All others (est.),8,14284
@@ -1097,6 +1184,7 @@ congress,37,surname,All others (est.),17,5
 congress,37,surname,All others (est.),18,217
 congress,37,surname,All others (est.),19,198
 congress,37,surname,All others (est.),20,1341
+congress,37,surname,Asian (est.),5,35
 congress,37,surname,Asian (est.),6,1390
 congress,37,surname,Asian (est.),7,1260
 congress,37,surname,Asian (est.),8,1197
@@ -1110,6 +1198,7 @@ congress,37,surname,Asian (est.),15,31
 congress,37,surname,Asian (est.),18,6
 congress,37,surname,Asian (est.),19,10
 congress,37,surname,Asian (est.),20,53
+congress,37,surname,Hispanic (est.),5,80
 congress,37,surname,Hispanic (est.),6,4419
 congress,37,surname,Hispanic (est.),7,4198
 congress,37,surname,Hispanic (est.),8,4189
@@ -1124,6 +1213,7 @@ congress,37,surname,Hispanic (est.),17,1
 congress,37,surname,Hispanic (est.),18,36
 congress,37,surname,Hispanic (est.),19,35
 congress,37,surname,Hispanic (est.),20,241
+congress,38,surname,All others (est.),5,1075
 congress,38,surname,All others (est.),6,2078
 congress,38,surname,All others (est.),7,2385
 congress,38,surname,All others (est.),8,1074
@@ -1135,6 +1225,7 @@ congress,38,surname,All others (est.),13,1207
 congress,38,surname,All others (est.),14,7838
 congress,38,surname,All others (est.),17,436
 congress,38,surname,All others (est.),20,2325
+congress,38,surname,Asian (est.),5,102
 congress,38,surname,Asian (est.),6,147
 congress,38,surname,Asian (est.),7,226
 congress,38,surname,Asian (est.),8,85
@@ -1146,6 +1237,7 @@ congress,38,surname,Asian (est.),13,100
 congress,38,surname,Asian (est.),14,838
 congress,38,surname,Asian (est.),17,30
 congress,38,surname,Asian (est.),20,200
+congress,38,surname,Hispanic (est.),5,227
 congress,38,surname,Hispanic (est.),6,282
 congress,38,surname,Hispanic (est.),7,392
 congress,38,surname,Hispanic (est.),8,176
@@ -1157,6 +1249,7 @@ congress,38,surname,Hispanic (est.),13,267
 congress,38,surname,Hispanic (est.),14,1654
 congress,38,surname,Hispanic (est.),17,49
 congress,38,surname,Hispanic (est.),20,269
+congress,4,surname,All others (est.),5,712
 congress,4,surname,All others (est.),6,8274
 congress,4,surname,All others (est.),7,10424
 congress,4,surname,All others (est.),8,8610
@@ -1170,6 +1263,7 @@ congress,4,surname,All others (est.),15,24
 congress,4,surname,All others (est.),16,141
 congress,4,surname,All others (est.),18,283
 congress,4,surname,All others (est.),20,406
+congress,4,surname,Asian (est.),5,8
 congress,4,surname,Asian (est.),6,483
 congress,4,surname,Asian (est.),7,721
 congress,4,surname,Asian (est.),8,505
@@ -1182,6 +1276,7 @@ congress,4,surname,Asian (est.),14,918
 congress,4,surname,Asian (est.),16,11
 congress,4,surname,Asian (est.),18,23
 congress,4,surname,Asian (est.),20,24
+congress,4,surname,Hispanic (est.),5,48
 congress,4,surname,Hispanic (est.),6,742
 congress,4,surname,Hispanic (est.),7,1006
 congress,4,surname,Hispanic (est.),8,755
@@ -1195,6 +1290,7 @@ congress,4,surname,Hispanic (est.),15,1
 congress,4,surname,Hispanic (est.),16,8
 congress,4,surname,Hispanic (est.),18,23
 congress,4,surname,Hispanic (est.),20,31
+congress,5,surname,All others (est.),5,80
 congress,5,surname,All others (est.),6,10094
 congress,5,surname,All others (est.),7,10029
 congress,5,surname,All others (est.),8,10954
@@ -1206,6 +1302,7 @@ congress,5,surname,All others (est.),13,13446
 congress,5,surname,All others (est.),14,18540
 congress,5,surname,All others (est.),18,272
 congress,5,surname,All others (est.),20,943
+congress,5,surname,Asian (est.),5,1
 congress,5,surname,Asian (est.),6,444
 congress,5,surname,Asian (est.),7,410
 congress,5,surname,Asian (est.),8,445
@@ -1217,6 +1314,7 @@ congress,5,surname,Asian (est.),13,485
 congress,5,surname,Asian (est.),14,585
 congress,5,surname,Asian (est.),18,15
 congress,5,surname,Asian (est.),20,33
+congress,5,surname,Hispanic (est.),5,5
 congress,5,surname,Hispanic (est.),6,2563
 congress,5,surname,Hispanic (est.),7,2361
 congress,5,surname,Hispanic (est.),8,2406
@@ -1228,6 +1326,7 @@ congress,5,surname,Hispanic (est.),13,2679
 congress,5,surname,Hispanic (est.),14,3215
 congress,5,surname,Hispanic (est.),18,36
 congress,5,surname,Hispanic (est.),20,116
+congress,6,surname,All others (est.),5,311
 congress,6,surname,All others (est.),6,11813
 congress,6,surname,All others (est.),7,9415
 congress,6,surname,All others (est.),8,13498
@@ -1242,6 +1341,7 @@ congress,6,surname,All others (est.),16,283
 congress,6,surname,All others (est.),17,146
 congress,6,surname,All others (est.),18,239
 congress,6,surname,All others (est.),20,1436
+congress,6,surname,Asian (est.),5,6
 congress,6,surname,Asian (est.),6,619
 congress,6,surname,Asian (est.),7,361
 congress,6,surname,Asian (est.),8,628
@@ -1256,6 +1356,7 @@ congress,6,surname,Asian (est.),16,10
 congress,6,surname,Asian (est.),17,2
 congress,6,surname,Asian (est.),18,9
 congress,6,surname,Asian (est.),20,41
+congress,6,surname,Hispanic (est.),5,45
 congress,6,surname,Hispanic (est.),6,2774
 congress,6,surname,Hispanic (est.),7,1937
 congress,6,surname,Hispanic (est.),8,2821
@@ -1270,6 +1371,7 @@ congress,6,surname,Hispanic (est.),16,27
 congress,6,surname,Hispanic (est.),17,7
 congress,6,surname,Hispanic (est.),18,28
 congress,6,surname,Hispanic (est.),20,147
+congress,7,surname,All others (est.),5,787
 congress,7,surname,All others (est.),6,1309
 congress,7,surname,All others (est.),7,1503
 congress,7,surname,All others (est.),8,974
@@ -1281,6 +1383,7 @@ congress,7,surname,All others (est.),13,768
 congress,7,surname,All others (est.),14,5829
 congress,7,surname,All others (est.),17,330
 congress,7,surname,All others (est.),20,1430
+congress,7,surname,Asian (est.),5,140
 congress,7,surname,Asian (est.),6,221
 congress,7,surname,Asian (est.),7,311
 congress,7,surname,Asian (est.),8,254
@@ -1292,6 +1395,7 @@ congress,7,surname,Asian (est.),13,106
 congress,7,surname,Asian (est.),14,941
 congress,7,surname,Asian (est.),17,62
 congress,7,surname,Asian (est.),20,176
+congress,7,surname,Hispanic (est.),5,191
 congress,7,surname,Hispanic (est.),6,303
 congress,7,surname,Hispanic (est.),7,341
 congress,7,surname,Hispanic (est.),8,243
@@ -1303,6 +1407,7 @@ congress,7,surname,Hispanic (est.),13,208
 congress,7,surname,Hispanic (est.),14,1411
 congress,7,surname,Hispanic (est.),17,52
 congress,7,surname,Hispanic (est.),20,217
+congress,8,surname,All others (est.),5,325
 congress,8,surname,All others (est.),6,8295
 congress,8,surname,All others (est.),7,7361
 congress,8,surname,All others (est.),8,8547
@@ -1314,6 +1419,7 @@ congress,8,surname,All others (est.),13,8608
 congress,8,surname,All others (est.),14,12871
 congress,8,surname,All others (est.),17,140
 congress,8,surname,All others (est.),20,1781
+congress,8,surname,Asian (est.),5,53
 congress,8,surname,Asian (est.),6,305
 congress,8,surname,Asian (est.),7,322
 congress,8,surname,Asian (est.),8,299
@@ -1325,6 +1431,7 @@ congress,8,surname,Asian (est.),13,266
 congress,8,surname,Asian (est.),14,709
 congress,8,surname,Asian (est.),17,20
 congress,8,surname,Asian (est.),20,123
+congress,8,surname,Hispanic (est.),5,141
 congress,8,surname,Hispanic (est.),6,1525
 congress,8,surname,Hispanic (est.),7,1320
 congress,8,surname,Hispanic (est.),8,1502
@@ -1336,6 +1443,7 @@ congress,8,surname,Hispanic (est.),13,1297
 congress,8,surname,Hispanic (est.),14,2246
 congress,8,surname,Hispanic (est.),17,28
 congress,8,surname,Hispanic (est.),20,211
+congress,9,surname,All others (est.),5,324
 congress,9,surname,All others (est.),6,1746
 congress,9,surname,All others (est.),7,1638
 congress,9,surname,All others (est.),8,1439
@@ -1347,6 +1455,7 @@ congress,9,surname,All others (est.),13,1801
 congress,9,surname,All others (est.),14,4896
 congress,9,surname,All others (est.),17,146
 congress,9,surname,All others (est.),20,1331
+congress,9,surname,Asian (est.),5,13
 congress,9,surname,Asian (est.),6,47
 congress,9,surname,Asian (est.),7,50
 congress,9,surname,Asian (est.),8,37
@@ -1358,6 +1467,7 @@ congress,9,surname,Asian (est.),13,44
 congress,9,surname,Asian (est.),14,164
 congress,9,surname,Asian (est.),17,5
 congress,9,surname,Asian (est.),20,36
+congress,9,surname,Hispanic (est.),5,251
 congress,9,surname,Hispanic (est.),6,693
 congress,9,surname,Hispanic (est.),7,752
 congress,9,surname,Hispanic (est.),8,518
@@ -1369,6 +1479,7 @@ congress,9,surname,Hispanic (est.),13,602
 congress,9,surname,Hispanic (est.),14,2479
 congress,9,surname,Hispanic (est.),17,52
 congress,9,surname,Hispanic (est.),20,476
+house,1,surname,All others (est.),5,721
 house,1,surname,All others (est.),6,2709
 house,1,surname,All others (est.),7,2919
 house,1,surname,All others (est.),8,3266
@@ -1379,6 +1490,7 @@ house,1,surname,All others (est.),12,3802
 house,1,surname,All others (est.),13,3473
 house,1,surname,All others (est.),14,5247
 house,1,surname,All others (est.),15,7
+house,1,surname,Asian (est.),5,8
 house,1,surname,Asian (est.),6,44
 house,1,surname,Asian (est.),7,40
 house,1,surname,Asian (est.),8,41
@@ -1388,6 +1500,7 @@ house,1,surname,Asian (est.),11,39
 house,1,surname,Asian (est.),12,52
 house,1,surname,Asian (est.),13,39
 house,1,surname,Asian (est.),14,67
+house,1,surname,Hispanic (est.),5,47
 house,1,surname,Hispanic (est.),6,155
 house,1,surname,Hispanic (est.),7,155
 house,1,surname,Hispanic (est.),8,169
@@ -1398,6 +1511,7 @@ house,1,surname,Hispanic (est.),12,197
 house,1,surname,Hispanic (est.),13,179
 house,1,surname,Hispanic (est.),14,274
 house,1,surname,Hispanic (est.),15,1
+house,10,surname,All others (est.),5,225
 house,10,surname,All others (est.),6,3586
 house,10,surname,All others (est.),7,3967
 house,10,surname,All others (est.),8,4163
@@ -1409,6 +1523,7 @@ house,10,surname,All others (est.),13,5434
 house,10,surname,All others (est.),14,7579
 house,10,surname,All others (est.),18,164
 house,10,surname,All others (est.),20,593
+house,10,surname,Asian (est.),5,3
 house,10,surname,Asian (est.),6,76
 house,10,surname,Asian (est.),7,85
 house,10,surname,Asian (est.),8,88
@@ -1420,6 +1535,7 @@ house,10,surname,Asian (est.),13,106
 house,10,surname,Asian (est.),14,142
 house,10,surname,Asian (est.),18,3
 house,10,surname,Asian (est.),20,11
+house,10,surname,Hispanic (est.),5,19
 house,10,surname,Hispanic (est.),6,675
 house,10,surname,Hispanic (est.),7,687
 house,10,surname,Hispanic (est.),8,749
@@ -1431,6 +1547,7 @@ house,10,surname,Hispanic (est.),13,838
 house,10,surname,Hispanic (est.),14,1114
 house,10,surname,Hispanic (est.),18,14
 house,10,surname,Hispanic (est.),20,51
+house,100,surname,All others (est.),5,6
 house,100,surname,All others (est.),6,1348
 house,100,surname,All others (est.),7,1307
 house,100,surname,All others (est.),8,1340
@@ -1453,6 +1570,7 @@ house,100,surname,Asian (est.),13,73
 house,100,surname,Asian (est.),14,112
 house,100,surname,Asian (est.),18,3
 house,100,surname,Asian (est.),20,10
+house,100,surname,Hispanic (est.),5,2
 house,100,surname,Hispanic (est.),6,724
 house,100,surname,Hispanic (est.),7,712
 house,100,surname,Hispanic (est.),8,689
@@ -1500,6 +1618,7 @@ house,101,surname,Hispanic (est.),14,88
 house,101,surname,Hispanic (est.),16,12
 house,101,surname,Hispanic (est.),17,16
 house,101,surname,Hispanic (est.),20,34
+house,102,surname,All others (est.),5,38
 house,102,surname,All others (est.),6,1767
 house,102,surname,All others (est.),7,1787
 house,102,surname,All others (est.),8,1837
@@ -1522,6 +1641,7 @@ house,102,surname,Asian (est.),13,326
 house,102,surname,Asian (est.),14,468
 house,102,surname,Asian (est.),18,12
 house,102,surname,Asian (est.),20,29
+house,102,surname,Hispanic (est.),5,4
 house,102,surname,Hispanic (est.),6,450
 house,102,surname,Hispanic (est.),7,478
 house,102,surname,Hispanic (est.),8,451
@@ -1533,6 +1653,7 @@ house,102,surname,Hispanic (est.),13,548
 house,102,surname,Hispanic (est.),14,783
 house,102,surname,Hispanic (est.),18,14
 house,102,surname,Hispanic (est.),20,37
+house,103,surname,All others (est.),5,13
 house,103,surname,All others (est.),6,1597
 house,103,surname,All others (est.),7,1682
 house,103,surname,All others (est.),8,1625
@@ -1566,6 +1687,7 @@ house,103,surname,Hispanic (est.),13,1093
 house,103,surname,Hispanic (est.),14,1455
 house,103,surname,Hispanic (est.),18,18
 house,103,surname,Hispanic (est.),20,57
+house,104,surname,All others (est.),5,13
 house,104,surname,All others (est.),6,996
 house,104,surname,All others (est.),7,1094
 house,104,surname,All others (est.),8,1124
@@ -1588,6 +1710,7 @@ house,104,surname,Asian (est.),13,88
 house,104,surname,Asian (est.),14,127
 house,104,surname,Asian (est.),18,1
 house,104,surname,Asian (est.),20,5
+house,104,surname,Hispanic (est.),5,1
 house,104,surname,Hispanic (est.),6,1162
 house,104,surname,Hispanic (est.),7,1144
 house,104,surname,Hispanic (est.),8,1197
@@ -1599,6 +1722,7 @@ house,104,surname,Hispanic (est.),13,1356
 house,104,surname,Hispanic (est.),14,1940
 house,104,surname,Hispanic (est.),18,23
 house,104,surname,Hispanic (est.),20,93
+house,105,surname,All others (est.),5,12
 house,105,surname,All others (est.),6,1293
 house,105,surname,All others (est.),7,1196
 house,105,surname,All others (est.),8,1301
@@ -1621,6 +1745,7 @@ house,105,surname,Asian (est.),13,166
 house,105,surname,Asian (est.),14,290
 house,105,surname,Asian (est.),18,6
 house,105,surname,Asian (est.),20,13
+house,105,surname,Hispanic (est.),5,2
 house,105,surname,Hispanic (est.),6,796
 house,105,surname,Hispanic (est.),7,632
 house,105,surname,Hispanic (est.),8,739
@@ -1665,6 +1790,7 @@ house,106,surname,Hispanic (est.),13,711
 house,106,surname,Hispanic (est.),14,868
 house,106,surname,Hispanic (est.),16,24
 house,106,surname,Hispanic (est.),20,24
+house,107,surname,All others (est.),5,15
 house,107,surname,All others (est.),6,1194
 house,107,surname,All others (est.),7,1167
 house,107,surname,All others (est.),8,1146
@@ -1687,6 +1813,7 @@ house,107,surname,Asian (est.),13,94
 house,107,surname,Asian (est.),14,118
 house,107,surname,Asian (est.),18,1
 house,107,surname,Asian (est.),20,12
+house,107,surname,Hispanic (est.),5,2
 house,107,surname,Hispanic (est.),6,996
 house,107,surname,Hispanic (est.),7,899
 house,107,surname,Hispanic (est.),8,854
@@ -1698,6 +1825,7 @@ house,107,surname,Hispanic (est.),13,1019
 house,107,surname,Hispanic (est.),14,1229
 house,107,surname,Hispanic (est.),18,18
 house,107,surname,Hispanic (est.),20,58
+house,108,surname,All others (est.),5,54
 house,108,surname,All others (est.),6,4582
 house,108,surname,All others (est.),7,4652
 house,108,surname,All others (est.),8,4986
@@ -1709,6 +1837,7 @@ house,108,surname,All others (est.),13,6310
 house,108,surname,All others (est.),14,9407
 house,108,surname,All others (est.),18,253
 house,108,surname,All others (est.),20,897
+house,108,surname,Asian (est.),5,1
 house,108,surname,Asian (est.),6,230
 house,108,surname,Asian (est.),7,224
 house,108,surname,Asian (est.),8,243
@@ -1720,6 +1849,7 @@ house,108,surname,Asian (est.),13,278
 house,108,surname,Asian (est.),14,465
 house,108,surname,Asian (est.),18,13
 house,108,surname,Asian (est.),20,29
+house,108,surname,Hispanic (est.),5,2
 house,108,surname,Hispanic (est.),6,422
 house,108,surname,Hispanic (est.),7,420
 house,108,surname,Hispanic (est.),8,471
@@ -1731,6 +1861,7 @@ house,108,surname,Hispanic (est.),13,519
 house,108,surname,Hispanic (est.),14,899
 house,108,surname,Hispanic (est.),18,19
 house,108,surname,Hispanic (est.),20,55
+house,109,surname,All others (est.),5,24
 house,109,surname,All others (est.),6,2875
 house,109,surname,All others (est.),7,3011
 house,109,surname,All others (est.),8,3279
@@ -1753,6 +1884,7 @@ house,109,surname,Asian (est.),13,76
 house,109,surname,Asian (est.),14,132
 house,109,surname,Asian (est.),18,3
 house,109,surname,Asian (est.),20,8
+house,109,surname,Hispanic (est.),5,2
 house,109,surname,Hispanic (est.),6,689
 house,109,surname,Hispanic (est.),7,626
 house,109,surname,Hispanic (est.),8,728
@@ -1764,6 +1896,7 @@ house,109,surname,Hispanic (est.),13,756
 house,109,surname,Hispanic (est.),14,993
 house,109,surname,Hispanic (est.),18,13
 house,109,surname,Hispanic (est.),20,44
+house,11,surname,All others (est.),5,478
 house,11,surname,All others (est.),6,2441
 house,11,surname,All others (est.),7,1915
 house,11,surname,All others (est.),8,2155
@@ -1776,6 +1909,7 @@ house,11,surname,All others (est.),14,4919
 house,11,surname,All others (est.),15,35
 house,11,surname,All others (est.),18,2
 house,11,surname,All others (est.),20,291
+house,11,surname,Asian (est.),5,7
 house,11,surname,Asian (est.),6,48
 house,11,surname,Asian (est.),7,34
 house,11,surname,Asian (est.),8,37
@@ -1786,6 +1920,7 @@ house,11,surname,Asian (est.),12,47
 house,11,surname,Asian (est.),13,47
 house,11,surname,Asian (est.),14,78
 house,11,surname,Asian (est.),20,4
+house,11,surname,Hispanic (est.),5,42
 house,11,surname,Hispanic (est.),6,288
 house,11,surname,Hispanic (est.),7,207
 house,11,surname,Hispanic (est.),8,232
@@ -1797,6 +1932,7 @@ house,11,surname,Hispanic (est.),13,316
 house,11,surname,Hispanic (est.),14,422
 house,11,surname,Hispanic (est.),15,2
 house,11,surname,Hispanic (est.),20,17
+house,110,surname,All others (est.),5,16
 house,110,surname,All others (est.),6,1206
 house,110,surname,All others (est.),7,1167
 house,110,surname,All others (est.),8,1284
@@ -1830,6 +1966,7 @@ house,110,surname,Hispanic (est.),13,789
 house,110,surname,Hispanic (est.),14,941
 house,110,surname,Hispanic (est.),18,11
 house,110,surname,Hispanic (est.),20,32
+house,111,surname,All others (est.),5,31
 house,111,surname,All others (est.),6,2447
 house,111,surname,All others (est.),7,2529
 house,111,surname,All others (est.),8,2777
@@ -1852,6 +1989,7 @@ house,111,surname,Asian (est.),13,124
 house,111,surname,Asian (est.),14,168
 house,111,surname,Asian (est.),18,5
 house,111,surname,Asian (est.),20,15
+house,111,surname,Hispanic (est.),5,1
 house,111,surname,Hispanic (est.),6,782
 house,111,surname,Hispanic (est.),7,713
 house,111,surname,Hispanic (est.),8,819
@@ -1863,6 +2001,7 @@ house,111,surname,Hispanic (est.),13,988
 house,111,surname,Hispanic (est.),14,1140
 house,111,surname,Hispanic (est.),18,13
 house,111,surname,Hispanic (est.),20,50
+house,112,surname,All others (est.),5,35
 house,112,surname,All others (est.),6,3462
 house,112,surname,All others (est.),7,3486
 house,112,surname,All others (est.),8,3452
@@ -1874,6 +2013,7 @@ house,112,surname,All others (est.),13,4756
 house,112,surname,All others (est.),14,7715
 house,112,surname,All others (est.),18,186
 house,112,surname,All others (est.),20,705
+house,112,surname,Asian (est.),5,2
 house,112,surname,Asian (est.),6,376
 house,112,surname,Asian (est.),7,361
 house,112,surname,Asian (est.),8,393
@@ -1885,6 +2025,7 @@ house,112,surname,Asian (est.),13,391
 house,112,surname,Asian (est.),14,585
 house,112,surname,Asian (est.),18,15
 house,112,surname,Asian (est.),20,41
+house,112,surname,Hispanic (est.),5,3
 house,112,surname,Hispanic (est.),6,596
 house,112,surname,Hispanic (est.),7,520
 house,112,surname,Hispanic (est.),8,563
@@ -1896,6 +2037,7 @@ house,112,surname,Hispanic (est.),13,735
 house,112,surname,Hispanic (est.),14,1014
 house,112,surname,Hispanic (est.),18,15
 house,112,surname,Hispanic (est.),20,58
+house,113,surname,All others (est.),5,15
 house,113,surname,All others (est.),6,2281
 house,113,surname,All others (est.),7,2032
 house,113,surname,All others (est.),8,2223
@@ -1918,6 +2060,7 @@ house,113,surname,Asian (est.),13,253
 house,113,surname,Asian (est.),14,307
 house,113,surname,Asian (est.),18,4
 house,113,surname,Asian (est.),20,16
+house,113,surname,Hispanic (est.),5,1
 house,113,surname,Hispanic (est.),6,807
 house,113,surname,Hispanic (est.),7,757
 house,113,surname,Hispanic (est.),8,777
@@ -1929,6 +2072,7 @@ house,113,surname,Hispanic (est.),13,880
 house,113,surname,Hispanic (est.),14,1080
 house,113,surname,Hispanic (est.),18,13
 house,113,surname,Hispanic (est.),20,53
+house,114,surname,All others (est.),5,23
 house,114,surname,All others (est.),6,2854
 house,114,surname,All others (est.),7,2665
 house,114,surname,All others (est.),8,2787
@@ -1951,6 +2095,7 @@ house,114,surname,Asian (est.),13,153
 house,114,surname,Asian (est.),14,206
 house,114,surname,Asian (est.),18,2
 house,114,surname,Asian (est.),20,11
+house,114,surname,Hispanic (est.),5,1
 house,114,surname,Hispanic (est.),6,625
 house,114,surname,Hispanic (est.),7,569
 house,114,surname,Hispanic (est.),8,608
@@ -1962,6 +2107,7 @@ house,114,surname,Hispanic (est.),13,746
 house,114,surname,Hispanic (est.),14,1056
 house,114,surname,Hispanic (est.),18,10
 house,114,surname,Hispanic (est.),20,50
+house,115,surname,All others (est.),5,9
 house,115,surname,All others (est.),6,2382
 house,115,surname,All others (est.),7,2372
 house,115,surname,All others (est.),8,2576
@@ -1995,6 +2141,7 @@ house,115,surname,Hispanic (est.),13,656
 house,115,surname,Hispanic (est.),14,1035
 house,115,surname,Hispanic (est.),18,11
 house,115,surname,Hispanic (est.),20,33
+house,116,surname,All others (est.),5,47
 house,116,surname,All others (est.),6,1560
 house,116,surname,All others (est.),7,1594
 house,116,surname,All others (est.),8,1067
@@ -2004,6 +2151,7 @@ house,116,surname,All others (est.),11,87
 house,116,surname,All others (est.),12,1502
 house,116,surname,All others (est.),13,1
 house,116,surname,All others (est.),14,1373
+house,116,surname,Asian (est.),5,5
 house,116,surname,Asian (est.),6,155
 house,116,surname,Asian (est.),7,137
 house,116,surname,Asian (est.),8,89
@@ -2012,6 +2160,7 @@ house,116,surname,Asian (est.),10,1
 house,116,surname,Asian (est.),11,5
 house,116,surname,Asian (est.),12,107
 house,116,surname,Asian (est.),14,104
+house,116,surname,Hispanic (est.),5,41
 house,116,surname,Hispanic (est.),6,1794
 house,116,surname,Hispanic (est.),7,1740
 house,116,surname,Hispanic (est.),8,1052
@@ -2021,6 +2170,7 @@ house,116,surname,Hispanic (est.),11,103
 house,116,surname,Hispanic (est.),12,1705
 house,116,surname,Hispanic (est.),13,1
 house,116,surname,Hispanic (est.),14,1738
+house,117,surname,All others (est.),5,57
 house,117,surname,All others (est.),6,1828
 house,117,surname,All others (est.),7,1787
 house,117,surname,All others (est.),8,1401
@@ -2029,6 +2179,7 @@ house,117,surname,All others (est.),10,38
 house,117,surname,All others (est.),11,117
 house,117,surname,All others (est.),12,1975
 house,117,surname,All others (est.),14,1642
+house,117,surname,Asian (est.),5,5
 house,117,surname,Asian (est.),6,131
 house,117,surname,Asian (est.),7,123
 house,117,surname,Asian (est.),8,79
@@ -2036,6 +2187,7 @@ house,117,surname,Asian (est.),10,2
 house,117,surname,Asian (est.),11,5
 house,117,surname,Asian (est.),12,119
 house,117,surname,Asian (est.),14,93
+house,117,surname,Hispanic (est.),5,29
 house,117,surname,Hispanic (est.),6,2234
 house,117,surname,Hispanic (est.),7,2134
 house,117,surname,Hispanic (est.),8,1332
@@ -2045,6 +2197,7 @@ house,117,surname,Hispanic (est.),11,104
 house,117,surname,Hispanic (est.),12,2201
 house,117,surname,Hispanic (est.),13,1
 house,117,surname,Hispanic (est.),14,2057
+house,118,surname,All others (est.),5,74
 house,118,surname,All others (est.),6,2172
 house,118,surname,All others (est.),7,2199
 house,118,surname,All others (est.),8,1510
@@ -2054,6 +2207,7 @@ house,118,surname,All others (est.),11,99
 house,118,surname,All others (est.),12,2443
 house,118,surname,All others (est.),14,2527
 house,118,surname,All others (est.),20,1
+house,118,surname,Asian (est.),5,4
 house,118,surname,Asian (est.),6,100
 house,118,surname,Asian (est.),7,101
 house,118,surname,Asian (est.),8,61
@@ -2061,6 +2215,7 @@ house,118,surname,Asian (est.),10,3
 house,118,surname,Asian (est.),11,4
 house,118,surname,Asian (est.),12,100
 house,118,surname,Asian (est.),14,109
+house,118,surname,Hispanic (est.),5,27
 house,118,surname,Hispanic (est.),6,2018
 house,118,surname,Hispanic (est.),7,1976
 house,118,surname,Hispanic (est.),8,1165
@@ -2070,6 +2225,7 @@ house,118,surname,Hispanic (est.),11,107
 house,118,surname,Hispanic (est.),12,2086
 house,118,surname,Hispanic (est.),13,1
 house,118,surname,Hispanic (est.),14,2342
+house,119,surname,All others (est.),5,39
 house,119,surname,All others (est.),6,1458
 house,119,surname,All others (est.),7,1524
 house,119,surname,All others (est.),8,1111
@@ -2078,6 +2234,7 @@ house,119,surname,All others (est.),10,46
 house,119,surname,All others (est.),11,80
 house,119,surname,All others (est.),12,1613
 house,119,surname,All others (est.),14,1838
+house,119,surname,Asian (est.),5,1
 house,119,surname,Asian (est.),6,87
 house,119,surname,Asian (est.),7,87
 house,119,surname,Asian (est.),8,54
@@ -2085,6 +2242,7 @@ house,119,surname,Asian (est.),10,3
 house,119,surname,Asian (est.),11,7
 house,119,surname,Asian (est.),12,73
 house,119,surname,Asian (est.),14,95
+house,119,surname,Hispanic (est.),5,38
 house,119,surname,Hispanic (est.),6,1805
 house,119,surname,Hispanic (est.),7,1729
 house,119,surname,Hispanic (est.),8,1147
@@ -2095,6 +2253,7 @@ house,119,surname,Hispanic (est.),12,1899
 house,119,surname,Hispanic (est.),13,1
 house,119,surname,Hispanic (est.),14,2193
 house,119,surname,Hispanic (est.),20,2
+house,12,surname,All others (est.),5,47
 house,12,surname,All others (est.),6,2723
 house,12,surname,All others (est.),7,3110
 house,12,surname,All others (est.),8,2915
@@ -2106,6 +2265,7 @@ house,12,surname,All others (est.),13,4387
 house,12,surname,All others (est.),14,6197
 house,12,surname,All others (est.),15,4
 house,12,surname,All others (est.),20,1
+house,12,surname,Asian (est.),5,1
 house,12,surname,Asian (est.),6,71
 house,12,surname,Asian (est.),7,75
 house,12,surname,Asian (est.),8,65
@@ -2115,6 +2275,7 @@ house,12,surname,Asian (est.),11,52
 house,12,surname,Asian (est.),12,68
 house,12,surname,Asian (est.),13,82
 house,12,surname,Asian (est.),14,114
+house,12,surname,Hispanic (est.),5,8
 house,12,surname,Hispanic (est.),6,397
 house,12,surname,Hispanic (est.),7,418
 house,12,surname,Hispanic (est.),8,432
@@ -2125,6 +2286,7 @@ house,12,surname,Hispanic (est.),12,419
 house,12,surname,Hispanic (est.),13,516
 house,12,surname,Hispanic (est.),14,669
 house,12,surname,Hispanic (est.),20,1
+house,120,surname,All others (est.),5,55
 house,120,surname,All others (est.),6,1736
 house,120,surname,All others (est.),7,1762
 house,120,surname,All others (est.),8,1241
@@ -2133,6 +2295,7 @@ house,120,surname,All others (est.),10,63
 house,120,surname,All others (est.),11,101
 house,120,surname,All others (est.),12,1907
 house,120,surname,All others (est.),14,2238
+house,120,surname,Asian (est.),5,5
 house,120,surname,Asian (est.),6,100
 house,120,surname,Asian (est.),7,77
 house,120,surname,Asian (est.),8,49
@@ -2140,6 +2303,7 @@ house,120,surname,Asian (est.),10,2
 house,120,surname,Asian (est.),11,4
 house,120,surname,Asian (est.),12,80
 house,120,surname,Asian (est.),14,101
+house,120,surname,Hispanic (est.),5,20
 house,120,surname,Hispanic (est.),6,1140
 house,120,surname,Hispanic (est.),7,1055
 house,120,surname,Hispanic (est.),8,720
@@ -2150,6 +2314,7 @@ house,120,surname,Hispanic (est.),12,1105
 house,120,surname,Hispanic (est.),13,1
 house,120,surname,Hispanic (est.),14,1315
 house,120,surname,Hispanic (est.),20,1
+house,121,surname,All others (est.),5,121
 house,121,surname,All others (est.),6,4154
 house,121,surname,All others (est.),7,4306
 house,121,surname,All others (est.),8,3078
@@ -2159,6 +2324,7 @@ house,121,surname,All others (est.),11,236
 house,121,surname,All others (est.),12,4500
 house,121,surname,All others (est.),13,1
 house,121,surname,All others (est.),14,3770
+house,121,surname,Asian (est.),5,4
 house,121,surname,Asian (est.),6,239
 house,121,surname,Asian (est.),7,252
 house,121,surname,Asian (est.),8,152
@@ -2166,6 +2332,7 @@ house,121,surname,Asian (est.),10,10
 house,121,surname,Asian (est.),11,12
 house,121,surname,Asian (est.),12,218
 house,121,surname,Asian (est.),14,190
+house,121,surname,Hispanic (est.),5,26
 house,121,surname,Hispanic (est.),6,1542
 house,121,surname,Hispanic (est.),7,1559
 house,121,surname,Hispanic (est.),8,903
@@ -2176,6 +2343,7 @@ house,121,surname,Hispanic (est.),12,1695
 house,121,surname,Hispanic (est.),13,1
 house,121,surname,Hispanic (est.),14,1544
 house,121,surname,Hispanic (est.),20,1
+house,122,surname,All others (est.),5,130
 house,122,surname,All others (est.),6,4585
 house,122,surname,All others (est.),7,4799
 house,122,surname,All others (est.),8,3579
@@ -2186,6 +2354,7 @@ house,122,surname,All others (est.),12,5100
 house,122,surname,All others (est.),13,1
 house,122,surname,All others (est.),14,4160
 house,122,surname,All others (est.),20,1
+house,122,surname,Asian (est.),5,5
 house,122,surname,Asian (est.),6,271
 house,122,surname,Asian (est.),7,301
 house,122,surname,Asian (est.),8,192
@@ -2194,6 +2363,7 @@ house,122,surname,Asian (est.),10,10
 house,122,surname,Asian (est.),11,15
 house,122,surname,Asian (est.),12,276
 house,122,surname,Asian (est.),14,214
+house,122,surname,Hispanic (est.),5,20
 house,122,surname,Hispanic (est.),6,1917
 house,122,surname,Hispanic (est.),7,1919
 house,122,surname,Hispanic (est.),8,1366
@@ -2203,6 +2373,7 @@ house,122,surname,Hispanic (est.),11,104
 house,122,surname,Hispanic (est.),12,1997
 house,122,surname,Hispanic (est.),13,2
 house,122,surname,Hispanic (est.),14,1971
+house,123,surname,All others (est.),5,58
 house,123,surname,All others (est.),6,1890
 house,123,surname,All others (est.),7,1934
 house,123,surname,All others (est.),8,1393
@@ -2213,6 +2384,7 @@ house,123,surname,All others (est.),12,2086
 house,123,surname,All others (est.),13,1
 house,123,surname,All others (est.),14,1961
 house,123,surname,All others (est.),20,1
+house,123,surname,Asian (est.),5,4
 house,123,surname,Asian (est.),6,97
 house,123,surname,Asian (est.),7,91
 house,123,surname,Asian (est.),8,74
@@ -2220,6 +2392,7 @@ house,123,surname,Asian (est.),10,2
 house,123,surname,Asian (est.),11,5
 house,123,surname,Asian (est.),12,100
 house,123,surname,Asian (est.),14,91
+house,123,surname,Hispanic (est.),5,37
 house,123,surname,Hispanic (est.),6,1721
 house,123,surname,Hispanic (est.),7,1634
 house,123,surname,Hispanic (est.),8,1127
@@ -2229,6 +2402,7 @@ house,123,surname,Hispanic (est.),11,87
 house,123,surname,Hispanic (est.),12,1901
 house,123,surname,Hispanic (est.),13,2
 house,123,surname,Hispanic (est.),14,1987
+house,124,surname,All others (est.),5,38
 house,124,surname,All others (est.),6,1078
 house,124,surname,All others (est.),7,1073
 house,124,surname,All others (est.),8,786
@@ -2237,6 +2411,7 @@ house,124,surname,All others (est.),10,26
 house,124,surname,All others (est.),11,50
 house,124,surname,All others (est.),12,1018
 house,124,surname,All others (est.),14,955
+house,124,surname,Asian (est.),5,5
 house,124,surname,Asian (est.),6,76
 house,124,surname,Asian (est.),7,75
 house,124,surname,Asian (est.),8,46
@@ -2244,6 +2419,7 @@ house,124,surname,Asian (est.),10,1
 house,124,surname,Asian (est.),11,2
 house,124,surname,Asian (est.),12,73
 house,124,surname,Asian (est.),14,63
+house,124,surname,Hispanic (est.),5,32
 house,124,surname,Hispanic (est.),6,1825
 house,124,surname,Hispanic (est.),7,1675
 house,124,surname,Hispanic (est.),8,998
@@ -2253,6 +2429,7 @@ house,124,surname,Hispanic (est.),11,77
 house,124,surname,Hispanic (est.),12,1676
 house,124,surname,Hispanic (est.),13,1
 house,124,surname,Hispanic (est.),14,1588
+house,125,surname,All others (est.),5,57
 house,125,surname,All others (est.),6,2138
 house,125,surname,All others (est.),7,2143
 house,125,surname,All others (est.),8,1503
@@ -2261,6 +2438,7 @@ house,125,surname,All others (est.),10,43
 house,125,surname,All others (est.),11,105
 house,125,surname,All others (est.),12,2101
 house,125,surname,All others (est.),14,1630
+house,125,surname,Asian (est.),5,4
 house,125,surname,Asian (est.),6,152
 house,125,surname,Asian (est.),7,140
 house,125,surname,Asian (est.),8,86
@@ -2268,6 +2446,7 @@ house,125,surname,Asian (est.),10,2
 house,125,surname,Asian (est.),11,4
 house,125,surname,Asian (est.),12,129
 house,125,surname,Asian (est.),14,104
+house,125,surname,Hispanic (est.),5,41
 house,125,surname,Hispanic (est.),6,2341
 house,125,surname,Hispanic (est.),7,2294
 house,125,surname,Hispanic (est.),8,1514
@@ -2277,6 +2456,7 @@ house,125,surname,Hispanic (est.),11,101
 house,125,surname,Hispanic (est.),12,2348
 house,125,surname,Hispanic (est.),13,1
 house,125,surname,Hispanic (est.),14,2046
+house,126,surname,All others (est.),5,207
 house,126,surname,All others (est.),6,435
 house,126,surname,All others (est.),7,490
 house,126,surname,All others (est.),8,257
@@ -2288,6 +2468,7 @@ house,126,surname,All others (est.),13,290
 house,126,surname,All others (est.),14,2059
 house,126,surname,All others (est.),17,146
 house,126,surname,All others (est.),20,727
+house,126,surname,Asian (est.),5,10
 house,126,surname,Asian (est.),6,30
 house,126,surname,Asian (est.),7,61
 house,126,surname,Asian (est.),8,20
@@ -2299,6 +2480,7 @@ house,126,surname,Asian (est.),13,17
 house,126,surname,Asian (est.),14,143
 house,126,surname,Asian (est.),17,11
 house,126,surname,Asian (est.),20,40
+house,126,surname,Hispanic (est.),5,47
 house,126,surname,Hispanic (est.),6,75
 house,126,surname,Hispanic (est.),7,87
 house,126,surname,Hispanic (est.),8,45
@@ -2310,6 +2492,7 @@ house,126,surname,Hispanic (est.),13,65
 house,126,surname,Hispanic (est.),14,418
 house,126,surname,Hispanic (est.),17,14
 house,126,surname,Hispanic (est.),20,87
+house,127,surname,All others (est.),5,260
 house,127,surname,All others (est.),6,489
 house,127,surname,All others (est.),7,514
 house,127,surname,All others (est.),8,258
@@ -2321,6 +2504,7 @@ house,127,surname,All others (est.),13,356
 house,127,surname,All others (est.),14,2456
 house,127,surname,All others (est.),17,111
 house,127,surname,All others (est.),20,775
+house,127,surname,Asian (est.),5,7
 house,127,surname,Asian (est.),6,16
 house,127,surname,Asian (est.),7,22
 house,127,surname,Asian (est.),8,8
@@ -2332,6 +2516,7 @@ house,127,surname,Asian (est.),13,9
 house,127,surname,Asian (est.),14,106
 house,127,surname,Asian (est.),17,10
 house,127,surname,Asian (est.),20,28
+house,127,surname,Hispanic (est.),5,62
 house,127,surname,Hispanic (est.),6,88
 house,127,surname,Hispanic (est.),7,93
 house,127,surname,Hispanic (est.),8,44
@@ -2343,6 +2528,7 @@ house,127,surname,Hispanic (est.),13,92
 house,127,surname,Hispanic (est.),14,513
 house,127,surname,Hispanic (est.),17,16
 house,127,surname,Hispanic (est.),20,92
+house,128,surname,All others (est.),5,124
 house,128,surname,All others (est.),6,314
 house,128,surname,All others (est.),7,311
 house,128,surname,All others (est.),8,161
@@ -2354,6 +2540,7 @@ house,128,surname,All others (est.),13,215
 house,128,surname,All others (est.),14,1676
 house,128,surname,All others (est.),17,52
 house,128,surname,All others (est.),20,623
+house,128,surname,Asian (est.),5,4
 house,128,surname,Asian (est.),6,9
 house,128,surname,Asian (est.),7,10
 house,128,surname,Asian (est.),8,6
@@ -2365,6 +2552,7 @@ house,128,surname,Asian (est.),13,5
 house,128,surname,Asian (est.),14,49
 house,128,surname,Asian (est.),17,2
 house,128,surname,Asian (est.),20,17
+house,128,surname,Hispanic (est.),5,55
 house,128,surname,Hispanic (est.),6,82
 house,128,surname,Hispanic (est.),7,87
 house,128,surname,Hispanic (est.),8,48
@@ -2376,6 +2564,7 @@ house,128,surname,Hispanic (est.),13,71
 house,128,surname,Hispanic (est.),14,506
 house,128,surname,Hispanic (est.),17,8
 house,128,surname,Hispanic (est.),20,100
+house,129,surname,All others (est.),5,197
 house,129,surname,All others (est.),6,432
 house,129,surname,All others (est.),7,453
 house,129,surname,All others (est.),8,267
@@ -2387,6 +2576,7 @@ house,129,surname,All others (est.),13,340
 house,129,surname,All others (est.),14,2494
 house,129,surname,All others (est.),17,140
 house,129,surname,All others (est.),20,825
+house,129,surname,Asian (est.),5,27
 house,129,surname,Asian (est.),6,27
 house,129,surname,Asian (est.),7,41
 house,129,surname,Asian (est.),8,21
@@ -2398,6 +2588,7 @@ house,129,surname,Asian (est.),13,24
 house,129,surname,Asian (est.),14,197
 house,129,surname,Asian (est.),17,8
 house,129,surname,Asian (est.),20,50
+house,129,surname,Hispanic (est.),5,51
 house,129,surname,Hispanic (est.),6,82
 house,129,surname,Hispanic (est.),7,109
 house,129,surname,Hispanic (est.),8,52
@@ -2409,6 +2600,7 @@ house,129,surname,Hispanic (est.),13,67
 house,129,surname,Hispanic (est.),14,595
 house,129,surname,Hispanic (est.),17,19
 house,129,surname,Hispanic (est.),20,132
+house,13,surname,All others (est.),5,518
 house,13,surname,All others (est.),6,1850
 house,13,surname,All others (est.),7,1923
 house,13,surname,All others (est.),8,1782
@@ -2421,6 +2613,7 @@ house,13,surname,All others (est.),14,3996
 house,13,surname,All others (est.),15,122
 house,13,surname,All others (est.),16,82
 house,13,surname,All others (est.),20,71
+house,13,surname,Asian (est.),5,8
 house,13,surname,Asian (est.),6,36
 house,13,surname,Asian (est.),7,29
 house,13,surname,Asian (est.),8,28
@@ -2433,6 +2626,7 @@ house,13,surname,Asian (est.),14,66
 house,13,surname,Asian (est.),15,2
 house,13,surname,Asian (est.),16,2
 house,13,surname,Asian (est.),20,1
+house,13,surname,Hispanic (est.),5,46
 house,13,surname,Hispanic (est.),6,273
 house,13,surname,Hispanic (est.),7,262
 house,13,surname,Hispanic (est.),8,292
@@ -2445,6 +2639,7 @@ house,13,surname,Hispanic (est.),14,429
 house,13,surname,Hispanic (est.),15,11
 house,13,surname,Hispanic (est.),16,7
 house,13,surname,Hispanic (est.),20,7
+house,130,surname,All others (est.),5,278
 house,130,surname,All others (est.),6,483
 house,130,surname,All others (est.),7,616
 house,130,surname,All others (est.),8,258
@@ -2456,6 +2651,7 @@ house,130,surname,All others (est.),13,289
 house,130,surname,All others (est.),14,1935
 house,130,surname,All others (est.),17,71
 house,130,surname,All others (est.),20,507
+house,130,surname,Asian (est.),5,25
 house,130,surname,Asian (est.),6,23
 house,130,surname,Asian (est.),7,40
 house,130,surname,Asian (est.),8,13
@@ -2467,6 +2663,7 @@ house,130,surname,Asian (est.),13,22
 house,130,surname,Asian (est.),14,167
 house,130,surname,Asian (est.),17,5
 house,130,surname,Asian (est.),20,32
+house,130,surname,Hispanic (est.),5,59
 house,130,surname,Hispanic (est.),6,67
 house,130,surname,Hispanic (est.),7,100
 house,130,surname,Hispanic (est.),8,50
@@ -2478,6 +2675,7 @@ house,130,surname,Hispanic (est.),13,69
 house,130,surname,Hispanic (est.),14,398
 house,130,surname,Hispanic (est.),17,6
 house,130,surname,Hispanic (est.),20,60
+house,131,surname,All others (est.),5,126
 house,131,surname,All others (est.),6,236
 house,131,surname,All others (est.),7,267
 house,131,surname,All others (est.),8,139
@@ -2489,6 +2687,7 @@ house,131,surname,All others (est.),13,131
 house,131,surname,All others (est.),14,1229
 house,131,surname,All others (est.),17,69
 house,131,surname,All others (est.),20,535
+house,131,surname,Asian (est.),5,16
 house,131,surname,Asian (est.),6,19
 house,131,surname,Asian (est.),7,47
 house,131,surname,Asian (est.),8,16
@@ -2500,6 +2699,7 @@ house,131,surname,Asian (est.),13,19
 house,131,surname,Asian (est.),14,133
 house,131,surname,Asian (est.),17,6
 house,131,surname,Asian (est.),20,48
+house,131,surname,Hispanic (est.),5,53
 house,131,surname,Hispanic (est.),6,83
 house,131,surname,Hispanic (est.),7,89
 house,131,surname,Hispanic (est.),8,41
@@ -2511,6 +2711,7 @@ house,131,surname,Hispanic (est.),13,53
 house,131,surname,Hispanic (est.),14,454
 house,131,surname,Hispanic (est.),17,10
 house,131,surname,Hispanic (est.),20,94
+house,132,surname,All others (est.),5,390
 house,132,surname,All others (est.),6,542
 house,132,surname,All others (est.),7,727
 house,132,surname,All others (est.),8,387
@@ -2522,6 +2723,7 @@ house,132,surname,All others (est.),13,479
 house,132,surname,All others (est.),14,2284
 house,132,surname,All others (est.),17,96
 house,132,surname,All others (est.),20,536
+house,132,surname,Asian (est.),5,41
 house,132,surname,Asian (est.),6,67
 house,132,surname,Asian (est.),7,73
 house,132,surname,Asian (est.),8,44
@@ -2533,6 +2735,7 @@ house,132,surname,Asian (est.),13,36
 house,132,surname,Asian (est.),14,283
 house,132,surname,Asian (est.),17,12
 house,132,surname,Asian (est.),20,39
+house,132,surname,Hispanic (est.),5,98
 house,132,surname,Hispanic (est.),6,115
 house,132,surname,Hispanic (est.),7,169
 house,132,surname,Hispanic (est.),8,62
@@ -2544,6 +2747,7 @@ house,132,surname,Hispanic (est.),13,103
 house,132,surname,Hispanic (est.),14,554
 house,132,surname,Hispanic (est.),17,11
 house,132,surname,Hispanic (est.),20,74
+house,133,surname,All others (est.),5,279
 house,133,surname,All others (est.),6,598
 house,133,surname,All others (est.),7,635
 house,133,surname,All others (est.),8,289
@@ -2555,6 +2759,7 @@ house,133,surname,All others (est.),13,282
 house,133,surname,All others (est.),14,2137
 house,133,surname,All others (est.),17,124
 house,133,surname,All others (est.),20,810
+house,133,surname,Asian (est.),5,30
 house,133,surname,Asian (est.),6,44
 house,133,surname,Asian (est.),7,59
 house,133,surname,Asian (est.),8,25
@@ -2566,6 +2771,7 @@ house,133,surname,Asian (est.),13,18
 house,133,surname,Asian (est.),14,197
 house,133,surname,Asian (est.),17,12
 house,133,surname,Asian (est.),20,62
+house,133,surname,Hispanic (est.),5,44
 house,133,surname,Hispanic (est.),6,62
 house,133,surname,Hispanic (est.),7,81
 house,133,surname,Hispanic (est.),8,34
@@ -2577,6 +2783,7 @@ house,133,surname,Hispanic (est.),13,44
 house,133,surname,Hispanic (est.),14,332
 house,133,surname,Hispanic (est.),17,18
 house,133,surname,Hispanic (est.),20,61
+house,134,surname,All others (est.),5,415
 house,134,surname,All others (est.),6,736
 house,134,surname,All others (est.),7,870
 house,134,surname,All others (est.),8,436
@@ -2588,6 +2795,7 @@ house,134,surname,All others (est.),13,505
 house,134,surname,All others (est.),14,2914
 house,134,surname,All others (est.),17,222
 house,134,surname,All others (est.),20,993
+house,134,surname,Asian (est.),5,38
 house,134,surname,Asian (est.),6,70
 house,134,surname,Asian (est.),7,112
 house,134,surname,Asian (est.),8,69
@@ -2599,6 +2807,7 @@ house,134,surname,Asian (est.),13,56
 house,134,surname,Asian (est.),14,351
 house,134,surname,Asian (est.),17,26
 house,134,surname,Asian (est.),20,72
+house,134,surname,Hispanic (est.),5,58
 house,134,surname,Hispanic (est.),6,102
 house,134,surname,Hispanic (est.),7,112
 house,134,surname,Hispanic (est.),8,64
@@ -2610,6 +2819,7 @@ house,134,surname,Hispanic (est.),13,82
 house,134,surname,Hispanic (est.),14,443
 house,134,surname,Hispanic (est.),17,16
 house,134,surname,Hispanic (est.),20,81
+house,135,surname,All others (est.),5,152
 house,135,surname,All others (est.),6,222
 house,135,surname,All others (est.),7,298
 house,135,surname,All others (est.),8,164
@@ -2621,6 +2831,7 @@ house,135,surname,All others (est.),13,207
 house,135,surname,All others (est.),14,1103
 house,135,surname,All others (est.),17,45
 house,135,surname,All others (est.),20,272
+house,135,surname,Asian (est.),5,16
 house,135,surname,Asian (est.),6,25
 house,135,surname,Asian (est.),7,53
 house,135,surname,Asian (est.),8,23
@@ -2632,6 +2843,7 @@ house,135,surname,Asian (est.),13,21
 house,135,surname,Asian (est.),14,172
 house,135,surname,Asian (est.),17,2
 house,135,surname,Asian (est.),20,30
+house,135,surname,Hispanic (est.),5,82
 house,135,surname,Hispanic (est.),6,91
 house,135,surname,Hispanic (est.),7,141
 house,135,surname,Hispanic (est.),8,74
@@ -2668,6 +2880,7 @@ house,136,surname,Asian (est.),13,422
 house,136,surname,Asian (est.),14,471
 house,136,surname,Asian (est.),18,2
 house,136,surname,Asian (est.),19,7
+house,136,surname,Hispanic (est.),5,1
 house,136,surname,Hispanic (est.),6,679
 house,136,surname,Hispanic (est.),7,692
 house,136,surname,Hispanic (est.),8,733
@@ -2681,6 +2894,7 @@ house,136,surname,Hispanic (est.),16,5
 house,136,surname,Hispanic (est.),17,2
 house,136,surname,Hispanic (est.),18,3
 house,136,surname,Hispanic (est.),19,13
+house,137,surname,All others (est.),5,70
 house,137,surname,All others (est.),6,149
 house,137,surname,All others (est.),7,149
 house,137,surname,All others (est.),8,96
@@ -2692,6 +2906,7 @@ house,137,surname,All others (est.),13,92
 house,137,surname,All others (est.),14,634
 house,137,surname,All others (est.),17,43
 house,137,surname,All others (est.),20,215
+house,137,surname,Asian (est.),5,14
 house,137,surname,Asian (est.),6,21
 house,137,surname,Asian (est.),7,30
 house,137,surname,Asian (est.),8,21
@@ -2703,6 +2918,7 @@ house,137,surname,Asian (est.),13,16
 house,137,surname,Asian (est.),14,117
 house,137,surname,Asian (est.),17,9
 house,137,surname,Asian (est.),20,32
+house,137,surname,Hispanic (est.),5,28
 house,137,surname,Hispanic (est.),6,45
 house,137,surname,Hispanic (est.),7,57
 house,137,surname,Hispanic (est.),8,23
@@ -2714,6 +2930,7 @@ house,137,surname,Hispanic (est.),13,36
 house,137,surname,Hispanic (est.),14,244
 house,137,surname,Hispanic (est.),17,11
 house,137,surname,Hispanic (est.),20,38
+house,138,surname,All others (est.),5,224
 house,138,surname,All others (est.),6,498
 house,138,surname,All others (est.),7,504
 house,138,surname,All others (est.),8,187
@@ -2725,6 +2942,7 @@ house,138,surname,All others (est.),13,249
 house,138,surname,All others (est.),14,1646
 house,138,surname,All others (est.),17,126
 house,138,surname,All others (est.),20,556
+house,138,surname,Asian (est.),5,24
 house,138,surname,Asian (est.),6,34
 house,138,surname,Asian (est.),7,48
 house,138,surname,Asian (est.),8,22
@@ -2736,6 +2954,7 @@ house,138,surname,Asian (est.),13,33
 house,138,surname,Asian (est.),14,236
 house,138,surname,Asian (est.),17,10
 house,138,surname,Asian (est.),20,69
+house,138,surname,Hispanic (est.),5,61
 house,138,surname,Hispanic (est.),6,79
 house,138,surname,Hispanic (est.),7,112
 house,138,surname,Hispanic (est.),8,50
@@ -2747,6 +2966,7 @@ house,138,surname,Hispanic (est.),13,63
 house,138,surname,Hispanic (est.),14,451
 house,138,surname,Hispanic (est.),17,14
 house,138,surname,Hispanic (est.),20,76
+house,139,surname,All others (est.),5,201
 house,139,surname,All others (est.),6,417
 house,139,surname,All others (est.),7,359
 house,139,surname,All others (est.),8,223
@@ -2758,6 +2978,7 @@ house,139,surname,All others (est.),13,222
 house,139,surname,All others (est.),14,1605
 house,139,surname,All others (est.),17,117
 house,139,surname,All others (est.),20,683
+house,139,surname,Asian (est.),5,14
 house,139,surname,Asian (est.),6,19
 house,139,surname,Asian (est.),7,18
 house,139,surname,Asian (est.),8,18
@@ -2769,6 +2990,7 @@ house,139,surname,Asian (est.),13,17
 house,139,surname,Asian (est.),14,106
 house,139,surname,Asian (est.),17,3
 house,139,surname,Asian (est.),20,30
+house,139,surname,Hispanic (est.),5,52
 house,139,surname,Hispanic (est.),6,79
 house,139,surname,Hispanic (est.),7,92
 house,139,surname,Hispanic (est.),8,51
@@ -2807,6 +3029,7 @@ house,14,surname,Hispanic (est.),11,358
 house,14,surname,Hispanic (est.),12,693
 house,14,surname,Hispanic (est.),13,691
 house,14,surname,Hispanic (est.),14,614
+house,140,surname,All others (est.),5,29
 house,140,surname,All others (est.),6,121
 house,140,surname,All others (est.),7,76
 house,140,surname,All others (est.),8,39
@@ -2818,6 +3041,7 @@ house,140,surname,All others (est.),13,36
 house,140,surname,All others (est.),14,433
 house,140,surname,All others (est.),17,39
 house,140,surname,All others (est.),20,202
+house,140,surname,Asian (est.),5,1
 house,140,surname,Asian (est.),6,7
 house,140,surname,Asian (est.),7,6
 house,140,surname,Asian (est.),8,3
@@ -2829,6 +3053,7 @@ house,140,surname,Asian (est.),13,4
 house,140,surname,Asian (est.),14,40
 house,140,surname,Asian (est.),17,2
 house,140,surname,Asian (est.),20,11
+house,140,surname,Hispanic (est.),5,61
 house,140,surname,Hispanic (est.),6,104
 house,140,surname,Hispanic (est.),7,120
 house,140,surname,Hispanic (est.),8,62
@@ -2840,6 +3065,7 @@ house,140,surname,Hispanic (est.),13,80
 house,140,surname,Hispanic (est.),14,703
 house,140,surname,Hispanic (est.),17,22
 house,140,surname,Hispanic (est.),20,118
+house,141,surname,All others (est.),5,125
 house,141,surname,All others (est.),6,264
 house,141,surname,All others (est.),7,254
 house,141,surname,All others (est.),8,131
@@ -2851,6 +3077,7 @@ house,141,surname,All others (est.),13,150
 house,141,surname,All others (est.),14,1098
 house,141,surname,All others (est.),17,74
 house,141,surname,All others (est.),20,532
+house,141,surname,Asian (est.),5,4
 house,141,surname,Asian (est.),6,4
 house,141,surname,Asian (est.),7,8
 house,141,surname,Asian (est.),8,9
@@ -2862,6 +3089,7 @@ house,141,surname,Asian (est.),13,3
 house,141,surname,Asian (est.),14,37
 house,141,surname,Asian (est.),17,3
 house,141,surname,Asian (est.),20,9
+house,141,surname,Hispanic (est.),5,32
 house,141,surname,Hispanic (est.),6,53
 house,141,surname,Hispanic (est.),7,65
 house,141,surname,Hispanic (est.),8,35
@@ -2873,6 +3101,7 @@ house,141,surname,Hispanic (est.),13,50
 house,141,surname,Hispanic (est.),14,363
 house,141,surname,Hispanic (est.),17,5
 house,141,surname,Hispanic (est.),20,57
+house,142,surname,All others (est.),5,158
 house,142,surname,All others (est.),6,289
 house,142,surname,All others (est.),7,305
 house,142,surname,All others (est.),8,182
@@ -2884,6 +3113,7 @@ house,142,surname,All others (est.),13,222
 house,142,surname,All others (est.),14,1288
 house,142,surname,All others (est.),17,62
 house,142,surname,All others (est.),20,503
+house,142,surname,Asian (est.),5,5
 house,142,surname,Asian (est.),6,10
 house,142,surname,Asian (est.),7,10
 house,142,surname,Asian (est.),8,6
@@ -2895,6 +3125,7 @@ house,142,surname,Asian (est.),13,9
 house,142,surname,Asian (est.),14,53
 house,142,surname,Asian (est.),17,1
 house,142,surname,Asian (est.),20,12
+house,142,surname,Hispanic (est.),5,78
 house,142,surname,Hispanic (est.),6,89
 house,142,surname,Hispanic (est.),7,97
 house,142,surname,Hispanic (est.),8,50
@@ -2906,6 +3137,7 @@ house,142,surname,Hispanic (est.),13,66
 house,142,surname,Hispanic (est.),14,489
 house,142,surname,Hispanic (est.),17,9
 house,142,surname,Hispanic (est.),20,81
+house,143,surname,All others (est.),5,91
 house,143,surname,All others (est.),6,140
 house,143,surname,All others (est.),7,129
 house,143,surname,All others (est.),8,106
@@ -2917,6 +3149,7 @@ house,143,surname,All others (est.),13,101
 house,143,surname,All others (est.),14,635
 house,143,surname,All others (est.),17,49
 house,143,surname,All others (est.),20,287
+house,143,surname,Asian (est.),5,5
 house,143,surname,Asian (est.),6,9
 house,143,surname,Asian (est.),7,7
 house,143,surname,Asian (est.),8,3
@@ -2928,6 +3161,7 @@ house,143,surname,Asian (est.),13,3
 house,143,surname,Asian (est.),14,32
 house,143,surname,Asian (est.),17,2
 house,143,surname,Asian (est.),20,8
+house,143,surname,Hispanic (est.),5,86
 house,143,surname,Hispanic (est.),6,122
 house,143,surname,Hispanic (est.),7,144
 house,143,surname,Hispanic (est.),8,73
@@ -2939,6 +3173,7 @@ house,143,surname,Hispanic (est.),13,86
 house,143,surname,Hispanic (est.),14,654
 house,143,surname,Hispanic (est.),17,23
 house,143,surname,Hispanic (est.),20,150
+house,144,surname,All others (est.),5,47
 house,144,surname,All others (est.),6,132
 house,144,surname,All others (est.),7,99
 house,144,surname,All others (est.),8,52
@@ -2950,6 +3185,7 @@ house,144,surname,All others (est.),13,66
 house,144,surname,All others (est.),14,650
 house,144,surname,All others (est.),17,42
 house,144,surname,All others (est.),20,282
+house,144,surname,Asian (est.),5,5
 house,144,surname,Asian (est.),6,10
 house,144,surname,Asian (est.),7,17
 house,144,surname,Asian (est.),8,9
@@ -2961,6 +3197,7 @@ house,144,surname,Asian (est.),13,8
 house,144,surname,Asian (est.),14,68
 house,144,surname,Asian (est.),17,4
 house,144,surname,Asian (est.),20,15
+house,144,surname,Hispanic (est.),5,67
 house,144,surname,Hispanic (est.),6,115
 house,144,surname,Hispanic (est.),7,143
 house,144,surname,Hispanic (est.),8,58
@@ -2972,6 +3209,7 @@ house,144,surname,Hispanic (est.),13,65
 house,144,surname,Hispanic (est.),14,774
 house,144,surname,Hispanic (est.),17,20
 house,144,surname,Hispanic (est.),20,151
+house,145,surname,All others (est.),5,152
 house,145,surname,All others (est.),6,257
 house,145,surname,All others (est.),7,283
 house,145,surname,All others (est.),8,172
@@ -2983,6 +3221,7 @@ house,145,surname,All others (est.),13,181
 house,145,surname,All others (est.),14,1290
 house,145,surname,All others (est.),17,37
 house,145,surname,All others (est.),20,302
+house,145,surname,Asian (est.),5,16
 house,145,surname,Asian (est.),6,14
 house,145,surname,Asian (est.),7,21
 house,145,surname,Asian (est.),8,11
@@ -2994,6 +3233,7 @@ house,145,surname,Asian (est.),13,13
 house,145,surname,Asian (est.),14,114
 house,145,surname,Asian (est.),17,2
 house,145,surname,Asian (est.),20,18
+house,145,surname,Hispanic (est.),5,76
 house,145,surname,Hispanic (est.),6,158
 house,145,surname,Hispanic (est.),7,157
 house,145,surname,Hispanic (est.),8,79
@@ -3005,6 +3245,7 @@ house,145,surname,Hispanic (est.),13,108
 house,145,surname,Hispanic (est.),14,807
 house,145,surname,Hispanic (est.),17,28
 house,145,surname,Hispanic (est.),20,209
+house,146,surname,All others (est.),5,182
 house,146,surname,All others (est.),6,368
 house,146,surname,All others (est.),7,423
 house,146,surname,All others (est.),8,189
@@ -3016,6 +3257,7 @@ house,146,surname,All others (est.),13,220
 house,146,surname,All others (est.),14,1863
 house,146,surname,All others (est.),17,79
 house,146,surname,All others (est.),20,712
+house,146,surname,Asian (est.),5,9
 house,146,surname,Asian (est.),6,24
 house,146,surname,Asian (est.),7,28
 house,146,surname,Asian (est.),8,12
@@ -3027,6 +3269,7 @@ house,146,surname,Asian (est.),13,9
 house,146,surname,Asian (est.),14,118
 house,146,surname,Asian (est.),17,5
 house,146,surname,Asian (est.),20,27
+house,146,surname,Hispanic (est.),5,29
 house,146,surname,Hispanic (est.),6,56
 house,146,surname,Hispanic (est.),7,72
 house,146,surname,Hispanic (est.),8,27
@@ -3038,6 +3281,7 @@ house,146,surname,Hispanic (est.),13,29
 house,146,surname,Hispanic (est.),14,356
 house,146,surname,Hispanic (est.),17,8
 house,146,surname,Hispanic (est.),20,67
+house,147,surname,All others (est.),5,199
 house,147,surname,All others (est.),6,408
 house,147,surname,All others (est.),7,399
 house,147,surname,All others (est.),8,175
@@ -3049,6 +3293,7 @@ house,147,surname,All others (est.),13,223
 house,147,surname,All others (est.),14,1944
 house,147,surname,All others (est.),17,51
 house,147,surname,All others (est.),20,615
+house,147,surname,Asian (est.),5,23
 house,147,surname,Asian (est.),6,25
 house,147,surname,Asian (est.),7,43
 house,147,surname,Asian (est.),8,17
@@ -3060,6 +3305,7 @@ house,147,surname,Asian (est.),13,25
 house,147,surname,Asian (est.),14,144
 house,147,surname,Asian (est.),17,4
 house,147,surname,Asian (est.),20,24
+house,147,surname,Hispanic (est.),5,51
 house,147,surname,Hispanic (est.),6,89
 house,147,surname,Hispanic (est.),7,95
 house,147,surname,Hispanic (est.),8,45
@@ -3071,6 +3317,7 @@ house,147,surname,Hispanic (est.),13,66
 house,147,surname,Hispanic (est.),14,554
 house,147,surname,Hispanic (est.),17,7
 house,147,surname,Hispanic (est.),20,71
+house,148,surname,All others (est.),5,119
 house,148,surname,All others (est.),6,253
 house,148,surname,All others (est.),7,216
 house,148,surname,All others (est.),8,128
@@ -3082,6 +3329,7 @@ house,148,surname,All others (est.),13,129
 house,148,surname,All others (est.),14,960
 house,148,surname,All others (est.),17,65
 house,148,surname,All others (est.),20,327
+house,148,surname,Asian (est.),5,18
 house,148,surname,Asian (est.),6,25
 house,148,surname,Asian (est.),7,23
 house,148,surname,Asian (est.),8,11
@@ -3093,6 +3341,7 @@ house,148,surname,Asian (est.),13,15
 house,148,surname,Asian (est.),14,157
 house,148,surname,Asian (est.),17,4
 house,148,surname,Asian (est.),20,46
+house,148,surname,Hispanic (est.),5,66
 house,148,surname,Hispanic (est.),6,83
 house,148,surname,Hispanic (est.),7,98
 house,148,surname,Hispanic (est.),8,46
@@ -3104,6 +3353,7 @@ house,148,surname,Hispanic (est.),13,53
 house,148,surname,Hispanic (est.),14,520
 house,148,surname,Hispanic (est.),17,16
 house,148,surname,Hispanic (est.),20,85
+house,149,surname,All others (est.),5,123
 house,149,surname,All others (est.),6,206
 house,149,surname,All others (est.),7,206
 house,149,surname,All others (est.),8,121
@@ -3115,6 +3365,7 @@ house,149,surname,All others (est.),13,145
 house,149,surname,All others (est.),14,776
 house,149,surname,All others (est.),17,53
 house,149,surname,All others (est.),20,293
+house,149,surname,Asian (est.),5,49
 house,149,surname,Asian (est.),6,71
 house,149,surname,Asian (est.),7,136
 house,149,surname,Asian (est.),8,56
@@ -3126,6 +3377,7 @@ house,149,surname,Asian (est.),13,49
 house,149,surname,Asian (est.),14,306
 house,149,surname,Asian (est.),17,21
 house,149,surname,Asian (est.),20,83
+house,149,surname,Hispanic (est.),5,60
 house,149,surname,Hispanic (est.),6,74
 house,149,surname,Hispanic (est.),7,79
 house,149,surname,Hispanic (est.),8,48
@@ -3167,6 +3419,7 @@ house,15,surname,Hispanic (est.),12,560
 house,15,surname,Hispanic (est.),13,508
 house,15,surname,Hispanic (est.),14,640
 house,15,surname,Hispanic (est.),20,50
+house,150,surname,All others (est.),5,217
 house,150,surname,All others (est.),6,360
 house,150,surname,All others (est.),7,460
 house,150,surname,All others (est.),8,242
@@ -3178,6 +3431,7 @@ house,150,surname,All others (est.),13,245
 house,150,surname,All others (est.),14,1923
 house,150,surname,All others (est.),17,89
 house,150,surname,All others (est.),20,544
+house,150,surname,Asian (est.),5,18
 house,150,surname,Asian (est.),6,22
 house,150,surname,Asian (est.),7,40
 house,150,surname,Asian (est.),8,15
@@ -3189,6 +3443,7 @@ house,150,surname,Asian (est.),13,19
 house,150,surname,Asian (est.),14,143
 house,150,surname,Asian (est.),17,4
 house,150,surname,Asian (est.),20,26
+house,150,surname,Hispanic (est.),5,52
 house,150,surname,Hispanic (est.),6,77
 house,150,surname,Hispanic (est.),7,73
 house,150,surname,Hispanic (est.),8,41
@@ -3230,6 +3485,7 @@ house,16,surname,Hispanic (est.),12,531
 house,16,surname,Hispanic (est.),13,567
 house,16,surname,Hispanic (est.),14,654
 house,16,surname,Hispanic (est.),20,55
+house,17,surname,All others (est.),5,71
 house,17,surname,All others (est.),6,2599
 house,17,surname,All others (est.),7,3255
 house,17,surname,All others (est.),8,3302
@@ -3241,6 +3497,7 @@ house,17,surname,All others (est.),13,3976
 house,17,surname,All others (est.),14,4743
 house,17,surname,All others (est.),15,2
 house,17,surname,All others (est.),20,2
+house,17,surname,Asian (est.),5,4
 house,17,surname,Asian (est.),6,57
 house,17,surname,Asian (est.),7,77
 house,17,surname,Asian (est.),8,75
@@ -3250,6 +3507,7 @@ house,17,surname,Asian (est.),11,21
 house,17,surname,Asian (est.),12,55
 house,17,surname,Asian (est.),13,91
 house,17,surname,Asian (est.),14,100
+house,17,surname,Hispanic (est.),5,16
 house,17,surname,Hispanic (est.),6,669
 house,17,surname,Hispanic (est.),7,934
 house,17,surname,Hispanic (est.),8,1005
@@ -3259,6 +3517,7 @@ house,17,surname,Hispanic (est.),11,138
 house,17,surname,Hispanic (est.),12,666
 house,17,surname,Hispanic (est.),13,1061
 house,17,surname,Hispanic (est.),14,1335
+house,18,surname,All others (est.),5,75
 house,18,surname,All others (est.),6,2934
 house,18,surname,All others (est.),7,2856
 house,18,surname,All others (est.),8,3154
@@ -3269,6 +3528,7 @@ house,18,surname,All others (est.),12,3678
 house,18,surname,All others (est.),13,3828
 house,18,surname,All others (est.),14,4796
 house,18,surname,All others (est.),20,65
+house,18,surname,Asian (est.),5,1
 house,18,surname,Asian (est.),6,49
 house,18,surname,Asian (est.),7,56
 house,18,surname,Asian (est.),8,58
@@ -3279,6 +3539,7 @@ house,18,surname,Asian (est.),12,56
 house,18,surname,Asian (est.),13,67
 house,18,surname,Asian (est.),14,82
 house,18,surname,Asian (est.),20,4
+house,18,surname,Hispanic (est.),5,11
 house,18,surname,Hispanic (est.),6,578
 house,18,surname,Hispanic (est.),7,513
 house,18,surname,Hispanic (est.),8,601
@@ -3289,6 +3550,7 @@ house,18,surname,Hispanic (est.),12,528
 house,18,surname,Hispanic (est.),13,585
 house,18,surname,Hispanic (est.),14,594
 house,18,surname,Hispanic (est.),20,8
+house,19,surname,All others (est.),5,1619
 house,19,surname,All others (est.),6,5209
 house,19,surname,All others (est.),7,5850
 house,19,surname,All others (est.),8,6032
@@ -3302,6 +3564,7 @@ house,19,surname,All others (est.),15,89
 house,19,surname,All others (est.),18,45
 house,19,surname,All others (est.),19,22
 house,19,surname,All others (est.),20,408
+house,19,surname,Asian (est.),5,36
 house,19,surname,Asian (est.),6,217
 house,19,surname,Asian (est.),7,225
 house,19,surname,Asian (est.),8,254
@@ -3314,6 +3577,7 @@ house,19,surname,Asian (est.),14,294
 house,19,surname,Asian (est.),15,6
 house,19,surname,Asian (est.),18,1
 house,19,surname,Asian (est.),20,13
+house,19,surname,Hispanic (est.),5,249
 house,19,surname,Hispanic (est.),6,680
 house,19,surname,Hispanic (est.),7,653
 house,19,surname,Hispanic (est.),8,727
@@ -3327,6 +3591,7 @@ house,19,surname,Hispanic (est.),15,6
 house,19,surname,Hispanic (est.),18,1
 house,19,surname,Hispanic (est.),19,1
 house,19,surname,Hispanic (est.),20,32
+house,2,surname,All others (est.),5,99
 house,2,surname,All others (est.),6,2981
 house,2,surname,All others (est.),7,3199
 house,2,surname,All others (est.),8,3587
@@ -3337,6 +3602,7 @@ house,2,surname,All others (est.),12,3472
 house,2,surname,All others (est.),13,3862
 house,2,surname,All others (est.),14,3759
 house,2,surname,All others (est.),20,1
+house,2,surname,Asian (est.),5,3
 house,2,surname,Asian (est.),6,61
 house,2,surname,Asian (est.),7,51
 house,2,surname,Asian (est.),8,61
@@ -3346,6 +3612,7 @@ house,2,surname,Asian (est.),11,46
 house,2,surname,Asian (est.),12,54
 house,2,surname,Asian (est.),13,58
 house,2,surname,Asian (est.),14,57
+house,2,surname,Hispanic (est.),5,6
 house,2,surname,Hispanic (est.),6,360
 house,2,surname,Hispanic (est.),7,410
 house,2,surname,Hispanic (est.),8,412
@@ -3355,6 +3622,7 @@ house,2,surname,Hispanic (est.),11,359
 house,2,surname,Hispanic (est.),12,362
 house,2,surname,Hispanic (est.),13,366
 house,2,surname,Hispanic (est.),14,338
+house,20,surname,All others (est.),5,1
 house,20,surname,All others (est.),6,4546
 house,20,surname,All others (est.),7,4944
 house,20,surname,All others (est.),8,5186
@@ -3383,6 +3651,7 @@ house,20,surname,Asian (est.),17,1
 house,20,surname,Asian (est.),18,1
 house,20,surname,Asian (est.),19,7
 house,20,surname,Asian (est.),20,1
+house,20,surname,Hispanic (est.),5,1
 house,20,surname,Hispanic (est.),6,864
 house,20,surname,Hispanic (est.),7,870
 house,20,surname,Hispanic (est.),8,851
@@ -3396,6 +3665,7 @@ house,20,surname,Hispanic (est.),17,4
 house,20,surname,Hispanic (est.),18,4
 house,20,surname,Hispanic (est.),19,22
 house,20,surname,Hispanic (est.),20,1
+house,21,surname,All others (est.),5,61
 house,21,surname,All others (est.),6,2834
 house,21,surname,All others (est.),7,2779
 house,21,surname,All others (est.),8,3290
@@ -3407,6 +3677,7 @@ house,21,surname,All others (est.),13,4456
 house,21,surname,All others (est.),14,5605
 house,21,surname,All others (est.),15,26
 house,21,surname,All others (est.),20,94
+house,21,surname,Asian (est.),5,2
 house,21,surname,Asian (est.),6,74
 house,21,surname,Asian (est.),7,72
 house,21,surname,Asian (est.),8,89
@@ -3417,6 +3688,7 @@ house,21,surname,Asian (est.),12,75
 house,21,surname,Asian (est.),13,89
 house,21,surname,Asian (est.),14,103
 house,21,surname,Asian (est.),20,2
+house,21,surname,Hispanic (est.),5,4
 house,21,surname,Hispanic (est.),6,248
 house,21,surname,Hispanic (est.),7,241
 house,21,surname,Hispanic (est.),8,281
@@ -3428,6 +3700,7 @@ house,21,surname,Hispanic (est.),13,337
 house,21,surname,Hispanic (est.),14,454
 house,21,surname,Hispanic (est.),15,1
 house,21,surname,Hispanic (est.),20,6
+house,22,surname,All others (est.),5,62
 house,22,surname,All others (est.),6,2187
 house,22,surname,All others (est.),7,2088
 house,22,surname,All others (est.),8,2340
@@ -3439,6 +3712,7 @@ house,22,surname,All others (est.),13,3155
 house,22,surname,All others (est.),14,4138
 house,22,surname,All others (est.),15,60
 house,22,surname,All others (est.),20,348
+house,22,surname,Asian (est.),5,1
 house,22,surname,Asian (est.),6,134
 house,22,surname,Asian (est.),7,93
 house,22,surname,Asian (est.),8,125
@@ -3450,6 +3724,7 @@ house,22,surname,Asian (est.),13,87
 house,22,surname,Asian (est.),14,123
 house,22,surname,Asian (est.),15,2
 house,22,surname,Asian (est.),20,6
+house,22,surname,Hispanic (est.),5,2
 house,22,surname,Hispanic (est.),6,374
 house,22,surname,Hispanic (est.),7,376
 house,22,surname,Hispanic (est.),8,380
@@ -3461,6 +3736,7 @@ house,22,surname,Hispanic (est.),13,418
 house,22,surname,Hispanic (est.),14,506
 house,22,surname,Hispanic (est.),15,6
 house,22,surname,Hispanic (est.),20,26
+house,23,surname,All others (est.),5,74
 house,23,surname,All others (est.),6,2889
 house,23,surname,All others (est.),7,2919
 house,23,surname,All others (est.),8,1021
@@ -3475,6 +3751,7 @@ house,23,surname,All others (est.),16,9
 house,23,surname,All others (est.),18,16
 house,23,surname,All others (est.),19,15
 house,23,surname,All others (est.),20,12
+house,23,surname,Asian (est.),5,3
 house,23,surname,Asian (est.),6,109
 house,23,surname,Asian (est.),7,102
 house,23,surname,Asian (est.),8,30
@@ -3487,6 +3764,7 @@ house,23,surname,Asian (est.),14,154
 house,23,surname,Asian (est.),16,1
 house,23,surname,Asian (est.),19,1
 house,23,surname,Asian (est.),20,1
+house,23,surname,Hispanic (est.),5,10
 house,23,surname,Hispanic (est.),6,668
 house,23,surname,Hispanic (est.),7,616
 house,23,surname,Hispanic (est.),8,135
@@ -3498,6 +3776,7 @@ house,23,surname,Hispanic (est.),13,397
 house,23,surname,Hispanic (est.),14,1047
 house,23,surname,Hispanic (est.),18,4
 house,23,surname,Hispanic (est.),20,3
+house,24,surname,All others (est.),5,129
 house,24,surname,All others (est.),6,3859
 house,24,surname,All others (est.),7,3723
 house,24,surname,All others (est.),8,87
@@ -3512,6 +3791,7 @@ house,24,surname,All others (est.),16,44
 house,24,surname,All others (est.),18,9
 house,24,surname,All others (est.),19,37
 house,24,surname,All others (est.),20,16
+house,24,surname,Asian (est.),5,6
 house,24,surname,Asian (est.),6,193
 house,24,surname,Asian (est.),7,202
 house,24,surname,Asian (est.),8,3
@@ -3523,6 +3803,7 @@ house,24,surname,Asian (est.),14,254
 house,24,surname,Asian (est.),16,2
 house,24,surname,Asian (est.),19,2
 house,24,surname,Asian (est.),20,2
+house,24,surname,Hispanic (est.),5,18
 house,24,surname,Hispanic (est.),6,695
 house,24,surname,Hispanic (est.),7,682
 house,24,surname,Hispanic (est.),8,10
@@ -3537,6 +3818,7 @@ house,24,surname,Hispanic (est.),16,5
 house,24,surname,Hispanic (est.),18,1
 house,24,surname,Hispanic (est.),19,2
 house,24,surname,Hispanic (est.),20,4
+house,25,surname,All others (est.),5,43
 house,25,surname,All others (est.),6,2781
 house,25,surname,All others (est.),7,2716
 house,25,surname,All others (est.),8,3081
@@ -3547,6 +3829,7 @@ house,25,surname,All others (est.),12,3820
 house,25,surname,All others (est.),13,4255
 house,25,surname,All others (est.),14,5718
 house,25,surname,All others (est.),20,1
+house,25,surname,Asian (est.),5,2
 house,25,surname,Asian (est.),6,218
 house,25,surname,Asian (est.),7,191
 house,25,surname,Asian (est.),8,230
@@ -3556,6 +3839,7 @@ house,25,surname,Asian (est.),12,215
 house,25,surname,Asian (est.),13,258
 house,25,surname,Asian (est.),14,253
 house,25,surname,Asian (est.),20,2
+house,25,surname,Hispanic (est.),5,4
 house,25,surname,Hispanic (est.),6,601
 house,25,surname,Hispanic (est.),7,570
 house,25,surname,Hispanic (est.),8,610
@@ -3564,6 +3848,7 @@ house,25,surname,Hispanic (est.),10,673
 house,25,surname,Hispanic (est.),12,772
 house,25,surname,Hispanic (est.),13,938
 house,25,surname,Hispanic (est.),14,1077
+house,26,surname,All others (est.),5,179
 house,26,surname,All others (est.),6,307
 house,26,surname,All others (est.),7,370
 house,26,surname,All others (est.),8,536
@@ -3572,12 +3857,14 @@ house,26,surname,All others (est.),12,1
 house,26,surname,All others (est.),14,1682
 house,26,surname,All others (est.),17,63
 house,26,surname,All others (est.),20,16
+house,26,surname,Asian (est.),5,32
 house,26,surname,Asian (est.),6,53
 house,26,surname,Asian (est.),7,52
 house,26,surname,Asian (est.),8,87
 house,26,surname,Asian (est.),10,34
 house,26,surname,Asian (est.),14,78
 house,26,surname,Asian (est.),17,4
+house,26,surname,Hispanic (est.),5,37
 house,26,surname,Hispanic (est.),6,71
 house,26,surname,Hispanic (est.),7,85
 house,26,surname,Hispanic (est.),8,104
@@ -3585,6 +3872,7 @@ house,26,surname,Hispanic (est.),10,30
 house,26,surname,Hispanic (est.),14,243
 house,26,surname,Hispanic (est.),17,6
 house,26,surname,Hispanic (est.),20,1
+house,27,surname,All others (est.),5,251
 house,27,surname,All others (est.),6,399
 house,27,surname,All others (est.),7,419
 house,27,surname,All others (est.),8,628
@@ -3593,12 +3881,14 @@ house,27,surname,All others (est.),12,1
 house,27,surname,All others (est.),14,3166
 house,27,surname,All others (est.),17,41
 house,27,surname,All others (est.),20,24
+house,27,surname,Asian (est.),5,24
 house,27,surname,Asian (est.),6,41
 house,27,surname,Asian (est.),7,56
 house,27,surname,Asian (est.),8,76
 house,27,surname,Asian (est.),10,14
 house,27,surname,Asian (est.),14,184
 house,27,surname,Asian (est.),17,2
+house,27,surname,Hispanic (est.),5,51
 house,27,surname,Hispanic (est.),6,76
 house,27,surname,Hispanic (est.),7,92
 house,27,surname,Hispanic (est.),8,120
@@ -3606,6 +3896,7 @@ house,27,surname,Hispanic (est.),10,32
 house,27,surname,Hispanic (est.),14,338
 house,27,surname,Hispanic (est.),17,3
 house,27,surname,Hispanic (est.),20,1
+house,28,surname,All others (est.),5,207
 house,28,surname,All others (est.),6,324
 house,28,surname,All others (est.),7,390
 house,28,surname,All others (est.),8,584
@@ -3614,12 +3905,14 @@ house,28,surname,All others (est.),12,1
 house,28,surname,All others (est.),14,2680
 house,28,surname,All others (est.),17,47
 house,28,surname,All others (est.),20,13
+house,28,surname,Asian (est.),5,33
 house,28,surname,Asian (est.),6,54
 house,28,surname,Asian (est.),7,52
 house,28,surname,Asian (est.),8,88
 house,28,surname,Asian (est.),10,18
 house,28,surname,Asian (est.),14,269
 house,28,surname,Asian (est.),17,4
+house,28,surname,Hispanic (est.),5,60
 house,28,surname,Hispanic (est.),6,92
 house,28,surname,Hispanic (est.),7,101
 house,28,surname,Hispanic (est.),8,126
@@ -3627,6 +3920,7 @@ house,28,surname,Hispanic (est.),10,29
 house,28,surname,Hispanic (est.),14,563
 house,28,surname,Hispanic (est.),17,13
 house,28,surname,Hispanic (est.),20,2
+house,29,surname,All others (est.),5,96
 house,29,surname,All others (est.),6,2773
 house,29,surname,All others (est.),7,2882
 house,29,surname,All others (est.),8,3173
@@ -3637,6 +3931,7 @@ house,29,surname,All others (est.),12,3866
 house,29,surname,All others (est.),13,4308
 house,29,surname,All others (est.),14,5608
 house,29,surname,All others (est.),20,1
+house,29,surname,Asian (est.),5,9
 house,29,surname,Asian (est.),6,240
 house,29,surname,Asian (est.),7,266
 house,29,surname,Asian (est.),8,285
@@ -3645,6 +3940,7 @@ house,29,surname,Asian (est.),10,379
 house,29,surname,Asian (est.),12,283
 house,29,surname,Asian (est.),13,301
 house,29,surname,Asian (est.),14,361
+house,29,surname,Hispanic (est.),5,8
 house,29,surname,Hispanic (est.),6,779
 house,29,surname,Hispanic (est.),7,752
 house,29,surname,Hispanic (est.),8,850
@@ -3684,6 +3980,7 @@ house,3,surname,Hispanic (est.),12,650
 house,3,surname,Hispanic (est.),13,665
 house,3,surname,Hispanic (est.),14,738
 house,3,surname,Hispanic (est.),20,50
+house,30,surname,All others (est.),5,80
 house,30,surname,All others (est.),6,2578
 house,30,surname,All others (est.),7,2566
 house,30,surname,All others (est.),8,2348
@@ -3694,6 +3991,7 @@ house,30,surname,All others (est.),12,2535
 house,30,surname,All others (est.),13,3153
 house,30,surname,All others (est.),14,3168
 house,30,surname,All others (est.),20,1
+house,30,surname,Asian (est.),5,1
 house,30,surname,Asian (est.),6,62
 house,30,surname,Asian (est.),7,63
 house,30,surname,Asian (est.),8,68
@@ -3703,6 +4001,7 @@ house,30,surname,Asian (est.),11,20
 house,30,surname,Asian (est.),12,75
 house,30,surname,Asian (est.),13,81
 house,30,surname,Asian (est.),14,80
+house,30,surname,Hispanic (est.),5,21
 house,30,surname,Hispanic (est.),6,702
 house,30,surname,Hispanic (est.),7,686
 house,30,surname,Hispanic (est.),8,673
@@ -3712,6 +4011,7 @@ house,30,surname,Hispanic (est.),11,159
 house,30,surname,Hispanic (est.),12,667
 house,30,surname,Hispanic (est.),13,797
 house,30,surname,Hispanic (est.),14,919
+house,31,surname,All others (est.),5,73
 house,31,surname,All others (est.),6,1157
 house,31,surname,All others (est.),7,1153
 house,31,surname,All others (est.),8,1335
@@ -3722,6 +4022,7 @@ house,31,surname,All others (est.),12,1540
 house,31,surname,All others (est.),13,1747
 house,31,surname,All others (est.),14,2164
 house,31,surname,All others (est.),15,7
+house,31,surname,Asian (est.),5,3
 house,31,surname,Asian (est.),6,40
 house,31,surname,Asian (est.),7,40
 house,31,surname,Asian (est.),8,48
@@ -3731,6 +4032,7 @@ house,31,surname,Asian (est.),11,34
 house,31,surname,Asian (est.),12,45
 house,31,surname,Asian (est.),13,53
 house,31,surname,Asian (est.),14,62
+house,31,surname,Hispanic (est.),5,143
 house,31,surname,Hispanic (est.),6,1608
 house,31,surname,Hispanic (est.),7,1519
 house,31,surname,Hispanic (est.),8,1653
@@ -3742,6 +4044,7 @@ house,31,surname,Hispanic (est.),13,1775
 house,31,surname,Hispanic (est.),14,2270
 house,31,surname,Hispanic (est.),15,4
 house,31,surname,Hispanic (est.),20,1
+house,32,surname,All others (est.),5,10
 house,32,surname,All others (est.),6,2884
 house,32,surname,All others (est.),7,1307
 house,32,surname,All others (est.),8,675
@@ -3764,6 +4067,7 @@ house,32,surname,Asian (est.),13,13
 house,32,surname,Asian (est.),14,160
 house,32,surname,Asian (est.),16,14
 house,32,surname,Asian (est.),20,2
+house,32,surname,Hispanic (est.),5,2
 house,32,surname,Hispanic (est.),6,1309
 house,32,surname,Hispanic (est.),7,576
 house,32,surname,Hispanic (est.),8,86
@@ -3775,6 +4079,7 @@ house,32,surname,Hispanic (est.),13,110
 house,32,surname,Hispanic (est.),14,2100
 house,32,surname,Hispanic (est.),16,151
 house,32,surname,Hispanic (est.),20,43
+house,33,surname,All others (est.),5,43
 house,33,surname,All others (est.),6,3248
 house,33,surname,All others (est.),7,3439
 house,33,surname,All others (est.),8,3130
@@ -3787,6 +4092,7 @@ house,33,surname,All others (est.),14,5641
 house,33,surname,All others (est.),15,4
 house,33,surname,All others (est.),18,47
 house,33,surname,All others (est.),20,42
+house,33,surname,Asian (est.),5,1
 house,33,surname,Asian (est.),6,166
 house,33,surname,Asian (est.),7,171
 house,33,surname,Asian (est.),8,134
@@ -3798,6 +4104,7 @@ house,33,surname,Asian (est.),13,273
 house,33,surname,Asian (est.),14,254
 house,33,surname,Asian (est.),18,5
 house,33,surname,Asian (est.),20,4
+house,33,surname,Hispanic (est.),5,5
 house,33,surname,Hispanic (est.),6,443
 house,33,surname,Hispanic (est.),7,529
 house,33,surname,Hispanic (est.),8,425
@@ -3840,6 +4147,7 @@ house,34,surname,Hispanic (est.),13,25
 house,34,surname,Hispanic (est.),14,2550
 house,34,surname,Hispanic (est.),16,238
 house,34,surname,Hispanic (est.),20,64
+house,35,surname,All others (est.),5,7
 house,35,surname,All others (est.),6,323
 house,35,surname,All others (est.),7,356
 house,35,surname,All others (est.),8,349
@@ -3858,6 +4166,7 @@ house,35,surname,Asian (est.),11,44
 house,35,surname,Asian (est.),12,42
 house,35,surname,Asian (est.),13,45
 house,35,surname,Asian (est.),14,62
+house,35,surname,Hispanic (est.),5,11
 house,35,surname,Hispanic (est.),6,1545
 house,35,surname,Hispanic (est.),7,1560
 house,35,surname,Hispanic (est.),8,1703
@@ -3894,6 +4203,7 @@ house,36,surname,Hispanic (est.),11,2289
 house,36,surname,Hispanic (est.),12,2177
 house,36,surname,Hispanic (est.),13,2514
 house,36,surname,Hispanic (est.),14,3333
+house,37,surname,All others (est.),5,49
 house,37,surname,All others (est.),6,843
 house,37,surname,All others (est.),7,837
 house,37,surname,All others (est.),8,1004
@@ -3903,6 +4213,7 @@ house,37,surname,All others (est.),11,1097
 house,37,surname,All others (est.),12,1074
 house,37,surname,All others (est.),13,1300
 house,37,surname,All others (est.),14,1810
+house,37,surname,Asian (est.),5,1
 house,37,surname,Asian (est.),6,59
 house,37,surname,Asian (est.),7,58
 house,37,surname,Asian (est.),8,65
@@ -3912,6 +4223,7 @@ house,37,surname,Asian (est.),11,60
 house,37,surname,Asian (est.),12,67
 house,37,surname,Asian (est.),13,80
 house,37,surname,Asian (est.),14,105
+house,37,surname,Hispanic (est.),5,24
 house,37,surname,Hispanic (est.),6,1622
 house,37,surname,Hispanic (est.),7,1546
 house,37,surname,Hispanic (est.),8,1853
@@ -3921,6 +4233,7 @@ house,37,surname,Hispanic (est.),11,2137
 house,37,surname,Hispanic (est.),12,1946
 house,37,surname,Hispanic (est.),13,2177
 house,37,surname,Hispanic (est.),14,2883
+house,38,surname,All others (est.),5,12
 house,38,surname,All others (est.),6,417
 house,38,surname,All others (est.),7,390
 house,38,surname,All others (est.),8,484
@@ -3930,6 +4243,7 @@ house,38,surname,All others (est.),11,506
 house,38,surname,All others (est.),12,490
 house,38,surname,All others (est.),13,594
 house,38,surname,All others (est.),14,602
+house,38,surname,Asian (est.),5,1
 house,38,surname,Asian (est.),6,54
 house,38,surname,Asian (est.),7,49
 house,38,surname,Asian (est.),8,57
@@ -3939,6 +4253,7 @@ house,38,surname,Asian (est.),11,60
 house,38,surname,Asian (est.),12,53
 house,38,surname,Asian (est.),13,73
 house,38,surname,Asian (est.),14,66
+house,38,surname,Hispanic (est.),5,30
 house,38,surname,Hispanic (est.),6,1967
 house,38,surname,Hispanic (est.),7,1856
 house,38,surname,Hispanic (est.),8,2017
@@ -4077,6 +4392,7 @@ house,42,surname,Hispanic (est.),10,2273
 house,42,surname,Hispanic (est.),11,2230
 house,42,surname,Hispanic (est.),12,1
 house,42,surname,Hispanic (est.),14,3188
+house,43,surname,All others (est.),5,13
 house,43,surname,All others (est.),6,1318
 house,43,surname,All others (est.),7,1587
 house,43,surname,All others (est.),8,1479
@@ -4099,6 +4415,7 @@ house,43,surname,Asian (est.),12,43
 house,43,surname,Asian (est.),13,74
 house,43,surname,Asian (est.),14,90
 house,43,surname,Asian (est.),19,3
+house,43,surname,Hispanic (est.),5,9
 house,43,surname,Hispanic (est.),6,1096
 house,43,surname,Hispanic (est.),7,1223
 house,43,surname,Hispanic (est.),8,1275
@@ -4109,6 +4426,7 @@ house,43,surname,Hispanic (est.),12,1066
 house,43,surname,Hispanic (est.),13,1613
 house,43,surname,Hispanic (est.),14,2382
 house,43,surname,Hispanic (est.),19,67
+house,44,surname,All others (est.),5,10
 house,44,surname,All others (est.),6,3198
 house,44,surname,All others (est.),7,3541
 house,44,surname,All others (est.),8,3585
@@ -4128,6 +4446,7 @@ house,44,surname,Asian (est.),11,109
 house,44,surname,Asian (est.),12,106
 house,44,surname,Asian (est.),13,95
 house,44,surname,Asian (est.),14,133
+house,44,surname,Hispanic (est.),5,2
 house,44,surname,Hispanic (est.),6,1089
 house,44,surname,Hispanic (est.),7,1024
 house,44,surname,Hispanic (est.),8,1094
@@ -4138,6 +4457,7 @@ house,44,surname,Hispanic (est.),12,1119
 house,44,surname,Hispanic (est.),13,1160
 house,44,surname,Hispanic (est.),14,1383
 house,44,surname,Hispanic (est.),20,1
+house,45,surname,All others (est.),5,2
 house,45,surname,All others (est.),6,3832
 house,45,surname,All others (est.),7,4007
 house,45,surname,All others (est.),8,4038
@@ -4159,6 +4479,7 @@ house,45,surname,Asian (est.),12,165
 house,45,surname,Asian (est.),13,199
 house,45,surname,Asian (est.),14,201
 house,45,surname,Asian (est.),20,3
+house,45,surname,Hispanic (est.),5,1
 house,45,surname,Hispanic (est.),6,1650
 house,45,surname,Hispanic (est.),7,1621
 house,45,surname,Hispanic (est.),8,1677
@@ -4170,6 +4491,7 @@ house,45,surname,Hispanic (est.),13,2123
 house,45,surname,Hispanic (est.),14,2535
 house,45,surname,Hispanic (est.),15,3
 house,45,surname,Hispanic (est.),20,14
+house,46,surname,All others (est.),5,145
 house,46,surname,All others (est.),6,3676
 house,46,surname,All others (est.),7,3771
 house,46,surname,All others (est.),8,3707
@@ -4183,6 +4505,7 @@ house,46,surname,All others (est.),15,143
 house,46,surname,All others (est.),18,63
 house,46,surname,All others (est.),19,39
 house,46,surname,All others (est.),20,354
+house,46,surname,Asian (est.),5,8
 house,46,surname,Asian (est.),6,361
 house,46,surname,Asian (est.),7,338
 house,46,surname,Asian (est.),8,305
@@ -4196,6 +4519,7 @@ house,46,surname,Asian (est.),15,11
 house,46,surname,Asian (est.),18,1
 house,46,surname,Asian (est.),19,3
 house,46,surname,Asian (est.),20,17
+house,46,surname,Hispanic (est.),5,19
 house,46,surname,Hispanic (est.),6,1197
 house,46,surname,Hispanic (est.),7,1148
 house,46,surname,Hispanic (est.),8,1228
@@ -4209,6 +4533,7 @@ house,46,surname,Hispanic (est.),15,31
 house,46,surname,Hispanic (est.),18,9
 house,46,surname,Hispanic (est.),19,5
 house,46,surname,Hispanic (est.),20,58
+house,47,surname,All others (est.),5,228
 house,47,surname,All others (est.),6,4533
 house,47,surname,All others (est.),7,4948
 house,47,surname,All others (est.),8,4868
@@ -4223,6 +4548,7 @@ house,47,surname,All others (est.),17,4
 house,47,surname,All others (est.),18,84
 house,47,surname,All others (est.),19,61
 house,47,surname,All others (est.),20,460
+house,47,surname,Asian (est.),5,20
 house,47,surname,Asian (est.),6,490
 house,47,surname,Asian (est.),7,520
 house,47,surname,Asian (est.),8,515
@@ -4236,6 +4562,7 @@ house,47,surname,Asian (est.),15,19
 house,47,surname,Asian (est.),18,5
 house,47,surname,Asian (est.),19,3
 house,47,surname,Asian (est.),20,22
+house,47,surname,Hispanic (est.),5,27
 house,47,surname,Hispanic (est.),6,729
 house,47,surname,Hispanic (est.),7,724
 house,47,surname,Hispanic (est.),8,734
@@ -4250,6 +4577,7 @@ house,47,surname,Hispanic (est.),17,1
 house,47,surname,Hispanic (est.),18,6
 house,47,surname,Hispanic (est.),19,7
 house,47,surname,Hispanic (est.),20,46
+house,48,surname,All others (est.),5,243
 house,48,surname,All others (est.),6,5057
 house,48,surname,All others (est.),7,5419
 house,48,surname,All others (est.),8,5205
@@ -4264,6 +4592,7 @@ house,48,surname,All others (est.),17,2
 house,48,surname,All others (est.),18,75
 house,48,surname,All others (est.),19,70
 house,48,surname,All others (est.),20,457
+house,48,surname,Asian (est.),5,13
 house,48,surname,Asian (est.),6,332
 house,48,surname,Asian (est.),7,322
 house,48,surname,Asian (est.),8,283
@@ -4277,6 +4606,7 @@ house,48,surname,Asian (est.),15,9
 house,48,surname,Asian (est.),18,6
 house,48,surname,Asian (est.),19,1
 house,48,surname,Asian (est.),20,13
+house,48,surname,Hispanic (est.),5,25
 house,48,surname,Hispanic (est.),6,1126
 house,48,surname,Hispanic (est.),7,1186
 house,48,surname,Hispanic (est.),8,1097
@@ -4290,6 +4620,7 @@ house,48,surname,Hispanic (est.),15,44
 house,48,surname,Hispanic (est.),18,16
 house,48,surname,Hispanic (est.),19,9
 house,48,surname,Hispanic (est.),20,76
+house,49,surname,All others (est.),5,209
 house,49,surname,All others (est.),6,4987
 house,49,surname,All others (est.),7,5073
 house,49,surname,All others (est.),8,4776
@@ -4304,6 +4635,7 @@ house,49,surname,All others (est.),17,4
 house,49,surname,All others (est.),18,70
 house,49,surname,All others (est.),19,73
 house,49,surname,All others (est.),20,502
+house,49,surname,Asian (est.),5,10
 house,49,surname,Asian (est.),6,562
 house,49,surname,Asian (est.),7,513
 house,49,surname,Asian (est.),8,460
@@ -4317,6 +4649,7 @@ house,49,surname,Asian (est.),15,5
 house,49,surname,Asian (est.),18,1
 house,49,surname,Asian (est.),19,3
 house,49,surname,Asian (est.),20,17
+house,49,surname,Hispanic (est.),5,26
 house,49,surname,Hispanic (est.),6,1141
 house,49,surname,Hispanic (est.),7,1113
 house,49,surname,Hispanic (est.),8,1063
@@ -4330,6 +4663,7 @@ house,49,surname,Hispanic (est.),15,28
 house,49,surname,Hispanic (est.),18,8
 house,49,surname,Hispanic (est.),19,11
 house,49,surname,Hispanic (est.),20,50
+house,5,surname,All others (est.),5,387
 house,5,surname,All others (est.),6,2913
 house,5,surname,All others (est.),7,3224
 house,5,surname,All others (est.),8,3498
@@ -4344,6 +4678,7 @@ house,5,surname,All others (est.),16,27
 house,5,surname,All others (est.),18,182
 house,5,surname,All others (est.),19,1
 house,5,surname,All others (est.),20,3
+house,5,surname,Asian (est.),5,6
 house,5,surname,Asian (est.),6,54
 house,5,surname,Asian (est.),7,55
 house,5,surname,Asian (est.),8,44
@@ -4356,6 +4691,7 @@ house,5,surname,Asian (est.),14,94
 house,5,surname,Asian (est.),15,4
 house,5,surname,Asian (est.),16,1
 house,5,surname,Asian (est.),18,2
+house,5,surname,Hispanic (est.),5,42
 house,5,surname,Hispanic (est.),6,289
 house,5,surname,Hispanic (est.),7,294
 house,5,surname,Hispanic (est.),8,341
@@ -4369,6 +4705,7 @@ house,5,surname,Hispanic (est.),15,19
 house,5,surname,Hispanic (est.),16,1
 house,5,surname,Hispanic (est.),18,5
 house,5,surname,Hispanic (est.),20,3
+house,50,surname,All others (est.),5,97
 house,50,surname,All others (est.),6,2555
 house,50,surname,All others (est.),7,2619
 house,50,surname,All others (est.),8,2535
@@ -4382,6 +4719,7 @@ house,50,surname,All others (est.),15,125
 house,50,surname,All others (est.),18,51
 house,50,surname,All others (est.),19,41
 house,50,surname,All others (est.),20,277
+house,50,surname,Asian (est.),5,11
 house,50,surname,Asian (est.),6,344
 house,50,surname,Asian (est.),7,362
 house,50,surname,Asian (est.),8,338
@@ -4395,6 +4733,7 @@ house,50,surname,Asian (est.),15,19
 house,50,surname,Asian (est.),18,3
 house,50,surname,Asian (est.),19,2
 house,50,surname,Asian (est.),20,13
+house,50,surname,Hispanic (est.),5,17
 house,50,surname,Hispanic (est.),6,942
 house,50,surname,Hispanic (est.),7,873
 house,50,surname,Hispanic (est.),8,887
@@ -4408,6 +4747,7 @@ house,50,surname,Hispanic (est.),15,29
 house,50,surname,Hispanic (est.),18,11
 house,50,surname,Hispanic (est.),19,8
 house,50,surname,Hispanic (est.),20,48
+house,51,surname,All others (est.),5,71
 house,51,surname,All others (est.),6,2656
 house,51,surname,All others (est.),7,2557
 house,51,surname,All others (est.),8,2462
@@ -4421,6 +4761,7 @@ house,51,surname,All others (est.),15,70
 house,51,surname,All others (est.),18,24
 house,51,surname,All others (est.),19,24
 house,51,surname,All others (est.),20,166
+house,51,surname,Asian (est.),5,2
 house,51,surname,Asian (est.),6,195
 house,51,surname,Asian (est.),7,182
 house,51,surname,Asian (est.),8,192
@@ -4433,6 +4774,7 @@ house,51,surname,Asian (est.),14,197
 house,51,surname,Asian (est.),15,4
 house,51,surname,Asian (est.),19,1
 house,51,surname,Asian (est.),20,4
+house,51,surname,Hispanic (est.),5,25
 house,51,surname,Hispanic (est.),6,1403
 house,51,surname,Hispanic (est.),7,1257
 house,51,surname,Hispanic (est.),8,1271
@@ -4472,6 +4814,7 @@ house,52,surname,Asian (est.),14,489
 house,52,surname,Asian (est.),17,4
 house,52,surname,Asian (est.),18,3
 house,52,surname,Asian (est.),19,7
+house,52,surname,Hispanic (est.),5,1
 house,52,surname,Hispanic (est.),6,1090
 house,52,surname,Hispanic (est.),7,1023
 house,52,surname,Hispanic (est.),8,1119
@@ -4485,6 +4828,7 @@ house,52,surname,Hispanic (est.),16,4
 house,52,surname,Hispanic (est.),17,11
 house,52,surname,Hispanic (est.),18,4
 house,52,surname,Hispanic (est.),19,17
+house,53,surname,All others (est.),5,184
 house,53,surname,All others (est.),6,3041
 house,53,surname,All others (est.),7,3576
 house,53,surname,All others (est.),8,2430
@@ -4497,6 +4841,7 @@ house,53,surname,All others (est.),14,7227
 house,53,surname,All others (est.),15,42
 house,53,surname,All others (est.),19,2
 house,53,surname,All others (est.),20,15
+house,53,surname,Asian (est.),5,3
 house,53,surname,Asian (est.),6,61
 house,53,surname,Asian (est.),7,69
 house,53,surname,Asian (est.),8,47
@@ -4507,6 +4852,7 @@ house,53,surname,Asian (est.),12,69
 house,53,surname,Asian (est.),13,101
 house,53,surname,Asian (est.),14,133
 house,53,surname,Asian (est.),15,1
+house,53,surname,Hispanic (est.),5,65
 house,53,surname,Hispanic (est.),6,777
 house,53,surname,Hispanic (est.),7,753
 house,53,surname,Hispanic (est.),8,416
@@ -4519,6 +4865,7 @@ house,53,surname,Hispanic (est.),14,1491
 house,53,surname,Hispanic (est.),15,10
 house,53,surname,Hispanic (est.),19,1
 house,53,surname,Hispanic (est.),20,1
+house,54,surname,All others (est.),5,1980
 house,54,surname,All others (est.),6,2185
 house,54,surname,All others (est.),7,2228
 house,54,surname,All others (est.),8,2487
@@ -4530,6 +4877,7 @@ house,54,surname,All others (est.),13,2742
 house,54,surname,All others (est.),14,3209
 house,54,surname,All others (est.),19,153
 house,54,surname,All others (est.),20,55
+house,54,surname,Asian (est.),5,58
 house,54,surname,Asian (est.),6,72
 house,54,surname,Asian (est.),7,71
 house,54,surname,Asian (est.),8,70
@@ -4541,6 +4889,7 @@ house,54,surname,Asian (est.),13,63
 house,54,surname,Asian (est.),14,90
 house,54,surname,Asian (est.),19,4
 house,54,surname,Asian (est.),20,2
+house,54,surname,Hispanic (est.),5,359
 house,54,surname,Hispanic (est.),6,403
 house,54,surname,Hispanic (est.),7,378
 house,54,surname,Hispanic (est.),8,408
@@ -4552,6 +4901,7 @@ house,54,surname,Hispanic (est.),13,443
 house,54,surname,Hispanic (est.),14,510
 house,54,surname,Hispanic (est.),19,21
 house,54,surname,Hispanic (est.),20,8
+house,55,surname,All others (est.),5,2606
 house,55,surname,All others (est.),6,2837
 house,55,surname,All others (est.),7,2988
 house,55,surname,All others (est.),8,3262
@@ -4563,6 +4913,7 @@ house,55,surname,All others (est.),13,3465
 house,55,surname,All others (est.),14,3994
 house,55,surname,All others (est.),19,236
 house,55,surname,All others (est.),20,100
+house,55,surname,Asian (est.),5,76
 house,55,surname,Asian (est.),6,100
 house,55,surname,Asian (est.),7,91
 house,55,surname,Asian (est.),8,120
@@ -4574,6 +4925,7 @@ house,55,surname,Asian (est.),13,103
 house,55,surname,Asian (est.),14,101
 house,55,surname,Asian (est.),19,8
 house,55,surname,Asian (est.),20,4
+house,55,surname,Hispanic (est.),5,528
 house,55,surname,Hispanic (est.),6,597
 house,55,surname,Hispanic (est.),7,545
 house,55,surname,Hispanic (est.),8,631
@@ -4651,6 +5003,7 @@ house,57,surname,Hispanic (est.),13,718
 house,57,surname,Hispanic (est.),14,856
 house,57,surname,Hispanic (est.),16,28
 house,57,surname,Hispanic (est.),20,12
+house,58,surname,All others (est.),5,148
 house,58,surname,All others (est.),6,3393
 house,58,surname,All others (est.),7,3504
 house,58,surname,All others (est.),8,3905
@@ -4662,6 +5015,7 @@ house,58,surname,All others (est.),13,4611
 house,58,surname,All others (est.),14,5413
 house,58,surname,All others (est.),15,89
 house,58,surname,All others (est.),20,2
+house,58,surname,Asian (est.),5,4
 house,58,surname,Asian (est.),6,86
 house,58,surname,Asian (est.),7,71
 house,58,surname,Asian (est.),8,94
@@ -4672,6 +5026,7 @@ house,58,surname,Asian (est.),12,73
 house,58,surname,Asian (est.),13,92
 house,58,surname,Asian (est.),14,101
 house,58,surname,Asian (est.),15,2
+house,58,surname,Hispanic (est.),5,41
 house,58,surname,Hispanic (est.),6,602
 house,58,surname,Hispanic (est.),7,588
 house,58,surname,Hispanic (est.),8,604
@@ -4682,6 +5037,7 @@ house,58,surname,Hispanic (est.),12,562
 house,58,surname,Hispanic (est.),13,596
 house,58,surname,Hispanic (est.),14,742
 house,58,surname,Hispanic (est.),15,15
+house,59,surname,All others (est.),5,940
 house,59,surname,All others (est.),6,2862
 house,59,surname,All others (est.),7,3067
 house,59,surname,All others (est.),8,3281
@@ -4693,6 +5049,7 @@ house,59,surname,All others (est.),13,3891
 house,59,surname,All others (est.),14,6093
 house,59,surname,All others (est.),15,202
 house,59,surname,All others (est.),20,3
+house,59,surname,Asian (est.),5,16
 house,59,surname,Asian (est.),6,49
 house,59,surname,Asian (est.),7,60
 house,59,surname,Asian (est.),8,59
@@ -4703,6 +5060,7 @@ house,59,surname,Asian (est.),12,66
 house,59,surname,Asian (est.),13,65
 house,59,surname,Asian (est.),14,111
 house,59,surname,Asian (est.),15,3
+house,59,surname,Hispanic (est.),5,117
 house,59,surname,Hispanic (est.),6,294
 house,59,surname,Hispanic (est.),7,326
 house,59,surname,Hispanic (est.),8,346
@@ -4713,6 +5071,7 @@ house,59,surname,Hispanic (est.),12,386
 house,59,surname,Hispanic (est.),13,367
 house,59,surname,Hispanic (est.),14,657
 house,59,surname,Hispanic (est.),15,11
+house,6,surname,All others (est.),5,653
 house,6,surname,All others (est.),6,3590
 house,6,surname,All others (est.),7,3710
 house,6,surname,All others (est.),8,4021
@@ -4725,6 +5084,7 @@ house,6,surname,All others (est.),14,5246
 house,6,surname,All others (est.),16,221
 house,6,surname,All others (est.),18,799
 house,6,surname,All others (est.),20,6
+house,6,surname,Asian (est.),5,8
 house,6,surname,Asian (est.),6,78
 house,6,surname,Asian (est.),7,73
 house,6,surname,Asian (est.),8,82
@@ -4736,6 +5096,7 @@ house,6,surname,Asian (est.),13,82
 house,6,surname,Asian (est.),14,94
 house,6,surname,Asian (est.),16,4
 house,6,surname,Asian (est.),18,12
+house,6,surname,Hispanic (est.),5,31
 house,6,surname,Hispanic (est.),6,421
 house,6,surname,Hispanic (est.),7,415
 house,6,surname,Hispanic (est.),8,449
@@ -4747,6 +5108,7 @@ house,6,surname,Hispanic (est.),13,427
 house,6,surname,Hispanic (est.),14,449
 house,6,surname,Hispanic (est.),16,10
 house,6,surname,Hispanic (est.),18,58
+house,60,surname,All others (est.),5,112
 house,60,surname,All others (est.),6,4138
 house,60,surname,All others (est.),7,3711
 house,60,surname,All others (est.),8,4030
@@ -4757,6 +5119,7 @@ house,60,surname,All others (est.),12,4714
 house,60,surname,All others (est.),13,4995
 house,60,surname,All others (est.),14,6408
 house,60,surname,All others (est.),20,1
+house,60,surname,Asian (est.),5,1
 house,60,surname,Asian (est.),6,73
 house,60,surname,Asian (est.),7,65
 house,60,surname,Asian (est.),8,75
@@ -4766,6 +5129,7 @@ house,60,surname,Asian (est.),11,8
 house,60,surname,Asian (est.),12,76
 house,60,surname,Asian (est.),13,84
 house,60,surname,Asian (est.),14,95
+house,60,surname,Hispanic (est.),5,10
 house,60,surname,Hispanic (est.),6,414
 house,60,surname,Hispanic (est.),7,386
 house,60,surname,Hispanic (est.),8,350
@@ -4808,6 +5172,7 @@ house,61,surname,Hispanic (est.),13,419
 house,61,surname,Hispanic (est.),14,293
 house,61,surname,Hispanic (est.),18,6
 house,61,surname,Hispanic (est.),20,5
+house,62,surname,All others (est.),5,10
 house,62,surname,All others (est.),6,2515
 house,62,surname,All others (est.),7,3201
 house,62,surname,All others (est.),8,3408
@@ -4871,6 +5236,7 @@ house,63,surname,Hispanic (est.),13,648
 house,63,surname,Hispanic (est.),14,827
 house,63,surname,Hispanic (est.),16,21
 house,63,surname,Hispanic (est.),20,22
+house,64,surname,All others (est.),5,14
 house,64,surname,All others (est.),6,1878
 house,64,surname,All others (est.),7,3944
 house,64,surname,All others (est.),8,4271
@@ -4893,6 +5259,7 @@ house,64,surname,Asian (est.),13,116
 house,64,surname,Asian (est.),14,164
 house,64,surname,Asian (est.),16,6
 house,64,surname,Asian (est.),20,9
+house,64,surname,Hispanic (est.),5,2
 house,64,surname,Hispanic (est.),6,184
 house,64,surname,Hispanic (est.),7,617
 house,64,surname,Hispanic (est.),8,698
@@ -4937,6 +5304,7 @@ house,65,surname,Hispanic (est.),13,747
 house,65,surname,Hispanic (est.),14,991
 house,65,surname,Hispanic (est.),16,44
 house,65,surname,Hispanic (est.),20,22
+house,66,surname,All others (est.),5,2
 house,66,surname,All others (est.),6,2236
 house,66,surname,All others (est.),7,2242
 house,66,surname,All others (est.),8,782
@@ -4959,6 +5327,7 @@ house,66,surname,Asian (est.),13,401
 house,66,surname,Asian (est.),14,236
 house,66,surname,Asian (est.),18,7
 house,66,surname,Asian (est.),20,5
+house,66,surname,Hispanic (est.),5,1
 house,66,surname,Hispanic (est.),6,198
 house,66,surname,Hispanic (est.),7,208
 house,66,surname,Hispanic (est.),8,66
@@ -4970,6 +5339,7 @@ house,66,surname,Hispanic (est.),13,403
 house,66,surname,Hispanic (est.),14,327
 house,66,surname,Hispanic (est.),18,11
 house,66,surname,Hispanic (est.),20,7
+house,67,surname,All others (est.),5,1
 house,67,surname,All others (est.),6,1990
 house,67,surname,All others (est.),7,2097
 house,67,surname,All others (est.),8,1123
@@ -4992,6 +5362,7 @@ house,67,surname,Asian (est.),13,285
 house,67,surname,Asian (est.),14,143
 house,67,surname,Asian (est.),18,5
 house,67,surname,Asian (est.),20,4
+house,67,surname,Hispanic (est.),5,2
 house,67,surname,Hispanic (est.),6,221
 house,67,surname,Hispanic (est.),7,222
 house,67,surname,Hispanic (est.),8,105
@@ -5003,6 +5374,7 @@ house,67,surname,Hispanic (est.),13,462
 house,67,surname,Hispanic (est.),14,310
 house,67,surname,Hispanic (est.),18,6
 house,67,surname,Hispanic (est.),20,8
+house,68,surname,All others (est.),5,378
 house,68,surname,All others (est.),6,2956
 house,68,surname,All others (est.),7,3237
 house,68,surname,All others (est.),8,2938
@@ -5016,6 +5388,7 @@ house,68,surname,All others (est.),15,90
 house,68,surname,All others (est.),18,42
 house,68,surname,All others (est.),19,102
 house,68,surname,All others (est.),20,185
+house,68,surname,Asian (est.),5,8
 house,68,surname,Asian (est.),6,37
 house,68,surname,Asian (est.),7,44
 house,68,surname,Asian (est.),8,46
@@ -5028,6 +5401,7 @@ house,68,surname,Asian (est.),14,86
 house,68,surname,Asian (est.),15,2
 house,68,surname,Asian (est.),19,1
 house,68,surname,Asian (est.),20,2
+house,68,surname,Hispanic (est.),5,46
 house,68,surname,Hispanic (est.),6,306
 house,68,surname,Hispanic (est.),7,344
 house,68,surname,Hispanic (est.),8,326
@@ -5041,6 +5415,7 @@ house,68,surname,Hispanic (est.),15,4
 house,68,surname,Hispanic (est.),18,1
 house,68,surname,Hispanic (est.),19,11
 house,68,surname,Hispanic (est.),20,17
+house,69,surname,All others (est.),5,180
 house,69,surname,All others (est.),6,2456
 house,69,surname,All others (est.),7,2576
 house,69,surname,All others (est.),8,912
@@ -5052,6 +5427,7 @@ house,69,surname,All others (est.),13,3056
 house,69,surname,All others (est.),14,4419
 house,69,surname,All others (est.),15,117
 house,69,surname,All others (est.),20,3
+house,69,surname,Asian (est.),5,2
 house,69,surname,Asian (est.),6,58
 house,69,surname,Asian (est.),7,56
 house,69,surname,Asian (est.),8,16
@@ -5062,6 +5438,7 @@ house,69,surname,Asian (est.),12,60
 house,69,surname,Asian (est.),13,65
 house,69,surname,Asian (est.),14,84
 house,69,surname,Asian (est.),15,1
+house,69,surname,Hispanic (est.),5,16
 house,69,surname,Hispanic (est.),6,341
 house,69,surname,Hispanic (est.),7,291
 house,69,surname,Hispanic (est.),8,95
@@ -5072,6 +5449,7 @@ house,69,surname,Hispanic (est.),12,309
 house,69,surname,Hispanic (est.),13,349
 house,69,surname,Hispanic (est.),14,438
 house,69,surname,Hispanic (est.),15,7
+house,7,surname,All others (est.),5,7
 house,7,surname,All others (est.),6,1203
 house,7,surname,All others (est.),7,1346
 house,7,surname,All others (est.),8,1486
@@ -5097,6 +5475,7 @@ house,7,surname,Hispanic (est.),11,161
 house,7,surname,Hispanic (est.),12,135
 house,7,surname,Hispanic (est.),13,136
 house,7,surname,Hispanic (est.),14,158
+house,70,surname,All others (est.),5,3
 house,70,surname,All others (est.),6,1782
 house,70,surname,All others (est.),7,1880
 house,70,surname,All others (est.),8,1056
@@ -5130,6 +5509,7 @@ house,70,surname,Hispanic (est.),13,347
 house,70,surname,Hispanic (est.),14,287
 house,70,surname,Hispanic (est.),18,11
 house,70,surname,Hispanic (est.),20,10
+house,71,surname,All others (est.),5,10
 house,71,surname,All others (est.),6,2444
 house,71,surname,All others (est.),7,2647
 house,71,surname,All others (est.),8,2637
@@ -5149,6 +5529,7 @@ house,71,surname,Asian (est.),11,60
 house,71,surname,Asian (est.),12,55
 house,71,surname,Asian (est.),13,68
 house,71,surname,Asian (est.),14,68
+house,71,surname,Hispanic (est.),5,3
 house,71,surname,Hispanic (est.),6,380
 house,71,surname,Hispanic (est.),7,393
 house,71,surname,Hispanic (est.),8,372
@@ -5158,6 +5539,7 @@ house,71,surname,Hispanic (est.),11,452
 house,71,surname,Hispanic (est.),12,382
 house,71,surname,Hispanic (est.),13,471
 house,71,surname,Hispanic (est.),14,551
+house,72,surname,All others (est.),5,45
 house,72,surname,All others (est.),6,2081
 house,72,surname,All others (est.),7,2169
 house,72,surname,All others (est.),8,2119
@@ -5172,6 +5554,7 @@ house,72,surname,All others (est.),16,5
 house,72,surname,All others (est.),17,196
 house,72,surname,All others (est.),18,40
 house,72,surname,All others (est.),20,497
+house,72,surname,Asian (est.),5,1
 house,72,surname,Asian (est.),6,41
 house,72,surname,Asian (est.),7,39
 house,72,surname,Asian (est.),8,43
@@ -5184,6 +5567,7 @@ house,72,surname,Asian (est.),14,77
 house,72,surname,Asian (est.),17,4
 house,72,surname,Asian (est.),18,3
 house,72,surname,Asian (est.),20,10
+house,72,surname,Hispanic (est.),5,19
 house,72,surname,Hispanic (est.),6,600
 house,72,surname,Hispanic (est.),7,557
 house,72,surname,Hispanic (est.),8,556
@@ -5197,6 +5581,7 @@ house,72,surname,Hispanic (est.),16,1
 house,72,surname,Hispanic (est.),17,22
 house,72,surname,Hispanic (est.),18,10
 house,72,surname,Hispanic (est.),20,95
+house,73,surname,All others (est.),5,1
 house,73,surname,All others (est.),6,6081
 house,73,surname,All others (est.),7,6567
 house,73,surname,All others (est.),8,7067
@@ -5229,6 +5614,7 @@ house,73,surname,Hispanic (est.),13,1133
 house,73,surname,Hispanic (est.),14,1442
 house,73,surname,Hispanic (est.),15,1
 house,73,surname,Hispanic (est.),20,93
+house,74,surname,All others (est.),5,63
 house,74,surname,All others (est.),6,659
 house,74,surname,All others (est.),7,778
 house,74,surname,All others (est.),8,850
@@ -5240,6 +5626,7 @@ house,74,surname,All others (est.),13,1040
 house,74,surname,All others (est.),14,1670
 house,74,surname,All others (est.),15,1
 house,74,surname,All others (est.),20,7
+house,74,surname,Asian (est.),5,2
 house,74,surname,Asian (est.),6,52
 house,74,surname,Asian (est.),7,49
 house,74,surname,Asian (est.),8,55
@@ -5249,6 +5636,7 @@ house,74,surname,Asian (est.),11,61
 house,74,surname,Asian (est.),12,44
 house,74,surname,Asian (est.),13,64
 house,74,surname,Asian (est.),14,73
+house,74,surname,Hispanic (est.),5,73
 house,74,surname,Hispanic (est.),6,1794
 house,74,surname,Hispanic (est.),7,1612
 house,74,surname,Hispanic (est.),8,1756
@@ -5286,6 +5674,7 @@ house,75,surname,Hispanic (est.),11,2308
 house,75,surname,Hispanic (est.),12,2080
 house,75,surname,Hispanic (est.),13,2206
 house,75,surname,Hispanic (est.),14,520
+house,76,surname,All others (est.),5,170
 house,76,surname,All others (est.),6,239
 house,76,surname,All others (est.),7,264
 house,76,surname,All others (est.),8,387
@@ -5294,6 +5683,7 @@ house,76,surname,All others (est.),12,2
 house,76,surname,All others (est.),14,1861
 house,76,surname,All others (est.),17,66
 house,76,surname,All others (est.),20,4
+house,76,surname,Asian (est.),5,52
 house,76,surname,Asian (est.),6,77
 house,76,surname,Asian (est.),7,93
 house,76,surname,Asian (est.),8,164
@@ -5301,6 +5691,7 @@ house,76,surname,Asian (est.),10,26
 house,76,surname,Asian (est.),14,309
 house,76,surname,Asian (est.),17,14
 house,76,surname,Asian (est.),20,1
+house,76,surname,Hispanic (est.),5,42
 house,76,surname,Hispanic (est.),6,64
 house,76,surname,Hispanic (est.),7,66
 house,76,surname,Hispanic (est.),8,107
@@ -5389,6 +5780,7 @@ house,79,surname,Hispanic (est.),11,2449
 house,79,surname,Hispanic (est.),12,2473
 house,79,surname,Hispanic (est.),13,2786
 house,79,surname,Hispanic (est.),14,805
+house,8,surname,All others (est.),5,43
 house,8,surname,All others (est.),6,1716
 house,8,surname,All others (est.),7,1810
 house,8,surname,All others (est.),8,2020
@@ -5405,6 +5797,7 @@ house,8,surname,Asian (est.),11,15
 house,8,surname,Asian (est.),12,45
 house,8,surname,Asian (est.),13,31
 house,8,surname,Asian (est.),14,65
+house,8,surname,Hispanic (est.),5,3
 house,8,surname,Hispanic (est.),6,235
 house,8,surname,Hispanic (est.),7,197
 house,8,surname,Hispanic (est.),8,252
@@ -5413,6 +5806,7 @@ house,8,surname,Hispanic (est.),12,344
 house,8,surname,Hispanic (est.),13,202
 house,8,surname,Hispanic (est.),14,416
 house,8,surname,Hispanic (est.),20,1
+house,80,surname,All others (est.),5,11
 house,80,surname,All others (est.),6,838
 house,80,surname,All others (est.),7,757
 house,80,surname,All others (est.),8,788
@@ -5426,6 +5820,7 @@ house,80,surname,All others (est.),15,59
 house,80,surname,All others (est.),18,4
 house,80,surname,All others (est.),19,1
 house,80,surname,All others (est.),20,8
+house,80,surname,Asian (est.),5,1
 house,80,surname,Asian (est.),6,46
 house,80,surname,Asian (est.),7,37
 house,80,surname,Asian (est.),8,27
@@ -5438,6 +5833,7 @@ house,80,surname,Asian (est.),14,72
 house,80,surname,Asian (est.),15,2
 house,80,surname,Asian (est.),19,1
 house,80,surname,Asian (est.),20,2
+house,80,surname,Hispanic (est.),5,10
 house,80,surname,Hispanic (est.),6,1570
 house,80,surname,Hispanic (est.),7,1355
 house,80,surname,Hispanic (est.),8,861
@@ -5451,6 +5847,7 @@ house,80,surname,Hispanic (est.),15,84
 house,80,surname,Hispanic (est.),18,2
 house,80,surname,Hispanic (est.),19,4
 house,80,surname,Hispanic (est.),20,45
+house,81,surname,All others (est.),5,60
 house,81,surname,All others (est.),6,986
 house,81,surname,All others (est.),7,1041
 house,81,surname,All others (est.),8,874
@@ -5461,6 +5858,7 @@ house,81,surname,All others (est.),12,1067
 house,81,surname,All others (est.),13,1208
 house,81,surname,All others (est.),14,1222
 house,81,surname,All others (est.),20,1
+house,81,surname,Asian (est.),5,1
 house,81,surname,Asian (est.),6,33
 house,81,surname,Asian (est.),7,28
 house,81,surname,Asian (est.),8,27
@@ -5470,6 +5868,7 @@ house,81,surname,Asian (est.),11,41
 house,81,surname,Asian (est.),12,28
 house,81,surname,Asian (est.),13,29
 house,81,surname,Asian (est.),14,29
+house,81,surname,Hispanic (est.),5,31
 house,81,surname,Hispanic (est.),6,704
 house,81,surname,Hispanic (est.),7,620
 house,81,surname,Hispanic (est.),8,531
@@ -5479,6 +5878,7 @@ house,81,surname,Hispanic (est.),11,745
 house,81,surname,Hispanic (est.),12,640
 house,81,surname,Hispanic (est.),13,627
 house,81,surname,Hispanic (est.),14,639
+house,82,surname,All others (est.),5,59
 house,82,surname,All others (est.),6,1900
 house,82,surname,All others (est.),7,1865
 house,82,surname,All others (est.),8,1663
@@ -5489,6 +5889,7 @@ house,82,surname,All others (est.),12,2327
 house,82,surname,All others (est.),13,2432
 house,82,surname,All others (est.),14,2581
 house,82,surname,All others (est.),20,23
+house,82,surname,Asian (est.),5,1
 house,82,surname,Asian (est.),6,48
 house,82,surname,Asian (est.),7,45
 house,82,surname,Asian (est.),8,44
@@ -5498,6 +5899,7 @@ house,82,surname,Asian (est.),11,52
 house,82,surname,Asian (est.),12,52
 house,82,surname,Asian (est.),13,66
 house,82,surname,Asian (est.),14,67
+house,82,surname,Hispanic (est.),5,19
 house,82,surname,Hispanic (est.),6,696
 house,82,surname,Hispanic (est.),7,557
 house,82,surname,Hispanic (est.),8,515
@@ -5508,6 +5910,7 @@ house,82,surname,Hispanic (est.),12,597
 house,82,surname,Hispanic (est.),13,658
 house,82,surname,Hispanic (est.),14,648
 house,82,surname,Hispanic (est.),20,1
+house,83,surname,All others (est.),5,106
 house,83,surname,All others (est.),6,3486
 house,83,surname,All others (est.),7,3299
 house,83,surname,All others (est.),8,3117
@@ -5521,6 +5924,7 @@ house,83,surname,All others (est.),15,74
 house,83,surname,All others (est.),18,4
 house,83,surname,All others (est.),19,14
 house,83,surname,All others (est.),20,30
+house,83,surname,Asian (est.),5,1
 house,83,surname,Asian (est.),6,76
 house,83,surname,Asian (est.),7,67
 house,83,surname,Asian (est.),8,75
@@ -5531,6 +5935,7 @@ house,83,surname,Asian (est.),12,78
 house,83,surname,Asian (est.),13,91
 house,83,surname,Asian (est.),14,106
 house,83,surname,Asian (est.),15,1
+house,83,surname,Hispanic (est.),5,18
 house,83,surname,Hispanic (est.),6,813
 house,83,surname,Hispanic (est.),7,661
 house,83,surname,Hispanic (est.),8,682
@@ -5544,6 +5949,7 @@ house,83,surname,Hispanic (est.),15,23
 house,83,surname,Hispanic (est.),18,2
 house,83,surname,Hispanic (est.),19,2
 house,83,surname,Hispanic (est.),20,3
+house,84,surname,All others (est.),5,1
 house,84,surname,All others (est.),6,2269
 house,84,surname,All others (est.),7,2243
 house,84,surname,All others (est.),8,1838
@@ -5573,6 +5979,7 @@ house,84,surname,Hispanic (est.),12,819
 house,84,surname,Hispanic (est.),13,930
 house,84,surname,Hispanic (est.),14,1210
 house,84,surname,Hispanic (est.),20,1
+house,85,surname,All others (est.),5,89
 house,85,surname,All others (est.),6,2541
 house,85,surname,All others (est.),7,2076
 house,85,surname,All others (est.),8,3279
@@ -5584,6 +5991,7 @@ house,85,surname,All others (est.),13,3891
 house,85,surname,All others (est.),14,5064
 house,85,surname,All others (est.),17,4
 house,85,surname,All others (est.),20,4
+house,85,surname,Asian (est.),5,13
 house,85,surname,Asian (est.),6,86
 house,85,surname,Asian (est.),7,61
 house,85,surname,Asian (est.),8,111
@@ -5595,6 +6003,7 @@ house,85,surname,Asian (est.),13,101
 house,85,surname,Asian (est.),14,179
 house,85,surname,Asian (est.),17,1
 house,85,surname,Asian (est.),20,1
+house,85,surname,Hispanic (est.),5,17
 house,85,surname,Hispanic (est.),6,478
 house,85,surname,Hispanic (est.),7,341
 house,85,surname,Hispanic (est.),8,589
@@ -5605,6 +6014,7 @@ house,85,surname,Hispanic (est.),12,432
 house,85,surname,Hispanic (est.),13,645
 house,85,surname,Hispanic (est.),14,758
 house,85,surname,Hispanic (est.),17,2
+house,86,surname,All others (est.),5,128
 house,86,surname,All others (est.),6,2632
 house,86,surname,All others (est.),7,2754
 house,86,surname,All others (est.),8,2610
@@ -5616,6 +6026,7 @@ house,86,surname,All others (est.),13,3574
 house,86,surname,All others (est.),14,4524
 house,86,surname,All others (est.),15,49
 house,86,surname,All others (est.),19,1
+house,86,surname,Asian (est.),5,1
 house,86,surname,Asian (est.),6,51
 house,86,surname,Asian (est.),7,61
 house,86,surname,Asian (est.),8,48
@@ -5625,6 +6036,7 @@ house,86,surname,Asian (est.),11,78
 house,86,surname,Asian (est.),12,61
 house,86,surname,Asian (est.),13,64
 house,86,surname,Asian (est.),14,95
+house,86,surname,Hispanic (est.),5,8
 house,86,surname,Hispanic (est.),6,540
 house,86,surname,Hispanic (est.),7,542
 house,86,surname,Hispanic (est.),8,511
@@ -5635,6 +6047,7 @@ house,86,surname,Hispanic (est.),12,531
 house,86,surname,Hispanic (est.),13,556
 house,86,surname,Hispanic (est.),14,707
 house,86,surname,Hispanic (est.),15,2
+house,87,surname,All others (est.),5,53
 house,87,surname,All others (est.),6,1688
 house,87,surname,All others (est.),7,1729
 house,87,surname,All others (est.),8,1415
@@ -5645,6 +6058,7 @@ house,87,surname,All others (est.),12,1936
 house,87,surname,All others (est.),13,2240
 house,87,surname,All others (est.),14,3013
 house,87,surname,All others (est.),20,17
+house,87,surname,Asian (est.),5,1
 house,87,surname,Asian (est.),6,56
 house,87,surname,Asian (est.),7,43
 house,87,surname,Asian (est.),8,50
@@ -5654,6 +6068,7 @@ house,87,surname,Asian (est.),11,54
 house,87,surname,Asian (est.),12,40
 house,87,surname,Asian (est.),13,47
 house,87,surname,Asian (est.),14,62
+house,87,surname,Hispanic (est.),5,5
 house,87,surname,Hispanic (est.),6,435
 house,87,surname,Hispanic (est.),7,429
 house,87,surname,Hispanic (est.),8,422
@@ -5664,6 +6079,7 @@ house,87,surname,Hispanic (est.),12,448
 house,87,surname,Hispanic (est.),13,497
 house,87,surname,Hispanic (est.),14,504
 house,87,surname,Hispanic (est.),20,1
+house,88,surname,All others (est.),5,187
 house,88,surname,All others (est.),6,1909
 house,88,surname,All others (est.),7,1862
 house,88,surname,All others (est.),8,1720
@@ -5675,6 +6091,7 @@ house,88,surname,All others (est.),13,1903
 house,88,surname,All others (est.),14,2889
 house,88,surname,All others (est.),15,47
 house,88,surname,All others (est.),20,7
+house,88,surname,Asian (est.),5,3
 house,88,surname,Asian (est.),6,32
 house,88,surname,Asian (est.),7,28
 house,88,surname,Asian (est.),8,28
@@ -5684,6 +6101,7 @@ house,88,surname,Asian (est.),11,26
 house,88,surname,Asian (est.),12,23
 house,88,surname,Asian (est.),13,32
 house,88,surname,Asian (est.),14,55
+house,88,surname,Hispanic (est.),5,63
 house,88,surname,Hispanic (est.),6,601
 house,88,surname,Hispanic (est.),7,574
 house,88,surname,Hispanic (est.),8,537
@@ -5694,6 +6112,7 @@ house,88,surname,Hispanic (est.),12,318
 house,88,surname,Hispanic (est.),13,450
 house,88,surname,Hispanic (est.),14,691
 house,88,surname,Hispanic (est.),15,3
+house,89,surname,All others (est.),5,2
 house,89,surname,All others (est.),6,2030
 house,89,surname,All others (est.),7,1997
 house,89,surname,All others (est.),8,1127
@@ -5727,6 +6146,7 @@ house,89,surname,Hispanic (est.),13,514
 house,89,surname,Hispanic (est.),14,363
 house,89,surname,Hispanic (est.),18,6
 house,89,surname,Hispanic (est.),20,10
+house,9,surname,All others (est.),5,92
 house,9,surname,All others (est.),6,2773
 house,9,surname,All others (est.),7,3068
 house,9,surname,All others (est.),8,3229
@@ -5738,6 +6158,7 @@ house,9,surname,All others (est.),13,4357
 house,9,surname,All others (est.),14,5411
 house,9,surname,All others (est.),15,1
 house,9,surname,All others (est.),20,3
+house,9,surname,Asian (est.),5,1
 house,9,surname,Asian (est.),6,41
 house,9,surname,Asian (est.),7,45
 house,9,surname,Asian (est.),8,69
@@ -5747,6 +6168,7 @@ house,9,surname,Asian (est.),11,28
 house,9,surname,Asian (est.),12,65
 house,9,surname,Asian (est.),13,65
 house,9,surname,Asian (est.),14,78
+house,9,surname,Hispanic (est.),5,9
 house,9,surname,Hispanic (est.),6,322
 house,9,surname,Hispanic (est.),7,314
 house,9,surname,Hispanic (est.),8,364
@@ -6117,6 +6539,7 @@ house,99,surname,Hispanic (est.),14,136
 house,99,surname,Hispanic (est.),16,18
 house,99,surname,Hispanic (est.),17,14
 house,99,surname,Hispanic (est.),20,37
+senate,1,surname,All others (est.),5,1788
 senate,1,surname,All others (est.),6,11997
 senate,1,surname,All others (est.),7,12747
 senate,1,surname,All others (est.),8,13956
@@ -6131,6 +6554,7 @@ senate,1,surname,All others (est.),16,247
 senate,1,surname,All others (est.),18,982
 senate,1,surname,All others (est.),19,1
 senate,1,surname,All others (est.),20,58
+senate,1,surname,Asian (est.),5,24
 senate,1,surname,Asian (est.),6,215
 senate,1,surname,Asian (est.),7,210
 senate,1,surname,Asian (est.),8,212
@@ -6143,6 +6567,7 @@ senate,1,surname,Asian (est.),14,350
 senate,1,surname,Asian (est.),15,4
 senate,1,surname,Asian (est.),16,4
 senate,1,surname,Asian (est.),18,15
+senate,1,surname,Hispanic (est.),5,120
 senate,1,surname,Hispanic (est.),6,1121
 senate,1,surname,Hispanic (est.),7,1095
 senate,1,surname,Hispanic (est.),8,1230
@@ -6156,6 +6581,7 @@ senate,1,surname,Hispanic (est.),15,21
 senate,1,surname,Hispanic (est.),16,10
 senate,1,surname,Hispanic (est.),18,63
 senate,1,surname,Hispanic (est.),20,4
+senate,10,surname,All others (est.),5,225
 senate,10,surname,All others (est.),6,15366
 senate,10,surname,All others (est.),7,9130
 senate,10,surname,All others (est.),8,17007
@@ -6171,6 +6597,7 @@ senate,10,surname,All others (est.),17,417
 senate,10,surname,All others (est.),18,38
 senate,10,surname,All others (est.),19,95
 senate,10,surname,All others (est.),20,1401
+senate,10,surname,Asian (est.),5,5
 senate,10,surname,Asian (est.),6,553
 senate,10,surname,Asian (est.),7,192
 senate,10,surname,Asian (est.),8,597
@@ -6185,6 +6612,7 @@ senate,10,surname,Asian (est.),16,22
 senate,10,surname,Asian (est.),17,12
 senate,10,surname,Asian (est.),19,1
 senate,10,surname,Asian (est.),20,32
+senate,10,surname,Hispanic (est.),5,47
 senate,10,surname,Hispanic (est.),6,3130
 senate,10,surname,Hispanic (est.),7,1126
 senate,10,surname,Hispanic (est.),8,3308
@@ -6200,6 +6628,7 @@ senate,10,surname,Hispanic (est.),17,38
 senate,10,surname,Hispanic (est.),18,1
 senate,10,surname,Hispanic (est.),19,11
 senate,10,surname,Hispanic (est.),20,150
+senate,11,surname,All others (est.),5,570
 senate,11,surname,All others (est.),6,10517
 senate,11,surname,All others (est.),7,10482
 senate,11,surname,All others (est.),8,5001
@@ -6215,6 +6644,7 @@ senate,11,surname,All others (est.),17,166
 senate,11,surname,All others (est.),18,24
 senate,11,surname,All others (est.),19,51
 senate,11,surname,All others (est.),20,1277
+senate,11,surname,Asian (est.),5,50
 senate,11,surname,Asian (est.),6,726
 senate,11,surname,Asian (est.),7,752
 senate,11,surname,Asian (est.),8,506
@@ -6228,6 +6658,7 @@ senate,11,surname,Asian (est.),16,3
 senate,11,surname,Asian (est.),17,10
 senate,11,surname,Asian (est.),19,3
 senate,11,surname,Asian (est.),20,69
+senate,11,surname,Hispanic (est.),5,123
 senate,11,surname,Hispanic (est.),6,2406
 senate,11,surname,Hispanic (est.),7,2310
 senate,11,surname,Hispanic (est.),8,1229
@@ -6243,6 +6674,7 @@ senate,11,surname,Hispanic (est.),17,27
 senate,11,surname,Hispanic (est.),18,5
 senate,11,surname,Hispanic (est.),19,2
 senate,11,surname,Hispanic (est.),20,214
+senate,12,surname,All others (est.),5,63
 senate,12,surname,All others (est.),6,11617
 senate,12,surname,All others (est.),7,16624
 senate,12,surname,All others (est.),8,20501
@@ -6256,6 +6688,7 @@ senate,12,surname,All others (est.),16,901
 senate,12,surname,All others (est.),17,51
 senate,12,surname,All others (est.),18,280
 senate,12,surname,All others (est.),20,1853
+senate,12,surname,Asian (est.),5,1
 senate,12,surname,Asian (est.),6,1014
 senate,12,surname,Asian (est.),7,1485
 senate,12,surname,Asian (est.),8,1749
@@ -6269,6 +6702,7 @@ senate,12,surname,Asian (est.),16,56
 senate,12,surname,Asian (est.),17,2
 senate,12,surname,Asian (est.),18,33
 senate,12,surname,Asian (est.),20,118
+senate,12,surname,Hispanic (est.),5,4
 senate,12,surname,Hispanic (est.),6,1629
 senate,12,surname,Hispanic (est.),7,2448
 senate,12,surname,Hispanic (est.),8,2994
@@ -6282,6 +6716,7 @@ senate,12,surname,Hispanic (est.),16,74
 senate,12,surname,Hispanic (est.),17,4
 senate,12,surname,Hispanic (est.),18,28
 senate,12,surname,Hispanic (est.),20,149
+senate,13,surname,All others (est.),5,743
 senate,13,surname,All others (est.),6,1460
 senate,13,surname,All others (est.),7,1480
 senate,13,surname,All others (est.),8,1128
@@ -6293,6 +6728,7 @@ senate,13,surname,All others (est.),13,602
 senate,13,surname,All others (est.),14,8392
 senate,13,surname,All others (est.),17,298
 senate,13,surname,All others (est.),20,2218
+senate,13,surname,Asian (est.),5,82
 senate,13,surname,Asian (est.),6,152
 senate,13,surname,Asian (est.),7,211
 senate,13,surname,Asian (est.),8,147
@@ -6304,6 +6740,7 @@ senate,13,surname,Asian (est.),13,67
 senate,13,surname,Asian (est.),14,697
 senate,13,surname,Asian (est.),17,27
 senate,13,surname,Asian (est.),20,128
+senate,13,surname,Hispanic (est.),5,198
 senate,13,surname,Hispanic (est.),6,311
 senate,13,surname,Hispanic (est.),7,361
 senate,13,surname,Hispanic (est.),8,233
@@ -6315,6 +6752,7 @@ senate,13,surname,Hispanic (est.),13,167
 senate,13,surname,Hispanic (est.),14,1685
 senate,13,surname,Hispanic (est.),17,34
 senate,13,surname,Hispanic (est.),20,243
+senate,14,surname,All others (est.),5,850
 senate,14,surname,All others (est.),6,19556
 senate,14,surname,All others (est.),7,20548
 senate,14,surname,All others (est.),8,19718
@@ -6329,6 +6767,7 @@ senate,14,surname,All others (est.),17,7
 senate,14,surname,All others (est.),18,331
 senate,14,surname,All others (est.),19,273
 senate,14,surname,All others (est.),20,1944
+senate,14,surname,Asian (est.),5,58
 senate,14,surname,Asian (est.),6,1977
 senate,14,surname,Asian (est.),7,1910
 senate,14,surname,Asian (est.),8,1762
@@ -6342,6 +6781,7 @@ senate,14,surname,Asian (est.),15,59
 senate,14,surname,Asian (est.),18,14
 senate,14,surname,Asian (est.),19,13
 senate,14,surname,Asian (est.),20,78
+senate,14,surname,Hispanic (est.),5,105
 senate,14,surname,Hispanic (est.),6,4916
 senate,14,surname,Hispanic (est.),7,4768
 senate,14,surname,Hispanic (est.),8,4757
@@ -6356,6 +6796,7 @@ senate,14,surname,Hispanic (est.),17,1
 senate,14,surname,Hispanic (est.),18,46
 senate,14,surname,Hispanic (est.),19,40
 senate,14,surname,Hispanic (est.),20,266
+senate,15,surname,All others (est.),5,1116
 senate,15,surname,All others (est.),6,2017
 senate,15,surname,All others (est.),7,2171
 senate,15,surname,All others (est.),8,1133
@@ -6367,6 +6808,7 @@ senate,15,surname,All others (est.),13,1292
 senate,15,surname,All others (est.),14,8332
 senate,15,surname,All others (est.),17,516
 senate,15,surname,All others (est.),20,2754
+senate,15,surname,Asian (est.),5,102
 senate,15,surname,Asian (est.),6,150
 senate,15,surname,Asian (est.),7,214
 senate,15,surname,Asian (est.),8,124
@@ -6378,6 +6820,7 @@ senate,15,surname,Asian (est.),13,104
 senate,15,surname,Asian (est.),14,818
 senate,15,surname,Asian (est.),17,41
 senate,15,surname,Asian (est.),20,191
+senate,15,surname,Hispanic (est.),5,295
 senate,15,surname,Hispanic (est.),6,425
 senate,15,surname,Hispanic (est.),7,511
 senate,15,surname,Hispanic (est.),8,258
@@ -6389,6 +6832,7 @@ senate,15,surname,Hispanic (est.),13,323
 senate,15,surname,Hispanic (est.),14,2400
 senate,15,surname,Hispanic (est.),17,79
 senate,15,surname,Hispanic (est.),20,369
+senate,16,surname,All others (est.),5,103
 senate,16,surname,All others (est.),6,8993
 senate,16,surname,All others (est.),7,8715
 senate,16,surname,All others (est.),8,9038
@@ -6400,6 +6844,7 @@ senate,16,surname,All others (est.),13,11267
 senate,16,surname,All others (est.),14,18251
 senate,16,surname,All others (est.),18,451
 senate,16,surname,All others (est.),20,1629
+senate,16,surname,Asian (est.),5,1
 senate,16,surname,Asian (est.),6,743
 senate,16,surname,Asian (est.),7,675
 senate,16,surname,Asian (est.),8,664
@@ -6411,6 +6856,7 @@ senate,16,surname,Asian (est.),13,687
 senate,16,surname,Asian (est.),14,1059
 senate,16,surname,Asian (est.),18,25
 senate,16,surname,Asian (est.),20,65
+senate,16,surname,Hispanic (est.),5,7
 senate,16,surname,Hispanic (est.),6,4081
 senate,16,surname,Hispanic (est.),7,3625
 senate,16,surname,Hispanic (est.),8,3785
@@ -6422,6 +6868,7 @@ senate,16,surname,Hispanic (est.),13,4383
 senate,16,surname,Hispanic (est.),14,5852
 senate,16,surname,Hispanic (est.),18,74
 senate,16,surname,Hispanic (est.),20,260
+senate,17,surname,All others (est.),5,978
 senate,17,surname,All others (est.),6,5215
 senate,17,surname,All others (est.),7,5054
 senate,17,surname,All others (est.),8,5191
@@ -6433,6 +6880,7 @@ senate,17,surname,All others (est.),13,6094
 senate,17,surname,All others (est.),14,13855
 senate,17,surname,All others (est.),17,329
 senate,17,surname,All others (est.),20,1458
+senate,17,surname,Asian (est.),5,124
 senate,17,surname,Asian (est.),6,264
 senate,17,surname,Asian (est.),7,312
 senate,17,surname,Asian (est.),8,347
@@ -6444,6 +6892,7 @@ senate,17,surname,Asian (est.),13,218
 senate,17,surname,Asian (est.),14,953
 senate,17,surname,Asian (est.),17,40
 senate,17,surname,Asian (est.),20,122
+senate,17,surname,Hispanic (est.),5,185
 senate,17,surname,Hispanic (est.),6,1107
 senate,17,surname,Hispanic (est.),7,987
 senate,17,surname,Hispanic (est.),8,994
@@ -6455,6 +6904,7 @@ senate,17,surname,Hispanic (est.),13,1235
 senate,17,surname,Hispanic (est.),14,2464
 senate,17,surname,Hispanic (est.),17,38
 senate,17,surname,Hispanic (est.),20,162
+senate,18,surname,All others (est.),5,649
 senate,18,surname,All others (est.),6,7153
 senate,18,surname,All others (est.),7,7447
 senate,18,surname,All others (est.),8,8298
@@ -6467,6 +6917,7 @@ senate,18,surname,All others (est.),14,16208
 senate,18,surname,All others (est.),15,2
 senate,18,surname,All others (est.),17,172
 senate,18,surname,All others (est.),20,424
+senate,18,surname,Asian (est.),5,96
 senate,18,surname,Asian (est.),6,321
 senate,18,surname,Asian (est.),7,325
 senate,18,surname,Asian (est.),8,409
@@ -6478,6 +6929,7 @@ senate,18,surname,Asian (est.),13,220
 senate,18,surname,Asian (est.),14,866
 senate,18,surname,Asian (est.),17,26
 senate,18,surname,Asian (est.),20,49
+senate,18,surname,Hispanic (est.),5,196
 senate,18,surname,Hispanic (est.),6,1495
 senate,18,surname,Hispanic (est.),7,1543
 senate,18,surname,Hispanic (est.),8,1721
@@ -6489,6 +6941,7 @@ senate,18,surname,Hispanic (est.),13,1750
 senate,18,surname,Hispanic (est.),14,3218
 senate,18,surname,Hispanic (est.),17,28
 senate,18,surname,Hispanic (est.),20,62
+senate,19,surname,All others (est.),5,263
 senate,19,surname,All others (est.),6,8247
 senate,19,surname,All others (est.),7,8446
 senate,19,surname,All others (est.),8,6503
@@ -6501,6 +6954,7 @@ senate,19,surname,All others (est.),14,9980
 senate,19,surname,All others (est.),15,59
 senate,19,surname,All others (est.),18,1
 senate,19,surname,All others (est.),20,3
+senate,19,surname,Asian (est.),5,16
 senate,19,surname,Asian (est.),6,515
 senate,19,surname,Asian (est.),7,487
 senate,19,surname,Asian (est.),8,332
@@ -6511,6 +6965,7 @@ senate,19,surname,Asian (est.),12,451
 senate,19,surname,Asian (est.),13,55
 senate,19,surname,Asian (est.),14,493
 senate,19,surname,Asian (est.),15,2
+senate,19,surname,Hispanic (est.),5,125
 senate,19,surname,Hispanic (est.),6,8669
 senate,19,surname,Hispanic (est.),7,8149
 senate,19,surname,Hispanic (est.),8,5941
@@ -6522,6 +6977,7 @@ senate,19,surname,Hispanic (est.),13,1631
 senate,19,surname,Hispanic (est.),14,10045
 senate,19,surname,Hispanic (est.),15,77
 senate,19,surname,Hispanic (est.),20,1
+senate,2,surname,All others (est.),5,201
 senate,2,surname,All others (est.),6,14142
 senate,2,surname,All others (est.),7,14429
 senate,2,surname,All others (est.),8,14907
@@ -6534,6 +6990,7 @@ senate,2,surname,All others (est.),14,25528
 senate,2,surname,All others (est.),15,4
 senate,2,surname,All others (est.),18,434
 senate,2,surname,All others (est.),20,1366
+senate,2,surname,Asian (est.),5,5
 senate,2,surname,Asian (est.),6,1007
 senate,2,surname,Asian (est.),7,984
 senate,2,surname,Asian (est.),8,1002
@@ -6545,6 +7002,7 @@ senate,2,surname,Asian (est.),13,1198
 senate,2,surname,Asian (est.),14,1502
 senate,2,surname,Asian (est.),18,27
 senate,2,surname,Asian (est.),20,72
+senate,2,surname,Hispanic (est.),5,19
 senate,2,surname,Hispanic (est.),6,3213
 senate,2,surname,Hispanic (est.),7,3165
 senate,2,surname,Hispanic (est.),8,3150
@@ -6556,6 +7014,7 @@ senate,2,surname,Hispanic (est.),13,3545
 senate,2,surname,Hispanic (est.),14,4375
 senate,2,surname,Hispanic (est.),18,42
 senate,2,surname,Hispanic (est.),20,147
+senate,20,surname,All others (est.),5,5
 senate,20,surname,All others (est.),6,4069
 senate,20,surname,All others (est.),7,2645
 senate,20,surname,All others (est.),8,2006
@@ -6578,6 +7037,7 @@ senate,20,surname,Asian (est.),13,276
 senate,20,surname,Asian (est.),14,446
 senate,20,surname,Asian (est.),16,18
 senate,20,surname,Asian (est.),20,2
+senate,20,surname,Hispanic (est.),5,5
 senate,20,surname,Hispanic (est.),6,8501
 senate,20,surname,Hispanic (est.),7,7250
 senate,20,surname,Hispanic (est.),8,7051
@@ -6590,6 +7050,7 @@ senate,20,surname,Hispanic (est.),14,14280
 senate,20,surname,Hispanic (est.),16,353
 senate,20,surname,Hispanic (est.),17,1
 senate,20,surname,Hispanic (est.),20,93
+senate,21,surname,All others (est.),5,158
 senate,21,surname,All others (est.),6,7543
 senate,21,surname,All others (est.),7,7860
 senate,21,surname,All others (est.),8,7454
@@ -6603,6 +7064,7 @@ senate,21,surname,All others (est.),15,101
 senate,21,surname,All others (est.),18,27
 senate,21,surname,All others (est.),19,17
 senate,21,surname,All others (est.),20,224
+senate,21,surname,Asian (est.),5,6
 senate,21,surname,Asian (est.),6,444
 senate,21,surname,Asian (est.),7,422
 senate,21,surname,Asian (est.),8,363
@@ -6616,6 +7078,7 @@ senate,21,surname,Asian (est.),15,3
 senate,21,surname,Asian (est.),18,2
 senate,21,surname,Asian (est.),19,1
 senate,21,surname,Asian (est.),20,9
+senate,21,surname,Hispanic (est.),5,176
 senate,21,surname,Hispanic (est.),6,7598
 senate,21,surname,Hispanic (est.),7,7448
 senate,21,surname,Hispanic (est.),8,4943
@@ -6629,6 +7092,7 @@ senate,21,surname,Hispanic (est.),15,47
 senate,21,surname,Hispanic (est.),18,9
 senate,21,surname,Hispanic (est.),19,13
 senate,21,surname,Hispanic (est.),20,134
+senate,22,surname,All others (est.),5,699
 senate,22,surname,All others (est.),6,14336
 senate,22,surname,All others (est.),7,11443
 senate,22,surname,All others (est.),8,16212
@@ -6643,6 +7107,7 @@ senate,22,surname,All others (est.),16,735
 senate,22,surname,All others (est.),17,149
 senate,22,surname,All others (est.),18,98
 senate,22,surname,All others (est.),20,1281
+senate,22,surname,Asian (est.),5,13
 senate,22,surname,Asian (est.),6,827
 senate,22,surname,Asian (est.),7,272
 senate,22,surname,Asian (est.),8,915
@@ -6657,6 +7122,7 @@ senate,22,surname,Asian (est.),16,19
 senate,22,surname,Asian (est.),17,14
 senate,22,surname,Asian (est.),18,2
 senate,22,surname,Asian (est.),20,40
+senate,22,surname,Hispanic (est.),5,70
 senate,22,surname,Hispanic (est.),6,2661
 senate,22,surname,Hispanic (est.),7,1537
 senate,22,surname,Hispanic (est.),8,2904
@@ -6671,6 +7137,7 @@ senate,22,surname,Hispanic (est.),16,75
 senate,22,surname,Hispanic (est.),17,19
 senate,22,surname,Hispanic (est.),18,9
 senate,22,surname,Hispanic (est.),20,130
+senate,23,surname,All others (est.),5,99
 senate,23,surname,All others (est.),6,11675
 senate,23,surname,All others (est.),7,10760
 senate,23,surname,All others (est.),8,12756
@@ -6684,6 +7151,7 @@ senate,23,surname,All others (est.),16,40
 senate,23,surname,All others (est.),17,9
 senate,23,surname,All others (est.),18,543
 senate,23,surname,All others (est.),20,1947
+senate,23,surname,Asian (est.),5,1
 senate,23,surname,Asian (est.),6,678
 senate,23,surname,Asian (est.),7,432
 senate,23,surname,Asian (est.),8,794
@@ -6697,6 +7165,7 @@ senate,23,surname,Asian (est.),16,2
 senate,23,surname,Asian (est.),17,1
 senate,23,surname,Asian (est.),18,16
 senate,23,surname,Asian (est.),20,52
+senate,23,surname,Hispanic (est.),5,5
 senate,23,surname,Hispanic (est.),6,3931
 senate,23,surname,Hispanic (est.),7,3356
 senate,23,surname,Hispanic (est.),8,4016
@@ -6710,6 +7179,7 @@ senate,23,surname,Hispanic (est.),16,2
 senate,23,surname,Hispanic (est.),17,6
 senate,23,surname,Hispanic (est.),18,64
 senate,23,surname,Hispanic (est.),20,249
+senate,24,surname,All others (est.),5,5465
 senate,24,surname,All others (est.),6,14510
 senate,24,surname,All others (est.),7,15684
 senate,24,surname,All others (est.),8,15560
@@ -6725,6 +7195,7 @@ senate,24,surname,All others (est.),17,24
 senate,24,surname,All others (est.),18,33
 senate,24,surname,All others (est.),19,506
 senate,24,surname,All others (est.),20,342
+senate,24,surname,Asian (est.),5,150
 senate,24,surname,Asian (est.),6,700
 senate,24,surname,Asian (est.),7,744
 senate,24,surname,Asian (est.),8,750
@@ -6738,6 +7209,7 @@ senate,24,surname,Asian (est.),17,2
 senate,24,surname,Asian (est.),18,1
 senate,24,surname,Asian (est.),19,22
 senate,24,surname,Asian (est.),20,9
+senate,24,surname,Hispanic (est.),5,1014
 senate,24,surname,Hispanic (est.),6,2978
 senate,24,surname,Hispanic (est.),7,2896
 senate,24,surname,Hispanic (est.),8,2691
@@ -6752,6 +7224,7 @@ senate,24,surname,Hispanic (est.),17,4
 senate,24,surname,Hispanic (est.),18,1
 senate,24,surname,Hispanic (est.),19,69
 senate,24,surname,Hispanic (est.),20,40
+senate,25,surname,All others (est.),5,1913
 senate,25,surname,All others (est.),6,22342
 senate,25,surname,All others (est.),7,23842
 senate,25,surname,All others (est.),8,22319
@@ -6766,6 +7239,7 @@ senate,25,surname,All others (est.),17,3
 senate,25,surname,All others (est.),18,57
 senate,25,surname,All others (est.),19,41
 senate,25,surname,All others (est.),20,888
+senate,25,surname,Asian (est.),5,47
 senate,25,surname,Asian (est.),6,1011
 senate,25,surname,Asian (est.),7,1081
 senate,25,surname,Asian (est.),8,932
@@ -6779,6 +7253,7 @@ senate,25,surname,Asian (est.),15,13
 senate,25,surname,Asian (est.),18,2
 senate,25,surname,Asian (est.),19,1
 senate,25,surname,Asian (est.),20,26
+senate,25,surname,Hispanic (est.),5,299
 senate,25,surname,Hispanic (est.),6,5791
 senate,25,surname,Hispanic (est.),7,5666
 senate,25,surname,Hispanic (est.),8,4779
@@ -6792,6 +7267,7 @@ senate,25,surname,Hispanic (est.),15,14
 senate,25,surname,Hispanic (est.),18,2
 senate,25,surname,Hispanic (est.),19,3
 senate,25,surname,Hispanic (est.),20,127
+senate,26,surname,All others (est.),5,240
 senate,26,surname,All others (est.),6,7529
 senate,26,surname,All others (est.),7,7625
 senate,26,surname,All others (est.),8,5407
@@ -6802,6 +7278,7 @@ senate,26,surname,All others (est.),12,7984
 senate,26,surname,All others (est.),13,3
 senate,26,surname,All others (est.),14,7368
 senate,26,surname,All others (est.),20,2
+senate,26,surname,Asian (est.),5,18
 senate,26,surname,Asian (est.),6,506
 senate,26,surname,Asian (est.),7,474
 senate,26,surname,Asian (est.),8,311
@@ -6810,6 +7287,7 @@ senate,26,surname,Asian (est.),10,8
 senate,26,surname,Asian (est.),11,22
 senate,26,surname,Asian (est.),12,441
 senate,26,surname,Asian (est.),14,411
+senate,26,surname,Hispanic (est.),5,183
 senate,26,surname,Hispanic (est.),6,8289
 senate,26,surname,Hispanic (est.),7,7969
 senate,26,surname,Hispanic (est.),8,5169
@@ -6820,6 +7298,7 @@ senate,26,surname,Hispanic (est.),12,8332
 senate,26,surname,Hispanic (est.),13,5
 senate,26,surname,Hispanic (est.),14,8483
 senate,26,surname,Hispanic (est.),20,3
+senate,27,surname,All others (est.),5,77
 senate,27,surname,All others (est.),6,3997
 senate,27,surname,All others (est.),7,3524
 senate,27,surname,All others (est.),8,3383
@@ -6834,6 +7313,7 @@ senate,27,surname,All others (est.),16,128
 senate,27,surname,All others (est.),18,1
 senate,27,surname,All others (est.),19,75
 senate,27,surname,All others (est.),20,25
+senate,27,surname,Asian (est.),5,3
 senate,27,surname,Asian (est.),6,268
 senate,27,surname,Asian (est.),7,224
 senate,27,surname,Asian (est.),8,235
@@ -6846,6 +7326,7 @@ senate,27,surname,Asian (est.),14,438
 senate,27,surname,Asian (est.),16,3
 senate,27,surname,Asian (est.),19,3
 senate,27,surname,Asian (est.),20,1
+senate,27,surname,Hispanic (est.),5,73
 senate,27,surname,Hispanic (est.),6,8427
 senate,27,surname,Hispanic (est.),7,7947
 senate,27,surname,Hispanic (est.),8,8575
@@ -6859,6 +7340,7 @@ senate,27,surname,Hispanic (est.),15,4
 senate,27,surname,Hispanic (est.),16,36
 senate,27,surname,Hispanic (est.),19,67
 senate,27,surname,Hispanic (est.),20,15
+senate,28,surname,All others (est.),5,518
 senate,28,surname,All others (est.),6,12238
 senate,28,surname,All others (est.),7,12514
 senate,28,surname,All others (est.),8,10796
@@ -6874,6 +7356,7 @@ senate,28,surname,All others (est.),17,196
 senate,28,surname,All others (est.),18,49
 senate,28,surname,All others (est.),19,19
 senate,28,surname,All others (est.),20,571
+senate,28,surname,Asian (est.),5,6
 senate,28,surname,Asian (est.),6,272
 senate,28,surname,Asian (est.),7,293
 senate,28,surname,Asian (est.),8,246
@@ -6887,6 +7370,7 @@ senate,28,surname,Asian (est.),15,6
 senate,28,surname,Asian (est.),17,4
 senate,28,surname,Asian (est.),18,3
 senate,28,surname,Asian (est.),20,11
+senate,28,surname,Hispanic (est.),5,77
 senate,28,surname,Hispanic (est.),6,3092
 senate,28,surname,Hispanic (est.),7,2767
 senate,28,surname,Hispanic (est.),8,2501
@@ -6902,6 +7386,7 @@ senate,28,surname,Hispanic (est.),17,22
 senate,28,surname,Hispanic (est.),18,12
 senate,28,surname,Hispanic (est.),19,1
 senate,28,surname,Hispanic (est.),20,100
+senate,29,surname,All others (est.),5,31
 senate,29,surname,All others (est.),6,3798
 senate,29,surname,All others (est.),7,4058
 senate,29,surname,All others (est.),8,3901
@@ -6913,6 +7398,7 @@ senate,29,surname,All others (est.),13,5328
 senate,29,surname,All others (est.),14,2342
 senate,29,surname,All others (est.),15,1
 senate,29,surname,All others (est.),20,7
+senate,29,surname,Asian (est.),5,2
 senate,29,surname,Asian (est.),6,313
 senate,29,surname,Asian (est.),7,316
 senate,29,surname,Asian (est.),8,296
@@ -6922,6 +7408,7 @@ senate,29,surname,Asian (est.),11,350
 senate,29,surname,Asian (est.),12,321
 senate,29,surname,Asian (est.),13,386
 senate,29,surname,Asian (est.),14,121
+senate,29,surname,Hispanic (est.),5,43
 senate,29,surname,Hispanic (est.),6,8860
 senate,29,surname,Hispanic (est.),7,8688
 senate,29,surname,Hispanic (est.),8,8024
@@ -6932,6 +7419,7 @@ senate,29,surname,Hispanic (est.),12,9364
 senate,29,surname,Hispanic (est.),13,10351
 senate,29,surname,Hispanic (est.),14,3449
 senate,29,surname,Hispanic (est.),20,18
+senate,3,surname,All others (est.),5,759
 senate,3,surname,All others (est.),6,12106
 senate,3,surname,All others (est.),7,12560
 senate,3,surname,All others (est.),8,13903
@@ -6943,6 +7431,7 @@ senate,3,surname,All others (est.),13,18789
 senate,3,surname,All others (est.),14,25653
 senate,3,surname,All others (est.),15,102
 senate,3,surname,All others (est.),20,648
+senate,3,surname,Asian (est.),5,12
 senate,3,surname,Asian (est.),6,277
 senate,3,surname,Asian (est.),7,276
 senate,3,surname,Asian (est.),8,335
@@ -6954,6 +7443,7 @@ senate,3,surname,Asian (est.),13,328
 senate,3,surname,Asian (est.),14,441
 senate,3,surname,Asian (est.),15,3
 senate,3,surname,Asian (est.),20,11
+senate,3,surname,Hispanic (est.),5,67
 senate,3,surname,Hispanic (est.),6,1513
 senate,3,surname,Hispanic (est.),7,1481
 senate,3,surname,Hispanic (est.),8,1636
@@ -6965,6 +7455,7 @@ senate,3,surname,Hispanic (est.),13,1916
 senate,3,surname,Hispanic (est.),14,2360
 senate,3,surname,Hispanic (est.),15,6
 senate,3,surname,Hispanic (est.),20,42
+senate,30,surname,All others (est.),5,107
 senate,30,surname,All others (est.),6,9915
 senate,30,surname,All others (est.),7,16585
 senate,30,surname,All others (est.),8,16439
@@ -6977,6 +7468,7 @@ senate,30,surname,All others (est.),14,29618
 senate,30,surname,All others (est.),16,742
 senate,30,surname,All others (est.),18,38
 senate,30,surname,All others (est.),20,636
+senate,30,surname,Asian (est.),5,1
 senate,30,surname,Asian (est.),6,277
 senate,30,surname,Asian (est.),7,961
 senate,30,surname,Asian (est.),8,936
@@ -6989,6 +7481,7 @@ senate,30,surname,Asian (est.),14,1193
 senate,30,surname,Asian (est.),16,41
 senate,30,surname,Asian (est.),18,3
 senate,30,surname,Asian (est.),20,31
+senate,30,surname,Hispanic (est.),5,10
 senate,30,surname,Hispanic (est.),6,1099
 senate,30,surname,Hispanic (est.),7,2341
 senate,30,surname,Hispanic (est.),8,2242
@@ -7001,6 +7494,7 @@ senate,30,surname,Hispanic (est.),14,3386
 senate,30,surname,Hispanic (est.),16,69
 senate,30,surname,Hispanic (est.),18,5
 senate,30,surname,Hispanic (est.),20,53
+senate,31,surname,All others (est.),5,456
 senate,31,surname,All others (est.),6,8790
 senate,31,surname,All others (est.),7,8885
 senate,31,surname,All others (est.),8,7975
@@ -7013,6 +7507,7 @@ senate,31,surname,All others (est.),14,13770
 senate,31,surname,All others (est.),15,63
 senate,31,surname,All others (est.),19,4
 senate,31,surname,All others (est.),20,50
+senate,31,surname,Asian (est.),5,7
 senate,31,surname,Asian (est.),6,218
 senate,31,surname,Asian (est.),7,199
 senate,31,surname,Asian (est.),8,195
@@ -7023,6 +7518,7 @@ senate,31,surname,Asian (est.),12,201
 senate,31,surname,Asian (est.),13,227
 senate,31,surname,Asian (est.),14,297
 senate,31,surname,Asian (est.),20,1
+senate,31,surname,Hispanic (est.),5,156
 senate,31,surname,Hispanic (est.),6,2830
 senate,31,surname,Hispanic (est.),7,2615
 senate,31,surname,Hispanic (est.),8,2400
@@ -7035,6 +7531,7 @@ senate,31,surname,Hispanic (est.),14,3030
 senate,31,surname,Hispanic (est.),15,3
 senate,31,surname,Hispanic (est.),19,1
 senate,31,surname,Hispanic (est.),20,2
+senate,4,surname,All others (est.),5,362
 senate,4,surname,All others (est.),6,12869
 senate,4,surname,All others (est.),7,12808
 senate,4,surname,All others (est.),8,13359
@@ -7047,6 +7544,7 @@ senate,4,surname,All others (est.),14,19523
 senate,4,surname,All others (est.),15,19
 senate,4,surname,All others (est.),17,161
 senate,4,surname,All others (est.),20,2792
+senate,4,surname,Asian (est.),5,13
 senate,4,surname,Asian (est.),6,566
 senate,4,surname,Asian (est.),7,534
 senate,4,surname,Asian (est.),8,563
@@ -7058,6 +7556,7 @@ senate,4,surname,Asian (est.),13,407
 senate,4,surname,Asian (est.),14,634
 senate,4,surname,Asian (est.),17,10
 senate,4,surname,Asian (est.),20,85
+senate,4,surname,Hispanic (est.),5,94
 senate,4,surname,Hispanic (est.),6,2496
 senate,4,surname,Hispanic (est.),7,2373
 senate,4,surname,Hispanic (est.),8,2512
@@ -7070,6 +7569,7 @@ senate,4,surname,Hispanic (est.),14,2984
 senate,4,surname,Hispanic (est.),15,2
 senate,4,surname,Hispanic (est.),17,18
 senate,4,surname,Hispanic (est.),20,282
+senate,5,surname,All others (est.),5,432
 senate,5,surname,All others (est.),6,16621
 senate,5,surname,All others (est.),7,17377
 senate,5,surname,All others (est.),8,18045
@@ -7085,6 +7585,7 @@ senate,5,surname,All others (est.),17,90
 senate,5,surname,All others (est.),18,164
 senate,5,surname,All others (est.),19,382
 senate,5,surname,All others (est.),20,20
+senate,5,surname,Asian (est.),5,9
 senate,5,surname,Asian (est.),6,868
 senate,5,surname,Asian (est.),7,901
 senate,5,surname,Asian (est.),8,904
@@ -7097,6 +7598,7 @@ senate,5,surname,Asian (est.),14,1036
 senate,5,surname,Asian (est.),17,4
 senate,5,surname,Asian (est.),18,5
 senate,5,surname,Asian (est.),19,12
+senate,5,surname,Hispanic (est.),5,40
 senate,5,surname,Hispanic (est.),6,3592
 senate,5,surname,Hispanic (est.),7,3547
 senate,5,surname,Hispanic (est.),8,3778
@@ -7111,6 +7613,7 @@ senate,5,surname,Hispanic (est.),17,13
 senate,5,surname,Hispanic (est.),18,10
 senate,5,surname,Hispanic (est.),19,38
 senate,5,surname,Hispanic (est.),20,1
+senate,6,surname,All others (est.),5,339
 senate,6,surname,All others (est.),6,727
 senate,6,surname,All others (est.),7,646
 senate,6,surname,All others (est.),8,381
@@ -7122,6 +7625,7 @@ senate,6,surname,All others (est.),13,466
 senate,6,surname,All others (est.),14,3399
 senate,6,surname,All others (est.),17,198
 senate,6,surname,All others (est.),20,1334
+senate,6,surname,Asian (est.),5,32
 senate,6,surname,Asian (est.),6,41
 senate,6,surname,Asian (est.),7,64
 senate,6,surname,Asian (est.),8,31
@@ -7133,6 +7637,7 @@ senate,6,surname,Asian (est.),13,36
 senate,6,surname,Asian (est.),14,278
 senate,6,surname,Asian (est.),17,13
 senate,6,surname,Asian (est.),20,61
+senate,6,surname,Hispanic (est.),5,327
 senate,6,surname,Hispanic (est.),6,559
 senate,6,surname,Hispanic (est.),7,620
 senate,6,surname,Hispanic (est.),8,299
@@ -7144,6 +7649,7 @@ senate,6,surname,Hispanic (est.),13,398
 senate,6,surname,Hispanic (est.),14,3317
 senate,6,surname,Hispanic (est.),17,92
 senate,6,surname,Hispanic (est.),20,697
+senate,7,surname,All others (est.),5,1016
 senate,7,surname,All others (est.),6,3333
 senate,7,surname,All others (est.),7,3789
 senate,7,surname,All others (est.),8,2546
@@ -7155,6 +7661,7 @@ senate,7,surname,All others (est.),13,2690
 senate,7,surname,All others (est.),14,9453
 senate,7,surname,All others (est.),17,382
 senate,7,surname,All others (est.),20,2428
+senate,7,surname,Asian (est.),5,98
 senate,7,surname,Asian (est.),6,194
 senate,7,surname,Asian (est.),7,302
 senate,7,surname,Asian (est.),8,144
@@ -7166,6 +7673,7 @@ senate,7,surname,Asian (est.),13,145
 senate,7,surname,Asian (est.),14,857
 senate,7,surname,Asian (est.),17,28
 senate,7,surname,Asian (est.),20,186
+senate,7,surname,Hispanic (est.),5,274
 senate,7,surname,Hispanic (est.),6,611
 senate,7,surname,Hispanic (est.),7,709
 senate,7,surname,Hispanic (est.),8,492
@@ -7177,6 +7685,7 @@ senate,7,surname,Hispanic (est.),13,508
 senate,7,surname,Hispanic (est.),14,2199
 senate,7,surname,Hispanic (est.),17,56
 senate,7,surname,Hispanic (est.),20,326
+senate,8,surname,All others (est.),5,94
 senate,8,surname,All others (est.),6,10819
 senate,8,surname,All others (est.),7,11029
 senate,8,surname,All others (est.),8,6562
@@ -7188,6 +7697,7 @@ senate,8,surname,All others (est.),13,19401
 senate,8,surname,All others (est.),14,17150
 senate,8,surname,All others (est.),18,443
 senate,8,surname,All others (est.),20,452
+senate,8,surname,Asian (est.),5,2
 senate,8,surname,Asian (est.),6,724
 senate,8,surname,Asian (est.),7,679
 senate,8,surname,Asian (est.),8,299
@@ -7199,6 +7709,7 @@ senate,8,surname,Asian (est.),13,1551
 senate,8,surname,Asian (est.),14,867
 senate,8,surname,Asian (est.),18,35
 senate,8,surname,Asian (est.),20,20
+senate,8,surname,Hispanic (est.),5,9
 senate,8,surname,Hispanic (est.),6,1172
 senate,8,surname,Hispanic (est.),7,1199
 senate,8,surname,Hispanic (est.),8,710

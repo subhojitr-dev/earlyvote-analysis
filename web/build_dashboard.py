@@ -654,6 +654,11 @@ document.getElementById("viewSeg").addEventListener("click",e=>{
   render();});
 document.getElementById("q").addEventListener("input",render);
 document.getElementById("grp").addEventListener("change",render);
+// direct links: ?state=NC&view=turnout opens that tab and view (handy for sharing)
+(()=>{const q=new URLSearchParams(location.search);const st=(q.get("state")||"").toUpperCase();
+  if(DATA[st])cur=st;
+  if(q.get("view")==="turnout"){view="turnout";
+    document.querySelectorAll("#viewSeg button").forEach(x=>x.classList.toggle("on",x.dataset.v==="turnout"));}})();
 pick(cur);
 </script>
 </body>

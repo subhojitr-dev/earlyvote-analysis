@@ -246,6 +246,48 @@ def party_info(state):
                      for k in order if out26.get(k, 0) or out22.get(k, 0)]}
 
 
+def ga_demo_info():
+    """Georgia early voters by race, gender and age, statewide, 2026 vs 2022 on the same day of early
+    voting. Georgia Votes joins the SoS early-vote file to the voter list (which records race/gender/age):
+    2026 = today's snapshot (ingestor/ga_demographics.py); 2022 = Internet Archive copies of its home page
+    (ingestor/ga_demo_2022.py). Dates are the site's 'Last updated' dates; counts run through the day before."""
+    import csv as _csv
+    from collections import defaultdict as _dd
+    from datetime import date as _d, timedelta as _td
+    root = Path(__file__).resolve().parent.parent / "data" / "ga_districts"
+    try:
+        now, asof = _dd(dict), None
+        for r in _csv.DictReader((root / "gv_demo_2026.csv").open(encoding="utf-8")):
+            if r["chamber"] == "state":
+                now[r["dim"]][r["group"]] = int(r["ballots"])
+                asof = r["asof"]
+        old = _dd(lambda: _dd(dict))
+        for r in _csv.DictReader((root / "gv_demo_2022_state.csv").open(encoding="utf-8")):
+            old[r["asof"]][r["dim"]][r["group"]] = int(r["ballots"])
+    except (FileNotFoundError, KeyError):
+        return None
+    if not asof or not old:
+        return None
+    # same day of early voting: 2026 opened Tue Oct 13, 2022 opened Mon Oct 17
+    want = (_d.fromisoformat(asof) - (_d(2026, 10, 13) - _d(2022, 10, 17))).isoformat()
+    have = [k for k in sorted(old) if k <= want]
+    if not have:
+        return None
+    then = old[have[-1]]
+    order = {"race": ["White", "Black", "Hispanic", "Asian", "Other"], "gender": ["Women", "Men"],
+             "age": ["18-29", "30-39", "40-49", "50-64", "65+"]}
+    dims = {}
+    for dim, groups in order.items():
+        n26, n22 = sum(now[dim].values()), sum(then[dim].values())
+        if not n26 or not n22:
+            return None
+        dims[dim] = [{"group": g, "now": now[dim].get(g, 0) / n26, "then": then[dim].get(g, 0) / n22,
+                      "n": now[dim].get(g, 0)} for g in groups]
+    through = lambda k: (_d.fromisoformat(k) - _td(days=1)).isoformat()
+    return {"through26": through(asof), "through22": through(have[-1]),
+            "n26": sum(now["race"].values()), "n22": sum(then["race"].values()), "dims": dims}
+
+
 def state_data(state):
     if state == "KS":
         return {"state": state, "pending": ks_info()}
@@ -316,6 +358,7 @@ def state_data(state):
         "turnout_rate": tr_agg,
         "sameday": sameday_info(state),
         "partyreg": party_info(state),
+        "gademo": ga_demo_info() if state == "GA" else None,
         "note2022": fix2022_note(state),
         "live": (Path(__file__).resolve().parent.parent / "data" / "live"
                  / f"{state.lower()}_current.csv").exists(),
@@ -561,7 +604,20 @@ function cards(){const d=DATA[cur],ys=d.ref_years;
   document.getElementById("cards").innerHTML=
     `<div class="card"><div class="lab">${lab}</div>
        <div class="big">${big.toLocaleString()}</div>
-       <div class="note">${ovNote}${d.note2022?`<br><span style="color:var(--accent)">${d.note2022}</span>`:""}</div></div>`+ys.slice().reverse().map(nc).join("")+partyCard(d.partyreg);}
+       <div class="note">${ovNote}${d.note2022?`<br><span style="color:var(--accent)">${d.note2022}</span>`:""}</div></div>`+ys.slice().reverse().map(nc).join("")+partyCard(d.partyreg)+demoCard(d.gademo);}
+function demoCard(g){if(!g)return"";const pc=x=>(x*100).toFixed(1)+"%";
+  const tbl=(title,rows)=>`<div><div class="lab" style="margin:6px 0 4px">${title}</div><div class="tablewrap" style="max-height:none"><table>
+    <thead><tr><th>Group</th><th>2026</th><th>2022</th><th>Change</th></tr></thead><tbody>${rows.map(r=>{const dd=(r.now-r.then)*100;
+    return `<tr><td><b>${r.group}</b></td><td>${pc(r.now)}</td><td style="color:var(--muted)">${pc(r.then)}</td><td>${dd>0?"+":""}${dd.toFixed(1)} pts</td></tr>`;}).join("")}</tbody></table></div></div>`;
+  const f=(dim,grp)=>g.dims[dim].find(r=>r.group===grp), u40=k=>g.dims.age.filter(r=>r.group==="18-29"||r.group==="30-39").reduce((a,r)=>a+r[k],0);
+  const hl=(lab,n,t)=>`${lab} <b>${pc(n)}</b> <span style="color:var(--muted)">(2022: ${pc(t)})</span>`;
+  return `<div class="card" style="grid-column:1/-1"><div class="lab">Who is voting early &middot; statewide by race, gender and age &middot; 2026 vs 2022 on the same day of early voting</div>
+    <div style="font-size:15px;margin:6px 0">${hl("Black voters",f("race","Black").now,f("race","Black").then)} &nbsp;&middot;&nbsp; ${hl("Women",f("gender","Women").now,f("gender","Women").then)} &nbsp;&middot;&nbsp; ${hl("Under 40",u40("now"),u40("then"))}</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">${tbl("Race",g.dims.race)}${tbl("Gender",g.dims.gender)}${tbl("Age",g.dims.age)}</div>
+    <div class="note" style="margin-top:6px">2026 through ${g.through26} (${g.n26.toLocaleString()} early voters) vs 2022 through ${g.through22} (${g.n22.toLocaleString()}).
+    Race, gender and age come from the state voter list (race is self-reported at registration; &ldquo;Other&rdquo; includes not stated), joined to the
+    early-vote file by <a href="https://georgiavotes.com" target="_blank" rel="noopener" style="color:var(--accent)">Georgia Votes</a>; 2022 from Internet Archive copies of its daily page.
+    <b>This is who voted, not how they voted.</b> District-level breakdowns are on the <a href="/ga/" style="color:var(--accent)">Georgia district page</a>.</div></div>`;}
 function partyCard(p){if(!p)return"";const pc=x=>(x*100).toFixed(1)+"%";
   const rows=p.rows.map(r=>{const dd=(r.now-r.then)*100, col=r.party==="Democrat"?"var(--dem)":r.party==="Republican"?"var(--rep)":"var(--ink)";
     return `<tr><td style="color:${col}"><b>${r.party}</b></td><td>${pc(r.now)}</td><td style="color:var(--muted)">${pc(r.then)}</td>

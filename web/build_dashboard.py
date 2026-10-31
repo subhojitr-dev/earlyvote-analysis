@@ -288,6 +288,8 @@ def ga_demo_info():
 def _demo_out(now, then, order, through26, through22, headline, note, title=None):
     """Shared shape for the 'who is voting early' card: shares of each group, 2026 vs 2022."""
     TITLES = {"race": "Race", "gender": "Gender", "age": "Age", "surname": "Surname estimate"}
+    if "surname" in order and "gender" in order:
+        TITLES["gender"] = "Gender (first-name estimate)"
     dims = []
     for dim, groups in order.items():
         n26, n22 = sum(now[dim].values()), sum(then[dim].values())
@@ -339,13 +341,24 @@ def district_demo_info(state):
                          "<a href=\"/nc/\" style=\"color:var(--accent)\">North Carolina district page</a>.")
     if state == "TX":
         order = {"surname": ["Hispanic (est.)", "Asian (est.)", "All others (est.)"]}
-        return _demo_out(got[2026], got[2022], order, asof, through22,
-                         [("Hispanic (est.)", "surname", ["Hispanic (est.)"]), ("Asian (est.)", "surname", ["Asian (est.)"])],
+        head = [("Hispanic (est.)", "surname", ["Hispanic (est.)"]), ("Asian (est.)", "surname", ["Asian (est.)"])]
+        try:                     # first-name gender estimate (ingestor/tx_gender.py); shares of matched names
+            for y in (2026, 2022):
+                for r in _csv.DictReader((root / "tx_districts" / f"gender_{y}.csv").open(encoding="utf-8")):
+                    if int(r["days_out"]) >= out and r["group"] != "Not matched":
+                        got[y]["gender"][r["group"]] += float(r["ballots"])
+            if got[2026]["gender"] and got[2022]["gender"]:
+                order["gender"] = ["Women (est.)", "Men (est.)"]
+                head.append(("Women (est.)", "gender", ["Women (est.)"]))
+        except FileNotFoundError:
+            pass
+        return _demo_out(got[2026], got[2022], order, asof, through22, head,
                          "<b>An estimate:</b> Texas records no race. Each early voter&rsquo;s surname is looked up in the Census surname table "
                          "(the share of people with that name who are Hispanic or Asian) and the shares are added up. Good for statewide trends, "
-                         "rough for any one person. District-level estimates are on the "
+                         "rough for any one person. Women / men are estimated the same way from first names, using Social Security baby-name counts "
+                         "(names not in the table, about 5%, are left out). District-level estimates are on the "
                          "<a href=\"/tx/\" style=\"color:var(--accent)\">Texas district page</a>.",
-                         title="Who is voting early &middot; statewide Hispanic and Asian share (surname estimate) &middot; 2026 vs 2022 at the same point")
+                         title="Who is voting early &middot; statewide estimates from voter names (Hispanic, Asian, women / men) &middot; 2026 vs 2022 at the same point")
     return None
 
 

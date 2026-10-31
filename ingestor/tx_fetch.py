@@ -87,7 +87,7 @@ def main():
                                    for r in rows))
         latest = (iso, out)
         roster = ROSTERS / f"STATEWIDE.{ELECTION}.EarlyVoting.{iso}.csv"
-        if not roster.exists():
+        if not roster.exists() or d >= days[-1] - timedelta(days=2):    # same late-upload catch-up
             raw = get(f"type=EVR_STATEWIDE&electionId={eid}&electionDate={mdy}")
             if raw:
                 roster.write_bytes(raw)

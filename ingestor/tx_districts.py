@@ -189,12 +189,12 @@ def _reduce_roster(f: str, sn, other):
 
 
 def _is_cumulative(day: str, n: int) -> bool:
-    """The 2026 site's rosters are CUMULATIVE (the Oct 15 file = everyone through Oct 15),
-    unlike the old site's one-day files. Checked against the SoS county totals for that day
+    """The 2026 site's rosters were CUMULATIVE at first (the Oct 15 file = everyone through Oct 15);
+    re-downloaded on Oct 31 they are one file per voting day (everyone who voted ON that date). Checked against the SoS county totals for that day
     (data/tx_county/turnout_{day}.csv from tx_fetch.py)."""
     p = ROOT / "data" / "tx_county" / f"turnout_{day}.csv"
     if not p.exists():
-        return True                     # the 2026 site has only ever served cumulative files
+        return False                    # since late Oct 2026 the site serves one-day files
     tot = sum(int(r["inperson"]) + int(r["mail"]) for r in csv.DictReader(p.open(encoding="utf-8")))
     return tot > 0 and abs(n - tot) <= 0.02 * tot
 

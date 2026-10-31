@@ -419,7 +419,7 @@ def state_data(state):
         "turnout_rate": tr_agg,
         "sameday": sameday_info(state),
         "partyreg": party_info(state),
-        "gademo": ga_demo_info() if state == "GA" else district_demo_info(state) if state == "NC" else None,   # TX: rosters incomplete (see district_demo_info)
+        "gademo": ga_demo_info() if state == "GA" else district_demo_info(state) if state in ("NC", "TX") else None,
         "note2022": fix2022_note(state),
         "live": (Path(__file__).resolve().parent.parent / "data" / "live"
                  / f"{state.lower()}_current.csv").exists(),

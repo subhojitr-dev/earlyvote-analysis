@@ -377,7 +377,7 @@ ARCHER,senate,30,mail,14,5
 ARCHER,senate,30,mail,15,9
 ARCHER,senate,30,mail,18,8
 ARCHER,senate,30,mail,19,1
-ARMSTRONG,congress,13,inperson,4,83
+ARMSTRONG,congress,13,inperson,4,86
 ARMSTRONG,congress,13,inperson,5,75
 ARMSTRONG,congress,13,inperson,6,54
 ARMSTRONG,congress,13,inperson,7,50
@@ -398,7 +398,7 @@ ARMSTRONG,congress,13,mail,14,4
 ARMSTRONG,congress,13,mail,15,3
 ARMSTRONG,congress,13,mail,18,1
 ARMSTRONG,congress,13,mail,19,4
-ARMSTRONG,house,86,inperson,4,83
+ARMSTRONG,house,86,inperson,4,86
 ARMSTRONG,house,86,inperson,5,75
 ARMSTRONG,house,86,inperson,6,54
 ARMSTRONG,house,86,inperson,7,50
@@ -419,7 +419,7 @@ ARMSTRONG,house,86,mail,14,4
 ARMSTRONG,house,86,mail,15,3
 ARMSTRONG,house,86,mail,18,1
 ARMSTRONG,house,86,mail,19,4
-ARMSTRONG,senate,31,inperson,4,83
+ARMSTRONG,senate,31,inperson,4,86
 ARMSTRONG,senate,31,inperson,5,75
 ARMSTRONG,senate,31,inperson,6,54
 ARMSTRONG,senate,31,inperson,7,50
@@ -537,7 +537,7 @@ ATASCOSA,senate,24,mail,15,5
 ATASCOSA,senate,24,mail,16,1
 ATASCOSA,senate,24,mail,18,19
 ATASCOSA,senate,24,mail,20,3
-AUSTIN,congress,27,inperson,4,1113
+AUSTIN,congress,27,inperson,4,1112
 AUSTIN,congress,27,inperson,5,721
 AUSTIN,congress,27,inperson,6,688
 AUSTIN,congress,27,inperson,7,650
@@ -562,7 +562,7 @@ AUSTIN,congress,27,mail,14,60
 AUSTIN,congress,27,mail,15,67
 AUSTIN,congress,27,mail,18,14
 AUSTIN,congress,27,mail,19,5
-AUSTIN,house,85,inperson,4,1113
+AUSTIN,house,85,inperson,4,1112
 AUSTIN,house,85,inperson,5,721
 AUSTIN,house,85,inperson,6,688
 AUSTIN,house,85,inperson,7,650
@@ -587,7 +587,7 @@ AUSTIN,house,85,mail,14,60
 AUSTIN,house,85,mail,15,67
 AUSTIN,house,85,mail,18,14
 AUSTIN,house,85,mail,19,5
-AUSTIN,senate,18,inperson,4,1113
+AUSTIN,senate,18,inperson,4,1112
 AUSTIN,senate,18,inperson,5,721
 AUSTIN,senate,18,inperson,6,688
 AUSTIN,senate,18,inperson,7,650
@@ -1071,9 +1071,9 @@ BELL,senate,24,mail,15,722
 BELL,senate,24,mail,18,119
 BELL,senate,24,mail,19,454
 BELL,senate,24,mail,20,147
-BEXAR,congress,20,inperson,4,14972
-BEXAR,congress,20,inperson,5,11641
-BEXAR,congress,20,inperson,6,11980
+BEXAR,congress,20,inperson,4,15005
+BEXAR,congress,20,inperson,5,11660
+BEXAR,congress,20,inperson,6,11988
 BEXAR,congress,20,inperson,7,11934
 BEXAR,congress,20,inperson,8,12650
 BEXAR,congress,20,inperson,9,5987
@@ -1097,9 +1097,9 @@ BEXAR,congress,20,mail,15,511
 BEXAR,congress,20,mail,18,296
 BEXAR,congress,20,mail,19,554
 BEXAR,congress,20,mail,20,22
-BEXAR,congress,21,inperson,4,9862
-BEXAR,congress,21,inperson,5,8315
-BEXAR,congress,21,inperson,6,8906
+BEXAR,congress,21,inperson,4,9887
+BEXAR,congress,21,inperson,5,8332
+BEXAR,congress,21,inperson,6,8908
 BEXAR,congress,21,inperson,7,9173
 BEXAR,congress,21,inperson,8,9423
 BEXAR,congress,21,inperson,9,4627
@@ -1123,9 +1123,9 @@ BEXAR,congress,21,mail,15,454
 BEXAR,congress,21,mail,18,229
 BEXAR,congress,21,mail,19,365
 BEXAR,congress,21,mail,20,6
-BEXAR,congress,23,inperson,4,13790
-BEXAR,congress,23,inperson,5,10646
-BEXAR,congress,23,inperson,6,10985
+BEXAR,congress,23,inperson,4,13814
+BEXAR,congress,23,inperson,5,10664
+BEXAR,congress,23,inperson,6,10989
 BEXAR,congress,23,inperson,7,11257
 BEXAR,congress,23,inperson,8,11828
 BEXAR,congress,23,inperson,9,5400
@@ -1149,9 +1149,9 @@ BEXAR,congress,23,mail,15,490
 BEXAR,congress,23,mail,18,256
 BEXAR,congress,23,mail,19,407
 BEXAR,congress,23,mail,20,22
-BEXAR,congress,35,inperson,4,12669
-BEXAR,congress,35,inperson,5,9619
-BEXAR,congress,35,inperson,6,9409
+BEXAR,congress,35,inperson,4,12679
+BEXAR,congress,35,inperson,5,9627
+BEXAR,congress,35,inperson,6,9412
 BEXAR,congress,35,inperson,7,9637
 BEXAR,congress,35,inperson,8,9946
 BEXAR,congress,35,inperson,9,4815
@@ -1175,9 +1175,9 @@ BEXAR,congress,35,mail,15,377
 BEXAR,congress,35,mail,18,348
 BEXAR,congress,35,mail,19,436
 BEXAR,congress,35,mail,20,24
-BEXAR,house,116,inperson,4,4168
-BEXAR,house,116,inperson,5,3301
-BEXAR,house,116,inperson,6,3419
+BEXAR,house,116,inperson,4,4190
+BEXAR,house,116,inperson,5,3315
+BEXAR,house,116,inperson,6,3425
 BEXAR,house,116,inperson,7,3476
 BEXAR,house,116,inperson,8,3547
 BEXAR,house,116,inperson,9,1741
@@ -1201,9 +1201,9 @@ BEXAR,house,116,mail,15,128
 BEXAR,house,116,mail,18,91
 BEXAR,house,116,mail,19,137
 BEXAR,house,116,mail,20,3
-BEXAR,house,117,inperson,4,5355
-BEXAR,house,117,inperson,5,3950
-BEXAR,house,117,inperson,6,4082
+BEXAR,house,117,inperson,4,5361
+BEXAR,house,117,inperson,5,3957
+BEXAR,house,117,inperson,6,4083
 BEXAR,house,117,inperson,7,4021
 BEXAR,house,117,inperson,8,4084
 BEXAR,house,117,inperson,9,1898
@@ -1227,8 +1227,8 @@ BEXAR,house,117,mail,15,164
 BEXAR,house,117,mail,18,77
 BEXAR,house,117,mail,19,139
 BEXAR,house,117,mail,20,4
-BEXAR,house,118,inperson,4,5869
-BEXAR,house,118,inperson,5,4316
+BEXAR,house,118,inperson,4,5873
+BEXAR,house,118,inperson,5,4320
 BEXAR,house,118,inperson,6,4164
 BEXAR,house,118,inperson,7,4240
 BEXAR,house,118,inperson,8,4283
@@ -1253,9 +1253,9 @@ BEXAR,house,118,mail,15,158
 BEXAR,house,118,mail,18,121
 BEXAR,house,118,mail,19,154
 BEXAR,house,118,mail,20,8
-BEXAR,house,119,inperson,4,4403
-BEXAR,house,119,inperson,5,3359
-BEXAR,house,119,inperson,6,3250
+BEXAR,house,119,inperson,4,4408
+BEXAR,house,119,inperson,5,3364
+BEXAR,house,119,inperson,6,3253
 BEXAR,house,119,inperson,7,3308
 BEXAR,house,119,inperson,8,3617
 BEXAR,house,119,inperson,9,1720
@@ -1279,9 +1279,9 @@ BEXAR,house,119,mail,15,139
 BEXAR,house,119,mail,18,99
 BEXAR,house,119,mail,19,163
 BEXAR,house,119,mail,20,6
-BEXAR,house,120,inperson,4,3878
-BEXAR,house,120,inperson,5,2886
-BEXAR,house,120,inperson,6,2895
+BEXAR,house,120,inperson,4,3885
+BEXAR,house,120,inperson,5,2887
+BEXAR,house,120,inperson,6,2897
 BEXAR,house,120,inperson,7,2872
 BEXAR,house,120,inperson,8,3055
 BEXAR,house,120,inperson,9,1369
@@ -1305,8 +1305,8 @@ BEXAR,house,120,mail,15,146
 BEXAR,house,120,mail,18,132
 BEXAR,house,120,mail,19,179
 BEXAR,house,120,mail,20,10
-BEXAR,house,121,inperson,4,6520
-BEXAR,house,121,inperson,5,5284
+BEXAR,house,121,inperson,4,6524
+BEXAR,house,121,inperson,5,5289
 BEXAR,house,121,inperson,6,5784
 BEXAR,house,121,inperson,7,6068
 BEXAR,house,121,inperson,8,6086
@@ -1331,9 +1331,9 @@ BEXAR,house,121,mail,15,315
 BEXAR,house,121,mail,18,173
 BEXAR,house,121,mail,19,264
 BEXAR,house,121,mail,20,3
-BEXAR,house,122,inperson,4,7981
-BEXAR,house,122,inperson,5,6395
-BEXAR,house,122,inperson,6,6613
+BEXAR,house,122,inperson,4,7996
+BEXAR,house,122,inperson,5,6404
+BEXAR,house,122,inperson,6,6616
 BEXAR,house,122,inperson,7,6987
 BEXAR,house,122,inperson,8,7503
 BEXAR,house,122,inperson,9,3294
@@ -1357,9 +1357,9 @@ BEXAR,house,122,mail,15,329
 BEXAR,house,122,mail,18,180
 BEXAR,house,122,mail,19,265
 BEXAR,house,122,mail,20,19
-BEXAR,house,123,inperson,4,4346
-BEXAR,house,123,inperson,5,3552
-BEXAR,house,123,inperson,6,3606
+BEXAR,house,123,inperson,4,4360
+BEXAR,house,123,inperson,5,3562
+BEXAR,house,123,inperson,6,3608
 BEXAR,house,123,inperson,7,3650
 BEXAR,house,123,inperson,8,3951
 BEXAR,house,123,inperson,9,2015
@@ -1383,8 +1383,8 @@ BEXAR,house,123,mail,15,182
 BEXAR,house,123,mail,18,97
 BEXAR,house,123,mail,19,183
 BEXAR,house,123,mail,20,6
-BEXAR,house,124,inperson,4,3519
-BEXAR,house,124,inperson,5,2694
+BEXAR,house,124,inperson,4,3526
+BEXAR,house,124,inperson,5,2697
 BEXAR,house,124,inperson,6,2924
 BEXAR,house,124,inperson,7,2813
 BEXAR,house,124,inperson,8,2886
@@ -1409,8 +1409,8 @@ BEXAR,house,124,mail,15,104
 BEXAR,house,124,mail,18,64
 BEXAR,house,124,mail,19,109
 BEXAR,house,124,mail,20,8
-BEXAR,house,125,inperson,4,5254
-BEXAR,house,125,inperson,5,4483
+BEXAR,house,125,inperson,4,5261
+BEXAR,house,125,inperson,5,4488
 BEXAR,house,125,inperson,6,4543
 BEXAR,house,125,inperson,7,4564
 BEXAR,house,125,inperson,8,4835
@@ -1435,9 +1435,9 @@ BEXAR,house,125,mail,15,167
 BEXAR,house,125,mail,18,95
 BEXAR,house,125,mail,19,169
 BEXAR,house,125,mail,20,7
-BEXAR,senate,19,inperson,4,18885
-BEXAR,senate,19,inperson,5,14113
-BEXAR,senate,19,inperson,6,13820
+BEXAR,senate,19,inperson,4,18915
+BEXAR,senate,19,inperson,5,14139
+BEXAR,senate,19,inperson,6,13824
 BEXAR,senate,19,inperson,7,13843
 BEXAR,senate,19,inperson,8,14420
 BEXAR,senate,19,inperson,9,6915
@@ -1485,9 +1485,9 @@ BEXAR,senate,21,mail,14,3
 BEXAR,senate,21,mail,15,8
 BEXAR,senate,21,mail,18,2
 BEXAR,senate,21,mail,19,11
-BEXAR,senate,25,inperson,4,13004
-BEXAR,senate,25,inperson,5,10386
-BEXAR,senate,25,inperson,6,11210
+BEXAR,senate,25,inperson,4,13018
+BEXAR,senate,25,inperson,5,10396
+BEXAR,senate,25,inperson,6,11213
 BEXAR,senate,25,inperson,7,11834
 BEXAR,senate,25,inperson,8,12143
 BEXAR,senate,25,inperson,9,5646
@@ -1511,9 +1511,9 @@ BEXAR,senate,25,mail,15,588
 BEXAR,senate,25,mail,18,334
 BEXAR,senate,25,mail,19,463
 BEXAR,senate,25,mail,20,13
-BEXAR,senate,26,inperson,4,18931
-BEXAR,senate,26,inperson,5,15350
-BEXAR,senate,26,inperson,6,15910
+BEXAR,senate,26,inperson,4,18979
+BEXAR,senate,26,inperson,5,15376
+BEXAR,senate,26,inperson,6,15920
 BEXAR,senate,26,inperson,7,15994
 BEXAR,senate,26,inperson,8,16912
 BEXAR,senate,26,inperson,9,8133
@@ -1603,8 +1603,8 @@ BLANCO,senate,25,mail,15,17
 BLANCO,senate,25,mail,18,21
 BLANCO,senate,25,mail,19,30
 BLANCO,senate,25,mail,20,1
-BORDEN,congress,19,inperson,4,30
-BORDEN,congress,19,inperson,5,11
+BORDEN,congress,19,inperson,4,31
+BORDEN,congress,19,inperson,5,13
 BORDEN,congress,19,inperson,6,26
 BORDEN,congress,19,inperson,7,36
 BORDEN,congress,19,inperson,8,7
@@ -1619,8 +1619,8 @@ BORDEN,congress,19,mail,8,1
 BORDEN,congress,19,mail,12,2
 BORDEN,congress,19,mail,15,1
 BORDEN,congress,19,mail,19,1
-BORDEN,house,83,inperson,4,30
-BORDEN,house,83,inperson,5,11
+BORDEN,house,83,inperson,4,31
+BORDEN,house,83,inperson,5,13
 BORDEN,house,83,inperson,6,26
 BORDEN,house,83,inperson,7,36
 BORDEN,house,83,inperson,8,7
@@ -1635,8 +1635,8 @@ BORDEN,house,83,mail,8,1
 BORDEN,house,83,mail,12,2
 BORDEN,house,83,mail,15,1
 BORDEN,house,83,mail,19,1
-BORDEN,senate,31,inperson,4,30
-BORDEN,senate,31,inperson,5,11
+BORDEN,senate,31,inperson,4,31
+BORDEN,senate,31,inperson,5,13
 BORDEN,senate,31,inperson,6,26
 BORDEN,senate,31,inperson,7,36
 BORDEN,senate,31,inperson,8,7
@@ -2006,8 +2006,8 @@ BRAZORIA,senate,17,mail,14,553
 BRAZORIA,senate,17,mail,15,3
 BRAZORIA,senate,17,mail,18,4
 BRAZORIA,senate,17,mail,20,2
-BRAZOS,congress,10,inperson,4,7135
-BRAZOS,congress,10,inperson,5,5444
+BRAZOS,congress,10,inperson,4,7131
+BRAZOS,congress,10,inperson,5,5443
 BRAZOS,congress,10,inperson,6,4650
 BRAZOS,congress,10,inperson,7,4766
 BRAZOS,congress,10,inperson,8,4882
@@ -2056,8 +2056,8 @@ BRAZOS,house,12,mail,15,34
 BRAZOS,house,12,mail,18,5
 BRAZOS,house,12,mail,19,1
 BRAZOS,house,12,mail,20,8
-BRAZOS,house,14,inperson,4,5965
-BRAZOS,house,14,inperson,5,4520
+BRAZOS,house,14,inperson,4,5961
+BRAZOS,house,14,inperson,5,4519
 BRAZOS,house,14,inperson,6,3852
 BRAZOS,house,14,inperson,7,3896
 BRAZOS,house,14,inperson,8,4003
@@ -2082,8 +2082,8 @@ BRAZOS,house,14,mail,15,152
 BRAZOS,house,14,mail,18,35
 BRAZOS,house,14,mail,19,21
 BRAZOS,house,14,mail,20,27
-BRAZOS,senate,5,inperson,4,7135
-BRAZOS,senate,5,inperson,5,5444
+BRAZOS,senate,5,inperson,4,7131
+BRAZOS,senate,5,inperson,5,5443
 BRAZOS,senate,5,inperson,6,4650
 BRAZOS,senate,5,inperson,7,4766
 BRAZOS,senate,5,inperson,8,4882
@@ -2200,6 +2200,7 @@ BREWSTER,senate,29,mail,17,6
 BREWSTER,senate,29,mail,18,7
 BREWSTER,senate,29,mail,19,16
 BREWSTER,senate,29,mail,20,14
+BRISCOE,congress,13,inperson,4,44
 BRISCOE,congress,13,inperson,5,48
 BRISCOE,congress,13,inperson,6,35
 BRISCOE,congress,13,inperson,7,23
@@ -2221,6 +2222,7 @@ BRISCOE,congress,13,mail,15,4
 BRISCOE,congress,13,mail,18,1
 BRISCOE,congress,13,mail,19,2
 BRISCOE,congress,13,mail,20,12
+BRISCOE,house,88,inperson,4,44
 BRISCOE,house,88,inperson,5,48
 BRISCOE,house,88,inperson,6,35
 BRISCOE,house,88,inperson,7,23
@@ -2242,6 +2244,7 @@ BRISCOE,house,88,mail,15,4
 BRISCOE,house,88,mail,18,1
 BRISCOE,house,88,mail,19,2
 BRISCOE,house,88,mail,20,12
+BRISCOE,senate,31,inperson,4,44
 BRISCOE,senate,31,inperson,5,48
 BRISCOE,senate,31,inperson,6,35
 BRISCOE,senate,31,inperson,7,23
@@ -2814,7 +2817,7 @@ CALLAHAN,senate,10,mail,11,96
 CALLAHAN,senate,10,mail,13,1
 CALLAHAN,senate,10,mail,19,1
 CAMERON,congress,34,inperson,4,8604
-CAMERON,congress,34,inperson,5,5992
+CAMERON,congress,34,inperson,5,5993
 CAMERON,congress,34,inperson,6,5469
 CAMERON,congress,34,inperson,7,5546
 CAMERON,congress,34,inperson,8,5875
@@ -2825,8 +2828,8 @@ CAMERON,congress,34,inperson,12,6541
 CAMERON,congress,34,inperson,13,7729
 CAMERON,congress,34,inperson,14,8652
 CAMERON,congress,34,inperson,15,9438
-CAMERON,congress,34,mail,4,120
-CAMERON,congress,34,mail,5,431
+CAMERON,congress,34,mail,4,119
+CAMERON,congress,34,mail,5,641
 CAMERON,congress,34,mail,6,118
 CAMERON,congress,34,mail,7,90
 CAMERON,congress,34,mail,8,190
@@ -2840,7 +2843,7 @@ CAMERON,congress,34,mail,15,8
 CAMERON,congress,34,mail,18,3
 CAMERON,congress,34,mail,19,1
 CAMERON,house,35,inperson,4,1296
-CAMERON,house,35,inperson,5,883
+CAMERON,house,35,inperson,5,884
 CAMERON,house,35,inperson,6,815
 CAMERON,house,35,inperson,7,821
 CAMERON,house,35,inperson,8,839
@@ -2852,7 +2855,7 @@ CAMERON,house,35,inperson,13,1107
 CAMERON,house,35,inperson,14,1303
 CAMERON,house,35,inperson,15,1468
 CAMERON,house,35,mail,4,17
-CAMERON,house,35,mail,5,72
+CAMERON,house,35,mail,5,73
 CAMERON,house,35,mail,6,21
 CAMERON,house,35,mail,7,11
 CAMERON,house,35,mail,8,13
@@ -2874,7 +2877,7 @@ CAMERON,house,37,inperson,13,3559
 CAMERON,house,37,inperson,14,4145
 CAMERON,house,37,inperson,15,4807
 CAMERON,house,37,mail,4,71
-CAMERON,house,37,mail,5,217
+CAMERON,house,37,mail,5,351
 CAMERON,house,37,mail,6,58
 CAMERON,house,37,mail,7,39
 CAMERON,house,37,mail,8,130
@@ -2898,7 +2901,7 @@ CAMERON,house,38,inperson,13,3062
 CAMERON,house,38,inperson,14,3205
 CAMERON,house,38,inperson,15,3164
 CAMERON,house,38,mail,4,31
-CAMERON,house,38,mail,5,142
+CAMERON,house,38,mail,5,217
 CAMERON,house,38,mail,6,39
 CAMERON,house,38,mail,7,40
 CAMERON,house,38,mail,8,47
@@ -2911,7 +2914,7 @@ CAMERON,house,38,mail,14,1
 CAMERON,house,38,mail,15,2
 CAMERON,house,38,mail,18,1
 CAMERON,senate,27,inperson,4,8604
-CAMERON,senate,27,inperson,5,5992
+CAMERON,senate,27,inperson,5,5993
 CAMERON,senate,27,inperson,6,5469
 CAMERON,senate,27,inperson,7,5546
 CAMERON,senate,27,inperson,8,5875
@@ -2922,8 +2925,8 @@ CAMERON,senate,27,inperson,12,6541
 CAMERON,senate,27,inperson,13,7729
 CAMERON,senate,27,inperson,14,8652
 CAMERON,senate,27,inperson,15,9438
-CAMERON,senate,27,mail,4,120
-CAMERON,senate,27,mail,5,431
+CAMERON,senate,27,mail,4,119
+CAMERON,senate,27,mail,5,641
 CAMERON,senate,27,mail,6,118
 CAMERON,senate,27,mail,7,90
 CAMERON,senate,27,mail,8,190
@@ -3233,7 +3236,7 @@ CHAMBERS,senate,4,mail,15,16
 CHAMBERS,senate,4,mail,18,4
 CHAMBERS,senate,4,mail,19,5
 CHAMBERS,senate,4,mail,20,4
-CHEROKEE,congress,1,inperson,4,834
+CHEROKEE,congress,1,inperson,4,835
 CHEROKEE,congress,1,inperson,5,581
 CHEROKEE,congress,1,inperson,6,498
 CHEROKEE,congress,1,inperson,7,514
@@ -3259,7 +3262,7 @@ CHEROKEE,congress,1,mail,15,39
 CHEROKEE,congress,1,mail,18,68
 CHEROKEE,congress,1,mail,19,1
 CHEROKEE,congress,1,mail,20,9
-CHEROKEE,house,8,inperson,4,834
+CHEROKEE,house,8,inperson,4,835
 CHEROKEE,house,8,inperson,5,581
 CHEROKEE,house,8,inperson,6,498
 CHEROKEE,house,8,inperson,7,514
@@ -3285,7 +3288,7 @@ CHEROKEE,house,8,mail,15,39
 CHEROKEE,house,8,mail,18,68
 CHEROKEE,house,8,mail,19,1
 CHEROKEE,house,8,mail,20,9
-CHEROKEE,senate,3,inperson,4,834
+CHEROKEE,senate,3,inperson,4,835
 CHEROKEE,senate,3,inperson,5,581
 CHEROKEE,senate,3,inperson,6,498
 CHEROKEE,senate,3,inperson,7,514
@@ -3647,9 +3650,9 @@ COLEMAN,senate,28,mail,15,10
 COLEMAN,senate,28,mail,18,3
 COLEMAN,senate,28,mail,19,6
 COLEMAN,senate,28,mail,20,8
-COLLIN,congress,3,inperson,4,26656
-COLLIN,congress,3,inperson,5,17065
-COLLIN,congress,3,inperson,6,15602
+COLLIN,congress,3,inperson,4,26694
+COLLIN,congress,3,inperson,5,17068
+COLLIN,congress,3,inperson,6,15608
 COLLIN,congress,3,inperson,7,16301
 COLLIN,congress,3,inperson,8,17151
 COLLIN,congress,3,inperson,9,9127
@@ -3659,9 +3662,9 @@ COLLIN,congress,3,inperson,12,16795
 COLLIN,congress,3,inperson,13,17802
 COLLIN,congress,3,inperson,14,19950
 COLLIN,congress,3,inperson,15,20481
-COLLIN,congress,3,mail,4,248
-COLLIN,congress,3,mail,5,379
-COLLIN,congress,3,mail,6,418
+COLLIN,congress,3,mail,4,243
+COLLIN,congress,3,mail,5,366
+COLLIN,congress,3,mail,6,409
 COLLIN,congress,3,mail,7,89
 COLLIN,congress,3,mail,8,333
 COLLIN,congress,3,mail,9,61
@@ -3675,9 +3678,9 @@ COLLIN,congress,3,mail,17,4
 COLLIN,congress,3,mail,18,10
 COLLIN,congress,3,mail,19,207
 COLLIN,congress,3,mail,20,81
-COLLIN,congress,32,inperson,4,1308
-COLLIN,congress,32,inperson,5,897
-COLLIN,congress,32,inperson,6,818
+COLLIN,congress,32,inperson,4,1311
+COLLIN,congress,32,inperson,5,898
+COLLIN,congress,32,inperson,6,819
 COLLIN,congress,32,inperson,7,898
 COLLIN,congress,32,inperson,8,901
 COLLIN,congress,32,inperson,9,540
@@ -3702,9 +3705,9 @@ COLLIN,congress,32,mail,15,28
 COLLIN,congress,32,mail,17,4
 COLLIN,congress,32,mail,19,22
 COLLIN,congress,32,mail,20,1
-COLLIN,congress,4,inperson,4,16403
-COLLIN,congress,4,inperson,5,11291
-COLLIN,congress,4,inperson,6,10422
+COLLIN,congress,4,inperson,4,16424
+COLLIN,congress,4,inperson,5,11296
+COLLIN,congress,4,inperson,6,10425
 COLLIN,congress,4,inperson,7,11029
 COLLIN,congress,4,inperson,8,11753
 COLLIN,congress,4,inperson,9,6844
@@ -3714,9 +3717,9 @@ COLLIN,congress,4,inperson,12,11677
 COLLIN,congress,4,inperson,13,12298
 COLLIN,congress,4,inperson,14,12811
 COLLIN,congress,4,inperson,15,12651
-COLLIN,congress,4,mail,4,137
-COLLIN,congress,4,mail,5,315
-COLLIN,congress,4,mail,6,339
+COLLIN,congress,4,mail,4,139
+COLLIN,congress,4,mail,5,303
+COLLIN,congress,4,mail,6,338
 COLLIN,congress,4,mail,7,110
 COLLIN,congress,4,mail,8,309
 COLLIN,congress,4,mail,9,81
@@ -3730,7 +3733,7 @@ COLLIN,congress,4,mail,17,6
 COLLIN,congress,4,mail,18,10
 COLLIN,congress,4,mail,19,267
 COLLIN,congress,4,mail,20,52
-COLLIN,house,33,inperson,4,3111
+COLLIN,house,33,inperson,4,3115
 COLLIN,house,33,inperson,5,1996
 COLLIN,house,33,inperson,6,1890
 COLLIN,house,33,inperson,7,1947
@@ -3742,9 +3745,9 @@ COLLIN,house,33,inperson,12,1981
 COLLIN,house,33,inperson,13,2078
 COLLIN,house,33,inperson,14,2305
 COLLIN,house,33,inperson,15,2488
-COLLIN,house,33,mail,4,34
-COLLIN,house,33,mail,5,61
-COLLIN,house,33,mail,6,51
+COLLIN,house,33,mail,4,33
+COLLIN,house,33,mail,5,60
+COLLIN,house,33,mail,6,48
 COLLIN,house,33,mail,7,17
 COLLIN,house,33,mail,8,64
 COLLIN,house,33,mail,9,6
@@ -3757,9 +3760,9 @@ COLLIN,house,33,mail,15,50
 COLLIN,house,33,mail,17,2
 COLLIN,house,33,mail,19,26
 COLLIN,house,33,mail,20,25
-COLLIN,house,61,inperson,4,9686
-COLLIN,house,61,inperson,5,6241
-COLLIN,house,61,inperson,6,5573
+COLLIN,house,61,inperson,4,9695
+COLLIN,house,61,inperson,5,6242
+COLLIN,house,61,inperson,6,5575
 COLLIN,house,61,inperson,7,5711
 COLLIN,house,61,inperson,8,6220
 COLLIN,house,61,inperson,9,3561
@@ -3769,9 +3772,9 @@ COLLIN,house,61,inperson,12,5697
 COLLIN,house,61,inperson,13,5869
 COLLIN,house,61,inperson,14,6344
 COLLIN,house,61,inperson,15,6779
-COLLIN,house,61,mail,4,85
-COLLIN,house,61,mail,5,143
-COLLIN,house,61,mail,6,131
+COLLIN,house,61,mail,4,84
+COLLIN,house,61,mail,5,139
+COLLIN,house,61,mail,6,130
 COLLIN,house,61,mail,7,32
 COLLIN,house,61,mail,8,110
 COLLIN,house,61,mail,9,32
@@ -3784,9 +3787,9 @@ COLLIN,house,61,mail,15,87
 COLLIN,house,61,mail,18,4
 COLLIN,house,61,mail,19,71
 COLLIN,house,61,mail,20,5
-COLLIN,house,66,inperson,4,8369
-COLLIN,house,66,inperson,5,5562
-COLLIN,house,66,inperson,6,5247
+COLLIN,house,66,inperson,4,8383
+COLLIN,house,66,inperson,5,5566
+COLLIN,house,66,inperson,6,5249
 COLLIN,house,66,inperson,7,5536
 COLLIN,house,66,inperson,8,5753
 COLLIN,house,66,inperson,9,3168
@@ -3796,8 +3799,8 @@ COLLIN,house,66,inperson,12,5830
 COLLIN,house,66,inperson,13,6204
 COLLIN,house,66,inperson,14,6565
 COLLIN,house,66,inperson,15,6798
-COLLIN,house,66,mail,4,80
-COLLIN,house,66,mail,5,174
+COLLIN,house,66,mail,4,82
+COLLIN,house,66,mail,5,167
 COLLIN,house,66,mail,6,149
 COLLIN,house,66,mail,7,61
 COLLIN,house,66,mail,8,150
@@ -3812,9 +3815,9 @@ COLLIN,house,66,mail,17,2
 COLLIN,house,66,mail,18,3
 COLLIN,house,66,mail,19,130
 COLLIN,house,66,mail,20,18
-COLLIN,house,67,inperson,4,8429
-COLLIN,house,67,inperson,5,5619
-COLLIN,house,67,inperson,6,5024
+COLLIN,house,67,inperson,4,8445
+COLLIN,house,67,inperson,5,5622
+COLLIN,house,67,inperson,6,5027
 COLLIN,house,67,inperson,7,5382
 COLLIN,house,67,inperson,8,5683
 COLLIN,house,67,inperson,9,2996
@@ -3825,8 +3828,8 @@ COLLIN,house,67,inperson,13,5936
 COLLIN,house,67,inperson,14,6578
 COLLIN,house,67,inperson,15,6710
 COLLIN,house,67,mail,4,59
-COLLIN,house,67,mail,5,107
-COLLIN,house,67,mail,6,140
+COLLIN,house,67,mail,5,99
+COLLIN,house,67,mail,6,137
 COLLIN,house,67,mail,7,24
 COLLIN,house,67,mail,8,95
 COLLIN,house,67,mail,9,23
@@ -3839,9 +3842,9 @@ COLLIN,house,67,mail,15,96
 COLLIN,house,67,mail,18,6
 COLLIN,house,67,mail,19,63
 COLLIN,house,67,mail,20,14
-COLLIN,house,70,inperson,4,5485
-COLLIN,house,70,inperson,5,4231
-COLLIN,house,70,inperson,6,3933
+COLLIN,house,70,inperson,4,5489
+COLLIN,house,70,inperson,5,4232
+COLLIN,house,70,inperson,6,3934
 COLLIN,house,70,inperson,7,4351
 COLLIN,house,70,inperson,8,4512
 COLLIN,house,70,inperson,9,2561
@@ -3852,8 +3855,8 @@ COLLIN,house,70,inperson,13,4889
 COLLIN,house,70,inperson,14,5060
 COLLIN,house,70,inperson,15,4621
 COLLIN,house,70,mail,4,48
-COLLIN,house,70,mail,5,114
-COLLIN,house,70,mail,6,170
+COLLIN,house,70,mail,5,112
+COLLIN,house,70,mail,6,169
 COLLIN,house,70,mail,7,36
 COLLIN,house,70,mail,8,137
 COLLIN,house,70,mail,9,42
@@ -3867,9 +3870,9 @@ COLLIN,house,70,mail,17,6
 COLLIN,house,70,mail,18,4
 COLLIN,house,70,mail,19,129
 COLLIN,house,70,mail,20,37
-COLLIN,house,89,inperson,4,9289
-COLLIN,house,89,inperson,5,5603
-COLLIN,house,89,inperson,6,5174
+COLLIN,house,89,inperson,4,9301
+COLLIN,house,89,inperson,5,5605
+COLLIN,house,89,inperson,6,5176
 COLLIN,house,89,inperson,7,5300
 COLLIN,house,89,inperson,8,5599
 COLLIN,house,89,inperson,9,2969
@@ -3879,9 +3882,9 @@ COLLIN,house,89,inperson,12,5540
 COLLIN,house,89,inperson,13,6054
 COLLIN,house,89,inperson,14,6898
 COLLIN,house,89,inperson,15,6873
-COLLIN,house,89,mail,4,97
-COLLIN,house,89,mail,5,132
-COLLIN,house,89,mail,6,138
+COLLIN,house,89,mail,4,94
+COLLIN,house,89,mail,5,129
+COLLIN,house,89,mail,6,136
 COLLIN,house,89,mail,7,35
 COLLIN,house,89,mail,8,122
 COLLIN,house,89,mail,9,13
@@ -3895,7 +3898,7 @@ COLLIN,house,89,mail,17,4
 COLLIN,house,89,mail,18,3
 COLLIN,house,89,mail,19,77
 COLLIN,house,89,mail,20,35
-COLLIN,senate,2,inperson,4,2585
+COLLIN,senate,2,inperson,4,2587
 COLLIN,senate,2,inperson,5,1965
 COLLIN,senate,2,inperson,6,1800
 COLLIN,senate,2,inperson,7,2004
@@ -3923,9 +3926,9 @@ COLLIN,senate,2,mail,17,7
 COLLIN,senate,2,mail,18,1
 COLLIN,senate,2,mail,19,71
 COLLIN,senate,2,mail,20,22
-COLLIN,senate,30,inperson,4,5072
-COLLIN,senate,30,inperson,5,3107
-COLLIN,senate,30,inperson,6,2626
+COLLIN,senate,30,inperson,4,5074
+COLLIN,senate,30,inperson,5,3108
+COLLIN,senate,30,inperson,6,2627
 COLLIN,senate,30,inperson,7,2799
 COLLIN,senate,30,inperson,8,2913
 COLLIN,senate,30,inperson,9,1994
@@ -3935,8 +3938,8 @@ COLLIN,senate,30,inperson,12,2503
 COLLIN,senate,30,inperson,13,2779
 COLLIN,senate,30,inperson,14,3052
 COLLIN,senate,30,inperson,15,3429
-COLLIN,senate,30,mail,4,41
-COLLIN,senate,30,mail,5,73
+COLLIN,senate,30,mail,4,42
+COLLIN,senate,30,mail,5,71
 COLLIN,senate,30,mail,6,47
 COLLIN,senate,30,mail,7,23
 COLLIN,senate,30,mail,8,59
@@ -3950,9 +3953,9 @@ COLLIN,senate,30,mail,15,29
 COLLIN,senate,30,mail,17,1
 COLLIN,senate,30,mail,19,37
 COLLIN,senate,30,mail,20,5
-COLLIN,senate,8,inperson,4,36711
-COLLIN,senate,8,inperson,5,24181
-COLLIN,senate,8,inperson,6,22416
+COLLIN,senate,8,inperson,4,36767
+COLLIN,senate,8,inperson,5,24189
+COLLIN,senate,8,inperson,6,22424
 COLLIN,senate,8,inperson,7,23425
 COLLIN,senate,8,inperson,8,24839
 COLLIN,senate,8,inperson,9,13300
@@ -3962,9 +3965,9 @@ COLLIN,senate,8,inperson,12,24680
 COLLIN,senate,8,inperson,13,25997
 COLLIN,senate,8,inperson,14,28355
 COLLIN,senate,8,inperson,15,28507
-COLLIN,senate,8,mail,4,331
-COLLIN,senate,8,mail,5,578
-COLLIN,senate,8,mail,6,645
+COLLIN,senate,8,mail,4,327
+COLLIN,senate,8,mail,5,555
+COLLIN,senate,8,mail,6,635
 COLLIN,senate,8,mail,7,170
 COLLIN,senate,8,mail,8,528
 COLLIN,senate,8,mail,9,115
@@ -4113,9 +4116,9 @@ COMAL,congress,21,inperson,12,5638
 COMAL,congress,21,inperson,13,5815
 COMAL,congress,21,inperson,14,5802
 COMAL,congress,21,inperson,15,5874
-COMAL,congress,21,mail,4,135
+COMAL,congress,21,mail,4,154
 COMAL,congress,21,mail,5,201
-COMAL,congress,21,mail,6,316
+COMAL,congress,21,mail,6,311
 COMAL,congress,21,mail,7,314
 COMAL,congress,21,mail,8,575
 COMAL,congress,21,mail,9,26
@@ -4140,9 +4143,9 @@ COMAL,house,73,inperson,12,5638
 COMAL,house,73,inperson,13,5815
 COMAL,house,73,inperson,14,5802
 COMAL,house,73,inperson,15,5874
-COMAL,house,73,mail,4,135
+COMAL,house,73,mail,4,154
 COMAL,house,73,mail,5,201
-COMAL,house,73,mail,6,316
+COMAL,house,73,mail,6,311
 COMAL,house,73,mail,7,314
 COMAL,house,73,mail,8,575
 COMAL,house,73,mail,9,26
@@ -4167,9 +4170,9 @@ COMAL,senate,25,inperson,12,5638
 COMAL,senate,25,inperson,13,5815
 COMAL,senate,25,inperson,14,5802
 COMAL,senate,25,inperson,15,5874
-COMAL,senate,25,mail,4,135
+COMAL,senate,25,mail,4,154
 COMAL,senate,25,mail,5,201
-COMAL,senate,25,mail,6,316
+COMAL,senate,25,mail,6,311
 COMAL,senate,25,mail,7,314
 COMAL,senate,25,mail,8,575
 COMAL,senate,25,mail,9,26
@@ -4299,7 +4302,7 @@ CONCHO,senate,28,mail,12,8
 CONCHO,senate,28,mail,13,7
 CONCHO,senate,28,mail,14,4
 CONCHO,senate,28,mail,15,1
-COOKE,congress,26,inperson,4,1193
+COOKE,congress,26,inperson,4,1194
 COOKE,congress,26,inperson,5,750
 COOKE,congress,26,inperson,6,714
 COOKE,congress,26,inperson,7,769
@@ -4325,7 +4328,7 @@ COOKE,congress,26,mail,15,55
 COOKE,congress,26,mail,18,13
 COOKE,congress,26,mail,19,15
 COOKE,congress,26,mail,20,45
-COOKE,house,68,inperson,4,1193
+COOKE,house,68,inperson,4,1194
 COOKE,house,68,inperson,5,750
 COOKE,house,68,inperson,6,714
 COOKE,house,68,inperson,7,769
@@ -4351,7 +4354,7 @@ COOKE,house,68,mail,15,55
 COOKE,house,68,mail,18,13
 COOKE,house,68,mail,19,15
 COOKE,house,68,mail,20,45
-COOKE,senate,30,inperson,4,1193
+COOKE,senate,30,inperson,4,1194
 COOKE,senate,30,inperson,5,750
 COOKE,senate,30,inperson,6,714
 COOKE,senate,30,inperson,7,769
@@ -4377,7 +4380,7 @@ COOKE,senate,30,mail,15,55
 COOKE,senate,30,mail,18,13
 COOKE,senate,30,mail,19,15
 COOKE,senate,30,mail,20,45
-CORYELL,congress,31,inperson,4,1483
+CORYELL,congress,31,inperson,4,1482
 CORYELL,congress,31,inperson,5,906
 CORYELL,congress,31,inperson,6,811
 CORYELL,congress,31,inperson,7,881
@@ -4403,7 +4406,7 @@ CORYELL,congress,31,mail,15,19
 CORYELL,congress,31,mail,18,47
 CORYELL,congress,31,mail,19,23
 CORYELL,congress,31,mail,20,44
-CORYELL,house,59,inperson,4,1483
+CORYELL,house,59,inperson,4,1482
 CORYELL,house,59,inperson,5,906
 CORYELL,house,59,inperson,6,811
 CORYELL,house,59,inperson,7,881
@@ -4429,7 +4432,7 @@ CORYELL,house,59,mail,15,19
 CORYELL,house,59,mail,18,47
 CORYELL,house,59,mail,19,23
 CORYELL,house,59,mail,20,44
-CORYELL,senate,24,inperson,4,1483
+CORYELL,senate,24,inperson,4,1482
 CORYELL,senate,24,inperson,5,906
 CORYELL,senate,24,inperson,6,811
 CORYELL,senate,24,inperson,7,881
@@ -4788,7 +4791,7 @@ DALLAM,senate,31,mail,17,1
 DALLAM,senate,31,mail,18,1
 DALLAM,senate,31,mail,19,1
 DALLAM,senate,31,mail,20,7
-DALLAS,congress,24,inperson,4,9220
+DALLAS,congress,24,inperson,4,9219
 DALLAS,congress,24,inperson,5,5869
 DALLAS,congress,24,inperson,6,5545
 DALLAS,congress,24,inperson,7,5627
@@ -4815,7 +4818,7 @@ DALLAS,congress,24,mail,15,160
 DALLAS,congress,24,mail,17,117
 DALLAS,congress,24,mail,18,288
 DALLAS,congress,24,mail,20,53
-DALLAS,congress,30,inperson,4,14998
+DALLAS,congress,30,inperson,4,14996
 DALLAS,congress,30,inperson,5,9467
 DALLAS,congress,30,inperson,6,8736
 DALLAS,congress,30,inperson,7,8759
@@ -4842,9 +4845,9 @@ DALLAS,congress,30,mail,15,214
 DALLAS,congress,30,mail,17,210
 DALLAS,congress,30,mail,18,475
 DALLAS,congress,30,mail,20,53
-DALLAS,congress,32,inperson,4,13999
+DALLAS,congress,32,inperson,4,13995
 DALLAS,congress,32,inperson,5,8974
-DALLAS,congress,32,inperson,6,8287
+DALLAS,congress,32,inperson,6,8284
 DALLAS,congress,32,inperson,7,8371
 DALLAS,congress,32,inperson,8,8498
 DALLAS,congress,32,inperson,9,4079
@@ -4869,9 +4872,9 @@ DALLAS,congress,32,mail,15,270
 DALLAS,congress,32,mail,17,231
 DALLAS,congress,32,mail,18,452
 DALLAS,congress,32,mail,20,112
-DALLAS,congress,33,inperson,4,19023
+DALLAS,congress,33,inperson,4,19019
 DALLAS,congress,33,inperson,5,12048
-DALLAS,congress,33,inperson,6,10490
+DALLAS,congress,33,inperson,6,10489
 DALLAS,congress,33,inperson,7,10352
 DALLAS,congress,33,inperson,8,10669
 DALLAS,congress,33,inperson,9,4435
@@ -4896,9 +4899,9 @@ DALLAS,congress,33,mail,15,194
 DALLAS,congress,33,mail,17,157
 DALLAS,congress,33,mail,18,425
 DALLAS,congress,33,mail,20,63
-DALLAS,congress,5,inperson,4,11737
+DALLAS,congress,5,inperson,4,11735
 DALLAS,congress,5,inperson,5,7467
-DALLAS,congress,5,inperson,6,7148
+DALLAS,congress,5,inperson,6,7147
 DALLAS,congress,5,inperson,7,6756
 DALLAS,congress,5,inperson,8,6979
 DALLAS,congress,5,inperson,9,3101
@@ -4924,8 +4927,8 @@ DALLAS,congress,5,mail,17,130
 DALLAS,congress,5,mail,18,381
 DALLAS,congress,5,mail,20,65
 DALLAS,congress,6,inperson,4,4432
-DALLAS,congress,6,inperson,5,2602
-DALLAS,congress,6,inperson,6,2494
+DALLAS,congress,6,inperson,5,2601
+DALLAS,congress,6,inperson,6,2493
 DALLAS,congress,6,inperson,7,2202
 DALLAS,congress,6,inperson,8,2417
 DALLAS,congress,6,inperson,9,1105
@@ -4950,7 +4953,7 @@ DALLAS,congress,6,mail,15,49
 DALLAS,congress,6,mail,17,39
 DALLAS,congress,6,mail,18,103
 DALLAS,congress,6,mail,20,14
-DALLAS,house,100,inperson,4,3904
+DALLAS,house,100,inperson,4,3902
 DALLAS,house,100,inperson,5,2486
 DALLAS,house,100,inperson,6,2106
 DALLAS,house,100,inperson,7,2083
@@ -4978,7 +4981,7 @@ DALLAS,house,100,mail,18,90
 DALLAS,house,100,mail,20,11
 DALLAS,house,102,inperson,4,4272
 DALLAS,house,102,inperson,5,2749
-DALLAS,house,102,inperson,6,2444
+DALLAS,house,102,inperson,6,2442
 DALLAS,house,102,inperson,7,2563
 DALLAS,house,102,inperson,8,2539
 DALLAS,house,102,inperson,9,1250
@@ -5030,7 +5033,7 @@ DALLAS,house,103,mail,15,44
 DALLAS,house,103,mail,17,34
 DALLAS,house,103,mail,18,121
 DALLAS,house,103,mail,20,7
-DALLAS,house,104,inperson,4,4121
+DALLAS,house,104,inperson,4,4120
 DALLAS,house,104,inperson,5,2561
 DALLAS,house,104,inperson,6,2233
 DALLAS,house,104,inperson,7,2317
@@ -5056,9 +5059,9 @@ DALLAS,house,104,mail,15,61
 DALLAS,house,104,mail,17,25
 DALLAS,house,104,mail,18,107
 DALLAS,house,104,mail,20,19
-DALLAS,house,105,inperson,4,4078
-DALLAS,house,105,inperson,5,2412
-DALLAS,house,105,inperson,6,2307
+DALLAS,house,105,inperson,4,4077
+DALLAS,house,105,inperson,5,2411
+DALLAS,house,105,inperson,6,2306
 DALLAS,house,105,inperson,7,2010
 DALLAS,house,105,inperson,8,2230
 DALLAS,house,105,inperson,9,1048
@@ -5083,9 +5086,9 @@ DALLAS,house,105,mail,15,44
 DALLAS,house,105,mail,17,37
 DALLAS,house,105,mail,18,96
 DALLAS,house,105,mail,20,14
-DALLAS,house,107,inperson,4,3736
+DALLAS,house,107,inperson,4,3735
 DALLAS,house,107,inperson,5,2381
-DALLAS,house,107,inperson,6,2225
+DALLAS,house,107,inperson,6,2224
 DALLAS,house,107,inperson,7,2135
 DALLAS,house,107,inperson,8,2069
 DALLAS,house,107,inperson,9,826
@@ -5110,9 +5113,9 @@ DALLAS,house,107,mail,15,55
 DALLAS,house,107,mail,17,41
 DALLAS,house,107,mail,18,102
 DALLAS,house,107,mail,20,27
-DALLAS,house,108,inperson,4,8442
-DALLAS,house,108,inperson,5,5561
-DALLAS,house,108,inperson,6,5151
+DALLAS,house,108,inperson,4,8440
+DALLAS,house,108,inperson,5,5562
+DALLAS,house,108,inperson,6,5150
 DALLAS,house,108,inperson,7,5291
 DALLAS,house,108,inperson,8,5679
 DALLAS,house,108,inperson,9,2271
@@ -5137,7 +5140,7 @@ DALLAS,house,108,mail,15,180
 DALLAS,house,108,mail,17,131
 DALLAS,house,108,mail,18,335
 DALLAS,house,108,mail,20,61
-DALLAS,house,109,inperson,4,6209
+DALLAS,house,109,inperson,4,6208
 DALLAS,house,109,inperson,5,3862
 DALLAS,house,109,inperson,6,3618
 DALLAS,house,109,inperson,7,3712
@@ -5164,7 +5167,7 @@ DALLAS,house,109,mail,15,68
 DALLAS,house,109,mail,17,77
 DALLAS,house,109,mail,18,152
 DALLAS,house,109,mail,20,18
-DALLAS,house,110,inperson,4,3700
+DALLAS,house,110,inperson,4,3699
 DALLAS,house,110,inperson,5,2278
 DALLAS,house,110,inperson,6,2087
 DALLAS,house,110,inperson,7,1867
@@ -5190,7 +5193,7 @@ DALLAS,house,110,mail,15,52
 DALLAS,house,110,mail,17,26
 DALLAS,house,110,mail,18,109
 DALLAS,house,110,mail,20,9
-DALLAS,house,111,inperson,4,5526
+DALLAS,house,111,inperson,4,5525
 DALLAS,house,111,inperson,5,3519
 DALLAS,house,111,inperson,6,3299
 DALLAS,house,111,inperson,7,3323
@@ -5217,7 +5220,7 @@ DALLAS,house,111,mail,15,79
 DALLAS,house,111,mail,17,106
 DALLAS,house,111,mail,18,193
 DALLAS,house,111,mail,20,28
-DALLAS,house,112,inperson,4,7288
+DALLAS,house,112,inperson,4,7285
 DALLAS,house,112,inperson,5,4670
 DALLAS,house,112,inperson,6,4379
 DALLAS,house,112,inperson,7,4357
@@ -5244,7 +5247,7 @@ DALLAS,house,112,mail,15,150
 DALLAS,house,112,mail,17,116
 DALLAS,house,112,mail,18,245
 DALLAS,house,112,mail,20,63
-DALLAS,house,113,inperson,4,5105
+DALLAS,house,113,inperson,4,5104
 DALLAS,house,113,inperson,5,3317
 DALLAS,house,113,inperson,6,3263
 DALLAS,house,113,inperson,7,3010
@@ -5271,7 +5274,7 @@ DALLAS,house,113,mail,15,92
 DALLAS,house,113,mail,17,68
 DALLAS,house,113,mail,18,144
 DALLAS,house,113,mail,20,31
-DALLAS,house,114,inperson,4,6371
+DALLAS,house,114,inperson,4,6370
 DALLAS,house,114,inperson,5,3897
 DALLAS,house,114,inperson,6,3566
 DALLAS,house,114,inperson,7,3356
@@ -5298,9 +5301,9 @@ DALLAS,house,114,mail,15,65
 DALLAS,house,114,mail,17,57
 DALLAS,house,114,mail,18,125
 DALLAS,house,114,mail,20,16
-DALLAS,house,115,inperson,4,5888
-DALLAS,house,115,inperson,5,3701
-DALLAS,house,115,inperson,6,3334
+DALLAS,house,115,inperson,4,5886
+DALLAS,house,115,inperson,5,3700
+DALLAS,house,115,inperson,6,3333
 DALLAS,house,115,inperson,7,3344
 DALLAS,house,115,inperson,8,3551
 DALLAS,house,115,inperson,9,1975
@@ -5325,9 +5328,9 @@ DALLAS,house,115,mail,15,67
 DALLAS,house,115,mail,17,69
 DALLAS,house,115,mail,18,147
 DALLAS,house,115,mail,20,28
-DALLAS,senate,12,inperson,4,11728
+DALLAS,senate,12,inperson,4,11725
 DALLAS,senate,12,inperson,5,7590
-DALLAS,senate,12,inperson,6,7026
+DALLAS,senate,12,inperson,6,7025
 DALLAS,senate,12,inperson,7,7215
 DALLAS,senate,12,inperson,8,7603
 DALLAS,senate,12,inperson,9,3650
@@ -5352,9 +5355,9 @@ DALLAS,senate,12,mail,15,223
 DALLAS,senate,12,mail,17,170
 DALLAS,senate,12,mail,18,393
 DALLAS,senate,12,mail,20,75
-DALLAS,senate,16,inperson,4,23588
-DALLAS,senate,16,inperson,5,14683
-DALLAS,senate,16,inperson,6,13645
+DALLAS,senate,16,inperson,4,23584
+DALLAS,senate,16,inperson,5,14682
+DALLAS,senate,16,inperson,6,13642
 DALLAS,senate,16,inperson,7,13002
 DALLAS,senate,16,inperson,8,13456
 DALLAS,senate,16,inperson,9,5815
@@ -5379,9 +5382,9 @@ DALLAS,senate,16,mail,15,298
 DALLAS,senate,16,mail,17,227
 DALLAS,senate,16,mail,18,629
 DALLAS,senate,16,mail,20,88
-DALLAS,senate,2,inperson,4,12768
+DALLAS,senate,2,inperson,4,12765
 DALLAS,senate,2,inperson,5,8176
-DALLAS,senate,2,inperson,6,7647
+DALLAS,senate,2,inperson,6,7646
 DALLAS,senate,2,inperson,7,7545
 DALLAS,senate,2,inperson,8,7700
 DALLAS,senate,2,inperson,9,3673
@@ -5406,9 +5409,9 @@ DALLAS,senate,2,mail,15,246
 DALLAS,senate,2,mail,17,192
 DALLAS,senate,2,mail,18,385
 DALLAS,senate,2,mail,20,106
-DALLAS,senate,23,inperson,4,25326
+DALLAS,senate,23,inperson,4,25322
 DALLAS,senate,23,inperson,5,15977
-DALLAS,senate,23,inperson,6,14381
+DALLAS,senate,23,inperson,6,14380
 DALLAS,senate,23,inperson,7,14306
 DALLAS,senate,23,inperson,8,15462
 DALLAS,senate,23,inperson,9,6039
@@ -5646,9 +5649,9 @@ DELTA,senate,1,mail,15,7
 DELTA,senate,1,mail,18,7
 DELTA,senate,1,mail,19,4
 DELTA,senate,1,mail,20,4
-DENTON,congress,13,inperson,4,5297
+DENTON,congress,13,inperson,4,5294
 DENTON,congress,13,inperson,5,3705
-DENTON,congress,13,inperson,6,3497
+DENTON,congress,13,inperson,6,3498
 DENTON,congress,13,inperson,7,3264
 DENTON,congress,13,inperson,8,3716
 DENTON,congress,13,inperson,9,1868
@@ -5672,9 +5675,9 @@ DENTON,congress,13,mail,16,54
 DENTON,congress,13,mail,17,249
 DENTON,congress,13,mail,19,69
 DENTON,congress,13,mail,20,35
-DENTON,congress,26,inperson,4,26707
-DENTON,congress,26,inperson,5,16797
-DENTON,congress,26,inperson,6,15830
+DENTON,congress,26,inperson,4,26696
+DENTON,congress,26,inperson,5,16796
+DENTON,congress,26,inperson,6,15829
 DENTON,congress,26,inperson,7,15897
 DENTON,congress,26,inperson,8,18058
 DENTON,congress,26,inperson,9,10102
@@ -5700,8 +5703,8 @@ DENTON,congress,26,mail,17,809
 DENTON,congress,26,mail,18,1
 DENTON,congress,26,mail,19,292
 DENTON,congress,26,mail,20,60
-DENTON,congress,4,inperson,4,3898
-DENTON,congress,4,inperson,5,2337
+DENTON,congress,4,inperson,4,3896
+DENTON,congress,4,inperson,5,2336
 DENTON,congress,4,inperson,6,2228
 DENTON,congress,4,inperson,7,2320
 DENTON,congress,4,inperson,8,2614
@@ -5726,9 +5729,9 @@ DENTON,congress,4,mail,16,49
 DENTON,congress,4,mail,17,108
 DENTON,congress,4,mail,19,31
 DENTON,congress,4,mail,20,18
-DENTON,house,106,inperson,4,8947
-DENTON,house,106,inperson,5,5401
-DENTON,house,106,inperson,6,5057
+DENTON,house,106,inperson,4,8943
+DENTON,house,106,inperson,5,5400
+DENTON,house,106,inperson,6,5056
 DENTON,house,106,inperson,7,5164
 DENTON,house,106,inperson,8,5876
 DENTON,house,106,inperson,9,3344
@@ -5752,9 +5755,9 @@ DENTON,house,106,mail,16,103
 DENTON,house,106,mail,17,220
 DENTON,house,106,mail,19,70
 DENTON,house,106,mail,20,23
-DENTON,house,57,inperson,4,7571
+DENTON,house,57,inperson,4,7569
 DENTON,house,57,inperson,5,4742
-DENTON,house,57,inperson,6,4370
+DENTON,house,57,inperson,6,4371
 DENTON,house,57,inperson,7,4499
 DENTON,house,57,inperson,8,4791
 DENTON,house,57,inperson,9,2757
@@ -5778,9 +5781,9 @@ DENTON,house,57,mail,16,68
 DENTON,house,57,mail,17,201
 DENTON,house,57,mail,19,79
 DENTON,house,57,mail,20,19
-DENTON,house,63,inperson,4,6531
+DENTON,house,63,inperson,4,6527
 DENTON,house,63,inperson,5,4268
-DENTON,house,63,inperson,6,4013
+DENTON,house,63,inperson,6,4014
 DENTON,house,63,inperson,7,3984
 DENTON,house,63,inperson,8,4694
 DENTON,house,63,inperson,9,2688
@@ -5805,7 +5808,7 @@ DENTON,house,63,mail,16,88
 DENTON,house,63,mail,17,245
 DENTON,house,63,mail,19,75
 DENTON,house,63,mail,20,7
-DENTON,house,64,inperson,4,4576
+DENTON,house,64,inperson,4,4573
 DENTON,house,64,inperson,5,3209
 DENTON,house,64,inperson,6,3097
 DENTON,house,64,inperson,7,2930
@@ -5831,8 +5834,8 @@ DENTON,house,64,mail,16,48
 DENTON,house,64,mail,17,208
 DENTON,house,64,mail,19,66
 DENTON,house,64,mail,20,44
-DENTON,house,65,inperson,4,8277
-DENTON,house,65,inperson,5,5219
+DENTON,house,65,inperson,4,8274
+DENTON,house,65,inperson,5,5218
 DENTON,house,65,inperson,6,5018
 DENTON,house,65,inperson,7,4904
 DENTON,house,65,inperson,8,5620
@@ -5857,8 +5860,8 @@ DENTON,house,65,mail,16,114
 DENTON,house,65,mail,17,292
 DENTON,house,65,mail,19,102
 DENTON,house,65,mail,20,20
-DENTON,senate,12,inperson,4,17710
-DENTON,senate,12,inperson,5,11277
+DENTON,senate,12,inperson,4,17703
+DENTON,senate,12,inperson,5,11276
 DENTON,senate,12,inperson,6,10658
 DENTON,senate,12,inperson,7,10578
 DENTON,senate,12,inperson,8,12230
@@ -5885,9 +5888,9 @@ DENTON,senate,12,mail,17,617
 DENTON,senate,12,mail,18,1
 DENTON,senate,12,mail,19,204
 DENTON,senate,12,mail,20,46
-DENTON,senate,30,inperson,4,18192
-DENTON,senate,30,inperson,5,11562
-DENTON,senate,30,inperson,6,10898
+DENTON,senate,30,inperson,4,18184
+DENTON,senate,30,inperson,5,11561
+DENTON,senate,30,inperson,6,10897
 DENTON,senate,30,inperson,7,10903
 DENTON,senate,30,inperson,8,12158
 DENTON,senate,30,inperson,9,6848
@@ -6040,6 +6043,7 @@ DICKENS,senate,28,mail,11,7
 DICKENS,senate,28,mail,15,2
 DICKENS,senate,28,mail,18,2
 DICKENS,senate,28,mail,19,11
+DIMMIT,congress,28,inperson,4,228
 DIMMIT,congress,28,inperson,5,85
 DIMMIT,congress,28,inperson,6,101
 DIMMIT,congress,28,inperson,7,94
@@ -6062,6 +6066,7 @@ DIMMIT,congress,28,mail,15,7
 DIMMIT,congress,28,mail,18,5
 DIMMIT,congress,28,mail,19,6
 DIMMIT,congress,28,mail,20,1
+DIMMIT,house,80,inperson,4,228
 DIMMIT,house,80,inperson,5,85
 DIMMIT,house,80,inperson,6,101
 DIMMIT,house,80,inperson,7,94
@@ -6084,6 +6089,7 @@ DIMMIT,house,80,mail,15,7
 DIMMIT,house,80,mail,18,5
 DIMMIT,house,80,mail,19,6
 DIMMIT,house,80,mail,20,1
+DIMMIT,senate,21,inperson,4,228
 DIMMIT,senate,21,inperson,5,85
 DIMMIT,senate,21,inperson,6,101
 DIMMIT,senate,21,inperson,7,94
@@ -6106,6 +6112,7 @@ DIMMIT,senate,21,mail,15,7
 DIMMIT,senate,21,mail,18,5
 DIMMIT,senate,21,mail,19,6
 DIMMIT,senate,21,mail,20,1
+DONLEY,congress,13,inperson,4,85
 DONLEY,congress,13,inperson,5,64
 DONLEY,congress,13,inperson,6,63
 DONLEY,congress,13,inperson,7,61
@@ -6129,6 +6136,7 @@ DONLEY,congress,13,mail,15,9
 DONLEY,congress,13,mail,18,1
 DONLEY,congress,13,mail,19,1
 DONLEY,congress,13,mail,20,1
+DONLEY,house,88,inperson,4,85
 DONLEY,house,88,inperson,5,64
 DONLEY,house,88,inperson,6,63
 DONLEY,house,88,inperson,7,61
@@ -6152,6 +6160,7 @@ DONLEY,house,88,mail,15,9
 DONLEY,house,88,mail,18,1
 DONLEY,house,88,mail,19,1
 DONLEY,house,88,mail,20,1
+DONLEY,senate,28,inperson,4,85
 DONLEY,senate,28,inperson,5,64
 DONLEY,senate,28,inperson,6,63
 DONLEY,senate,28,inperson,7,61
@@ -6265,6 +6274,7 @@ EASTLAND,congress,25,inperson,12,340
 EASTLAND,congress,25,inperson,13,367
 EASTLAND,congress,25,inperson,14,421
 EASTLAND,congress,25,inperson,15,404
+EASTLAND,congress,25,mail,4,1
 EASTLAND,congress,25,mail,5,6
 EASTLAND,congress,25,mail,6,3
 EASTLAND,congress,25,mail,7,2
@@ -6285,6 +6295,7 @@ EASTLAND,house,68,inperson,12,340
 EASTLAND,house,68,inperson,13,367
 EASTLAND,house,68,inperson,14,421
 EASTLAND,house,68,inperson,15,404
+EASTLAND,house,68,mail,4,1
 EASTLAND,house,68,mail,5,6
 EASTLAND,house,68,mail,6,3
 EASTLAND,house,68,mail,7,2
@@ -6305,6 +6316,7 @@ EASTLAND,senate,22,inperson,12,340
 EASTLAND,senate,22,inperson,13,367
 EASTLAND,senate,22,inperson,14,421
 EASTLAND,senate,22,inperson,15,404
+EASTLAND,senate,22,mail,4,1
 EASTLAND,senate,22,mail,5,6
 EASTLAND,senate,22,mail,6,3
 EASTLAND,senate,22,mail,7,2
@@ -6703,7 +6715,7 @@ ELLIS,senate,22,mail,15,32
 ELLIS,senate,22,mail,18,22
 ELLIS,senate,22,mail,19,31
 ELLIS,senate,22,mail,20,6
-ERATH,congress,25,inperson,4,1210
+ERATH,congress,25,inperson,4,1213
 ERATH,congress,25,inperson,5,729
 ERATH,congress,25,inperson,6,626
 ERATH,congress,25,inperson,7,682
@@ -6722,7 +6734,7 @@ ERATH,congress,25,mail,11,279
 ERATH,congress,25,mail,14,1
 ERATH,congress,25,mail,15,1
 ERATH,congress,25,mail,20,1
-ERATH,house,59,inperson,4,1210
+ERATH,house,59,inperson,4,1213
 ERATH,house,59,inperson,5,729
 ERATH,house,59,inperson,6,626
 ERATH,house,59,inperson,7,682
@@ -6741,7 +6753,7 @@ ERATH,house,59,mail,11,279
 ERATH,house,59,mail,14,1
 ERATH,house,59,mail,15,1
 ERATH,house,59,mail,20,1
-ERATH,senate,22,inperson,4,1210
+ERATH,senate,22,inperson,4,1213
 ERATH,senate,22,inperson,5,729
 ERATH,senate,22,inperson,6,626
 ERATH,senate,22,inperson,7,682
@@ -6796,7 +6808,7 @@ FALLS,senate,22,inperson,12,200
 FALLS,senate,22,inperson,13,190
 FALLS,senate,22,inperson,14,260
 FALLS,senate,22,inperson,15,260
-FANNIN,congress,4,inperson,4,3
+FANNIN,congress,4,inperson,4,917
 FANNIN,congress,4,inperson,5,571
 FANNIN,congress,4,inperson,6,519
 FANNIN,congress,4,inperson,7,585
@@ -6821,7 +6833,7 @@ FANNIN,congress,4,mail,14,2
 FANNIN,congress,4,mail,18,4
 FANNIN,congress,4,mail,19,3
 FANNIN,congress,4,mail,20,152
-FANNIN,house,62,inperson,4,3
+FANNIN,house,62,inperson,4,917
 FANNIN,house,62,inperson,5,571
 FANNIN,house,62,inperson,6,519
 FANNIN,house,62,inperson,7,585
@@ -6846,7 +6858,7 @@ FANNIN,house,62,mail,14,2
 FANNIN,house,62,mail,18,4
 FANNIN,house,62,mail,19,3
 FANNIN,house,62,mail,20,152
-FANNIN,senate,1,inperson,4,3
+FANNIN,senate,1,inperson,4,917
 FANNIN,senate,1,inperson,5,571
 FANNIN,senate,1,inperson,6,519
 FANNIN,senate,1,inperson,7,585
@@ -6940,6 +6952,7 @@ FAYETTE,senate,18,mail,12,21
 FAYETTE,senate,18,mail,13,21
 FAYETTE,senate,18,mail,14,18
 FAYETTE,senate,18,mail,15,300
+FISHER,congress,19,inperson,4,145
 FISHER,congress,19,inperson,5,62
 FISHER,congress,19,inperson,6,59
 FISHER,congress,19,inperson,7,70
@@ -6963,6 +6976,7 @@ FISHER,congress,19,mail,15,4
 FISHER,congress,19,mail,18,4
 FISHER,congress,19,mail,19,7
 FISHER,congress,19,mail,20,9
+FISHER,house,69,inperson,4,145
 FISHER,house,69,inperson,5,62
 FISHER,house,69,inperson,6,59
 FISHER,house,69,inperson,7,70
@@ -6986,6 +7000,7 @@ FISHER,house,69,mail,15,4
 FISHER,house,69,mail,18,4
 FISHER,house,69,mail,19,7
 FISHER,house,69,mail,20,9
+FISHER,senate,28,inperson,4,145
 FISHER,senate,28,inperson,5,62
 FISHER,senate,28,inperson,6,59
 FISHER,senate,28,inperson,7,70
@@ -7521,6 +7536,7 @@ FREESTONE,senate,5,mail,15,12
 FREESTONE,senate,5,mail,18,7
 FREESTONE,senate,5,mail,19,5
 FREESTONE,senate,5,mail,20,2
+FRIO,congress,23,inperson,4,8
 FRIO,congress,23,inperson,5,233
 FRIO,congress,23,inperson,6,226
 FRIO,congress,23,inperson,7,123
@@ -7543,6 +7559,7 @@ FRIO,congress,23,mail,15,9
 FRIO,congress,23,mail,18,17
 FRIO,congress,23,mail,19,3
 FRIO,congress,23,mail,20,4
+FRIO,house,80,inperson,4,8
 FRIO,house,80,inperson,5,233
 FRIO,house,80,inperson,6,226
 FRIO,house,80,inperson,7,123
@@ -7565,6 +7582,7 @@ FRIO,house,80,mail,15,9
 FRIO,house,80,mail,18,17
 FRIO,house,80,mail,19,3
 FRIO,house,80,mail,20,4
+FRIO,senate,19,inperson,4,8
 FRIO,senate,19,inperson,5,233
 FRIO,senate,19,inperson,6,226
 FRIO,senate,19,inperson,7,123
@@ -7647,7 +7665,7 @@ GAINES,senate,31,mail,11,2
 GAINES,senate,31,mail,12,14
 GAINES,senate,31,mail,14,1
 GAINES,senate,31,mail,15,23
-GALVESTON,congress,14,inperson,4,12025
+GALVESTON,congress,14,inperson,4,12046
 GALVESTON,congress,14,inperson,5,7745
 GALVESTON,congress,14,inperson,6,7147
 GALVESTON,congress,14,inperson,7,7157
@@ -7674,7 +7692,7 @@ GALVESTON,congress,14,mail,17,1
 GALVESTON,congress,14,mail,18,94
 GALVESTON,congress,14,mail,19,635
 GALVESTON,congress,14,mail,20,86
-GALVESTON,house,23,inperson,4,4175
+GALVESTON,house,23,inperson,4,4184
 GALVESTON,house,23,inperson,5,2771
 GALVESTON,house,23,inperson,6,2582
 GALVESTON,house,23,inperson,7,2606
@@ -7700,7 +7718,7 @@ GALVESTON,house,23,mail,15,9
 GALVESTON,house,23,mail,18,7
 GALVESTON,house,23,mail,19,179
 GALVESTON,house,23,mail,20,60
-GALVESTON,house,24,inperson,4,7850
+GALVESTON,house,24,inperson,4,7862
 GALVESTON,house,24,inperson,5,4974
 GALVESTON,house,24,inperson,6,4565
 GALVESTON,house,24,inperson,7,4551
@@ -7727,7 +7745,7 @@ GALVESTON,house,24,mail,17,1
 GALVESTON,house,24,mail,18,87
 GALVESTON,house,24,mail,19,456
 GALVESTON,house,24,mail,20,26
-GALVESTON,senate,11,inperson,4,11910
+GALVESTON,senate,11,inperson,4,11930
 GALVESTON,senate,11,inperson,5,7666
 GALVESTON,senate,11,inperson,6,7067
 GALVESTON,senate,11,inperson,7,7095
@@ -7754,7 +7772,7 @@ GALVESTON,senate,11,mail,17,1
 GALVESTON,senate,11,mail,18,94
 GALVESTON,senate,11,mail,19,633
 GALVESTON,senate,11,mail,20,86
-GALVESTON,senate,4,inperson,4,115
+GALVESTON,senate,4,inperson,4,116
 GALVESTON,senate,4,inperson,5,79
 GALVESTON,senate,4,inperson,6,80
 GALVESTON,senate,4,inperson,7,62
@@ -7844,7 +7862,7 @@ GARZA,senate,28,mail,18,3
 GARZA,senate,28,mail,19,1
 GARZA,senate,28,mail,20,1
 GILLESPIE,congress,21,inperson,4,888
-GILLESPIE,congress,21,inperson,5,748
+GILLESPIE,congress,21,inperson,5,749
 GILLESPIE,congress,21,inperson,6,718
 GILLESPIE,congress,21,inperson,7,774
 GILLESPIE,congress,21,inperson,8,846
@@ -7870,7 +7888,7 @@ GILLESPIE,congress,21,mail,17,26
 GILLESPIE,congress,21,mail,18,18
 GILLESPIE,congress,21,mail,19,54
 GILLESPIE,house,19,inperson,4,888
-GILLESPIE,house,19,inperson,5,748
+GILLESPIE,house,19,inperson,5,749
 GILLESPIE,house,19,inperson,6,718
 GILLESPIE,house,19,inperson,7,774
 GILLESPIE,house,19,inperson,8,846
@@ -7896,7 +7914,7 @@ GILLESPIE,house,19,mail,17,26
 GILLESPIE,house,19,mail,18,18
 GILLESPIE,house,19,mail,19,54
 GILLESPIE,senate,24,inperson,4,888
-GILLESPIE,senate,24,inperson,5,748
+GILLESPIE,senate,24,inperson,5,749
 GILLESPIE,senate,24,inperson,6,718
 GILLESPIE,senate,24,inperson,7,774
 GILLESPIE,senate,24,inperson,8,846
@@ -8135,8 +8153,8 @@ GRAY,congress,13,inperson,13,374
 GRAY,congress,13,inperson,14,428
 GRAY,congress,13,inperson,15,469
 GRAY,congress,13,mail,4,1
-GRAY,congress,13,mail,5,13
-GRAY,congress,13,mail,6,50
+GRAY,congress,13,mail,5,14
+GRAY,congress,13,mail,6,99
 GRAY,congress,13,mail,7,6
 GRAY,congress,13,mail,8,10
 GRAY,congress,13,mail,11,6
@@ -8157,8 +8175,8 @@ GRAY,house,88,inperson,13,374
 GRAY,house,88,inperson,14,428
 GRAY,house,88,inperson,15,469
 GRAY,house,88,mail,4,1
-GRAY,house,88,mail,5,13
-GRAY,house,88,mail,6,50
+GRAY,house,88,mail,5,14
+GRAY,house,88,mail,6,99
 GRAY,house,88,mail,7,6
 GRAY,house,88,mail,8,10
 GRAY,house,88,mail,11,6
@@ -8179,8 +8197,8 @@ GRAY,senate,28,inperson,13,374
 GRAY,senate,28,inperson,14,428
 GRAY,senate,28,inperson,15,469
 GRAY,senate,28,mail,4,1
-GRAY,senate,28,mail,5,13
-GRAY,senate,28,mail,6,50
+GRAY,senate,28,mail,5,14
+GRAY,senate,28,mail,6,99
 GRAY,senate,28,mail,7,6
 GRAY,senate,28,mail,8,10
 GRAY,senate,28,mail,11,6
@@ -8188,7 +8206,7 @@ GRAY,senate,28,mail,12,11
 GRAY,senate,28,mail,13,11
 GRAY,senate,28,mail,15,172
 GRAY,senate,28,mail,19,1
-GRAYSON,congress,4,inperson,4,4357
+GRAYSON,congress,4,inperson,4,4355
 GRAYSON,congress,4,inperson,5,2703
 GRAYSON,congress,4,inperson,6,2500
 GRAYSON,congress,4,inperson,7,2660
@@ -8214,7 +8232,7 @@ GRAYSON,congress,4,mail,15,85
 GRAYSON,congress,4,mail,18,55
 GRAYSON,congress,4,mail,19,5
 GRAYSON,congress,4,mail,20,178
-GRAYSON,house,62,inperson,4,4357
+GRAYSON,house,62,inperson,4,4355
 GRAYSON,house,62,inperson,5,2703
 GRAYSON,house,62,inperson,6,2500
 GRAYSON,house,62,inperson,7,2660
@@ -8240,7 +8258,7 @@ GRAYSON,house,62,mail,15,85
 GRAYSON,house,62,mail,18,55
 GRAYSON,house,62,mail,19,5
 GRAYSON,house,62,mail,20,178
-GRAYSON,senate,30,inperson,4,4357
+GRAYSON,senate,30,inperson,4,4355
 GRAYSON,senate,30,inperson,5,2703
 GRAYSON,senate,30,inperson,6,2500
 GRAYSON,senate,30,inperson,7,2660
@@ -8362,7 +8380,7 @@ GRIMES,congress,10,inperson,12,552
 GRIMES,congress,10,inperson,13,673
 GRIMES,congress,10,inperson,14,767
 GRIMES,congress,10,inperson,15,889
-GRIMES,congress,10,mail,4,3
+GRIMES,congress,10,mail,4,4
 GRIMES,congress,10,mail,5,27
 GRIMES,congress,10,mail,6,14
 GRIMES,congress,10,mail,7,8
@@ -8385,7 +8403,7 @@ GRIMES,house,12,inperson,12,552
 GRIMES,house,12,inperson,13,673
 GRIMES,house,12,inperson,14,767
 GRIMES,house,12,inperson,15,889
-GRIMES,house,12,mail,4,3
+GRIMES,house,12,mail,4,4
 GRIMES,house,12,mail,5,27
 GRIMES,house,12,mail,6,14
 GRIMES,house,12,mail,7,8
@@ -8408,7 +8426,7 @@ GRIMES,senate,18,inperson,12,552
 GRIMES,senate,18,inperson,13,673
 GRIMES,senate,18,inperson,14,767
 GRIMES,senate,18,inperson,15,889
-GRIMES,senate,18,mail,4,3
+GRIMES,senate,18,mail,4,4
 GRIMES,senate,18,mail,5,27
 GRIMES,senate,18,mail,6,14
 GRIMES,senate,18,mail,7,8
@@ -8420,7 +8438,7 @@ GRIMES,senate,18,mail,12,13
 GRIMES,senate,18,mail,13,2
 GRIMES,senate,18,mail,14,3
 GUADALUPE,congress,35,inperson,4,5470
-GUADALUPE,congress,35,inperson,5,4010
+GUADALUPE,congress,35,inperson,5,4011
 GUADALUPE,congress,35,inperson,6,3984
 GUADALUPE,congress,35,inperson,7,4260
 GUADALUPE,congress,35,inperson,8,4262
@@ -8446,7 +8464,7 @@ GUADALUPE,congress,35,mail,18,124
 GUADALUPE,congress,35,mail,19,90
 GUADALUPE,congress,35,mail,20,47
 GUADALUPE,house,44,inperson,4,5470
-GUADALUPE,house,44,inperson,5,4010
+GUADALUPE,house,44,inperson,5,4011
 GUADALUPE,house,44,inperson,6,3984
 GUADALUPE,house,44,inperson,7,4260
 GUADALUPE,house,44,inperson,8,4262
@@ -8524,7 +8542,7 @@ GUADALUPE,senate,21,mail,18,12
 GUADALUPE,senate,21,mail,19,9
 GUADALUPE,senate,21,mail,20,5
 GUADALUPE,senate,25,inperson,4,3937
-GUADALUPE,senate,25,inperson,5,2912
+GUADALUPE,senate,25,inperson,5,2913
 GUADALUPE,senate,25,inperson,6,2949
 GUADALUPE,senate,25,inperson,7,3085
 GUADALUPE,senate,25,inperson,8,3179
@@ -8609,6 +8627,7 @@ HALE,senate,28,mail,11,12
 HALE,senate,28,mail,12,17
 HALE,senate,28,mail,14,4
 HALE,senate,28,mail,15,21
+HALL,congress,13,inperson,4,67
 HALL,congress,13,inperson,5,34
 HALL,congress,13,inperson,6,49
 HALL,congress,13,inperson,7,37
@@ -8620,12 +8639,13 @@ HALL,congress,13,inperson,12,35
 HALL,congress,13,inperson,14,50
 HALL,congress,13,inperson,15,53
 HALL,congress,13,mail,4,3
-HALL,congress,13,mail,5,2
-HALL,congress,13,mail,6,3
+HALL,congress,13,mail,5,3
+HALL,congress,13,mail,6,4
 HALL,congress,13,mail,7,4
 HALL,congress,13,mail,8,5
 HALL,congress,13,mail,10,6
 HALL,congress,13,mail,11,1
+HALL,house,88,inperson,4,67
 HALL,house,88,inperson,5,34
 HALL,house,88,inperson,6,49
 HALL,house,88,inperson,7,37
@@ -8637,12 +8657,13 @@ HALL,house,88,inperson,12,35
 HALL,house,88,inperson,14,50
 HALL,house,88,inperson,15,53
 HALL,house,88,mail,4,3
-HALL,house,88,mail,5,2
-HALL,house,88,mail,6,3
+HALL,house,88,mail,5,3
+HALL,house,88,mail,6,4
 HALL,house,88,mail,7,4
 HALL,house,88,mail,8,5
 HALL,house,88,mail,10,6
 HALL,house,88,mail,11,1
+HALL,senate,31,inperson,4,67
 HALL,senate,31,inperson,5,34
 HALL,senate,31,inperson,6,49
 HALL,senate,31,inperson,7,37
@@ -8654,13 +8675,13 @@ HALL,senate,31,inperson,12,35
 HALL,senate,31,inperson,14,50
 HALL,senate,31,inperson,15,53
 HALL,senate,31,mail,4,3
-HALL,senate,31,mail,5,2
-HALL,senate,31,mail,6,3
+HALL,senate,31,mail,5,3
+HALL,senate,31,mail,6,4
 HALL,senate,31,mail,7,4
 HALL,senate,31,mail,8,5
 HALL,senate,31,mail,10,6
 HALL,senate,31,mail,11,1
-HAMILTON,congress,31,inperson,4,258
+HAMILTON,congress,31,inperson,4,259
 HAMILTON,congress,31,inperson,5,163
 HAMILTON,congress,31,inperson,6,158
 HAMILTON,congress,31,inperson,7,162
@@ -8683,7 +8704,7 @@ HAMILTON,congress,31,mail,15,10
 HAMILTON,congress,31,mail,18,6
 HAMILTON,congress,31,mail,19,4
 HAMILTON,congress,31,mail,20,1
-HAMILTON,house,59,inperson,4,258
+HAMILTON,house,59,inperson,4,259
 HAMILTON,house,59,inperson,5,163
 HAMILTON,house,59,inperson,6,158
 HAMILTON,house,59,inperson,7,162
@@ -8706,7 +8727,7 @@ HAMILTON,house,59,mail,15,10
 HAMILTON,house,59,mail,18,6
 HAMILTON,house,59,mail,19,4
 HAMILTON,house,59,mail,20,1
-HAMILTON,senate,22,inperson,4,258
+HAMILTON,senate,22,inperson,4,259
 HAMILTON,senate,22,inperson,5,163
 HAMILTON,senate,22,inperson,6,158
 HAMILTON,senate,22,inperson,7,162
@@ -9011,7 +9032,7 @@ HARRIS,congress,22,mail,15,59
 HARRIS,congress,22,mail,18,65
 HARRIS,congress,22,mail,19,46
 HARRIS,congress,22,mail,20,49
-HARRIS,congress,29,inperson,4,16063
+HARRIS,congress,29,inperson,4,16064
 HARRIS,congress,29,inperson,5,11160
 HARRIS,congress,29,inperson,6,9421
 HARRIS,congress,29,inperson,7,8493
@@ -9037,7 +9058,7 @@ HARRIS,congress,29,mail,15,190
 HARRIS,congress,29,mail,18,293
 HARRIS,congress,29,mail,19,130
 HARRIS,congress,29,mail,20,208
-HARRIS,congress,36,inperson,4,8538
+HARRIS,congress,36,inperson,4,8539
 HARRIS,congress,36,inperson,5,5859
 HARRIS,congress,36,inperson,6,5215
 HARRIS,congress,36,inperson,7,5192
@@ -9063,7 +9084,7 @@ HARRIS,congress,36,mail,15,138
 HARRIS,congress,36,mail,18,140
 HARRIS,congress,36,mail,19,98
 HARRIS,congress,36,mail,20,121
-HARRIS,congress,38,inperson,4,28232
+HARRIS,congress,38,inperson,4,28235
 HARRIS,congress,38,inperson,5,19564
 HARRIS,congress,38,inperson,6,17818
 HARRIS,congress,38,inperson,7,17493
@@ -9090,7 +9111,7 @@ HARRIS,congress,38,mail,18,533
 HARRIS,congress,38,mail,19,230
 HARRIS,congress,38,mail,20,299
 HARRIS,congress,7,inperson,4,15568
-HARRIS,congress,7,inperson,5,11326
+HARRIS,congress,7,inperson,5,11327
 HARRIS,congress,7,inperson,6,9927
 HARRIS,congress,7,inperson,7,9728
 HARRIS,congress,7,inperson,8,10094
@@ -9141,7 +9162,7 @@ HARRIS,congress,8,mail,15,154
 HARRIS,congress,8,mail,18,129
 HARRIS,congress,8,mail,19,95
 HARRIS,congress,8,mail,20,94
-HARRIS,congress,9,inperson,4,13236
+HARRIS,congress,9,inperson,4,13237
 HARRIS,congress,9,inperson,5,8919
 HARRIS,congress,9,inperson,6,7750
 HARRIS,congress,9,inperson,7,7169
@@ -9246,7 +9267,7 @@ HARRIS,house,128,mail,15,81
 HARRIS,house,128,mail,18,75
 HARRIS,house,128,mail,19,47
 HARRIS,house,128,mail,20,22
-HARRIS,house,129,inperson,4,6471
+HARRIS,house,129,inperson,4,6472
 HARRIS,house,129,inperson,5,4415
 HARRIS,house,129,inperson,6,4090
 HARRIS,house,129,inperson,7,4086
@@ -9272,7 +9293,7 @@ HARRIS,house,129,mail,15,135
 HARRIS,house,129,mail,18,133
 HARRIS,house,129,mail,19,82
 HARRIS,house,129,mail,20,98
-HARRIS,house,130,inperson,4,7938
+HARRIS,house,130,inperson,4,7939
 HARRIS,house,130,inperson,5,5192
 HARRIS,house,130,inperson,6,4810
 HARRIS,house,130,inperson,7,4626
@@ -9324,7 +9345,7 @@ HARRIS,house,131,mail,15,63
 HARRIS,house,131,mail,18,63
 HARRIS,house,131,mail,19,36
 HARRIS,house,131,mail,20,54
-HARRIS,house,132,inperson,4,7731
+HARRIS,house,132,inperson,4,7732
 HARRIS,house,132,inperson,5,5648
 HARRIS,house,132,inperson,6,5226
 HARRIS,house,132,inperson,7,5082
@@ -9351,7 +9372,7 @@ HARRIS,house,132,mail,18,111
 HARRIS,house,132,mail,19,48
 HARRIS,house,132,mail,20,71
 HARRIS,house,133,inperson,4,5872
-HARRIS,house,133,inperson,5,4401
+HARRIS,house,133,inperson,5,4402
 HARRIS,house,133,inperson,6,4111
 HARRIS,house,133,inperson,7,4007
 HARRIS,house,133,inperson,8,4129
@@ -9454,7 +9475,7 @@ HARRIS,house,137,mail,15,38
 HARRIS,house,137,mail,18,42
 HARRIS,house,137,mail,19,35
 HARRIS,house,137,mail,20,30
-HARRIS,house,138,inperson,4,5905
+HARRIS,house,138,inperson,4,5906
 HARRIS,house,138,inperson,5,4228
 HARRIS,house,138,inperson,6,3857
 HARRIS,house,138,inperson,7,3758
@@ -9506,7 +9527,7 @@ HARRIS,house,139,mail,15,74
 HARRIS,house,139,mail,18,133
 HARRIS,house,139,mail,19,52
 HARRIS,house,139,mail,20,96
-HARRIS,house,140,inperson,4,2978
+HARRIS,house,140,inperson,4,2979
 HARRIS,house,140,inperson,5,2071
 HARRIS,house,140,inperson,6,1787
 HARRIS,house,140,inperson,7,1466
@@ -9584,7 +9605,7 @@ HARRIS,house,142,mail,15,67
 HARRIS,house,142,mail,18,74
 HARRIS,house,142,mail,19,25
 HARRIS,house,142,mail,20,46
-HARRIS,house,143,inperson,4,3313
+HARRIS,house,143,inperson,4,3314
 HARRIS,house,143,inperson,5,2318
 HARRIS,house,143,inperson,6,1933
 HARRIS,house,143,inperson,7,1750
@@ -9793,7 +9814,7 @@ HARRIS,house,150,mail,15,87
 HARRIS,house,150,mail,18,88
 HARRIS,house,150,mail,19,58
 HARRIS,house,150,mail,20,48
-HARRIS,senate,11,inperson,4,9385
+HARRIS,senate,11,inperson,4,9386
 HARRIS,senate,11,inperson,5,6403
 HARRIS,senate,11,inperson,6,5772
 HARRIS,senate,11,inperson,7,5822
@@ -9871,8 +9892,8 @@ HARRIS,senate,15,mail,15,370
 HARRIS,senate,15,mail,18,452
 HARRIS,senate,15,mail,19,287
 HARRIS,senate,15,mail,20,363
-HARRIS,senate,17,inperson,4,10997
-HARRIS,senate,17,inperson,5,8503
+HARRIS,senate,17,inperson,4,10998
+HARRIS,senate,17,inperson,5,8504
 HARRIS,senate,17,inperson,6,7991
 HARRIS,senate,17,inperson,7,7762
 HARRIS,senate,17,inperson,8,7899
@@ -9897,7 +9918,7 @@ HARRIS,senate,17,mail,15,238
 HARRIS,senate,17,mail,18,176
 HARRIS,senate,17,mail,19,146
 HARRIS,senate,17,mail,20,199
-HARRIS,senate,18,inperson,4,5389
+HARRIS,senate,18,inperson,4,5391
 HARRIS,senate,18,inperson,5,3784
 HARRIS,senate,18,inperson,6,3316
 HARRIS,senate,18,inperson,7,3138
@@ -9949,7 +9970,7 @@ HARRIS,senate,4,mail,15,141
 HARRIS,senate,4,mail,18,183
 HARRIS,senate,4,mail,19,116
 HARRIS,senate,4,mail,20,75
-HARRIS,senate,6,inperson,4,17547
+HARRIS,senate,6,inperson,4,17549
 HARRIS,senate,6,inperson,5,11925
 HARRIS,senate,6,inperson,6,10188
 HARRIS,senate,6,inperson,7,9041
@@ -10074,7 +10095,8 @@ HARRISON,senate,1,mail,15,27
 HARRISON,senate,1,mail,18,23
 HARRISON,senate,1,mail,19,9
 HARRISON,senate,1,mail,20,14
-HARTLEY,congress,13,inperson,5,10
+HARTLEY,congress,13,inperson,4,117
+HARTLEY,congress,13,inperson,5,94
 HARTLEY,congress,13,inperson,6,73
 HARTLEY,congress,13,inperson,7,75
 HARTLEY,congress,13,inperson,8,81
@@ -10096,7 +10118,8 @@ HARTLEY,congress,13,mail,15,3
 HARTLEY,congress,13,mail,18,3
 HARTLEY,congress,13,mail,19,8
 HARTLEY,congress,13,mail,20,3
-HARTLEY,house,86,inperson,5,10
+HARTLEY,house,86,inperson,4,117
+HARTLEY,house,86,inperson,5,94
 HARTLEY,house,86,inperson,6,73
 HARTLEY,house,86,inperson,7,75
 HARTLEY,house,86,inperson,8,81
@@ -10118,7 +10141,8 @@ HARTLEY,house,86,mail,15,3
 HARTLEY,house,86,mail,18,3
 HARTLEY,house,86,mail,19,8
 HARTLEY,house,86,mail,20,3
-HARTLEY,senate,31,inperson,5,10
+HARTLEY,senate,31,inperson,4,117
+HARTLEY,senate,31,inperson,5,94
 HARTLEY,senate,31,inperson,6,73
 HARTLEY,senate,31,inperson,7,75
 HARTLEY,senate,31,inperson,8,81
@@ -10209,7 +10233,7 @@ HASKELL,senate,28,mail,15,5
 HASKELL,senate,28,mail,18,2
 HASKELL,senate,28,mail,19,4
 HASKELL,senate,28,mail,20,5
-HAYS,congress,21,inperson,4,4357
+HAYS,congress,21,inperson,4,4358
 HAYS,congress,21,inperson,5,3332
 HAYS,congress,21,inperson,6,3367
 HAYS,congress,21,inperson,7,3551
@@ -10235,7 +10259,7 @@ HAYS,congress,21,mail,15,1
 HAYS,congress,21,mail,19,11
 HAYS,congress,21,mail,20,289
 HAYS,congress,27,inperson,4,5733
-HAYS,congress,27,inperson,5,4003
+HAYS,congress,27,inperson,5,4004
 HAYS,congress,27,inperson,6,3759
 HAYS,congress,27,inperson,7,3872
 HAYS,congress,27,inperson,8,4018
@@ -10260,8 +10284,8 @@ HAYS,congress,27,mail,15,2
 HAYS,congress,27,mail,18,2
 HAYS,congress,27,mail,19,35
 HAYS,congress,27,mail,20,270
-HAYS,house,45,inperson,4,8085
-HAYS,house,45,inperson,5,5780
+HAYS,house,45,inperson,4,8086
+HAYS,house,45,inperson,5,5781
 HAYS,house,45,inperson,6,5626
 HAYS,house,45,inperson,7,5745
 HAYS,house,45,inperson,8,5826
@@ -10308,8 +10332,8 @@ HAYS,house,73,mail,11,4
 HAYS,house,73,mail,12,13
 HAYS,house,73,mail,13,24
 HAYS,house,73,mail,20,226
-HAYS,senate,21,inperson,4,6346
-HAYS,senate,21,inperson,5,4465
+HAYS,senate,21,inperson,4,6347
+HAYS,senate,21,inperson,5,4466
 HAYS,senate,21,inperson,6,4323
 HAYS,senate,21,inperson,7,4404
 HAYS,senate,21,inperson,8,4421
@@ -10359,7 +10383,7 @@ HAYS,senate,25,mail,14,2
 HAYS,senate,25,mail,15,1
 HAYS,senate,25,mail,18,1
 HAYS,senate,25,mail,20,426
-HEMPHILL,congress,13,inperson,4,142
+HEMPHILL,congress,13,inperson,4,143
 HEMPHILL,congress,13,inperson,5,62
 HEMPHILL,congress,13,inperson,6,69
 HEMPHILL,congress,13,inperson,7,80
@@ -10382,7 +10406,7 @@ HEMPHILL,congress,13,mail,15,2
 HEMPHILL,congress,13,mail,18,5
 HEMPHILL,congress,13,mail,19,1
 HEMPHILL,congress,13,mail,20,3
-HEMPHILL,house,88,inperson,4,142
+HEMPHILL,house,88,inperson,4,143
 HEMPHILL,house,88,inperson,5,62
 HEMPHILL,house,88,inperson,6,69
 HEMPHILL,house,88,inperson,7,80
@@ -10405,7 +10429,7 @@ HEMPHILL,house,88,mail,15,2
 HEMPHILL,house,88,mail,18,5
 HEMPHILL,house,88,mail,19,1
 HEMPHILL,house,88,mail,20,3
-HEMPHILL,senate,31,inperson,4,142
+HEMPHILL,senate,31,inperson,4,143
 HEMPHILL,senate,31,inperson,5,62
 HEMPHILL,senate,31,inperson,6,69
 HEMPHILL,senate,31,inperson,7,80
@@ -10496,7 +10520,7 @@ HENDERSON,senate,3,mail,13,64
 HENDERSON,senate,3,mail,14,26
 HENDERSON,senate,3,mail,15,78
 HENDERSON,senate,3,mail,18,95
-HIDALGO,congress,15,inperson,4,11410
+HIDALGO,congress,15,inperson,4,11411
 HIDALGO,congress,15,inperson,5,8021
 HIDALGO,congress,15,inperson,6,7529
 HIDALGO,congress,15,inperson,7,7657
@@ -10653,7 +10677,7 @@ HIDALGO,house,40,mail,15,58
 HIDALGO,house,40,mail,18,23
 HIDALGO,house,40,mail,19,68
 HIDALGO,house,40,mail,20,4
-HIDALGO,house,41,inperson,4,4251
+HIDALGO,house,41,inperson,4,4252
 HIDALGO,house,41,inperson,5,3110
 HIDALGO,house,41,inperson,6,3022
 HIDALGO,house,41,inperson,7,3147
@@ -10679,7 +10703,7 @@ HIDALGO,house,41,mail,14,19
 HIDALGO,house,41,mail,15,81
 HIDALGO,house,41,mail,18,34
 HIDALGO,house,41,mail,19,110
-HIDALGO,senate,20,inperson,4,11602
+HIDALGO,senate,20,inperson,4,11603
 HIDALGO,senate,20,inperson,5,8446
 HIDALGO,senate,20,inperson,6,7708
 HIDALGO,senate,20,inperson,7,7826
@@ -10801,7 +10825,7 @@ HILL,senate,22,mail,15,13
 HILL,senate,22,mail,18,12
 HILL,senate,22,mail,19,28
 HILL,senate,22,mail,20,6
-HOCKLEY,congress,19,inperson,4,519
+HOCKLEY,congress,19,inperson,4,520
 HOCKLEY,congress,19,inperson,5,440
 HOCKLEY,congress,19,inperson,6,402
 HOCKLEY,congress,19,inperson,7,366
@@ -10826,7 +10850,7 @@ HOCKLEY,congress,19,mail,14,3
 HOCKLEY,congress,19,mail,15,18
 HOCKLEY,congress,19,mail,18,5
 HOCKLEY,congress,19,mail,19,19
-HOCKLEY,house,88,inperson,4,519
+HOCKLEY,house,88,inperson,4,520
 HOCKLEY,house,88,inperson,5,440
 HOCKLEY,house,88,inperson,6,402
 HOCKLEY,house,88,inperson,7,366
@@ -10851,7 +10875,7 @@ HOCKLEY,house,88,mail,14,3
 HOCKLEY,house,88,mail,15,18
 HOCKLEY,house,88,mail,18,5
 HOCKLEY,house,88,mail,19,19
-HOCKLEY,senate,28,inperson,4,519
+HOCKLEY,senate,28,inperson,4,520
 HOCKLEY,senate,28,inperson,5,440
 HOCKLEY,senate,28,inperson,6,402
 HOCKLEY,senate,28,inperson,7,366
@@ -10939,7 +10963,7 @@ HOOD,senate,22,mail,12,2
 HOOD,senate,22,mail,13,1
 HOOD,senate,22,mail,19,1
 HOOD,senate,22,mail,20,1
-HOPKINS,congress,3,inperson,4,1082
+HOPKINS,congress,3,inperson,4,1084
 HOPKINS,congress,3,inperson,5,655
 HOPKINS,congress,3,inperson,6,611
 HOPKINS,congress,3,inperson,7,616
@@ -10962,7 +10986,7 @@ HOPKINS,congress,3,mail,15,39
 HOPKINS,congress,3,mail,18,8
 HOPKINS,congress,3,mail,19,9
 HOPKINS,congress,3,mail,20,21
-HOPKINS,house,2,inperson,4,1082
+HOPKINS,house,2,inperson,4,1084
 HOPKINS,house,2,inperson,5,655
 HOPKINS,house,2,inperson,6,611
 HOPKINS,house,2,inperson,7,616
@@ -10985,7 +11009,7 @@ HOPKINS,house,2,mail,15,39
 HOPKINS,house,2,mail,18,8
 HOPKINS,house,2,mail,19,9
 HOPKINS,house,2,mail,20,21
-HOPKINS,senate,1,inperson,4,1082
+HOPKINS,senate,1,inperson,4,1084
 HOPKINS,senate,1,inperson,5,655
 HOPKINS,senate,1,inperson,6,611
 HOPKINS,senate,1,inperson,7,616
@@ -11224,7 +11248,7 @@ HUNT,congress,3,mail,17,30
 HUNT,congress,3,mail,18,72
 HUNT,congress,3,mail,19,39
 HUNT,congress,3,mail,20,49
-HUNT,congress,32,inperson,4,771
+HUNT,congress,32,inperson,4,770
 HUNT,congress,32,inperson,5,510
 HUNT,congress,32,inperson,6,500
 HUNT,congress,32,inperson,7,528
@@ -11251,7 +11275,7 @@ HUNT,congress,32,mail,17,12
 HUNT,congress,32,mail,18,23
 HUNT,congress,32,mail,19,18
 HUNT,congress,32,mail,20,9
-HUNT,house,2,inperson,4,2852
+HUNT,house,2,inperson,4,2851
 HUNT,house,2,inperson,5,1781
 HUNT,house,2,inperson,6,1708
 HUNT,house,2,inperson,7,1849
@@ -11278,7 +11302,7 @@ HUNT,house,2,mail,17,42
 HUNT,house,2,mail,18,95
 HUNT,house,2,mail,19,57
 HUNT,house,2,mail,20,58
-HUNT,senate,8,inperson,4,2852
+HUNT,senate,8,inperson,4,2851
 HUNT,senate,8,inperson,5,1781
 HUNT,senate,8,inperson,6,1708
 HUNT,senate,8,inperson,7,1849
@@ -11506,6 +11530,7 @@ JACK,senate,30,mail,15,17
 JACK,senate,30,mail,18,4
 JACK,senate,30,mail,19,4
 JACK,senate,30,mail,20,7
+JACKSON,congress,27,inperson,4,393
 JACKSON,congress,27,inperson,5,286
 JACKSON,congress,27,inperson,6,232
 JACKSON,congress,27,inperson,7,262
@@ -11526,6 +11551,7 @@ JACKSON,congress,27,mail,11,6
 JACKSON,congress,27,mail,12,19
 JACKSON,congress,27,mail,13,31
 JACKSON,congress,27,mail,14,3
+JACKSON,house,30,inperson,4,393
 JACKSON,house,30,inperson,5,286
 JACKSON,house,30,inperson,6,232
 JACKSON,house,30,inperson,7,262
@@ -11546,6 +11572,7 @@ JACKSON,house,30,mail,11,6
 JACKSON,house,30,mail,12,19
 JACKSON,house,30,mail,13,31
 JACKSON,house,30,mail,14,3
+JACKSON,senate,17,inperson,4,393
 JACKSON,senate,17,inperson,5,286
 JACKSON,senate,17,inperson,6,232
 JACKSON,senate,17,inperson,7,262
@@ -11833,7 +11860,7 @@ JEFFERSON,senate,4,mail,15,1
 JEFFERSON,senate,4,mail,18,1
 JEFFERSON,senate,4,mail,19,1
 JEFFERSON,senate,4,mail,20,96
-JIM HOGG,congress,28,inperson,4,89
+JIM HOGG,congress,28,inperson,4,108
 JIM HOGG,congress,28,inperson,5,37
 JIM HOGG,congress,28,inperson,6,44
 JIM HOGG,congress,28,inperson,7,40
@@ -11858,7 +11885,7 @@ JIM HOGG,congress,28,mail,15,1
 JIM HOGG,congress,28,mail,18,11
 JIM HOGG,congress,28,mail,19,17
 JIM HOGG,congress,28,mail,20,12
-JIM HOGG,house,31,inperson,4,89
+JIM HOGG,house,31,inperson,4,108
 JIM HOGG,house,31,inperson,5,37
 JIM HOGG,house,31,inperson,6,44
 JIM HOGG,house,31,inperson,7,40
@@ -11883,7 +11910,7 @@ JIM HOGG,house,31,mail,15,1
 JIM HOGG,house,31,mail,18,11
 JIM HOGG,house,31,mail,19,17
 JIM HOGG,house,31,mail,20,12
-JIM HOGG,senate,21,inperson,4,89
+JIM HOGG,senate,21,inperson,4,108
 JIM HOGG,senate,21,inperson,5,37
 JIM HOGG,senate,21,inperson,6,44
 JIM HOGG,senate,21,inperson,7,40
@@ -11944,7 +11971,7 @@ JIM WELLS,senate,20,inperson,12,646
 JIM WELLS,senate,20,inperson,13,626
 JIM WELLS,senate,20,inperson,14,854
 JIM WELLS,senate,20,inperson,15,854
-JOHNSON,congress,17,inperson,4,656
+JOHNSON,congress,17,inperson,4,657
 JOHNSON,congress,17,inperson,5,422
 JOHNSON,congress,17,inperson,6,360
 JOHNSON,congress,17,inperson,7,406
@@ -12011,7 +12038,7 @@ JOHNSON,congress,6,mail,13,1
 JOHNSON,congress,6,mail,15,5
 JOHNSON,congress,6,mail,18,13
 JOHNSON,congress,6,mail,19,51
-JOHNSON,house,58,inperson,4,6239
+JOHNSON,house,58,inperson,4,6240
 JOHNSON,house,58,inperson,5,3811
 JOHNSON,house,58,inperson,6,3755
 JOHNSON,house,58,inperson,7,3877
@@ -12037,7 +12064,7 @@ JOHNSON,house,58,mail,14,1
 JOHNSON,house,58,mail,15,5
 JOHNSON,house,58,mail,18,22
 JOHNSON,house,58,mail,19,108
-JOHNSON,senate,10,inperson,4,6239
+JOHNSON,senate,10,inperson,4,6240
 JOHNSON,senate,10,inperson,5,3811
 JOHNSON,senate,10,inperson,6,3755
 JOHNSON,senate,10,inperson,7,3877
@@ -12207,8 +12234,8 @@ KARNES,senate,21,mail,14,4
 KARNES,senate,21,mail,15,4
 KARNES,senate,21,mail,18,21
 KARNES,senate,21,mail,20,10
-KAUFMAN,congress,5,inperson,4,5897
-KAUFMAN,congress,5,inperson,5,3718
+KAUFMAN,congress,5,inperson,4,5896
+KAUFMAN,congress,5,inperson,5,3717
 KAUFMAN,congress,5,inperson,6,3448
 KAUFMAN,congress,5,inperson,7,3372
 KAUFMAN,congress,5,inperson,8,3782
@@ -12233,8 +12260,8 @@ KAUFMAN,congress,5,mail,16,171
 KAUFMAN,congress,5,mail,17,226
 KAUFMAN,congress,5,mail,18,32
 KAUFMAN,congress,5,mail,19,56
-KAUFMAN,house,4,inperson,4,5897
-KAUFMAN,house,4,inperson,5,3718
+KAUFMAN,house,4,inperson,4,5896
+KAUFMAN,house,4,inperson,5,3717
 KAUFMAN,house,4,inperson,6,3448
 KAUFMAN,house,4,inperson,7,3372
 KAUFMAN,house,4,inperson,8,3782
@@ -12259,8 +12286,8 @@ KAUFMAN,house,4,mail,16,171
 KAUFMAN,house,4,mail,17,226
 KAUFMAN,house,4,mail,18,32
 KAUFMAN,house,4,mail,19,56
-KAUFMAN,senate,2,inperson,4,5897
-KAUFMAN,senate,2,inperson,5,3718
+KAUFMAN,senate,2,inperson,4,5896
+KAUFMAN,senate,2,inperson,5,3717
 KAUFMAN,senate,2,inperson,6,3448
 KAUFMAN,senate,2,inperson,7,3372
 KAUFMAN,senate,2,inperson,8,3782
@@ -12285,7 +12312,7 @@ KAUFMAN,senate,2,mail,16,171
 KAUFMAN,senate,2,mail,17,226
 KAUFMAN,senate,2,mail,18,32
 KAUFMAN,senate,2,mail,19,56
-KENDALL,congress,21,inperson,4,1834
+KENDALL,congress,21,inperson,4,1836
 KENDALL,congress,21,inperson,5,1276
 KENDALL,congress,21,inperson,6,1371
 KENDALL,congress,21,inperson,7,1526
@@ -12306,7 +12333,7 @@ KENDALL,congress,21,mail,12,1
 KENDALL,congress,21,mail,13,227
 KENDALL,congress,21,mail,15,5
 KENDALL,congress,21,mail,20,299
-KENDALL,house,19,inperson,4,1834
+KENDALL,house,19,inperson,4,1836
 KENDALL,house,19,inperson,5,1276
 KENDALL,house,19,inperson,6,1371
 KENDALL,house,19,inperson,7,1526
@@ -12327,7 +12354,7 @@ KENDALL,house,19,mail,12,1
 KENDALL,house,19,mail,13,227
 KENDALL,house,19,mail,15,5
 KENDALL,house,19,mail,20,299
-KENDALL,senate,25,inperson,4,1834
+KENDALL,senate,25,inperson,4,1836
 KENDALL,senate,25,inperson,5,1276
 KENDALL,senate,25,inperson,6,1371
 KENDALL,senate,25,inperson,7,1526
@@ -12348,6 +12375,7 @@ KENDALL,senate,25,mail,12,1
 KENDALL,senate,25,mail,13,227
 KENDALL,senate,25,mail,15,5
 KENDALL,senate,25,mail,20,299
+KENEDY,congress,34,inperson,4,17
 KENEDY,congress,34,inperson,5,5
 KENEDY,congress,34,inperson,6,6
 KENEDY,congress,34,inperson,7,8
@@ -12362,6 +12390,7 @@ KENEDY,congress,34,inperson,15,25
 KENEDY,congress,34,mail,4,1
 KENEDY,congress,34,mail,8,1
 KENEDY,congress,34,mail,18,1
+KENEDY,house,31,inperson,4,17
 KENEDY,house,31,inperson,5,5
 KENEDY,house,31,inperson,6,6
 KENEDY,house,31,inperson,7,8
@@ -12376,6 +12405,7 @@ KENEDY,house,31,inperson,15,25
 KENEDY,house,31,mail,4,1
 KENEDY,house,31,mail,8,1
 KENEDY,house,31,mail,18,1
+KENEDY,senate,27,inperson,4,17
 KENEDY,senate,27,inperson,5,5
 KENEDY,senate,27,inperson,6,6
 KENEDY,senate,27,inperson,7,8
@@ -12426,7 +12456,7 @@ KENT,senate,28,inperson,12,26
 KENT,senate,28,inperson,13,16
 KENT,senate,28,inperson,14,27
 KENT,senate,28,inperson,15,22
-KERR,congress,21,inperson,4,1496
+KERR,congress,21,inperson,4,1505
 KERR,congress,21,inperson,5,1122
 KERR,congress,21,inperson,6,1100
 KERR,congress,21,inperson,7,1274
@@ -12452,7 +12482,7 @@ KERR,congress,21,mail,15,125
 KERR,congress,21,mail,18,81
 KERR,congress,21,mail,19,97
 KERR,congress,21,mail,20,21
-KERR,house,53,inperson,4,1496
+KERR,house,53,inperson,4,1505
 KERR,house,53,inperson,5,1122
 KERR,house,53,inperson,6,1100
 KERR,house,53,inperson,7,1274
@@ -12478,7 +12508,7 @@ KERR,house,53,mail,15,125
 KERR,house,53,mail,18,81
 KERR,house,53,mail,19,97
 KERR,house,53,mail,20,21
-KERR,senate,24,inperson,4,1496
+KERR,senate,24,inperson,4,1505
 KERR,senate,24,inperson,5,1122
 KERR,senate,24,inperson,6,1100
 KERR,senate,24,inperson,7,1274
@@ -12903,7 +12933,7 @@ LAMB,senate,28,mail,6,4
 LAMB,senate,28,mail,7,4
 LAMB,senate,28,mail,8,11
 LAMB,senate,28,mail,11,114
-LAMPASAS,congress,31,inperson,4,660
+LAMPASAS,congress,31,inperson,4,661
 LAMPASAS,congress,31,inperson,5,404
 LAMPASAS,congress,31,inperson,6,376
 LAMPASAS,congress,31,inperson,7,441
@@ -12927,7 +12957,7 @@ LAMPASAS,congress,31,mail,14,9
 LAMPASAS,congress,31,mail,15,42
 LAMPASAS,congress,31,mail,18,2
 LAMPASAS,congress,31,mail,20,1
-LAMPASAS,house,68,inperson,4,660
+LAMPASAS,house,68,inperson,4,661
 LAMPASAS,house,68,inperson,5,404
 LAMPASAS,house,68,inperson,6,376
 LAMPASAS,house,68,inperson,7,441
@@ -12951,7 +12981,7 @@ LAMPASAS,house,68,mail,14,9
 LAMPASAS,house,68,mail,15,42
 LAMPASAS,house,68,mail,18,2
 LAMPASAS,house,68,mail,20,1
-LAMPASAS,senate,24,inperson,4,660
+LAMPASAS,senate,24,inperson,4,661
 LAMPASAS,senate,24,inperson,5,404
 LAMPASAS,senate,24,inperson,6,376
 LAMPASAS,senate,24,inperson,7,441
@@ -12976,7 +13006,7 @@ LAMPASAS,senate,24,mail,15,42
 LAMPASAS,senate,24,mail,18,2
 LAMPASAS,senate,24,mail,20,1
 LAVACA,congress,15,inperson,4,640
-LAVACA,congress,15,inperson,5,333
+LAVACA,congress,15,inperson,5,335
 LAVACA,congress,15,inperson,6,384
 LAVACA,congress,15,inperson,7,390
 LAVACA,congress,15,inperson,8,399
@@ -12987,6 +13017,7 @@ LAVACA,congress,15,inperson,12,430
 LAVACA,congress,15,inperson,13,446
 LAVACA,congress,15,inperson,14,589
 LAVACA,congress,15,inperson,15,550
+LAVACA,congress,15,mail,4,7
 LAVACA,congress,15,mail,5,11
 LAVACA,congress,15,mail,6,21
 LAVACA,congress,15,mail,7,35
@@ -12999,7 +13030,7 @@ LAVACA,congress,15,mail,15,1
 LAVACA,congress,15,mail,18,47
 LAVACA,congress,15,mail,19,50
 LAVACA,house,30,inperson,4,640
-LAVACA,house,30,inperson,5,333
+LAVACA,house,30,inperson,5,335
 LAVACA,house,30,inperson,6,384
 LAVACA,house,30,inperson,7,390
 LAVACA,house,30,inperson,8,399
@@ -13010,6 +13041,7 @@ LAVACA,house,30,inperson,12,430
 LAVACA,house,30,inperson,13,446
 LAVACA,house,30,inperson,14,589
 LAVACA,house,30,inperson,15,550
+LAVACA,house,30,mail,4,7
 LAVACA,house,30,mail,5,11
 LAVACA,house,30,mail,6,21
 LAVACA,house,30,mail,7,35
@@ -13022,7 +13054,7 @@ LAVACA,house,30,mail,15,1
 LAVACA,house,30,mail,18,47
 LAVACA,house,30,mail,19,50
 LAVACA,senate,18,inperson,4,640
-LAVACA,senate,18,inperson,5,333
+LAVACA,senate,18,inperson,5,335
 LAVACA,senate,18,inperson,6,384
 LAVACA,senate,18,inperson,7,390
 LAVACA,senate,18,inperson,8,399
@@ -13033,6 +13065,7 @@ LAVACA,senate,18,inperson,12,430
 LAVACA,senate,18,inperson,13,446
 LAVACA,senate,18,inperson,14,589
 LAVACA,senate,18,inperson,15,550
+LAVACA,senate,18,mail,4,7
 LAVACA,senate,18,mail,5,11
 LAVACA,senate,18,mail,6,21
 LAVACA,senate,18,mail,7,35
@@ -13044,9 +13077,9 @@ LAVACA,senate,18,mail,14,51
 LAVACA,senate,18,mail,15,1
 LAVACA,senate,18,mail,18,47
 LAVACA,senate,18,mail,19,50
-LEE,congress,10,inperson,4,539
-LEE,congress,10,inperson,5,379
-LEE,congress,10,inperson,6,366
+LEE,congress,10,inperson,4,547
+LEE,congress,10,inperson,5,384
+LEE,congress,10,inperson,6,369
 LEE,congress,10,inperson,7,330
 LEE,congress,10,inperson,8,346
 LEE,congress,10,inperson,9,117
@@ -13063,9 +13096,9 @@ LEE,congress,10,mail,7,8
 LEE,congress,10,mail,8,1
 LEE,congress,10,mail,10,11
 LEE,congress,10,mail,11,156
-LEE,house,17,inperson,4,539
-LEE,house,17,inperson,5,379
-LEE,house,17,inperson,6,366
+LEE,house,17,inperson,4,547
+LEE,house,17,inperson,5,384
+LEE,house,17,inperson,6,369
 LEE,house,17,inperson,7,330
 LEE,house,17,inperson,8,346
 LEE,house,17,inperson,9,117
@@ -13082,9 +13115,9 @@ LEE,house,17,mail,7,8
 LEE,house,17,mail,8,1
 LEE,house,17,mail,10,11
 LEE,house,17,mail,11,156
-LEE,senate,18,inperson,4,539
-LEE,senate,18,inperson,5,379
-LEE,senate,18,inperson,6,366
+LEE,senate,18,inperson,4,547
+LEE,senate,18,inperson,5,384
+LEE,senate,18,inperson,6,369
 LEE,senate,18,inperson,7,330
 LEE,senate,18,inperson,8,346
 LEE,senate,18,inperson,9,117
@@ -13164,7 +13197,7 @@ LEON,senate,5,mail,12,38
 LEON,senate,5,mail,13,21
 LEON,senate,5,mail,14,5
 LEON,senate,5,mail,15,11
-LIBERTY,congress,9,inperson,4,2595
+LIBERTY,congress,9,inperson,4,2596
 LIBERTY,congress,9,inperson,5,1629
 LIBERTY,congress,9,inperson,6,1334
 LIBERTY,congress,9,inperson,7,1281
@@ -13185,7 +13218,7 @@ LIBERTY,congress,9,mail,11,348
 LIBERTY,congress,9,mail,12,3
 LIBERTY,congress,9,mail,14,2
 LIBERTY,congress,9,mail,15,1
-LIBERTY,house,18,inperson,4,2595
+LIBERTY,house,18,inperson,4,2596
 LIBERTY,house,18,inperson,5,1629
 LIBERTY,house,18,inperson,6,1334
 LIBERTY,house,18,inperson,7,1281
@@ -13206,7 +13239,7 @@ LIBERTY,house,18,mail,11,348
 LIBERTY,house,18,mail,12,3
 LIBERTY,house,18,mail,14,2
 LIBERTY,house,18,mail,15,1
-LIBERTY,senate,3,inperson,4,2595
+LIBERTY,senate,3,inperson,4,2596
 LIBERTY,senate,3,inperson,5,1629
 LIBERTY,senate,3,inperson,6,1334
 LIBERTY,senate,3,inperson,7,1281
@@ -13498,8 +13531,8 @@ LOVING,senate,31,inperson,14,10
 LOVING,senate,31,inperson,15,1
 LOVING,senate,31,mail,15,1
 LUBBOCK,congress,19,inperson,4,8613
-LUBBOCK,congress,19,inperson,5,6703
-LUBBOCK,congress,19,inperson,6,6810
+LUBBOCK,congress,19,inperson,5,6702
+LUBBOCK,congress,19,inperson,6,6809
 LUBBOCK,congress,19,inperson,7,6251
 LUBBOCK,congress,19,inperson,8,5590
 LUBBOCK,congress,19,inperson,9,2619
@@ -13509,6 +13542,7 @@ LUBBOCK,congress,19,inperson,12,7279
 LUBBOCK,congress,19,inperson,13,7893
 LUBBOCK,congress,19,inperson,14,8627
 LUBBOCK,congress,19,inperson,15,8830
+LUBBOCK,congress,19,mail,4,50
 LUBBOCK,congress,19,mail,5,146
 LUBBOCK,congress,19,mail,6,1
 LUBBOCK,congress,19,mail,7,77
@@ -13521,9 +13555,9 @@ LUBBOCK,congress,19,mail,15,159
 LUBBOCK,congress,19,mail,18,53
 LUBBOCK,congress,19,mail,19,43
 LUBBOCK,congress,19,mail,20,90
-LUBBOCK,house,83,inperson,4,4340
+LUBBOCK,house,83,inperson,4,4339
 LUBBOCK,house,83,inperson,5,3507
-LUBBOCK,house,83,inperson,6,3585
+LUBBOCK,house,83,inperson,6,3584
 LUBBOCK,house,83,inperson,7,3192
 LUBBOCK,house,83,inperson,8,3103
 LUBBOCK,house,83,inperson,9,1462
@@ -13533,6 +13567,7 @@ LUBBOCK,house,83,inperson,12,3924
 LUBBOCK,house,83,inperson,13,4264
 LUBBOCK,house,83,inperson,14,4540
 LUBBOCK,house,83,inperson,15,4527
+LUBBOCK,house,83,mail,4,21
 LUBBOCK,house,83,mail,5,77
 LUBBOCK,house,83,mail,7,31
 LUBBOCK,house,83,mail,8,110
@@ -13544,8 +13579,8 @@ LUBBOCK,house,83,mail,15,83
 LUBBOCK,house,83,mail,18,27
 LUBBOCK,house,83,mail,19,21
 LUBBOCK,house,83,mail,20,50
-LUBBOCK,house,84,inperson,4,4273
-LUBBOCK,house,84,inperson,5,3196
+LUBBOCK,house,84,inperson,4,4274
+LUBBOCK,house,84,inperson,5,3195
 LUBBOCK,house,84,inperson,6,3225
 LUBBOCK,house,84,inperson,7,3059
 LUBBOCK,house,84,inperson,8,2487
@@ -13556,6 +13591,7 @@ LUBBOCK,house,84,inperson,12,3355
 LUBBOCK,house,84,inperson,13,3629
 LUBBOCK,house,84,inperson,14,4087
 LUBBOCK,house,84,inperson,15,4303
+LUBBOCK,house,84,mail,4,29
 LUBBOCK,house,84,mail,5,69
 LUBBOCK,house,84,mail,6,1
 LUBBOCK,house,84,mail,7,46
@@ -13569,8 +13605,8 @@ LUBBOCK,house,84,mail,18,26
 LUBBOCK,house,84,mail,19,22
 LUBBOCK,house,84,mail,20,40
 LUBBOCK,senate,28,inperson,4,8613
-LUBBOCK,senate,28,inperson,5,6703
-LUBBOCK,senate,28,inperson,6,6810
+LUBBOCK,senate,28,inperson,5,6702
+LUBBOCK,senate,28,inperson,6,6809
 LUBBOCK,senate,28,inperson,7,6251
 LUBBOCK,senate,28,inperson,8,5590
 LUBBOCK,senate,28,inperson,9,2619
@@ -13580,6 +13616,7 @@ LUBBOCK,senate,28,inperson,12,7279
 LUBBOCK,senate,28,inperson,13,7893
 LUBBOCK,senate,28,inperson,14,8627
 LUBBOCK,senate,28,inperson,15,8830
+LUBBOCK,senate,28,mail,4,50
 LUBBOCK,senate,28,mail,5,146
 LUBBOCK,senate,28,mail,6,1
 LUBBOCK,senate,28,mail,7,77
@@ -13838,7 +13875,7 @@ MARTIN,senate,31,inperson,13,84
 MARTIN,senate,31,inperson,14,95
 MARTIN,senate,31,inperson,15,71
 MARTIN,senate,31,mail,8,13
-MASON,congress,11,inperson,4,148
+MASON,congress,11,inperson,4,151
 MASON,congress,11,inperson,5,102
 MASON,congress,11,inperson,6,93
 MASON,congress,11,inperson,7,114
@@ -13862,7 +13899,7 @@ MASON,congress,11,mail,14,5
 MASON,congress,11,mail,15,1
 MASON,congress,11,mail,19,8
 MASON,congress,11,mail,20,6
-MASON,house,53,inperson,4,148
+MASON,house,53,inperson,4,151
 MASON,house,53,inperson,5,102
 MASON,house,53,inperson,6,93
 MASON,house,53,inperson,7,114
@@ -13886,7 +13923,7 @@ MASON,house,53,mail,14,5
 MASON,house,53,mail,15,1
 MASON,house,53,mail,19,8
 MASON,house,53,mail,20,6
-MASON,senate,28,inperson,4,148
+MASON,senate,28,inperson,4,151
 MASON,senate,28,inperson,5,102
 MASON,senate,28,inperson,6,93
 MASON,senate,28,inperson,7,114
@@ -14156,7 +14193,7 @@ MCCULLOCH,senate,28,mail,15,10
 MCCULLOCH,senate,28,mail,18,2
 MCCULLOCH,senate,28,mail,19,7
 MCCULLOCH,senate,28,mail,20,4
-MCLENNAN,congress,17,inperson,4,6408
+MCLENNAN,congress,17,inperson,4,6407
 MCLENNAN,congress,17,inperson,5,4556
 MCLENNAN,congress,17,inperson,6,4428
 MCLENNAN,congress,17,inperson,7,4636
@@ -14206,7 +14243,7 @@ MCLENNAN,house,13,mail,15,33
 MCLENNAN,house,13,mail,18,33
 MCLENNAN,house,13,mail,19,8
 MCLENNAN,house,13,mail,20,31
-MCLENNAN,house,56,inperson,4,5312
+MCLENNAN,house,56,inperson,4,5311
 MCLENNAN,house,56,inperson,5,3870
 MCLENNAN,house,56,inperson,6,3814
 MCLENNAN,house,56,inperson,7,3961
@@ -14230,7 +14267,7 @@ MCLENNAN,house,56,mail,15,171
 MCLENNAN,house,56,mail,18,230
 MCLENNAN,house,56,mail,19,105
 MCLENNAN,house,56,mail,20,134
-MCLENNAN,senate,22,inperson,4,6408
+MCLENNAN,senate,22,inperson,4,6407
 MCLENNAN,senate,22,inperson,5,4556
 MCLENNAN,senate,22,inperson,6,4428
 MCLENNAN,senate,22,inperson,7,4636
@@ -14300,7 +14337,7 @@ MCMULLEN,senate,21,mail,5,1
 MCMULLEN,senate,21,mail,6,1
 MCMULLEN,senate,21,mail,8,1
 MCMULLEN,senate,21,mail,13,1
-MEDINA,congress,23,inperson,4,3
+MEDINA,congress,23,inperson,4,1356
 MEDINA,congress,23,inperson,5,1097
 MEDINA,congress,23,inperson,6,1133
 MEDINA,congress,23,inperson,7,1120
@@ -14326,7 +14363,7 @@ MEDINA,congress,23,mail,15,41
 MEDINA,congress,23,mail,18,20
 MEDINA,congress,23,mail,19,33
 MEDINA,congress,23,mail,20,7
-MEDINA,house,53,inperson,4,3
+MEDINA,house,53,inperson,4,1356
 MEDINA,house,53,inperson,5,1097
 MEDINA,house,53,inperson,6,1133
 MEDINA,house,53,inperson,7,1120
@@ -14352,7 +14389,7 @@ MEDINA,house,53,mail,15,41
 MEDINA,house,53,mail,18,20
 MEDINA,house,53,mail,19,33
 MEDINA,house,53,mail,20,7
-MEDINA,senate,24,inperson,4,3
+MEDINA,senate,24,inperson,4,1356
 MEDINA,senate,24,inperson,5,1097
 MEDINA,senate,24,inperson,6,1133
 MEDINA,senate,24,inperson,7,1120
@@ -14774,7 +14811,7 @@ MONTAGUE,senate,30,mail,14,6
 MONTAGUE,senate,30,mail,15,27
 MONTAGUE,senate,30,mail,18,9
 MONTAGUE,senate,30,mail,20,1
-MONTGOMERY,congress,2,inperson,4,10987
+MONTGOMERY,congress,2,inperson,4,11023
 MONTGOMERY,congress,2,inperson,5,8691
 MONTGOMERY,congress,2,inperson,6,8419
 MONTGOMERY,congress,2,inperson,7,8317
@@ -14786,7 +14823,7 @@ MONTGOMERY,congress,2,inperson,12,6867
 MONTGOMERY,congress,2,inperson,13,6918
 MONTGOMERY,congress,2,inperson,14,6713
 MONTGOMERY,congress,2,inperson,15,6518
-MONTGOMERY,congress,2,mail,4,129
+MONTGOMERY,congress,2,mail,4,130
 MONTGOMERY,congress,2,mail,5,146
 MONTGOMERY,congress,2,mail,6,176
 MONTGOMERY,congress,2,mail,7,156
@@ -14800,7 +14837,7 @@ MONTGOMERY,congress,2,mail,15,484
 MONTGOMERY,congress,2,mail,18,223
 MONTGOMERY,congress,2,mail,19,150
 MONTGOMERY,congress,2,mail,20,15
-MONTGOMERY,congress,8,inperson,4,10698
+MONTGOMERY,congress,8,inperson,4,10745
 MONTGOMERY,congress,8,inperson,5,8110
 MONTGOMERY,congress,8,inperson,6,7420
 MONTGOMERY,congress,8,inperson,7,7459
@@ -14812,7 +14849,7 @@ MONTGOMERY,congress,8,inperson,12,7116
 MONTGOMERY,congress,8,inperson,13,7487
 MONTGOMERY,congress,8,inperson,14,7454
 MONTGOMERY,congress,8,inperson,15,7036
-MONTGOMERY,congress,8,mail,4,143
+MONTGOMERY,congress,8,mail,4,145
 MONTGOMERY,congress,8,mail,5,138
 MONTGOMERY,congress,8,mail,6,160
 MONTGOMERY,congress,8,mail,7,106
@@ -14826,7 +14863,7 @@ MONTGOMERY,congress,8,mail,15,390
 MONTGOMERY,congress,8,mail,18,169
 MONTGOMERY,congress,8,mail,19,154
 MONTGOMERY,congress,8,mail,20,33
-MONTGOMERY,house,15,inperson,4,6648
+MONTGOMERY,house,15,inperson,4,6669
 MONTGOMERY,house,15,inperson,5,5455
 MONTGOMERY,house,15,inperson,6,5315
 MONTGOMERY,house,15,inperson,7,5390
@@ -14838,7 +14875,7 @@ MONTGOMERY,house,15,inperson,12,4310
 MONTGOMERY,house,15,inperson,13,4203
 MONTGOMERY,house,15,inperson,14,4078
 MONTGOMERY,house,15,inperson,15,3836
-MONTGOMERY,house,15,mail,4,79
+MONTGOMERY,house,15,mail,4,80
 MONTGOMERY,house,15,mail,5,102
 MONTGOMERY,house,15,mail,6,121
 MONTGOMERY,house,15,mail,7,112
@@ -14852,7 +14889,7 @@ MONTGOMERY,house,15,mail,15,324
 MONTGOMERY,house,15,mail,18,177
 MONTGOMERY,house,15,mail,19,91
 MONTGOMERY,house,15,mail,20,8
-MONTGOMERY,house,16,inperson,4,6525
+MONTGOMERY,house,16,inperson,4,6546
 MONTGOMERY,house,16,inperson,5,5030
 MONTGOMERY,house,16,inperson,6,4600
 MONTGOMERY,house,16,inperson,7,4649
@@ -14864,7 +14901,7 @@ MONTGOMERY,house,16,inperson,12,4606
 MONTGOMERY,house,16,inperson,13,4817
 MONTGOMERY,house,16,inperson,14,4852
 MONTGOMERY,house,16,inperson,15,4527
-MONTGOMERY,house,16,mail,4,88
+MONTGOMERY,house,16,mail,4,89
 MONTGOMERY,house,16,mail,5,94
 MONTGOMERY,house,16,mail,6,106
 MONTGOMERY,house,16,mail,7,68
@@ -14878,7 +14915,7 @@ MONTGOMERY,house,16,mail,15,292
 MONTGOMERY,house,16,mail,18,101
 MONTGOMERY,house,16,mail,19,114
 MONTGOMERY,house,16,mail,20,20
-MONTGOMERY,house,18,inperson,4,1026
+MONTGOMERY,house,18,inperson,4,1030
 MONTGOMERY,house,18,inperson,5,645
 MONTGOMERY,house,18,inperson,6,640
 MONTGOMERY,house,18,inperson,7,606
@@ -14902,7 +14939,7 @@ MONTGOMERY,house,18,mail,15,39
 MONTGOMERY,house,18,mail,18,8
 MONTGOMERY,house,18,mail,19,3
 MONTGOMERY,house,18,mail,20,1
-MONTGOMERY,house,3,inperson,4,7486
+MONTGOMERY,house,3,inperson,4,7523
 MONTGOMERY,house,3,inperson,5,5671
 MONTGOMERY,house,3,inperson,6,5283
 MONTGOMERY,house,3,inperson,7,5132
@@ -14914,7 +14951,7 @@ MONTGOMERY,house,3,inperson,12,4462
 MONTGOMERY,house,3,inperson,13,4688
 MONTGOMERY,house,3,inperson,14,4569
 MONTGOMERY,house,3,inperson,15,4481
-MONTGOMERY,house,3,mail,4,97
+MONTGOMERY,house,3,mail,4,98
 MONTGOMERY,house,3,mail,5,84
 MONTGOMERY,house,3,mail,6,101
 MONTGOMERY,house,3,mail,7,72
@@ -14928,7 +14965,7 @@ MONTGOMERY,house,3,mail,15,219
 MONTGOMERY,house,3,mail,18,106
 MONTGOMERY,house,3,mail,19,96
 MONTGOMERY,house,3,mail,20,19
-MONTGOMERY,senate,18,inperson,4,2125
+MONTGOMERY,senate,18,inperson,4,2137
 MONTGOMERY,senate,18,inperson,5,1464
 MONTGOMERY,senate,18,inperson,6,1408
 MONTGOMERY,senate,18,inperson,7,1338
@@ -14954,7 +14991,7 @@ MONTGOMERY,senate,18,mail,15,42
 MONTGOMERY,senate,18,mail,18,38
 MONTGOMERY,senate,18,mail,19,13
 MONTGOMERY,senate,18,mail,20,1
-MONTGOMERY,senate,4,inperson,4,17084
+MONTGOMERY,senate,4,inperson,4,17139
 MONTGOMERY,senate,4,inperson,5,13353
 MONTGOMERY,senate,4,inperson,6,12676
 MONTGOMERY,senate,4,inperson,7,12620
@@ -14966,7 +15003,7 @@ MONTGOMERY,senate,4,inperson,12,11177
 MONTGOMERY,senate,4,inperson,13,11434
 MONTGOMERY,senate,4,inperson,14,11358
 MONTGOMERY,senate,4,inperson,15,10758
-MONTGOMERY,senate,4,mail,4,205
+MONTGOMERY,senate,4,mail,4,207
 MONTGOMERY,senate,4,mail,5,231
 MONTGOMERY,senate,4,mail,6,268
 MONTGOMERY,senate,4,mail,7,227
@@ -14980,7 +15017,7 @@ MONTGOMERY,senate,4,mail,15,760
 MONTGOMERY,senate,4,mail,18,318
 MONTGOMERY,senate,4,mail,19,275
 MONTGOMERY,senate,4,mail,20,42
-MONTGOMERY,senate,7,inperson,4,2475
+MONTGOMERY,senate,7,inperson,4,2491
 MONTGOMERY,senate,7,inperson,5,1983
 MONTGOMERY,senate,7,inperson,6,1755
 MONTGOMERY,senate,7,inperson,7,1818
@@ -14992,7 +15029,7 @@ MONTGOMERY,senate,7,inperson,12,1519
 MONTGOMERY,senate,7,inperson,13,1674
 MONTGOMERY,senate,7,inperson,14,1565
 MONTGOMERY,senate,7,inperson,15,1503
-MONTGOMERY,senate,7,mail,4,37
+MONTGOMERY,senate,7,mail,4,38
 MONTGOMERY,senate,7,mail,5,31
 MONTGOMERY,senate,7,mail,6,27
 MONTGOMERY,senate,7,mail,7,25
@@ -15006,7 +15043,7 @@ MONTGOMERY,senate,7,mail,15,72
 MONTGOMERY,senate,7,mail,18,36
 MONTGOMERY,senate,7,mail,19,16
 MONTGOMERY,senate,7,mail,20,5
-MOORE,congress,13,inperson,4,270
+MOORE,congress,13,inperson,4,273
 MOORE,congress,13,inperson,5,178
 MOORE,congress,13,inperson,6,184
 MOORE,congress,13,inperson,7,207
@@ -15030,7 +15067,7 @@ MOORE,congress,13,mail,15,10
 MOORE,congress,13,mail,18,10
 MOORE,congress,13,mail,19,6
 MOORE,congress,13,mail,20,2
-MOORE,house,87,inperson,4,270
+MOORE,house,87,inperson,4,273
 MOORE,house,87,inperson,5,178
 MOORE,house,87,inperson,6,184
 MOORE,house,87,inperson,7,207
@@ -15054,7 +15091,7 @@ MOORE,house,87,mail,15,10
 MOORE,house,87,mail,18,10
 MOORE,house,87,mail,19,6
 MOORE,house,87,mail,20,2
-MOORE,senate,31,inperson,4,270
+MOORE,senate,31,inperson,4,273
 MOORE,senate,31,inperson,5,178
 MOORE,senate,31,inperson,6,184
 MOORE,senate,31,inperson,7,207
@@ -15078,7 +15115,7 @@ MOORE,senate,31,mail,15,10
 MOORE,senate,31,mail,18,10
 MOORE,senate,31,mail,19,6
 MOORE,senate,31,mail,20,2
-MORRIS,congress,3,inperson,4,313
+MORRIS,congress,3,inperson,4,343
 MORRIS,congress,3,inperson,5,197
 MORRIS,congress,3,inperson,6,187
 MORRIS,congress,3,inperson,7,183
@@ -15090,7 +15127,7 @@ MORRIS,congress,3,inperson,12,266
 MORRIS,congress,3,inperson,13,248
 MORRIS,congress,3,inperson,14,294
 MORRIS,congress,3,inperson,15,368
-MORRIS,congress,3,mail,4,6
+MORRIS,congress,3,mail,4,7
 MORRIS,congress,3,mail,5,3
 MORRIS,congress,3,mail,6,9
 MORRIS,congress,3,mail,7,4
@@ -15103,7 +15140,7 @@ MORRIS,congress,3,mail,15,14
 MORRIS,congress,3,mail,18,5
 MORRIS,congress,3,mail,19,7
 MORRIS,congress,3,mail,20,4
-MORRIS,house,1,inperson,4,313
+MORRIS,house,1,inperson,4,343
 MORRIS,house,1,inperson,5,197
 MORRIS,house,1,inperson,6,187
 MORRIS,house,1,inperson,7,183
@@ -15115,7 +15152,7 @@ MORRIS,house,1,inperson,12,266
 MORRIS,house,1,inperson,13,248
 MORRIS,house,1,inperson,14,294
 MORRIS,house,1,inperson,15,368
-MORRIS,house,1,mail,4,6
+MORRIS,house,1,mail,4,7
 MORRIS,house,1,mail,5,3
 MORRIS,house,1,mail,6,9
 MORRIS,house,1,mail,7,4
@@ -15128,7 +15165,7 @@ MORRIS,house,1,mail,15,14
 MORRIS,house,1,mail,18,5
 MORRIS,house,1,mail,19,7
 MORRIS,house,1,mail,20,4
-MORRIS,senate,1,inperson,4,313
+MORRIS,senate,1,inperson,4,343
 MORRIS,senate,1,inperson,5,197
 MORRIS,senate,1,inperson,6,187
 MORRIS,senate,1,inperson,7,183
@@ -15140,7 +15177,7 @@ MORRIS,senate,1,inperson,12,266
 MORRIS,senate,1,inperson,13,248
 MORRIS,senate,1,inperson,14,294
 MORRIS,senate,1,inperson,15,368
-MORRIS,senate,1,mail,4,6
+MORRIS,senate,1,mail,4,7
 MORRIS,senate,1,mail,5,3
 MORRIS,senate,1,mail,6,9
 MORRIS,senate,1,mail,7,4
@@ -15153,7 +15190,7 @@ MORRIS,senate,1,mail,15,14
 MORRIS,senate,1,mail,18,5
 MORRIS,senate,1,mail,19,7
 MORRIS,senate,1,mail,20,4
-MOTLEY,congress,13,inperson,4,36
+MOTLEY,congress,13,inperson,4,51
 MOTLEY,congress,13,inperson,5,29
 MOTLEY,congress,13,inperson,6,19
 MOTLEY,congress,13,inperson,7,24
@@ -15175,7 +15212,7 @@ MOTLEY,congress,13,mail,14,1
 MOTLEY,congress,13,mail,18,2
 MOTLEY,congress,13,mail,19,2
 MOTLEY,congress,13,mail,20,3
-MOTLEY,house,69,inperson,4,36
+MOTLEY,house,69,inperson,4,51
 MOTLEY,house,69,inperson,5,29
 MOTLEY,house,69,inperson,6,19
 MOTLEY,house,69,inperson,7,24
@@ -15197,7 +15234,7 @@ MOTLEY,house,69,mail,14,1
 MOTLEY,house,69,mail,18,2
 MOTLEY,house,69,mail,19,2
 MOTLEY,house,69,mail,20,3
-MOTLEY,senate,28,inperson,4,36
+MOTLEY,senate,28,inperson,4,51
 MOTLEY,senate,28,inperson,5,29
 MOTLEY,senate,28,inperson,6,19
 MOTLEY,senate,28,inperson,7,24
@@ -15220,7 +15257,7 @@ MOTLEY,senate,28,mail,18,2
 MOTLEY,senate,28,mail,19,2
 MOTLEY,senate,28,mail,20,3
 NACOGDOCHES,congress,1,inperson,4,1621
-NACOGDOCHES,congress,1,inperson,5,1024
+NACOGDOCHES,congress,1,inperson,5,1025
 NACOGDOCHES,congress,1,inperson,6,968
 NACOGDOCHES,congress,1,inperson,7,1080
 NACOGDOCHES,congress,1,inperson,8,1092
@@ -15231,7 +15268,7 @@ NACOGDOCHES,congress,1,inperson,12,1293
 NACOGDOCHES,congress,1,inperson,13,1602
 NACOGDOCHES,congress,1,inperson,14,1804
 NACOGDOCHES,congress,1,inperson,15,1912
-NACOGDOCHES,congress,1,mail,4,21
+NACOGDOCHES,congress,1,mail,4,22
 NACOGDOCHES,congress,1,mail,5,16
 NACOGDOCHES,congress,1,mail,6,130
 NACOGDOCHES,congress,1,mail,7,1
@@ -15239,7 +15276,7 @@ NACOGDOCHES,congress,1,mail,10,137
 NACOGDOCHES,congress,1,mail,12,106
 NACOGDOCHES,congress,1,mail,20,1
 NACOGDOCHES,house,11,inperson,4,1621
-NACOGDOCHES,house,11,inperson,5,1024
+NACOGDOCHES,house,11,inperson,5,1025
 NACOGDOCHES,house,11,inperson,6,968
 NACOGDOCHES,house,11,inperson,7,1080
 NACOGDOCHES,house,11,inperson,8,1092
@@ -15250,7 +15287,7 @@ NACOGDOCHES,house,11,inperson,12,1293
 NACOGDOCHES,house,11,inperson,13,1602
 NACOGDOCHES,house,11,inperson,14,1804
 NACOGDOCHES,house,11,inperson,15,1912
-NACOGDOCHES,house,11,mail,4,21
+NACOGDOCHES,house,11,mail,4,22
 NACOGDOCHES,house,11,mail,5,16
 NACOGDOCHES,house,11,mail,6,130
 NACOGDOCHES,house,11,mail,7,1
@@ -15258,7 +15295,7 @@ NACOGDOCHES,house,11,mail,10,137
 NACOGDOCHES,house,11,mail,12,106
 NACOGDOCHES,house,11,mail,20,1
 NACOGDOCHES,senate,3,inperson,4,1621
-NACOGDOCHES,senate,3,inperson,5,1024
+NACOGDOCHES,senate,3,inperson,5,1025
 NACOGDOCHES,senate,3,inperson,6,968
 NACOGDOCHES,senate,3,inperson,7,1080
 NACOGDOCHES,senate,3,inperson,8,1092
@@ -15269,7 +15306,7 @@ NACOGDOCHES,senate,3,inperson,12,1293
 NACOGDOCHES,senate,3,inperson,13,1602
 NACOGDOCHES,senate,3,inperson,14,1804
 NACOGDOCHES,senate,3,inperson,15,1912
-NACOGDOCHES,senate,3,mail,4,21
+NACOGDOCHES,senate,3,mail,4,22
 NACOGDOCHES,senate,3,mail,5,16
 NACOGDOCHES,senate,3,mail,6,130
 NACOGDOCHES,senate,3,mail,7,1
@@ -15471,7 +15508,7 @@ NOLAN,senate,28,mail,15,4
 NOLAN,senate,28,mail,18,3
 NOLAN,senate,28,mail,19,5
 NOLAN,senate,28,mail,20,6
-NUECES,congress,27,inperson,4,885
+NUECES,congress,27,inperson,4,896
 NUECES,congress,27,inperson,5,640
 NUECES,congress,27,inperson,6,558
 NUECES,congress,27,inperson,7,169
@@ -15481,7 +15518,7 @@ NUECES,congress,27,inperson,10,510
 NUECES,congress,27,inperson,11,611
 NUECES,congress,27,inperson,12,581
 NUECES,congress,27,inperson,13,626
-NUECES,congress,27,inperson,14,700
+NUECES,congress,27,inperson,14,701
 NUECES,congress,27,inperson,15,854
 NUECES,congress,27,mail,4,21
 NUECES,congress,27,mail,5,30
@@ -15498,7 +15535,7 @@ NUECES,congress,27,mail,17,34
 NUECES,congress,27,mail,18,26
 NUECES,congress,27,mail,19,95
 NUECES,congress,27,mail,20,23
-NUECES,congress,34,inperson,4,8571
+NUECES,congress,34,inperson,4,8598
 NUECES,congress,34,inperson,5,5704
 NUECES,congress,34,inperson,6,5396
 NUECES,congress,34,inperson,7,1720
@@ -15508,7 +15545,7 @@ NUECES,congress,34,inperson,10,5059
 NUECES,congress,34,inperson,11,5861
 NUECES,congress,34,inperson,12,5032
 NUECES,congress,34,inperson,13,5817
-NUECES,congress,34,inperson,14,6229
+NUECES,congress,34,inperson,14,6228
 NUECES,congress,34,inperson,15,6762
 NUECES,congress,34,mail,4,122
 NUECES,congress,34,mail,5,130
@@ -15525,7 +15562,7 @@ NUECES,congress,34,mail,17,216
 NUECES,congress,34,mail,18,118
 NUECES,congress,34,mail,19,664
 NUECES,congress,34,mail,20,150
-NUECES,house,32,inperson,4,5496
+NUECES,house,32,inperson,4,5513
 NUECES,house,32,inperson,5,3687
 NUECES,house,32,inperson,6,3500
 NUECES,house,32,inperson,7,1085
@@ -15552,7 +15589,7 @@ NUECES,house,32,mail,17,129
 NUECES,house,32,mail,18,74
 NUECES,house,32,mail,19,456
 NUECES,house,32,mail,20,67
-NUECES,house,34,inperson,4,3960
+NUECES,house,34,inperson,4,3981
 NUECES,house,34,inperson,5,2657
 NUECES,house,34,inperson,6,2454
 NUECES,house,34,inperson,7,804
@@ -15579,7 +15616,7 @@ NUECES,house,34,mail,17,121
 NUECES,house,34,mail,18,70
 NUECES,house,34,mail,19,303
 NUECES,house,34,mail,20,106
-NUECES,senate,20,inperson,4,6734
+NUECES,senate,20,inperson,4,6764
 NUECES,senate,20,inperson,5,4680
 NUECES,senate,20,inperson,6,4354
 NUECES,senate,20,inperson,7,1363
@@ -15606,7 +15643,7 @@ NUECES,senate,20,mail,17,219
 NUECES,senate,20,mail,18,123
 NUECES,senate,20,mail,19,613
 NUECES,senate,20,mail,20,152
-NUECES,senate,27,inperson,4,2722
+NUECES,senate,27,inperson,4,2730
 NUECES,senate,27,inperson,5,1664
 NUECES,senate,27,inperson,6,1600
 NUECES,senate,27,inperson,7,526
@@ -15984,7 +16021,7 @@ PANOLA,senate,1,mail,15,16
 PANOLA,senate,1,mail,18,18
 PANOLA,senate,1,mail,19,17
 PANOLA,senate,1,mail,20,17
-PARKER,congress,12,inperson,4,5137
+PARKER,congress,12,inperson,4,5163
 PARKER,congress,12,inperson,5,3109
 PARKER,congress,12,inperson,6,2863
 PARKER,congress,12,inperson,7,3001
@@ -16010,7 +16047,7 @@ PARKER,congress,12,mail,15,166
 PARKER,congress,12,mail,18,126
 PARKER,congress,12,mail,19,27
 PARKER,congress,12,mail,20,39
-PARKER,congress,25,inperson,4,1953
+PARKER,congress,25,inperson,4,1972
 PARKER,congress,25,inperson,5,1110
 PARKER,congress,25,inperson,6,1051
 PARKER,congress,25,inperson,7,1010
@@ -16036,7 +16073,7 @@ PARKER,congress,25,mail,15,38
 PARKER,congress,25,mail,18,51
 PARKER,congress,25,mail,19,13
 PARKER,congress,25,mail,20,22
-PARKER,house,60,inperson,4,7090
+PARKER,house,60,inperson,4,7135
 PARKER,house,60,inperson,5,4219
 PARKER,house,60,inperson,6,3914
 PARKER,house,60,inperson,7,4011
@@ -16062,7 +16099,7 @@ PARKER,house,60,mail,15,204
 PARKER,house,60,mail,18,177
 PARKER,house,60,mail,19,40
 PARKER,house,60,mail,20,61
-PARKER,senate,10,inperson,4,2996
+PARKER,senate,10,inperson,4,3018
 PARKER,senate,10,inperson,5,1696
 PARKER,senate,10,inperson,6,1632
 PARKER,senate,10,inperson,7,1701
@@ -16088,7 +16125,7 @@ PARKER,senate,10,mail,15,67
 PARKER,senate,10,mail,18,75
 PARKER,senate,10,mail,19,18
 PARKER,senate,10,mail,20,30
-PARKER,senate,30,inperson,4,4094
+PARKER,senate,30,inperson,4,4117
 PARKER,senate,30,inperson,5,2523
 PARKER,senate,30,inperson,6,2282
 PARKER,senate,30,inperson,7,2310
@@ -16249,8 +16286,8 @@ POLK,congress,10,inperson,12,1063
 POLK,congress,10,inperson,13,1271
 POLK,congress,10,inperson,14,1336
 POLK,congress,10,inperson,15,1534
-POLK,congress,10,mail,4,150
-POLK,congress,10,mail,5,87
+POLK,congress,10,mail,4,154
+POLK,congress,10,mail,5,88
 POLK,congress,10,mail,6,160
 POLK,congress,10,mail,7,76
 POLK,congress,10,mail,8,124
@@ -16276,8 +16313,8 @@ POLK,house,9,inperson,12,1063
 POLK,house,9,inperson,13,1271
 POLK,house,9,inperson,14,1336
 POLK,house,9,inperson,15,1534
-POLK,house,9,mail,4,150
-POLK,house,9,mail,5,87
+POLK,house,9,mail,4,154
+POLK,house,9,mail,5,88
 POLK,house,9,mail,6,160
 POLK,house,9,mail,7,76
 POLK,house,9,mail,8,124
@@ -16303,8 +16340,8 @@ POLK,senate,3,inperson,12,1063
 POLK,senate,3,inperson,13,1271
 POLK,senate,3,inperson,14,1336
 POLK,senate,3,inperson,15,1534
-POLK,senate,3,mail,4,150
-POLK,senate,3,mail,5,87
+POLK,senate,3,mail,4,154
+POLK,senate,3,mail,5,88
 POLK,senate,3,mail,6,160
 POLK,senate,3,mail,7,76
 POLK,senate,3,mail,8,124
@@ -16318,7 +16355,7 @@ POLK,senate,3,mail,16,7
 POLK,senate,3,mail,18,18
 POLK,senate,3,mail,19,86
 POLK,senate,3,mail,20,27
-POTTER,congress,13,inperson,4,2314
+POTTER,congress,13,inperson,4,2315
 POTTER,congress,13,inperson,5,1560
 POTTER,congress,13,inperson,6,1283
 POTTER,congress,13,inperson,7,1235
@@ -16342,7 +16379,7 @@ POTTER,congress,13,mail,14,63
 POTTER,congress,13,mail,15,44
 POTTER,congress,13,mail,18,129
 POTTER,congress,13,mail,20,20
-POTTER,house,87,inperson,4,2314
+POTTER,house,87,inperson,4,2315
 POTTER,house,87,inperson,5,1560
 POTTER,house,87,inperson,6,1283
 POTTER,house,87,inperson,7,1235
@@ -16366,7 +16403,7 @@ POTTER,house,87,mail,14,63
 POTTER,house,87,mail,15,44
 POTTER,house,87,mail,18,129
 POTTER,house,87,mail,20,20
-POTTER,senate,31,inperson,4,2314
+POTTER,senate,31,inperson,4,2315
 POTTER,senate,31,inperson,5,1560
 POTTER,senate,31,inperson,6,1283
 POTTER,senate,31,inperson,7,1235
@@ -16498,7 +16535,7 @@ RAINS,senate,8,inperson,15,476
 RAINS,senate,8,mail,4,7
 RAINS,senate,8,mail,5,10
 RAINS,senate,8,mail,6,9
-RANDALL,congress,13,inperson,4,4904
+RANDALL,congress,13,inperson,4,4948
 RANDALL,congress,13,inperson,5,3261
 RANDALL,congress,13,inperson,6,2712
 RANDALL,congress,13,inperson,7,2798
@@ -16510,7 +16547,7 @@ RANDALL,congress,13,inperson,12,3375
 RANDALL,congress,13,inperson,13,3747
 RANDALL,congress,13,inperson,14,4130
 RANDALL,congress,13,inperson,15,4399
-RANDALL,congress,13,mail,4,31
+RANDALL,congress,13,mail,4,32
 RANDALL,congress,13,mail,5,41
 RANDALL,congress,13,mail,6,41
 RANDALL,congress,13,mail,7,55
@@ -16522,7 +16559,7 @@ RANDALL,congress,13,mail,13,2
 RANDALL,congress,13,mail,14,2
 RANDALL,congress,13,mail,19,1
 RANDALL,congress,13,mail,20,993
-RANDALL,house,86,inperson,4,4904
+RANDALL,house,86,inperson,4,4948
 RANDALL,house,86,inperson,5,3261
 RANDALL,house,86,inperson,6,2712
 RANDALL,house,86,inperson,7,2798
@@ -16534,7 +16571,7 @@ RANDALL,house,86,inperson,12,3375
 RANDALL,house,86,inperson,13,3747
 RANDALL,house,86,inperson,14,4130
 RANDALL,house,86,inperson,15,4399
-RANDALL,house,86,mail,4,31
+RANDALL,house,86,mail,4,32
 RANDALL,house,86,mail,5,41
 RANDALL,house,86,mail,6,41
 RANDALL,house,86,mail,7,55
@@ -16546,7 +16583,7 @@ RANDALL,house,86,mail,13,2
 RANDALL,house,86,mail,14,2
 RANDALL,house,86,mail,19,1
 RANDALL,house,86,mail,20,993
-RANDALL,senate,31,inperson,4,4904
+RANDALL,senate,31,inperson,4,4948
 RANDALL,senate,31,inperson,5,3261
 RANDALL,senate,31,inperson,6,2712
 RANDALL,senate,31,inperson,7,2798
@@ -16558,7 +16595,7 @@ RANDALL,senate,31,inperson,12,3375
 RANDALL,senate,31,inperson,13,3747
 RANDALL,senate,31,inperson,14,4130
 RANDALL,senate,31,inperson,15,4399
-RANDALL,senate,31,mail,4,31
+RANDALL,senate,31,mail,4,32
 RANDALL,senate,31,mail,5,41
 RANDALL,senate,31,mail,6,41
 RANDALL,senate,31,mail,7,55
@@ -16618,7 +16655,7 @@ REAGAN,senate,31,mail,4,1
 REAGAN,senate,31,mail,7,2
 REAGAN,senate,31,mail,15,2
 REAGAN,senate,31,mail,20,2
-REAL,congress,21,inperson,4,189
+REAL,congress,21,inperson,4,199
 REAL,congress,21,inperson,6,94
 REAL,congress,21,inperson,7,93
 REAL,congress,21,inperson,8,49
@@ -16629,6 +16666,9 @@ REAL,congress,21,inperson,12,91
 REAL,congress,21,inperson,13,143
 REAL,congress,21,inperson,14,143
 REAL,congress,21,inperson,15,163
+REAL,congress,21,mail,4,3
+REAL,congress,21,mail,5,1
+REAL,congress,21,mail,6,1
 REAL,congress,21,mail,7,2
 REAL,congress,21,mail,8,12
 REAL,congress,21,mail,12,2
@@ -16637,7 +16677,7 @@ REAL,congress,21,mail,14,1
 REAL,congress,21,mail,15,9
 REAL,congress,21,mail,19,1
 REAL,congress,21,mail,20,2
-REAL,house,53,inperson,4,189
+REAL,house,53,inperson,4,199
 REAL,house,53,inperson,6,94
 REAL,house,53,inperson,7,93
 REAL,house,53,inperson,8,49
@@ -16648,6 +16688,9 @@ REAL,house,53,inperson,12,91
 REAL,house,53,inperson,13,143
 REAL,house,53,inperson,14,143
 REAL,house,53,inperson,15,163
+REAL,house,53,mail,4,3
+REAL,house,53,mail,5,1
+REAL,house,53,mail,6,1
 REAL,house,53,mail,7,2
 REAL,house,53,mail,8,12
 REAL,house,53,mail,12,2
@@ -16656,7 +16699,7 @@ REAL,house,53,mail,14,1
 REAL,house,53,mail,15,9
 REAL,house,53,mail,19,1
 REAL,house,53,mail,20,2
-REAL,senate,19,inperson,4,189
+REAL,senate,19,inperson,4,199
 REAL,senate,19,inperson,6,94
 REAL,senate,19,inperson,7,93
 REAL,senate,19,inperson,8,49
@@ -16667,6 +16710,9 @@ REAL,senate,19,inperson,12,91
 REAL,senate,19,inperson,13,143
 REAL,senate,19,inperson,14,143
 REAL,senate,19,inperson,15,163
+REAL,senate,19,mail,4,3
+REAL,senate,19,mail,5,1
+REAL,senate,19,mail,6,1
 REAL,senate,19,mail,7,2
 REAL,senate,19,mail,8,12
 REAL,senate,19,mail,12,2
@@ -16795,7 +16841,7 @@ REEVES,senate,29,mail,15,16
 REEVES,senate,29,mail,18,3
 REEVES,senate,29,mail,19,6
 REEVES,senate,29,mail,20,6
-REFUGIO,congress,15,inperson,4,167
+REFUGIO,congress,15,inperson,4,168
 REFUGIO,congress,15,inperson,5,93
 REFUGIO,congress,15,inperson,6,102
 REFUGIO,congress,15,inperson,7,90
@@ -16836,7 +16882,7 @@ REFUGIO,congress,27,mail,10,2
 REFUGIO,congress,27,mail,12,1
 REFUGIO,congress,27,mail,15,2
 REFUGIO,congress,27,mail,19,1
-REFUGIO,house,43,inperson,4,176
+REFUGIO,house,43,inperson,4,177
 REFUGIO,house,43,inperson,5,106
 REFUGIO,house,43,inperson,6,108
 REFUGIO,house,43,inperson,7,96
@@ -16861,7 +16907,7 @@ REFUGIO,house,43,mail,14,4
 REFUGIO,house,43,mail,15,4
 REFUGIO,house,43,mail,19,4
 REFUGIO,house,43,mail,20,3
-REFUGIO,senate,18,inperson,4,176
+REFUGIO,senate,18,inperson,4,177
 REFUGIO,senate,18,inperson,5,106
 REFUGIO,senate,18,inperson,6,108
 REFUGIO,senate,18,inperson,7,96
@@ -16931,7 +16977,7 @@ ROBERTS,senate,31,inperson,15,28
 ROBERTS,senate,31,mail,7,1
 ROBERTS,senate,31,mail,14,1
 ROBERTS,senate,31,mail,18,2
-ROBERTSON,congress,17,inperson,4,623
+ROBERTSON,congress,17,inperson,4,622
 ROBERTSON,congress,17,inperson,5,351
 ROBERTSON,congress,17,inperson,6,360
 ROBERTSON,congress,17,inperson,7,332
@@ -16958,7 +17004,7 @@ ROBERTSON,congress,17,mail,15,55
 ROBERTSON,congress,17,mail,18,2
 ROBERTSON,congress,17,mail,19,5
 ROBERTSON,congress,17,mail,20,8
-ROBERTSON,house,12,inperson,4,623
+ROBERTSON,house,12,inperson,4,622
 ROBERTSON,house,12,inperson,5,351
 ROBERTSON,house,12,inperson,6,360
 ROBERTSON,house,12,inperson,7,332
@@ -16985,7 +17031,7 @@ ROBERTSON,house,12,mail,15,55
 ROBERTSON,house,12,mail,18,2
 ROBERTSON,house,12,mail,19,5
 ROBERTSON,house,12,mail,20,8
-ROBERTSON,senate,5,inperson,4,623
+ROBERTSON,senate,5,inperson,4,622
 ROBERTSON,senate,5,inperson,5,351
 ROBERTSON,senate,5,inperson,6,360
 ROBERTSON,senate,5,inperson,7,332
@@ -17012,7 +17058,7 @@ ROBERTSON,senate,5,mail,15,55
 ROBERTSON,senate,5,mail,18,2
 ROBERTSON,senate,5,mail,19,5
 ROBERTSON,senate,5,mail,20,8
-ROCKWALL,congress,32,inperson,4,5198
+ROCKWALL,congress,32,inperson,4,5235
 ROCKWALL,congress,32,inperson,5,3076
 ROCKWALL,congress,32,inperson,6,2953
 ROCKWALL,congress,32,inperson,7,3240
@@ -17024,7 +17070,7 @@ ROCKWALL,congress,32,inperson,12,3305
 ROCKWALL,congress,32,inperson,13,3864
 ROCKWALL,congress,32,inperson,14,4336
 ROCKWALL,congress,32,inperson,15,4968
-ROCKWALL,congress,32,mail,4,41
+ROCKWALL,congress,32,mail,4,42
 ROCKWALL,congress,32,mail,5,49
 ROCKWALL,congress,32,mail,6,62
 ROCKWALL,congress,32,mail,7,43
@@ -17037,7 +17083,7 @@ ROCKWALL,congress,32,mail,14,141
 ROCKWALL,congress,32,mail,18,82
 ROCKWALL,congress,32,mail,19,99
 ROCKWALL,congress,32,mail,20,77
-ROCKWALL,house,33,inperson,4,5198
+ROCKWALL,house,33,inperson,4,5235
 ROCKWALL,house,33,inperson,5,3076
 ROCKWALL,house,33,inperson,6,2953
 ROCKWALL,house,33,inperson,7,3240
@@ -17049,7 +17095,7 @@ ROCKWALL,house,33,inperson,12,3305
 ROCKWALL,house,33,inperson,13,3864
 ROCKWALL,house,33,inperson,14,4336
 ROCKWALL,house,33,inperson,15,4968
-ROCKWALL,house,33,mail,4,41
+ROCKWALL,house,33,mail,4,42
 ROCKWALL,house,33,mail,5,49
 ROCKWALL,house,33,mail,6,62
 ROCKWALL,house,33,mail,7,43
@@ -17062,7 +17108,7 @@ ROCKWALL,house,33,mail,14,141
 ROCKWALL,house,33,mail,18,82
 ROCKWALL,house,33,mail,19,99
 ROCKWALL,house,33,mail,20,77
-ROCKWALL,senate,2,inperson,4,5198
+ROCKWALL,senate,2,inperson,4,5235
 ROCKWALL,senate,2,inperson,5,3076
 ROCKWALL,senate,2,inperson,6,2953
 ROCKWALL,senate,2,inperson,7,3240
@@ -17074,7 +17120,7 @@ ROCKWALL,senate,2,inperson,12,3305
 ROCKWALL,senate,2,inperson,13,3864
 ROCKWALL,senate,2,inperson,14,4336
 ROCKWALL,senate,2,inperson,15,4968
-ROCKWALL,senate,2,mail,4,41
+ROCKWALL,senate,2,mail,4,42
 ROCKWALL,senate,2,mail,5,49
 ROCKWALL,senate,2,mail,6,62
 ROCKWALL,senate,2,mail,7,43
@@ -17087,7 +17133,7 @@ ROCKWALL,senate,2,mail,14,141
 ROCKWALL,senate,2,mail,18,82
 ROCKWALL,senate,2,mail,19,99
 ROCKWALL,senate,2,mail,20,77
-RUNNELS,congress,11,inperson,4,194
+RUNNELS,congress,11,inperson,4,213
 RUNNELS,congress,11,inperson,5,117
 RUNNELS,congress,11,inperson,6,155
 RUNNELS,congress,11,inperson,7,141
@@ -17109,7 +17155,7 @@ RUNNELS,congress,11,mail,11,2
 RUNNELS,congress,11,mail,12,1
 RUNNELS,congress,11,mail,15,1
 RUNNELS,congress,11,mail,19,1
-RUNNELS,house,72,inperson,4,194
+RUNNELS,house,72,inperson,4,213
 RUNNELS,house,72,inperson,5,117
 RUNNELS,house,72,inperson,6,155
 RUNNELS,house,72,inperson,7,141
@@ -17131,7 +17177,7 @@ RUNNELS,house,72,mail,11,2
 RUNNELS,house,72,mail,12,1
 RUNNELS,house,72,mail,15,1
 RUNNELS,house,72,mail,19,1
-RUNNELS,senate,28,inperson,4,194
+RUNNELS,senate,28,inperson,4,213
 RUNNELS,senate,28,inperson,5,117
 RUNNELS,senate,28,inperson,6,155
 RUNNELS,senate,28,inperson,7,141
@@ -17297,7 +17343,7 @@ SABINE,senate,3,mail,14,4
 SABINE,senate,3,mail,18,5
 SABINE,senate,3,mail,19,8
 SABINE,senate,3,mail,20,10
-SAN AUGUSTINE,congress,1,inperson,4,1
+SAN AUGUSTINE,congress,1,inperson,4,214
 SAN AUGUSTINE,congress,1,inperson,5,154
 SAN AUGUSTINE,congress,1,inperson,6,136
 SAN AUGUSTINE,congress,1,inperson,7,147
@@ -17318,7 +17364,7 @@ SAN AUGUSTINE,congress,1,mail,12,5
 SAN AUGUSTINE,congress,1,mail,14,1
 SAN AUGUSTINE,congress,1,mail,15,14
 SAN AUGUSTINE,congress,1,mail,20,6
-SAN AUGUSTINE,house,9,inperson,4,1
+SAN AUGUSTINE,house,9,inperson,4,214
 SAN AUGUSTINE,house,9,inperson,5,154
 SAN AUGUSTINE,house,9,inperson,6,136
 SAN AUGUSTINE,house,9,inperson,7,147
@@ -17339,7 +17385,7 @@ SAN AUGUSTINE,house,9,mail,12,5
 SAN AUGUSTINE,house,9,mail,14,1
 SAN AUGUSTINE,house,9,mail,15,14
 SAN AUGUSTINE,house,9,mail,20,6
-SAN AUGUSTINE,senate,3,inperson,4,1
+SAN AUGUSTINE,senate,3,inperson,4,214
 SAN AUGUSTINE,senate,3,inperson,5,154
 SAN AUGUSTINE,senate,3,inperson,6,136
 SAN AUGUSTINE,senate,3,inperson,7,147
@@ -17459,6 +17505,7 @@ SAN PATRICIO,congress,27,inperson,12,477
 SAN PATRICIO,congress,27,inperson,13,547
 SAN PATRICIO,congress,27,inperson,14,673
 SAN PATRICIO,congress,27,inperson,15,742
+SAN PATRICIO,congress,27,mail,4,1
 SAN PATRICIO,congress,27,mail,5,3
 SAN PATRICIO,congress,27,mail,6,2
 SAN PATRICIO,congress,27,mail,7,17
@@ -17480,6 +17527,7 @@ SAN PATRICIO,house,43,inperson,12,1206
 SAN PATRICIO,house,43,inperson,13,1362
 SAN PATRICIO,house,43,inperson,14,1648
 SAN PATRICIO,house,43,inperson,15,1913
+SAN PATRICIO,house,43,mail,4,1
 SAN PATRICIO,house,43,mail,5,11
 SAN PATRICIO,house,43,mail,6,10
 SAN PATRICIO,house,43,mail,7,50
@@ -17502,6 +17550,7 @@ SAN PATRICIO,senate,27,inperson,12,1206
 SAN PATRICIO,senate,27,inperson,13,1362
 SAN PATRICIO,senate,27,inperson,14,1648
 SAN PATRICIO,senate,27,inperson,15,1913
+SAN PATRICIO,senate,27,mail,4,1
 SAN PATRICIO,senate,27,mail,5,11
 SAN PATRICIO,senate,27,mail,6,10
 SAN PATRICIO,senate,27,mail,7,50
@@ -17512,7 +17561,8 @@ SAN PATRICIO,senate,27,mail,13,63
 SAN PATRICIO,senate,27,mail,14,8
 SAN PATRICIO,senate,27,mail,17,1
 SAN PATRICIO,senate,27,mail,19,97
-SAN SABA,congress,11,inperson,5,1
+SAN SABA,congress,11,inperson,4,138
+SAN SABA,congress,11,inperson,5,86
 SAN SABA,congress,11,inperson,6,95
 SAN SABA,congress,11,inperson,7,115
 SAN SABA,congress,11,inperson,8,109
@@ -17535,7 +17585,8 @@ SAN SABA,congress,11,mail,15,4
 SAN SABA,congress,11,mail,18,3
 SAN SABA,congress,11,mail,19,6
 SAN SABA,congress,11,mail,20,5
-SAN SABA,house,68,inperson,5,1
+SAN SABA,house,68,inperson,4,138
+SAN SABA,house,68,inperson,5,86
 SAN SABA,house,68,inperson,6,95
 SAN SABA,house,68,inperson,7,115
 SAN SABA,house,68,inperson,8,109
@@ -17558,7 +17609,8 @@ SAN SABA,house,68,mail,15,4
 SAN SABA,house,68,mail,18,3
 SAN SABA,house,68,mail,19,6
 SAN SABA,house,68,mail,20,5
-SAN SABA,senate,28,inperson,5,1
+SAN SABA,senate,28,inperson,4,138
+SAN SABA,senate,28,inperson,5,86
 SAN SABA,senate,28,inperson,6,95
 SAN SABA,senate,28,inperson,7,115
 SAN SABA,senate,28,inperson,8,109
@@ -17887,8 +17939,8 @@ SHERMAN,senate,31,inperson,14,37
 SHERMAN,senate,31,inperson,15,43
 SHERMAN,senate,31,mail,6,1
 SHERMAN,senate,31,mail,8,15
-SMITH,congress,1,inperson,4,6711
-SMITH,congress,1,inperson,5,4960
+SMITH,congress,1,inperson,4,6757
+SMITH,congress,1,inperson,5,4961
 SMITH,congress,1,inperson,6,4841
 SMITH,congress,1,inperson,7,5020
 SMITH,congress,1,inperson,8,5365
@@ -17899,7 +17951,7 @@ SMITH,congress,1,inperson,12,5770
 SMITH,congress,1,inperson,13,5970
 SMITH,congress,1,inperson,14,5942
 SMITH,congress,1,inperson,15,5828
-SMITH,congress,1,mail,4,66
+SMITH,congress,1,mail,4,67
 SMITH,congress,1,mail,5,68
 SMITH,congress,1,mail,6,108
 SMITH,congress,1,mail,7,85
@@ -17915,7 +17967,7 @@ SMITH,congress,1,mail,16,76
 SMITH,congress,1,mail,18,209
 SMITH,congress,1,mail,19,111
 SMITH,congress,1,mail,20,175
-SMITH,house,5,inperson,4,1394
+SMITH,house,5,inperson,4,1404
 SMITH,house,5,inperson,5,953
 SMITH,house,5,inperson,6,846
 SMITH,house,5,inperson,7,904
@@ -17943,8 +17995,8 @@ SMITH,house,5,mail,16,18
 SMITH,house,5,mail,18,14
 SMITH,house,5,mail,19,20
 SMITH,house,5,mail,20,36
-SMITH,house,6,inperson,4,5317
-SMITH,house,6,inperson,5,4007
+SMITH,house,6,inperson,4,5353
+SMITH,house,6,inperson,5,4008
 SMITH,house,6,inperson,6,3995
 SMITH,house,6,inperson,7,4116
 SMITH,house,6,inperson,8,4379
@@ -17955,7 +18007,7 @@ SMITH,house,6,inperson,12,4530
 SMITH,house,6,inperson,13,4635
 SMITH,house,6,inperson,14,4596
 SMITH,house,6,inperson,15,4517
-SMITH,house,6,mail,4,57
+SMITH,house,6,mail,4,58
 SMITH,house,6,mail,5,59
 SMITH,house,6,mail,6,92
 SMITH,house,6,mail,7,82
@@ -17971,8 +18023,8 @@ SMITH,house,6,mail,16,58
 SMITH,house,6,mail,18,195
 SMITH,house,6,mail,19,91
 SMITH,house,6,mail,20,139
-SMITH,senate,1,inperson,4,6711
-SMITH,senate,1,inperson,5,4960
+SMITH,senate,1,inperson,4,6757
+SMITH,senate,1,inperson,5,4961
 SMITH,senate,1,inperson,6,4841
 SMITH,senate,1,inperson,7,5020
 SMITH,senate,1,inperson,8,5365
@@ -17983,7 +18035,7 @@ SMITH,senate,1,inperson,12,5770
 SMITH,senate,1,inperson,13,5970
 SMITH,senate,1,inperson,14,5942
 SMITH,senate,1,inperson,15,5828
-SMITH,senate,1,mail,4,66
+SMITH,senate,1,mail,4,67
 SMITH,senate,1,mail,5,68
 SMITH,senate,1,mail,6,108
 SMITH,senate,1,mail,7,85
@@ -18422,8 +18474,8 @@ SWISHER,senate,31,mail,14,2
 SWISHER,senate,31,mail,15,7
 SWISHER,senate,31,mail,18,6
 SWISHER,senate,31,mail,20,12
-TARRANT,congress,12,inperson,4,19086
-TARRANT,congress,12,inperson,5,13683
+TARRANT,congress,12,inperson,4,19099
+TARRANT,congress,12,inperson,5,13684
 TARRANT,congress,12,inperson,6,12932
 TARRANT,congress,12,inperson,7,13274
 TARRANT,congress,12,inperson,8,14317
@@ -18434,7 +18486,7 @@ TARRANT,congress,12,inperson,12,13100
 TARRANT,congress,12,inperson,13,13932
 TARRANT,congress,12,inperson,14,14397
 TARRANT,congress,12,inperson,15,14590
-TARRANT,congress,12,mail,4,160
+TARRANT,congress,12,mail,4,162
 TARRANT,congress,12,mail,5,220
 TARRANT,congress,12,mail,6,266
 TARRANT,congress,12,mail,7,155
@@ -18449,9 +18501,9 @@ TARRANT,congress,12,mail,17,255
 TARRANT,congress,12,mail,18,464
 TARRANT,congress,12,mail,19,547
 TARRANT,congress,12,mail,20,439
-TARRANT,congress,24,inperson,4,18829
-TARRANT,congress,24,inperson,5,14170
-TARRANT,congress,24,inperson,6,13520
+TARRANT,congress,24,inperson,4,18845
+TARRANT,congress,24,inperson,5,14171
+TARRANT,congress,24,inperson,6,13519
 TARRANT,congress,24,inperson,7,14155
 TARRANT,congress,24,inperson,8,15229
 TARRANT,congress,24,inperson,9,7753
@@ -18461,7 +18513,7 @@ TARRANT,congress,24,inperson,12,14737
 TARRANT,congress,24,inperson,13,15160
 TARRANT,congress,24,inperson,14,16135
 TARRANT,congress,24,inperson,15,15398
-TARRANT,congress,24,mail,4,198
+TARRANT,congress,24,mail,4,201
 TARRANT,congress,24,mail,5,183
 TARRANT,congress,24,mail,6,262
 TARRANT,congress,24,mail,7,105
@@ -18476,9 +18528,9 @@ TARRANT,congress,24,mail,17,240
 TARRANT,congress,24,mail,18,346
 TARRANT,congress,24,mail,19,426
 TARRANT,congress,24,mail,20,335
-TARRANT,congress,25,inperson,4,11446
+TARRANT,congress,25,inperson,4,11453
 TARRANT,congress,25,inperson,5,8217
-TARRANT,congress,25,inperson,6,7603
+TARRANT,congress,25,inperson,6,7604
 TARRANT,congress,25,inperson,7,7768
 TARRANT,congress,25,inperson,8,8586
 TARRANT,congress,25,inperson,9,4257
@@ -18488,7 +18540,7 @@ TARRANT,congress,25,inperson,12,8541
 TARRANT,congress,25,inperson,13,9359
 TARRANT,congress,25,inperson,14,9901
 TARRANT,congress,25,inperson,15,10075
-TARRANT,congress,25,mail,4,103
+TARRANT,congress,25,mail,4,104
 TARRANT,congress,25,mail,5,121
 TARRANT,congress,25,mail,6,118
 TARRANT,congress,25,mail,7,74
@@ -18503,8 +18555,8 @@ TARRANT,congress,25,mail,17,207
 TARRANT,congress,25,mail,18,239
 TARRANT,congress,25,mail,19,375
 TARRANT,congress,25,mail,20,317
-TARRANT,congress,30,inperson,4,5951
-TARRANT,congress,30,inperson,5,4634
+TARRANT,congress,30,inperson,4,5953
+TARRANT,congress,30,inperson,5,4635
 TARRANT,congress,30,inperson,6,4416
 TARRANT,congress,30,inperson,7,4463
 TARRANT,congress,30,inperson,8,4997
@@ -18515,7 +18567,7 @@ TARRANT,congress,30,inperson,12,4097
 TARRANT,congress,30,inperson,13,4297
 TARRANT,congress,30,inperson,14,4447
 TARRANT,congress,30,inperson,15,4485
-TARRANT,congress,30,mail,4,37
+TARRANT,congress,30,mail,4,38
 TARRANT,congress,30,mail,5,70
 TARRANT,congress,30,mail,6,21
 TARRANT,congress,30,mail,7,58
@@ -18530,8 +18582,8 @@ TARRANT,congress,30,mail,17,29
 TARRANT,congress,30,mail,18,52
 TARRANT,congress,30,mail,19,107
 TARRANT,congress,30,mail,20,72
-TARRANT,congress,6,inperson,4,6901
-TARRANT,congress,6,inperson,5,5416
+TARRANT,congress,6,inperson,4,6902
+TARRANT,congress,6,inperson,5,5414
 TARRANT,congress,6,inperson,6,5420
 TARRANT,congress,6,inperson,7,5648
 TARRANT,congress,6,inperson,8,6114
@@ -18542,9 +18594,9 @@ TARRANT,congress,6,inperson,12,5641
 TARRANT,congress,6,inperson,13,5879
 TARRANT,congress,6,inperson,14,5836
 TARRANT,congress,6,inperson,15,5580
-TARRANT,congress,6,mail,4,90
+TARRANT,congress,6,mail,4,91
 TARRANT,congress,6,mail,5,130
-TARRANT,congress,6,mail,6,88
+TARRANT,congress,6,mail,6,87
 TARRANT,congress,6,mail,7,95
 TARRANT,congress,6,mail,8,109
 TARRANT,congress,6,mail,10,131
@@ -18557,8 +18609,8 @@ TARRANT,congress,6,mail,17,126
 TARRANT,congress,6,mail,18,204
 TARRANT,congress,6,mail,19,317
 TARRANT,congress,6,mail,20,154
-TARRANT,house,101,inperson,4,4952
-TARRANT,house,101,inperson,5,3921
+TARRANT,house,101,inperson,4,4955
+TARRANT,house,101,inperson,5,3922
 TARRANT,house,101,inperson,6,3717
 TARRANT,house,101,inperson,7,3735
 TARRANT,house,101,inperson,8,4254
@@ -18584,7 +18636,7 @@ TARRANT,house,101,mail,17,24
 TARRANT,house,101,mail,18,47
 TARRANT,house,101,mail,19,93
 TARRANT,house,101,mail,20,62
-TARRANT,house,90,inperson,4,4167
+TARRANT,house,90,inperson,4,4169
 TARRANT,house,90,inperson,5,2744
 TARRANT,house,90,inperson,6,2611
 TARRANT,house,90,inperson,7,2414
@@ -18611,7 +18663,7 @@ TARRANT,house,90,mail,17,77
 TARRANT,house,90,mail,18,83
 TARRANT,house,90,mail,19,106
 TARRANT,house,90,mail,20,106
-TARRANT,house,91,inperson,4,5322
+TARRANT,house,91,inperson,4,5326
 TARRANT,house,91,inperson,5,4156
 TARRANT,house,91,inperson,6,3902
 TARRANT,house,91,inperson,7,4016
@@ -18623,7 +18675,7 @@ TARRANT,house,91,inperson,12,4148
 TARRANT,house,91,inperson,13,4024
 TARRANT,house,91,inperson,14,4349
 TARRANT,house,91,inperson,15,4204
-TARRANT,house,91,mail,4,62
+TARRANT,house,91,mail,4,63
 TARRANT,house,91,mail,5,57
 TARRANT,house,91,mail,6,70
 TARRANT,house,91,mail,7,36
@@ -18638,9 +18690,9 @@ TARRANT,house,91,mail,17,79
 TARRANT,house,91,mail,18,72
 TARRANT,house,91,mail,19,129
 TARRANT,house,91,mail,20,123
-TARRANT,house,92,inperson,4,3984
+TARRANT,house,92,inperson,4,3988
 TARRANT,house,92,inperson,5,2906
-TARRANT,house,92,inperson,6,2770
+TARRANT,house,92,inperson,6,2769
 TARRANT,house,92,inperson,7,2747
 TARRANT,house,92,inperson,8,3022
 TARRANT,house,92,inperson,9,1439
@@ -18650,7 +18702,7 @@ TARRANT,house,92,inperson,12,2929
 TARRANT,house,92,inperson,13,3019
 TARRANT,house,92,inperson,14,3305
 TARRANT,house,92,inperson,15,3096
-TARRANT,house,92,mail,4,37
+TARRANT,house,92,mail,4,38
 TARRANT,house,92,mail,5,41
 TARRANT,house,92,mail,6,26
 TARRANT,house,92,mail,7,27
@@ -18665,8 +18717,8 @@ TARRANT,house,92,mail,17,20
 TARRANT,house,92,mail,18,33
 TARRANT,house,92,mail,19,53
 TARRANT,house,92,mail,20,85
-TARRANT,house,93,inperson,4,7343
-TARRANT,house,93,inperson,5,5316
+TARRANT,house,93,inperson,4,7346
+TARRANT,house,93,inperson,5,5317
 TARRANT,house,93,inperson,6,5005
 TARRANT,house,93,inperson,7,5134
 TARRANT,house,93,inperson,8,5141
@@ -18677,7 +18729,7 @@ TARRANT,house,93,inperson,12,4342
 TARRANT,house,93,inperson,13,4466
 TARRANT,house,93,inperson,14,4427
 TARRANT,house,93,inperson,15,4441
-TARRANT,house,93,mail,4,49
+TARRANT,house,93,mail,4,50
 TARRANT,house,93,mail,5,49
 TARRANT,house,93,mail,6,59
 TARRANT,house,93,mail,7,54
@@ -18692,8 +18744,8 @@ TARRANT,house,93,mail,17,1
 TARRANT,house,93,mail,18,12
 TARRANT,house,93,mail,19,153
 TARRANT,house,93,mail,20,85
-TARRANT,house,94,inperson,4,5645
-TARRANT,house,94,inperson,5,4416
+TARRANT,house,94,inperson,4,5648
+TARRANT,house,94,inperson,5,4414
 TARRANT,house,94,inperson,6,4245
 TARRANT,house,94,inperson,7,4420
 TARRANT,house,94,inperson,8,4838
@@ -18704,7 +18756,7 @@ TARRANT,house,94,inperson,12,4834
 TARRANT,house,94,inperson,13,5202
 TARRANT,house,94,inperson,14,5610
 TARRANT,house,94,inperson,15,5249
-TARRANT,house,94,mail,4,67
+TARRANT,house,94,mail,4,68
 TARRANT,house,94,mail,5,86
 TARRANT,house,94,mail,6,108
 TARRANT,house,94,mail,7,54
@@ -18719,9 +18771,9 @@ TARRANT,house,94,mail,17,124
 TARRANT,house,94,mail,18,242
 TARRANT,house,94,mail,19,217
 TARRANT,house,94,mail,20,144
-TARRANT,house,95,inperson,4,4444
+TARRANT,house,95,inperson,4,4446
 TARRANT,house,95,inperson,5,3015
-TARRANT,house,95,inperson,6,2671
+TARRANT,house,95,inperson,6,2672
 TARRANT,house,95,inperson,7,2843
 TARRANT,house,95,inperson,8,3082
 TARRANT,house,95,inperson,9,1479
@@ -18731,7 +18783,7 @@ TARRANT,house,95,inperson,12,2953
 TARRANT,house,95,inperson,13,3507
 TARRANT,house,95,inperson,14,3943
 TARRANT,house,95,inperson,15,4407
-TARRANT,house,95,mail,4,35
+TARRANT,house,95,mail,4,36
 TARRANT,house,95,mail,5,42
 TARRANT,house,95,mail,6,42
 TARRANT,house,95,mail,7,23
@@ -18746,7 +18798,7 @@ TARRANT,house,95,mail,17,78
 TARRANT,house,95,mail,18,123
 TARRANT,house,95,mail,19,173
 TARRANT,house,95,mail,20,117
-TARRANT,house,96,inperson,4,6326
+TARRANT,house,96,inperson,4,6329
 TARRANT,house,96,inperson,5,4761
 TARRANT,house,96,inperson,6,4774
 TARRANT,house,96,inperson,7,4849
@@ -18758,9 +18810,9 @@ TARRANT,house,96,inperson,12,4932
 TARRANT,house,96,inperson,13,5154
 TARRANT,house,96,inperson,14,5234
 TARRANT,house,96,inperson,15,5068
-TARRANT,house,96,mail,4,62
+TARRANT,house,96,mail,4,63
 TARRANT,house,96,mail,5,92
-TARRANT,house,96,mail,6,64
+TARRANT,house,96,mail,6,63
 TARRANT,house,96,mail,7,75
 TARRANT,house,96,mail,8,96
 TARRANT,house,96,mail,10,109
@@ -18773,7 +18825,7 @@ TARRANT,house,96,mail,17,114
 TARRANT,house,96,mail,18,133
 TARRANT,house,96,mail,19,252
 TARRANT,house,96,mail,20,135
-TARRANT,house,97,inperson,4,6794
+TARRANT,house,97,inperson,4,6795
 TARRANT,house,97,inperson,5,5137
 TARRANT,house,97,inperson,6,4940
 TARRANT,house,97,inperson,7,5377
@@ -18785,7 +18837,7 @@ TARRANT,house,97,inperson,12,5454
 TARRANT,house,97,inperson,13,5622
 TARRANT,house,97,inperson,14,5571
 TARRANT,house,97,inperson,15,5174
-TARRANT,house,97,mail,4,79
+TARRANT,house,97,mail,4,81
 TARRANT,house,97,mail,5,92
 TARRANT,house,97,mail,6,140
 TARRANT,house,97,mail,7,46
@@ -18800,8 +18852,8 @@ TARRANT,house,97,mail,17,110
 TARRANT,house,97,mail,18,231
 TARRANT,house,97,mail,19,263
 TARRANT,house,97,mail,20,188
-TARRANT,house,98,inperson,4,7602
-TARRANT,house,98,inperson,5,5571
+TARRANT,house,98,inperson,4,7610
+TARRANT,house,98,inperson,5,5572
 TARRANT,house,98,inperson,6,5395
 TARRANT,house,98,inperson,7,5811
 TARRANT,house,98,inperson,8,6493
@@ -18827,7 +18879,7 @@ TARRANT,house,98,mail,17,97
 TARRANT,house,98,mail,18,137
 TARRANT,house,98,mail,19,171
 TARRANT,house,98,mail,20,108
-TARRANT,house,99,inperson,4,5634
+TARRANT,house,99,inperson,4,5641
 TARRANT,house,99,inperson,5,4176
 TARRANT,house,99,inperson,6,3862
 TARRANT,house,99,inperson,7,3962
@@ -18854,9 +18906,9 @@ TARRANT,house,99,mail,17,133
 TARRANT,house,99,mail,18,192
 TARRANT,house,99,mail,19,162
 TARRANT,house,99,mail,20,164
-TARRANT,senate,10,inperson,4,16415
-TARRANT,senate,10,inperson,5,12136
-TARRANT,senate,10,inperson,6,11648
+TARRANT,senate,10,inperson,4,16420
+TARRANT,senate,10,inperson,5,12134
+TARRANT,senate,10,inperson,6,11649
 TARRANT,senate,10,inperson,7,12164
 TARRANT,senate,10,inperson,8,13264
 TARRANT,senate,10,inperson,9,6485
@@ -18866,9 +18918,9 @@ TARRANT,senate,10,inperson,12,12744
 TARRANT,senate,10,inperson,13,13787
 TARRANT,senate,10,inperson,14,14050
 TARRANT,senate,10,inperson,15,13643
-TARRANT,senate,10,mail,4,196
+TARRANT,senate,10,mail,4,200
 TARRANT,senate,10,mail,5,222
-TARRANT,senate,10,mail,6,268
+TARRANT,senate,10,mail,6,267
 TARRANT,senate,10,mail,7,131
 TARRANT,senate,10,mail,8,234
 TARRANT,senate,10,mail,10,284
@@ -18881,8 +18933,8 @@ TARRANT,senate,10,mail,17,370
 TARRANT,senate,10,mail,18,578
 TARRANT,senate,10,mail,19,707
 TARRANT,senate,10,mail,20,468
-TARRANT,senate,12,inperson,4,3959
-TARRANT,senate,12,inperson,5,2898
+TARRANT,senate,12,inperson,4,3960
+TARRANT,senate,12,inperson,5,2899
 TARRANT,senate,12,inperson,6,2766
 TARRANT,senate,12,inperson,7,3049
 TARRANT,senate,12,inperson,8,3415
@@ -18908,7 +18960,7 @@ TARRANT,senate,12,mail,17,73
 TARRANT,senate,12,mail,18,109
 TARRANT,senate,12,mail,19,90
 TARRANT,senate,12,mail,20,57
-TARRANT,senate,22,inperson,4,9106
+TARRANT,senate,22,inperson,4,9111
 TARRANT,senate,22,inperson,5,7112
 TARRANT,senate,22,inperson,6,6780
 TARRANT,senate,22,inperson,7,6794
@@ -18920,7 +18972,7 @@ TARRANT,senate,22,inperson,12,6862
 TARRANT,senate,22,inperson,13,6949
 TARRANT,senate,22,inperson,14,7187
 TARRANT,senate,22,inperson,15,7007
-TARRANT,senate,22,mail,4,78
+TARRANT,senate,22,mail,4,79
 TARRANT,senate,22,mail,5,105
 TARRANT,senate,22,mail,6,3
 TARRANT,senate,22,mail,7,101
@@ -18935,8 +18987,8 @@ TARRANT,senate,22,mail,17,1
 TARRANT,senate,22,mail,18,9
 TARRANT,senate,22,mail,19,193
 TARRANT,senate,22,mail,20,182
-TARRANT,senate,23,inperson,4,2429
-TARRANT,senate,23,inperson,5,1790
+TARRANT,senate,23,inperson,4,2430
+TARRANT,senate,23,inperson,5,1791
 TARRANT,senate,23,inperson,6,1719
 TARRANT,senate,23,inperson,7,1787
 TARRANT,senate,23,inperson,8,2030
@@ -18962,9 +19014,9 @@ TARRANT,senate,23,mail,17,29
 TARRANT,senate,23,mail,18,45
 TARRANT,senate,23,mail,19,46
 TARRANT,senate,23,mail,20,13
-TARRANT,senate,9,inperson,4,30304
-TARRANT,senate,9,inperson,5,22185
-TARRANT,senate,9,inperson,6,20976
+TARRANT,senate,9,inperson,4,30331
+TARRANT,senate,9,inperson,5,22186
+TARRANT,senate,9,inperson,6,20975
 TARRANT,senate,9,inperson,7,21514
 TARRANT,senate,9,inperson,8,23046
 TARRANT,senate,9,inperson,9,11788
@@ -18974,7 +19026,7 @@ TARRANT,senate,9,inperson,12,21290
 TARRANT,senate,9,inperson,13,22441
 TARRANT,senate,9,inperson,14,23733
 TARRANT,senate,9,inperson,15,23970
-TARRANT,senate,9,mail,4,260
+TARRANT,senate,9,mail,4,263
 TARRANT,senate,9,mail,5,342
 TARRANT,senate,9,mail,6,387
 TARRANT,senate,9,mail,7,219
@@ -18989,7 +19041,7 @@ TARRANT,senate,9,mail,17,384
 TARRANT,senate,9,mail,18,564
 TARRANT,senate,9,mail,19,736
 TARRANT,senate,9,mail,20,597
-TAYLOR,congress,19,inperson,4,3236
+TAYLOR,congress,19,inperson,4,3245
 TAYLOR,congress,19,inperson,5,2247
 TAYLOR,congress,19,inperson,6,2197
 TAYLOR,congress,19,inperson,7,2356
@@ -19015,7 +19067,7 @@ TAYLOR,congress,19,mail,14,90
 TAYLOR,congress,19,mail,15,138
 TAYLOR,congress,19,mail,19,8
 TAYLOR,congress,19,mail,20,81
-TAYLOR,house,71,inperson,4,3236
+TAYLOR,house,71,inperson,4,3245
 TAYLOR,house,71,inperson,5,2247
 TAYLOR,house,71,inperson,6,2197
 TAYLOR,house,71,inperson,7,2356
@@ -19041,7 +19093,7 @@ TAYLOR,house,71,mail,14,90
 TAYLOR,house,71,mail,15,138
 TAYLOR,house,71,mail,19,8
 TAYLOR,house,71,mail,20,81
-TAYLOR,senate,28,inperson,4,3236
+TAYLOR,senate,28,inperson,4,3245
 TAYLOR,senate,28,inperson,5,2247
 TAYLOR,senate,28,inperson,6,2197
 TAYLOR,senate,28,inperson,7,2356
@@ -19343,7 +19395,7 @@ TOM GREEN,congress,11,inperson,12,2449
 TOM GREEN,congress,11,inperson,13,2466
 TOM GREEN,congress,11,inperson,14,2709
 TOM GREEN,congress,11,inperson,15,2620
-TOM GREEN,congress,11,mail,4,2
+TOM GREEN,congress,11,mail,4,15
 TOM GREEN,congress,11,mail,5,48
 TOM GREEN,congress,11,mail,6,57
 TOM GREEN,congress,11,mail,7,55
@@ -19370,7 +19422,7 @@ TOM GREEN,house,72,inperson,12,2449
 TOM GREEN,house,72,inperson,13,2466
 TOM GREEN,house,72,inperson,14,2709
 TOM GREEN,house,72,inperson,15,2620
-TOM GREEN,house,72,mail,4,2
+TOM GREEN,house,72,mail,4,15
 TOM GREEN,house,72,mail,5,48
 TOM GREEN,house,72,mail,6,57
 TOM GREEN,house,72,mail,7,55
@@ -19397,7 +19449,7 @@ TOM GREEN,senate,28,inperson,12,2449
 TOM GREEN,senate,28,inperson,13,2466
 TOM GREEN,senate,28,inperson,14,2709
 TOM GREEN,senate,28,inperson,15,2620
-TOM GREEN,senate,28,mail,4,2
+TOM GREEN,senate,28,mail,4,15
 TOM GREEN,senate,28,mail,5,48
 TOM GREEN,senate,28,mail,6,57
 TOM GREEN,senate,28,mail,7,55
@@ -19412,8 +19464,8 @@ TOM GREEN,senate,28,mail,16,2
 TOM GREEN,senate,28,mail,18,67
 TOM GREEN,senate,28,mail,19,118
 TOM GREEN,senate,28,mail,20,54
-TRAVIS,congress,10,inperson,4,10799
-TRAVIS,congress,10,inperson,5,8024
+TRAVIS,congress,10,inperson,4,10798
+TRAVIS,congress,10,inperson,5,8025
 TRAVIS,congress,10,inperson,6,7707
 TRAVIS,congress,10,inperson,7,8081
 TRAVIS,congress,10,inperson,8,8085
@@ -19489,7 +19541,7 @@ TRAVIS,congress,27,mail,15,100
 TRAVIS,congress,27,mail,18,41
 TRAVIS,congress,27,mail,19,21
 TRAVIS,congress,27,mail,20,4
-TRAVIS,congress,37,inperson,4,28151
+TRAVIS,congress,37,inperson,4,28146
 TRAVIS,congress,37,inperson,5,21738
 TRAVIS,congress,37,inperson,6,20228
 TRAVIS,congress,37,inperson,7,19468
@@ -19503,7 +19555,7 @@ TRAVIS,congress,37,inperson,14,22697
 TRAVIS,congress,37,inperson,15,22960
 TRAVIS,congress,37,mail,4,482
 TRAVIS,congress,37,mail,5,709
-TRAVIS,congress,37,mail,6,229
+TRAVIS,congress,37,mail,6,230
 TRAVIS,congress,37,mail,7,910
 TRAVIS,congress,37,mail,8,621
 TRAVIS,congress,37,mail,9,1
@@ -19568,8 +19620,8 @@ TRAVIS,house,46,mail,15,191
 TRAVIS,house,46,mail,18,72
 TRAVIS,house,46,mail,19,47
 TRAVIS,house,46,mail,20,10
-TRAVIS,house,47,inperson,4,7754
-TRAVIS,house,47,inperson,5,5985
+TRAVIS,house,47,inperson,4,7753
+TRAVIS,house,47,inperson,5,5986
 TRAVIS,house,47,inperson,6,5636
 TRAVIS,house,47,inperson,7,5829
 TRAVIS,house,47,inperson,8,5820
@@ -19619,7 +19671,7 @@ TRAVIS,house,48,mail,15,342
 TRAVIS,house,48,mail,18,96
 TRAVIS,house,48,mail,19,83
 TRAVIS,house,48,mail,20,24
-TRAVIS,house,49,inperson,4,9218
+TRAVIS,house,49,inperson,4,9217
 TRAVIS,house,49,inperson,5,7095
 TRAVIS,house,49,inperson,6,6591
 TRAVIS,house,49,inperson,7,6345
@@ -19645,7 +19697,7 @@ TRAVIS,house,49,mail,16,1
 TRAVIS,house,49,mail,18,81
 TRAVIS,house,49,mail,19,88
 TRAVIS,house,49,mail,20,46
-TRAVIS,house,50,inperson,4,5574
+TRAVIS,house,50,inperson,4,5572
 TRAVIS,house,50,inperson,5,4123
 TRAVIS,house,50,inperson,6,3783
 TRAVIS,house,50,inperson,7,3691
@@ -19695,7 +19747,7 @@ TRAVIS,house,51,mail,15,118
 TRAVIS,house,51,mail,18,29
 TRAVIS,house,51,mail,19,37
 TRAVIS,house,51,mail,20,21
-TRAVIS,senate,14,inperson,4,36228
+TRAVIS,senate,14,inperson,4,36224
 TRAVIS,senate,14,inperson,5,27765
 TRAVIS,senate,14,inperson,6,25990
 TRAVIS,senate,14,inperson,7,25777
@@ -19709,7 +19761,7 @@ TRAVIS,senate,14,inperson,14,30621
 TRAVIS,senate,14,inperson,15,31218
 TRAVIS,senate,14,mail,4,663
 TRAVIS,senate,14,mail,5,1013
-TRAVIS,senate,14,mail,6,317
+TRAVIS,senate,14,mail,6,318
 TRAVIS,senate,14,mail,7,1361
 TRAVIS,senate,14,mail,8,974
 TRAVIS,senate,14,mail,9,1
@@ -19748,8 +19800,8 @@ TRAVIS,senate,21,mail,15,130
 TRAVIS,senate,21,mail,18,33
 TRAVIS,senate,21,mail,19,26
 TRAVIS,senate,21,mail,20,14
-TRAVIS,senate,25,inperson,4,5682
-TRAVIS,senate,25,inperson,5,4260
+TRAVIS,senate,25,inperson,4,5681
+TRAVIS,senate,25,inperson,5,4261
 TRAVIS,senate,25,inperson,6,4001
 TRAVIS,senate,25,inperson,7,4224
 TRAVIS,senate,25,inperson,8,4414
@@ -20080,7 +20132,7 @@ VAL VERDE,congress,23,inperson,13,812
 VAL VERDE,congress,23,inperson,14,979
 VAL VERDE,congress,23,inperson,15,1292
 VAL VERDE,congress,23,mail,4,15
-VAL VERDE,congress,23,mail,5,28
+VAL VERDE,congress,23,mail,5,30
 VAL VERDE,congress,23,mail,6,22
 VAL VERDE,congress,23,mail,7,25
 VAL VERDE,congress,23,mail,8,29
@@ -20104,7 +20156,7 @@ VAL VERDE,house,74,inperson,13,812
 VAL VERDE,house,74,inperson,14,979
 VAL VERDE,house,74,inperson,15,1292
 VAL VERDE,house,74,mail,4,15
-VAL VERDE,house,74,mail,5,28
+VAL VERDE,house,74,mail,5,30
 VAL VERDE,house,74,mail,6,22
 VAL VERDE,house,74,mail,7,25
 VAL VERDE,house,74,mail,8,29
@@ -20128,7 +20180,7 @@ VAL VERDE,senate,19,inperson,13,812
 VAL VERDE,senate,19,inperson,14,979
 VAL VERDE,senate,19,inperson,15,1292
 VAL VERDE,senate,19,mail,4,15
-VAL VERDE,senate,19,mail,5,28
+VAL VERDE,senate,19,mail,5,30
 VAL VERDE,senate,19,mail,6,22
 VAL VERDE,senate,19,mail,7,25
 VAL VERDE,senate,19,mail,8,29
@@ -20151,8 +20203,8 @@ VAN ZANDT,congress,5,inperson,12,1221
 VAN ZANDT,congress,5,inperson,13,1258
 VAN ZANDT,congress,5,inperson,14,1383
 VAN ZANDT,congress,5,inperson,15,1374
-VAN ZANDT,congress,5,mail,4,13
-VAN ZANDT,congress,5,mail,5,35
+VAN ZANDT,congress,5,mail,4,27
+VAN ZANDT,congress,5,mail,5,52
 VAN ZANDT,congress,5,mail,6,12
 VAN ZANDT,congress,5,mail,7,16
 VAN ZANDT,congress,5,mail,8,155
@@ -20176,8 +20228,8 @@ VAN ZANDT,house,2,inperson,12,1221
 VAN ZANDT,house,2,inperson,13,1258
 VAN ZANDT,house,2,inperson,14,1383
 VAN ZANDT,house,2,inperson,15,1374
-VAN ZANDT,house,2,mail,4,13
-VAN ZANDT,house,2,mail,5,35
+VAN ZANDT,house,2,mail,4,27
+VAN ZANDT,house,2,mail,5,52
 VAN ZANDT,house,2,mail,6,12
 VAN ZANDT,house,2,mail,7,16
 VAN ZANDT,house,2,mail,8,155
@@ -20201,8 +20253,8 @@ VAN ZANDT,senate,2,inperson,12,1221
 VAN ZANDT,senate,2,inperson,13,1258
 VAN ZANDT,senate,2,inperson,14,1383
 VAN ZANDT,senate,2,inperson,15,1374
-VAN ZANDT,senate,2,mail,4,13
-VAN ZANDT,senate,2,mail,5,35
+VAN ZANDT,senate,2,mail,4,27
+VAN ZANDT,senate,2,mail,5,52
 VAN ZANDT,senate,2,mail,6,12
 VAN ZANDT,senate,2,mail,7,16
 VAN ZANDT,senate,2,mail,8,155
@@ -20214,7 +20266,7 @@ VAN ZANDT,senate,2,mail,14,17
 VAN ZANDT,senate,2,mail,15,51
 VAN ZANDT,senate,2,mail,18,2
 VAN ZANDT,senate,2,mail,20,2
-VICTORIA,congress,27,inperson,4,1947
+VICTORIA,congress,27,inperson,4,1955
 VICTORIA,congress,27,inperson,5,1535
 VICTORIA,congress,27,inperson,6,1460
 VICTORIA,congress,27,inperson,7,1505
@@ -20226,7 +20278,7 @@ VICTORIA,congress,27,inperson,12,1565
 VICTORIA,congress,27,inperson,13,1803
 VICTORIA,congress,27,inperson,14,1757
 VICTORIA,congress,27,inperson,15,1661
-VICTORIA,congress,27,mail,4,47
+VICTORIA,congress,27,mail,4,48
 VICTORIA,congress,27,mail,5,55
 VICTORIA,congress,27,mail,6,82
 VICTORIA,congress,27,mail,7,24
@@ -20240,7 +20292,7 @@ VICTORIA,congress,27,mail,15,105
 VICTORIA,congress,27,mail,18,41
 VICTORIA,congress,27,mail,19,190
 VICTORIA,congress,27,mail,20,16
-VICTORIA,house,30,inperson,4,1947
+VICTORIA,house,30,inperson,4,1955
 VICTORIA,house,30,inperson,5,1535
 VICTORIA,house,30,inperson,6,1460
 VICTORIA,house,30,inperson,7,1505
@@ -20252,7 +20304,7 @@ VICTORIA,house,30,inperson,12,1565
 VICTORIA,house,30,inperson,13,1803
 VICTORIA,house,30,inperson,14,1757
 VICTORIA,house,30,inperson,15,1661
-VICTORIA,house,30,mail,4,47
+VICTORIA,house,30,mail,4,48
 VICTORIA,house,30,mail,5,55
 VICTORIA,house,30,mail,6,82
 VICTORIA,house,30,mail,7,24
@@ -20266,7 +20318,7 @@ VICTORIA,house,30,mail,15,105
 VICTORIA,house,30,mail,18,41
 VICTORIA,house,30,mail,19,190
 VICTORIA,house,30,mail,20,16
-VICTORIA,senate,18,inperson,4,1947
+VICTORIA,senate,18,inperson,4,1955
 VICTORIA,senate,18,inperson,5,1535
 VICTORIA,senate,18,inperson,6,1460
 VICTORIA,senate,18,inperson,7,1505
@@ -20278,7 +20330,7 @@ VICTORIA,senate,18,inperson,12,1565
 VICTORIA,senate,18,inperson,13,1803
 VICTORIA,senate,18,inperson,14,1757
 VICTORIA,senate,18,inperson,15,1661
-VICTORIA,senate,18,mail,4,47
+VICTORIA,senate,18,mail,4,48
 VICTORIA,senate,18,mail,5,55
 VICTORIA,senate,18,mail,6,82
 VICTORIA,senate,18,mail,7,24
@@ -20304,8 +20356,9 @@ WALKER,congress,10,inperson,12,988
 WALKER,congress,10,inperson,13,1099
 WALKER,congress,10,inperson,14,1274
 WALKER,congress,10,inperson,15,1286
+WALKER,congress,10,mail,4,13
 WALKER,congress,10,mail,5,4
-WALKER,congress,10,mail,6,16
+WALKER,congress,10,mail,6,15
 WALKER,congress,10,mail,7,3
 WALKER,congress,10,mail,8,33
 WALKER,congress,10,mail,10,38
@@ -20317,7 +20370,7 @@ WALKER,congress,10,mail,15,59
 WALKER,congress,10,mail,18,15
 WALKER,congress,10,mail,20,2
 WALKER,congress,8,inperson,4,584
-WALKER,congress,8,inperson,5,401
+WALKER,congress,8,inperson,5,402
 WALKER,congress,8,inperson,6,396
 WALKER,congress,8,inperson,7,410
 WALKER,congress,8,inperson,8,394
@@ -20328,8 +20381,9 @@ WALKER,congress,8,inperson,12,394
 WALKER,congress,8,inperson,13,462
 WALKER,congress,8,inperson,14,443
 WALKER,congress,8,inperson,15,449
+WALKER,congress,8,mail,4,3
 WALKER,congress,8,mail,5,2
-WALKER,congress,8,mail,6,5
+WALKER,congress,8,mail,6,8
 WALKER,congress,8,mail,7,7
 WALKER,congress,8,mail,8,10
 WALKER,congress,8,mail,10,22
@@ -20340,7 +20394,7 @@ WALKER,congress,8,mail,14,30
 WALKER,congress,8,mail,15,12
 WALKER,congress,8,mail,18,4
 WALKER,house,12,inperson,4,1773
-WALKER,house,12,inperson,5,1243
+WALKER,house,12,inperson,5,1244
 WALKER,house,12,inperson,6,1170
 WALKER,house,12,inperson,7,1248
 WALKER,house,12,inperson,8,1294
@@ -20351,8 +20405,9 @@ WALKER,house,12,inperson,12,1382
 WALKER,house,12,inperson,13,1561
 WALKER,house,12,inperson,14,1717
 WALKER,house,12,inperson,15,1735
+WALKER,house,12,mail,4,16
 WALKER,house,12,mail,5,6
-WALKER,house,12,mail,6,21
+WALKER,house,12,mail,6,23
 WALKER,house,12,mail,7,10
 WALKER,house,12,mail,8,43
 WALKER,house,12,mail,10,60
@@ -20364,7 +20419,7 @@ WALKER,house,12,mail,15,71
 WALKER,house,12,mail,18,19
 WALKER,house,12,mail,20,2
 WALKER,senate,5,inperson,4,1773
-WALKER,senate,5,inperson,5,1243
+WALKER,senate,5,inperson,5,1244
 WALKER,senate,5,inperson,6,1170
 WALKER,senate,5,inperson,7,1248
 WALKER,senate,5,inperson,8,1294
@@ -20375,8 +20430,9 @@ WALKER,senate,5,inperson,12,1382
 WALKER,senate,5,inperson,13,1561
 WALKER,senate,5,inperson,14,1717
 WALKER,senate,5,inperson,15,1735
+WALKER,senate,5,mail,4,16
 WALKER,senate,5,mail,5,6
-WALKER,senate,5,mail,6,21
+WALKER,senate,5,mail,6,23
 WALKER,senate,5,mail,7,10
 WALKER,senate,5,mail,8,43
 WALKER,senate,5,mail,10,60
@@ -20387,7 +20443,7 @@ WALKER,senate,5,mail,14,50
 WALKER,senate,5,mail,15,71
 WALKER,senate,5,mail,18,19
 WALKER,senate,5,mail,20,2
-WALLER,congress,8,inperson,4,12
+WALLER,congress,8,inperson,4,10
 WALLER,congress,8,inperson,5,1323
 WALLER,congress,8,inperson,6,1282
 WALLER,congress,8,inperson,7,1302
@@ -20405,7 +20461,7 @@ WALLER,congress,8,mail,13,34
 WALLER,congress,8,mail,14,21
 WALLER,congress,8,mail,15,78
 WALLER,congress,8,mail,18,2
-WALLER,house,85,inperson,4,12
+WALLER,house,85,inperson,4,10
 WALLER,house,85,inperson,5,1323
 WALLER,house,85,inperson,6,1282
 WALLER,house,85,inperson,7,1302
@@ -20423,7 +20479,7 @@ WALLER,house,85,mail,13,34
 WALLER,house,85,mail,14,21
 WALLER,house,85,mail,15,78
 WALLER,house,85,mail,18,2
-WALLER,senate,17,inperson,4,5
+WALLER,senate,17,inperson,4,4
 WALLER,senate,17,inperson,5,555
 WALLER,senate,17,inperson,6,520
 WALLER,senate,17,inperson,7,481
@@ -20440,7 +20496,7 @@ WALLER,senate,17,mail,12,20
 WALLER,senate,17,mail,13,16
 WALLER,senate,17,mail,14,7
 WALLER,senate,17,mail,15,26
-WALLER,senate,18,inperson,4,7
+WALLER,senate,18,inperson,4,6
 WALLER,senate,18,inperson,5,768
 WALLER,senate,18,inperson,6,762
 WALLER,senate,18,inperson,7,821
@@ -20470,7 +20526,7 @@ WARD,congress,23,inperson,12,157
 WARD,congress,23,inperson,13,142
 WARD,congress,23,inperson,14,159
 WARD,congress,23,inperson,15,211
-WARD,congress,23,mail,4,2
+WARD,congress,23,mail,4,3
 WARD,congress,23,mail,5,2
 WARD,congress,23,mail,8,4
 WARD,congress,23,mail,10,2
@@ -20494,7 +20550,7 @@ WARD,house,81,inperson,12,157
 WARD,house,81,inperson,13,142
 WARD,house,81,inperson,14,159
 WARD,house,81,inperson,15,211
-WARD,house,81,mail,4,2
+WARD,house,81,mail,4,3
 WARD,house,81,mail,5,2
 WARD,house,81,mail,8,4
 WARD,house,81,mail,10,2
@@ -20518,7 +20574,7 @@ WARD,senate,31,inperson,12,157
 WARD,senate,31,inperson,13,142
 WARD,senate,31,inperson,14,159
 WARD,senate,31,inperson,15,211
-WARD,senate,31,mail,4,2
+WARD,senate,31,mail,4,3
 WARD,senate,31,mail,5,2
 WARD,senate,31,mail,8,4
 WARD,senate,31,mail,10,2
@@ -20599,7 +20655,7 @@ WASHINGTON,senate,18,mail,14,67
 WASHINGTON,senate,18,mail,15,2
 WASHINGTON,senate,18,mail,18,30
 WASHINGTON,senate,18,mail,19,66
-WEBB,congress,28,inperson,4,6068
+WEBB,congress,28,inperson,4,6043
 WEBB,congress,28,inperson,5,3587
 WEBB,congress,28,inperson,6,3350
 WEBB,congress,28,inperson,7,3211
@@ -20625,7 +20681,7 @@ WEBB,congress,28,mail,15,53
 WEBB,congress,28,mail,18,67
 WEBB,congress,28,mail,19,57
 WEBB,congress,28,mail,20,146
-WEBB,house,42,inperson,4,4468
+WEBB,house,42,inperson,4,4452
 WEBB,house,42,inperson,5,2671
 WEBB,house,42,inperson,6,2487
 WEBB,house,42,inperson,7,2446
@@ -20651,7 +20707,7 @@ WEBB,house,42,mail,15,40
 WEBB,house,42,mail,18,50
 WEBB,house,42,mail,19,43
 WEBB,house,42,mail,20,110
-WEBB,house,80,inperson,4,1600
+WEBB,house,80,inperson,4,1591
 WEBB,house,80,inperson,5,916
 WEBB,house,80,inperson,6,863
 WEBB,house,80,inperson,7,765
@@ -20677,7 +20733,7 @@ WEBB,house,80,mail,15,13
 WEBB,house,80,mail,18,17
 WEBB,house,80,mail,19,14
 WEBB,house,80,mail,20,36
-WEBB,senate,21,inperson,4,6068
+WEBB,senate,21,inperson,4,6043
 WEBB,senate,21,inperson,5,3587
 WEBB,senate,21,inperson,6,3350
 WEBB,senate,21,inperson,7,3211
@@ -20703,7 +20759,7 @@ WEBB,senate,21,mail,15,53
 WEBB,senate,21,mail,18,67
 WEBB,senate,21,mail,19,57
 WEBB,senate,21,mail,20,146
-WHARTON,congress,27,inperson,4,1280
+WHARTON,congress,27,inperson,4,1281
 WHARTON,congress,27,inperson,5,835
 WHARTON,congress,27,inperson,6,749
 WHARTON,congress,27,inperson,7,763
@@ -20726,7 +20782,7 @@ WHARTON,congress,27,mail,14,19
 WHARTON,congress,27,mail,15,17
 WHARTON,congress,27,mail,18,33
 WHARTON,congress,27,mail,20,63
-WHARTON,house,85,inperson,4,1280
+WHARTON,house,85,inperson,4,1281
 WHARTON,house,85,inperson,5,835
 WHARTON,house,85,inperson,6,749
 WHARTON,house,85,inperson,7,763
@@ -20749,7 +20805,7 @@ WHARTON,house,85,mail,14,19
 WHARTON,house,85,mail,15,17
 WHARTON,house,85,mail,18,33
 WHARTON,house,85,mail,20,63
-WHARTON,senate,17,inperson,4,1280
+WHARTON,senate,17,inperson,4,1281
 WHARTON,senate,17,inperson,5,835
 WHARTON,senate,17,inperson,6,749
 WHARTON,senate,17,inperson,7,763
@@ -20772,7 +20828,7 @@ WHARTON,senate,17,mail,14,19
 WHARTON,senate,17,mail,15,17
 WHARTON,senate,17,mail,18,33
 WHARTON,senate,17,mail,20,63
-WHEELER,congress,13,inperson,4,122
+WHEELER,congress,13,inperson,4,124
 WHEELER,congress,13,inperson,5,78
 WHEELER,congress,13,inperson,6,94
 WHEELER,congress,13,inperson,7,85
@@ -20796,7 +20852,7 @@ WHEELER,congress,13,mail,16,3
 WHEELER,congress,13,mail,18,2
 WHEELER,congress,13,mail,19,3
 WHEELER,congress,13,mail,20,1
-WHEELER,house,88,inperson,4,122
+WHEELER,house,88,inperson,4,124
 WHEELER,house,88,inperson,5,78
 WHEELER,house,88,inperson,6,94
 WHEELER,house,88,inperson,7,85
@@ -20820,7 +20876,7 @@ WHEELER,house,88,mail,16,3
 WHEELER,house,88,mail,18,2
 WHEELER,house,88,mail,19,3
 WHEELER,house,88,mail,20,1
-WHEELER,senate,28,inperson,4,122
+WHEELER,senate,28,inperson,4,124
 WHEELER,senate,28,inperson,5,78
 WHEELER,senate,28,inperson,6,94
 WHEELER,senate,28,inperson,7,85
@@ -21106,7 +21162,7 @@ WILLIAMSON,congress,11,mail,18,1
 WILLIAMSON,congress,11,mail,19,37
 WILLIAMSON,congress,11,mail,20,2
 WILLIAMSON,congress,17,inperson,4,10147
-WILLIAMSON,congress,17,inperson,5,7187
+WILLIAMSON,congress,17,inperson,5,7188
 WILLIAMSON,congress,17,inperson,6,6414
 WILLIAMSON,congress,17,inperson,7,6470
 WILLIAMSON,congress,17,inperson,8,6850
@@ -21132,9 +21188,9 @@ WILLIAMSON,congress,17,mail,17,6
 WILLIAMSON,congress,17,mail,18,4
 WILLIAMSON,congress,17,mail,19,310
 WILLIAMSON,congress,17,mail,20,15
-WILLIAMSON,congress,31,inperson,4,13322
+WILLIAMSON,congress,31,inperson,4,13324
 WILLIAMSON,congress,31,inperson,5,8905
-WILLIAMSON,congress,31,inperson,6,8312
+WILLIAMSON,congress,31,inperson,6,8313
 WILLIAMSON,congress,31,inperson,7,8597
 WILLIAMSON,congress,31,inperson,8,8992
 WILLIAMSON,congress,31,inperson,9,4578
@@ -21160,8 +21216,8 @@ WILLIAMSON,congress,31,mail,17,3
 WILLIAMSON,congress,31,mail,18,6
 WILLIAMSON,congress,31,mail,19,573
 WILLIAMSON,congress,31,mail,20,21
-WILLIAMSON,house,136,inperson,4,6146
-WILLIAMSON,house,136,inperson,5,4430
+WILLIAMSON,house,136,inperson,4,6143
+WILLIAMSON,house,136,inperson,5,4431
 WILLIAMSON,house,136,inperson,6,3940
 WILLIAMSON,house,136,inperson,7,3938
 WILLIAMSON,house,136,inperson,8,4177
@@ -21189,7 +21245,7 @@ WILLIAMSON,house,136,mail,19,182
 WILLIAMSON,house,136,mail,20,13
 WILLIAMSON,house,20,inperson,4,8317
 WILLIAMSON,house,20,inperson,5,5787
-WILLIAMSON,house,20,inperson,6,5396
+WILLIAMSON,house,20,inperson,6,5397
 WILLIAMSON,house,20,inperson,7,5765
 WILLIAMSON,house,20,inperson,8,5958
 WILLIAMSON,house,20,inperson,9,2922
@@ -21215,7 +21271,7 @@ WILLIAMSON,house,20,mail,17,3
 WILLIAMSON,house,20,mail,18,3
 WILLIAMSON,house,20,mail,19,477
 WILLIAMSON,house,20,mail,20,21
-WILLIAMSON,house,52,inperson,4,9933
+WILLIAMSON,house,52,inperson,4,9938
 WILLIAMSON,house,52,inperson,5,6563
 WILLIAMSON,house,52,inperson,6,6004
 WILLIAMSON,house,52,inperson,7,5969
@@ -21243,8 +21299,8 @@ WILLIAMSON,house,52,mail,17,4
 WILLIAMSON,house,52,mail,18,4
 WILLIAMSON,house,52,mail,19,261
 WILLIAMSON,house,52,mail,20,4
-WILLIAMSON,senate,24,inperson,4,7986
-WILLIAMSON,senate,24,inperson,5,5524
+WILLIAMSON,senate,24,inperson,4,7983
+WILLIAMSON,senate,24,inperson,5,5525
 WILLIAMSON,senate,24,inperson,6,5040
 WILLIAMSON,senate,24,inperson,7,5114
 WILLIAMSON,senate,24,inperson,8,5243
@@ -21271,9 +21327,9 @@ WILLIAMSON,senate,24,mail,17,5
 WILLIAMSON,senate,24,mail,18,5
 WILLIAMSON,senate,24,mail,19,222
 WILLIAMSON,senate,24,mail,20,12
-WILLIAMSON,senate,5,inperson,4,16411
+WILLIAMSON,senate,5,inperson,4,16415
 WILLIAMSON,senate,5,inperson,5,11256
-WILLIAMSON,senate,5,inperson,6,10300
+WILLIAMSON,senate,5,inperson,6,10301
 WILLIAMSON,senate,5,inperson,7,10558
 WILLIAMSON,senate,5,inperson,8,11241
 WILLIAMSON,senate,5,inperson,9,5631
@@ -21386,6 +21442,7 @@ WINKLER,congress,23,inperson,9,12
 WINKLER,congress,23,inperson,10,27
 WINKLER,congress,23,inperson,13,62
 WINKLER,congress,23,inperson,15,76
+WINKLER,congress,23,mail,4,1
 WINKLER,congress,23,mail,5,2
 WINKLER,congress,23,mail,6,1
 WINKLER,congress,23,mail,7,1
@@ -21406,6 +21463,7 @@ WINKLER,house,81,inperson,9,12
 WINKLER,house,81,inperson,10,27
 WINKLER,house,81,inperson,13,62
 WINKLER,house,81,inperson,15,76
+WINKLER,house,81,mail,4,1
 WINKLER,house,81,mail,5,2
 WINKLER,house,81,mail,6,1
 WINKLER,house,81,mail,7,1
@@ -21426,6 +21484,7 @@ WINKLER,senate,31,inperson,9,12
 WINKLER,senate,31,inperson,10,27
 WINKLER,senate,31,inperson,13,62
 WINKLER,senate,31,inperson,15,76
+WINKLER,senate,31,mail,4,1
 WINKLER,senate,31,mail,5,2
 WINKLER,senate,31,mail,6,1
 WINKLER,senate,31,mail,7,1
@@ -21541,7 +21600,7 @@ WISE,senate,12,mail,15,113
 WISE,senate,12,mail,18,52
 WISE,senate,12,mail,19,31
 WISE,senate,12,mail,20,25
-WOOD,congress,32,inperson,4,1261
+WOOD,congress,32,inperson,4,1260
 WOOD,congress,32,inperson,5,845
 WOOD,congress,32,inperson,6,825
 WOOD,congress,32,inperson,7,907
@@ -21563,7 +21622,7 @@ WOOD,congress,32,mail,14,2
 WOOD,congress,32,mail,15,61
 WOOD,congress,32,mail,18,28
 WOOD,congress,32,mail,19,29
-WOOD,house,5,inperson,4,1261
+WOOD,house,5,inperson,4,1260
 WOOD,house,5,inperson,5,845
 WOOD,house,5,inperson,6,825
 WOOD,house,5,inperson,7,907
@@ -21585,7 +21644,7 @@ WOOD,house,5,mail,14,2
 WOOD,house,5,mail,15,61
 WOOD,house,5,mail,18,28
 WOOD,house,5,mail,19,29
-WOOD,senate,1,inperson,4,1261
+WOOD,senate,1,inperson,4,1260
 WOOD,senate,1,inperson,5,845
 WOOD,senate,1,inperson,6,825
 WOOD,senate,1,inperson,7,907
@@ -21670,7 +21729,7 @@ YOAKUM,senate,31,mail,13,5
 YOAKUM,senate,31,mail,18,2
 YOAKUM,senate,31,mail,19,3
 YOAKUM,senate,31,mail,20,1
-YOUNG,congress,25,inperson,4,627
+YOUNG,congress,25,inperson,4,626
 YOUNG,congress,25,inperson,5,316
 YOUNG,congress,25,inperson,6,346
 YOUNG,congress,25,inperson,7,311
@@ -21682,7 +21741,7 @@ YOUNG,congress,25,inperson,12,443
 YOUNG,congress,25,inperson,13,494
 YOUNG,congress,25,inperson,14,586
 YOUNG,congress,25,inperson,15,674
-YOUNG,house,68,inperson,4,627
+YOUNG,house,68,inperson,4,626
 YOUNG,house,68,inperson,5,316
 YOUNG,house,68,inperson,6,346
 YOUNG,house,68,inperson,7,311
@@ -21694,7 +21753,7 @@ YOUNG,house,68,inperson,12,443
 YOUNG,house,68,inperson,13,494
 YOUNG,house,68,inperson,14,586
 YOUNG,house,68,inperson,15,674
-YOUNG,senate,30,inperson,4,627
+YOUNG,senate,30,inperson,4,626
 YOUNG,senate,30,inperson,5,316
 YOUNG,senate,30,inperson,6,346
 YOUNG,senate,30,inperson,7,311

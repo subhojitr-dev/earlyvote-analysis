@@ -3114,7 +3114,7 @@ CHEROKEE,house,20,inperson,18,1170
 CHEROKEE,house,20,inperson,19,1037
 CHEROKEE,house,20,inperson,20,1089
 CHEROKEE,house,20,inperson,21,1047
-CHEROKEE,house,20,mail,3,27
+CHEROKEE,house,20,mail,3,28
 CHEROKEE,house,20,mail,4,39
 CHEROKEE,house,20,mail,5,29
 CHEROKEE,house,20,mail,6,65
@@ -3204,7 +3204,7 @@ CHEROKEE,house,22,inperson,18,569
 CHEROKEE,house,22,inperson,19,503
 CHEROKEE,house,22,inperson,20,544
 CHEROKEE,house,22,inperson,21,626
-CHEROKEE,house,22,mail,3,6
+CHEROKEE,house,22,mail,3,7
 CHEROKEE,house,22,mail,4,24
 CHEROKEE,house,22,mail,5,16
 CHEROKEE,house,22,mail,6,19
@@ -3240,10 +3240,11 @@ CHEROKEE,house,23,inperson,18,1261
 CHEROKEE,house,23,inperson,19,1195
 CHEROKEE,house,23,inperson,20,1341
 CHEROKEE,house,23,inperson,21,1264
+CHEROKEE,house,23,mail,2,2
 CHEROKEE,house,23,mail,3,16
 CHEROKEE,house,23,mail,4,33
 CHEROKEE,house,23,mail,5,37
-CHEROKEE,house,23,mail,6,53
+CHEROKEE,house,23,mail,6,54
 CHEROKEE,house,23,mail,7,47
 CHEROKEE,house,23,mail,8,70
 CHEROKEE,house,23,mail,9,2
@@ -3388,10 +3389,11 @@ CHEROKEE,senate,21,inperson,18,2514
 CHEROKEE,senate,21,inperson,19,2423
 CHEROKEE,senate,21,inperson,20,2597
 CHEROKEE,senate,21,inperson,21,2542
+CHEROKEE,senate,21,mail,2,2
 CHEROKEE,senate,21,mail,3,48
 CHEROKEE,senate,21,mail,4,79
 CHEROKEE,senate,21,mail,5,68
-CHEROKEE,senate,21,mail,6,93
+CHEROKEE,senate,21,mail,6,94
 CHEROKEE,senate,21,mail,7,84
 CHEROKEE,senate,21,mail,8,136
 CHEROKEE,senate,21,mail,9,3
@@ -3437,7 +3439,7 @@ CHEROKEE,senate,32,inperson,18,1739
 CHEROKEE,senate,32,inperson,19,1540
 CHEROKEE,senate,32,inperson,20,1633
 CHEROKEE,senate,32,inperson,21,1673
-CHEROKEE,senate,32,mail,3,33
+CHEROKEE,senate,32,mail,3,35
 CHEROKEE,senate,32,mail,4,63
 CHEROKEE,senate,32,mail,5,45
 CHEROKEE,senate,32,mail,6,84
@@ -4635,12 +4637,12 @@ COBB,house,43,mail,9,5
 COBB,house,43,mail,10,21
 COBB,house,43,mail,11,43
 COBB,house,43,mail,12,44
-COBB,house,43,mail,13,145
+COBB,house,43,mail,13,144
 COBB,house,43,mail,14,101
 COBB,house,43,mail,15,40
 COBB,house,43,mail,19,1
 COBB,house,43,mail,20,2
-COBB,house,43,mail,21,2
+COBB,house,43,mail,21,3
 COBB,house,43,mail,22,1
 COBB,house,43,mail,26,2
 COBB,house,43,mail,27,4
@@ -4968,13 +4970,13 @@ COBB,senate,33,mail,9,12
 COBB,senate,33,mail,10,34
 COBB,senate,33,mail,11,119
 COBB,senate,33,mail,12,131
-COBB,senate,33,mail,13,397
+COBB,senate,33,mail,13,396
 COBB,senate,33,mail,14,447
 COBB,senate,33,mail,15,50
 COBB,senate,33,mail,18,1
 COBB,senate,33,mail,19,3
 COBB,senate,33,mail,20,5
-COBB,senate,33,mail,21,7
+COBB,senate,33,mail,21,8
 COBB,senate,33,mail,22,1
 COBB,senate,33,mail,25,2
 COBB,senate,33,mail,26,1
@@ -6275,6 +6277,7 @@ DEKALB,house,101,inperson,18,1060
 DEKALB,house,101,inperson,19,835
 DEKALB,house,101,inperson,20,864
 DEKALB,house,101,inperson,21,907
+DEKALB,house,101,mail,2,12
 DEKALB,house,101,mail,3,28
 DEKALB,house,101,mail,4,60
 DEKALB,house,101,mail,5,29
@@ -6320,6 +6323,7 @@ DEKALB,house,115,inperson,18,911
 DEKALB,house,115,inperson,19,840
 DEKALB,house,115,inperson,20,1107
 DEKALB,house,115,inperson,21,1238
+DEKALB,house,115,mail,2,6
 DEKALB,house,115,mail,3,6
 DEKALB,house,115,mail,4,31
 DEKALB,house,115,mail,5,11
@@ -6357,6 +6361,7 @@ DEKALB,house,116,inperson,18,569
 DEKALB,house,116,inperson,19,539
 DEKALB,house,116,inperson,20,578
 DEKALB,house,116,inperson,21,741
+DEKALB,house,116,mail,2,4
 DEKALB,house,116,mail,3,8
 DEKALB,house,116,mail,4,19
 DEKALB,house,116,mail,5,13
@@ -6395,6 +6400,7 @@ DEKALB,house,52,inperson,18,590
 DEKALB,house,52,inperson,19,407
 DEKALB,house,52,inperson,20,455
 DEKALB,house,52,inperson,21,568
+DEKALB,house,52,mail,2,8
 DEKALB,house,52,mail,3,8
 DEKALB,house,52,mail,4,47
 DEKALB,house,52,mail,5,11
@@ -6435,6 +6441,7 @@ DEKALB,house,80,inperson,18,1085
 DEKALB,house,80,inperson,19,864
 DEKALB,house,80,inperson,20,980
 DEKALB,house,80,inperson,21,1011
+DEKALB,house,80,mail,2,9
 DEKALB,house,80,mail,3,12
 DEKALB,house,80,mail,4,72
 DEKALB,house,80,mail,5,23
@@ -6476,6 +6483,7 @@ DEKALB,house,83,inperson,18,899
 DEKALB,house,83,inperson,19,649
 DEKALB,house,83,inperson,20,789
 DEKALB,house,83,inperson,21,874
+DEKALB,house,83,mail,2,9
 DEKALB,house,83,mail,3,4
 DEKALB,house,83,mail,4,63
 DEKALB,house,83,mail,5,19
@@ -6521,6 +6529,7 @@ DEKALB,house,84,inperson,18,1279
 DEKALB,house,84,inperson,19,1186
 DEKALB,house,84,inperson,20,1215
 DEKALB,house,84,inperson,21,1330
+DEKALB,house,84,mail,2,25
 DEKALB,house,84,mail,3,45
 DEKALB,house,84,mail,4,57
 DEKALB,house,84,mail,5,44
@@ -6567,6 +6576,7 @@ DEKALB,house,85,inperson,18,1037
 DEKALB,house,85,inperson,19,947
 DEKALB,house,85,inperson,20,1011
 DEKALB,house,85,inperson,21,1160
+DEKALB,house,85,mail,2,7
 DEKALB,house,85,mail,3,29
 DEKALB,house,85,mail,4,40
 DEKALB,house,85,mail,5,36
@@ -6610,6 +6620,7 @@ DEKALB,house,86,inperson,18,1076
 DEKALB,house,86,inperson,19,890
 DEKALB,house,86,inperson,20,938
 DEKALB,house,86,inperson,21,1080
+DEKALB,house,86,mail,2,11
 DEKALB,house,86,mail,3,18
 DEKALB,house,86,mail,4,52
 DEKALB,house,86,mail,5,42
@@ -6650,6 +6661,7 @@ DEKALB,house,87,inperson,18,1125
 DEKALB,house,87,inperson,19,991
 DEKALB,house,87,inperson,20,1017
 DEKALB,house,87,inperson,21,1181
+DEKALB,house,87,mail,2,5
 DEKALB,house,87,mail,3,15
 DEKALB,house,87,mail,4,46
 DEKALB,house,87,mail,5,25
@@ -6692,6 +6704,7 @@ DEKALB,house,88,inperson,18,1003
 DEKALB,house,88,inperson,19,915
 DEKALB,house,88,inperson,20,1002
 DEKALB,house,88,inperson,21,1114
+DEKALB,house,88,mail,2,12
 DEKALB,house,88,mail,3,18
 DEKALB,house,88,mail,4,36
 DEKALB,house,88,mail,5,21
@@ -6731,7 +6744,8 @@ DEKALB,house,89,inperson,18,1444
 DEKALB,house,89,inperson,19,1201
 DEKALB,house,89,inperson,20,1398
 DEKALB,house,89,inperson,21,1453
-DEKALB,house,89,mail,3,35
+DEKALB,house,89,mail,2,21
+DEKALB,house,89,mail,3,36
 DEKALB,house,89,mail,4,87
 DEKALB,house,89,mail,5,45
 DEKALB,house,89,mail,6,80
@@ -6782,6 +6796,7 @@ DEKALB,house,90,inperson,18,1560
 DEKALB,house,90,inperson,19,1313
 DEKALB,house,90,inperson,20,1397
 DEKALB,house,90,inperson,21,1648
+DEKALB,house,90,mail,2,21
 DEKALB,house,90,mail,3,23
 DEKALB,house,90,mail,4,70
 DEKALB,house,90,mail,5,41
@@ -6829,6 +6844,7 @@ DEKALB,house,91,inperson,18,630
 DEKALB,house,91,inperson,19,610
 DEKALB,house,91,inperson,20,830
 DEKALB,house,91,inperson,21,952
+DEKALB,house,91,mail,2,12
 DEKALB,house,91,mail,3,2
 DEKALB,house,91,mail,4,26
 DEKALB,house,91,mail,5,12
@@ -6867,6 +6883,7 @@ DEKALB,house,93,inperson,18,287
 DEKALB,house,93,inperson,19,270
 DEKALB,house,93,inperson,20,307
 DEKALB,house,93,inperson,21,345
+DEKALB,house,93,mail,2,7
 DEKALB,house,93,mail,3,2
 DEKALB,house,93,mail,4,14
 DEKALB,house,93,mail,5,7
@@ -6902,6 +6919,7 @@ DEKALB,house,94,inperson,18,555
 DEKALB,house,94,inperson,19,551
 DEKALB,house,94,inperson,20,623
 DEKALB,house,94,inperson,21,731
+DEKALB,house,94,mail,2,8
 DEKALB,house,94,mail,3,3
 DEKALB,house,94,mail,4,27
 DEKALB,house,94,mail,5,8
@@ -6940,6 +6958,7 @@ DEKALB,house,95,inperson,18,330
 DEKALB,house,95,inperson,19,317
 DEKALB,house,95,inperson,20,388
 DEKALB,house,95,inperson,21,431
+DEKALB,house,95,mail,2,3
 DEKALB,house,95,mail,3,3
 DEKALB,house,95,mail,4,6
 DEKALB,house,95,mail,5,4
@@ -6976,6 +6995,7 @@ DEKALB,senate,10,inperson,18,3437
 DEKALB,senate,10,inperson,19,3164
 DEKALB,senate,10,inperson,20,3570
 DEKALB,senate,10,inperson,21,4064
+DEKALB,senate,10,mail,2,33
 DEKALB,senate,10,mail,3,66
 DEKALB,senate,10,mail,4,123
 DEKALB,senate,10,mail,5,85
@@ -7022,6 +7042,7 @@ DEKALB,senate,40,inperson,18,2841
 DEKALB,senate,40,inperson,19,2184
 DEKALB,senate,40,inperson,20,2430
 DEKALB,senate,40,inperson,21,2690
+DEKALB,senate,40,mail,2,33
 DEKALB,senate,40,mail,3,36
 DEKALB,senate,40,mail,4,198
 DEKALB,senate,40,mail,5,60
@@ -7070,6 +7091,7 @@ DEKALB,senate,41,inperson,18,3092
 DEKALB,senate,41,inperson,19,2637
 DEKALB,senate,41,inperson,20,2996
 DEKALB,senate,41,inperson,21,3346
+DEKALB,senate,41,mail,2,24
 DEKALB,senate,41,mail,3,41
 DEKALB,senate,41,mail,4,154
 DEKALB,senate,41,mail,5,93
@@ -7117,6 +7139,7 @@ DEKALB,senate,43,inperson,18,273
 DEKALB,senate,43,inperson,19,285
 DEKALB,senate,43,inperson,20,349
 DEKALB,senate,43,inperson,21,433
+DEKALB,senate,43,mail,2,3
 DEKALB,senate,43,mail,3,5
 DEKALB,senate,43,mail,4,6
 DEKALB,senate,43,mail,5,8
@@ -7152,7 +7175,8 @@ DEKALB,senate,44,inperson,18,3369
 DEKALB,senate,44,inperson,19,2801
 DEKALB,senate,44,inperson,20,3015
 DEKALB,senate,44,inperson,21,3461
-DEKALB,senate,44,mail,3,81
+DEKALB,senate,44,mail,2,56
+DEKALB,senate,44,mail,3,82
 DEKALB,senate,44,mail,4,179
 DEKALB,senate,44,mail,5,104
 DEKALB,senate,44,mail,6,144
@@ -7204,6 +7228,7 @@ DEKALB,senate,55,inperson,18,2428
 DEKALB,senate,55,inperson,19,2254
 DEKALB,senate,55,inperson,20,2539
 DEKALB,senate,55,inperson,21,2770
+DEKALB,senate,55,mail,2,31
 DEKALB,senate,55,mail,3,30
 DEKALB,senate,55,mail,4,93
 DEKALB,senate,55,mail,5,41
@@ -8459,7 +8484,7 @@ FLOYD,house,12,inperson,18,387
 FLOYD,house,12,inperson,19,402
 FLOYD,house,12,inperson,20,410
 FLOYD,house,12,inperson,21,457
-FLOYD,house,12,mail,4,10
+FLOYD,house,12,mail,4,13
 FLOYD,house,12,mail,5,16
 FLOYD,house,12,mail,6,9
 FLOYD,house,12,mail,7,8
@@ -8494,7 +8519,7 @@ FLOYD,house,13,inperson,18,760
 FLOYD,house,13,inperson,19,736
 FLOYD,house,13,inperson,20,824
 FLOYD,house,13,inperson,21,907
-FLOYD,house,13,mail,4,18
+FLOYD,house,13,mail,4,22
 FLOYD,house,13,mail,5,26
 FLOYD,house,13,mail,6,17
 FLOYD,house,13,mail,7,24
@@ -8562,7 +8587,7 @@ FLOYD,senate,52,inperson,18,1062
 FLOYD,senate,52,inperson,19,1058
 FLOYD,senate,52,inperson,20,1134
 FLOYD,senate,52,inperson,21,1225
-FLOYD,senate,52,mail,4,27
+FLOYD,senate,52,mail,4,34
 FLOYD,senate,52,mail,5,40
 FLOYD,senate,52,mail,6,22
 FLOYD,senate,52,mail,7,30
@@ -10929,7 +10954,8 @@ GWINNETT,house,100,inperson,18,522
 GWINNETT,house,100,inperson,19,466
 GWINNETT,house,100,inperson,20,459
 GWINNETT,house,100,inperson,21,502
-GWINNETT,house,100,mail,3,13
+GWINNETT,house,100,mail,2,1
+GWINNETT,house,100,mail,3,15
 GWINNETT,house,100,mail,4,28
 GWINNETT,house,100,mail,5,43
 GWINNETT,house,100,mail,6,14
@@ -10968,7 +10994,8 @@ GWINNETT,house,102,inperson,18,887
 GWINNETT,house,102,inperson,19,744
 GWINNETT,house,102,inperson,20,816
 GWINNETT,house,102,inperson,21,817
-GWINNETT,house,102,mail,3,11
+GWINNETT,house,102,mail,2,4
+GWINNETT,house,102,mail,3,12
 GWINNETT,house,102,mail,4,33
 GWINNETT,house,102,mail,5,36
 GWINNETT,house,102,mail,6,29
@@ -11012,7 +11039,7 @@ GWINNETT,house,103,inperson,18,788
 GWINNETT,house,103,inperson,19,687
 GWINNETT,house,103,inperson,20,755
 GWINNETT,house,103,inperson,21,734
-GWINNETT,house,103,mail,3,18
+GWINNETT,house,103,mail,3,19
 GWINNETT,house,103,mail,4,25
 GWINNETT,house,103,mail,5,41
 GWINNETT,house,103,mail,6,19
@@ -11054,7 +11081,7 @@ GWINNETT,house,104,inperson,18,633
 GWINNETT,house,104,inperson,19,497
 GWINNETT,house,104,inperson,20,485
 GWINNETT,house,104,inperson,21,566
-GWINNETT,house,104,mail,3,9
+GWINNETT,house,104,mail,3,10
 GWINNETT,house,104,mail,4,35
 GWINNETT,house,104,mail,5,37
 GWINNETT,house,104,mail,6,22
@@ -11131,7 +11158,8 @@ GWINNETT,house,106,inperson,18,857
 GWINNETT,house,106,inperson,19,766
 GWINNETT,house,106,inperson,20,746
 GWINNETT,house,106,inperson,21,769
-GWINNETT,house,106,mail,3,17
+GWINNETT,house,106,mail,2,2
+GWINNETT,house,106,mail,3,18
 GWINNETT,house,106,mail,4,49
 GWINNETT,house,106,mail,5,38
 GWINNETT,house,106,mail,6,31
@@ -11173,7 +11201,7 @@ GWINNETT,house,107,inperson,18,830
 GWINNETT,house,107,inperson,19,700
 GWINNETT,house,107,inperson,20,713
 GWINNETT,house,107,inperson,21,735
-GWINNETT,house,107,mail,3,24
+GWINNETT,house,107,mail,3,26
 GWINNETT,house,107,mail,4,35
 GWINNETT,house,107,mail,5,38
 GWINNETT,house,107,mail,6,32
@@ -11296,7 +11324,7 @@ GWINNETT,house,110,inperson,18,1323
 GWINNETT,house,110,inperson,19,1110
 GWINNETT,house,110,inperson,20,1205
 GWINNETT,house,110,inperson,21,1236
-GWINNETT,house,110,mail,3,19
+GWINNETT,house,110,mail,3,20
 GWINNETT,house,110,mail,4,84
 GWINNETT,house,110,mail,5,40
 GWINNETT,house,110,mail,6,38
@@ -11517,7 +11545,7 @@ GWINNETT,house,93,inperson,18,650
 GWINNETT,house,93,inperson,19,653
 GWINNETT,house,93,inperson,20,620
 GWINNETT,house,93,inperson,21,717
-GWINNETT,house,93,mail,3,15
+GWINNETT,house,93,mail,3,18
 GWINNETT,house,93,mail,4,31
 GWINNETT,house,93,mail,5,16
 GWINNETT,house,93,mail,6,40
@@ -11595,6 +11623,7 @@ GWINNETT,house,95,inperson,18,747
 GWINNETT,house,95,inperson,19,628
 GWINNETT,house,95,inperson,20,724
 GWINNETT,house,95,inperson,21,763
+GWINNETT,house,95,mail,2,2
 GWINNETT,house,95,mail,3,20
 GWINNETT,house,95,mail,4,44
 GWINNETT,house,95,mail,5,14
@@ -11637,7 +11666,8 @@ GWINNETT,house,96,inperson,18,473
 GWINNETT,house,96,inperson,19,419
 GWINNETT,house,96,inperson,20,500
 GWINNETT,house,96,inperson,21,543
-GWINNETT,house,96,mail,3,13
+GWINNETT,house,96,mail,2,2
+GWINNETT,house,96,mail,3,15
 GWINNETT,house,96,mail,4,23
 GWINNETT,house,96,mail,5,35
 GWINNETT,house,96,mail,6,17
@@ -11679,6 +11709,7 @@ GWINNETT,house,97,inperson,18,889
 GWINNETT,house,97,inperson,19,748
 GWINNETT,house,97,inperson,20,823
 GWINNETT,house,97,inperson,21,932
+GWINNETT,house,97,mail,2,4
 GWINNETT,house,97,mail,3,12
 GWINNETT,house,97,mail,4,28
 GWINNETT,house,97,mail,5,21
@@ -11761,7 +11792,8 @@ GWINNETT,house,99,inperson,18,910
 GWINNETT,house,99,inperson,19,857
 GWINNETT,house,99,inperson,20,871
 GWINNETT,house,99,inperson,21,938
-GWINNETT,house,99,mail,3,35
+GWINNETT,house,99,mail,2,3
+GWINNETT,house,99,mail,3,37
 GWINNETT,house,99,mail,4,68
 GWINNETT,house,99,mail,5,85
 GWINNETT,house,99,mail,6,30
@@ -11805,6 +11837,7 @@ GWINNETT,senate,40,inperson,18,310
 GWINNETT,senate,40,inperson,19,237
 GWINNETT,senate,40,inperson,20,245
 GWINNETT,senate,40,inperson,21,304
+GWINNETT,senate,40,mail,2,2
 GWINNETT,senate,40,mail,3,5
 GWINNETT,senate,40,mail,4,12
 GWINNETT,senate,40,mail,5,13
@@ -11845,6 +11878,7 @@ GWINNETT,senate,43,inperson,18,1223
 GWINNETT,senate,43,inperson,19,1093
 GWINNETT,senate,43,inperson,20,1158
 GWINNETT,senate,43,inperson,21,1320
+GWINNETT,senate,43,mail,2,2
 GWINNETT,senate,43,mail,3,19
 GWINNETT,senate,43,mail,4,77
 GWINNETT,senate,43,mail,5,39
@@ -11886,7 +11920,8 @@ GWINNETT,senate,45,inperson,18,2519
 GWINNETT,senate,45,inperson,19,2219
 GWINNETT,senate,45,inperson,20,2201
 GWINNETT,senate,45,inperson,21,2346
-GWINNETT,senate,45,mail,3,53
+GWINNETT,senate,45,mail,2,1
+GWINNETT,senate,45,mail,3,54
 GWINNETT,senate,45,mail,4,122
 GWINNETT,senate,45,mail,5,143
 GWINNETT,senate,45,mail,6,79
@@ -11967,7 +12002,8 @@ GWINNETT,senate,48,inperson,18,706
 GWINNETT,senate,48,inperson,19,632
 GWINNETT,senate,48,inperson,20,596
 GWINNETT,senate,48,inperson,21,667
-GWINNETT,senate,48,mail,3,15
+GWINNETT,senate,48,mail,2,1
+GWINNETT,senate,48,mail,3,17
 GWINNETT,senate,48,mail,4,39
 GWINNETT,senate,48,mail,5,54
 GWINNETT,senate,48,mail,6,18
@@ -12007,7 +12043,8 @@ GWINNETT,senate,5,inperson,18,1496
 GWINNETT,senate,5,inperson,19,1253
 GWINNETT,senate,5,inperson,20,1332
 GWINNETT,senate,5,inperson,21,1412
-GWINNETT,senate,5,mail,3,22
+GWINNETT,senate,5,mail,2,6
+GWINNETT,senate,5,mail,3,24
 GWINNETT,senate,5,mail,4,56
 GWINNETT,senate,5,mail,5,55
 GWINNETT,senate,5,mail,6,61
@@ -12051,7 +12088,7 @@ GWINNETT,senate,55,inperson,18,1402
 GWINNETT,senate,55,inperson,19,1224
 GWINNETT,senate,55,inperson,20,1320
 GWINNETT,senate,55,inperson,21,1486
-GWINNETT,senate,55,mail,3,42
+GWINNETT,senate,55,mail,3,45
 GWINNETT,senate,55,mail,4,58
 GWINNETT,senate,55,mail,5,38
 GWINNETT,senate,55,mail,6,83
@@ -12095,7 +12132,8 @@ GWINNETT,senate,7,inperson,18,2844
 GWINNETT,senate,7,inperson,19,2477
 GWINNETT,senate,7,inperson,20,2793
 GWINNETT,senate,7,inperson,21,2876
-GWINNETT,senate,7,mail,3,77
+GWINNETT,senate,7,mail,2,4
+GWINNETT,senate,7,mail,3,82
 GWINNETT,senate,7,mail,4,140
 GWINNETT,senate,7,mail,5,170
 GWINNETT,senate,7,mail,6,115
@@ -12144,7 +12182,8 @@ GWINNETT,senate,9,inperson,18,3253
 GWINNETT,senate,9,inperson,19,2723
 GWINNETT,senate,9,inperson,20,2994
 GWINNETT,senate,9,inperson,21,3096
-GWINNETT,senate,9,mail,3,62
+GWINNETT,senate,9,mail,2,2
+GWINNETT,senate,9,mail,3,65
 GWINNETT,senate,9,mail,4,149
 GWINNETT,senate,9,mail,5,102
 GWINNETT,senate,9,mail,6,120
@@ -16359,6 +16398,7 @@ NEWTON,house,113,inperson,18,1134
 NEWTON,house,113,inperson,19,950
 NEWTON,house,113,inperson,20,1038
 NEWTON,house,113,inperson,21,1258
+NEWTON,house,113,mail,2,5
 NEWTON,house,113,mail,3,40
 NEWTON,house,113,mail,4,80
 NEWTON,house,113,mail,5,51
@@ -16378,7 +16418,7 @@ NEWTON,house,113,mail,18,12
 NEWTON,house,113,mail,20,12
 NEWTON,house,113,mail,22,2
 NEWTON,house,113,mail,33,1
-NEWTON,house,114,inperson,4,704
+NEWTON,house,114,inperson,4,705
 NEWTON,house,114,inperson,5,529
 NEWTON,house,114,inperson,6,470
 NEWTON,house,114,inperson,7,472
@@ -16395,6 +16435,7 @@ NEWTON,house,114,inperson,18,460
 NEWTON,house,114,inperson,19,440
 NEWTON,house,114,inperson,20,485
 NEWTON,house,114,inperson,21,502
+NEWTON,house,114,mail,2,5
 NEWTON,house,114,mail,3,21
 NEWTON,house,114,mail,4,65
 NEWTON,house,114,mail,5,40
@@ -16430,6 +16471,7 @@ NEWTON,house,118,inperson,18,381
 NEWTON,house,118,inperson,19,359
 NEWTON,house,118,inperson,20,400
 NEWTON,house,118,inperson,21,394
+NEWTON,house,118,mail,2,4
 NEWTON,house,118,mail,3,16
 NEWTON,house,118,mail,4,47
 NEWTON,house,118,mail,5,21
@@ -16446,7 +16488,7 @@ NEWTON,house,118,mail,16,3
 NEWTON,house,118,mail,17,15
 NEWTON,house,118,mail,18,4
 NEWTON,house,118,mail,20,12
-NEWTON,senate,42,inperson,4,2494
+NEWTON,senate,42,inperson,4,2495
 NEWTON,senate,42,inperson,5,1759
 NEWTON,senate,42,inperson,6,1583
 NEWTON,senate,42,inperson,7,1494
@@ -16463,6 +16505,7 @@ NEWTON,senate,42,inperson,18,1577
 NEWTON,senate,42,inperson,19,1377
 NEWTON,senate,42,inperson,20,1543
 NEWTON,senate,42,inperson,21,1730
+NEWTON,senate,42,mail,2,13
 NEWTON,senate,42,mail,3,64
 NEWTON,senate,42,mail,4,154
 NEWTON,senate,42,mail,5,96
@@ -16500,6 +16543,7 @@ NEWTON,senate,43,inperson,18,398
 NEWTON,senate,43,inperson,19,372
 NEWTON,senate,43,inperson,20,380
 NEWTON,senate,43,inperson,21,424
+NEWTON,senate,43,mail,2,1
 NEWTON,senate,43,mail,3,13
 NEWTON,senate,43,mail,4,38
 NEWTON,senate,43,mail,5,16
